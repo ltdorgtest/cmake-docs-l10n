@@ -1,0 +1,4 @@
+[submodule "cmake/modules"]
+	path = cmake/modules
+	url = ../../ltdorgtest/cmake-modules.git
+	branch = main

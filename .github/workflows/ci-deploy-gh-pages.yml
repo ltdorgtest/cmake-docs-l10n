@@ -1,0 +1,87 @@
+# Distributed under the OSI-approved BSD 3-Clause License.
+# See accompanying file LICENSE.txt for details.
+
+name: ci-deploy-gh-pages
+
+on:
+  # Triggers the workflow when the 'sphinx-build-docs' workflow is completed.
+  repository_dispatch:
+    types:
+      - sphinx-build-docs
+
+jobs:
+  precondition:
+    runs-on: ${{ vars.RUNNER }}
+    steps:
+      - name: Print Contexts/Inputs/Variables/Secrets
+        shell: bash
+        run: |
+          echo "[Contexts]"
+          echo "github.job = ${{ github.job }}"
+          echo "github.ref = ${{ github.ref }}"
+          echo "github.ref_name = ${{ github.ref_name }}"
+          echo "github.event_name = ${{ github.event_name }}"
+          echo "github.event.action = ${{ github.event.action }}"
+          echo "github.event.client_payload.BUILD_RUN_ID = ${{ github.event.client_payload.BUILD_RUN_ID }}"
+          echo "github.event.client_payload.DEPLOY_ONLY = ${{ github.event.client_payload.DEPLOY_ONLY }}"
+          echo "github.event.client_payload.DEPLOY_BRANCH = ${{ github.event.client_payload.DEPLOY_BRANCH }}"
+          echo "[Inputs]"
+          echo "[Variables]"
+          echo "vars.RUNNER = ${{ vars.RUNNER }}"
+          echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
+          echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
+          echo "[Secrets]"
+          echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+      - name: Check Required Variables
+        shell: bash
+        run: |
+          REQUIRED_VARIABLES_EXIST=true
+          if [[ -z "${{ vars.RUNNER }}" ]]; then
+            echo "vars.RUNNER is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_NAME }}" ]]; then
+            echo "vars.ACTOR_NAME is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.ACTOR_EMAIL }}" ]]; then
+            echo "vars.ACTOR_EMAIL is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
+          if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
+            echo "Error: Some variables are missing." >&2
+            exit 1
+          fi
+      - name: Check Required Secrets
+        shell: bash
+        run: |
+          REQUIRED_SECRETS_EXIST=true
+          if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
+            echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            REQUIRED_SECRETS_EXIST=false
+          fi
+          if [[ "${REQUIRED_SECRETS_EXIST}" == "false" ]]; then
+            echo "Error: Some secrets are missing." >&2
+            exit 1
+          fi
+
+  caller:
+    needs: [ 'precondition' ]
+    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+                github.event.action == 'sphinx-build-docs' ) ) }}
+    concurrency:
+      group: ${{ github.workflow }}
+      cancel-in-progress: true
+    uses: ltdorgtest/ci-sphinx/.github/workflows/use-deploy-gh-pages.yml@main
+    with:
+      RUNNER: ${{ vars.RUNNER }}
+      CHECKOUT: ${{ github.ref }}
+      BUILD_RUN_ID: ${{ github.event.client_payload.BUILD_RUN_ID }}
+      DEPLOY_ONLY: ${{ github.event.client_payload.DEPLOY_ONLY }}
+      DEPLOY_BRANCH: ${{ github.event.client_payload.DEPLOY_BRANCH }}
+      CALLER_JOB: 'caller'
+      ENABLE_JOB: true
+      ACTOR_NAME: ${{ vars.ACTOR_NAME }}
+      ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
+    secrets:
+      ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}

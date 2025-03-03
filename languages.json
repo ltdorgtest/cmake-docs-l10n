@@ -1,0 +1,32 @@
+{
+  "en_US" : {
+    "langtag" : "en-us",
+    "crowdin" : "en",
+    "readthedocs" : "en"
+  },
+  "ja_JP" : {
+    "langtag" : "ja-jp",
+    "crowdin" : "ja",
+    "readthedocs" : "ja"
+  },
+  "ko_KR" : {
+    "langtag" : "ko-kr",
+    "crowdin" : "ko",
+    "readthedocs" : "ko"
+  },
+  "ru_RU" : {
+    "langtag" : "ru-ru",
+    "crowdin" : "ru",
+    "readthedocs" : "ru"
+  },
+  "zh_CN" : {
+    "langtag" : "zh-cn",
+    "crowdin" : "zh-CN",
+    "readthedocs" : "zh_CN"
+  },
+  "zh_TW" : {
+    "langtag" : "zh-tw",
+    "crowdin" : "zh-TW",
+    "readthedocs" : "zh_TW"
+  }
+}

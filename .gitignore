@@ -1,0 +1,17 @@
+# IDE-specific directories and configuration files.
+.vscode
+.idea
+CMakeLists.txt.user
+CMakeUserPresets.json
+
+# Possible CMake build directories.
+/build
+/cmake-debug-build
+/out
+
+# Non-essential project-related directories and files.
+.venv
+.conda
+.crowdin
+.compend
+/l10n
