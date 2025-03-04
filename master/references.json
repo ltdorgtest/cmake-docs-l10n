@@ -13,52 +13,52 @@
     },
     "ja_JP" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-03-04 00:07:16 -0500",
+        "hash" : "f855d799137884f242348319c863176c863d4e41",
+        "title" : "CMake Nightly Date Stamp"
       }
     },
     "ko_KR" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-03-04 00:07:16 -0500",
+        "hash" : "f855d799137884f242348319c863176c863d4e41",
+        "title" : "CMake Nightly Date Stamp"
       }
     },
     "ru_RU" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-03-04 00:07:16 -0500",
+        "hash" : "f855d799137884f242348319c863176c863d4e41",
+        "title" : "CMake Nightly Date Stamp"
       }
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-03-04 00:07:16 -0500",
+        "hash" : "f855d799137884f242348319c863176c863d4e41",
+        "title" : "CMake Nightly Date Stamp"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2025-03-04 00:07:16 -0500",
+        "hash" : "f855d799137884f242348319c863176c863d4e41",
+        "title" : "CMake Nightly Date Stamp"
       }
     }
   },
