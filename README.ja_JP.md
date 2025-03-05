@@ -69,8 +69,7 @@ Introduction
   </a>
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
     <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
-  </a><br />
-  <!-- Newline -->
+  </a><br /><!-- Newline -->
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
     <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
   </a>
@@ -89,7 +88,6 @@ Introduction
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
     <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
   </a><br />
-  
   <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
     <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" />
   </a>
