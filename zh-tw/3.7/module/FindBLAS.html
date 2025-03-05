@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FindBLAS &mdash; CMake 3.7.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.7.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="FindBacktrace" href="FindBacktrace.html" />
+    <link rel="prev" title="FindBISON" href="FindBISON.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="FindBacktrace.html" title="FindBacktrace"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="FindBISON.html" title="FindBISON"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="findblas">
+<span id="module:FindBLAS"></span><h1>FindBLAS<a class="headerlink" href="#findblas" title="本標題的永久連結">¶</a></h1>
+<p>Find BLAS library</p>
+<p>This module finds an installed fortran library that implements the
+BLAS linear-algebra interface (see <a class="reference external" href="http://www.netlib.org/blas/">http://www.netlib.org/blas/</a>).  The
+list of libraries searched for is taken from the autoconf macro file,
+acx_blas.m4 (distributed at
+<a class="reference external" href="http://ac-archive.sourceforge.net/ac-archive/acx_blas.html">http://ac-archive.sourceforge.net/ac-archive/acx_blas.html</a>).</p>
+<p>This module sets the following variables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">BLAS_FOUND</span> <span class="o">-</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">true</span> <span class="k">if</span> <span class="n">a</span> <span class="n">library</span> <span class="n">implementing</span> <span class="n">the</span> <span class="n">BLAS</span> <span class="n">interface</span>
+  <span class="ow">is</span> <span class="n">found</span>
+<span class="n">BLAS_LINKER_FLAGS</span> <span class="o">-</span> <span class="n">uncached</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">required</span> <span class="n">linker</span> <span class="n">flags</span> <span class="p">(</span><span class="n">excluding</span> <span class="o">-</span><span class="n">l</span>
+  <span class="ow">and</span> <span class="o">-</span><span class="n">L</span><span class="p">)</span><span class="o">.</span>
+<span class="n">BLAS_LIBRARIES</span> <span class="o">-</span> <span class="n">uncached</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">libraries</span> <span class="p">(</span><span class="n">using</span> <span class="n">full</span> <span class="n">path</span> <span class="n">name</span><span class="p">)</span> <span class="n">to</span>
+  <span class="n">link</span> <span class="n">against</span> <span class="n">to</span> <span class="n">use</span> <span class="n">BLAS</span>
+<span class="n">BLAS95_LIBRARIES</span> <span class="o">-</span> <span class="n">uncached</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">libraries</span> <span class="p">(</span><span class="n">using</span> <span class="n">full</span> <span class="n">path</span> <span class="n">name</span><span class="p">)</span>
+  <span class="n">to</span> <span class="n">link</span> <span class="n">against</span> <span class="n">to</span> <span class="n">use</span> <span class="n">BLAS95</span> <span class="n">interface</span>
+<span class="n">BLAS95_FOUND</span> <span class="o">-</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">true</span> <span class="k">if</span> <span class="n">a</span> <span class="n">library</span> <span class="n">implementing</span> <span class="n">the</span> <span class="n">BLAS</span> <span class="n">f95</span> <span class="n">interface</span>
+  <span class="ow">is</span> <span class="n">found</span>
+<span class="n">BLA_STATIC</span>  <span class="k">if</span> <span class="nb">set</span> <span class="n">on</span> <span class="n">this</span> <span class="n">determines</span> <span class="n">what</span> <span class="n">kind</span> <span class="n">of</span> <span class="n">linkage</span> <span class="n">we</span> <span class="n">do</span> <span class="p">(</span><span class="n">static</span><span class="p">)</span>
+<span class="n">BLA_VENDOR</span>  <span class="k">if</span> <span class="nb">set</span> <span class="n">checks</span> <span class="n">only</span> <span class="n">the</span> <span class="n">specified</span> <span class="n">vendor</span><span class="p">,</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">set</span> <span class="n">checks</span>
+   <span class="nb">all</span> <span class="n">the</span> <span class="n">possibilities</span>
+<span class="n">BLA_F95</span>     <span class="k">if</span> <span class="nb">set</span> <span class="n">on</span> <span class="n">tries</span> <span class="n">to</span> <span class="n">find</span> <span class="n">the</span> <span class="n">f95</span> <span class="n">interfaces</span> <span class="k">for</span> <span class="n">BLAS</span><span class="o">/</span><span class="n">LAPACK</span>
+</pre></div>
+</div>
+<p>######### ## List of vendors (BLA_VENDOR) valid in this module #
+Goto,OpenBLAS,ATLAS PhiPACK,CXML,DXML,SunPerf,SCSL,SGIMATH,IBMESSL,
+Intel10_32 (intel mkl v10 32 bit),Intel10_64lp (intel mkl v10 64 bit,
+lp thread model, lp64 model), # Intel10_64lp_seq (intel mkl v10 64
+bit,sequential code, lp64 model), # Intel( older versions of mkl 32
+and 64 bit), ACML,ACML_MP,ACML_GPU,Apple, NAS, Generic C/CXX should be
+enabled to use Intel mkl</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上個主題</h4>
+  <p class="topless"><a href="FindBISON.html"
+                        title="上一章">FindBISON</a></p>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="FindBacktrace.html"
+                        title="下一章">FindBacktrace</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/FindBLAS.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜尋</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="前往" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="FindBacktrace.html" title="FindBacktrace"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="FindBISON.html" title="FindBISON"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2000-2016 Kitware, Inc. and Contributors。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 創建。
+    </div>
+  </body>
+</html>

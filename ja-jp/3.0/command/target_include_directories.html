@@ -1,0 +1,187 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>target_include_directories &mdash; CMake 3.0.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="target_link_libraries" href="target_link_libraries.html" />
+    <link rel="prev" title="target_compile_options" href="target_compile_options.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="target_link_libraries.html" title="target_link_libraries"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="target_compile_options.html" title="target_compile_options"
+             accesskey="P">前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="target-include-directories">
+<span id="command:target_include_directories"></span><h1>target_include_directories<a class="headerlink" href="#target-include-directories" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Add include directories to a target.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">target_include_directories</span><span class="p">(</span><span class="o">&lt;</span><span class="n">target</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">SYSTEM</span><span class="p">]</span> <span class="p">[</span><span class="n">BEFORE</span><span class="p">]</span>
+  <span class="o">&lt;</span><span class="n">INTERFACE</span><span class="o">|</span><span class="n">PUBLIC</span><span class="o">|</span><span class="n">PRIVATE</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">items1</span><span class="o">...</span><span class="p">]</span>
+  <span class="p">[</span><span class="o">&lt;</span><span class="n">INTERFACE</span><span class="o">|</span><span class="n">PUBLIC</span><span class="o">|</span><span class="n">PRIVATE</span><span class="o">&gt;</span> <span class="p">[</span><span class="n">items2</span><span class="o">...</span><span class="p">]</span> <span class="o">...</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Specify include directories or targets to use when compiling a given
+target.  The named <code class="docutils literal"><span class="pre">&lt;target&gt;</span></code> must have been created by a command such
+as <a class="reference internal" href="add_executable.html#command:add_executable" title="add_executable"><code class="xref cmake cmake-command docutils literal"><span class="pre">add_executable()</span></code></a> or <a class="reference internal" href="add_library.html#command:add_library" title="add_library"><code class="xref cmake cmake-command docutils literal"><span class="pre">add_library()</span></code></a> and must not be an
+<a class="reference internal" href="../prop_tgt/IMPORTED.html#prop_tgt:IMPORTED" title="IMPORTED"><code class="xref cmake cmake-prop_tgt docutils literal"><span class="pre">IMPORTED</span></code></a> target.</p>
+<p>If <code class="docutils literal"><span class="pre">BEFORE</span></code> is specified, the content will be prepended to the property
+instead of being appended.</p>
+<p>The <code class="docutils literal"><span class="pre">INTERFACE</span></code>, <code class="docutils literal"><span class="pre">PUBLIC</span></code> and <code class="docutils literal"><span class="pre">PRIVATE</span></code> keywords are required to specify
+the scope of the following arguments.  <code class="docutils literal"><span class="pre">PRIVATE</span></code> and <code class="docutils literal"><span class="pre">PUBLIC</span></code> items will
+populate the <a class="reference internal" href="../prop_tgt/INCLUDE_DIRECTORIES.html#prop_tgt:INCLUDE_DIRECTORIES" title="INCLUDE_DIRECTORIES"><code class="xref cmake cmake-prop_tgt docutils literal"><span class="pre">INCLUDE_DIRECTORIES</span></code></a> property of <code class="docutils literal"><span class="pre">&lt;target&gt;</span></code>.
+<code class="docutils literal"><span class="pre">PUBLIC</span></code> and <code class="docutils literal"><span class="pre">INTERFACE</span></code> items will populate the
+<a class="reference internal" href="../prop_tgt/INTERFACE_INCLUDE_DIRECTORIES.html#prop_tgt:INTERFACE_INCLUDE_DIRECTORIES" title="INTERFACE_INCLUDE_DIRECTORIES"><code class="xref cmake cmake-prop_tgt docutils literal"><span class="pre">INTERFACE_INCLUDE_DIRECTORIES</span></code></a>
+property of <code class="docutils literal"><span class="pre">&lt;target&gt;</span></code>.  The following arguments specify include
+directories.</p>
+<p>Specified include directories may be absolute paths or relative paths.
+Repeated calls for the same &lt;target&gt; append items in the order called.  If
+<code class="docutils literal"><span class="pre">SYSTEM</span></code> is specified, the compiler will be told the
+directories are meant as system include directories on some platforms
+(signalling this setting might achieve effects such as the compiler
+skipping warnings, or these fixed-install system files not being
+considered in dependency calculations - see compiler docs).  If <code class="docutils literal"><span class="pre">SYSTEM</span></code>
+is used together with <code class="docutils literal"><span class="pre">PUBLIC</span></code> or <code class="docutils literal"><span class="pre">INTERFACE</span></code>, the
+<a class="reference internal" href="../prop_tgt/INTERFACE_SYSTEM_INCLUDE_DIRECTORIES.html#prop_tgt:INTERFACE_SYSTEM_INCLUDE_DIRECTORIES" title="INTERFACE_SYSTEM_INCLUDE_DIRECTORIES"><code class="xref cmake cmake-prop_tgt docutils literal"><span class="pre">INTERFACE_SYSTEM_INCLUDE_DIRECTORIES</span></code></a> target property will be
+populated with the specified directories.</p>
+<p>Arguments to <code class="docutils literal"><span class="pre">target_include_directories</span></code> may use 「generator expressions」
+with the syntax <code class="docutils literal"><span class="pre">$&lt;...&gt;</span></code>.  See the <a class="reference internal" href="../manual/cmake-generator-expressions.7.html#manual:cmake-generator-expressions(7)" title="cmake-generator-expressions(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-generator-expressions(7)</span></code></a>
+manual for available expressions.  See the <a class="reference internal" href="../manual/cmake-buildsystem.7.html#manual:cmake-buildsystem(7)" title="cmake-buildsystem(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">cmake-buildsystem(7)</span></code></a>
+manual for more on defining buildsystem properties.</p>
+<p>Include directories usage requirements commonly differ between the build-tree
+and the install-tree.  The <code class="docutils literal"><span class="pre">BUILD_INTERFACE</span></code> and <code class="docutils literal"><span class="pre">INSTALL_INTERFACE</span></code>
+generator expressions can be used to describe separate usage requirements
+based on the usage location.  Relative paths are allowed within the
+<code class="docutils literal"><span class="pre">INSTALL_INTERFACE</span></code> expression and are interpreted relative to the
+installation prefix.  For example:</p>
+<div class="highlight-cmake"><div class="highlight"><pre><span></span><span class="nb">target_include_directories</span><span class="p">(</span><span class="s">mylib</span><span class="w"> </span><span class="s">PUBLIC</span>
+<span class="w">  </span><span class="o">$&lt;</span><span class="nv">BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/mylib</span><span class="o">&gt;</span>
+<span class="w">  </span><span class="o">$&lt;</span><span class="nv">INSTALL_INTERFACE:include/mylib</span><span class="o">&gt;</span><span class="w">  </span><span class="c"># &lt;prefix&gt;/include/mylib</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="target_compile_options.html"
+                        title="前の章へ">target_compile_options</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="target_link_libraries.html"
+                        title="次の章へ">target_link_libraries</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/command/target_include_directories.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="target_link_libraries.html" title="target_link_libraries"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="target_compile_options.html" title="target_compile_options"
+             >前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2014 Kitware, Inc..
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 で生成しました。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FindRuby &mdash; CMake 3.0.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="FindSDL_image" href="FindSDL_image.html" />
+    <link rel="prev" title="FindRTI" href="FindRTI.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="FindSDL_image.html" title="FindSDL_image"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="FindRTI.html" title="FindRTI"
+             accesskey="P">前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="findruby">
+<span id="module:FindRuby"></span><h1>FindRuby<a class="headerlink" href="#findruby" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Find Ruby</p>
+<p>This module finds if Ruby is installed and determines where the
+include files and libraries are.  Ruby 1.8, 1.9, 2.0 and 2.1 are
+supported.</p>
+<p>The minimum required version of Ruby can be specified using the
+standard syntax, e.g.  find_package(Ruby 1.8)</p>
+<p>It also determines what the name of the library is.  This code sets
+the following variables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">RUBY_EXECUTABLE</span>   <span class="o">=</span> <span class="n">full</span> <span class="n">path</span> <span class="n">to</span> <span class="n">the</span> <span class="n">ruby</span> <span class="n">binary</span>
+<span class="n">RUBY_INCLUDE_DIRS</span> <span class="o">=</span> <span class="n">include</span> <span class="n">dirs</span> <span class="n">to</span> <span class="n">be</span> <span class="n">used</span> <span class="n">when</span> <span class="n">using</span> <span class="n">the</span> <span class="n">ruby</span> <span class="n">library</span>
+<span class="n">RUBY_LIBRARY</span>      <span class="o">=</span> <span class="n">full</span> <span class="n">path</span> <span class="n">to</span> <span class="n">the</span> <span class="n">ruby</span> <span class="n">library</span>
+<span class="n">RUBY_VERSION</span>      <span class="o">=</span> <span class="n">the</span> <span class="n">version</span> <span class="n">of</span> <span class="n">ruby</span> <span class="n">which</span> <span class="n">was</span> <span class="n">found</span><span class="p">,</span> <span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span> <span class="s2">&quot;1.8.7&quot;</span>
+<span class="n">RUBY_FOUND</span>        <span class="o">=</span> <span class="nb">set</span> <span class="n">to</span> <span class="n">true</span> <span class="k">if</span> <span class="n">ruby</span> <span class="n">ws</span> <span class="n">found</span> <span class="n">successfully</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">RUBY_INCLUDE_PATH</span> <span class="o">=</span> <span class="n">same</span> <span class="k">as</span> <span class="n">RUBY_INCLUDE_DIRS</span><span class="p">,</span> <span class="n">only</span> <span class="n">provided</span> <span class="k">for</span> <span class="n">compatibility</span> <span class="n">reasons</span><span class="p">,</span> <span class="n">don</span><span class="s1">&#39;t use it</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="FindRTI.html"
+                        title="前の章へ">FindRTI</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="FindSDL_image.html"
+                        title="次の章へ">FindSDL_image</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/FindRuby.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="FindSDL_image.html" title="FindSDL_image"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="FindRTI.html" title="FindRTI"
+             >前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2014 Kitware, Inc..
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 で生成しました。
+    </div>
+  </body>
+</html>
