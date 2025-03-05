@@ -69,24 +69,6 @@ Introduction
   </a>
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
     <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
-  </a><br /><!-- Newline -->
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/network/members" title="GitHub Forks" target="_blank">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/graphs/contributors" title="GitHub Contributors" target="_blank">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
-    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
-    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
   </a><br />
   <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
     <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" />
