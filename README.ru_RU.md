@@ -63,8 +63,7 @@ Introduction
   </a>
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
     <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
-  </a><br />
-  <!-- Newline -->
+  </a>
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
     <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
   </a>
@@ -83,8 +82,7 @@ Introduction
   </a>
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
     <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
-  </a><br />
-  
+  </a>
   <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
     <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
   </a>
@@ -170,6 +168,16 @@ The translations are contributed in Crowdin Project and downloaded automatically
     <tbody>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
+          <a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
+            <img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" />
+          </a>
+        </td>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+          Build documents by Sphinx and upload build artifacts.
+        </td>
+      </tr>
+      <tr>
+        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
           <a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
@@ -238,7 +246,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-deploy-gh-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy the built documents to <code>gh-pages</code> branch.</td>
+        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download and deploy build artifacts to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
         <td colspan="1" align="right" style="text-align: right; vertical-align: middle;">
