@@ -72,7 +72,7 @@ Introduction
   </a><br />
   <!-- Newline -->
   <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
-    <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD%203--Clause-blue.svg" />
+    <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
   </a>
   <a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
     <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
@@ -110,7 +110,10 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </td>
         <!-- Issues Link -->
         <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" target="_blank">Link</a>
+          <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
+            <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
+          </a>
+          <!-- <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" target="_blank">Link</a> -->
         </td>
       </tr>
       <!-- Mirror -->
