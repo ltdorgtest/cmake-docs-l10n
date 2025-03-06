@@ -39,14 +39,6 @@ on:
         required: true
         type: string
         default: 'all'
-      DEPLOY_ONLY:
-        description: 'DEPLOY_ONLY input'
-        required: true
-        type: choice
-        default: 'false'
-        options:
-          - 'true'
-          - 'false'
       ENABLE_DEPLOY:
         description: 'ENABLE_DEPLOY input'
         required: true
@@ -81,7 +73,7 @@ jobs:
           echo "inputs.VERSION = ${{ inputs.VERSION }}"
           echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
           echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
-          echo "inputs.DEPLOY_ONLY = ${{ inputs.DEPLOY_ONLY }}"
+          echo "inputs.ENABLE_DEPLOY = ${{ inputs.ENABLE_DEPLOY }}"
           echo "[Variables]"
           echo "vars.RUNNER = ${{ vars.RUNNER }}"
           echo "vars.BASEURL_HREF = ${{ vars.BASEURL_HREF }}"
@@ -168,8 +160,7 @@ jobs:
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( inputs.DEPLOY_ONLY != 'true' ) &&
-            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
+    if: ${{ ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
             ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     strategy:
@@ -212,6 +203,5 @@ jobs:
           client-payload: |
             {
               "BUILD_RUN_ID" : "${{ github.run_id }}",
-              "DEPLOY_ONLY" : "${{ inputs.DEPLOY_ONLY || 'false' }}",
-              "DEPLOY_BRANCH" : "gh-pages"
+              "DEPLOY_ONLY" : "false"
             }

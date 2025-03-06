@@ -8,6 +8,22 @@ on:
   repository_dispatch:
     types:
       - sphinx-build-docs
+  # Triggers the workflow manually through the GitHub UI.
+  workflow_dispatch:
+    inputs:
+      BUILD_RUN_ID:
+        description: 'BUILD_RUN_ID input'
+        required: true
+        type: string
+        default: ''
+      DEPLOY_ONLY:
+        description: 'DEPLOY_ONLY input'
+        required: true
+        type: choice
+        default: 'true'
+        options:
+          - 'true'
+          - 'false'
 
 jobs:
   precondition:
@@ -24,8 +40,9 @@ jobs:
           echo "github.event.action = ${{ github.event.action }}"
           echo "github.event.client_payload.BUILD_RUN_ID = ${{ github.event.client_payload.BUILD_RUN_ID }}"
           echo "github.event.client_payload.DEPLOY_ONLY = ${{ github.event.client_payload.DEPLOY_ONLY }}"
-          echo "github.event.client_payload.DEPLOY_BRANCH = ${{ github.event.client_payload.DEPLOY_BRANCH }}"
           echo "[Inputs]"
+          echo "inputs.BUILD_RUN_ID = ${{ inputs.BUILD_RUN_ID }}"
+          echo "inputs.DEPLOY_ONLY = ${{ inputs.DEPLOY_ONLY }}"
           echo "[Variables]"
           echo "vars.RUNNER = ${{ vars.RUNNER }}"
           echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
@@ -76,9 +93,9 @@ jobs:
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
-      BUILD_RUN_ID: ${{ github.event.client_payload.BUILD_RUN_ID }}
-      DEPLOY_ONLY: ${{ github.event.client_payload.DEPLOY_ONLY }}
-      DEPLOY_BRANCH: ${{ github.event.client_payload.DEPLOY_BRANCH }}
+      BUILD_RUN_ID: ${{ github.event.client_payload.BUILD_RUN_ID || inputs.BUILD_RUN_ID }}
+      DEPLOY_ONLY: ${{ github.event.client_payload.DEPLOY_ONLY || inputs.DEPLOY_ONLY }}
+      DEPLOY_BRANCH: 'gh-pages'
       CALLER_JOB: 'caller'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
