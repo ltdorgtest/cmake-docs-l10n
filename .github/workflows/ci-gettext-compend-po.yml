@@ -24,7 +24,7 @@ on:
         description: 'VERSION input (for single type)'
         required: true
         type: string
-        default: 'v3.0'
+        default: '3.0'
       VERSION_GROUP:
         description: 'VERSION_GROUP input (for group type)'
         required: true
