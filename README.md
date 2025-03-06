@@ -99,7 +99,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Header -->
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Issues</th>
+        <!-- <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Issues</th> -->
       </tr>
       <!-- Main -->
       <tr>
@@ -109,12 +109,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
           <a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
+        <!-- <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
             <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
           </a>
-          <!-- <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" target="_blank">Link</a> -->
-        </td>
+        </td> -->
       </tr>
       <!-- Mirror -->
       <tr>
@@ -124,7 +123,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           <a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <!-- <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td> -->
       </tr>
       <tr>
         <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
@@ -132,7 +131,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           <a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
         <!-- Issues Link -->
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <!-- <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td> -->
       </tr>
     </tbody>
   </table>
@@ -522,7 +521,7 @@ It will inspire author to make more and more localization projects for open-sour
 Sponsorship
 </a></h2>
 
-Alternatively, you can sponsor the author through the following platforms and e-payments:
+You can sponsor the author through the following platforms:
 
 <div align="center">
   <table>
