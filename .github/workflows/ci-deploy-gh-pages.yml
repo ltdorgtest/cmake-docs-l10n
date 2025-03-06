@@ -15,7 +15,7 @@ on:
         description: 'BUILD_RUN_ID input'
         required: true
         type: string
-        default: ''
+        default: 'none'
       DEPLOY_ONLY:
         description: 'DEPLOY_ONLY input'
         required: true
