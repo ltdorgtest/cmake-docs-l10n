@@ -187,10 +187,7 @@ jobs:
 
   dispatch:
     needs: [ 'caller' ]
-    if: ${{ ( always() ) &&
-            ( !contains(needs.*.result, 'failure') ) &&
-            ( !contains(needs.*.result, 'cancelled') ) &&
-            ( inputs.ENABLE_DEPLOY != 'false' ) &&
+    if: ${{ ( inputs.ENABLE_DEPLOY != 'false' ) &&
             ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
