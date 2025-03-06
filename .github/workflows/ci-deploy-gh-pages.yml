@@ -84,9 +84,9 @@ jobs:
 
   caller:
     needs: [ 'precondition' ]
-    if: ${{ ( ( github.event_name == 'workflow_dispatch' ) ||
-              ( github.event_name == 'repository_dispatch' &&
-                github.event.action == 'sphinx-build-docs' ) ) }}
+    if: ${{ ( ( github.event_name == 'repository_dispatch' &&
+                github.event.action == 'sphinx-build-docs' ) ) ||
+              ( github.event_name == 'workflow_dispatch' ) }}
     concurrency:
       group: ${{ github.workflow }}
       cancel-in-progress: true
