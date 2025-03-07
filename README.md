@@ -509,11 +509,13 @@ Support this Project
 
 You can contribute and support this project by doing any of the following:
 
-- Star the project on GitHub or other mirrors.
-- Submit issues on GitHub/GitCode/GitFlic if you found any bug.
-- Feel free to submit pull requests on GitHub if you know how to fix the bug.
-- Contribute your translations on Crowdin.
-- If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.
+<ul>
+  <li>Star the project on GitHub or other mirrors.</li>
+  <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a>/<a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n/issues">GitCode</a>/GitFlic if you found any bug.</li>
+  <li>Submit pull requests on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls">GitHub</a> if you know how to fix the bug.</li>
+  <li>Contribute your translations on <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n">Crowdin</a>.</li>
+  <li>If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.</li>
+</ul>
 
 It will inspire author to make more and more localization projects for open-source documentation.
 
