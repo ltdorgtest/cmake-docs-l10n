@@ -267,17 +267,17 @@ Progress of Translations
   <table>
     <thead>
       <tr>
-        <th align="center" style="text-align: center; vertical-align: middle;">Language<br />Code</th>
-        <th align="center" style="text-align: center; vertical-align: middle;">Language Name<br />Localized Name</th>
-        <th align="center" style="text-align: center; vertical-align: middle;">Translated<br />Proofread</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language<br />Code</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Name<br />Localized Name</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Translated<br />Proofread</th>
       </tr>
     </thead>
     <tbody>
       <!-- ja_JP -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">Japanese<br />日本語</td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Japanese<br />日本語</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
             <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
           </a><br />
@@ -288,9 +288,9 @@ Progress of Translations
       </tr>
       <!-- ko_KR -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">Korean<br />한국인</td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Korean<br />한국인</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
             <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
           </a><br />
@@ -301,9 +301,9 @@ Progress of Translations
       </tr>
       <!-- ru_RU -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">Russian<br />Русский</td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Russian<br />Русский</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
             <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
           </a><br />
@@ -313,9 +313,9 @@ Progress of Translations
         </td>
       </tr>
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
             <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
           </a><br />
@@ -325,9 +325,9 @@ Progress of Translations
         </td>
       </tr>
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
             <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
           </a><br />
@@ -354,13 +354,13 @@ You can preview translations in GitHub Pages:
   <table>
     <tbody>
       <tr>
-        <th align="center" style="text-align: center; vertical-align: middle;">Language</th>
-        <th align="center" style="text-align: center; vertical-align: middle;">Version</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
       </tr>
       <!-- ja_JP -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp/master">master</a>
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp/latest">latest</a>
           <span>…</span>
@@ -371,8 +371,8 @@ You can preview translations in GitHub Pages:
       </tr>
       <!-- ko_KR -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr/master">master</a>
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr/latest">latest</a>
           <span>…</span>
@@ -383,8 +383,8 @@ You can preview translations in GitHub Pages:
       </tr>
       <!-- ru_RU -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru/master">master</a>
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru/latest">latest</a>
           <span>…</span>
@@ -395,8 +395,8 @@ You can preview translations in GitHub Pages:
       </tr>
       <!-- zh_CN -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn/master">master</a>
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn/latest">latest</a>
           <span>…</span>
@@ -407,8 +407,8 @@ You can preview translations in GitHub Pages:
       </tr>
       <!-- zh_TW -->
       <tr>
-        <td align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
-        <td align="center" style="text-align: center; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw/master">master</a>
           <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw/latest">latest</a>
           <span>…</span>
@@ -511,7 +511,7 @@ You can contribute and support this project by doing any of the following:
 
 <ul>
   <li>Star the project on GitHub or other mirrors.</li>
-  <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a>/<a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n/issues">GitCode</a>/GitFlic if you found any bug.</li>
+  <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a>/<a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n/issues">GitCode</a> if you found any bug.</li>
   <li>Submit pull requests on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls">GitHub</a> if you know how to fix the bug.</li>
   <li>Contribute your translations on <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n">Crowdin</a>.</li>
   <li>If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.</li>
@@ -528,19 +528,22 @@ You can sponsor the author through the following platforms:
 <div align="center">
   <table>
     <tbody>
+      <tr>
+        <th rowspan="1" colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">Haowei Hsu</th>
+      </tr>
       <!-- Row 1 -->
       <tr>
-        <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Patreon</th>
-        <th colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Afdian</th>
+        <th rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Patreon</th>
+        <th rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Afdian</th>
       </tr>
       <!-- Row 2 -->
       <tr>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+        <td rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
           <a href="https://www.patreon.com/hwhsu1231" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon" />
           </a>
         </td>
-        <td colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
+        <td rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center">
           <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
             <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian" />
           </a>
