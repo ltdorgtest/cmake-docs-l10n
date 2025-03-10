@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-10 08:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -101,22 +102,24 @@ msgstr ""
 #: ../../../cpack_gen/rpm.rst:342 ../../../cpack_gen/rpm.rst:364
 #: ../../../cpack_gen/rpm.rst:382 ../../../cpack_gen/rpm.rst:400
 #: ../../../cpack_gen/rpm.rst:418 ../../../cpack_gen/rpm.rst:434
-#: ../../../cpack_gen/rpm.rst:447 ../../../cpack_gen/rpm.rst:460
-#: ../../../cpack_gen/rpm.rst:469 ../../../cpack_gen/rpm.rst:487
-#: ../../../cpack_gen/rpm.rst:500 ../../../cpack_gen/rpm.rst:515
-#: ../../../cpack_gen/rpm.rst:528 ../../../cpack_gen/rpm.rst:539
-#: ../../../cpack_gen/rpm.rst:557 ../../../cpack_gen/rpm.rst:581
-#: ../../../cpack_gen/rpm.rst:602 ../../../cpack_gen/rpm.rst:621
-#: ../../../cpack_gen/rpm.rst:632 ../../../cpack_gen/rpm.rst:661
-#: ../../../cpack_gen/rpm.rst:674 ../../../cpack_gen/rpm.rst:699
-#: ../../../cpack_gen/rpm.rst:712 ../../../cpack_gen/rpm.rst:725
-#: ../../../cpack_gen/rpm.rst:754 ../../../cpack_gen/rpm.rst:767
-#: ../../../cpack_gen/rpm.rst:780 ../../../cpack_gen/rpm.rst:805
-#: ../../../cpack_gen/rpm.rst:818 ../../../cpack_gen/rpm.rst:887
-#: ../../../cpack_gen/rpm.rst:947 ../../../cpack_gen/rpm.rst:962
-#: ../../../cpack_gen/rpm.rst:971 ../../../cpack_gen/rpm.rst:994
-#: ../../../cpack_gen/rpm.rst:1062 ../../../cpack_gen/rpm.rst:1075
-#: ../../../cpack_gen/rpm.rst:1090 ../../../cpack_gen/rpm.rst:1105
+#: ../../../cpack_gen/rpm.rst:449 ../../../cpack_gen/rpm.rst:464
+#: ../../../cpack_gen/rpm.rst:479 ../../../cpack_gen/rpm.rst:492
+#: ../../../cpack_gen/rpm.rst:505 ../../../cpack_gen/rpm.rst:514
+#: ../../../cpack_gen/rpm.rst:532 ../../../cpack_gen/rpm.rst:545
+#: ../../../cpack_gen/rpm.rst:560 ../../../cpack_gen/rpm.rst:573
+#: ../../../cpack_gen/rpm.rst:584 ../../../cpack_gen/rpm.rst:602
+#: ../../../cpack_gen/rpm.rst:626 ../../../cpack_gen/rpm.rst:647
+#: ../../../cpack_gen/rpm.rst:666 ../../../cpack_gen/rpm.rst:677
+#: ../../../cpack_gen/rpm.rst:706 ../../../cpack_gen/rpm.rst:719
+#: ../../../cpack_gen/rpm.rst:744 ../../../cpack_gen/rpm.rst:757
+#: ../../../cpack_gen/rpm.rst:770 ../../../cpack_gen/rpm.rst:799
+#: ../../../cpack_gen/rpm.rst:812 ../../../cpack_gen/rpm.rst:825
+#: ../../../cpack_gen/rpm.rst:850 ../../../cpack_gen/rpm.rst:863
+#: ../../../cpack_gen/rpm.rst:932 ../../../cpack_gen/rpm.rst:992
+#: ../../../cpack_gen/rpm.rst:1007 ../../../cpack_gen/rpm.rst:1016
+#: ../../../cpack_gen/rpm.rst:1039 ../../../cpack_gen/rpm.rst:1107
+#: ../../../cpack_gen/rpm.rst:1120 ../../../cpack_gen/rpm.rst:1135
+#: ../../../cpack_gen/rpm.rst:1150
 msgid "No"
 msgstr ""
 
@@ -125,8 +128,8 @@ msgid "Default"
 msgstr ""
 
 #: ../../../cpack_gen/rpm.rst:49 ../../../cpack_gen/rpm.rst:182
-#: ../../../cpack_gen/rpm.rst:888 ../../../cpack_gen/rpm.rst:972
-#: ../../../cpack_gen/rpm.rst:1063
+#: ../../../cpack_gen/rpm.rst:933 ../../../cpack_gen/rpm.rst:1017
+#: ../../../cpack_gen/rpm.rst:1108
 msgid "``OFF``"
 msgstr ""
 
@@ -145,7 +148,7 @@ msgstr ""
 #: ../../../cpack_gen/rpm.rst:148 ../../../cpack_gen/rpm.rst:160
 #: ../../../cpack_gen/rpm.rst:192 ../../../cpack_gen/rpm.rst:200
 #: ../../../cpack_gen/rpm.rst:210 ../../../cpack_gen/rpm.rst:229
-#: ../../../cpack_gen/rpm.rst:1083
+#: ../../../cpack_gen/rpm.rst:1128
 msgid "Yes"
 msgstr ""
 
@@ -368,8 +371,8 @@ msgstr ""
 msgid "RPM compression type."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:246 ../../../cpack_gen/rpm.rst:781
-#: ../../../cpack_gen/rpm.rst:806 ../../../cpack_gen/rpm.rst:819
+#: ../../../cpack_gen/rpm.rst:246 ../../../cpack_gen/rpm.rst:826
+#: ../../../cpack_gen/rpm.rst:851 ../../../cpack_gen/rpm.rst:864
 msgid "(system default)"
 msgstr ""
 
@@ -586,47 +589,83 @@ msgid ""
 "setting this variable."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:445
+#: ../../../cpack_gen/rpm.rst:447
+msgid "RPM spec recommends field."
+msgstr ""
+
+#: ../../../cpack_gen/rpm.rst:452
+msgid ""
+"May be used to set weak RPM dependencies (recommends). If ``rpmbuild`` "
+"doesn't support the ``Recommends`` tag, CPack will emit a warning and ignore "
+"this variable. Note that you must enclose the entire value between quotes "
+"when setting this variable."
+msgstr ""
+
+#: ../../../cpack_gen/rpm.rst:462
+msgid "RPM spec supplements field."
+msgstr ""
+
+#: ../../../cpack_gen/rpm.rst:467
+msgid ""
+"May be used to set weak RPM dependencies (supplements). If ``rpmbuild`` "
+"doesn't support the ``Supplements`` tag, CPack will emit a warning and "
+"ignore this variable. Note that you must enclose the entire value between "
+"quotes when setting this variable."
+msgstr ""
+
+#: ../../../cpack_gen/rpm.rst:477
+msgid "RPM spec enhances field."
+msgstr ""
+
+#: ../../../cpack_gen/rpm.rst:482
+msgid ""
+"May be used to set weak RPM dependencies (enhances). If ``rpmbuild`` doesn't "
+"support the ``Enhances`` tag, CPack will emit a warning and ignore this "
+"variable. Note that you must enclose the entire value between quotes when "
+"setting this variable."
+msgstr ""
+
+#: ../../../cpack_gen/rpm.rst:490
 msgid "RPM spec provides field."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:450
+#: ../../../cpack_gen/rpm.rst:495
 msgid ""
 "May be used to set RPM dependencies (provides). The provided package list of "
 "an RPM file could be printed with::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:453
+#: ../../../cpack_gen/rpm.rst:498
 msgid "rpm -qp --provides file.rpm"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:458
+#: ../../../cpack_gen/rpm.rst:503
 msgid "RPM spec obsoletes field."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:463
+#: ../../../cpack_gen/rpm.rst:508
 msgid "May be used to set RPM packages that are obsoleted by this one."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:467
+#: ../../../cpack_gen/rpm.rst:512
 msgid "build a relocatable RPM."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:470
+#: ../../../cpack_gen/rpm.rst:515
 msgid "CPACK_PACKAGE_RELOCATABLE"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:472
+#: ../../../cpack_gen/rpm.rst:517
 msgid ""
 "If this variable is set to TRUE or ON, the CPack RPM generator will try to "
 "build a relocatable RPM package. A relocatable RPM may be installed using::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:476
+#: ../../../cpack_gen/rpm.rst:521
 msgid "rpm --prefix or --relocate"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:478
+#: ../../../cpack_gen/rpm.rst:523
 msgid ""
 "in order to install it at an alternate place see rpm(8). Note that currently "
 "this may fail if :variable:`CPACK_SET_DESTDIR` is set to ``ON``. If :"
@@ -634,11 +673,11 @@ msgid ""
 "if there is file installed with absolute path you'll get unexpected behavior."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:485
+#: ../../../cpack_gen/rpm.rst:530
 msgid "Use :variable:`CPACK_RPM_SPEC_MORE_DEFINE` instead."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:490
+#: ../../../cpack_gen/rpm.rst:535
 msgid ""
 "May be used to override the ``__spec_install_post`` section within the "
 "generated spec file.  This affects the install step during package creation, "
@@ -647,72 +686,72 @@ msgid ""
 "`CPACK_RPM_POST_INSTALL_SCRIPT_FILE` instead."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:498
+#: ../../../cpack_gen/rpm.rst:543
 msgid "RPM extended spec definitions lines."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:503
+#: ../../../cpack_gen/rpm.rst:548
 msgid ""
 "May be used to add any ``%define`` lines to the generated spec file.  An "
 "example of its use is to prevent stripping of executables (but note that "
 "this may also disable other default post install processing):"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:507
+#: ../../../cpack_gen/rpm.rst:552
 msgid ""
 "set(CPACK_RPM_SPEC_MORE_DEFINE \"%define __spec_install_post /bin/true\")"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:513
+#: ../../../cpack_gen/rpm.rst:558
 msgid "Toggle CPack RPM generator debug output."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:518
+#: ../../../cpack_gen/rpm.rst:563
 msgid ""
 "May be set when invoking cpack in order to trace debug information during "
 "CPack RPM run. For example you may launch CPack like this::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:521
+#: ../../../cpack_gen/rpm.rst:566
 msgid "cpack -D CPACK_RPM_PACKAGE_DEBUG=1 -G RPM"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:526
+#: ../../../cpack_gen/rpm.rst:571
 msgid "A user provided spec file."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:531
+#: ../../../cpack_gen/rpm.rst:576
 msgid ""
 "May be set by the user in order to specify a USER binary spec file to be "
 "used by the CPack RPM generator instead of generating the file. The "
 "specified file will be processed by configure_file(@ONLY)."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:537
+#: ../../../cpack_gen/rpm.rst:582
 msgid "Spec file template."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:542
+#: ../../../cpack_gen/rpm.rst:587
 msgid ""
 "If set CPack will generate a template for USER specified binary spec file "
 "and stop with an error. For example launch CPack like this::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:545
+#: ../../../cpack_gen/rpm.rst:590
 msgid "cpack -D CPACK_RPM_GENERATE_USER_BINARY_SPECFILE_TEMPLATE=1 -G RPM"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:547
+#: ../../../cpack_gen/rpm.rst:592
 msgid ""
 "The user may then use this file in order to hand-craft is own binary spec "
 "file which may be used with :variable:`CPACK_RPM_USER_BINARY_SPECFILE`."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:555
+#: ../../../cpack_gen/rpm.rst:600
 msgid "Path to file containing pre install/uninstall/transaction script."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:560
+#: ../../../cpack_gen/rpm.rst:605
 msgid ""
 "May be used to embed a pre installation/uninstallation/transaction script in "
 "the spec file. The referred script file (or both) will be read and directly "
@@ -725,19 +764,19 @@ msgid ""
 "has been included with::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:570 ../../../cpack_gen/rpm.rst:594
+#: ../../../cpack_gen/rpm.rst:615 ../../../cpack_gen/rpm.rst:639
 msgid "rpm -qp --scripts  package.rpm"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:572
+#: ../../../cpack_gen/rpm.rst:617
 msgid "The :variable:`!CPACK_RPM_PRE_TRANS_SCRIPT_FILE` variable."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:579
+#: ../../../cpack_gen/rpm.rst:624
 msgid "Path to file containing post install/uninstall/transaction script."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:584
+#: ../../../cpack_gen/rpm.rst:629
 msgid ""
 "May be used to embed a post installation/uninstallation/transaction script "
 "in the spec file. The referred script file (or both) will be read and "
@@ -750,11 +789,11 @@ msgid ""
 "has been included with::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:596
+#: ../../../cpack_gen/rpm.rst:641
 msgid "The :variable:`!CPACK_RPM_POST_TRANS_SCRIPT_FILE` variable."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:605
+#: ../../../cpack_gen/rpm.rst:650
 msgid ""
 "May be used to explicitly specify ``%(<directive>)`` file line in the spec "
 "file. Like ``%config(noreplace)`` or any other directive that be found in "
@@ -764,75 +803,75 @@ msgid ""
 "list. If referring to directories do not add a trailing slash."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:613
+#: ../../../cpack_gen/rpm.rst:658
 msgid ""
 "You can have multiple directives per line, as in ``%attr(600,root,root) "
 "%config(noreplace)``."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:619
+#: ../../../cpack_gen/rpm.rst:664
 msgid "RPM changelog file."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:624
+#: ../../../cpack_gen/rpm.rst:669
 msgid ""
 "May be used to embed a changelog in the spec file. The referred file will be "
 "read and directly put after the ``%changelog`` section."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:630
+#: ../../../cpack_gen/rpm.rst:675
 msgid "list of path to be excluded."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:634 ../../../cpack_gen/rpm.rst:949
+#: ../../../cpack_gen/rpm.rst:679 ../../../cpack_gen/rpm.rst:994
 msgid "The following paths are excluded by default:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:635
+#: ../../../cpack_gen/rpm.rst:680
 msgid "``/etc``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:636
+#: ../../../cpack_gen/rpm.rst:681
 msgid "``/etc/init.d``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:637 ../../../cpack_gen/rpm.rst:950
+#: ../../../cpack_gen/rpm.rst:682 ../../../cpack_gen/rpm.rst:995
 msgid "``/usr``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:638
+#: ../../../cpack_gen/rpm.rst:683
 msgid "``/usr/bin``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:639
+#: ../../../cpack_gen/rpm.rst:684
 msgid "``/usr/include``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:640
+#: ../../../cpack_gen/rpm.rst:685
 msgid "``/usr/lib``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:641
+#: ../../../cpack_gen/rpm.rst:686
 msgid "``/usr/libx32``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:642
+#: ../../../cpack_gen/rpm.rst:687
 msgid "``/usr/lib64``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:643
+#: ../../../cpack_gen/rpm.rst:688
 msgid "``/usr/share``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:644
+#: ../../../cpack_gen/rpm.rst:689
 msgid "``/usr/share/aclocal``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:645
+#: ../../../cpack_gen/rpm.rst:690
 msgid "``/usr/share/doc``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:647
+#: ../../../cpack_gen/rpm.rst:692
 msgid ""
 "May be used to exclude path (directories or files) from the auto-generated "
 "list of paths discovered by CPack RPM. The default value contains a "
@@ -842,26 +881,26 @@ msgid ""
 "can use :variable:`CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST_ADDITION` variable."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:654
+#: ../../../cpack_gen/rpm.rst:699
 msgid "Added ``/usr/share/aclocal`` to the default list of excludes."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:659
+#: ../../../cpack_gen/rpm.rst:704
 msgid "additional list of path to be excluded."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:664
+#: ../../../cpack_gen/rpm.rst:709
 msgid ""
 "May be used to add more exclude path (directories or files) from the initial "
 "default list of excluded paths. See :variable:"
 "`CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST`."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:672
+#: ../../../cpack_gen/rpm.rst:717
 msgid "Packages relocation paths list."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:677
+#: ../../../cpack_gen/rpm.rst:722
 msgid ""
 "May be used to specify more than one relocation path per relocatable RPM. "
 "Variable contains a list of relocation paths that if relative are prefixed "
@@ -880,88 +919,88 @@ msgid ""
 "that RPM will be partially relocatable."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:697
+#: ../../../cpack_gen/rpm.rst:742
 msgid "Per component relocation path install prefix."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:700
+#: ../../../cpack_gen/rpm.rst:745
 msgid ":variable:`CPACK_PACKAGING_INSTALL_PREFIX`"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:702
+#: ../../../cpack_gen/rpm.rst:747
 msgid ""
 "May be used to set per component :variable:`CPACK_PACKAGING_INSTALL_PREFIX` "
 "for relocatable RPM packages."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:710
+#: ../../../cpack_gen/rpm.rst:755
 msgid "Removal of default install prefix from relocation paths list."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:713
+#: ../../../cpack_gen/rpm.rst:758
 msgid ""
 ":variable:`CPACK_PACKAGING_INSTALL_PREFIX` or :variable:"
 "`CPACK_RPM_<COMPONENT>_PACKAGE_PREFIX` are treated as one of relocation paths"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:717
+#: ../../../cpack_gen/rpm.rst:762
 msgid ""
 "May be used to remove :variable:`CPACK_PACKAGING_INSTALL_PREFIX` and :"
 "variable:`CPACK_RPM_<COMPONENT>_PACKAGE_PREFIX` from relocatable RPM prefix "
 "paths."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:727
+#: ../../../cpack_gen/rpm.rst:772
 msgid ""
 "Regular expressions that are added by default were taken from ``brp-"
 "compress`` RPM macro:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:728
+#: ../../../cpack_gen/rpm.rst:773
 msgid "``/usr/man/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:729
+#: ../../../cpack_gen/rpm.rst:774
 msgid "``/usr/man/.*/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:730
+#: ../../../cpack_gen/rpm.rst:775
 msgid "``/usr/info.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:731
+#: ../../../cpack_gen/rpm.rst:776
 msgid "``/usr/share/man/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:732
+#: ../../../cpack_gen/rpm.rst:777
 msgid "``/usr/share/man/.*/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:733
+#: ../../../cpack_gen/rpm.rst:778
 msgid "``/usr/share/info.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:734
+#: ../../../cpack_gen/rpm.rst:779
 msgid "``/usr/kerberos/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:735
+#: ../../../cpack_gen/rpm.rst:780
 msgid "``/usr/X11R6/man/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:736
+#: ../../../cpack_gen/rpm.rst:781
 msgid "``/usr/lib/perl5/man/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:737
+#: ../../../cpack_gen/rpm.rst:782
 msgid "``/usr/share/doc/.*/man/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:738
+#: ../../../cpack_gen/rpm.rst:783
 msgid "``/usr/lib/.*/man/man.*``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:740
+#: ../../../cpack_gen/rpm.rst:785
 msgid ""
 "May be used to set additional man dirs that could potentially be compressed "
 "by brp-compress RPM macro. Variable content must be a list of regular "
@@ -971,119 +1010,119 @@ msgid ""
 "added to RPM configuration by the operating system."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:752
+#: ../../../cpack_gen/rpm.rst:797
 msgid "default user ownership of RPM content"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:755
+#: ../../../cpack_gen/rpm.rst:800
 msgid "``root``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:757
+#: ../../../cpack_gen/rpm.rst:802
 msgid ""
 "Value should be user name and not UID. Note that ``<compName>`` must be in "
 "upper-case."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:765
+#: ../../../cpack_gen/rpm.rst:810
 msgid "default group ownership of RPM content"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:768
+#: ../../../cpack_gen/rpm.rst:813
 msgid "root"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:770
+#: ../../../cpack_gen/rpm.rst:815
 msgid ""
 "Value should be group name and not GID. Note that ``<compName>`` must be in "
 "upper-case."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:778
+#: ../../../cpack_gen/rpm.rst:823
 msgid "default permissions used for packaged files"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:783
+#: ../../../cpack_gen/rpm.rst:828
 msgid "Accepted values are lists with PERMISSIONS. Valid permissions are:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:786
+#: ../../../cpack_gen/rpm.rst:831
 msgid "``OWNER_READ``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:787
+#: ../../../cpack_gen/rpm.rst:832
 msgid "``OWNER_WRITE``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:788
+#: ../../../cpack_gen/rpm.rst:833
 msgid "``OWNER_EXECUTE``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:789
+#: ../../../cpack_gen/rpm.rst:834
 msgid "``GROUP_READ``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:790
+#: ../../../cpack_gen/rpm.rst:835
 msgid "``GROUP_WRITE``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:791
+#: ../../../cpack_gen/rpm.rst:836
 msgid "``GROUP_EXECUTE``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:792
+#: ../../../cpack_gen/rpm.rst:837
 msgid "``WORLD_READ``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:793
+#: ../../../cpack_gen/rpm.rst:838
 msgid "``WORLD_WRITE``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:794
+#: ../../../cpack_gen/rpm.rst:839
 msgid "``WORLD_EXECUTE``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:796
+#: ../../../cpack_gen/rpm.rst:841
 msgid "Note that ``<compName>`` must be in upper-case."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:803
+#: ../../../cpack_gen/rpm.rst:848
 msgid "default permissions used for packaged directories"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:808
+#: ../../../cpack_gen/rpm.rst:853
 msgid ""
 "Accepted values are lists with PERMISSIONS. Valid permissions are the same "
 "as for :variable:`CPACK_RPM_DEFAULT_FILE_PERMISSIONS`. Note that "
 "``<compName>`` must be in upper-case."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:816
+#: ../../../cpack_gen/rpm.rst:861
 msgid "force execute permissions on programs and shared libraries"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:821
+#: ../../../cpack_gen/rpm.rst:866
 msgid ""
 "Force set owner, group and world execute permissions on programs and shared "
 "libraries. This can be used for creating valid rpm packages on systems such "
 "as Debian where shared libraries do not have execute permissions set."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:827
+#: ../../../cpack_gen/rpm.rst:872
 msgid ""
 "Programs and shared libraries without execute permissions are ignored during "
 "separation of debug symbols from the binary for debuginfo packages."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:831
+#: ../../../cpack_gen/rpm.rst:876
 msgid "Packaging of Symbolic Links"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:835
+#: ../../../cpack_gen/rpm.rst:880
 msgid "The CPack RPM generator supports packaging of symbolic links:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:837
+#: ../../../cpack_gen/rpm.rst:882
 msgid ""
 "execute_process(COMMAND ${CMAKE_COMMAND}\n"
 "  -E create_symlink <relative_path_location> <symlink_name>)\n"
@@ -1091,14 +1130,14 @@ msgid ""
 "  DESTINATION <symlink_location> COMPONENT libraries)"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:844
+#: ../../../cpack_gen/rpm.rst:889
 msgid ""
 "Symbolic links will be optimized (paths will be shortened if possible) "
 "before being added to the package or if multiple relocation paths are "
 "detected, a post install symlink relocation script will be generated."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:848
+#: ../../../cpack_gen/rpm.rst:893
 msgid ""
 "Symbolic links may point to locations that are not packaged by the same "
 "package (either a different component or even not packaged at all) but those "
@@ -1107,18 +1146,18 @@ msgid ""
 "script - depending on relocation paths."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:854
+#: ../../../cpack_gen/rpm.rst:899
 msgid ""
 "Symbolic links that point to locations outside packaging path produce a "
 "warning and are treated as non relocatable permanent symbolic links. "
 "Previous versions of CMake produced an error in this case."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:859
+#: ../../../cpack_gen/rpm.rst:904
 msgid "Currently there are a few limitations though:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:861
+#: ../../../cpack_gen/rpm.rst:906
 msgid ""
 "For component based packaging component interdependency is not checked when "
 "processing symbolic links. Symbolic links pointing to content of a different "
@@ -1126,7 +1165,7 @@ msgid ""
 "be packaged."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:866
+#: ../../../cpack_gen/rpm.rst:911
 msgid ""
 "Symbolic links pointing to a location through one or more intermediate "
 "symbolic links will not be handled differently - if the intermediate "
@@ -1134,31 +1173,31 @@ msgid ""
 "installation may cause initial symbolic link to point to an invalid location."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:873
+#: ../../../cpack_gen/rpm.rst:918
 msgid "Packaging of debug information"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:877
+#: ../../../cpack_gen/rpm.rst:922
 msgid ""
 "Debuginfo packages contain debug symbols and sources for debugging packaged "
 "binaries."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:880
+#: ../../../cpack_gen/rpm.rst:925
 msgid "Debuginfo RPM packaging has its own set of variables:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:885
+#: ../../../cpack_gen/rpm.rst:930
 msgid "Enable generation of debuginfo RPM package(s)."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:892
+#: ../../../cpack_gen/rpm.rst:937
 msgid ""
 "Binaries must contain debug symbols before packaging so use either ``Debug`` "
 "or ``RelWithDebInfo`` for :variable:`CMAKE_BUILD_TYPE` variable value."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:895
+#: ../../../cpack_gen/rpm.rst:940
 msgid ""
 "Additionally, if :variable:`CPACK_STRIP_FILES` is set, the files will be "
 "stripped before they get to the RPM generator, so will not contain debug "
@@ -1166,48 +1205,48 @@ msgid ""
 "variable:`CPACK_STRIP_FILES`."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:901
+#: ../../../cpack_gen/rpm.rst:946
 msgid ""
 "Packages generated from packages without binary files, with binary files but "
 "without execute permissions or without debug symbols will cause packaging "
 "termination."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:907
+#: ../../../cpack_gen/rpm.rst:952
 msgid ""
 "Provides locations of root directories of source files from which binaries "
 "were built."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:910 ../../../cpack_gen/rpm.rst:928
+#: ../../../cpack_gen/rpm.rst:955 ../../../cpack_gen/rpm.rst:973
 msgid "Yes if :variable:`CPACK_RPM_DEBUGINFO_PACKAGE` is set"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:915
+#: ../../../cpack_gen/rpm.rst:960
 msgid ""
 "For CMake project :variable:`CPACK_BUILD_SOURCE_DIRS` is set by default to "
 "point to :variable:`CMAKE_SOURCE_DIR` and :variable:`CMAKE_BINARY_DIR` paths."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:920
+#: ../../../cpack_gen/rpm.rst:965
 msgid ""
 "Sources with path prefixes that do not fall under any location provided "
 "with :variable:`CPACK_BUILD_SOURCE_DIRS` will not be present in debuginfo "
 "package."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:926
+#: ../../../cpack_gen/rpm.rst:971
 msgid ""
 "Prefix of location where sources will be placed during package installation."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:929
+#: ../../../cpack_gen/rpm.rst:974
 msgid ""
 "``/usr/src/debug/${CPACK_PACKAGE_FILE_NAME}`` and for component packaging ``/"
 "usr/src/debug/${CPACK_PACKAGE_FILE_NAME}-<component>``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:934
+#: ../../../cpack_gen/rpm.rst:979
 msgid ""
 "Each source path prefix is additionally suffixed by ``src_<index>`` where "
 "index is index of the path used from :variable:`CPACK_BUILD_SOURCE_DIRS` "
@@ -1219,110 +1258,110 @@ msgid ""
 "longer path."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:945
+#: ../../../cpack_gen/rpm.rst:990
 msgid ""
 "Directories containing sources that should be excluded from debuginfo "
 "packages."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:951
+#: ../../../cpack_gen/rpm.rst:996
 msgid "``/usr/src``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:952
+#: ../../../cpack_gen/rpm.rst:997
 msgid "``/usr/src/debug``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:954
+#: ../../../cpack_gen/rpm.rst:999
 msgid ""
 "Listed paths are owned by other RPM packages and should therefore not be "
 "deleted on debuginfo package uninstallation."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:959
+#: ../../../cpack_gen/rpm.rst:1004
 msgid ""
 "Paths that should be appended to :variable:"
 "`CPACK_RPM_DEBUGINFO_EXCLUDE_DIRS` for exclusion."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:969
+#: ../../../cpack_gen/rpm.rst:1014
 msgid "Create a single debuginfo package even if components packaging is set."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:974
+#: ../../../cpack_gen/rpm.rst:1019
 msgid ""
 "When this variable is enabled it produces a single debuginfo package even if "
 "component packaging is enabled."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:977
+#: ../../../cpack_gen/rpm.rst:1022
 msgid ""
 "When using this feature in combination with components packaging and there "
 "is more than one component this variable requires :variable:"
 "`CPACK_RPM_MAIN_COMPONENT` to be set."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:983
+#: ../../../cpack_gen/rpm.rst:1028
 msgid ""
 "If none of the :variable:`CPACK_RPM_<component>_DEBUGINFO_PACKAGE` variables "
 "is set then :variable:`CPACK_RPM_DEBUGINFO_PACKAGE` is automatically set to "
 "``ON`` when :variable:`CPACK_RPM_DEBUGINFO_SINGLE_PACKAGE` is set."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:992
+#: ../../../cpack_gen/rpm.rst:1037
 msgid "Debuginfo package file name."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:995
+#: ../../../cpack_gen/rpm.rst:1040
 msgid "rpmbuild tool generated package file name"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:997
+#: ../../../cpack_gen/rpm.rst:1042
 msgid ""
 "Alternatively provided debuginfo package file name must end with ``.rpm`` "
 "suffix and should differ from file names of other generated packages."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1000
+#: ../../../cpack_gen/rpm.rst:1045
 msgid ""
 "Variable may contain ``@cpack_component@`` placeholder which will be "
 "replaced by component name if component packaging is enabled otherwise it "
 "deletes the placeholder."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1004
+#: ../../../cpack_gen/rpm.rst:1049
 msgid ""
 "Setting the variable to ``RPM-DEFAULT`` may be used to explicitly set "
 "filename generation to default."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1009
+#: ../../../cpack_gen/rpm.rst:1054
 msgid ""
 ":variable:`CPACK_RPM_FILE_NAME` also supports rpmbuild tool generated "
 "package file name - disabled by default but can be enabled by setting the "
 "variable to ``RPM-DEFAULT``."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1014
+#: ../../../cpack_gen/rpm.rst:1059
 msgid "Packaging of sources (SRPM)"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1018
+#: ../../../cpack_gen/rpm.rst:1063
 msgid ""
 "SRPM packaging is enabled by setting :variable:`CPACK_RPM_PACKAGE_SOURCES` "
 "variable while usually using :variable:`CPACK_INSTALLED_DIRECTORIES` "
 "variable to provide directory containing CMakeLists.txt and source files."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1022
+#: ../../../cpack_gen/rpm.rst:1067
 msgid "For CMake projects SRPM package would be produced by executing::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1024
+#: ../../../cpack_gen/rpm.rst:1069
 msgid "cpack -G RPM --config ./CPackSourceConfig.cmake"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1028
+#: ../../../cpack_gen/rpm.rst:1073
 msgid ""
 "Produced SRPM package is expected to be built with :manual:`cmake(1)` "
 "executable and packaged with :manual:`cpack(1)` executable so CMakeLists.txt "
@@ -1332,26 +1371,26 @@ msgid ""
 "rpm packages from the produced SRPM package."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1035
+#: ../../../cpack_gen/rpm.rst:1080
 msgid ""
 "Once the SRPM package is generated it can be used to generate binary "
 "packages by creating a directory structure for rpm generation and executing "
 "rpmbuild tool::"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1039
+#: ../../../cpack_gen/rpm.rst:1084
 msgid ""
 "mkdir -p build_dir/{BUILD,BUILDROOT,RPMS,SOURCES,SPECS,SRPMS}\n"
 "rpmbuild --define \"_topdir <path_to_build_dir>\" --rebuild <SRPM_file_name>"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1042
+#: ../../../cpack_gen/rpm.rst:1087
 msgid ""
 "Generated packages will be located in build_dir/RPMS directory or its sub "
 "directories."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1047
+#: ../../../cpack_gen/rpm.rst:1092
 msgid ""
 "SRPM package internally uses CPack/RPM generator to generate binary packages "
 "so CMakeScripts.txt can decide during the SRPM to binary rpm generation step "
@@ -1363,58 +1402,58 @@ msgid ""
 "depending on the platform's packaging rules."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1056
+#: ../../../cpack_gen/rpm.rst:1101
 msgid "Source RPM packaging has its own set of variables:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1060
+#: ../../../cpack_gen/rpm.rst:1105
 msgid "Should the content be packaged as a source rpm (default is binary rpm)."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1067
+#: ../../../cpack_gen/rpm.rst:1112
 msgid ""
 "For cmake projects :variable:`CPACK_RPM_PACKAGE_SOURCES` variable is set to "
 "``OFF`` in CPackConfig.cmake and ``ON`` in CPackSourceConfig.cmake generated "
 "files."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1073
+#: ../../../cpack_gen/rpm.rst:1118
 msgid ""
 "Additional command-line parameters provided to :manual:`cmake(1)` executable."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1080
+#: ../../../cpack_gen/rpm.rst:1125
 msgid ""
 "Packaging install prefix that would be provided in :variable:"
 "`CPACK_PACKAGING_INSTALL_PREFIX` variable for producing binary RPM packages."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1084
+#: ../../../cpack_gen/rpm.rst:1129
 msgid "``/``"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1088
+#: ../../../cpack_gen/rpm.rst:1133
 msgid "List of source rpm build dependencies."
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1093
+#: ../../../cpack_gen/rpm.rst:1138
 msgid ""
 "May be used to set source RPM build dependencies (BuildRequires). Note that "
 "you must enclose the entire value between quotes when setting this variable, "
 "for example:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1097
+#: ../../../cpack_gen/rpm.rst:1142
 msgid "set(CPACK_RPM_BUILDREQUIRES \"python >= 2.5.0, cmake >= 2.8\")"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1108
+#: ../../../cpack_gen/rpm.rst:1153
 msgid ""
 "May be used to keep the dependency generator from scanning specific files or "
 "directories for dependencies.  Note that you can use a regular expression "
 "that matches all of the directories or files, for example:"
 msgstr ""
 
-#: ../../../cpack_gen/rpm.rst:1112
+#: ../../../cpack_gen/rpm.rst:1157
 msgid "set(CPACK_RPM_REQUIRES_EXCLUDE_FROM \"bin/libqsqloci.*\\\\.so.*\")"
 msgstr ""
