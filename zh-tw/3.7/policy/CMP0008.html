@@ -1,0 +1,173 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CMP0008 &mdash; CMake 3.7.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.7.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="CMP0007" href="CMP0007.html" />
+    <link rel="prev" title="CMP0009" href="CMP0009.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="CMP0007.html" title="CMP0007"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="CMP0009.html" title="CMP0009"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-policies.7.html" accesskey="U">cmake-policies(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cmp0008">
+<span id="policy:CMP0008"></span><h1>CMP0008<a class="headerlink" href="#cmp0008" title="本標題的永久連結">¶</a></h1>
+<p>Libraries linked by full-path must have a valid library file name.</p>
+<p>In CMake 2.4 and below it is possible to write code like</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">target_link_libraries</span><span class="p">(</span><span class="n">myexe</span> <span class="o">/</span><span class="n">full</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">somelib</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where 「somelib」 is supposed to be a valid library file name such as
+「libsomelib.a」 or 「somelib.lib」.  For Makefile generators this
+produces an error at build time because the dependency on the full
+path cannot be found.  For VS IDE and Xcode generators this used to
+work by accident because CMake would always split off the library
+directory and ask the linker to search for the library by name
+(-lsomelib or somelib.lib).  Despite the failure with Makefiles, some
+projects have code like this and build only with VS and/or Xcode.
+This version of CMake prefers to pass the full path directly to the
+native build tool, which will fail in this case because it does not
+name a valid library file.</p>
+<p>This policy determines what to do with full paths that do not appear
+to name a valid library file.  The OLD behavior for this policy is to
+split the library name from the path and ask the linker to search for
+it.  The NEW behavior for this policy is to trust the given path and
+pass it directly to the native build tool unchanged.</p>
+<p>This policy was introduced in CMake version 2.6.1.  CMake version
+3.7.2 warns when the policy is not set and uses OLD behavior.  Use
+the cmake_policy command to set it to OLD or NEW explicitly.</p>
+<div class="admonition note">
+<p class="first admonition-title">備註</p>
+<p class="last">The <code class="docutils literal"><span class="pre">OLD</span></code> behavior of a policy is
+<span class="target" id="index-0-manual:cmake-policies(7)"></span><a class="reference internal" href="../manual/cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal"><span class="pre">deprecated</span> <span class="pre">by</span> <span class="pre">definition</span></code></a>
+and may be removed in a future version of CMake.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上個主題</h4>
+  <p class="topless"><a href="CMP0009.html"
+                        title="上一章">CMP0009</a></p>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="CMP0007.html"
+                        title="下一章">CMP0007</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/policy/CMP0008.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜尋</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="前往" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="CMP0007.html" title="CMP0007"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="CMP0009.html" title="CMP0009"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-policies.7.html" >cmake-policies(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2000-2016 Kitware, Inc. and Contributors。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 創建。
+    </div>
+  </body>
+</html>

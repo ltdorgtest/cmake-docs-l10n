@@ -1,0 +1,159 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CheckFunctionExists &mdash; CMake 3.5.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.5.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="CheckIncludeFileCXX" href="CheckIncludeFileCXX.html" />
+    <link rel="prev" title="CheckFortranSourceCompiles" href="CheckFortranSourceCompiles.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="CheckIncludeFileCXX.html" title="CheckIncludeFileCXX"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="CheckFortranSourceCompiles.html" title="CheckFortranSourceCompiles"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="checkfunctionexists">
+<span id="module:CheckFunctionExists"></span><h1>CheckFunctionExists<a class="headerlink" href="#checkfunctionexists" title="本標題的永久連結">¶</a></h1>
+<p>Check if a C function can be linked</p>
+<p>CHECK_FUNCTION_EXISTS(&lt;function&gt; &lt;variable&gt;)</p>
+<p>Check that the &lt;function&gt; is provided by libraries on the system and
+store the result in a &lt;variable&gt;.  This does not verify that any
+system header file declares the function, only that it can be found at
+link time (consider using CheckSymbolExists).
+&lt;variable&gt; will be created as an internal cache variable.</p>
+<p>The following variables may be set before calling this macro to modify
+the way the check is run:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CMAKE_REQUIRED_FLAGS</span> <span class="o">=</span> <span class="n">string</span> <span class="n">of</span> <span class="nb">compile</span> <span class="n">command</span> <span class="n">line</span> <span class="n">flags</span>
+<span class="n">CMAKE_REQUIRED_DEFINITIONS</span> <span class="o">=</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">macros</span> <span class="n">to</span> <span class="n">define</span> <span class="p">(</span><span class="o">-</span><span class="n">DFOO</span><span class="o">=</span><span class="n">bar</span><span class="p">)</span>
+<span class="n">CMAKE_REQUIRED_INCLUDES</span> <span class="o">=</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">include</span> <span class="n">directories</span>
+<span class="n">CMAKE_REQUIRED_LIBRARIES</span> <span class="o">=</span> <span class="nb">list</span> <span class="n">of</span> <span class="n">libraries</span> <span class="n">to</span> <span class="n">link</span>
+<span class="n">CMAKE_REQUIRED_QUIET</span> <span class="o">=</span> <span class="n">execute</span> <span class="n">quietly</span> <span class="n">without</span> <span class="n">messages</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上個主題</h4>
+  <p class="topless"><a href="CheckFortranSourceCompiles.html"
+                        title="上一章">CheckFortranSourceCompiles</a></p>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="CheckIncludeFileCXX.html"
+                        title="下一章">CheckIncludeFileCXX</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/CheckFunctionExists.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜尋</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="前往" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="CheckIncludeFileCXX.html" title="CheckIncludeFileCXX"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="CheckFortranSourceCompiles.html" title="CheckFortranSourceCompiles"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2000-2016 Kitware, Inc.。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 創建。
+    </div>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CheckIncludeFiles &mdash; CMake 3.4.3 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.4.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="CheckLanguage" href="CheckLanguage.html" />
+    <link rel="prev" title="CheckIncludeFile" href="CheckIncludeFile.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="CheckLanguage.html" title="CheckLanguage"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="CheckIncludeFile.html" title="CheckIncludeFile"
+             accesskey="P">前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="checkincludefiles">
+<span id="module:CheckIncludeFiles"></span><h1>CheckIncludeFiles<a class="headerlink" href="#checkincludefiles" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Provides a macro to check if a list of one or more header files can
+be included together in <code class="docutils literal"><span class="pre">C</span></code>.</p>
+<dl class="command">
+<dt id="command:check_include_files">
+<code class="descname">CHECK_INCLUDE_FILES</code><a class="headerlink" href="#command:check_include_files" title="この定義へのパーマリンク">¶</a></dt>
+<dd><div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">CHECK_INCLUDE_FILES</span><span class="p">(</span><span class="s2">&quot;&lt;includes&gt;&quot;</span> <span class="o">&lt;</span><span class="n">variable</span><span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Check if the given <code class="docutils literal"><span class="pre">&lt;includes&gt;</span></code> list may be included together
+in a <code class="docutils literal"><span class="pre">C</span></code> source file and store the result in an internal cache
+entry named <code class="docutils literal"><span class="pre">&lt;variable&gt;</span></code>.  Specify the <code class="docutils literal"><span class="pre">&lt;includes&gt;</span></code> argument
+as a <a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> of header file names.</p>
+</dd></dl>
+
+<p>The following variables may be set before calling this macro to modify
+the way the check is run:</p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_FLAGS</span></code></dt>
+<dd>string of compile command line flags</dd>
+<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_DEFINITIONS</span></code></dt>
+<dd>list of macros to define (-DFOO=bar)</dd>
+<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_INCLUDES</span></code></dt>
+<dd>list of include directories</dd>
+<dt><code class="docutils literal"><span class="pre">CMAKE_REQUIRED_QUIET</span></code></dt>
+<dd>execute quietly without messages</dd>
+</dl>
+<p>See modules <span class="target" id="index-0-module:CheckIncludeFile"></span><a class="reference internal" href="CheckIncludeFile.html#module:CheckIncludeFile" title="CheckIncludeFile"><code class="xref cmake cmake-module docutils literal"><span class="pre">CheckIncludeFile</span></code></a> and <span class="target" id="index-0-module:CheckIncludeFileCXX"></span><a class="reference internal" href="CheckIncludeFileCXX.html#module:CheckIncludeFileCXX" title="CheckIncludeFileCXX"><code class="xref cmake cmake-module docutils literal"><span class="pre">CheckIncludeFileCXX</span></code></a>
+to check for a single header file in <code class="docutils literal"><span class="pre">C</span></code> or <code class="docutils literal"><span class="pre">CXX</span></code> languages.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="CheckIncludeFile.html"
+                        title="前の章へ">CheckIncludeFile</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="CheckLanguage.html"
+                        title="次の章へ">CheckLanguage</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/CheckIncludeFiles.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="CheckLanguage.html" title="CheckLanguage"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="CheckIncludeFile.html" title="CheckIncludeFile"
+             >前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2015 Kitware, Inc..
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 で生成しました。
+    </div>
+  </body>
+</html>

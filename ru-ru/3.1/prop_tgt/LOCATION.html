@@ -1,0 +1,163 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru_RU">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>LOCATION &mdash; CMake 3.1.3 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.1.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="MACOSX_BUNDLE_INFO_PLIST" href="MACOSX_BUNDLE_INFO_PLIST.html" />
+    <link rel="prev" title="LOCATION_&lt;CONFIG&gt;" href="LOCATION_CONFIG.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="MACOSX_BUNDLE_INFO_PLIST.html" title="MACOSX_BUNDLE_INFO_PLIST"
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="LOCATION_CONFIG.html" title="LOCATION_&lt;CONFIG&gt;"
+             accesskey="P">назад</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="location">
+<span id="prop_tgt:LOCATION"></span><h1>LOCATION<a class="headerlink" href="#location" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Read-only location of a target on disk.</p>
+<p>For an imported target, this read-only property returns the value of
+the LOCATION_&lt;CONFIG&gt; property for an unspecified configuration
+&lt;CONFIG&gt; provided by the target.</p>
+<p>For a non-imported target, this property is provided for compatibility
+with CMake 2.4 and below.  It was meant to get the location of an
+executable target’s output file for use in add_custom_command.  The
+path may contain a build-system-specific portion that is replaced at
+build time with the configuration getting built (such as
+«$(ConfigurationName)» in VS).  In CMake 2.6 and above
+add_custom_command automatically recognizes a target name in its
+COMMAND and DEPENDS options and computes the target location.  In
+CMake 2.8.4 and above add_custom_command recognizes generator
+expressions to refer to target locations anywhere in the command.
+Therefore this property is not needed for creating custom commands.</p>
+<p>Do not set properties that affect the location of a target after
+reading this property.  These include properties whose names match
+«(RUNTIME|LIBRARY|ARCHIVE)_OUTPUT_(NAME|DIRECTORY)(_&lt;CONFIG&gt;)?»,
+<code class="docutils literal"><span class="pre">(IMPLIB_)?(PREFIX|SUFFIX)</span></code>, or «LINKER_LANGUAGE».  Failure to follow
+this rule is not diagnosed and leaves the location of the target
+undefined.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Предыдущий раздел</h4>
+  <p class="topless"><a href="LOCATION_CONFIG.html"
+                        title="предыдущая глава">LOCATION_&lt;CONFIG&gt;</a></p>
+  <h4>Следующий раздел</h4>
+  <p class="topless"><a href="MACOSX_BUNDLE_INFO_PLIST.html"
+                        title="следующая глава">MACOSX_BUNDLE_INFO_PLIST</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/prop_tgt/LOCATION.rst.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Алфавитный указатель"
+             >указатель</a></li>
+        <li class="right" >
+          <a href="MACOSX_BUNDLE_INFO_PLIST.html" title="MACOSX_BUNDLE_INFO_PLIST"
+             >вперёд</a> |</li>
+        <li class="right" >
+          <a href="LOCATION_CONFIG.html" title="LOCATION_&lt;CONFIG&gt;"
+             >назад</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2015 Kitware, Inc..
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>

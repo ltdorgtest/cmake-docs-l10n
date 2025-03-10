@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>PUBLIC_HEADER &mdash; CMake 3.7.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.7.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="RESOURCE" href="RESOURCE.html" />
+    <link rel="prev" title="PROJECT_LABEL" href="PROJECT_LABEL.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="RESOURCE.html" title="RESOURCE"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="PROJECT_LABEL.html" title="PROJECT_LABEL"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="public-header">
+<span id="prop_tgt:PUBLIC_HEADER"></span><h1>PUBLIC_HEADER<a class="headerlink" href="#public-header" title="本標題的永久連結">¶</a></h1>
+<p>Specify public header files in a <span class="target" id="index-0-prop_tgt:FRAMEWORK"></span><a class="reference internal" href="FRAMEWORK.html#prop_tgt:FRAMEWORK" title="FRAMEWORK"><code class="xref cmake cmake-prop_tgt docutils literal"><span class="pre">FRAMEWORK</span></code></a> shared library target.</p>
+<p>Shared library targets marked with the <span class="target" id="index-1-prop_tgt:FRAMEWORK"></span><a class="reference internal" href="FRAMEWORK.html#prop_tgt:FRAMEWORK" title="FRAMEWORK"><code class="xref cmake cmake-prop_tgt docutils literal"><span class="pre">FRAMEWORK</span></code></a> property generate
+frameworks on OS X, iOS and normal shared libraries on other platforms.
+This property may be set to a list of header files to be placed in the
+<code class="docutils literal"><span class="pre">Headers</span></code> directory inside the framework folder.  On non-Apple platforms
+these headers may be installed using the <code class="docutils literal"><span class="pre">PUBLIC_HEADER</span></code> option to the
+<code class="docutils literal"><span class="pre">install(TARGETS)</span></code> command.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上個主題</h4>
+  <p class="topless"><a href="PROJECT_LABEL.html"
+                        title="上一章">PROJECT_LABEL</a></p>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="RESOURCE.html"
+                        title="下一章">RESOURCE</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/prop_tgt/PUBLIC_HEADER.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜尋</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="前往" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="RESOURCE.html" title="RESOURCE"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="PROJECT_LABEL.html" title="PROJECT_LABEL"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2000-2016 Kitware, Inc. and Contributors。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 創建。
+    </div>
+  </body>
+</html>

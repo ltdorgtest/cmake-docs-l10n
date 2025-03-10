@@ -1,0 +1,164 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ctest_memcheck &mdash; CMake 3.2.3 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.2.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="ctest_read_custom_files" href="ctest_read_custom_files.html" />
+    <link rel="prev" title="ctest_empty_binary_directory" href="ctest_empty_binary_directory.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="ctest_read_custom_files.html" title="ctest_read_custom_files"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="ctest_empty_binary_directory.html" title="ctest_empty_binary_directory"
+             accesskey="P">前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" accesskey="U">cmake-commands(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="ctest-memcheck">
+<span id="command:ctest_memcheck"></span><h1>ctest_memcheck<a class="headerlink" href="#ctest-memcheck" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>Run tests with a dynamic analysis tool.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">ctest_memcheck</span><span class="p">([</span><span class="n">BUILD</span> <span class="n">build_dir</span><span class="p">]</span> <span class="p">[</span><span class="n">RETURN_VALUE</span> <span class="n">res</span><span class="p">]</span> <span class="p">[</span><span class="n">APPEND</span><span class="p">]</span>
+           <span class="p">[</span><span class="n">START</span> <span class="n">start</span> <span class="n">number</span><span class="p">]</span> <span class="p">[</span><span class="n">END</span> <span class="n">end</span> <span class="n">number</span><span class="p">]</span>
+           <span class="p">[</span><span class="n">STRIDE</span> <span class="n">stride</span> <span class="n">number</span><span class="p">]</span> <span class="p">[</span><span class="n">EXCLUDE</span> <span class="n">exclude</span> <span class="n">regex</span> <span class="p">]</span>
+           <span class="p">[</span><span class="n">INCLUDE</span> <span class="n">include</span> <span class="n">regex</span><span class="p">]</span>
+           <span class="p">[</span><span class="n">EXCLUDE_LABEL</span> <span class="n">exclude</span> <span class="n">regex</span><span class="p">]</span>
+           <span class="p">[</span><span class="n">INCLUDE_LABEL</span> <span class="n">label</span> <span class="n">regex</span><span class="p">]</span>
+           <span class="p">[</span><span class="n">PARALLEL_LEVEL</span> <span class="n">level</span><span class="p">]</span> <span class="p">)</span>
+</pre></div>
+</div>
+<p>Tests the given build directory and stores results in MemCheck.xml.
+The second argument is a variable that will hold value.  Optionally,
+you can specify the starting test number START, the ending test number
+END, the number of tests to skip between each test STRIDE, a regular
+expression for tests to run INCLUDE, or a regular expression for tests
+not to run EXCLUDE.  EXCLUDE_LABEL and INCLUDE_LABEL are regular
+expressions for tests to be included or excluded by the test property
+LABEL.  PARALLEL_LEVEL should be set to a positive number representing
+the number of tests to be run in parallel.</p>
+<p>The APPEND option marks results for append to those previously
+submitted to a dashboard server since the last ctest_start.  Append
+semantics are defined by the dashboard server in use.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="ctest_empty_binary_directory.html"
+                        title="前の章へ">ctest_empty_binary_directory</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="ctest_read_custom_files.html"
+                        title="次の章へ">ctest_read_custom_files</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/command/ctest_memcheck.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="ctest_read_custom_files.html" title="ctest_read_custom_files"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="ctest_empty_binary_directory.html" title="ctest_empty_binary_directory"
+             >前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-commands.7.html" >cmake-commands(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2015 Kitware, Inc..
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 で生成しました。
+    </div>
+  </body>
+</html>

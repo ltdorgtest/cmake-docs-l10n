@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru_RU">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FindProtobuf &mdash; CMake 3.0.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="Алфавитный указатель" href="../genindex.html" />
+    <link rel="search" title="Поиск" href="../search.html" />
+    <link rel="next" title="FindPythonInterp" href="FindPythonInterp.html" />
+    <link rel="prev" title="FindProducer" href="FindProducer.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Алфавитный указатель"
+             accesskey="I">указатель</a></li>
+        <li class="right" >
+          <a href="FindPythonInterp.html" title="FindPythonInterp"
+             accesskey="N">вперёд</a> |</li>
+        <li class="right" >
+          <a href="FindProducer.html" title="FindProducer"
+             accesskey="P">назад</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="findprotobuf">
+<span id="module:FindProtobuf"></span><h1>FindProtobuf<a class="headerlink" href="#findprotobuf" title="Ссылка на этот заголовок">¶</a></h1>
+<p>Locate and configure the Google Protocol Buffers library.</p>
+<p>The following variables can be set and are optional:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PROTOBUF_SRC_ROOT_FOLDER</span> <span class="o">-</span> <span class="n">When</span> <span class="n">compiling</span> <span class="k">with</span> <span class="n">MSVC</span><span class="p">,</span> <span class="k">if</span> <span class="n">this</span> <span class="n">cache</span> <span class="n">variable</span> <span class="ow">is</span> <span class="nb">set</span>
+                           <span class="n">the</span> <span class="n">protobuf</span><span class="o">-</span><span class="n">default</span> <span class="n">VS</span> <span class="n">project</span> <span class="n">build</span> <span class="n">locations</span>
+                           <span class="p">(</span><span class="n">vsprojects</span><span class="o">/</span><span class="n">Debug</span> <span class="o">&amp;</span> <span class="n">vsprojects</span><span class="o">/</span><span class="n">Release</span><span class="p">)</span> <span class="n">will</span> <span class="n">be</span> <span class="n">searched</span>
+                           <span class="k">for</span> <span class="n">libraries</span> <span class="ow">and</span> <span class="n">binaries</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PROTOBUF_IMPORT_DIRS</span>     <span class="o">-</span> <span class="n">List</span> <span class="n">of</span> <span class="n">additional</span> <span class="n">directories</span> <span class="n">to</span> <span class="n">be</span> <span class="n">searched</span> <span class="k">for</span>
+                           <span class="n">imported</span> <span class="o">.</span><span class="n">proto</span> <span class="n">files</span><span class="o">.</span> <span class="p">(</span><span class="n">New</span> <span class="ow">in</span> <span class="n">CMake</span> <span class="mf">2.8.8</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Defines the following variables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PROTOBUF_FOUND</span> <span class="o">-</span> <span class="n">Found</span> <span class="n">the</span> <span class="n">Google</span> <span class="n">Protocol</span> <span class="n">Buffers</span> <span class="n">library</span> <span class="p">(</span><span class="n">libprotobuf</span> <span class="o">&amp;</span> <span class="n">header</span> <span class="n">files</span><span class="p">)</span>
+<span class="n">PROTOBUF_INCLUDE_DIRS</span> <span class="o">-</span> <span class="n">Include</span> <span class="n">directories</span> <span class="k">for</span> <span class="n">Google</span> <span class="n">Protocol</span> <span class="n">Buffers</span>
+<span class="n">PROTOBUF_LIBRARIES</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protobuf</span> <span class="n">libraries</span>
+</pre></div>
+</div>
+<p>[New in CMake 2.8.5]</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PROTOBUF_PROTOC_LIBRARIES</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protoc</span> <span class="n">libraries</span>
+<span class="n">PROTOBUF_LITE_LIBRARIES</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protobuf</span><span class="o">-</span><span class="n">lite</span> <span class="n">libraries</span>
+</pre></div>
+</div>
+<p>The following cache variables are also available to set or use:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PROTOBUF_LIBRARY</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protobuf</span> <span class="n">library</span>
+<span class="n">PROTOBUF_PROTOC_LIBRARY</span>   <span class="o">-</span> <span class="n">The</span> <span class="n">protoc</span> <span class="n">library</span>
+<span class="n">PROTOBUF_INCLUDE_DIR</span> <span class="o">-</span> <span class="n">The</span> <span class="n">include</span> <span class="n">directory</span> <span class="k">for</span> <span class="n">protocol</span> <span class="n">buffers</span>
+<span class="n">PROTOBUF_PROTOC_EXECUTABLE</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protoc</span> <span class="n">compiler</span>
+</pre></div>
+</div>
+<p>[New in CMake 2.8.5]</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">PROTOBUF_LIBRARY_DEBUG</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protobuf</span> <span class="n">library</span> <span class="p">(</span><span class="n">debug</span><span class="p">)</span>
+<span class="n">PROTOBUF_PROTOC_LIBRARY_DEBUG</span>   <span class="o">-</span> <span class="n">The</span> <span class="n">protoc</span> <span class="n">library</span> <span class="p">(</span><span class="n">debug</span><span class="p">)</span>
+<span class="n">PROTOBUF_LITE_LIBRARY</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protobuf</span> <span class="n">lite</span> <span class="n">library</span>
+<span class="n">PROTOBUF_LITE_LIBRARY_DEBUG</span> <span class="o">-</span> <span class="n">The</span> <span class="n">protobuf</span> <span class="n">lite</span> <span class="n">library</span> <span class="p">(</span><span class="n">debug</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">====================================================================</span>
+<span class="n">Example</span><span class="p">:</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>find_package(Protobuf REQUIRED)
+include_directories(${PROTOBUF_INCLUDE_DIRS})
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span>include_directories(${CMAKE_CURRENT_BINARY_DIR})
+PROTOBUF_GENERATE_CPP(PROTO_SRCS PROTO_HDRS foo.proto)
+add_executable(bar bar.cc ${PROTO_SRCS} ${PROTO_HDRS})
+target_link_libraries(bar ${PROTOBUF_LIBRARIES})
+</pre></div>
+</div>
+<p>NOTE: You may need to link against pthreads, depending</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">on</span> <span class="n">the</span> <span class="n">platform</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>NOTE: The PROTOBUF_GENERATE_CPP macro &amp; add_executable() or
+add_library()</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">calls</span> <span class="n">only</span> <span class="n">work</span> <span class="n">properly</span> <span class="n">within</span> <span class="n">the</span> <span class="n">same</span> <span class="n">directory</span><span class="o">.</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">====================================================================</span>
+</pre></div>
+</div>
+<p>PROTOBUF_GENERATE_CPP (public function)</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">SRCS</span> <span class="o">=</span> <span class="n">Variable</span> <span class="n">to</span> <span class="n">define</span> <span class="k">with</span> <span class="n">autogenerated</span>
+       <span class="n">source</span> <span class="n">files</span>
+<span class="n">HDRS</span> <span class="o">=</span> <span class="n">Variable</span> <span class="n">to</span> <span class="n">define</span> <span class="k">with</span> <span class="n">autogenerated</span>
+       <span class="n">header</span> <span class="n">files</span>
+<span class="n">ARGN</span> <span class="o">=</span> <span class="n">proto</span> <span class="n">files</span>
+</pre></div>
+</div>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">====================================================================</span>
+</pre></div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Предыдущий раздел</h4>
+  <p class="topless"><a href="FindProducer.html"
+                        title="предыдущая глава">FindProducer</a></p>
+  <h4>Следующий раздел</h4>
+  <p class="topless"><a href="FindPythonInterp.html"
+                        title="следующая глава">FindPythonInterp</a></p>
+  <div role="note" aria-label="source link">
+    <h3>Эта страница</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/FindProtobuf.rst.txt"
+            rel="nofollow">Исходный текст</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Быстрый поиск</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Искать" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Навигация</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="Алфавитный указатель"
+             >указатель</a></li>
+        <li class="right" >
+          <a href="FindPythonInterp.html" title="FindPythonInterp"
+             >вперёд</a> |</li>
+        <li class="right" >
+          <a href="FindProducer.html" title="FindProducer"
+             >назад</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2014 Kitware, Inc..
+      Создано с помощью <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>
