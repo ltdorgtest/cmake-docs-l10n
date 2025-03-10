@@ -10,10 +10,10 @@
 </div>
 
 <h1 id="localization-of-cmake-documentation">
-Localization of CMake Documentation
+CMake 文件的在地化
 </h1>
 
-<details><summary><strong>Switch Languages</strong></summary>
+<details><summary><strong>切換語言</strong></summary>
 <p></p>
 <ul>
   <li><a href="./README.md"><code>en_US</code> : English</a></li>
@@ -26,14 +26,14 @@ Localization of CMake Documentation
 </details>
 
 <h2 id="table-of-contents">
-Table of Contents
+目次表
 </h2>
 
 <ul>
-  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#introduction">介紹</a></li>
   <li><a href="#progress-of-translations">Progress of Translations</a></li>
-  <li><a href="#preview-translations">Preview Translations</a></li>
-  <li><a href="#licenses">Licenses</a></li>
+  <li><a href="#preview-translations">預覽翻譯</a></li>
+  <li><a href="#licenses">授權條款</a></li>
   <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
   <li><a href="#about-author">Maintainers List</a></li>
   <li><a href="#support-this-project">Support This Project</a></li>
