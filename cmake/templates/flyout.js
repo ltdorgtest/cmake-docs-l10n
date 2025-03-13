@@ -1,6 +1,9 @@
 "use strict";
 
-// 語言與版本列表（按順序排列）
+////////////////////////////////////////////////////////////////////////////////
+// Configuration Section - Modify according to the project requirements.
+////////////////////////////////////////////////////////////////////////////////
+
 const _ALL_LANGUAGES = [
   ["en-us", "English"],
   ["ja-jp", "日本語"],
@@ -50,6 +53,10 @@ const _ALL_PROJECTS = [
   ["GitFlic", "https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n"],
 ];
 
+////////////////////////////////////////////////////////////////////////////////
+// Application Logic - Do not modify unless necessary.
+////////////////////////////////////////////////////////////////////////////////
+
 const _is_file_uri = (uri) => uri.startsWith("file:/");
 const _IS_LOCAL = _is_file_uri(window.location.href);
 const _CURRENT_VERSION = CURRENT_OPTIONS.CURRENT_VERSION;
@@ -57,37 +64,68 @@ const _CURRENT_LANGUAGE = CURRENT_OPTIONS.CURRENT_LANGUAGE;
 const _HTML_BASEURL = CURRENT_OPTIONS.HTML_BASEURL;
 const _SERVER_ROOT = window.location.origin;
 
+/**
+ * Generates a target URL based on the selected language or version.
+ *
+ * This function modifies the current page path to reflect the requested language
+ * or version and then verifies if the generated URL exists. If the URL is not
+ * accessible, it returns a fallback URL to ensure a valid navigation path.
+ *
+ * @param {string} type - The type of change ('language' or 'version').
+ * @param {string} selectedValue - The selected language code or version number.
+ * @returns {Promise<string>} The generated target URL or a fallback URL if inaccessible.
+ */
 async function getTargetUrl(type, selectedValue) {
+  // Get the current page path.
   const currentPath = window.location.pathname;
-  let targetPath;
+  let   targetPath;
 
+  // Determine the target path based on the type (language or version).
   if (type === "language") {
     targetPath = currentPath.replace(`/${_CURRENT_LANGUAGE}/`, `/${selectedValue}/`);
   } else if (type === "version") {
     targetPath = currentPath.replace(`/${_CURRENT_VERSION}/`, `/${selectedValue}/`);
   }
 
+  // Construct the target URL.
+  // If running locally (file:// protocol), use file-based path. Otherwise, use the server root URL.
   const targetUrl = _IS_LOCAL
     ? `file://${targetPath}`
     : `${_SERVER_ROOT}${targetPath}`;
 
+  // If running locally, return the constructed file URL immediately.
   if (_IS_LOCAL) return targetUrl;
 
   try {
+    // Send a HEAD request to check if the target URL exists.
     const response = await fetch(targetUrl, { method: "HEAD" });
+
+    // If the response is OK (status 200), return the valid target URL.
     if (response.ok) {
       return targetUrl;
     } else {
-      console.warn("目標網址不存在，使用備用網址:", targetUrl);
+      console.warn("Target URL does not exist, using fallback URL:", targetUrl);
     }
   } catch (error) {
-    console.error("檢查目標網址時出錯:", error);
+    // Log any network or request errors.
+    console.error("Error checking target URL:", error);
   }
 
-  return `${_HTML_BASEURL}/${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/${type === "version" ? selectedValue : _CURRENT_VERSION}/index.html`;
+  // If the target URL is not accessible, return a fallback URL.
+  // The fallback URL ensures the correct language and version are used.
+  return `${_HTML_BASEURL}/` +
+    `${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/` +
+    `${type === "version" ? selectedValue : _CURRENT_VERSION}/` +
+    `index.html`;
 }
 
-// 生成語言與版本的 HTML 列表
+/**
+ * Creates and inserts a floating language and version selector into the page.
+ *
+ * This function dynamically generates an interactive flyout menu containing
+ * selectable language options, version links, and project links. It also
+ * manages the visibility state of the flyout using event listeners.
+ */
 function createFlyout() {
   const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
     <a href="#"
@@ -161,23 +199,36 @@ function createFlyout() {
   document.addEventListener("click", closeFlyout);
 }
 
-// 頁面載入後更新所有 <a> 的 href
+/**
+ * Updates all language and version links after the page loads.
+ *
+ * This function selects all <a> elements containing language or version data attributes,
+ * generates the appropriate URLs using `getTargetUrl`, and updates their `href` attributes.
+ */
 async function updateLinks() {
   const languageLinks = document.querySelectorAll("a[data-language]");
   const versionLinks = document.querySelectorAll("a[data-version]");
 
+  // Update language selection links with the correct URLs.
   for (const link of languageLinks) {
     const langCode = link.getAttribute("data-language");
     link.href = await getTargetUrl("language", langCode);
   }
 
+  // Update version selection links with the correct URLs.
   for (const link of versionLinks) {
     const versionCode = link.getAttribute("data-version");
     link.href = await getTargetUrl("version", versionCode);
   }
 }
 
-// 加載 CSS
+/**
+ * Injects CSS styles for the floating language and version selector.
+ *
+ * This function creates a <style> element and appends it to the document head,
+ * defining styles for the flyout menu, including its appearance, behavior,
+ * and interaction effects.
+ */
 function addStyles() {
   const css = `
     .rtd-flyout {
@@ -277,9 +328,16 @@ function addStyles() {
   document.head.appendChild(styleTag);
 }
 
-// 初始化
+/**
+ * Initializes the flyout menu and updates links when the page loads.
+ *
+ * This event listener waits for the DOM to be fully loaded before:
+ * - Injecting the necessary CSS styles.
+ * - Creating the floating language and version selector.
+ * - Updating all language and version links with the correct URLs.
+ */
 document.addEventListener("DOMContentLoaded", async () => {
-  addStyles();
-  createFlyout();
-  await updateLinks(); // 更新所有 <a> 的 href
+  addStyles();          // Apply CSS styles for the flyout menu.
+  createFlyout();       // Generate the language and version selector.
+  await updateLinks();  // Update all <a> hrefs to reflect the correct URLs.
 });
