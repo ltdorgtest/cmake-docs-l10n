@@ -91,41 +91,29 @@ The translations are contributed in Crowdin Project and downloaded automatically
     <tbody>
       <!-- TMS -->
       <tr>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
-        <!-- Issues Header -->
-        <!-- <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Issues</th> -->
       </tr>
       <!-- Main -->
       <tr>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
-        <!-- Issues Link -->
-        <!-- <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
-            <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
-          </a>
-        </td> -->
       </tr>
       <!-- Mirror -->
       <tr>
-        <th rowspan="7" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        <th rowspan="2" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
-        <!-- Issues Link -->
-        <!-- <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td> -->
       </tr>
       <tr>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
         </td>
-        <!-- Issues Link -->
-        <!-- <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td> -->
       </tr>
     </tbody>
   </table>
@@ -135,107 +123,107 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <table>
     <thead>
       <tr>
-        <th colspan="2" align="center" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
+        <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
       </tr>
       <tr>
-        <th colspan="1" align="center" style="text-align: center; vertical-align: middle;">Status Badges</th>
-        <th colspan="1" align="center" style="text-align: center; vertical-align: middle;">Purpose</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Status Badges</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Purpose</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
             <img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
           Build documents by Sphinx and upload build artifacts.
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
             <img alt="ci-sphinx-update-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
           Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
             <img alt="ci-gettext-update-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
           Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml">
             <img alt="ci-gettext-compend-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
           Update <code>.po</code> files from the compendium by Gettext toolkit.
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml">
             <img alt="ci-gettext-statistic-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
           Update statistic information of <code>.po</code> files by Gettext toolkit.
         </td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml">
             <img alt="ci-crowdin-upload-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Upload <code>.pot</code> files to Crowdin by its CLI tool.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Upload <code>.pot</code> files to Crowdin by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
             <img alt="ci-crowdin-download-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download <code>.pot</code> files from Crowdin by its CLI tool.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download <code>.pot</code> files from Crowdin by its CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
             <img alt="ci-crowdin-readme" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update README translations by Crowdin CLI tool.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update README translations by Crowdin CLI tool.</td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml">
             <img alt="ci-deploy-gh-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download and deploy build artifacts to <code>gh-pages</code> branch.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download and deploy build artifacts to <code>gh-pages</code> branch.</td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
             <img alt="ci-deploy-po-version" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
             <img alt="ci-update-license-year" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update LICENSE file to the latest year.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update LICENSE file to the latest year.</td>
       </tr>
       <tr>
-        <td colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
             <img alt="ci-update-submodule" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml/badge.svg" />
           </a>
         </td>
-        <td colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update each of the submodules to their latest commit.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update each of the submodules to their latest commit.</td>
       </tr>
     </tbody>
   </table>
@@ -291,6 +279,7 @@ Progress of Translations
           </a>
         </td>
       </tr>
+      <!-- zh_CN -->
       <tr>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
@@ -302,6 +291,7 @@ Progress of Translations
           </a>
         </td>
       </tr>
+      <!-- zh_TW -->
       <tr>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
@@ -418,10 +408,10 @@ This project is created and currently maintained by the author, Haowei Hsu.
   <table>
     <thead>
       <tr>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Member</th>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Role</th>
-        <th rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Contact Info</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Member</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Role</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Contact Info</th>
       </tr>
     </thead>
     <tbody>
@@ -430,45 +420,45 @@ This project is created and currently maintained by the author, Haowei Hsu.
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
       </tr>
       <tr>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <!-- ko_KR -->
       <tr>
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
       </tr>
       <tr>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <!-- ru_RU -->
       <tr>
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
       </tr>
       <tr>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"></td>
       </tr>
       <!-- zh_CN -->
       <tr>
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
       </tr>
       <tr>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
       </tr>
       <!-- zh_TW -->
       <tr>
         <td rowspan="2" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
       </tr>
       <tr>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
-        <td rowspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
       </tr>
     </tbody>
   </table>
