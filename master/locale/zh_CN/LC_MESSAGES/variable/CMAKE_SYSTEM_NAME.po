@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-10 08:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -314,258 +314,250 @@ msgid "Apple mobile phone operating system"
 msgstr ""
 
 #: ../../../variable/CMAKE_SYSTEM_NAME.rst:64
-msgid "``kFreeBSD``"
-msgstr ""
-
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:64
-msgid "FreeBSD kernel with a GNU userland"
-msgstr ""
-
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:65
 msgid "``Linux``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:65
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:64
 msgid "All Linux-based distributions"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:66
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:65
 msgid "``Midipix``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:66
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:65
 msgid "POSIX-compatible layer for Windows"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:67
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:66
 msgid "``MirBSD``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:67
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:66
 msgid "MirOS BSD operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:68
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:67
 msgid "``MP-RAS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:68
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:67
 msgid "MP-RAS UNIX operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:69
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:68
 msgid "``MSYS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:69
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:68
 msgid "MSYS environment (MSYSTEM=MSYS)"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:70
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:69
 msgid "``NetBSD``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:70
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:69
 msgid "NetBSD operating systems"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:71
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:70
 msgid "``OpenBSD``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:71
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:70
 msgid "OpenBSD operating systems"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:72
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:71
 msgid "``OpenVMS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:72
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:71
 msgid "OpenVMS operating system by HP"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:73
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:72
 msgid "``OS2``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:73
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:72
 msgid "OS/2 operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:74
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:73
 msgid "``OSF1``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:74
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:73
 msgid "Compaq Tru64 UNIX (formerly DEC OSF/1, Digital Unix) (discontinued)"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:75
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:74
 msgid "``QNX``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:75
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:74
 msgid "Unix-like operating system by BlackBerry"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:76
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:75
 msgid "``RISCos``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:76
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:75
 msgid "RISC OS operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:77
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:76
 msgid "``SCO_SV``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:77
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:76
 msgid "SCO OpenServer 5"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:78
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:77
 msgid "``SerenityOS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:78
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:77
 msgid "Unix-like operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:79
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:78
 msgid "``SINIX``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:79
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:78
 msgid "SINIX operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:80
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:79
 msgid "``SunOS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:80
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:79
 msgid "Oracle Solaris and all illumos operating systems"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:81
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:80
 msgid "``syllable``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:81
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:80
 msgid "Syllable operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:82
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:81
 msgid "``Tru64``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:82
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:81
 msgid "Compaq Tru64 UNIX (formerly DEC OSF/1) operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:83
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:82
 msgid "``tvOS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:83
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:82
 msgid "Apple TV operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:84
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:83
 msgid "``ULTRIX``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:84
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:83
 msgid "Unix operating system (discontinued)"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:85
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:84
 msgid "``UNIX_SV``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:85
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:84
 msgid "SCO UnixWare (pre release 7)"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:86
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:85
 msgid "``UnixWare``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:86
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:85
 msgid "SCO UnixWare 7"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:87
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:86
 msgid "``visionOS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:87
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:86
 msgid "Apple mixed reality operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:88
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:87
 msgid "``WASI``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:88
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:87
 msgid "WebAssembly System Interface"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:89
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:88
 msgid "``watchOS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:89
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:88
 msgid "Apple watch operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:90
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:89
 msgid "``Windows``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:90
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:89
 msgid "Windows stationary operating systems"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:91
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:90
 msgid "``WindowsCE``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:91
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:90
 msgid "Windows Embedded Compact"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:92
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:91
 msgid "``WindowsPhone``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:92
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:91
 msgid "Windows mobile phone operating system"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:93
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:92
 msgid "``WindowsStore``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:93
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:92
 msgid "Universal Windows Platform applications"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:94
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:93
 msgid "``Xenix``"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:94
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:93
 msgid "SCO Xenix Unix operating system (discontinued)"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:97
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:96
 msgid "Platform-specific notes:"
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:99
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:98
 msgid ""
 "MSYS2's ``msys/cmake`` package (``/usr/bin/cmake``) works only under "
 "``MSYSTEM=MSYS`` environments, with system name ``MSYS``.  Under other "
@@ -574,7 +566,7 @@ msgid ""
 "``MSYSTEM=MINGW64`` with system name ``Windows``."
 msgstr ""
 
-#: ../../../variable/CMAKE_SYSTEM_NAME.rst:105
+#: ../../../variable/CMAKE_SYSTEM_NAME.rst:104
 msgid ""
 "Cygwin's ``cmake`` package (``/usr/bin/cmake``) uses system name ``CYGWIN``. "
 "A non-cygwin CMake on Windows (e.g. ``$PROGRAMFILES/CMake/bin/cmake``) uses "
