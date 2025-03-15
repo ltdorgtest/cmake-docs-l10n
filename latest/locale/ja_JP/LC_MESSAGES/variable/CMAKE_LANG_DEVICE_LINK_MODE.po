@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-10 08:28+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,4 +39,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_LANG_DEVICE_LINK_MODE.rst:12
 msgid "The linker is used directly for the device link step."
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_DEVICE_LINK_MODE.rst:14
+msgid "This variable is read-only. Setting it is undefined behavior."
 msgstr ""
