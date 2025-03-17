@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,15 +22,60 @@ msgid "CMakeBackwardCompatibilityCXX"
 msgstr ""
 
 #: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:8
-msgid "define a bunch of backwards compatibility variables"
+msgid ""
+"This module defines several backward compatibility cache variables for the "
+"``CXX`` language to support early C++ (pre-C++98, ANSI C++)."
 msgstr ""
 
-#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:12
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:11
+msgid "The following modules are included by this module:"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:13
+msgid ":module:`TestForANSIForScope`"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:14
+msgid ":module:`TestForANSIStreamHeaders`"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:15
+msgid ":module:`TestForSSTREAM`"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:16
+msgid ":module:`TestForSTDNamespace`"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:18
+msgid "Additionally, the following cache variable may be defined:"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:20
+msgid "``CMAKE_ANSI_CXXFLAGS``"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:21
 msgid ""
-"CMAKE_ANSI_CXXFLAGS - flag for ansi c++\n"
-"CMAKE_HAS_ANSI_STRING_STREAM - has <strstream>\n"
-"include(TestForANSIStreamHeaders)\n"
-"include(CheckIncludeFileCXX)\n"
-"include(TestForSTDNamespace)\n"
-"include(TestForANSIForScope)"
+"A space-separated string of compiler options for enabling ANSI C++ mode, if "
+"available."
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:26
+msgid ""
+"This module is intended for C++ code written before ``C++ 98``.  As of the "
+"``C++ 98`` standard, these issues have been formally addressed, making such "
+"checks obsolete."
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:31
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:33
+msgid "Including this module provides backward compatibility cache variables:"
+msgstr ""
+
+#: ../../../../Modules/CMakeBackwardCompatibilityCXX.cmake:35
+msgid "include(CMakeBackwardCompatibilityCXX)"
 msgstr ""

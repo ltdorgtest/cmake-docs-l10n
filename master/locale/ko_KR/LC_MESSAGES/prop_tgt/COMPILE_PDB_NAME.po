@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,12 @@ msgstr ""
 msgid ""
 "This property specifies the base name for the debug symbols file. If not "
 "set, the default is unspecified."
+msgstr ""
+
+#: ../../../prop_tgt/COMPILE_PDB_NAME.rst:14
+msgid ""
+"Contents of ``COMPILE_PDB_NAME`` may use :manual:`generator expressions "
+"<cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../prop_tgt/COMPILE_PDB_NOTE.txt:2

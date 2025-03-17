@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,9 +23,9 @@ msgstr ""
 
 #: ../../../../Modules/CheckIPOSupported.cmake:10
 msgid ""
-"Check whether the compiler supports an interprocedural optimization (IPO/"
-"LTO). Use this before enabling the :prop_tgt:`INTERPROCEDURAL_OPTIMIZATION` "
-"target property."
+"This module provides a function to check whether the compiler supports an "
+"interprocedural optimization (IPO/LTO).  Use this module before enabling "
+"the :prop_tgt:`INTERPROCEDURAL_OPTIMIZATION` target property."
 msgstr ""
 
 #: ../../../../Modules/CheckIPOSupported.cmake:16
@@ -113,17 +113,36 @@ msgstr ""
 
 #: ../../../../Modules/CheckIPOSupported.cmake:63
 msgid ""
+"Checking whether the compiler supports IPO and emitting a fatal error if it "
+"is not supported:"
+msgstr ""
+
+#: ../../../../Modules/CheckIPOSupported.cmake:66
+msgid ""
+"include(CheckIPOSupported)\n"
 "check_ipo_supported() # fatal error if IPO is not supported\n"
 "set_property(TARGET foo PROPERTY INTERPROCEDURAL_OPTIMIZATION TRUE)"
 msgstr ""
 
-#: ../../../../Modules/CheckIPOSupported.cmake:68
+#: ../../../../Modules/CheckIPOSupported.cmake:72
 msgid ""
-"# Optional IPO. Do not use IPO if it's not supported by compiler.\n"
-"check_ipo_supported(RESULT result OUTPUT output)\n"
-"if(result)\n"
-"  set_property(TARGET foo PROPERTY INTERPROCEDURAL_OPTIMIZATION TRUE)\n"
-"else()\n"
-"  message(WARNING \"IPO is not supported: ${output}\")\n"
+"The following example demonstrates how to use the ``CheckIPOSupported`` "
+"module to enable IPO for the target only when supported by the compiler and "
+"to issue a warning if it is not.  Additionally, projects may want to provide "
+"a configuration option to control when IPO is enabled.  For example:"
+msgstr ""
+
+#: ../../../../Modules/CheckIPOSupported.cmake:77
+msgid ""
+"option(FOO_ENABLE_IPO \"Enable IPO/LTO\")\n"
+"\n"
+"if(FOO_ENABLE_IPO)\n"
+"  include(CheckIPOSupported)\n"
+"  check_ipo_supported(RESULT result OUTPUT output)\n"
+"  if(result)\n"
+"    set_property(TARGET foo PROPERTY INTERPROCEDURAL_OPTIMIZATION TRUE)\n"
+"  else()\n"
+"    message(WARNING \"IPO is not supported: ${output}\")\n"
+"  endif()\n"
 "endif()"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -130,8 +130,55 @@ msgid ""
 "associated with the check will be suppressed."
 msgstr ""
 
-#: ../../../../Modules/CheckIncludeFiles.cmake:44
+#: ../../../../Modules/CheckIncludeFiles.cmake:45
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:47
 msgid ""
-"See modules :module:`CheckIncludeFile` and :module:`CheckIncludeFileCXX` to "
-"check for a single header file in ``C`` or ``CXX`` languages."
+"Checking whether one or more ``C`` headers exist and storing the check "
+"result in cache variables:"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:50
+msgid ""
+"include(CheckIncludeFiles)\n"
+"\n"
+"check_include_files(sys/socket.h HAVE_SYS_SOCKET_H)\n"
+"\n"
+"if(HAVE_SYS_SOCKET_H)\n"
+"  # The <net/if.h> header on Darwin and BSD-like systems is not self-"
+"contained\n"
+"  # and also requires <sys/socket.h>\n"
+"  check_include_files(\"sys/socket.h;net/if.h\" HAVE_NET_IF_H)\n"
+"else()\n"
+"  check_include_files(net/if.h HAVE_NET_IF_H)\n"
+"endif()"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:64
+msgid ""
+"The ``LANGUAGE`` option can be used to specify which compiler to use.  For "
+"example, checking multiple ``C++`` headers, when both ``C`` and ``CXX`` "
+"languages are enabled in the project:"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:68
+msgid ""
+"include(CheckIncludeFiles)\n"
+"\n"
+"check_include_files(\"header_1.hpp;header_2.hpp\" HAVE_HEADERS LANGUAGE CXX)"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:75
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:77
+msgid "The :module:`CheckIncludeFile` module to check for single ``C`` header."
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFiles.cmake:78
+msgid ""
+"The :module:`CheckIncludeFileCXX` module to check for single ``C++`` header."
 msgstr ""

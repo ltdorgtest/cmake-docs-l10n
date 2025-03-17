@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,12 @@ msgstr ""
 
 #: ../../../prop_tgt/PDB_NAME_CONFIG.rst:7
 msgid "This is the configuration-specific version of :prop_tgt:`PDB_NAME`."
+msgstr ""
+
+#: ../../../prop_tgt/PDB_NAME_CONFIG.rst:11
+msgid ""
+"Contents of ``PDB_NAME_<CONFIG>`` may use :manual:`generator expressions "
+"<cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../prop_tgt/PDB_NOTE.txt:2

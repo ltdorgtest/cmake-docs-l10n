@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,40 +22,37 @@ msgid "Use_wxWindows"
 msgstr ""
 
 #: ../../../../Modules/Use_wxWindows.cmake:10
-msgid ""
-"Use ``find_package(wxWidgets)`` and ``include(${wxWidgets_USE_FILE})`` "
-"instead."
+msgid "Use :module:`find_package(wxWidgets) <FindwxWidgets>` instead."
 msgstr ""
 
 #: ../../../../Modules/Use_wxWindows.cmake:12
 msgid ""
-"This convenience include finds if wxWindows is installed and set the "
-"appropriate libs, incdirs, flags etc.  author Jan Woetzel <jw -at- mip."
-"informatik.uni-kiel.de> (07/2003)"
+"This convenience include finds if wxWindows library is installed and sets "
+"the appropriate libraries, include directories, flags, etc."
 msgstr ""
 
 #: ../../../../Modules/Use_wxWindows.cmake:16
-msgid "USAGE:"
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/Use_wxWindows.cmake:18
+msgid "Include ``Use_wxWindows`` module in project's ``CMakeLists.txt``:"
 msgstr ""
 
 #: ../../../../Modules/Use_wxWindows.cmake:20
 msgid ""
-"just include Use_wxWindows.cmake\n"
-"in your projects CMakeLists.txt"
+"# CMakeLists.txt\n"
+"include(Use_wxWindows)"
 msgstr ""
 
-#: ../../../../Modules/Use_wxWindows.cmake:23
-msgid "include( ${CMAKE_MODULE_PATH}/Use_wxWindows.cmake)"
+#: ../../../../Modules/Use_wxWindows.cmake:25
+msgid ""
+"When the GL support is required, set ``WXWINDOWS_USE_GL`` *before* including "
+"this module:"
 msgstr ""
 
-#: ../../../../Modules/Use_wxWindows.cmake:27
-msgid "if you are sure you need GL then"
-msgstr ""
-
-#: ../../../../Modules/Use_wxWindows.cmake:29
-msgid "set(WXWINDOWS_USE_GL 1)"
-msgstr ""
-
-#: ../../../../Modules/Use_wxWindows.cmake:33
-msgid "*before* you include this file."
+#: ../../../../Modules/Use_wxWindows.cmake:28
+msgid ""
+"set(WXWINDOWS_USE_GL ON)\n"
+"include(Use_wxWindows)"
 msgstr ""

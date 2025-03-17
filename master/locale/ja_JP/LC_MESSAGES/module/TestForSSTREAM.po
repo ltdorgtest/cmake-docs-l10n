@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 07:27+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,74 @@ msgid "TestForSSTREAM"
 msgstr ""
 
 #: ../../../../Modules/TestForSSTREAM.cmake:8
-msgid "Test for compiler support of ANSI sstream header"
+msgid ""
+"This module checks whether the C++ standard header ``<sstream>`` exists and "
+"functions correctly.  In early versions of C++ (pre-C++98), this header was "
+"not formally standardized and may not have been available."
 msgstr ""
 
-#: ../../../../Modules/TestForSSTREAM.cmake:10
-msgid "check if the compiler supports the standard ANSI sstream header"
+#: ../../../../Modules/TestForSSTREAM.cmake:12
+msgid "This module defines the following cache variables:"
 msgstr ""
 
 #: ../../../../Modules/TestForSSTREAM.cmake:14
-msgid "CMAKE_NO_ANSI_STRING_STREAM - defined by the results"
+msgid "``CMAKE_NO_ANSI_STRING_STREAM``"
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:15
+msgid ""
+"A cache variable indicating whether the ``<sstream>`` header is available. "
+"It will be set to value ``0`` if ``<sstream>`` is available (``C++ 98`` and "
+"newer), and to value ``1`` if ``<sstream>`` is missing (``ANSI C++``)."
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:19
+msgid "``CMAKE_HAS_ANSI_STRING_STREAM``"
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:20
+msgid ""
+"A cache variable that is the opposite of ``CMAKE_NO_ANSI_STRING_STREAM`` "
+"(true if ``<sstream>`` is available and false if ``<sstream>`` is missing)."
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:25
+msgid ""
+"The ``<sstream>`` header was formally introduced in the ``C++ 98`` standard, "
+"making this check obsolete for modern compilers."
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:29
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:31
+msgid ""
+"Including this module will check for ``<sstream>`` support and define the "
+"``CMAKE_NO_ANSI_STRING_STREAM`` cache variable:"
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:34
+msgid ""
+"include(TestForSSTREAM)\n"
+"file(\n"
+"  CONFIGURE\n"
+"  OUTPUT config.h\n"
+"  CONTENT \"#cmakedefine CMAKE_NO_ANSI_STRING_STREAM\"\n"
+")"
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:43
+msgid "Then it can be used in a C++ program:"
+msgstr ""
+
+#: ../../../../Modules/TestForSSTREAM.cmake:45
+msgid ""
+"#include \"config.h\"\n"
+"\n"
+"#ifndef CMAKE_NO_ANSI_STRING_STREAM\n"
+"#  include <sstream>\n"
+"#endif\n"
+"\n"
+"int main() { ... }"
 msgstr ""
