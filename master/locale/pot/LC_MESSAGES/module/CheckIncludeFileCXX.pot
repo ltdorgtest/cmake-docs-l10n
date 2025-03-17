@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,8 +120,33 @@ msgid ""
 "associated with the check will be suppressed."
 msgstr ""
 
-#: ../../../../Modules/CheckIncludeFileCXX.cmake:38
+#: ../../../../Modules/CheckIncludeFileCXX.cmake:39
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFileCXX.cmake:41
 msgid ""
-"See modules :module:`CheckIncludeFile` and :module:`CheckIncludeFiles` to "
-"check for one or more ``C`` headers."
+"Checking whether the ``C++23`` header ``<stdfloat>`` exists and storing the "
+"check result in the ``HAVE_STDFLOAT_HEADER`` cache variable:"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFileCXX.cmake:44
+msgid ""
+"include(CheckIncludeFileCXX)\n"
+"\n"
+"check_include_file_cxx(stdfloat HAVE_STDFLOAT_HEADER)"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFileCXX.cmake:51
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFileCXX.cmake:53
+msgid "The :module:`CheckIncludeFile` module to check for single ``C`` header."
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFileCXX.cmake:54
+msgid ""
+"The :module:`CheckIncludeFiles` module to check for one or more ``C`` or ``C+"
+"+`` headers at once."
 msgstr ""

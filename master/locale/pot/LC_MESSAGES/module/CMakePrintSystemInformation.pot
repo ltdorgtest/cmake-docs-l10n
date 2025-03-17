@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,32 @@ msgid "CMakePrintSystemInformation"
 msgstr ""
 
 #: ../../../../Modules/CMakePrintSystemInformation.cmake:8
-msgid "Print system information."
+msgid "This module can be used for diagnostics to print system information."
 msgstr ""
 
-#: ../../../../Modules/CMakePrintSystemInformation.cmake:10
+#: ../../../../Modules/CMakePrintSystemInformation.cmake:11
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CMakePrintSystemInformation.cmake:13
+msgid "Including this module in a project:"
+msgstr ""
+
+#: ../../../../Modules/CMakePrintSystemInformation.cmake:15
+msgid "include(CMakePrintSystemInformation)"
+msgstr ""
+
+#: ../../../../Modules/CMakePrintSystemInformation.cmake:19
+msgid "prints various internal CMake variables.  For example::"
+msgstr ""
+
+#: ../../../../Modules/CMakePrintSystemInformation.cmake:21
 msgid ""
-"This module serves diagnostic purposes. Just include it in a project to see "
-"various internal CMake variables."
+"CMAKE_SYSTEM is Linux-6.11.0-17-generic Linux 6.11.0-17-generic x86_64\n"
+"CMAKE_SYSTEM file is Platform/Linux\n"
+"CMAKE_C_COMPILER is /usr/bin/cc\n"
+"CMAKE_CXX_COMPILER is /usr/bin/c++\n"
+"CMAKE_SHARED_LIBRARY_CREATE_C_FLAGS is -shared\n"
+"CMAKE_SHARED_LIBRARY_CREATE_CXX_FLAGS is -shared\n"
+"..."
 msgstr ""

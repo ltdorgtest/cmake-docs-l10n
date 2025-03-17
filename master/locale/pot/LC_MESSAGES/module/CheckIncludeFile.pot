@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,9 +120,34 @@ msgid ""
 "associated with the check will be suppressed."
 msgstr ""
 
-#: ../../../../Modules/CheckIncludeFile.cmake:38
+#: ../../../../Modules/CheckIncludeFile.cmake:39
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFile.cmake:41
 msgid ""
-"See the :module:`CheckIncludeFiles` module to check for multiple headers at "
-"once.  See the :module:`CheckIncludeFileCXX` module to check for headers "
-"using the ``CXX`` language."
+"Checking whether the ``C`` header ``<unistd.h>`` exists and storing the "
+"check result in the ``HAVE_UNISTD_H`` cache variable:"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFile.cmake:44
+msgid ""
+"include(CheckIncludeFile)\n"
+"\n"
+"check_include_file(unistd.h HAVE_UNISTD_H)"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFile.cmake:51
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFile.cmake:53
+msgid ""
+"The :module:`CheckIncludeFileCXX` module to check for single ``C++`` header."
+msgstr ""
+
+#: ../../../../Modules/CheckIncludeFile.cmake:54
+msgid ""
+"The :module:`CheckIncludeFiles` module to check for one or more ``C`` or ``C+"
+"+`` headers at once."
 msgstr ""
