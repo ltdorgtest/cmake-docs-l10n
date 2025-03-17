@@ -12,19 +12,16 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../release/dev/cpack-rpm-weak-deps-tags.rst:2
-msgid "cpack-rpm-weak-deps-tags"
+#: ../../../release/dev/pdb-name-genex-support.rst:2
+msgid "pdb-name-genex-support"
 msgstr ""
 
-#: ../../../release/dev/cpack-rpm-weak-deps-tags.rst:4
+#: ../../../release/dev/pdb-name-genex-support.rst:4
 msgid ""
-"The :cpack_gen:`CPack RPM Generator` gained :variable:"
-"`CPACK_RPM_PACKAGE_ENHANCES`, :variable:`CPACK_RPM_PACKAGE_RECOMMENDS`, and :"
-"variable:`CPACK_RPM_PACKAGE_SUPPLEMENTS` variables to specify the "
-"corresponding RPM spec fields."
+"The :prop_tgt:`PDB_NAME` and :prop_tgt:`COMPILE_PDB_NAME` target properties "
+"now support :manual:`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
