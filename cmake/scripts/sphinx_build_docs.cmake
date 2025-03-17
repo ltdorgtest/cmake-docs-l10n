@@ -114,6 +114,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                                     "$ENV{PATH}")
         set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
         string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
+        string(REPLACE ";" "\\\\;"  ENV_PYTHONPATH "${ENV_PYTHONPATH}")
         set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                     PYTHONPATH=${ENV_PYTHONPATH})
     else()
