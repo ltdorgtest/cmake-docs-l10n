@@ -3,7 +3,6 @@ import os
 
 # Default configuration values
 DEFAULT_CONFIG_VALUES = {
-    "enable_switchers"  : 0,
     "current_version"   : "",
     "current_language"  : "",
     "html_baseurl"      : "",

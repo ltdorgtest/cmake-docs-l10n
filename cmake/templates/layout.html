@@ -8,11 +8,7 @@
           <a href="https://cmake.org/">CMake</a>{{ reldelim1 }}
         </li>
         <li>
-  {%- if enable_switchers %}
           <a href="{{ pathto(master_doc) }}">{% trans %}Documentation{% endtrans %}</a>{{ reldelim1 }}
-  {%- else %}
-          <a href="{{ pathto(master_doc) }}">{{ shorttitle|e }}</a>{{ reldelim1 }}
-  {%- endif %}
         </li>
 {% endblock %}
 
@@ -34,10 +30,8 @@
           title="Search within CMake Documentation of Latest Version"
           href="{{ pathto('../latest-opensearch.xml', 1) }}"/>
   {%- endif %}
-  {%- if enable_switchers %}
     <script type="text/javascript" src="{{ pathto('current.js', 1) }}"></script>
     <script type="text/javascript" src="{{ pathto('../../flyout.js', 1) }}"></script>
-  {%- endif %}
 {{ super() }}
 {% endblock %}
 
