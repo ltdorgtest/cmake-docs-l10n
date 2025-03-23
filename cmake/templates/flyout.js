@@ -16,6 +16,7 @@ const _ALL_VERSIONS = [
   ["master", "master"],
   ["latest", "latest"],
   ["4.0", "4.0"],
+  ["newline", "newline"],
   ["3.31", "3.31"],
   ["3.30", "3.30"],
   ["3.29", "3.29"],
