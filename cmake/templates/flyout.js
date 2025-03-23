@@ -127,29 +127,29 @@ async function getTargetUrl(type, selectedValue) {
  * manages the visibility state of the flyout using event listeners.
  */
 function createFlyout() {
-  const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => `
-    <a href="#"
-      title="${name}"
-      class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
-      data-language="${code}">
-      ${code}
-    </a>
-  `).join("");
+  const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => {
+    if (code === "newline") {
+      return `<dd class="newline"></dd>`;
+    } else {
+      return `<dd class="options"><a href="#" title="${name}" class="${code === _CURRENT_LANGUAGE ? "selected" : ""}" data-language="${code}">${code}</a></dd>`;
+    }
+  }).join("");
 
-  const sortedVersions = _ALL_VERSIONS.map(([code, name]) => `
-    <a href="#"
-      title="${name}"
-      class="${code === _CURRENT_VERSION ? "selected" : ""}"
-      data-version="${code}">
-      ${code}
-    </a>
-  `).join("");
+  const sortedVersions = _ALL_VERSIONS.map(([code, name]) => {
+    if (code === "newline") {
+      return `<dd class="newline"></dd>`;
+    } else {
+      return `<dd class="options"><a href="#" title="${name}" class="${code === _CURRENT_VERSION ? "selected" : ""}" data-version="${code}">${code}</a></dd>`;
+    }
+  }).join("");
 
-  const sortedProjects = _ALL_PROJECTS.map(([project, link]) => `
-    <a href="${link}">
-      ${project}
-    </a>
-  `).join("");
+  const sortedProjects = _ALL_PROJECTS.map(([project, link]) => {
+    if (project === "newline") {
+      return `<dd class="newline"></dd>`;
+    } else {
+      return `<dd class="options"><a href="${link}">${project}</a></dd>`;
+    }
+  }).join("");
 
   const flyoutHTML = `
     <div class="rtd-flyout">
@@ -159,15 +159,15 @@ function createFlyout() {
       <div class="rtd-flyout-content closed">
         <dl>
           <dt>Languages</dt>
-          <dd class="options">${sortedLanguages}</dd>
+          ${sortedLanguages}
         </dl>
         <dl>
           <dt>Versions</dt>
-          <dd class="options">${sortedVersions}</dd>
+          ${sortedVersions}
         </dl>
         <dl>
           <dt>Project Links</dt>
-          <dd class="options">${sortedProjects}</dd>
+          ${sortedProjects}
         </dl>
       </div>
     </div>
@@ -270,6 +270,8 @@ function addStyles() {
     .rtd-flyout-content {
       padding: 10px;
       background: #272725;
+      max-height: 450px;  /* Enable vertical scrollbar */
+      overflow-y: auto;   /* Enable vertical scrollbar */
     }
 
     .rtd-flyout-content.closed {
@@ -277,21 +279,31 @@ function addStyles() {
     }
 
     dl {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      gap: 5px;
       margin: 0;
       padding: 0;
     }
 
     dt {
       // font-size: 1.0rem;
+      width: 100%;
       color: rgb(128, 128, 128);
       font-weight: bold;
       text-align: left;
-      padding: 5px 3px;
+      padding: 5px 0px;
     }
 
     dd {
       margin: 0;
       padding: 0;
+    }
+
+    dd.newline {
+      flex-basis: 100%;
+      height: 0;
     }
 
     dd.options {

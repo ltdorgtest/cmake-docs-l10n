@@ -184,6 +184,8 @@ unset(_LANGUAGE)
 
 
 message(STATUS "Configuring 'index.html.in' file to the root of the builder directory...")
+set(DEFAULT_LANGTAG "en-us")
+set(DEFAULT_VERSION "master")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 configure_file(
     "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"

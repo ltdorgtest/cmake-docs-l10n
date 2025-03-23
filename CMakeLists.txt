@@ -138,6 +138,7 @@ set(STATISTIC_TXT_PATH              "${PROJ_L10N_VERSION_DIR}/statistic.txt")
 
 set(CMAKE_MODULE_PATH   "${PROJ_CMAKE_MODULES_DIR}")
 include(LogUtils)
+include(GitUtils)
 include(JsonUtils)
 
 #[============================================================[
@@ -329,7 +330,7 @@ init_references_json_file(
     IN_LANGUAGE         "${LANGUAGE_LIST}")
 
 #[============================================================[
-  Initialize ${CROWDIN_YML_PATH}.
+# Initialize ${CROWDIN_YML_PATH}.
 #]============================================================]
 
 file(COPY_FILE
