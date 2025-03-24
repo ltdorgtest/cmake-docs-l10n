@@ -179,6 +179,20 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         message("")
         restore_cmake_message_indent()
     endif()
+
+
+    message(STATUS "Configuring 'index.html.in' file to the language subdir of the builder directory...")
+    set(REDIRECTED_URL  "master/index.html")
+    file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}")
+    configure_file(
+        "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"
+        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
+    remove_cmake_message_indent()
+    message("")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html")
+    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
+    message("")
+    restore_cmake_message_indent()
 endforeach()
 unset(_LANGUAGE)
 
