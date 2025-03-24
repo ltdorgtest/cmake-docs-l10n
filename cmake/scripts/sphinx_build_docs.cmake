@@ -101,22 +101,22 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
     if (CMAKE_HOST_LINUX)
-        set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
-        set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
-        set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
-                                    PYTHONPATH=${ENV_PYTHONPATH})
+        set(ENV_PATH            "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
+        set(ENV_LD_LIBRARY_PATH "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+        set(ENV_PYTHONPATH      "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+        set(ENV_VARS_OF_SYSTEM  PATH=${ENV_PATH}
+                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
+                                PYTHONPATH=${ENV_PYTHONPATH})
     elseif (CMAKE_HOST_WIN32)
-        set(ENV_PATH                "${PROJ_CONDA_DIR}/Library/bin"
-                                    "${PROJ_CONDA_DIR}/Scripts"
-                                    "${PROJ_CONDA_DIR}"
-                                    "$ENV{PATH}")
-        set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
-        string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
-        string(REPLACE ";" "\\\\;"  ENV_PYTHONPATH "${ENV_PYTHONPATH}")
-        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
-                                    PYTHONPATH=${ENV_PYTHONPATH})
+        set(ENV_PATH            "${PROJ_CONDA_DIR}/Library/bin"
+                                "${PROJ_CONDA_DIR}/Scripts"
+                                "${PROJ_CONDA_DIR}"
+                                "$ENV{PATH}")
+        set(ENV_PYTHONPATH      "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+        string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
+        string(REPLACE ";" "\\\\;" ENV_PYTHONPATH "${ENV_PYTHONPATH}")
+        set(ENV_VARS_OF_SYSTEM  PATH=${ENV_PATH}
+                                PYTHONPATH=${ENV_PYTHONPATH})
     else()
         message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
     endif()
@@ -181,7 +181,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     endif()
 
 
-    message(STATUS "Configuring 'index.html.in' file to the language subdir of the builder directory...")
+    message(STATUS "Configuring 'index.html' file to the language subdir of the builder directory...")
     set(REDIRECTED_URL  "master/index.html")
     file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}")
     configure_file(
@@ -197,7 +197,7 @@ endforeach()
 unset(_LANGUAGE)
 
 
-message(STATUS "Configuring 'index.html.in' file to the root of the builder directory...")
+message(STATUS "Configuring 'index.html' file to the root of the builder directory...")
 set(REDIRECTED_URL  "en-us/master/index.html")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 configure_file(
