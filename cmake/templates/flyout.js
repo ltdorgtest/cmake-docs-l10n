@@ -251,10 +251,10 @@ async function updateLinks() {
 function addStyles() {
   const css = `
     .rtd-flyout {
-      color: rgb(252, 252, 252);
+      color: #fcfcfc;
       background-color: #272725;
       font-family: Arial, sans-serif;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 10px #000000;
       // font-size: 1.0rem;
       position: fixed;      /* Position: Stays in place on the screen */
       right: 20px;          /* Position: 20px from the right edge */
@@ -308,7 +308,7 @@ function addStyles() {
 
     dt {
       // font-size: 1.0rem;
-      color: rgb(128, 128, 128);
+      color: #808080;
       width: 100%;
       font-weight: bold;
       text-align: left;
@@ -333,7 +333,7 @@ function addStyles() {
     }
 
     dd.options a {
-      color: rgb(252, 252, 252);
+      color: #fcfcfc;
       background-color: #272725;
       text-decoration: none;
       padding: 5px 5px;
