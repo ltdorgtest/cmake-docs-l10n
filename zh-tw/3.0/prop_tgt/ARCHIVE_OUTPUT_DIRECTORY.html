@@ -1,0 +1,158 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>ARCHIVE_OUTPUT_DIRECTORY &mdash; CMake 3.0.2 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.0.2',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="ARCHIVE_OUTPUT_NAME_&lt;CONFIG&gt;" href="ARCHIVE_OUTPUT_NAME_CONFIG.html" />
+    <link rel="prev" title="ARCHIVE_OUTPUT_DIRECTORY_&lt;CONFIG&gt;" href="ARCHIVE_OUTPUT_DIRECTORY_CONFIG.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="ARCHIVE_OUTPUT_NAME_CONFIG.html" title="ARCHIVE_OUTPUT_NAME_&lt;CONFIG&gt;"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="ARCHIVE_OUTPUT_DIRECTORY_CONFIG.html" title="ARCHIVE_OUTPUT_DIRECTORY_&lt;CONFIG&gt;"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="archive-output-directory">
+<span id="prop_tgt:ARCHIVE_OUTPUT_DIRECTORY"></span><h1>ARCHIVE_OUTPUT_DIRECTORY<a class="headerlink" href="#archive-output-directory" title="本標題的永久連結">¶</a></h1>
+<p>Output directory in which to build ARCHIVE target files.</p>
+<p>This property specifies the directory into which archive target files
+should be built.  Multi-configuration generators (VS, Xcode) append a
+per-configuration subdirectory to the specified directory.</p>
+<p>There are three kinds of target files that may be built: archive,
+library, and runtime.  Executables are always treated as runtime
+targets.  Static libraries are always treated as archive targets.
+Module libraries are always treated as library targets.  For
+non-DLL platforms shared libraries are treated as library
+targets.  For DLL platforms the DLL part of a shared library is
+treated as a runtime target and the corresponding import library
+is treated as an archive target.  All Windows-based systems
+including Cygwin are DLL platforms.</p>
+<p>This property is initialized by the value of the variable
+CMAKE_ARCHIVE_OUTPUT_DIRECTORY if it is set when a target is created.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上個主題</h4>
+  <p class="topless"><a href="ARCHIVE_OUTPUT_DIRECTORY_CONFIG.html"
+                        title="上一章">ARCHIVE_OUTPUT_DIRECTORY_&lt;CONFIG&gt;</a></p>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="ARCHIVE_OUTPUT_NAME_CONFIG.html"
+                        title="下一章">ARCHIVE_OUTPUT_NAME_&lt;CONFIG&gt;</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/prop_tgt/ARCHIVE_OUTPUT_DIRECTORY.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜尋</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="前往" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="ARCHIVE_OUTPUT_NAME_CONFIG.html" title="ARCHIVE_OUTPUT_NAME_&lt;CONFIG&gt;"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="ARCHIVE_OUTPUT_DIRECTORY_CONFIG.html" title="ARCHIVE_OUTPUT_DIRECTORY_&lt;CONFIG&gt;"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2000-2014 Kitware, Inc.。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 創建。
+    </div>
+  </body>
+</html>

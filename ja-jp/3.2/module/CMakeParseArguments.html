@@ -1,0 +1,200 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja_JP">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>CMakeParseArguments &mdash; CMake 3.2.3 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '3.2.3',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="検索" href="../search.html" />
+    <link rel="next" title="CMakePrintHelpers" href="CMakePrintHelpers.html" />
+    <link rel="prev" title="CMakePackageConfigHelpers" href="CMakePackageConfigHelpers.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head>
+  <body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="CMakePrintHelpers.html" title="CMakePrintHelpers"
+             accesskey="N">次へ</a> |</li>
+        <li class="right" >
+          <a href="CMakePackageConfigHelpers.html" title="CMakePackageConfigHelpers"
+             accesskey="P">前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="cmakeparsearguments">
+<span id="module:CMakeParseArguments"></span><h1>CMakeParseArguments<a class="headerlink" href="#cmakeparsearguments" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>CMAKE_PARSE_ARGUMENTS(&lt;prefix&gt; &lt;options&gt; &lt;one_value_keywords&gt;
+&lt;multi_value_keywords&gt; args…)</p>
+<p>CMAKE_PARSE_ARGUMENTS() is intended to be used in macros or functions
+for parsing the arguments given to that macro or function.  It
+processes the arguments and defines a set of variables which hold the
+values of the respective options.</p>
+<p>The &lt;options&gt; argument contains all options for the respective macro,
+i.e.  keywords which can be used when calling the macro without any
+value following, like e.g.  the OPTIONAL keyword of the install()
+command.</p>
+<p>The &lt;one_value_keywords&gt; argument contains all keywords for this macro
+which are followed by one value, like e.g.  DESTINATION keyword of the
+install() command.</p>
+<p>The &lt;multi_value_keywords&gt; argument contains all keywords for this
+macro which can be followed by more than one value, like e.g.  the
+TARGETS or FILES keywords of the install() command.</p>
+<p>When done, CMAKE_PARSE_ARGUMENTS() will have defined for each of the
+keywords listed in &lt;options&gt;, &lt;one_value_keywords&gt; and
+&lt;multi_value_keywords&gt; a variable composed of the given &lt;prefix&gt;
+followed by 「_」 and the name of the respective keyword.  These
+variables will then hold the respective value from the argument list.
+For the &lt;options&gt; keywords this will be TRUE or FALSE.</p>
+<p>All remaining arguments are collected in a variable
+&lt;prefix&gt;_UNPARSED_ARGUMENTS, this can be checked afterwards to see
+whether your macro was called with unrecognized parameters.</p>
+<p>As an example here a my_install() macro, which takes similar arguments
+as the real install() command:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span>function(MY_INSTALL)
+  set(options OPTIONAL FAST)
+  set(oneValueArgs DESTINATION RENAME)
+  set(multiValueArgs TARGETS CONFIGURATIONS)
+  cmake_parse_arguments(MY_INSTALL &quot;${options}&quot; &quot;${oneValueArgs}&quot;
+                        &quot;${multiValueArgs}&quot; ${ARGN} )
+  ...
+</pre></div>
+</div>
+<p>Assume my_install() has been called like this:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">my_install</span><span class="p">(</span><span class="n">TARGETS</span> <span class="n">foo</span> <span class="n">bar</span> <span class="n">DESTINATION</span> <span class="nb">bin</span> <span class="n">OPTIONAL</span> <span class="n">blub</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>After the cmake_parse_arguments() call the macro will have set the
+following variables:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">MY_INSTALL_OPTIONAL</span> <span class="o">=</span> <span class="n">TRUE</span>
+<span class="n">MY_INSTALL_FAST</span> <span class="o">=</span> <span class="n">FALSE</span> <span class="p">(</span><span class="n">this</span> <span class="n">option</span> <span class="n">was</span> <span class="ow">not</span> <span class="n">used</span> <span class="n">when</span> <span class="n">calling</span> <span class="n">my_install</span><span class="p">()</span>
+<span class="n">MY_INSTALL_DESTINATION</span> <span class="o">=</span> <span class="s2">&quot;bin&quot;</span>
+<span class="n">MY_INSTALL_RENAME</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="p">(</span><span class="n">was</span> <span class="ow">not</span> <span class="n">used</span><span class="p">)</span>
+<span class="n">MY_INSTALL_TARGETS</span> <span class="o">=</span> <span class="s2">&quot;foo;bar&quot;</span>
+<span class="n">MY_INSTALL_CONFIGURATIONS</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> <span class="p">(</span><span class="n">was</span> <span class="ow">not</span> <span class="n">used</span><span class="p">)</span>
+<span class="n">MY_INSTALL_UNPARSED_ARGUMENTS</span> <span class="o">=</span> <span class="s2">&quot;blub&quot;</span> <span class="p">(</span><span class="n">no</span> <span class="n">value</span> <span class="n">expected</span> <span class="n">after</span> <span class="s2">&quot;OPTIONAL&quot;</span>
+</pre></div>
+</div>
+<p>You can then continue and process these variables.</p>
+<p>Keywords terminate lists of values, e.g.  if directly after a
+one_value_keyword another recognized keyword follows, this is
+interpreted as the beginning of the new option.  E.g.
+my_install(TARGETS foo DESTINATION OPTIONAL) would result in
+MY_INSTALL_DESTINATION set to 「OPTIONAL」, but MY_INSTALL_DESTINATION
+would be empty and MY_INSTALL_OPTIONAL would be set to TRUE therefor.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>前のトピックへ</h4>
+  <p class="topless"><a href="CMakePackageConfigHelpers.html"
+                        title="前の章へ">CMakePackageConfigHelpers</a></p>
+  <h4>次のトピックへ</h4>
+  <p class="topless"><a href="CMakePrintHelpers.html"
+                        title="次の章へ">CMakePrintHelpers</a></p>
+  <div role="note" aria-label="source link">
+    <h3>このページ</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/CMakeParseArguments.rst.txt"
+            rel="nofollow">ソースコードを表示</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>クイック検索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="検索" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>ナビゲーション</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="総合索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="CMakePrintHelpers.html" title="CMakePrintHelpers"
+             >次へ</a> |</li>
+        <li class="right" >
+          <a href="CMakePackageConfigHelpers.html" title="CMakePackageConfigHelpers"
+             >前へ</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <span class="language_switcher_placeholder"></span>
+          <span class="version_switcher_placeholder"></span>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2000-2015 Kitware, Inc..
+      このドキュメントは <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7 で生成しました。
+    </div>
+  </body>
+</html>
