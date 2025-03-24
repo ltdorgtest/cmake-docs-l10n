@@ -233,46 +233,47 @@ async function updateLinks() {
 function addStyles() {
   const css = `
     .rtd-flyout {
-      position: fixed;
-      right: 20px;
-      bottom: 40px;
-      background-color: #272725;
       color: rgb(252, 252, 252);
+      background-color: #272725;
       font-family: Arial, sans-serif;
-      // font-size: 1.0rem;
-      z-index: 5000;
-      border-radius: 5px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      padding: 5px;
-      width: auto;
-      min-width: 200px;
-      max-width: 350px;
+      // font-size: 1.0rem;
+      position: fixed;      /* Position: Stays in place on the screen */
+      right: 20px;          /* Position: 20px from the right edge */
+      bottom: 40px;         /* Position: 40px from the bottom edge */
+      z-index: 5000;        /* Position: Ensure flyout appears above other elements */
+      padding: 5px;         /* Spacing: Inner padding */
+      border-radius: 5px;   /* Style: Rounded corners */
+      width: auto;          /* Size: Auto width based on content */
+      min-width: 200px;     /* Size: Minimum width of 200px */
+      max-width: 350px;     /* Size: Maximum width of 350px */
     }
 
     .rtd-flyout-header {
-      display: block;
-      text-align: right;
-      padding: 10px 10px;
-      cursor: pointer;
-      background-color: #272725;
-      font-weight: bold;
       color: #27ae60;
-      position: relative;
+      background-color: #272725;
+      position: relative;   /* Position: For absolutely positioned children */
+      display: block;
+      padding: 10px;        /* Spacing: Inner padding */
+      cursor: pointer;
+      text-align: right;    /* Text: Align text to the right */
+      font-weight: bold;    /* Text: Bold font */
     }
 
     .rtd-flyout-header .fa-caret-down {
+      color: #27ae60;
+      background-color: #272725;
       position: absolute;
       right: 10px;
       top: 50%;
       transform: translateY(-50%);
-      color: #27ae60;
     }
 
     .rtd-flyout-content {
-      padding: 10px;
       background: #272725;
-      max-height: 450px;  /* Enable vertical scrollbar */
-      overflow-y: auto;   /* Enable vertical scrollbar */
+      padding: 10px;        /* Spacing: Inner padding */
+      max-height: 450px;    /* Size: Max height before scrolling */
+      overflow-y: auto;     /* Scroll: Enable vertical scrollbar if needed */
     }
 
     .rtd-flyout-content.closed {
@@ -290,8 +291,8 @@ function addStyles() {
 
     dt {
       // font-size: 1.0rem;
-      width: 100%;
       color: rgb(128, 128, 128);
+      width: 100%;
       font-weight: bold;
       text-align: left;
       padding: 5px 0px;
@@ -315,9 +316,9 @@ function addStyles() {
     }
 
     dd.options a {
-      text-decoration: none;
       color: rgb(252, 252, 252);
       background-color: #272725;
+      text-decoration: none;
       padding: 1px 3px;
       display: inline-block;
       border-radius: 3px;
