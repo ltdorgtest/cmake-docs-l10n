@@ -182,7 +182,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Configuring 'index.html' file to the language subdir of the builder directory...")
-    set(REDIRECTED_URL  "master/index.html")
+    set(REDIRECT_URL    "master/index.html")
     file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}")
     configure_file(
         "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"
@@ -198,7 +198,7 @@ unset(_LANGUAGE)
 
 
 message(STATUS "Configuring 'index.html' file to the root of the builder directory...")
-set(REDIRECTED_URL  "en-us/master/index.html")
+set(REDIRECT_URL    "en-us/master/index.html")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 configure_file(
     "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"
