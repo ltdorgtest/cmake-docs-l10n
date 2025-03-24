@@ -132,7 +132,16 @@ function createFlyout() {
     if (code === "newline") {
       return `<dd class="newline"></dd>`;
     } else {
-      return `<dd class="options"><a href="#" title="${name}" class="${code === _CURRENT_LANGUAGE ? "selected" : ""}" data-language="${code}">${code}</a></dd>`;
+      return `
+        <dd class="options">
+          <a href="#"
+            title="${name}"
+            class="${code === _CURRENT_LANGUAGE ? "selected" : ""}"
+            data-language="${code}">
+            ${code}
+          </a>
+        </dd>
+      `;
     }
   }).join("");
 
@@ -140,7 +149,16 @@ function createFlyout() {
     if (code === "newline") {
       return `<dd class="newline"></dd>`;
     } else {
-      return `<dd class="options"><a href="#" title="${name}" class="${code === _CURRENT_VERSION ? "selected" : ""}" data-version="${code}">${code}</a></dd>`;
+      return `
+        <dd class="options">
+          <a href="#"
+            title="${name}"
+            class="${code === _CURRENT_VERSION ? "selected" : ""}"
+            data-version="${code}">
+            ${code}
+          </a>
+        </dd>
+      `;
     }
   }).join("");
 
@@ -284,7 +302,6 @@ function addStyles() {
       display: flex;
       flex-wrap: wrap;
       align-items: flex-start;
-      gap: 5px;
       margin: 0;
       padding: 0;
     }
@@ -295,7 +312,7 @@ function addStyles() {
       width: 100%;
       font-weight: bold;
       text-align: left;
-      padding: 5px 0px;
+      padding: 2px 0px;
     }
 
     dd {
@@ -319,7 +336,7 @@ function addStyles() {
       color: rgb(252, 252, 252);
       background-color: #272725;
       text-decoration: none;
-      padding: 1px 3px;
+      padding: 5px 5px;
       display: inline-block;
       border-radius: 3px;
       transition: background 0.3s;
