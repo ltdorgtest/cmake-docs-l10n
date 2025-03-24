@@ -65,7 +65,7 @@ restore_cmake_message_indent()
 
 
 message(STATUS "Generating 'conf.py' file by configuring project(CMakeHelp)...")
-if (CMAKE_HOST_UNIX)
+if (CMAKE_HOST_LINUX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
     set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
@@ -75,7 +75,7 @@ elseif (CMAKE_HOST_WIN32)
                                 "${PROJ_CONDA_DIR}/Scripts"
                                 "${PROJ_CONDA_DIR}"
                                 "$ENV{PATH}")
-    string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
+    string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH})
 else()
     message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
@@ -202,7 +202,7 @@ endif()
 
 
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
-if (CMAKE_HOST_UNIX)
+if (CMAKE_HOST_LINUX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
     set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
     set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
@@ -215,8 +215,8 @@ elseif (CMAKE_HOST_WIN32)
                                 "${PROJ_CONDA_DIR}"
                                 "$ENV{PATH}")
     set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
-    string(REPLACE ";" "\\\\;"  ENV_PATH "${ENV_PATH}")
-    string(REPLACE ";" "\\\\;"  ENV_PYTHONPATH "${ENV_PYTHONPATH}")
+    string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
+    string(REPLACE ";" "\\\\;" ENV_PYTHONPATH "${ENV_PYTHONPATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                 PYTHONPATH=${ENV_PYTHONPATH})
 else()
