@@ -129,18 +129,18 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -b ${SPHINX_BUILDER}
                 -D version=${VERSION}
                 -D language=${_LANGUAGE}
-                -D locale_dirs=${LOCALE_TO_SOURCE_DIR}            # Relative to <sourcedir>.
-                -D templates_path=${TMPLS_TO_CONFIG_DIR}          # Relative to <configdir>.
+                -D locale_dirs=${LOCALE_TO_SOURCE_DIR}              # Relative to <sourcedir>.
+                -D templates_path=${TMPLS_TO_CONFIG_DIR}            # Relative to <configdir>.
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
-                -D current_version=${CURRENT_VERSION}             # Passed to custom.py.
-                -D current_language=${CURRENT_LANGUAGE}           # Passed to custom.py.
-                -D html_baseurl=${HTML_BASEURL}                   # Passed to custom.py.
+                -D current_version=${CURRENT_VERSION}               # Passed to custom.py.
+                -D current_language=${CURRENT_LANGUAGE}             # Passed to custom.py.
+                -D html_baseurl=${HTML_BASEURL}                     # Passed to custom.py.
                 -j ${SPHINX_JOB_NUMBER}
                 ${SPHINX_VERBOSE_ARGS}
-                -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}               # <configdir>, where conf.py locates.
-                ${PROJ_OUT_REPO_DOCS_SOURCE_DIR}                  # <sourcedir>, where index.rst locates.
-                ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}    # <outputdir>, where .html generates.
+                -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}                 # <configdir>, where conf.py locates.
+                ${PROJ_OUT_REPO_DOCS_SOURCE_DIR}                    # <sourcedir>, where index.rst locates.
+                ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}      # <outputdir>, where .html generates.
         WORKING_DIRECTORY ${PROJ_OUT_REPO_DOCS_DIR}
         ECHO_OUTPUT_VARIABLE
         ECHO_ERROR_VARIABLE
