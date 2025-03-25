@@ -15,6 +15,15 @@ include(GitUtils)
 include(JsonUtils)
 
 
+#[============================================================[
+# Prepare and synchronize the repository:
+# - Clone from remote if not present.
+# - Switch to 'current' branch.
+# - Clean untracked files and submodules.
+# - Fetch the latest commit or tag based on VERSION_TYPE.
+#]============================================================]
+
+
 message(STATUS "Cloning the repository from remote to local...")
 set(REMOTE_URL  "${REMOTE_URL_OF_DOCS}")
 set(LOCAL_PATH  "${PROJ_OUT_REPO_DIR}")
