@@ -12,17 +12,16 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../release/dev/pdb-name-genex-support.rst:2
-msgid "pdb-name-genex-support"
+#: ../../../release/dev/remove-FindCABLE.rst:2
+msgid "remove-FindCABLE"
 msgstr ""
 
-#: ../../../release/dev/pdb-name-genex-support.rst:4
+#: ../../../release/dev/remove-FindCABLE.rst:4
 msgid ""
-"The :prop_tgt:`PDB_NAME` and :prop_tgt:`COMPILE_PDB_NAME` target properties "
-"now support :manual:`generator expressions <cmake-generator-expressions(7)>`."
+"The :module:`FindCABLE` module has been deprecated via policy :policy:"
+"`CMP0191`."
 msgstr ""
