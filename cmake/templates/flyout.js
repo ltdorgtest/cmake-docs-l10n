@@ -326,6 +326,8 @@ function addStyles() {
     }
 
     dd.options {
+      margin: 0 !important;
+      padding: 0 !important;
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
