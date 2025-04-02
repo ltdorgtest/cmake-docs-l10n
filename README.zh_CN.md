@@ -9,9 +9,11 @@
   </picture>
 </div>
 
+<div align="center">
 <h1 id="localization-of-cmake-documentation">
 Localization of CMake Documentation
 </h1>
+</div>
 
 <details><summary><strong>Switch Languages</strong></summary>
 <p></p>
