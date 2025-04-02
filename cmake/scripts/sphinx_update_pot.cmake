@@ -89,6 +89,16 @@ execute_process(
             -S ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}
             -B ${PROJ_OUT_REPO_UTILS_SPHINX_DIR}/build
             -D SPHINX_HTML=ON
+            -D CMAKE_POLICY_VERSION_MINIMUM=3.5
+            #[============================================================[
+            # When configuring with CMake 4.0.0 or later, you may see this error:
+            #
+            #   Compatibility with CMake < 3.5 has been removed from CMake.
+            #
+            # To fix it, add the following argument:
+            #
+            #   -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+            #]============================================================]
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
     COMMAND_ERROR_IS_FATAL ANY)
