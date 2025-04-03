@@ -118,19 +118,6 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'layout.html' file to the sphinx templates directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
-file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/layout.html"
-    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}/layout.html")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/layout.html")
-message("To:   ${PROJ_OUT_REPO_DOCS_TMPLS_DIR}/layout.html")
-message("")
-restore_cmake_message_indent()
-
-
 message(STATUS "Adding 'custom' into 'extensions' list in 'conf.py' file...")
 set(SPHINX_CONF_PY_FILE "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}/conf.py")
 file(READ "${SPHINX_CONF_PY_FILE}" SPHINX_CONF_PY_CNT)
@@ -178,6 +165,19 @@ remove_cmake_message_indent()
 message("")
 message("From:  ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/custom.py")
 message("To:    ${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/custom.py")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Copying 'layout.html' file to the sphinx templates directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/layout.html"
+    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}/layout.html")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/layout.html")
+message("To:   ${PROJ_OUT_REPO_DOCS_TMPLS_DIR}/layout.html")
 message("")
 restore_cmake_message_indent()
 
