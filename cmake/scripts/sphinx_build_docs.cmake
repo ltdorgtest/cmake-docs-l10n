@@ -57,14 +57,27 @@ message("")
 restore_cmake_message_indent()
 
 
+message(STATUS "Copying 'config.js' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/config.js"
+    "${PROJ_OUT_BUILDER_DIR}/config.js")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/config.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/config.js")
+message("")
+restore_cmake_message_indent()
+
+
 message(STATUS "Copying 'flyout.js' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js"
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/flyout.js"
     "${PROJ_OUT_BUILDER_DIR}/flyout.js")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout.js")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/flyout.js")
 message("To:   ${PROJ_OUT_BUILDER_DIR}/flyout.js")
 message("")
 restore_cmake_message_indent()
@@ -89,11 +102,11 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Configuring 'current.js' file to the builder directory...")
     file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}")
     configure_file(
-        "${PROJ_CMAKE_TEMPLATES_DIR}/current.js.in"
+        "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/current.js.in"
         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
     remove_cmake_message_indent()
     message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/current.js")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/current.js.in")
     message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
     message("")
     restore_cmake_message_indent()
