@@ -95,9 +95,7 @@ execute_process(
             #
             #   Compatibility with CMake < 3.5 has been removed from CMake.
             #
-            # To fix it, add the following argument:
-            #
-            #   -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+            # To fix it, add -DCMAKE_POLICY_VERSION_MINIMUM=3.5
             #]============================================================]
     ECHO_OUTPUT_VARIABLE
     ECHO_ERROR_VARIABLE
