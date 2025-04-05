@@ -96,7 +96,6 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
     set(CURRENT_VERSION     "${VERSION}")
     set(CURRENT_LANGUAGE    "${_LANGTAG}")
-    set(HTML_BASEURL        "${BASEURL_HREF}")
 
 
     message(STATUS "Configuring 'current.js' file to the builder directory...")
@@ -146,7 +145,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -D templates_path=${TMPLS_TO_CONFIG_DIR}            # Relative to <configdir>.
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
-                -D html_baseurl=${HTML_BASEURL}                     # Passed to custom.py.
+                -D html_baseurl=${BASEURL_HREF}
                 -D current_language=${CURRENT_LANGUAGE}             # Passed to custom.py.
                 -D current_version=${CURRENT_VERSION}               # Passed to custom.py.
                 -j ${SPHINX_JOB_NUMBER}
