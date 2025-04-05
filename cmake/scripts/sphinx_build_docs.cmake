@@ -146,9 +146,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -D templates_path=${TMPLS_TO_CONFIG_DIR}            # Relative to <configdir>.
                 -D gettext_compact=${GETTEXT_COMPACT}
                 -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
-                -D current_version=${CURRENT_VERSION}               # Passed to custom.py.
-                -D current_language=${CURRENT_LANGUAGE}             # Passed to custom.py.
                 -D html_baseurl=${HTML_BASEURL}                     # Passed to custom.py.
+                -D current_language=${CURRENT_LANGUAGE}             # Passed to custom.py.
+                -D current_version=${CURRENT_VERSION}               # Passed to custom.py.
                 -j ${SPHINX_JOB_NUMBER}
                 ${SPHINX_VERBOSE_ARGS}
                 -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}                 # <configdir>, where conf.py locates.

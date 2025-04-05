@@ -8,7 +8,10 @@ const _is_file_uri = (uri) => uri.startsWith("file:/");
 const _IS_LOCAL = _is_file_uri(window.location.href);
 const _CURRENT_VERSION = CURRENT_OPTIONS.CURRENT_VERSION;
 const _CURRENT_LANGUAGE = CURRENT_OPTIONS.CURRENT_LANGUAGE;
-const _HTML_BASEURL = CURRENT_OPTIONS.HTML_BASEURL;
+const _FLYOUT_FILE = document.currentScript.src;
+const _FLYOUT_DIR = _FLYOUT_FILE.substring(0, _FLYOUT_FILE.lastIndexOf('/') + 1);
+const _HTML_BASEURL = _FLYOUT_DIR;
+// const _HTML_BASEURL = CURRENT_OPTIONS.HTML_BASEURL;
 const _SERVER_ROOT = window.location.origin;
 
 /**
