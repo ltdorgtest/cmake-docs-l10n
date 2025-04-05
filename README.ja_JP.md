@@ -41,10 +41,12 @@ Table of Contents
   <li><a href="#support-this-project">Support This Project</a></li>
   <li><a href="#sponsorship">Sponsorship</a></li>
   <li><a href="#contributors-list">Contributors List</a>
+    <p></p>
     <ul>
       <li><a href="#code-contributors">Code Contributors</a></li>
       <li><a href="#financial-contributors">Financial Contributors</a></li>
     </ul>
+    <p></p>
   </li>
   <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ul>
