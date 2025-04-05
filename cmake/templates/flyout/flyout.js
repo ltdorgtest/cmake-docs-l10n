@@ -6,12 +6,13 @@
 
 const _is_file_uri = (uri) => uri.startsWith("file:/");
 const _IS_LOCAL = _is_file_uri(window.location.href);
-const _CURRENT_VERSION = CURRENT_OPTIONS.CURRENT_VERSION;
-const _CURRENT_LANGUAGE = CURRENT_OPTIONS.CURRENT_LANGUAGE;
-const _FLYOUT_FILE = document.currentScript.src;
-const _FLYOUT_DIR = _FLYOUT_FILE.substring(0, _FLYOUT_FILE.lastIndexOf('/') + 1);
-const _HTML_BASEURL = _FLYOUT_DIR;
-// const _HTML_BASEURL = CURRENT_OPTIONS.HTML_BASEURL;
+const _CURRENT_LANGUAGE = CURRENT_OPTIONS.CURRENT_LANGUAGE;   /* Get from current.js */
+const _CURRENT_VERSION = CURRENT_OPTIONS.CURRENT_VERSION;     /* Get from current.js */
+const _CONFIG_LANGUAGES = CONFIG_OPTIONS.CONFIG_LANGUAGES;    /* Get from config.js */
+const _CONFIG_VERSIONS = CONFIG_OPTIONS.CONFIG_VERSIONS;      /* Get from config.js */
+const _CONFIG_PROJECTS = CONFIG_OPTIONS.CONFIG_PROJECTS;      /* Get from config.js */
+const _FLYOUT_JS_FILE = document.currentScript.src;
+const _FLYOUT_JS_DIR = _FLYOUT_JS_FILE.substring(0, _FLYOUT_JS_FILE.lastIndexOf('/') + 1);
 const _SERVER_ROOT = window.location.origin;
 
 /**
@@ -63,7 +64,7 @@ async function getTargetUrl(type, selectedValue) {
 
   // If the target URL is not accessible, return a fallback URL.
   // The fallback URL ensures the correct language and version are used.
-  return `${_HTML_BASEURL}/` +
+  return `${_FLYOUT_JS_DIR}/` +
     `${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/` +
     `${type === "version" ? selectedValue : _CURRENT_VERSION}/` +
     `index.html`;
@@ -77,7 +78,7 @@ async function getTargetUrl(type, selectedValue) {
  * manages the visibility state of the flyout using event listeners.
  */
 function createFlyout() {
-  const sortedLanguages = _ALL_LANGUAGES.map(([code, name]) => {
+  const sortedLanguages = _CONFIG_LANGUAGES.map(([code, name]) => {
     if (code === "newline") {
       return `<dd class="newline"></dd>`;
     } else {
@@ -94,7 +95,7 @@ function createFlyout() {
     }
   }).join("");
 
-  const sortedVersions = _ALL_VERSIONS.map(([code, name]) => {
+  const sortedVersions = _CONFIG_VERSIONS.map(([code, name]) => {
     if (code === "newline") {
       return `<dd class="newline"></dd>`;
     } else {
@@ -111,7 +112,7 @@ function createFlyout() {
     }
   }).join("");
 
-  const sortedProjects = _ALL_PROJECTS.map(([project, link]) => {
+  const sortedProjects = _CONFIG_PROJECTS.map(([project, link]) => {
     if (project === "newline") {
       return `<dd class="newline"></dd>`;
     } else {
