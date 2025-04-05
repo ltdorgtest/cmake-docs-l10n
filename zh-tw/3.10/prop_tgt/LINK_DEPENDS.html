@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_TW">
+  <head>
+    <meta charset="utf-8" />
+  <title>LINK_DEPENDS &mdash; CMake 3.10.3 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/translations.js"></script>
+    
+    <link rel="canonical" href="https://ltdorgtest.github.io/cmake-docs-l10n/prop_tgt/LINK_DEPENDS.html" />
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="LINKER_LANGUAGE" href="LINKER_LANGUAGE.html" />
+    <link rel="prev" title="LINK_DEPENDS_NO_SHARED" href="LINK_DEPENDS_NO_SHARED.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../config.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="LINKER_LANGUAGE.html" title="LINKER_LANGUAGE"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="LINK_DEPENDS_NO_SHARED.html" title="LINK_DEPENDS_NO_SHARED"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="link-depends">
+<span id="prop_tgt:LINK_DEPENDS"></span><h1>LINK_DEPENDS<a class="headerlink" href="#link-depends" title="本標題的永久連結">¶</a></h1>
+<p>Additional files on which a target binary depends for linking.</p>
+<p>Specifies a semicolon-separated list of full-paths to files on which
+the link rule for this target depends.  The target binary will be
+linked if any of the named files is newer than it.</p>
+<p>This property is ignored by non-Makefile generators.  It is intended
+to specify dependencies on 「linker scripts」 for custom Makefile link
+rules.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上個主題</h4>
+  <p class="topless"><a href="LINK_DEPENDS_NO_SHARED.html"
+                        title="上一章">LINK_DEPENDS_NO_SHARED</a></p>
+  <h4>下個主題</h4>
+  <p class="topless"><a href="LINKER_LANGUAGE.html"
+                        title="下一章">LINKER_LANGUAGE</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/prop_tgt/LINK_DEPENDS.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="搜" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="LINKER_LANGUAGE.html" title="LINKER_LANGUAGE"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="LINK_DEPENDS_NO_SHARED.html" title="LINK_DEPENDS_NO_SHARED"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版權所有 2000-2017 Kitware, Inc. and Contributors。
+      使用 <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 創建。
+    </div>
+  </body>
+</html>
