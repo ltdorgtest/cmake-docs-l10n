@@ -5,7 +5,6 @@ import os
 DEFAULT_CONFIG_VALUES = {
     "current_version"   : "",
     "current_language"  : "",
-    "html_baseurl"      : "",
 }
 
 # Custom html_theme_options
