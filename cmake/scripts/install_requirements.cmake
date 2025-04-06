@@ -128,9 +128,9 @@ if (RES_VAR EQUAL 0)
     endif()
 else()
     string(APPEND FAILURE_REASON
-    "The command failed with fatal errors.\n\n"
-    "    result:\n\n${RES_VAR}\n\n"
-    "    stderr:\n\n${ERR_VAR}")
+    "The command failed with fatal errors.\n"
+    "    result:\n${RES_VAR}\n"
+    "    stderr:\n${ERR_VAR}")
     message(FATAL_ERROR "${FAILURE_REASON}")
 endif()
 message("")
@@ -163,8 +163,8 @@ if (RES_VAR EQUAL 0)
 else()
     string(APPEND FAILURE_REASON
     "The command failed with fatal errors.\n\n"
-    "    result:\n\n${RES_VAR}\n\n"
-    "    stderr:\n\n${ERR_VAR}")
+    "    result:\n${RES_VAR}\n"
+    "    stderr:\n${ERR_VAR}")
     message(FATAL_ERROR "${FAILURE_REASON}")
 endif()
 message("")

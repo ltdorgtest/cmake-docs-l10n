@@ -159,11 +159,11 @@ endif()
 message(STATUS "Copying 'custom.py' file to the sphinx extensions directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/custom.py"
+    "${PROJ_CMAKE_TEMPLATES_DIR}/custom.py"
     "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/custom.py")
 remove_cmake_message_indent()
 message("")
-message("From:  ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/custom.py")
+message("From:  ${PROJ_CMAKE_TEMPLATES_DIR}/custom.py")
 message("To:    ${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/custom.py")
 message("")
 restore_cmake_message_indent()
