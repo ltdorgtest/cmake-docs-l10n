@@ -262,9 +262,9 @@ if (RES_VAR EQUAL 0)
     endif()
 else()
     string(APPEND FAILURE_REASON
-    "The command failed with fatal errors.\n\n"
-    "    result:\n\n${RES_VAR}\n\n"
-    "    stderr:\n\n${ERR_VAR}")
+    "The command failed with fatal errors.\n"
+    "    result:\n${RES_VAR}\n"
+    "    stderr:\n${ERR_VAR}")
     message(FATAL_ERROR "${FAILURE_REASON}")
 endif()
 message("")
@@ -281,10 +281,10 @@ if (RES_VAR EQUAL 0)
     get_filename_component(SPHINX_LIB_DIR "${OUT_VAR}" DIRECTORY)
 else()
     string(APPEND FAILURE_REASON
-    "The command failed with fatal errors.\n\n"
-    "    result:\n\n${RES_VAR}\n\n"
-    "    stdout:\n\n${OUT_VAR}\n\n"
-    "    stderr:\n\n${ERR_VAR}")
+    "The command failed with fatal errors.\n"
+    "    result:\n${RES_VAR}\n"
+    "    stdout:\n${OUT_VAR}\n"
+    "    stderr:\n${ERR_VAR}")
     message(FATAL_ERROR "${FAILURE_REASON}")
 endif()
 set(DEFAULT_SPHINX_POT_FILE "${SPHINX_LIB_DIR}/locale/sphinx.pot")
