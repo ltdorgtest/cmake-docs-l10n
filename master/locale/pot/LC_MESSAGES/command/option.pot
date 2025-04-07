@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,4 +46,14 @@ msgstr ""
 msgid ""
 "In CMake project mode, a boolean cache variable is created with the option "
 "value. In CMake script mode, a boolean variable is set with the option value."
+msgstr ""
+
+#: ../../../command/option.rst:21
+msgid "See Also"
+msgstr ""
+
+#: ../../../command/option.rst:23
+msgid ""
+"The :module:`CMakeDependentOption` module to specify dependent boolean "
+"options based on a set of conditions."
 msgstr ""
