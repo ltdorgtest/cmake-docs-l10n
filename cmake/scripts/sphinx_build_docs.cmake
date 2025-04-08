@@ -215,7 +215,7 @@ configure_file(
     "${PROJ_OUT_BUILDER_DIR}/index.html")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in")
 message("To:   ${PROJ_OUT_BUILDER_DIR}/index.html")
 message("")
 restore_cmake_message_indent()
