@@ -233,7 +233,7 @@ function addStyles() {
     .ltd-flyout-divider {
       height: 1px;
       background-color: #808080;
-      margin: 0 10px;
+      margin: 5px 10px;
       border: none;
     }
 
