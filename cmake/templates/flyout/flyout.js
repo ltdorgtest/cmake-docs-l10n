@@ -8,7 +8,7 @@ const _CONFIG_LANGUAGES = CONFIG_OPTIONS.CONFIG_LANGUAGES;
 const _CONFIG_VERSIONS = CONFIG_OPTIONS.CONFIG_VERSIONS;
 const _CONFIG_PROJECTS = CONFIG_OPTIONS.CONFIG_PROJECTS;
 const _FLYOUT_JS_FILE = document.currentScript.src;
-const _FLYOUT_JS_DIR = _FLYOUT_JS_FILE.substring(0, _FLYOUT_JS_FILE.lastIndexOf('/') + 1);
+const _FLYOUT_JS_DIR = _FLYOUT_JS_FILE.substring(0, _FLYOUT_JS_FILE.lastIndexOf('/'));
 const _SERVER_ROOT = window.location.origin;
 
 async function getTargetUrl(type, selectedValue) {
@@ -64,17 +64,17 @@ function createFlyout() {
   }).join("");
 
   const flyoutHTML = `
-    <div class="rtd-flyout">
-      <span class="rtd-flyout-header">
-        <span class="rtd-icon">
-          <img src="${_FLYOUT_JS_DIR}/icon.svg" alt="icon">
+    <div class="ltd-flyout">
+      <span class="ltd-flyout-header">
+        <span class="ltd-flyout-icon">
+          <img src="${_FLYOUT_JS_DIR}/ltd-icon.svg" alt="icon">
         </span>
-        <span class="rtd-label">
+        <span class="ltd-flyout-label">
           Language: ${_CURRENT_LANGUAGE} | Version: ${_CURRENT_VERSION}
         </span>
       </span>
-      <div class="rtd-divider"></div>
-      <div class="rtd-flyout-content closed">
+      <div class="ltd-flyout-divider"></div>
+      <div class="ltd-flyout-content closed">
         <dl>
           <dt>Languages</dt>
           ${sortedLanguages}
@@ -93,21 +93,21 @@ function createFlyout() {
 
   document.body.insertAdjacentHTML("beforeend", flyoutHTML);
 
-  const flyout = document.querySelector(".rtd-flyout");
-  const header = document.querySelector(".rtd-flyout-header");
-  const content = document.querySelector(".rtd-flyout-content");
-  const divider = document.querySelector(".rtd-divider");
-  const icon = document.querySelector(".rtd-icon");
-  const label = document.querySelector(".rtd-label");
+  const flyout = document.querySelector(".ltd-flyout");
+  const header = document.querySelector(".ltd-flyout-header");
+  const content = document.querySelector(".ltd-flyout-content");
+  const divider = document.querySelector(".ltd-flyout-divider");
+  const icon = document.querySelector(".ltd-flyout-icon");
+  const label = document.querySelector(".ltd-flyout-label");
 
   // 初始化：label 隱藏狀態
-  if (localStorage.getItem("rtd-label-hidden") === "true") {
+  if (localStorage.getItem("ltd-flyout-label-hidden") === "true") {
     label.classList.add("hidden-label");
     header.classList.add("icon-only");
   }
 
   // 初始化：content 是否收合
-  if (localStorage.getItem("rtd-flyout-collapsed") === "true") {
+  if (localStorage.getItem("ltd-flyout-collapsed") === "true") {
     content.classList.add("closed");
     divider.classList.add("closed"); // ✅ 修正：收合時 divider 一起隱藏
   }
@@ -116,20 +116,11 @@ function createFlyout() {
   label.addEventListener("click", (event) => {
     const isHidden = content.classList.toggle("closed");
     divider.classList.toggle("closed", isHidden);
-    localStorage.setItem("rtd-flyout-collapsed", isHidden);
+    localStorage.setItem("ltd-flyout-collapsed", isHidden);
     event.stopPropagation();
   });
 
-  // 點 icon：同時控制 label + content + divider
-  // icon.addEventListener("click", (event) => {
-  //   const isHidden = label.classList.toggle("hidden-label");
-  //   header.classList.toggle("icon-only", isHidden);
-  //   content.classList.toggle("closed", isHidden);
-  //   divider.classList.toggle("closed", isHidden);
-  //   localStorage.setItem("rtd-label-hidden", isHidden);
-  //   localStorage.setItem("rtd-flyout-collapsed", isHidden);
-  //   event.stopPropagation();
-  // });
+  // Click icon：同時控制 label + content + divider
   icon.addEventListener("click", (event) => {
     const labelIsHidden = label.classList.contains("hidden-label");
 
@@ -137,7 +128,7 @@ function createFlyout() {
       // ✅ 若 label 是收起的，只展開 label，不展開 content
       label.classList.remove("hidden-label");
       header.classList.remove("icon-only");
-      localStorage.setItem("rtd-label-hidden", "false");
+      localStorage.setItem("ltd-flyout-label-hidden", "false");
       // 不動 content 和 divider
     } else {
       // ✅ 否則收回所有（label + content + divider）
@@ -145,8 +136,8 @@ function createFlyout() {
       header.classList.add("icon-only");
       content.classList.add("closed");
       divider.classList.add("closed");
-      localStorage.setItem("rtd-label-hidden", "true");
-      localStorage.setItem("rtd-flyout-collapsed", "true");
+      localStorage.setItem("ltd-flyout-label-hidden", "true");
+      localStorage.setItem("ltd-flyout-collapsed", "true");
     }
 
     event.stopPropagation();
@@ -158,7 +149,7 @@ function createFlyout() {
     if (!flyout.contains(event.target)) {
       content.classList.add("closed");
       divider.classList.add("closed");
-      localStorage.setItem("rtd-flyout-collapsed", "true");
+      localStorage.setItem("ltd-flyout-collapsed", "true");
     }
   });
 }
@@ -180,7 +171,7 @@ async function updateLinks() {
 
 function addStyles() {
   const css = `
-    .rtd-flyout {
+    .ltd-flyout {
       color: #ffffff;
       background-color: #263238;
       box-shadow: 0 4px 10px #000000;
@@ -197,7 +188,7 @@ function addStyles() {
       max-width: 350px;
     }
 
-    .rtd-flyout-header {
+    .ltd-flyout-header {
       color: #27ae60;
       background-color: #263238;
       display: flex;
@@ -206,51 +197,51 @@ function addStyles() {
       font-weight: bold;
     }
 
-    .rtd-flyout-header.icon-only {
+    .ltd-flyout-header.icon-only {
       justify-content: center;
       padding: 0;
     }
 
-    .rtd-icon {
+    .ltd-flyout-icon {
       flex-shrink: 0;
     }
 
-    .rtd-icon img {
+    .ltd-flyout-icon img {
       padding: 10px;  /* xxx */
       width: 25px;
       height: 25px;
       display: block;
     }
 
-    .rtd-label {
+    .ltd-flyout-label {
       padding: 10px;  /* xxx */
       flex-grow: 1;
       text-align: right;
     }
 
-    .rtd-label.hidden-label {
+    .ltd-flyout-label.hidden-label {
       display: none;
     }
 
-    .rtd-divider {
+    .ltd-flyout-divider {
       height: 1px;
-      background-color: #444;
+      background-color: #808080;
       margin: 0 10px;
       border: none;
     }
 
-    .rtd-divider.closed {
+    .ltd-flyout-divider.closed {
       display: none;
     }
 
-    .rtd-flyout-content {
+    .ltd-flyout-content {
       background: #263238;
       padding: 10px;
       max-height: 450px;
       overflow-y: auto;
     }
 
-    .rtd-flyout-content.closed {
+    .ltd-flyout-content.closed {
       display: none;
     }
 
