@@ -146,8 +146,8 @@ function addStyles() {
       font-family: Arial, sans-serif;
       font-size: 16px;
       position: fixed;
-      right: 20px;
-      bottom: 30px;
+      right: 15px;
+      bottom: 20px;
       z-index: 5000;
       padding: 5px;
       border-radius: 5px;
