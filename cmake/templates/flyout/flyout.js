@@ -201,11 +201,12 @@ async function updateLinks() {
 function addStyles() {
   const css = `
     .rtd-flyout {
-      color: #fcfcfc;
-      background-color: #272725;
+      color: #ffffff;                 /* Color: */
+      background-color: #263238;      /* Color: */
+      box-shadow: 0 4px 10px #000000; /* Color: */
       font-family: Arial, sans-serif;
-      box-shadow: 0 4px 10px #000000;
-      // font-size: 1.0rem;
+      font-size: 16px;
+      line-height: 20px;
       position: fixed;      /* Position: Stays in place on the screen */
       right: 20px;          /* Position: 20px from the right edge */
       bottom: 40px;         /* Position: 40px from the bottom edge */
@@ -219,7 +220,7 @@ function addStyles() {
 
     .rtd-flyout-header {
       color: #27ae60;
-      background-color: #272725;
+      background-color: #263238;
       position: relative;   /* Position: For absolutely positioned children */
       display: block;
       padding: 10px;        /* Spacing: Inner padding */
@@ -230,7 +231,7 @@ function addStyles() {
 
     .rtd-flyout-header .fa-caret-down {
       color: #27ae60;
-      background-color: #272725;
+      background-color: #263238;
       position: absolute;
       right: 10px;
       top: 50%;
@@ -238,7 +239,7 @@ function addStyles() {
     }
 
     .rtd-flyout-content {
-      background: #272725;
+      background: #263238;
       padding: 10px;        /* Spacing: Inner padding */
       max-height: 450px;    /* Size: Max height before scrolling */
       overflow-y: auto;     /* Scroll: Enable vertical scrollbar if needed */
@@ -285,8 +286,8 @@ function addStyles() {
     }
 
     dd.options a {
-      color: #fcfcfc;
-      background-color: #272725;
+      color: #ffffff;
+      background-color: #263238;
       text-decoration: none;
       padding: 5px 5px;
       display: inline-block;
