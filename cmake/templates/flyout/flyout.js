@@ -93,7 +93,7 @@ function createFlyout() {
 
   // 點 icon → toggle label & header，並收起所有內容
   icon.addEventListener("click", (event) => {
-    const labelHidden = label.classList.toggle("hidden-label");
+    const labelHidden = label.classList.toggle("hidden");
     header.classList.toggle("icon-only", labelHidden);
     if (labelHidden) {
       content.classList.add("closed");
@@ -174,7 +174,7 @@ function addStyles() {
       text-align: right;
     }
 
-    .ltd-flyout-label.hidden-label {
+    .ltd-flyout-label.hidden {
       display: none;
     }
 
