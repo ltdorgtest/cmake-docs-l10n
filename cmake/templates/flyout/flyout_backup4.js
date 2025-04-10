@@ -29,14 +29,19 @@ async function getTargetUrl(type, selectedValue) {
 
   try {
     const response = await fetch(targetUrl, { method: "HEAD" });
-    if (response.ok) return targetUrl;
+    if (response.ok) {
+      return targetUrl;
+    } else {
+      console.warn("Target URL does not exist, using fallback URL:", targetUrl);
+    }
   } catch (error) {
     console.error("Error checking target URL:", error);
   }
 
   return `${_FLYOUT_JS_DIR}/` +
-         `${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/` +
-         `${type === "version" ? selectedValue : _CURRENT_VERSION}/index.html`;
+    `${type === "language" ? selectedValue : _CURRENT_LANGUAGE}/` +
+    `${type === "version" ? selectedValue : _CURRENT_VERSION}/` +
+    `index.html`;
 }
 
 function createFlyout() {
@@ -64,13 +69,24 @@ function createFlyout() {
         <span class="ltd-flyout-icon">
           <img src="${_FLYOUT_JS_DIR}/ltd-icon.svg" alt="icon">
         </span>
-        <span class="ltd-flyout-label">Language: ${_CURRENT_LANGUAGE} | Version: ${_CURRENT_VERSION}</span>
+        <span class="ltd-flyout-label">
+          Language: ${_CURRENT_LANGUAGE} | Version: ${_CURRENT_VERSION}
+        </span>
       </span>
-      <div class="ltd-flyout-divider closed"></div>
+      <div class="ltd-flyout-divider"></div>
       <div class="ltd-flyout-content closed">
-        <dl><dt>Languages</dt>${sortedLanguages}</dl>
-        <dl><dt>Versions</dt>${sortedVersions}</dl>
-        <dl><dt>Project Links</dt>${sortedProjects}</dl>
+        <dl>
+          <dt>Languages</dt>
+          ${sortedLanguages}
+        </dl>
+        <dl>
+          <dt>Versions</dt>
+          ${sortedVersions}
+        </dl>
+        <dl>
+          <dt>Project Links</dt>
+          ${sortedProjects}
+        </dl>
       </div>
     </div>
   `;
@@ -84,32 +100,48 @@ function createFlyout() {
   const divider = document.querySelector(".ltd-flyout-divider");
   const content = document.querySelector(".ltd-flyout-content");
 
-  // 點 label → toggle content + divider
+  const isCollapsed = localStorage.getItem("ltd-flyout-collapsed") === "true";
+  const isLabelHidden = localStorage.getItem("ltd-flyout-label-hidden") === "true";
+
+  content.classList.toggle("closed", isCollapsed);
+  divider.classList.toggle("closed", isCollapsed);
+  label.classList.toggle("hidden-label", isLabelHidden);
+  header.classList.toggle("icon-only", isLabelHidden);
+
+  // 點 label：只控制 content + divider
   label.addEventListener("click", (event) => {
-    const toggled = content.classList.toggle("closed");
-    divider.classList.toggle("closed", toggled);
+    const isHidden = content.classList.toggle("closed");
+    divider.classList.toggle("closed", isHidden);
+    localStorage.setItem("ltd-flyout-collapsed", isHidden);
     event.stopPropagation();
   });
 
-  // 點 icon → toggle label 顯示 + header 變 icon-only
+  // 點 icon：控制 label + content + divider
   icon.addEventListener("click", (event) => {
-    const labelHidden = label.classList.toggle("hidden");
-    header.classList.toggle("icon-only", labelHidden);
+    const labelIsHidden = label.classList.contains("hidden-label");
 
-    // 若是收起 label → 順便也收起 content + divider
-    if (labelHidden) {
+    if (labelIsHidden) {
+      label.classList.remove("hidden-label");
+      header.classList.remove("icon-only");
+      localStorage.setItem("ltd-flyout-label-hidden", "false");
+    } else {
+      label.classList.add("hidden-label");
+      header.classList.add("icon-only");
       content.classList.add("closed");
       divider.classList.add("closed");
+      localStorage.setItem("ltd-flyout-label-hidden", "true");
+      localStorage.setItem("ltd-flyout-collapsed", "true");
     }
 
     event.stopPropagation();
   });
 
-  // 點外部 → 收合 content + divider
+  // 點外部：收合內容 + divider（不收合 label）
   document.addEventListener("click", (event) => {
     if (!flyout.contains(event.target)) {
       content.classList.add("closed");
       divider.classList.add("closed");
+      localStorage.setItem("ltd-flyout-collapsed", "true");
     }
   });
 }
@@ -118,14 +150,21 @@ async function updateLinks() {
   const languageLinks = document.querySelectorAll("a[data-language]");
   const versionLinks = document.querySelectorAll("a[data-version]");
 
+  const clearFlyoutState = () => {
+    localStorage.removeItem("ltd-flyout-collapsed");
+    localStorage.removeItem("ltd-flyout-label-hidden");
+  };
+
   for (const link of languageLinks) {
-    const code = link.getAttribute("data-language");
-    link.href = await getTargetUrl("language", code);
+    const langCode = link.getAttribute("data-language");
+    link.href = await getTargetUrl("language", langCode);
+    link.addEventListener("pointerdown", clearFlyoutState);
   }
 
   for (const link of versionLinks) {
-    const code = link.getAttribute("data-version");
-    link.href = await getTargetUrl("version", code);
+    const versionCode = link.getAttribute("data-version");
+    link.href = await getTargetUrl("version", versionCode);
+    link.addEventListener("pointerdown", clearFlyoutState);
   }
 }
 
@@ -137,22 +176,24 @@ function addStyles() {
       box-shadow: 0 4px 10px #000000;
       font-family: Arial, sans-serif;
       font-size: 16px;
+      line-height: 20px;
       position: fixed;
       right: 20px;
       bottom: 40px;
       z-index: 5000;
       padding: 5px;
       border-radius: 5px;
+      width: auto;
       max-width: 350px;
     }
 
     .ltd-flyout-header {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
       color: #27ae60;
       background-color: #263238;
+      display: flex;
+      align-items: center;
       cursor: pointer;
+      font-weight: bold;
     }
 
     .ltd-flyout-header.icon-only {
@@ -177,7 +218,7 @@ function addStyles() {
       text-align: right;
     }
 
-    .ltd-flyout-label.hidden {
+    .ltd-flyout-label.hidden-label {
       display: none;
     }
 
@@ -185,6 +226,7 @@ function addStyles() {
       height: 1px;
       background-color: #808080;
       margin: 5px 10px;
+      border: none;
     }
 
     .ltd-flyout-divider.closed {
@@ -192,7 +234,7 @@ function addStyles() {
     }
 
     .ltd-flyout-content {
-      background-color: #263238;
+      background: #263238;
       padding: 10px;
       max-height: 450px;
       overflow-y: auto;
@@ -205,16 +247,17 @@ function addStyles() {
     dl {
       display: flex;
       flex-wrap: wrap;
+      align-items: flex-start;
       margin: 0;
       padding: 0;
     }
 
     dt {
-      width: 100%;
       color: #808080;
+      width: 100%;
       font-weight: bold;
       text-align: left;
-      padding: 2px 0;
+      padding: 2px 0px;
     }
 
     dd {
@@ -228,6 +271,8 @@ function addStyles() {
     }
 
     dd.options {
+      margin: 0 !important;
+      padding: 0 !important;
       display: flex;
       flex-wrap: wrap;
       gap: 5px;
@@ -238,7 +283,8 @@ function addStyles() {
       color: #ffffff;
       background-color: #263238;
       text-decoration: none;
-      padding: 5px;
+      padding: 5px 5px;
+      display: inline-block;
       border-radius: 3px;
       transition: background 0.3s;
     }
@@ -250,6 +296,7 @@ function addStyles() {
     dd.options a.selected {
       background-color: #27ae60;
       font-weight: bold;
+      color: white;
     }
   `;
 
