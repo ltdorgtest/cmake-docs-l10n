@@ -100,7 +100,17 @@ function createFlyout() {
   const divider = document.querySelector(".ltd-flyout-divider");
   const content = document.querySelector(".ltd-flyout-content");
 
-  // 初始化狀態（若沒有 localStorage 值，預設為 label 顯示、內容收合）
+  // // 初始化：label 隱藏狀態
+  // if (localStorage.getItem("ltd-flyout-label-hidden") === "true") {
+  //   label.classList.add("hidden-label");
+  //   header.classList.add("icon-only");
+  // }
+  // // 初始化：content 是否收合
+  // if (localStorage.getItem("ltd-flyout-collapsed") === "true") {
+  //   content.classList.add("closed");
+  //   divider.classList.add("closed"); // ✅ 修正：收合時 divider 一起隱藏
+  // }
+
   const isCollapsed = localStorage.getItem("ltd-flyout-collapsed") === "true";
   const isLabelHidden = localStorage.getItem("ltd-flyout-label-hidden") === "true";
 
@@ -117,17 +127,18 @@ function createFlyout() {
     event.stopPropagation();
   });
 
-  // 點 icon：展開或收合所有（label + content + divider）
+  // Click icon：同時控制 label + content + divider
   icon.addEventListener("click", (event) => {
     const labelIsHidden = label.classList.contains("hidden-label");
 
     if (labelIsHidden) {
-      // 展開 label，但不展開內容
+      // ✅ 若 label 是收起的，只展開 label，不展開 content
       label.classList.remove("hidden-label");
       header.classList.remove("icon-only");
       localStorage.setItem("ltd-flyout-label-hidden", "false");
+      // 不動 content 和 divider
     } else {
-      // 收合全部
+      // ✅ 否則收回所有（label + content + divider）
       label.classList.add("hidden-label");
       header.classList.add("icon-only");
       content.classList.add("closed");
@@ -139,7 +150,8 @@ function createFlyout() {
     event.stopPropagation();
   });
 
-  // 點外部：收合內容 + divider（不收合 label）
+
+  // 點外部：收合 content + divider
   document.addEventListener("click", (event) => {
     if (!flyout.contains(event.target)) {
       content.classList.add("closed");
@@ -153,21 +165,14 @@ async function updateLinks() {
   const languageLinks = document.querySelectorAll("a[data-language]");
   const versionLinks = document.querySelectorAll("a[data-version]");
 
-  const clearFlyoutState = () => {
-    localStorage.removeItem("ltd-flyout-collapsed");
-    localStorage.removeItem("ltd-flyout-label-hidden");
-  };
-
   for (const link of languageLinks) {
     const langCode = link.getAttribute("data-language");
     link.href = await getTargetUrl("language", langCode);
-    link.addEventListener("click", clearFlyoutState);
   }
 
   for (const link of versionLinks) {
     const versionCode = link.getAttribute("data-version");
     link.href = await getTargetUrl("version", versionCode);
-    link.addEventListener("click", clearFlyoutState);
   }
 }
 
@@ -209,14 +214,14 @@ function addStyles() {
     }
 
     .ltd-flyout-icon img {
-      padding: 10px;
+      padding: 10px;  /* xxx */
       width: 25px;
       height: 25px;
       display: block;
     }
 
     .ltd-flyout-label {
-      padding: 10px;
+      padding: 10px;  /* xxx */
       flex-grow: 1;
       text-align: right;
     }
