@@ -81,35 +81,32 @@ function createFlyout() {
   const header = document.querySelector(".ltd-flyout-header");
   const icon = document.querySelector(".ltd-flyout-icon");
   const label = document.querySelector(".ltd-flyout-label");
-  const divider = document.querySelector(".ltd-flyout-divider");
+  const dividers = document.querySelectorAll(".ltd-flyout-divider");
   const content = document.querySelector(".ltd-flyout-content");
 
-  // 點 label → toggle content + divider
+  // 點 label → toggle content + all dividers
   label.addEventListener("click", (event) => {
-    const toggled = content.classList.toggle("closed");
-    divider.classList.toggle("closed", toggled);
+    const isHidden = content.classList.toggle("closed");
+    dividers.forEach(div => div.classList.toggle("closed", isHidden));
     event.stopPropagation();
   });
 
-  // 點 icon → toggle label 顯示 + header 變 icon-only
+  // 點 icon → toggle label & header，並收起所有內容
   icon.addEventListener("click", (event) => {
-    const labelHidden = label.classList.toggle("hidden");
+    const labelHidden = label.classList.toggle("hidden-label");
     header.classList.toggle("icon-only", labelHidden);
-
-    // 若是收起 label → 順便也收起 content + divider
     if (labelHidden) {
       content.classList.add("closed");
-      divider.classList.add("closed");
+      dividers.forEach(div => div.classList.add("closed"));
     }
-
     event.stopPropagation();
   });
 
-  // 點外部 → 收合 content + divider
+  // 點擊外部 → 收合內容 + divider（不動 label）
   document.addEventListener("click", (event) => {
     if (!flyout.contains(event.target)) {
       content.classList.add("closed");
-      divider.classList.add("closed");
+      dividers.forEach(div => div.classList.add("closed"));
     }
   });
 }
@@ -139,7 +136,7 @@ function addStyles() {
       font-size: 16px;
       position: fixed;
       right: 20px;
-      bottom: 40px;
+      bottom: 30px;
       z-index: 5000;
       padding: 5px;
       border-radius: 5px;
@@ -177,7 +174,7 @@ function addStyles() {
       text-align: right;
     }
 
-    .ltd-flyout-label.hidden {
+    .ltd-flyout-label.hidden-label {
       display: none;
     }
 
