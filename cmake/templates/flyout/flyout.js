@@ -95,22 +95,29 @@ function createFlyout() {
 
   const flyout = document.querySelector(".ltd-flyout");
   const header = document.querySelector(".ltd-flyout-header");
-  const content = document.querySelector(".ltd-flyout-content");
-  const divider = document.querySelector(".ltd-flyout-divider");
   const icon = document.querySelector(".ltd-flyout-icon");
   const label = document.querySelector(".ltd-flyout-label");
+  const divider = document.querySelector(".ltd-flyout-divider");
+  const content = document.querySelector(".ltd-flyout-content");
 
-  // 初始化：label 隱藏狀態
-  if (localStorage.getItem("ltd-flyout-label-hidden") === "true") {
-    label.classList.add("hidden-label");
-    header.classList.add("icon-only");
-  }
+  // // 初始化：label 隱藏狀態
+  // if (localStorage.getItem("ltd-flyout-label-hidden") === "true") {
+  //   label.classList.add("hidden-label");
+  //   header.classList.add("icon-only");
+  // }
+  // // 初始化：content 是否收合
+  // if (localStorage.getItem("ltd-flyout-collapsed") === "true") {
+  //   content.classList.add("closed");
+  //   divider.classList.add("closed"); // ✅ 修正：收合時 divider 一起隱藏
+  // }
 
-  // 初始化：content 是否收合
-  if (localStorage.getItem("ltd-flyout-collapsed") === "true") {
-    content.classList.add("closed");
-    divider.classList.add("closed"); // ✅ 修正：收合時 divider 一起隱藏
-  }
+  const isCollapsed = localStorage.getItem("ltd-flyout-collapsed") === "true";
+  const isLabelHidden = localStorage.getItem("ltd-flyout-label-hidden") === "true";
+
+  content.classList.toggle("closed", isCollapsed);
+  divider.classList.toggle("closed", isCollapsed);
+  label.classList.toggle("hidden-label", isLabelHidden);
+  header.classList.toggle("icon-only", isLabelHidden);
 
   // 點 label：只控制 content + divider
   label.addEventListener("click", (event) => {
