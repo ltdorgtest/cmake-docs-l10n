@@ -1,11 +1,11 @@
 <div align="center">
   <picture>
-    <img width="100" height="100" src="img/logo-cmake.svg">
+    <img width="100" height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/cmake.svg">
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="img/logo-crowdin-white.svg">
-    <source media="(prefers-color-scheme: light)" srcset="img/logo-crowdin-dark.svg">
-    <img width="100" height="100" src="img/logo-crowdin-dark.svg">
+    <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-dark.svg">
+    <img width="100" height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-dark.svg">
   </picture>
 </div>
 
