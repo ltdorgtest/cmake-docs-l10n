@@ -83,6 +83,19 @@ message("")
 restore_cmake_message_indent()
 
 
+message(STATUS "Copying 'icon.svg' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+file(COPY_FILE
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/icon.svg"
+    "${PROJ_OUT_BUILDER_DIR}/icon.svg")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/icon.svg")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/icon.svg")
+message("")
+restore_cmake_message_indent()
+
+
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
 if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
@@ -199,7 +212,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
     remove_cmake_message_indent()
     message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html")
+    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in")
     message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
     message("")
     restore_cmake_message_indent()
