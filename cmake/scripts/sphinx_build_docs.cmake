@@ -83,15 +83,15 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'icon.svg' file to the root of the builder directory...")
+message(STATUS "Copying 'ltd-icon.svg' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/icon.svg"
-    "${PROJ_OUT_BUILDER_DIR}/icon.svg")
+    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/ltd-icon.svg"
+    "${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/icon.svg")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/icon.svg")
+message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/ltd-icon.svg")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
 message("")
 restore_cmake_message_indent()
 
