@@ -61,16 +61,27 @@ function createFlyout() {
   const flyoutHTML = `
     <div class="ltd-flyout">
       <span class="ltd-flyout-header">
-        <span class="ltd-flyout-icon">
+        <span class="ltd-flyout-header-icon">
           <img src="${_FLYOUT_JS_DIR}/ltd-icon.svg" alt="icon">
         </span>
-        <span class="ltd-flyout-label">Language: ${_CURRENT_LANGUAGE} | Version: ${_CURRENT_VERSION}</span>
+        <span class="ltd-flyout-header-label">
+          Language: ${_CURRENT_LANGUAGE} | Version: ${_CURRENT_VERSION}
+        </span>
       </span>
       <div class="ltd-flyout-divider closed"></div>
       <div class="ltd-flyout-content closed">
-        <dl><dt>Languages</dt>${sortedLanguages}</dl>
-        <dl><dt>Versions</dt>${sortedVersions}</dl>
-        <dl><dt>Project Links</dt>${sortedProjects}</dl>
+        <dl>
+          <dt>Languages</dt>
+          ${sortedLanguages}
+        </dl>
+        <dl>
+          <dt>Versions</dt>
+          ${sortedVersions}
+        </dl>
+        <dl>
+          <dt>Project Links</dt>
+          ${sortedProjects}
+        </dl>
       </div>
     </div>
   `;
@@ -79,8 +90,8 @@ function createFlyout() {
 
   const flyout = document.querySelector(".ltd-flyout");
   const header = document.querySelector(".ltd-flyout-header");
-  const icon = document.querySelector(".ltd-flyout-icon");
-  const label = document.querySelector(".ltd-flyout-label");
+  const icon = document.querySelector(".ltd-flyout-header-icon");
+  const label = document.querySelector(".ltd-flyout-header-label");
   const dividers = document.querySelectorAll(".ltd-flyout-divider");
   const content = document.querySelector(".ltd-flyout-content");
 
@@ -157,24 +168,24 @@ function addStyles() {
       padding: 0;
     }
 
-    .ltd-flyout-icon {
+    .ltd-flyout-header-icon {
       flex-shrink: 0;
     }
 
-    .ltd-flyout-icon img {
+    .ltd-flyout-header-icon img {
       padding: 10px;
       width: 25px;
       height: 25px;
       display: block;
     }
 
-    .ltd-flyout-label {
+    .ltd-flyout-header-label {
       padding: 10px;
       flex-grow: 1;
       text-align: right;
     }
 
-    .ltd-flyout-label.hidden {
+    .ltd-flyout-header-label.hidden {
       display: none;
     }
 
