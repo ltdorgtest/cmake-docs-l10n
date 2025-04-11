@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,20 +22,49 @@ msgid "FindWish"
 msgstr ""
 
 #: ../../../../Modules/FindWish.cmake:8
-msgid "Find wish installation"
+msgid "Finds ``wish``, a simple windowing shell command-line executable."
 msgstr ""
 
 #: ../../../../Modules/FindWish.cmake:10
 msgid ""
-"This module finds if TCL is installed and determines where the include files "
-"and libraries are.  It also determines what the name of the library is.  "
-"This code sets the following variables:"
+"This module is commonly used in conjunction with finding a TCL installation "
+"(see the :module:`FindTCL` module).  It helps determine where the TCL "
+"include paths and libraries are, as well as identifying the name of the TCL "
+"library."
 msgstr ""
 
-#: ../../../../Modules/FindWish.cmake:16
-msgid "TK_WISH = the path to the wish executable"
+#: ../../../../Modules/FindWish.cmake:14
+msgid ""
+"If the :variable:`UNIX` variable is defined, the module will prioritize "
+"looking for the Cygwin version of ``wish`` executable."
+msgstr ""
+
+#: ../../../../Modules/FindWish.cmake:18
+msgid "Cache Variables"
 msgstr ""
 
 #: ../../../../Modules/FindWish.cmake:20
-msgid "if UNIX is defined, then it will look for the cygwin version first"
+msgid "The following cache variables may be set:"
+msgstr ""
+
+#: ../../../../Modules/FindWish.cmake:22
+msgid "``TK_WISH``"
+msgstr ""
+
+#: ../../../../Modules/FindWish.cmake:23
+msgid "The path to the ``wish`` executable."
+msgstr ""
+
+#: ../../../../Modules/FindWish.cmake:26
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindWish.cmake:28
+msgid "Finding ``wish``:"
+msgstr ""
+
+#: ../../../../Modules/FindWish.cmake:30
+msgid ""
+"find_package(Wish)\n"
+"message(STATUS \"Found wish at: ${TK_WISH}\")"
 msgstr ""

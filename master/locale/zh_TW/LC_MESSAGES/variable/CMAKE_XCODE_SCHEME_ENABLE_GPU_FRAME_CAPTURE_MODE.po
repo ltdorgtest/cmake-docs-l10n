@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_XCODE_SCHEME_ENABLE_GPU_FRAME_CAPTURE_MODE.rst:6
 msgid ""
-"Property value for ``GPU Frame Capture`` in the Options section of the "
-"generated Xcode scheme. Example values are ``Metal`` and ``Disabled``."
+"Populate ``GPU Frame Capture`` in the Options section of the generated Xcode "
+"scheme. Example values are ``Metal`` and ``Disabled``."
 msgstr ""
 
 #: ../../../variable/CMAKE_XCODE_SCHEME_ENABLE_GPU_FRAME_CAPTURE_MODE.rst:10

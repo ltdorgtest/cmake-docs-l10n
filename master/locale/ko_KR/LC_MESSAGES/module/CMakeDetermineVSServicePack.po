@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,25 +22,60 @@ msgid "CMakeDetermineVSServicePack"
 msgstr ""
 
 #: ../../../../Modules/CMakeDetermineVSServicePack.cmake:10
-msgid "Do not use."
-msgstr ""
-
-#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:12
 msgid ""
-"The functionality of this module has been superseded by the :variable:"
-"`CMAKE_<LANG>_COMPILER_VERSION` variable that contains the compiler version "
-"number."
+"This module should no longer be used.  The functionality of this module has "
+"been superseded by the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable "
+"that contains the compiler version number."
 msgstr ""
 
-#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:16
-msgid "Determine the Visual Studio service pack of the 'cl' in use."
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:14
+msgid ""
+"This module provides a function to determine the installed Visual Studio "
+"service pack version for Visual Studio 2012 and earlier."
 msgstr ""
 
-#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:18
-msgid "Usage:"
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:19
+msgid "DetermineVSServicePack(<result>)"
 msgstr ""
 
-#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:20
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:23
+msgid ""
+"Determines the Visual Studio service pack version of the ``cl`` compiler in "
+"use and stores the result in the specified internal cache variable "
+"``<result>``."
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:27
+msgid ""
+"The ``<result>`` variable will be set to one of the following values or an "
+"empty string if the service pack cannot be determined:"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:30
+msgid "``vc80``, ``vc80sp1``"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:31
+msgid "``vc90``, ``vc90sp1``"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:32
+msgid "``vc100``, ``vc100sp1``"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:33
+msgid "``vc110``, ``vc110sp1``, ``vc110sp2``, ``vc110sp3``, ``vc110sp4``"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:36
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:38
+msgid "Determining the Visual Studio service pack version in a project:"
+msgstr ""
+
+#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:40
 msgid ""
 "if(MSVC)\n"
 "  include(CMakeDetermineVSServicePack)\n"
@@ -49,18 +84,4 @@ msgid ""
 "    message(STATUS \"Detected: ${my_service_pack}\")\n"
 "  endif()\n"
 "endif()"
-msgstr ""
-
-#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:30
-msgid ""
-"Function DetermineVSServicePack sets the given variable to one of the "
-"following values or an empty string if unknown::"
-msgstr ""
-
-#: ../../../../Modules/CMakeDetermineVSServicePack.cmake:33
-msgid ""
-"vc80, vc80sp1\n"
-"vc90, vc90sp1\n"
-"vc100, vc100sp1\n"
-"vc110, vc110sp1, vc110sp2, vc110sp3, vc110sp4"
 msgstr ""

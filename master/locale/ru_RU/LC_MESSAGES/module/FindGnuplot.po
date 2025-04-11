@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,37 +22,67 @@ msgid "FindGnuplot"
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:8
-msgid "This module looks for gnuplot."
+msgid ""
+"Finds the Gnuplot command-line graphing utility for generating two- and "
+"three-dimensional plots (``gnuplot``)."
 msgstr ""
 
-#: ../../../../Modules/FindGnuplot.cmake:11
+#: ../../../../Modules/FindGnuplot.cmake:12
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindGnuplot.cmake:13
-msgid "``GNUPLOT_FOUND``"
-msgstr ""
-
 #: ../../../../Modules/FindGnuplot.cmake:14
-msgid "System has Gnuplot."
+msgid "This module sets the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:16
-msgid "``GNUPLOT_EXECUTABLE``"
+msgid "``Gnuplot_FOUND``"
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:17
-msgid "The Gnuplot executable."
-msgstr ""
-
-#: ../../../../Modules/FindGnuplot.cmake:19
-msgid "``GNUPLOT_VERSION_STRING``"
+msgid ""
+"Boolean indicating whether Gnuplot has been found.  For backward "
+"compatibility, the ``GNUPLOT_FOUND`` variable is also set to the same value."
 msgstr ""
 
 #: ../../../../Modules/FindGnuplot.cmake:20
+msgid "``GNUPLOT_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:21
 msgid "The version of Gnuplot found."
 msgstr ""
 
-#: ../../../../Modules/FindGnuplot.cmake:22
-msgid "Version string detection will not work for old versions like 3.7.1."
+#: ../../../../Modules/FindGnuplot.cmake:25
+msgid ""
+"Version detection is available only for Gnuplot 4 and later.  Earlier "
+"versions did not provide version output."
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:29
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:31
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:33
+msgid "``GNUPLOT_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:34
+msgid "Absolute path to the ``gnuplot`` executable."
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:37
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:39
+msgid "Finding Gnuplot:"
+msgstr ""
+
+#: ../../../../Modules/FindGnuplot.cmake:41
+msgid "find_package(Gnuplot)"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgid "``SCRIPT``"
 msgstr ""
 
 #: ../../../prop_gbl/CMAKE_ROLE.rst:13
-msgid "Running in ``-P`` script mode."
+msgid "Running in :ref:`cmake -P <Script Processing Mode>` script mode."
 msgstr ""
 
 #: ../../../prop_gbl/CMAKE_ROLE.rst:15
@@ -48,7 +48,7 @@ msgid "``FIND_PACKAGE``"
 msgstr ""
 
 #: ../../../prop_gbl/CMAKE_ROLE.rst:16
-msgid "Running in ``--find-package`` mode."
+msgid "Running in :ref:`cmake --find-package <Find-Package Tool Mode>` mode."
 msgstr ""
 
 #: ../../../prop_gbl/CMAKE_ROLE.rst:18

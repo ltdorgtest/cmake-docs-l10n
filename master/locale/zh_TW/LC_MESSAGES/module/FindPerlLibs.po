@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,55 +22,150 @@ msgid "FindPerlLibs"
 msgstr ""
 
 #: ../../../../Modules/FindPerlLibs.cmake:8
-msgid "Find Perl libraries"
+msgid ""
+"Finds Perl libraries.  Perl is a general-purpose, interpreted, dynamic "
+"programming language.  This module detects whether Perl is installed and "
+"determines the locations of include paths, libraries, and the library name."
 msgstr ""
 
-#: ../../../../Modules/FindPerlLibs.cmake:10
-msgid ""
-"This module finds if PERL is installed and determines where the include "
-"files and libraries are.  It also determines what the name of the library "
-"is.  This code sets the following variables:"
+#: ../../../../Modules/FindPerlLibs.cmake:13
+msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindPerlLibs.cmake:16
+#: ../../../../Modules/FindPerlLibs.cmake:15
+msgid "This module sets the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:17
+msgid "``PerlLibs_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:18
 msgid ""
-"PERLLIBS_FOUND    = True if perl.h & libperl were found\n"
-"PERL_INCLUDE_PATH = path to where perl.h is found\n"
-"PERL_LIBRARY      = path to libperl\n"
-"PERL_EXECUTABLE   = full path to the perl binary"
+"True if ``perl.h`` and ``libperl`` were found.  For backward compatibility, "
+"the ``PERLLIBS_FOUND`` variable is also set to the same value."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:20
+msgid "``PERL_SITESEARCH``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:21
+msgid "Path to the sitesearch install directory (``-V:installsitesearch``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:22
+msgid "``PERL_SITEARCH``"
 msgstr ""
 
 #: ../../../../Modules/FindPerlLibs.cmake:23
-msgid ""
-"The minimum required version of Perl can be specified using the standard "
-"syntax, e.g.  find_package(PerlLibs 6.0)"
+msgid "Path to the sitelib install directory (``-V:installsitearch``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:24
+msgid "``PERL_SITELIB``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:25
+msgid "Path to the sitelib install directory (``-V:installsitelib``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:26
+msgid "``PERL_VENDORARCH``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:27
+msgid "Path to the vendor arch install directory (``-V:installvendorarch``)."
 msgstr ""
 
 #: ../../../../Modules/FindPerlLibs.cmake:28
-msgid ""
-"The following variables are also available if needed\n"
-"(introduced after CMake 2.6.4)"
+msgid "``PERL_VENDORLIB``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:29
+msgid "Path to the vendor lib install directory (``-V:installvendorlib``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:30
+msgid "``PERL_ARCHLIB``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:31
+msgid "Path to the core arch lib install directory (``-V:archlib``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:32
+msgid "``PERL_PRIVLIB``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:33
+msgid "Path to the core priv lib install directory (``-V:privlib``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:34
+msgid "``PERL_UPDATE_ARCHLIB``"
 msgstr ""
 
 #: ../../../../Modules/FindPerlLibs.cmake:35
-msgid ""
-"PERL_SITESEARCH     = path to the sitesearch install dir (-V:"
-"installsitesearch)\n"
-"PERL_SITEARCH       = path to the sitelib install directory (-V:"
-"installsitearch)\n"
-"PERL_SITELIB        = path to the sitelib install directory (-V:"
-"installsitelib)\n"
-"PERL_VENDORARCH     = path to the vendor arch install directory (-V:"
-"installvendorarch)\n"
-"PERL_VENDORLIB      = path to the vendor lib install directory (-V:"
-"installvendorlib)\n"
-"PERL_ARCHLIB        = path to the core arch lib install directory (-V:"
-"archlib)\n"
-"PERL_PRIVLIB        = path to the core priv lib install directory (-V:"
-"privlib)\n"
-"PERL_UPDATE_ARCHLIB = path to the update arch lib install directory (-V:"
-"installarchlib)\n"
-"PERL_UPDATE_PRIVLIB = path to the update priv lib install directory (-V:"
-"installprivlib)\n"
-"PERL_EXTRA_C_FLAGS = Compilation flags used to build perl"
+msgid "Path to the update arch lib install directory (``-V:installarchlib``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:36
+msgid "``PERL_UPDATE_PRIVLIB``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:37
+msgid "Path to the update priv lib install directory (``-V:installprivlib``)."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:38
+msgid "``PERL_EXTRA_C_FLAGS``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:39
+msgid "Compilation flags used to build Perl."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:42
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:44
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:46
+msgid "``PERL_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:47
+msgid "Directory containing ``perl.h`` and other Perl header files."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:48
+msgid "``PERL_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:49
+msgid "Path to the ``libperl``."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:50
+msgid "``PERL_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:51
+msgid "Full path to the ``perl`` executable."
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:54
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:56
+msgid "Finding Perl libraries and specifying the minimum required version:"
+msgstr ""
+
+#: ../../../../Modules/FindPerlLibs.cmake:58
+msgid "find_package(PerlLibs 6.0)"
 msgstr ""

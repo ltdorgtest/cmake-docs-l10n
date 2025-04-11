@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,16 +21,21 @@ msgstr ""
 msgid "TEST_INCLUDE_FILE"
 msgstr ""
 
-#: ../../../prop_dir/TEST_INCLUDE_FILE.rst:4
-msgid "Deprecated.  Use :prop_dir:`TEST_INCLUDE_FILES` instead."
-msgstr ""
-
 #: ../../../prop_dir/TEST_INCLUDE_FILE.rst:6
-msgid "A cmake file that will be included when ctest is run."
+msgid ""
+"Use the :prop_dir:`TEST_INCLUDE_FILES` directory property instead, which "
+"supports specifying multiple files."
 msgstr ""
 
-#: ../../../prop_dir/TEST_INCLUDE_FILE.rst:8
+#: ../../../prop_dir/TEST_INCLUDE_FILE.rst:9
 msgid ""
-"If you specify ``TEST_INCLUDE_FILE``, that file will be included and "
-"processed when ctest is run on the directory."
+"The ``TEST_INCLUDE_FILE`` directory property specifies a CMake script that "
+"is included and processed when ``ctest`` is run on the directory."
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILE.rst:12
+msgid ""
+"If both the ``TEST_INCLUDE_FILE`` and :prop_dir:`TEST_INCLUDE_FILES` "
+"directory properties are set, the script specified in ``TEST_INCLUDE_FILE`` "
+"is included first, followed by the scripts listed in ``TEST_INCLUDE_FILES``."
 msgstr ""

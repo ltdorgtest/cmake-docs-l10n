@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:8
 msgid ""
-"Find the native Expat headers and library. Expat is a stream-oriented XML "
+"Finds the native Expat headers and library.  Expat is a stream-oriented XML "
 "parser library written in C."
 msgstr ""
 
@@ -31,62 +31,84 @@ msgstr ""
 msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindEXPAT.cmake:16
-msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
+#: ../../../../Modules/FindEXPAT.cmake:14
+msgid "This module provides the following :ref:`Imported Targets`:"
 msgstr ""
 
-#: ../../../../Modules/FindEXPAT.cmake:18
+#: ../../../../Modules/FindEXPAT.cmake:16
 msgid "``EXPAT::EXPAT``"
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:19
-msgid "The Expat ``expat`` library, if found."
+msgid ""
+"Target encapsulating the Expat library (``expat``) usage requirements.  This "
+"target is available only if Expat is found."
 msgstr ""
 
-#: ../../../../Modules/FindEXPAT.cmake:22
+#: ../../../../Modules/FindEXPAT.cmake:23
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindEXPAT.cmake:24
-msgid "This module will set the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindEXPAT.cmake:26
-msgid "``EXPAT_INCLUDE_DIRS``"
+#: ../../../../Modules/FindEXPAT.cmake:25
+msgid "This module sets the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:27
-msgid "where to find expat.h, etc."
+msgid "``EXPAT_INCLUDE_DIRS``"
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:28
-msgid "``EXPAT_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindEXPAT.cmake:29
-msgid "the libraries to link against to use Expat."
+msgid ""
+"Include directories containing ``expat.h`` and related headers needed to use "
+"Expat."
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:30
-msgid "``EXPAT_FOUND``"
+msgid "``EXPAT_LIBRARIES``"
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:31
-msgid "true if the Expat headers and libraries were found."
+msgid "Libraries needed to link against to use Expat."
 msgstr ""
 
-#: ../../../../Modules/FindEXPAT.cmake:34
-msgid "Hints"
+#: ../../../../Modules/FindEXPAT.cmake:32
+msgid "``EXPAT_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindEXPAT.cmake:33
+msgid "Boolean indicating whether the Expat is found."
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:36
-msgid "``EXPAT_USE_STATIC_LIBS``"
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindEXPAT.cmake:38
+msgid "This module accepts the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindEXPAT.cmake:40
+msgid "``EXPAT_USE_STATIC_LIBS``"
+msgstr ""
+
+#: ../../../../Modules/FindEXPAT.cmake:43
 msgid "Set to ``TRUE`` to use static libraries."
 msgstr ""
 
-#: ../../../../Modules/FindEXPAT.cmake:44
+#: ../../../../Modules/FindEXPAT.cmake:47
 msgid "Implemented on non-Windows platforms."
+msgstr ""
+
+#: ../../../../Modules/FindEXPAT.cmake:50
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindEXPAT.cmake:52
+msgid "Finding Expat library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindEXPAT.cmake:54
+msgid ""
+"find_package(EXPAT)\n"
+"target_link_libraries(project_target PRIVATE EXPAT::EXPAT)"
 msgstr ""

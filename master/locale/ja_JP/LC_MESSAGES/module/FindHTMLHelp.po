@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,16 +22,66 @@ msgid "FindHTMLHelp"
 msgstr ""
 
 #: ../../../../Modules/FindHTMLHelp.cmake:8
-msgid "This module looks for Microsoft HTML Help Compiler"
-msgstr ""
-
-#: ../../../../Modules/FindHTMLHelp.cmake:10
-msgid "It defines:"
-msgstr ""
-
-#: ../../../../Modules/FindHTMLHelp.cmake:14
 msgid ""
-"HTML_HELP_COMPILER     : full path to the Compiler (hhc.exe)\n"
-"HTML_HELP_INCLUDE_PATH : include path to the API (htmlhelp.h)\n"
-"HTML_HELP_LIBRARY      : full path to the library (htmlhelp.lib)"
+"This module finds the Microsoft HTML Help Compiler and its API.  It is part "
+"of the HTML Help Workshop."
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:13
+msgid ""
+"HTML Help Workshop is in maintenance mode only and is considered deprecated. "
+"For modern documentation, consider alternatives such as Microsoft Help "
+"Viewer for producing ``.mshc`` files or web-based documentation tools."
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:18
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:20
+msgid "This module may set the following cache variables:"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:22
+msgid "``HTML_HELP_COMPILER``"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:23
+msgid ""
+"Full path to the HTML Help Compiler (``hhc.exe``), used to compile ``.chm`` "
+"files."
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:25
+msgid "``HTML_HELP_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:26
+msgid ""
+"Directory containing ``htmlhelp.h``, required for applications integrating "
+"the HTML Help API."
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:28
+msgid "``HTML_HELP_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:29
+msgid ""
+"Full path to ``htmlhelp.lib`` library, required for linking applications "
+"that use the HTML Help API."
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:33
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:35
+msgid "Finding HTML Help Compiler:"
+msgstr ""
+
+#: ../../../../Modules/FindHTMLHelp.cmake:37
+msgid ""
+"find_package(HTMLHelp)\n"
+"message(STATUS \"HTML Help Compiler found at: ${HTML_HELP_COMPILER}\")"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2093,43 +2093,125 @@ msgstr ""
 msgid "cmake --find-package [<options>]"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1392
-msgid ""
-"It searches a package using :command:`find_package()` and prints the "
-"resulting flags to stdout.  This can be used instead of pkg-config to find "
-"installed libraries in plain Makefile-based projects or in autoconf-based "
-"projects (via ``share/aclocal/cmake.m4``)."
-msgstr ""
-
-#: ../../../manual/cmake.1.rst:1398
+#: ../../../manual/cmake.1.rst:1393
 msgid ""
 "This mode is not well-supported due to some technical limitations. It is "
 "kept for compatibility but should not be used in new projects."
 msgstr ""
 
+#: ../../../manual/cmake.1.rst:1398
+msgid ""
+"It searches a package using the :command:`find_package` command and prints "
+"the resulting flags to stdout.  This can be used instead of pkg-config to "
+"find installed libraries in plain Makefile-based projects or in Autoconf-"
+"based projects, using auxiliary macros installed in ``share/aclocal/cmake."
+"m4`` on the system."
+msgstr ""
+
 #: ../../../manual/cmake.1.rst:1404
-msgid "Run a Workflow Preset"
+msgid "When using this option, the following variables are expected:"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1406
+msgid "``NAME``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1407
+msgid "Name of the package as called in ``find_package(<PackageName>)``."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1409
+msgid "``COMPILER_ID``"
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:1410
+msgid ""
+":variable:`Compiler ID <CMAKE_<LANG>_COMPILER_ID>` used for searching the "
+"package, i.e. GNU/Intel/Clang/MSVC, etc."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1413
+msgid "``LANGUAGE``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1414
+msgid "Language used for searching the package, i.e. C/CXX/Fortran/ASM, etc."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1416
+msgid "``MODE``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1417
+msgid "The package search mode.  Value can be one of:"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1419
+msgid "``EXIST``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1420
+msgid "Only checks for existence of the given package."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1422
+msgid "``COMPILE``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1423
+msgid ""
+"Prints the flags needed for compiling an object file which uses the given "
+"package."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1426
+msgid "``LINK``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1427
+msgid "Prints the flags needed for linking when using the given package."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1429
+msgid "``SILENT``"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1430
+msgid "(Optional) If TRUE, find result message is not printed."
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1432
+msgid "For example:"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1434
+msgid ""
+"cmake --find-package -DNAME=CURL -DCOMPILER_ID=GNU -DLANGUAGE=C -DMODE=LINK"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1441
+msgid "Run a Workflow Preset"
+msgstr ""
+
+#: ../../../manual/cmake.1.rst:1447
 msgid ""
 ":manual:`CMake Presets <cmake-presets(7)>` provides a way to execute "
 "multiple build steps in order:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1413
+#: ../../../manual/cmake.1.rst:1450
 msgid "cmake --workflow <options>"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1417
+#: ../../../manual/cmake.1.rst:1454
 msgid "The options are:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1421
+#: ../../../manual/cmake.1.rst:1458
 msgid "Select a :ref:`Workflow Preset` using one of the following options."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1427
+#: ../../../manual/cmake.1.rst:1464
 msgid ""
 "Use a workflow preset to specify a workflow. The project binary directory is "
 "inferred from the initial configure preset. The current working directory "
@@ -2137,42 +2219,42 @@ msgid ""
 "more details."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1432
+#: ../../../manual/cmake.1.rst:1469
 msgid ""
 "When following immediately after the ``--workflow`` option, the ``--preset`` "
 "argument can be omitted and just the ``<preset>`` name can be given.  This "
 "means the following syntax is valid:"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1437
+#: ../../../manual/cmake.1.rst:1474
 msgid "$ cmake --workflow my-preset"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1443
+#: ../../../manual/cmake.1.rst:1480
 msgid ""
 "Lists the available workflow presets. The current working directory must "
 "contain CMake preset files."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1448
+#: ../../../manual/cmake.1.rst:1485
 msgid ""
 "Perform a fresh configuration of the build tree, which has the same effect "
 "as :option:`cmake --fresh`."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1452
+#: ../../../manual/cmake.1.rst:1489
 msgid "View Help"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1456
+#: ../../../manual/cmake.1.rst:1493
 msgid "To print selected pages from the CMake documentation, use"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1458
+#: ../../../manual/cmake.1.rst:1495
 msgid "cmake --help[-<topic>]"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1462
+#: ../../../manual/cmake.1.rst:1499
 msgid "with one of the following options:"
 msgstr ""
 
@@ -2384,31 +2466,31 @@ msgid ""
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1466
+#: ../../../manual/cmake.1.rst:1503
 msgid "To view the presets available for a project, use"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1468
+#: ../../../manual/cmake.1.rst:1505
 msgid "cmake <source-dir> --list-presets"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1476
+#: ../../../manual/cmake.1.rst:1513
 msgid "Return Value (Exit Code)"
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1478
+#: ../../../manual/cmake.1.rst:1515
 msgid ""
 "Upon regular termination, the :program:`cmake` executable returns the exit "
 "code ``0``."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1480
+#: ../../../manual/cmake.1.rst:1517
 msgid ""
 "If termination is caused by the command :command:`message(FATAL_ERROR)`, or "
 "another error condition, then a non-zero exit code is returned."
 msgstr ""
 
-#: ../../../manual/cmake.1.rst:1485
+#: ../../../manual/cmake.1.rst:1522
 msgid "See Also"
 msgstr ""
 

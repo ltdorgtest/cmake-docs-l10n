@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "MacroAddFileDependencies"
 msgstr ""
 
 #: ../../../../Modules/MacroAddFileDependencies.cmake:10
-msgid "MACRO_ADD_FILE_DEPENDENCIES(<source> <files>...)"
+msgid "macro_add_file_dependencies(<source> <files>...)"
 msgstr ""
 
 #: ../../../../Modules/MacroAddFileDependencies.cmake:14

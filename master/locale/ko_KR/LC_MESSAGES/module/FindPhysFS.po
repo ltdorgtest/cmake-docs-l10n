@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,41 +22,81 @@ msgid "FindPhysFS"
 msgstr ""
 
 #: ../../../../Modules/FindPhysFS.cmake:8
-msgid "Locate PhysFS library This module defines:"
-msgstr ""
-
-#: ../../../../Modules/FindPhysFS.cmake:10
-msgid "``PHYSFS_LIBRARY``"
+msgid "Finds the PhysicsFS library (PhysFS) for file I/O abstraction."
 msgstr ""
 
 #: ../../../../Modules/FindPhysFS.cmake:11
-msgid "the name of the library to link against"
-msgstr ""
-
-#: ../../../../Modules/FindPhysFS.cmake:12
-msgid "``PHYSFS_FOUND``"
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindPhysFS.cmake:13
-msgid "if false, do not try to link to PHYSFS"
-msgstr ""
-
-#: ../../../../Modules/FindPhysFS.cmake:14
-msgid "``PHYSFS_INCLUDE_DIR``"
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindPhysFS.cmake:15
-msgid "where to find physfs.h"
+msgid "``PhysFS_FOUND``"
 msgstr ""
 
-#: ../../../../Modules/FindPhysFS.cmake:17
-msgid "``$PHYSFSDIR`` is an environment variable that would correspond to::"
+#: ../../../../Modules/FindPhysFS.cmake:16
+msgid ""
+"Boolean indicating whether PhysicsFS library is found.  For backward "
+"compatibility, the ``PHYSFS_FOUND`` variable is also set to the same value."
 msgstr ""
 
-#: ../../../../Modules/FindPhysFS.cmake:19
-msgid "./configure --prefix=$PHYSFSDIR"
+#: ../../../../Modules/FindPhysFS.cmake:20
+msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindPhysFS.cmake:21
-msgid "used in building PHYSFS."
+#: ../../../../Modules/FindPhysFS.cmake:22
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:24
+msgid "``PHYSFS_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:25
+msgid "Path to the PhysicsFS library needed to link against."
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:26
+msgid "``PHYSFS_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:27
+msgid ""
+"Directory containing the ``physfs.h`` and related headers needed for using "
+"the library."
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:31
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:33
+msgid "This module accepts the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:35
+msgid "``PHYSFSDIR``"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:36
+msgid ""
+"Environment variable that can be set to help locate a PhysicsFS library "
+"installed in a custom location.  It should point to the installation "
+"destination that was used when configuring, building, and installing "
+"PhysicsFS library: ``./configure --prefix=$PHYSFSDIR``."
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:42
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:44
+msgid "Finding the PhysicsFS library:"
+msgstr ""
+
+#: ../../../../Modules/FindPhysFS.cmake:46
+msgid "find_package(PhysFS)"
 msgstr ""
