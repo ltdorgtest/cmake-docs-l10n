@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_CN">
+  <head>
+    <meta charset="utf-8" />
+  <title>SUBDIRECTORIES &mdash; CMake 3.10.3 Documentation</title>
+
+    <link rel="stylesheet" href="../_static/cmake.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/translations.js"></script>
+    
+    <link rel="canonical" href="https://ltdorgtest.github.io/cmake-docs-l10n/prop_dir/SUBDIRECTORIES.html" />
+    <link rel="shortcut icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="TEST_INCLUDE_FILES" href="TEST_INCLUDE_FILES.html" />
+    <link rel="prev" title="SOURCE_DIR" href="SOURCE_DIR.html" />
+    <script type="text/javascript" src="../current.js"></script>
+    <script type="text/javascript" src="../../../config.js"></script>
+    <script type="text/javascript" src="../../../flyout.js"></script>
+ 
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="TEST_INCLUDE_FILES.html" title="TEST_INCLUDE_FILES"
+             accesskey="N">下一页</a> |</li>
+        <li class="right" >
+          <a href="SOURCE_DIR.html" title="SOURCE_DIR"
+             accesskey="P">上一页</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" accesskey="U">cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="subdirectories">
+<span id="prop_dir:SUBDIRECTORIES"></span><h1>SUBDIRECTORIES<a class="headerlink" href="#subdirectories" title="永久链接至标题">¶</a></h1>
+<p>This read-only directory property contains a
+<a class="reference internal" href="../manual/cmake-language.7.html#cmake-language-lists"><span class="std std-ref">;-list</span></a> of subdirectories processed so far by
+the <span class="target" id="index-0-command:add_subdirectory"></span><a class="reference internal" href="../command/add_subdirectory.html#command:add_subdirectory" title="add_subdirectory"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">add_subdirectory()</span></code></a> or <span class="target" id="index-0-command:subdirs"></span><a class="reference internal" href="../command/subdirs.html#command:subdirs" title="subdirs"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">subdirs()</span></code></a> commands.  Each entry is
+the absolute path to the source directory (containing the <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>
+file).  This is suitable to pass to the <span class="target" id="index-0-command:get_property"></span><a class="reference internal" href="../command/get_property.html#command:get_property" title="get_property"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">get_property()</span></code></a> command
+<code class="docutils literal notranslate"><span class="pre">DIRECTORY</span></code> option.</p>
+<div class="admonition note">
+<p class="admonition-title">注解</p>
+<p>The <span class="target" id="index-1-command:subdirs"></span><a class="reference internal" href="../command/subdirs.html#command:subdirs" title="subdirs"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">subdirs()</span></code></a> command does not process its arguments until
+after the calling directory is fully processed.  Therefore looking
+up this property in the current directory will not see them.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>上一个主题</h4>
+  <p class="topless"><a href="SOURCE_DIR.html"
+                        title="上一章">SOURCE_DIR</a></p>
+  <h4>下一个主题</h4>
+  <p class="topless"><a href="TEST_INCLUDE_FILES.html"
+                        title="下一章">TEST_INCLUDE_FILES</a></p>
+  <div role="note" aria-label="source link">
+    <h3>本页</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/prop_dir/SUBDIRECTORIES.rst.txt"
+            rel="nofollow">显示源代码</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜索</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="转向" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>导航</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="总目录"
+             >索引</a></li>
+        <li class="right" >
+          <a href="TEST_INCLUDE_FILES.html" title="TEST_INCLUDE_FILES"
+             >下一页</a> |</li>
+        <li class="right" >
+          <a href="SOURCE_DIR.html" title="SOURCE_DIR"
+             >上一页</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-properties.7.html" >cmake-properties(7)</a> &#187;</li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; 版权所有 2000-2017 Kitware, Inc. and Contributors.
+      由 <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4 创建。
+    </div>
+  </body>
+</html>
