@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2025-04-07 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,15 +46,15 @@ msgid ""
 "through the :command:`find_package` command."
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:259
+#: ../../../manual/cmake-modules.7.rst:258
 msgid "Deprecated Modules"
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:262
+#: ../../../manual/cmake-modules.7.rst:261
 msgid "Deprecated Utility Modules"
 msgstr ""
 
-#: ../../../manual/cmake-modules.7.rst:288
+#: ../../../manual/cmake-modules.7.rst:287
 msgid "Deprecated Find Modules"
 msgstr ""
 
