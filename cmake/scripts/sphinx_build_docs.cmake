@@ -60,11 +60,11 @@ restore_cmake_message_indent()
 message(STATUS "Copying 'config.js' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/config.js"
+    "${PROJ_CMAKE_CUSTOM_DIR}/config.js"
     "${PROJ_OUT_BUILDER_DIR}/config.js")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/config.js")
+message("From: ${PROJ_CMAKE_CUSTOM_DIR}/config.js")
 message("To:   ${PROJ_OUT_BUILDER_DIR}/config.js")
 message("")
 restore_cmake_message_indent()
@@ -73,11 +73,11 @@ restore_cmake_message_indent()
 message(STATUS "Copying 'flyout.js' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/flyout.js"
+    "${PROJ_CMAKE_FLYOUT_DIR}/flyout.js"
     "${PROJ_OUT_BUILDER_DIR}/flyout.js")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/flyout.js")
+message("From: ${PROJ_CMAKE_FLYOUT_DIR}/flyout.js")
 message("To:   ${PROJ_OUT_BUILDER_DIR}/flyout.js")
 message("")
 restore_cmake_message_indent()
@@ -86,11 +86,11 @@ restore_cmake_message_indent()
 message(STATUS "Copying 'ltd-icon.svg' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/ltd-icon.svg"
+    "${PROJ_CMAKE_FLYOUT_DIR}/ltd-icon.svg"
     "${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/ltd-icon.svg")
+message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-icon.svg")
 message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
 message("")
 restore_cmake_message_indent()
@@ -114,11 +114,11 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Configuring 'current.js' file to the builder directory...")
     file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}")
     configure_file(
-        "${PROJ_CMAKE_TEMPLATES_DIR}/flyout/current.js.in"
+        "${PROJ_CMAKE_FLYOUT_DIR}/current.js.in"
         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
     remove_cmake_message_indent()
     message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/flyout/current.js.in")
+    message("From: ${PROJ_CMAKE_FLYOUT_DIR}/current.js.in")
     message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
     message("")
     restore_cmake_message_indent()
@@ -180,9 +180,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         endif()
     else()
         string(APPEND FAILURE_REASON
-        "The command failed with fatal errors.\n\n"
-        "    result:\n\n${RES_VAR}\n\n"
-        "    stderr:\n\n${ERR_VAR}")
+        "The command failed with fatal errors.\n"
+        "    result:\n${RES_VAR}\n"
+        "    stderr:\n${ERR_VAR}")
         message(FATAL_ERROR "${FAILURE_REASON}")
     endif()
     message("")
@@ -208,11 +208,11 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     set(REDIRECT_URL    "master/index.html")
     file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}")
     configure_file(
-        "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"
+        "${PROJ_CMAKE_CUSTOM_DIR}/index.html.in"
         "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
     remove_cmake_message_indent()
     message("")
-    message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in")
+    message("From: ${PROJ_CMAKE_CUSTOM_DIR}/index.html.in")
     message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
     message("")
     restore_cmake_message_indent()
@@ -224,11 +224,11 @@ message(STATUS "Configuring 'index.html' file to the root of the builder directo
 set(REDIRECT_URL    "en-us/master/index.html")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 configure_file(
-    "${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in"
+    "${PROJ_CMAKE_CUSTOM_DIR}/index.html.in"
     "${PROJ_OUT_BUILDER_DIR}/index.html")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_TEMPLATES_DIR}/index.html.in")
+message("From: ${PROJ_CMAKE_CUSTOM_DIR}/index.html.in")
 message("To:   ${PROJ_OUT_BUILDER_DIR}/index.html")
 message("")
 restore_cmake_message_indent()

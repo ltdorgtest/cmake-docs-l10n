@@ -101,9 +101,10 @@ set(VERSION_OF_SPHINX "[default]"
 
 set(PROJ_SOURCE_DIR                 "${PROJECT_SOURCE_DIR}")
 set(PROJ_BINARY_DIR                 "${PROJECT_BINARY_DIR}")
+set(PROJ_CMAKE_CUSTOM_DIR           "${PROJ_SOURCE_DIR}/cmake/custom")
+set(PROJ_CMAKE_FLYOUT_DIR           "${PROJ_SOURCE_DIR}/cmake/flyout")
 set(PROJ_CMAKE_MODULES_DIR          "${PROJ_SOURCE_DIR}/cmake/modules")
 set(PROJ_CMAKE_SCRIPTS_DIR          "${PROJ_SOURCE_DIR}/cmake/scripts")
-set(PROJ_CMAKE_TEMPLATES_DIR        "${PROJ_SOURCE_DIR}/cmake/templates")
 set(PROJ_CONDA_DIR                  "${PROJ_SOURCE_DIR}/.conda")
 set(PROJ_OUT_DIR                    "${PROJ_SOURCE_DIR}/out")
 set(PROJ_OUT_REPO_DIR               "${PROJ_OUT_DIR}/repo")
@@ -334,7 +335,7 @@ init_references_json_file(
 #]============================================================]
 
 file(COPY_FILE
-    "${PROJ_CMAKE_TEMPLATES_DIR}/crowdin.yml"
+    "${PROJ_CMAKE_CUSTOM_DIR}/crowdin.yml"
     "${CROWDIN_YML_PATH}")
 
 #[============================================================[
@@ -364,9 +365,10 @@ message(STATUS "VERSION_OF_SPHINX               = ${VERSION_OF_SPHINX} (CACHE: $
 message(STATUS "---------- Directory-Related Variables ----------")
 message(STATUS "PROJ_SOURCE_DIR                 = ${PROJ_SOURCE_DIR}")
 message(STATUS "PROJ_BINARY_DIR                 = ${PROJ_BINARY_DIR}")
+message(STATUS "PROJ_CMAKE_CUSTOM_DIR           = ${PROJ_CMAKE_CUSTOM_DIR}")
+message(STATUS "PROJ_CMAKE_FLYOUT_DIR           = ${PROJ_CMAKE_FLYOUT_DIR}")
 message(STATUS "PROJ_CMAKE_MODULES_DIR          = ${PROJ_CMAKE_MODULES_DIR}")
 message(STATUS "PROJ_CMAKE_SCRIPTS_DIR          = ${PROJ_CMAKE_SCRIPTS_DIR}")
-message(STATUS "PROJ_CMAKE_TEMPLATES_DIR        = ${PROJ_CMAKE_TEMPLATES_DIR}")
 message(STATUS "PROJ_CONDA_DIR                  = ${PROJ_CONDA_DIR}")
 message(STATUS "PROJ_OUT_DIR                    = ${PROJ_OUT_DIR}")
 message(STATUS "PROJ_OUT_REPO_DIR               = ${PROJ_OUT_REPO_DIR}")
@@ -461,9 +463,10 @@ set(SCRIPT_MODE_CACHE
     # [Directory-Related Variables]
     -D PROJ_SOURCE_DIR=${PROJ_SOURCE_DIR}
     -D PROJ_BINARY_DIR=${PROJ_BINARY_DIR}
+    -D PROJ_CMAKE_CUSTOM_DIR=${PROJ_CMAKE_CUSTOM_DIR}
+    -D PROJ_CMAKE_FLYOUT_DIR=${PROJ_CMAKE_FLYOUT_DIR}
     -D PROJ_CMAKE_MODULES_DIR=${PROJ_CMAKE_MODULES_DIR}
     -D PROJ_CMAKE_SCRIPTS_DIR=${PROJ_CMAKE_SCRIPTS_DIR}
-    -D PROJ_CMAKE_TEMPLATES_DIR=${PROJ_CMAKE_TEMPLATES_DIR}
     -D PROJ_CONDA_DIR=${PROJ_CONDA_DIR}
     -D PROJ_OUT_DIR=${PROJ_OUT_DIR}
     -D PROJ_OUT_REPO_DIR=${PROJ_OUT_REPO_DIR}
