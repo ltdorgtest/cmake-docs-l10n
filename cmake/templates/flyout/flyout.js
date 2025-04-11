@@ -249,7 +249,7 @@ function addStyles() {
       background-color: #263238;
       text-decoration: none;
       padding: 5px;
-      border-radius: 3px;
+      border-radius: 5px;
       transition: background 0.3s;
     }
 
