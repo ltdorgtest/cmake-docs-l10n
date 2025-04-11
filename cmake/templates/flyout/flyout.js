@@ -254,10 +254,12 @@ function addStyles() {
     }
 
     dd.options a:hover {
+      color: #ffffff;
       background-color: #27ae60;
     }
 
     dd.options a.selected {
+      color: #ffffff;
       background-color: #27ae60;
       font-weight: bold;
     }
