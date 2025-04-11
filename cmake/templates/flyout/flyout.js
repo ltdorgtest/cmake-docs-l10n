@@ -145,6 +145,7 @@ function addStyles() {
       box-shadow: 0 4px 10px #000000;
       font-family: Arial, sans-serif;
       font-size: 16px;
+      line-height: 20px;
       position: fixed;
       right: 15px;
       bottom: 20px;
@@ -177,6 +178,7 @@ function addStyles() {
       width: 25px;
       height: 25px;
       display: block;
+      box-sizing: content-box;
     }
 
     .ltd-flyout-header-label {
