@@ -57,28 +57,28 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'config.js' file to the root of the builder directory...")
+message(STATUS "Copying 'ltd-config.js' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_CUSTOM_DIR}/config.js"
-    "${PROJ_OUT_BUILDER_DIR}/config.js")
+    "${PROJ_CMAKE_CUSTOM_DIR}/ltd-config.js"
+    "${PROJ_OUT_BUILDER_DIR}/ltd-config.js")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_CUSTOM_DIR}/config.js")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/config.js")
+message("From: ${PROJ_CMAKE_CUSTOM_DIR}/ltd-config.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-config.js")
 message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'flyout.js' file to the root of the builder directory...")
+message(STATUS "Copying 'ltd-flyout.js' file to the root of the builder directory...")
 file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
 file(COPY_FILE
-    "${PROJ_CMAKE_FLYOUT_DIR}/flyout.js"
-    "${PROJ_OUT_BUILDER_DIR}/flyout.js")
+    "${PROJ_CMAKE_FLYOUT_DIR}/ltd-flyout.js"
+    "${PROJ_OUT_BUILDER_DIR}/ltd-flyout.js")
 remove_cmake_message_indent()
 message("")
-message("From: ${PROJ_CMAKE_FLYOUT_DIR}/flyout.js")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/flyout.js")
+message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-flyout.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-flyout.js")
 message("")
 restore_cmake_message_indent()
 
@@ -107,19 +107,17 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         OUT_JSON_VALUE      _LANGTAG)
 
 
+    message(STATUS "Configuring 'ltd-current.js' file to the builder directory...")
     set(CURRENT_VERSION     "${VERSION}")
     set(CURRENT_LANGUAGE    "${_LANGTAG}")
-
-
-    message(STATUS "Configuring 'current.js' file to the builder directory...")
     file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}")
     configure_file(
-        "${PROJ_CMAKE_FLYOUT_DIR}/current.js.in"
-        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
+        "${PROJ_CMAKE_FLYOUT_DIR}/ltd-current.js.in"
+        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/ltd-current.js")
     remove_cmake_message_indent()
     message("")
-    message("From: ${PROJ_CMAKE_FLYOUT_DIR}/current.js.in")
-    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/current.js")
+    message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-current.js.in")
+    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/ltd-current.js")
     message("")
     restore_cmake_message_indent()
 
