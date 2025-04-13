@@ -127,7 +127,7 @@ jobs:
           submodules: false
       - name: Get VERSION_ARRAY from versions.json
         id: gvlv
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-version-array-from-versions-file@main
+        uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
@@ -135,7 +135,7 @@ jobs:
           version-filter: 'crowdin'
       - name: Get MATRIX from the JSON Arraies
         id: gmja
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
+        uses: ltdorgtest/ci-common/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'version'
           version-array: ${{ steps.gvlv.outputs.VERSION_ARRAY }}

@@ -45,7 +45,7 @@ jobs:
           ref: ${{ github.ref }}
       # - name: Get VERSION from the Pull Request Title
       #   id: gvprt
-      #   uses: ltdorgtest/ci-sphinx/.github/actions/get-version-from-pull-request-title@main
+      #   uses: ltdorgtest/ci-common/.github/actions/get-version-from-pull-request-title@main
       #   with:
       #     pr-title: ${{ github.event.pull_request.title }}
       - name: Filter Changes in the Pull Request

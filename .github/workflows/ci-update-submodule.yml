@@ -86,12 +86,12 @@ jobs:
           submodules: false
       - name: Get SUBMODULE_ARRAY from .gitmodules
         id: gsl
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-submodule-array-from-gitmodules-file@main
+        uses: ltdorgtest/ci-common/.github/actions/get-submodule-array-from-gitmodules-file@main
         with:
           submodule: ${{ inputs.SUBMODULE || 'all' }}
       - name: Get MATRIX from the JSON Arraies
         id: gmja
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
+        uses: ltdorgtest/ci-common/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'submodule'
           submodule-array: ${{ steps.gsl.outputs.SUBMODULE_ARRAY }}

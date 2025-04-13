@@ -128,7 +128,7 @@ jobs:
           submodules: false
       - name: Get VERSION_ARRAY from versions.json
         id: gvlv
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-version-array-from-versions-file@main
+        uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
@@ -136,12 +136,12 @@ jobs:
           version-filter: 'all'
       - name: Get LANGUAGE_ARRAY from languages.json
         id: glal
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-language-array-from-languages-file@main
+        uses: ltdorgtest/ci-common/.github/actions/get-language-array-from-languages-file@main
         with:
           language: ${{ inputs.LANGUAGE || github.event.client_payload.LANGUAGE }}
       - name: Get MATRIX from the JSON Arraies
         id: gmja
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
+        uses: ltdorgtest/ci-common/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'version-language'
           version-array: ${{ steps.gvlv.outputs.VERSION_ARRAY }}

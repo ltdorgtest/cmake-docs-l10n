@@ -120,12 +120,12 @@ jobs:
       - name: Get Outputs from Schedule
         if: ${{ github.event_name == 'schedule' }}
         id: gos
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-outputs-from-schedule@main
+        uses: ltdorgtest/ci-common/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
       - name: Get VERSION_ARRAY from versions.json
         id: gvlv
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-version-array-from-versions-file@main
+        uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
           type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
@@ -133,12 +133,12 @@ jobs:
           version-filter: 'gettext'
       - name: Get LANGUAGE_ARRAY from languages.json
         id: glal
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-language-array-from-languages-file@main
+        uses: ltdorgtest/ci-common/.github/actions/get-language-array-from-languages-file@main
         with:
           language: ${{ inputs.LANGUAGE  || steps.gos.outputs.LANGUAGE }}
       - name: Get MATRIX from the JSON Arraies
         id: gmja
-        uses: ltdorgtest/ci-sphinx/.github/actions/get-matrix-from-json-arraies@main
+        uses: ltdorgtest/ci-common/.github/actions/get-matrix-from-json-arraies@main
         with:
           matrix-type: 'version-language'
           version-array: ${{ steps.gvlv.outputs.VERSION_ARRAY }}
