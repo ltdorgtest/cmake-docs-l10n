@@ -30,6 +30,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     get_reference_of_pot_and_po_from_json(
         IN_JSON_CNT                     "${REFERENCES_JSON_CNT}"
         IN_VERSION_TYPE                 "${VERSION_TYPE}"
+        IN_LANGUAGE                     "${_LANGUAGE}"
         OUT_POT_OBJECT                  CURRENT_POT_OBJECT
         OUT_POT_REFERENCE               CURRENT_POT_REFERENCE
         OUT_PO_OBJECT                   CURRENT_PO_OBJECT
