@@ -346,8 +346,30 @@ You can preview translations in GitHub Pages:
 
 <div align="center">
   <table>
+    <!-- Sources -->
     <tbody>
       <tr>
+        <th rowspan="2" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Sources</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
+      </tr>
+      <!-- en_US -->
+      <tr>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>en_US</code></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/master">master</a>
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/latest">latest</a>
+          <span>…</span>
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/4.0">4.0</a>
+          <span>…</span>
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/3.0">3.0</a>
+        </td>
+      </tr>
+    </tbody>
+    <!-- Translations -->
+    <tbody>
+      <tr>
+        <th rowspan="6" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Translations</th>
         <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
         <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
       </tr>
