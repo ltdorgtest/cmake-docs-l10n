@@ -330,12 +330,12 @@ You can preview translations in GitHub Pages:
 </ul>
 
 <p></p>
-<div align="center"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us"><code>en_US</code> : English</a> |
-  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp"><code>ja_JP</code> : 日本語</a> |
-  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr"><code>ko_KR</code> : 한국인</a> |
-  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru"><code>ru_RU</code> : Русский</a> |
-  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn"><code>zh_CN</code> : 简体中文</a> |
-  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw"><code>zh_TW</code> : 繁體中文</a>
+<div align="center"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">English</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">日本語</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr">한국인</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">Русский</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">简体中文</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">繁體中文</a>
 </div>
 <p></p>
 
