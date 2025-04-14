@@ -344,108 +344,69 @@ Preview Translations
 
 You can preview translations in GitHub Pages:
 
+<ul>
+  <li><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us"><code>en_US</code> : English</a></li>
+  <li><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp"><code>ja_JP</code> : 日本語</a></li>
+  <li><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr"><code>ko_KR</code> : 한국인</a></li>
+  <li><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru"><code>ru_RU</code> : Русский</a></li>
+  <li><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn"><code>zh_CN</code> : 简体中文</a></li>
+  <li><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw"><code>zh_TW</code> : 繁體中文</a></li>
+</ul>
+
+<p></p>
+<div align="center">
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us"><code>en_US</code> : English</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp"><code>ja_JP</code> : 日本語</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr"><code>ko_KR</code> : 한국인</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru"><code>ru_RU</code> : Русский</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn"><code>zh_CN</code> : 简体中文</a> |
+  <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw"><code>zh_TW</code> : 繁體中文</a>
+</div>
+<p></p>
+
 <div align="center">
   <table>
-    <!-- Sources -->
-    <thead>
-      <tr>
-        <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Sources</th>
-      </tr>
-    </thead>
     <tbody>
+      <!-- English -->
       <tr>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
-      </tr>
-      <!-- en_US -->
-      <tr>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>en_US</code></td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/master">master</a>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/latest">latest</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/4.0">4.0</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us/3.0">3.0</a>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">English</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: left;   vertical-align: middle;">
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">https://ltdorgtest.github.io/cmake-docs-l10n/en-us</a>
         </td>
       </tr>
-    </tbody>
-    <!-- Translations -->
-    <thead>
+      <!-- 日本語 -->
       <tr>
-        <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Translations</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
-      </tr>
-      <!-- ja_JP -->
-      <tr>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp/master">master</a>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp/latest">latest</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp/4.0">4.0</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp/3.0">3.0</a>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">日本語</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: left;   vertical-align: middle;">
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp</a>
         </td>
       </tr>
-      <!-- ko_KR -->
+      <!-- Русский -->
       <tr>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr/master">master</a>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr/latest">latest</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr/4.0">4.0</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr/3.0">3.0</a>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Русский</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: left;   vertical-align: middle;">
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru</a>
         </td>
       </tr>
-      <!-- ru_RU -->
+      <!-- 简体中文 -->
       <tr>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru/master">master</a>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru/latest">latest</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru/4.0">4.0</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru/3.0">3.0</a>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">简体中文</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: left;   vertical-align: middle;">
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn</a>
         </td>
       </tr>
-      <!-- zh_CN -->
+      <!-- 繁體中文 -->
       <tr>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn/master">master</a>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn/latest">latest</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn/4.0">4.0</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn/3.0">3.0</a>
-        </td>
-      </tr>
-      <!-- zh_TW -->
-      <tr>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw/master">master</a>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw/latest">latest</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw/4.0">4.0</a>
-          <span>…</span>
-          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw/3.0">3.0</a>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">繁體中文</td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: left;   vertical-align: middle;">
+          <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw</a>
         </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-You can switch to other available versions/languages by switchers.
+You can switch to other available languages and versions by the flyout switcher.
 
 <h2 id="licenses"><a href="#table-of-contents">
 Licenses
