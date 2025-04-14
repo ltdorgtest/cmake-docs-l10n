@@ -104,7 +104,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}
       cancel-in-progress: true
-    uses: ltdorgtest/ci-sphinx/.github/workflows/use-crowdin-readme.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-readme.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}

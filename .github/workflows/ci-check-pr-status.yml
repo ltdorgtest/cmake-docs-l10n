@@ -73,7 +73,7 @@ jobs:
 
   check-crowdin-readme:
     needs: [ 'before-check' ]
-    uses: ltdorgtest/ci-sphinx/.github/workflows/use-crowdin-readme.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-readme.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}

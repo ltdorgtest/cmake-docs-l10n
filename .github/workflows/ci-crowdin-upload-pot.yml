@@ -153,7 +153,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}
       cancel-in-progress: true
-    uses: ltdorgtest/ci-sphinx/.github/workflows/use-crowdin-upload-pot.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-upload-pot.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
