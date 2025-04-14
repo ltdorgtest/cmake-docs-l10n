@@ -347,9 +347,13 @@ You can preview translations in GitHub Pages:
 <div align="center">
   <table>
     <!-- Sources -->
+    <thead>
+      <tr>
+        <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Sources</th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
-        <th rowspan="2" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Sources</th>
         <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
         <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
       </tr>
@@ -367,9 +371,13 @@ You can preview translations in GitHub Pages:
       </tr>
     </tbody>
     <!-- Translations -->
+    <thead>
+      <tr>
+        <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Translations</th>
+      </tr>
+    </thead>
     <tbody>
       <tr>
-        <th rowspan="6" colspan="2" align="center" style="text-align: center; vertical-align: middle;">Translations</th>
         <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
         <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Version</th>
       </tr>
