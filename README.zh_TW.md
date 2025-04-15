@@ -318,7 +318,7 @@ Progress of Translations
 Preview Translations
 </a></h2>
 
-You can preview translations in GitHub Pages:
+You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs-l10n">GitHub Pages</a>:
 
 <div align="center">
   <table>
