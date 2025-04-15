@@ -48,7 +48,6 @@ Table of Contents
     </ul>
     <p></p>
   </li>
-  <li><a href="#acknowledgements">Acknowledgements</a></li>
 </ul>
 
 <h2 id="introduction"><a href="#table-of-contents">
