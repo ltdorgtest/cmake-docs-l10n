@@ -570,7 +570,7 @@ add_custom_target(create_rtd_symlinks
     VERBATIM)
 
 #[============================================================[
-# Add dependencies for targets.
+# Add dependencies for Fundamental Targets.
 #]============================================================]
 
 if (AUTO_DEPEND)
