@@ -104,7 +104,7 @@ set(PROJ_BINARY_DIR                 "${PROJECT_BINARY_DIR}")
 set(PROJ_CMAKE_CUSTOM_DIR           "${PROJ_SOURCE_DIR}/cmake/custom")
 set(PROJ_CMAKE_FLYOUT_DIR           "${PROJ_SOURCE_DIR}/cmake/flyout")
 set(PROJ_CMAKE_MODULES_DIR          "${PROJ_SOURCE_DIR}/cmake/modules")
-set(PROJ_CMAKE_SCRIPTS_DIR          "${PROJ_SOURCE_DIR}/cmake/scripts")
+set(PROJ_CMAKE_TARGETS_DIR          "${PROJ_SOURCE_DIR}/cmake/targets")
 set(PROJ_CONDA_DIR                  "${PROJ_SOURCE_DIR}/.conda")
 set(PROJ_OUT_DIR                    "${PROJ_SOURCE_DIR}/out")
 set(PROJ_OUT_REPO_DIR               "${PROJ_OUT_DIR}/repo")
@@ -368,7 +368,7 @@ message(STATUS "PROJ_BINARY_DIR                 = ${PROJ_BINARY_DIR}")
 message(STATUS "PROJ_CMAKE_CUSTOM_DIR           = ${PROJ_CMAKE_CUSTOM_DIR}")
 message(STATUS "PROJ_CMAKE_FLYOUT_DIR           = ${PROJ_CMAKE_FLYOUT_DIR}")
 message(STATUS "PROJ_CMAKE_MODULES_DIR          = ${PROJ_CMAKE_MODULES_DIR}")
-message(STATUS "PROJ_CMAKE_SCRIPTS_DIR          = ${PROJ_CMAKE_SCRIPTS_DIR}")
+message(STATUS "PROJ_CMAKE_TARGETS_DIR          = ${PROJ_CMAKE_TARGETS_DIR}")
 message(STATUS "PROJ_CONDA_DIR                  = ${PROJ_CONDA_DIR}")
 message(STATUS "PROJ_OUT_DIR                    = ${PROJ_OUT_DIR}")
 message(STATUS "PROJ_OUT_REPO_DIR               = ${PROJ_OUT_REPO_DIR}")
@@ -466,7 +466,7 @@ set(SCRIPT_MODE_CACHE
     -D PROJ_CMAKE_CUSTOM_DIR=${PROJ_CMAKE_CUSTOM_DIR}
     -D PROJ_CMAKE_FLYOUT_DIR=${PROJ_CMAKE_FLYOUT_DIR}
     -D PROJ_CMAKE_MODULES_DIR=${PROJ_CMAKE_MODULES_DIR}
-    -D PROJ_CMAKE_SCRIPTS_DIR=${PROJ_CMAKE_SCRIPTS_DIR}
+    -D PROJ_CMAKE_TARGETS_DIR=${PROJ_CMAKE_TARGETS_DIR}
     -D PROJ_CONDA_DIR=${PROJ_CONDA_DIR}
     -D PROJ_OUT_DIR=${PROJ_OUT_DIR}
     -D PROJ_OUT_REPO_DIR=${PROJ_OUT_REPO_DIR}
@@ -508,31 +508,31 @@ set(SCRIPT_MODE_CACHE
 add_custom_target(prepare_repositories
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/prepare_repositories.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/prepare_repositories.cmake
     VERBATIM)
 
 add_custom_target(install_requirements
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/install_requirements.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/install_requirements.cmake
     VERBATIM)
 
 add_custom_target(sphinx_update_pot
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/sphinx_update_pot.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/sphinx_update_pot.cmake
     VERBATIM)
 
 add_custom_target(gettext_update_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/gettext_update_po.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_update_po.cmake
     VERBATIM)
 
 add_custom_target(sphinx_build_docs ALL
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/sphinx_build_docs.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/sphinx_build_docs.cmake
     VERBATIM)
 
 #[============================================================[
@@ -542,31 +542,31 @@ add_custom_target(sphinx_build_docs ALL
 add_custom_target(gettext_statistic_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/gettext_statistic_po.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_statistic_po.cmake
     VERBATIM)
 
 add_custom_target(gettext_compend_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/gettext_compend_po.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_compend_po.cmake
     VERBATIM)
 
 add_custom_target(crowdin_upload_pot
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/crowdin_upload_pot.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_upload_pot.cmake
     VERBATIM)
 
 add_custom_target(crowdin_download_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/crowdin_download_po.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_download_po.cmake
     VERBATIM)
 
 add_custom_target(create_rtd_symlinks
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_SCRIPTS_DIR}/create_rtd_symlinks.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/create_rtd_symlinks.cmake
     VERBATIM)
 
 #[============================================================[
