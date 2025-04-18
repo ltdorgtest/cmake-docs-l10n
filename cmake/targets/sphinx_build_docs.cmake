@@ -57,49 +57,12 @@ message("")
 restore_cmake_message_indent()
 
 
-message(STATUS "Copying 'ltd-config.js' file to the root of the builder directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
-file(COPY_FILE
-    "${PROJ_CMAKE_CUSTOM_DIR}/ltd-config.js"
-    "${PROJ_OUT_BUILDER_DIR}/ltd-config.js")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_CUSTOM_DIR}/ltd-config.js")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-config.js")
-message("")
-restore_cmake_message_indent()
-
-
-message(STATUS "Copying 'ltd-flyout.js' file to the root of the builder directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
-file(COPY_FILE
-    "${PROJ_CMAKE_FLYOUT_DIR}/ltd-flyout.js"
-    "${PROJ_OUT_BUILDER_DIR}/ltd-flyout.js")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-flyout.js")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-flyout.js")
-message("")
-restore_cmake_message_indent()
-
-
-message(STATUS "Copying 'ltd-icon.svg' file to the root of the builder directory...")
-file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
-file(COPY_FILE
-    "${PROJ_CMAKE_FLYOUT_DIR}/ltd-icon.svg"
-    "${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
-remove_cmake_message_indent()
-message("")
-message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-icon.svg")
-message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
-message("")
-restore_cmake_message_indent()
-
-
 file(READ "${LANGUAGES_JSON_PATH}" LANGUAGES_JSON_CNT)
 if (NOT LANGUAGE STREQUAL "all")
     set(LANGUAGE_LIST "${LANGUAGE}")
 endif()
+
+
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     get_json_value_by_dot_notation(
         IN_JSON_OBJECT      "${LANGUAGES_JSON_CNT}"
@@ -107,39 +70,24 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         OUT_JSON_VALUE      _LANGTAG)
 
 
-    message(STATUS "Configuring 'ltd-current.js' file to the builder directory...")
-    set(CURRENT_VERSION     "${VERSION}")
-    set(CURRENT_LANGUAGE    "${_LANGTAG}")
-    file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}")
-    configure_file(
-        "${PROJ_CMAKE_FLYOUT_DIR}/ltd-current.js.in"
-        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/ltd-current.js")
-    remove_cmake_message_indent()
-    message("")
-    message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-current.js.in")
-    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/ltd-current.js")
-    message("")
-    restore_cmake_message_indent()
-
-
     message(STATUS "Running 'sphinx-build' command with '${SPHINX_BUILDER}' builder to build documentation for '${_LANGUAGE}' language...")
     if (CMAKE_HOST_LINUX)
-        set(ENV_PATH            "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
-        set(ENV_LD_LIBRARY_PATH "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
-        set(ENV_PYTHONPATH      "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
-        set(ENV_VARS_OF_SYSTEM  PATH=${ENV_PATH}
-                                LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
-                                PYTHONPATH=${ENV_PYTHONPATH})
+        set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
+        set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+        set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                    LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
+                                    PYTHONPATH=${ENV_PYTHONPATH})
     elseif (CMAKE_HOST_WIN32)
-        set(ENV_PATH            "${PROJ_CONDA_DIR}/Library/bin"
-                                "${PROJ_CONDA_DIR}/Scripts"
-                                "${PROJ_CONDA_DIR}"
-                                "$ENV{PATH}")
-        set(ENV_PYTHONPATH      "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+        set(ENV_PATH                "${PROJ_CONDA_DIR}/Library/bin"
+                                    "${PROJ_CONDA_DIR}/Scripts"
+                                    "${PROJ_CONDA_DIR}"
+                                    "$ENV{PATH}")
+        set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
         string(REPLACE ";" "\\\\;" ENV_PATH "${ENV_PATH}")
         string(REPLACE ";" "\\\\;" ENV_PYTHONPATH "${ENV_PYTHONPATH}")
-        set(ENV_VARS_OF_SYSTEM  PATH=${ENV_PATH}
-                                PYTHONPATH=${ENV_PYTHONPATH})
+        set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
+                                    PYTHONPATH=${ENV_PYTHONPATH})
     else()
         message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
     endif()
@@ -200,30 +148,26 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         message("")
         restore_cmake_message_indent()
     endif()
-
-
-    message(STATUS "Configuring 'index.html' file to the language subdir of the builder directory...")
-    set(REDIRECT_URL    "master/index.html")
-    file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}")
-    configure_file(
-        "${PROJ_CMAKE_CUSTOM_DIR}/index.html.in"
-        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
-    remove_cmake_message_indent()
-    message("")
-    message("From: ${PROJ_CMAKE_CUSTOM_DIR}/index.html.in")
-    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
-    message("")
-    restore_cmake_message_indent()
 endforeach()
 unset(_LANGUAGE)
 
 
+#[============================================================[
+# Configure redirecting index.html files.
+#]============================================================]
+
+
+set(REDIRECT_LANGTAG    "en-us")
+set(REDIRECT_VERSION    "latest")
+
+
 message(STATUS "Configuring 'index.html' file to the root of the builder directory...")
-set(REDIRECT_URL    "en-us/master/index.html")
-file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+set(REDIRECT_URL        "${REDIRECT_LANGTAG}/${REDIRECT_VERSION}/index.html")
+file(MAKE_DIRECTORY     "${PROJ_OUT_BUILDER_DIR}")
 configure_file(
     "${PROJ_CMAKE_CUSTOM_DIR}/index.html.in"
-    "${PROJ_OUT_BUILDER_DIR}/index.html")
+    "${PROJ_OUT_BUILDER_DIR}/index.html"
+    @ONLY)
 remove_cmake_message_indent()
 message("")
 message("From: ${PROJ_CMAKE_CUSTOM_DIR}/index.html.in")
@@ -232,14 +176,111 @@ message("")
 restore_cmake_message_indent()
 
 
+message(STATUS "Configuring 'index.html' file to the langtag subdir of the builder directory...")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_CUSTOM_DIR}/index.html.in")
+foreach(_LANGUAGE ${LANGUAGE_LIST})
+    get_json_value_by_dot_notation(
+        IN_JSON_OBJECT      "${LANGUAGES_JSON_CNT}"
+        IN_DOT_NOTATION     ".${_LANGUAGE}.langtag"
+        OUT_JSON_VALUE      _LANGTAG)
+    set(REDIRECT_URL        "${REDIRECT_VERSION}/index.html")
+    file(MAKE_DIRECTORY     "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}")
+    configure_file(
+        "${PROJ_CMAKE_CUSTOM_DIR}/index.html.in"
+        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html"
+        @ONLY)
+    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/index.html")
+endforeach()
+unset(_LANGUAGE)
+message("")
+restore_cmake_message_indent()
+
+
+#[============================================================[
+# Configure the flyout menu for switching languages and versions.
+#]============================================================]
+
+
+message(STATUS "Configuring 'ltd-config.js' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+configure_file(
+    "${PROJ_CMAKE_CUSTOM_DIR}/ltd-config.js"
+    "${PROJ_OUT_BUILDER_DIR}/ltd-config.js"
+    @ONLY)
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_CUSTOM_DIR}/ltd-config.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-config.js")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Configuring 'ltd-flyout.js' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+configure_file(
+    "${PROJ_CMAKE_FLYOUT_DIR}/ltd-flyout.js"
+    "${PROJ_OUT_BUILDER_DIR}/ltd-flyout.js"
+    @ONLY)
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-flyout.js")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-flyout.js")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Configuring 'ltd-icon.svg' file to the root of the builder directory...")
+file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}")
+configure_file(
+    "${PROJ_CMAKE_FLYOUT_DIR}/ltd-icon.svg"
+    "${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg"
+    @ONLY)
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-icon.svg")
+message("To:   ${PROJ_OUT_BUILDER_DIR}/ltd-icon.svg")
+message("")
+restore_cmake_message_indent()
+
+
+message(STATUS "Configuring 'ltd-current.js' file to the version subdir of the builder directory...")
+remove_cmake_message_indent()
+message("")
+message("From: ${PROJ_CMAKE_FLYOUT_DIR}/ltd-current.js.in")
+foreach(_LANGUAGE ${LANGUAGE_LIST})
+    get_json_value_by_dot_notation(
+        IN_JSON_OBJECT      "${LANGUAGES_JSON_CNT}"
+        IN_DOT_NOTATION     ".${_LANGUAGE}.langtag"
+        OUT_JSON_VALUE      _LANGTAG)
+    set(CURRENT_VERSION     "${VERSION}")
+    set(CURRENT_LANGUAGE    "${_LANGTAG}")
+    file(MAKE_DIRECTORY "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}")
+    configure_file(
+        "${PROJ_CMAKE_FLYOUT_DIR}/ltd-current.js.in"
+        "${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/ltd-current.js"
+        @ONLY)
+    message("To:   ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/ltd-current.js")
+endforeach()
+unset(_LANGUAGE)
+message("")
+restore_cmake_message_indent()
+
+
+#[============================================================[
+# Display home pages of the built documentation.
+#]============================================================]
+
+
 message(STATUS "The '${SPHINX_BUILDER}' documentation is built succesfully!")
 remove_cmake_message_indent()
 message("")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     get_json_value_by_dot_notation(
-        IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
-        IN_DOT_NOTATION   ".${_LANGUAGE}.langtag"
-        OUT_JSON_VALUE    _LANGTAG)
+        IN_JSON_OBJECT      "${LANGUAGES_JSON_CNT}"
+        IN_DOT_NOTATION     ".${_LANGUAGE}.langtag"
+        OUT_JSON_VALUE      _LANGTAG)
     message("${_LANGUAGE} : ${PROJ_OUT_BUILDER_DIR}/${_LANGTAG}/${VERSION}/index.html")
 endforeach()
 message("")
