@@ -199,7 +199,7 @@ restore_cmake_message_indent()
 
 
 #[============================================================[
-# Configure the flyout menu for switching languages and versions.
+# Configure the flyout navigation menu.
 #]============================================================]
 
 
