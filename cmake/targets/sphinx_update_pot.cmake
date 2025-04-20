@@ -67,7 +67,7 @@ restore_cmake_message_indent()
 message(STATUS "Generating 'conf.py' file by configuring project(CMakeHelp)...")
 if (CMAKE_HOST_LINUX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
-    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{LD_LIBRARY_PATH}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                 LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH})
 elseif (CMAKE_HOST_WIN32)
