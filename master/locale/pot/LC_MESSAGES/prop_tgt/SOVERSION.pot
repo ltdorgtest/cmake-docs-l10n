@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,17 +35,17 @@ msgid ""
 "ignored if :prop_tgt:`NO_SONAME` property is set."
 msgstr ""
 
-#: ../../../prop_tgt/VERSION_SOVERSION_EXAMPLE.txt:1
+#: ../../../prop_tgt/include/VERSION_SOVERSION_EXAMPLE.rst:1
 msgid ""
 "A common convention is to specify both ``VERSION`` and ``SOVERSION`` such "
 "that ``SOVERSION`` matches the first component of ``VERSION``:"
 msgstr ""
 
-#: ../../../prop_tgt/VERSION_SOVERSION_EXAMPLE.txt:4
+#: ../../../prop_tgt/include/VERSION_SOVERSION_EXAMPLE.rst:4
 msgid "set_target_properties(mylib PROPERTIES VERSION 1.2.3 SOVERSION 1)"
 msgstr ""
 
-#: ../../../prop_tgt/VERSION_SOVERSION_EXAMPLE.txt:8
+#: ../../../prop_tgt/include/VERSION_SOVERSION_EXAMPLE.rst:8
 msgid ""
 "The idea is that breaking changes to the ABI increment both the "
 "``SOVERSION`` and the major ``VERSION`` number."

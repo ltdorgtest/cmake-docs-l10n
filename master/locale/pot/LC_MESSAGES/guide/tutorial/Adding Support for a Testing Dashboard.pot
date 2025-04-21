@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,24 +86,20 @@ msgid ""
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:42
-msgid "The project name"
-msgstr ""
-
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:44
 msgid "The project \"Nightly\" start time"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:46
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:44
 msgid "The time when a 24 hour \"day\" starts for this project."
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:48
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:46
 msgid ""
 "The URL of the CDash instance where the submission's generated documents "
 "will be sent"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:51
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:49
 msgid ""
 "For this tutorial, a public dashboard server is used and its corresponding "
 "``CTestConfig.cmake`` file is provided for you in this step's root "
@@ -112,32 +108,29 @@ msgid ""
 "Once downloaded from CDash, the file should not be modified locally."
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:57
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:55
 msgid "CTestConfig.cmake"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:57
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:55
 msgid ""
-"set(CTEST_PROJECT_NAME \"CMakeTutorial\")\n"
 "set(CTEST_NIGHTLY_START_TIME \"00:00:00 EST\")\n"
 "\n"
-"set(CTEST_DROP_METHOD \"http\")\n"
-"set(CTEST_DROP_SITE \"my.cdash.org\")\n"
-"set(CTEST_DROP_LOCATION \"/submit.php?project=CMakeTutorial\")\n"
-"set(CTEST_DROP_SITE_CDASH TRUE)\n"
+"set(CTEST_SUBMIT_URL \"https://my.cdash.org/submit.php?"
+"project=CMakeTutorial\")\n"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:64
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:62
 msgid "Build and Run"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:66
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:64
 msgid ""
 "Note that as part of the CDash submission some information about your "
 "development system (e.g. site name or full pathnames) may displayed publicly."
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:69
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:67
 msgid ""
 "To create a simple test dashboard, run the :manual:`cmake <cmake(1)>` "
 "executable or the :manual:`cmake-gui <cmake-gui(1)>` to configure the "
@@ -145,56 +138,56 @@ msgid ""
 "and run:"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:73
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:71
 msgid "ctest [-VV] -D Experimental"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:77
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:75
 msgid ""
 "Remember, for multi-config generators (e.g. Visual Studio), the "
 "configuration type must be specified:"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:80
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:78
 msgid "ctest [-VV] -C Debug -D Experimental"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:84
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:82
 msgid "Or, from an IDE, build the ``Experimental`` target."
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:86
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:84
 msgid ""
 "The :manual:`ctest <ctest(1)>` executable will build the project, run any "
 "tests, and submit the results to Kitware's public dashboard: https://my."
 "cdash.org/index.php?project=CMakeTutorial."
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:91
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:89
 msgid "Solution"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:93
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:91
 msgid ""
 "The only CMake code changed needed in this step was to enable dashboard "
 "submissions to CDash by including the :module:`CTest` module in our top-"
 "level ``CMakeLists.txt``:"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:97
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:95
 msgid "<details><summary>TODO 1: Click to show/hide answer</summary>"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:101
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:99
 msgid "TODO 1: CMakeLists.txt"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:101
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:99
 msgid ""
 "include(CTest)\n"
 "\n"
 msgstr ""
 
-#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:108
+#: ../../../guide/tutorial/Adding Support for a Testing Dashboard.rst:106
 msgid "</details>"
 msgstr ""
