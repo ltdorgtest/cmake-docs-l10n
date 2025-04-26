@@ -212,7 +212,7 @@ endif()
 message(STATUS "Running 'sphinx-build' command with 'gettext' builder to generate .pot files...")
 if (CMAKE_HOST_LINUX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
-    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{ENV_LD_LIBRARY_PATH}")
+    set(ENV_LD_LIBRARY_PATH     "${PROJ_CONDA_DIR}/lib:$ENV{LD_LIBRARY_PATH}")
     set(ENV_PYTHONPATH          "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
     set(ENV_VARS_OF_SYSTEM      PATH=${ENV_PATH}
                                 LD_LIBRARY_PATH=${ENV_LD_LIBRARY_PATH}
@@ -239,8 +239,8 @@ execute_process(
             -b gettext
             -D version=${VERSION}                               # Specify 'Project-Id-Version' in .pot files.
             -D templates_path=${TMPLS_TO_SOURCE_DIR}            # Relative to <sourcedir>.
-            -D gettext_compact=${GETTEXT_COMPACT}
-            -D gettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}
+            -D gettext_compact=${SPHINX_GETTEXT_COMPACT}
+            -D gettext_additional_targets=${SPHINX_GETTEXT_TARGETS}
             -j ${SPHINX_JOB_NUMBER}
             ${SPHINX_VERBOSE_ARGS}
             -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}                 # <configdir>, where conf.py locates.

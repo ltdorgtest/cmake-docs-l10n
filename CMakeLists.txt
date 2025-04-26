@@ -60,25 +60,25 @@ set(SPHINX_VERBOSE_LEVEL "1"
     # Possible values are "0", "1", "2", and "3".
     # See https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-v for details.
 
+set(SPHINX_GETTEXT_COMPACT "0"
+    CACHE STRING "The Gettext text domain generation for Sphinx.")
+    # Possible values are "1/0".
+    # Passed to sphinx-build as -Dgettext_compact=${SPHINX_GETTEXT_COMPACT}.
+    # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_compact for details.
+
+set(SPHINX_GETTEXT_TARGETS "index,literal-block,raw"
+    CACHE STRING "The Gettext additional targets for Sphinx.")
+    # Possible values are "index", "literal-block", "doctest-block", "raw", and "image".
+    # A comma-separated list
+    # Passed to sphinx-build as -Dgettext_additional_targets=${SPHINX_GETTEXT_TARGETS}.
+    # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_additional_targets for details.
+
 set(GETTEXT_WRAP_WIDTH 79
     CACHE STRING "The Gettext wrap width for .pot/.po files.")
     # Possible values are positive integers.
     # Passed to msgcat and msgmerge as --width=${GETTEXT_WRAP_WIDTH}.
     # See https://www.gnu.org/software/gettext/manual/html_node/msgcat-Invocation.html
     # and https://www.gnu.org/software/gettext/manual/html_node/msgmerge-Invocation.html for details.
-
-set(GETTEXT_COMPACT "0"
-    CACHE STRING "The Gettext text domain generation for Sphinx.")
-    # Possible values are "1/0".
-    # Passed to sphinx-build as -Dgettext_compact=${GETTEXT_COMPACT}.
-    # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_compact for details.
-
-set(GETTEXT_ADDITIONAL_TARGETS "index,literal-block,raw"
-    CACHE STRING "The Gettext additional targets for Sphinx.")
-    # Possible values are "index", "literal-block", "doctest-block", "raw", and "image".
-    # A comma-separated list
-    # Passed to sphinx-build as -Dgettext_additional_targets=${GETTEXT_ADDITIONAL_TARGETS}.
-    # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_additional_targets for details.
 
 set(REMOTE_URL_OF_L10N "https://github.com/ltdorgtest/cmake-docs-l10n.git"
     CACHE STRING "The remote URL of the 'l10n' repository.")
@@ -143,40 +143,6 @@ include(GitUtils)
 include(JsonUtils)
 
 #[============================================================[
-# Prepare TMPLS_TO_SOURCE_DIR  for 'sphinx_build_pot'  target.
-# Prepare TMPLS_TO_CONFIG_DIR  for 'sphinx_build_docs' target.
-# Prepare LOCALE_TO_SOURCE_DIR for 'sphinx_build_docs' taget.
-#]============================================================]
-
-file(RELATIVE_PATH TMPLS_TO_SOURCE_DIR
-    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
-    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
-
-file(RELATIVE_PATH TMPLS_TO_CONFIG_DIR
-    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}"
-    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
-
-file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
-    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
-    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
-
-#[============================================================[
-# Configure Sphinx verbose arguments based on verbosity level.
-#]============================================================]
-
-if (SPHINX_VERBOSE_LEVEL GREATER 0)
-    set(SPHINX_VERBOSE_ARGS "-")
-    math(EXPR REPEAT_COUNT "${SPHINX_VERBOSE_LEVEL} - 1")
-    foreach(INDEX RANGE ${REPEAT_COUNT})
-        set(SPHINX_VERBOSE_ARGS "${SPHINX_VERBOSE_ARGS}v")
-    endforeach()
-    unset(INDEX)
-    unset(REPEAT_COUNT)
-else()
-    set(SPHINX_VERBOSE_ARGS "")
-endif()
-
-#[============================================================[
 # Read LANGUAGE_LIST from languages.json.
 #]============================================================]
 
@@ -237,22 +203,47 @@ if (NOT LANGUAGE_IS_VALID)
 endif()
 
 #[============================================================[
-# Validate the MODE_OF_UPDATE cache variable.
+# Validate the MODE_OF_UPDATE         cache variable.
+# Validate the MODE_OF_INSTALL        cache variable.
+# Validate the SPHINX_BUILDER         cache variable.
+# Validate the SPHINX_JOB_NUMBER      cache variable.
+# Validate the SPHINX_VERBOSE_LEVEL   cache variable.
+# Validate the SPHINX_GETTEXT_COMPACT cache variable.
+# Validate the SPHINX_GETTEXT_TARGETS cache variable.
+# Validate the GETTEXT_WRAP_WIDTH     cache variable.
 #]============================================================]
 
-if (NOT MODE_OF_UPDATE STREQUAL "COMPARE" AND
-    NOT MODE_OF_UPDATE STREQUAL "ALWAYS" AND
-    NOT MODE_OF_UPDATE STREQUAL "NEVER")
+if (NOT MODE_OF_UPDATE MATCHES "^(COMPARE|ALWAYS|NEVER)$")
     message(FATAL_ERROR "Invalid MODE_OF_UPDATE value. (${MODE_OF_UPDATE})")
 endif()
 
-#[============================================================[
-# Validate the MODE_OF_INSTALL cache variable.
-#]============================================================]
-
-if (NOT MODE_OF_INSTALL STREQUAL "COMPARE" AND
-    NOT MODE_OF_INSTALL STREQUAL "ALWAYS")
+if (NOT MODE_OF_INSTALL MATCHES "^(COMPARE|ALWAYS)$")
     message(FATAL_ERROR "Invalid MODE_OF_INSTALL value. (${MODE_OF_INSTALL})")
+endif()
+
+if (NOT SPHINX_BUILDER MATCHES "^(html)$")
+    message(FATAL_ERROR "Invalid SPHINX_BUILDER value. (${SPHINX_BUILDER})")
+endif()
+
+if (NOT SPHINX_JOB_NUMBER MATCHES "^(auto|1|2|3|4|5|6|7|8)$")
+    message(FATAL_ERROR "Invalid SPHINX_JOB_NUMBER value. (${SPHINX_JOB_NUMBER})")
+endif()
+
+if (NOT SPHINX_VERBOSE_LEVEL MATCHES "^(0|1|2|3|4)$")
+    message(FATAL_ERROR "Invalid SPHINX_VERBOSE_LEVEL value. (${SPHINX_VERBOSE_LEVEL})")
+endif()
+
+if (NOT SPHINX_GETTEXT_COMPACT MATCHES "^(0|1)$")
+    message(FATAL_ERROR "Invalid SPHINX_GETTEXT_COMPACT value. (${SPHINX_GETTEXT_COMPACT})")
+endif()
+
+set(POSSIBLE_TARGETS "index|literal-block|doctest-block|raw|image")
+if (NOT SPHINX_GETTEXT_TARGETS MATCHES "^(${POSSIBLE_TARGETS})(,(${POSSIBLE_TARGETS}))*$")
+    message(FATAL_ERROR "Invalid SPHINX_GETTEXT_TARGETS value. (${SPHINX_GETTEXT_TARGETS})")
+endif()
+
+if (NOT GETTEXT_WRAP_WIDTH MATCHES "^[1-9][0-9]*$")
+    message(FATAL_ERROR "Invalid GETTEXT_WRAP_WIDTH value. (${GETTEXT_WRAP_WIDTH})")
 endif()
 
 #[============================================================[
@@ -299,6 +290,40 @@ if (NOT "$CACHE{VERSION_OF_PYTHON}" STREQUAL "[default]")
 endif()
 if (NOT "$CACHE{VERSION_OF_SPHINX}" STREQUAL "[default]")
     set(VERSION_OF_SPHINX "$CACHE{VERSION_OF_SPHINX}")
+endif()
+
+#[============================================================[
+# Prepare TMPLS_TO_SOURCE_DIR  for 'sphinx_build_pot'  target.
+# Prepare TMPLS_TO_CONFIG_DIR  for 'sphinx_build_docs' target.
+# Prepare LOCALE_TO_SOURCE_DIR for 'sphinx_build_docs' taget.
+#]============================================================]
+
+file(RELATIVE_PATH TMPLS_TO_SOURCE_DIR
+    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
+    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
+
+file(RELATIVE_PATH TMPLS_TO_CONFIG_DIR
+    "${PROJ_OUT_REPO_DOCS_CONFIG_DIR}"
+    "${PROJ_OUT_REPO_DOCS_TMPLS_DIR}")
+
+file(RELATIVE_PATH LOCALE_TO_SOURCE_DIR
+    "${PROJ_OUT_REPO_DOCS_SOURCE_DIR}"
+    "${PROJ_OUT_REPO_DOCS_LOCALE_DIR}")
+
+#[============================================================[
+# Configure Sphinx verbose arguments based on verbosity level.
+#]============================================================]
+
+if (SPHINX_VERBOSE_LEVEL GREATER 0)
+    set(SPHINX_VERBOSE_ARGS "-")
+    math(EXPR REPEAT_COUNT "${SPHINX_VERBOSE_LEVEL} - 1")
+    foreach(INDEX RANGE ${REPEAT_COUNT})
+        set(SPHINX_VERBOSE_ARGS "${SPHINX_VERBOSE_ARGS}v")
+    endforeach()
+    unset(INDEX)
+    unset(REPEAT_COUNT)
+else()
+    set(SPHINX_VERBOSE_ARGS "")
 endif()
 
 #[============================================================[
@@ -354,9 +379,9 @@ message(STATUS "MODE_OF_INSTALL                 = ${MODE_OF_INSTALL}")
 message(STATUS "SPHINX_BUILDER                  = ${SPHINX_BUILDER}")
 message(STATUS "SPHINX_JOB_NUMBER               = ${SPHINX_JOB_NUMBER}")
 message(STATUS "SPHINX_VERBOSE_LEVEL            = ${SPHINX_VERBOSE_LEVEL}")
+message(STATUS "SPHINX_GETTEXT_COMPACT          = ${SPHINX_GETTEXT_COMPACT}")
+message(STATUS "SPHINX_GETTEXT_TARGETS          = ${SPHINX_GETTEXT_TARGETS}")
 message(STATUS "GETTEXT_WRAP_WIDTH              = ${GETTEXT_WRAP_WIDTH}")
-message(STATUS "GETTEXT_COMPACT                 = ${GETTEXT_COMPACT}")
-message(STATUS "GETTEXT_ADDITIONAL_TARGETS      = ${GETTEXT_ADDITIONAL_TARGETS}")
 message(STATUS "REMOTE_URL_OF_L10N              = ${REMOTE_URL_OF_L10N}")
 message(STATUS "REMOTE_URL_OF_DOCS              = ${REMOTE_URL_OF_DOCS}")
 message(STATUS "BASEURL_HREF                    = ${BASEURL_HREF}")
@@ -452,9 +477,9 @@ set(SCRIPT_MODE_CACHE
     -D SPHINX_BUILDER=${SPHINX_BUILDER}
     -D SPHINX_JOB_NUMBER=${SPHINX_JOB_NUMBER}
     -D SPHINX_VERBOSE_LEVEL=${SPHINX_VERBOSE_LEVEL}
+    -D SPHINX_GETTEXT_COMPACT=${SPHINX_GETTEXT_COMPACT}
+    -D SPHINX_GETTEXT_TARGETS=${SPHINX_GETTEXT_TARGETS}
     -D GETTEXT_WRAP_WIDTH=${GETTEXT_WRAP_WIDTH}
-    -D GETTEXT_COMPACT=${GETTEXT_COMPACT}
-    -D GETTEXT_ADDITIONAL_TARGETS=${GETTEXT_ADDITIONAL_TARGETS}
     -D REMOTE_URL_OF_L10N=${REMOTE_URL_OF_L10N}
     -D REMOTE_URL_OF_DOCS=${REMOTE_URL_OF_DOCS}
     -D BASEURL_HREF=${BASEURL_HREF}
@@ -570,7 +595,7 @@ add_custom_target(create_rtd_symlinks
     VERBATIM)
 
 #[============================================================[
-# Add dependencies for Fundamental Targets.
+# Add Dependencies for Fundamental Targets.
 #]============================================================]
 
 if (AUTO_DEPEND)
