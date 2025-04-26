@@ -268,17 +268,12 @@ elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
         set(VERSION_OF_SPHINX   "8.1")
     elseif (VERSION VERSION_LESS_EQUAL    "3.18" AND
             VERSION VERSION_GREATER_EQUAL "3.9")
-        #[[
-        # In cmake.py, it used: from sphinx.util.pycompat import htmlescape
-        # However, this 'sphinx.util.pycompat' module was deprecated at 4.0 and removed at 6.0.
-        # See: https://github.com/sphinx-doc/sphinx/issues/11125#issuecomment-1381044274
-        #]]
-        set(VERSION_OF_PYTHON   "3.6")
-        set(VERSION_OF_SPHINX   "2.4")
+        set(VERSION_OF_PYTHON   "3.12")
+        set(VERSION_OF_SPHINX   "8.1")
     elseif (VERSION VERSION_LESS_EQUAL    "3.8" AND
             VERSION VERSION_GREATER_EQUAL "3.0")
-        set(VERSION_OF_PYTHON   "3.6")
-        set(VERSION_OF_SPHINX   "1.6")
+        set(VERSION_OF_PYTHON   "3.12")
+        set(VERSION_OF_SPHINX   "8.1")
     else()
         message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
     endif()

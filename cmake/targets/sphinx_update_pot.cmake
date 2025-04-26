@@ -64,6 +64,48 @@ message("")
 restore_cmake_message_indent()
 
 
+if (VERSION VERSION_LESS_EQUAL    "3.18" AND
+    VERSION VERSION_GREATER_EQUAL "3.0")
+    message(STATUS "Copying 'cmake.py' file to the sphinx extensions directory...")
+    file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+    file(COPY_FILE
+        "${PROJ_CMAKE_CUSTOM_DIR}/latest/cmake.py"
+        "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/cmake.py")
+    remove_cmake_message_indent()
+    message("")
+    message("From:  ${PROJ_CMAKE_CUSTOM_DIR}/latest/cmake.py")
+    message("To:    ${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/cmake.py")
+    message("")
+    restore_cmake_message_indent()
+
+
+    message(STATUS "Copying 'colors.py' file to the sphinx extensions directory...")
+    file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+    file(COPY_FILE
+        "${PROJ_CMAKE_CUSTOM_DIR}/latest/colors.py"
+        "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/colors.py")
+    remove_cmake_message_indent()
+    message("")
+    message("From:  ${PROJ_CMAKE_CUSTOM_DIR}/latest/colors.py")
+    message("To:    ${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/colors.py")
+    message("")
+    restore_cmake_message_indent()
+
+
+    message(STATUS "Copying 'conf.py.in' file to the sphinx extensions directory...")
+    file(MAKE_DIRECTORY "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}")
+    file(COPY_FILE
+        "${PROJ_CMAKE_CUSTOM_DIR}/latest/conf.py.in"
+        "${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/conf.py.in")
+    remove_cmake_message_indent()
+    message("")
+    message("From:  ${PROJ_CMAKE_CUSTOM_DIR}/latest/conf.py.in")
+    message("To:    ${PROJ_OUT_REPO_DOCS_EXTNS_DIR}/conf.py.in")
+    message("")
+    restore_cmake_message_indent()
+endif()
+
+
 message(STATUS "Generating 'conf.py' file by configuring project(CMakeHelp)...")
 if (CMAKE_HOST_LINUX)
     set(ENV_PATH                "${PROJ_CONDA_DIR}/bin:$ENV{PATH}")
