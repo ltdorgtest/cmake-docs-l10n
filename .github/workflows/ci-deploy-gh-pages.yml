@@ -88,7 +88,7 @@ jobs:
                 github.event.action == 'sphinx-build-docs' ) ) ||
               ( github.event_name == 'workflow_dispatch' ) }}
     concurrency:
-      group: ${{ github.workflow }}
+      group: ${{ github.workflow }}-${{ github.event.client_payload.BUILD_RUN_ID || inputs.BUILD_RUN_ID }}
       cancel-in-progress: true
     uses: ltdorgtest/ci-common/.github/workflows/use-deploy-gh-pages.yml@main
     with:
