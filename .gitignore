@@ -5,9 +5,9 @@ CMakeLists.txt.user
 CMakeUserPresets.json
 
 # Possible CMake build directories.
+/out
 /build
 /cmake-debug-build
-/out
 
 # Non-essential project-related directories and files.
 .conda
