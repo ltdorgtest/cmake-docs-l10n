@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
 # See accompanying file LICENSE.txt for details.
 
-name: ci-deploy-gh-pages
+name: ci-deploy-pages
 
 on:
   # Triggers the workflow when the 'sphinx-build-docs' workflow is completed.
@@ -90,13 +90,13 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ github.event.client_payload.BUILD_RUN_ID || inputs.BUILD_RUN_ID }}
       cancel-in-progress: true
-    uses: ltdorgtest/ci-common/.github/workflows/use-deploy-gh-pages.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-deploy-pages.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       BUILD_RUN_ID: ${{ github.event.client_payload.BUILD_RUN_ID || inputs.BUILD_RUN_ID }}
       DEPLOY_ONLY: ${{ github.event.client_payload.DEPLOY_ONLY || inputs.DEPLOY_ONLY }}
-      DEPLOY_BRANCH: 'gh-pages'
+      DEPLOY_BRANCH: 'pages'
       CALLER_JOB: 'caller'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
