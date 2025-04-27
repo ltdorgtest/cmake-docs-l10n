@@ -17,9 +17,9 @@ jobs:
   before-check:
     runs-on: ubuntu-latest
     outputs:
-      SCRIPT_CHANGE: ${{ steps.filter.outputs.script }}
-      README_CHANGE: ${{ steps.filter.outputs.readme }}
-      WORKFLOW_CHANGE: ${{ steps.filter.outputs.workflow }}
+      CICD_CHANGE: ${{ steps.filter.outputs.cicd }}
+      DOCS_CHANGE: ${{ steps.filter.outputs.docs }}
+      BUILD_CHANGE: ${{ steps.filter.outputs.build }}
     steps:
       - name: Print Contexts
         shell: bash
@@ -54,23 +54,23 @@ jobs:
         with:
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
           filters: |
-            script:
+            cicd:
+              - '.github/workflows/*.yml'
+            docs:
+              - 'README.md'
+            build:
               - 'cmake/custom/**/*'
               - 'cmake/targets/*.cmake'
               - 'CMakeLists.txt'
               - 'CMakePresets.json'
-            readme:
-              - 'README.md'
-            workflow:
-              - '.github/workflows/*.yml'
       - name: Check Outputs of paths-filter
         run: |
-          echo "steps.filter.outputs.script   = ${{ steps.filter.outputs.script }}"
-          echo "steps.filter.outputs.readme   = ${{ steps.filter.outputs.readme }}"
-          echo "steps.filter.outputs.workflow = ${{ steps.filter.outputs.workflow }}"
-          echo "steps.filter.outputs.script_count   = ${{ steps.filter.outputs.script_count }}"
-          echo "steps.filter.outputs.readme_count   = ${{ steps.filter.outputs.readme_count }}"
-          echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
+          echo "steps.filter.outputs.cicd   = ${{ steps.filter.outputs.cicd }}"
+          echo "steps.filter.outputs.docs   = ${{ steps.filter.outputs.docs }}"
+          echo "steps.filter.outputs.build  = ${{ steps.filter.outputs.build }}"
+          echo "steps.filter.outputs.cicd_count   = ${{ steps.filter.outputs.cicd_count }}"
+          echo "steps.filter.outputs.docs_count   = ${{ steps.filter.outputs.docs_count }}"
+          echo "steps.filter.outputs.build_count  = ${{ steps.filter.outputs.build_count }}"
 
   check-crowdin-readme:
     needs: [ 'before-check' ]
@@ -82,7 +82,7 @@ jobs:
       LANGUAGE: 'all'
       LANGUAGE_SOURCE: 'en_US'
       CALLER_JOB: 'check-crowdin-readme'
-      ENABLE_JOB: ${{ needs.before-check.outputs.README_CHANGE == 'true' }}
+      ENABLE_JOB: ${{ needs.before-check.outputs.DOCS_CHANGE == 'true' }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
       CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
@@ -103,7 +103,7 @@ jobs:
       BASEURL_HREF: ${{ vars.BASEURL_HREF }}
       SPHINX_BUILDER: 'html'
       CALLER_JOB: 'check-sphinx-build-docs'
-      ENABLE_JOB: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
+      ENABLE_JOB: ${{ needs.before-check.outputs.BUILD_CHANGE == 'true' }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
