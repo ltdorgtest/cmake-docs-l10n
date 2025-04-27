@@ -12,6 +12,4 @@ CMakeUserPresets.json
 # Non-essential project-related directories and files.
 .conda
 .venv
-/config.js
-/flyout.js
 /l10n
