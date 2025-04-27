@@ -55,7 +55,8 @@ jobs:
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
           filters: |
             script:
-              - 'cmake/**/*.cmake'
+              - 'cmake/custom/**/*'
+              - 'cmake/targets/*.cmake'
               - 'CMakeLists.txt'
               - 'CMakePresets.json'
             readme:
