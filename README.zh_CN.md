@@ -201,11 +201,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Update README translations by Crowdin CLI tool.</td>
       </tr>
       <tr>
-        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml">
-            <img alt="ci-deploy-gh-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-gh-pages.yml/badge.svg" />
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml">
+            <img alt="ci-deploy-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml/badge.svg" />
           </a>
         </td>
-        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download and deploy build artifacts to <code>gh-pages</code> branch.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Download and deploy build artifacts to <code>pages</code> branch.</td>
       </tr>
       <tr>
         <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
