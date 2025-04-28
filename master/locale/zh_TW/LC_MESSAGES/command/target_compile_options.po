@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,25 +75,25 @@ msgid ""
 "Targets>`."
 msgstr ""
 
-#: ../../../command/GENEX_NOTE.txt:4
+#: ../../../command/include/GENEX_NOTE.rst:4
 msgid ""
 "Arguments to |command_name| may use generator expressions with the syntax "
 "``$<...>``. See the :manual:`cmake-generator-expressions(7)` manual for "
 "available expressions.  |more_see_also|"
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:2
+#: ../../../command/include/OPTIONS_SHELL.rst:2
 msgid "Option De-duplication"
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:4
+#: ../../../command/include/OPTIONS_SHELL.rst:4
 msgid ""
 "The final set of options used for a target is constructed by accumulating "
 "options from the current target and the usage requirements of its "
 "dependencies.  The set of options is de-duplicated to avoid repetition."
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:8
+#: ../../../command/include/OPTIONS_SHELL.rst:8
 msgid ""
 "While beneficial for individual options, the de-duplication step can break "
 "up option groups.  For example, ``-option A -option B`` becomes ``-option A "

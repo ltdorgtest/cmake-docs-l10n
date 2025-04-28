@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 msgid "Creating Relocatable Packages"
 msgstr ""
 
-#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.txt:2
+#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.rst:2
 msgid ""
 "Note that it is not advisable to populate the |INTERFACE_PROPERTY_LINK| of a "
 "target with absolute paths to dependencies. That would hard-code into "
@@ -56,7 +56,7 @@ msgid ""
 "machine the package was made on**."
 msgstr ""
 
-#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.txt:7
+#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.rst:7
 msgid ""
 "See the :ref:`Creating Relocatable Packages` section of the :manual:`cmake-"
 "packages(7)` manual for discussion of additional care that must be taken "

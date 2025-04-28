@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "INTERFACE_LINK_OPTIONS"
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_BUILD_PROPERTY.txt:2
+#: ../../../prop_tgt/include/INTERFACE_BUILD_PROPERTY.rst:2
 msgid "List of public |property_name| requirements for a library."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_BUILD_PROPERTY.txt:4
+#: ../../../prop_tgt/include/INTERFACE_BUILD_PROPERTY.rst:4
 msgid ""
 "Targets may populate this property to publish the |property_name| required "
 "to compile against the headers for the target.  The |command_name| command "
@@ -33,14 +33,14 @@ msgid ""
 "``INTERFACE`` keywords.  Projects may also get and set the property directly."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_BUILD_PROPERTY.txt:9
+#: ../../../prop_tgt/include/INTERFACE_BUILD_PROPERTY.rst:9
 msgid ""
 "When target dependencies are specified using :command:"
 "`target_link_libraries`, CMake will read this property from all target "
 "dependencies to determine the build properties of the consumer."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_BUILD_PROPERTY.txt:13
+#: ../../../prop_tgt/include/INTERFACE_BUILD_PROPERTY.rst:13
 msgid ""
 "Contents of |PROPERTY_INTERFACE_NAME| may use \"generator expressions\" with "
 "the syntax ``$<...>``.  See the :manual:`cmake-generator-expressions(7)` "
@@ -48,11 +48,11 @@ msgid ""
 "manual for more on defining buildsystem properties."
 msgstr ""
 
-#: ../../../command/DEVICE_LINK_OPTIONS.txt:2
+#: ../../../command/include/DEVICE_LINK_OPTIONS.rst:2
 msgid "Host And Device Specific Link Options"
 msgstr ""
 
-#: ../../../command/DEVICE_LINK_OPTIONS.txt:4
+#: ../../../command/include/DEVICE_LINK_OPTIONS.rst:4
 msgid ""
 "When a device link step is involved, which is controlled by :prop_tgt:"
 "`CUDA_SEPARABLE_COMPILATION` and :prop_tgt:`CUDA_RESOLVE_DEVICE_SYMBOLS` "
@@ -64,18 +64,18 @@ msgid ""
 "link step."
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:2
+#: ../../../command/include/OPTIONS_SHELL.rst:2
 msgid "Option De-duplication"
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:4
+#: ../../../command/include/OPTIONS_SHELL.rst:4
 msgid ""
 "The final set of options used for a target is constructed by accumulating "
 "options from the current target and the usage requirements of its "
 "dependencies.  The set of options is de-duplicated to avoid repetition."
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:8
+#: ../../../command/include/OPTIONS_SHELL.rst:8
 msgid ""
 "While beneficial for individual options, the de-duplication step can break "
 "up option groups.  For example, ``-option A -option B`` becomes ``-option A "
@@ -86,11 +86,11 @@ msgid ""
 "B\"`` becomes ``-option A -option B``."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:2
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:2
 msgid "Handling Compiler Driver Differences"
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:4
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:4
 msgid ""
 "To pass options to the linker tool, each compiler driver has its own syntax. "
 "The ``LINKER:`` prefix and ``,`` separator can be used to specify, in a "
@@ -101,26 +101,26 @@ msgid ""
 "`CMAKE_<LANG>_LINKER_WRAPPER_FLAG_SEP` variables."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:12
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:12
 msgid ""
 "For example, ``\"LINKER:-z,defs\"`` becomes ``-Xlinker -z -Xlinker defs`` "
 "for ``Clang`` and ``-Wl,-z,defs`` for ``GNU GCC``."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:15
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:15
 msgid ""
 "The ``LINKER:`` prefix can be specified as part of a ``SHELL:`` prefix "
 "expression."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:18
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:18
 msgid ""
 "The ``LINKER:`` prefix supports, as an alternative syntax, specification of "
 "arguments using the ``SHELL:`` prefix and space as separator. The previous "
 "example then becomes ``\"LINKER:SHELL:-z defs\"``."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:24
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:24
 msgid ""
 "Specifying the ``SHELL:`` prefix anywhere other than at the beginning of the "
 "``LINKER:`` prefix is not supported."

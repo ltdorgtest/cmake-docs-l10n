@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid ""
 "additional information."
 msgstr ""
 
-#: ../../../variable/CMAKE_OSX_VARIABLE.txt:1
+#: ../../../variable/include/CMAKE_OSX_VARIABLE.rst:1
 msgid ""
 "The value of this variable should be set prior to the first :command:"
 "`project` or :command:`enable_language` command invocation because it may "
@@ -42,12 +42,12 @@ msgid ""
 "entry of the same name) unless policy :policy:`CMP0126` is set to ``NEW``."
 msgstr ""
 
-#: ../../../variable/CMAKE_OSX_VARIABLE.txt:9
+#: ../../../variable/include/CMAKE_OSX_VARIABLE.rst:9
 msgid ""
 "Despite the ``OSX`` part in the variable name(s) they apply also to other "
 "SDKs than macOS like iOS, tvOS, visionOS, or watchOS."
 msgstr ""
 
-#: ../../../variable/CMAKE_OSX_VARIABLE.txt:12
+#: ../../../variable/include/CMAKE_OSX_VARIABLE.rst:12
 msgid "This variable is ignored on platforms other than Apple."
 msgstr ""

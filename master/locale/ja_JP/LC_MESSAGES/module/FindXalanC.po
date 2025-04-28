@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,88 +23,129 @@ msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:10
 msgid ""
-"Find the Apache Xalan-C++ XSL transform processor headers and libraries."
+"Finds the Apache Xalan-C++ XSL transform processor headers and libraries."
 msgstr ""
 
-#: ../../../../Modules/FindXalanC.cmake:13
-msgid "Imported Targets"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:15
-msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:17
-msgid "``XalanC::XalanC``"
+#: ../../../../Modules/FindXalanC.cmake:14
+msgid ""
+"The Xalan-C++ library depends on the :module:`Xerces-C++ <FindXercesC>` "
+"library, which must be found for this module to succeed."
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:18
-msgid "The Xalan-C++ ``xalan-c`` library, if found."
+msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindXalanC.cmake:21
-msgid "Result variables"
+#: ../../../../Modules/FindXalanC.cmake:20
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:22
+msgid "``XalanC::XalanC``"
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:23
-msgid "This module will set the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:25
-msgid "``XalanC_FOUND``"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:26
-msgid "true if the Xalan headers and libraries were found"
+msgid ""
+"Target encapsulating the Xalan-C++ library usage requirements, available "
+"only if Xalan-C++ is found."
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:27
-msgid "``XalanC_VERSION``"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:28
-msgid "Xalan release version"
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:29
-msgid "``XalanC_INCLUDE_DIRS``"
+msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindXalanC.cmake:30
-msgid ""
-"the directory containing the Xalan headers; note ``XercesC_INCLUDE_DIRS`` is "
-"also required"
+#: ../../../../Modules/FindXalanC.cmake:31
+msgid "``XalanC_FOUND``"
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:32
-msgid "``XalanC_LIBRARIES``"
+msgid "Boolean indicating whether the Xalan-C++ is found."
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:33
-msgid ""
-"Xalan libraries to be linked; note ``XercesC_LIBRARIES`` is also required"
+msgid "``XalanC_VERSION``"
 msgstr ""
 
-#: ../../../../Modules/FindXalanC.cmake:37
-msgid "Cache variables"
+#: ../../../../Modules/FindXalanC.cmake:34
+msgid "The version of the found Xalan-C++ library."
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:35
+msgid "``XalanC_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:36
+msgid ""
+"Include directories needed for using Xalan-C++ library.  These contain the "
+"Xalan-C++ and Xerces-C++ headers."
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:38
+msgid "``XalanC_LIBRARIES``"
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:39
-msgid "The following cache variables may also be set:"
+msgid ""
+"Libraries needed to link against Xalan-C++.  These contain the Xalan-C++ and "
+"Xerces-C++ libraries."
 msgstr ""
 
 #: ../../../../Modules/FindXalanC.cmake:41
-msgid "``XalanC_INCLUDE_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:42
-msgid "the directory containing the Xalan headers"
-msgstr ""
-
-#: ../../../../Modules/FindXalanC.cmake:43
 msgid "``XalanC_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindXalanC.cmake:44
-msgid "the Xalan library"
+#: ../../../../Modules/FindXalanC.cmake:42
+msgid ""
+"The path to the Xalan-C++ library (``xalan-c``), either release or debug "
+"variant."
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:46
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:48
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:50
+msgid "``XalanC_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:51
+msgid "The directory containing the Xalan-C++ headers."
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:52
+msgid "``XalanC_LIBRARY_RELEASE``"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:53
+msgid "The path to a release (optimized) variant of the Xalan-C++ library."
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:54
+msgid "``XalanC_LIBRARY_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:55
+msgid "The path to a debug variant of the Xalan-C++ library."
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:58
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:60
+msgid "Finding Xalan-C++ library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindXalanC.cmake:62
+msgid ""
+"find_package(XalanC)\n"
+"target_link_libraries(project_target PRIVATE XalanC::XalanC)"
 msgstr ""

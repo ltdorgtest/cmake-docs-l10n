@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,7 +90,7 @@ msgid ""
 "via the :option:`cmake -T` option, to specify another toolset."
 msgstr ""
 
-#: ../../../generator/VS_TOOLSET_HOST_ARCH.txt:1
+#: ../../../generator/include/VS_TOOLSET_HOST_ARCH.rst:1
 msgid ""
 "For each toolset that comes with this version of Visual Studio, there are "
 "variants that are themselves compiled for 32-bit (``x86``) and 64-bit "

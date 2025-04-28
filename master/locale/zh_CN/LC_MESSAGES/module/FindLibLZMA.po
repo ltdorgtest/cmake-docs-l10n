@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,127 +22,164 @@ msgid "FindLibLZMA"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:8
-msgid "Find LZMA compression algorithm headers and library."
+msgid ""
+"Finds the data compression library that implements the LZMA (Lempel–Ziv–"
+"Markov chain algorithm) - liblzma."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:12
 msgid "Imported Targets"
 msgstr ""
 
+#: ../../../../Modules/FindLibLZMA.cmake:14
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
 #: ../../../../Modules/FindLibLZMA.cmake:16
+msgid "``LibLZMA::LibLZMA``"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:19
 msgid ""
-"This module defines :prop_tgt:`IMPORTED` target ``LibLZMA::LibLZMA``, if "
-"liblzma has been found."
+"Target encapsulating the liblzma library usage requirements, available only "
+"if liblzma is found."
 msgstr ""
 
-#: ../../../../Modules/FindLibLZMA.cmake:20
-msgid "Result variables"
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:22
-msgid "This module will set the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:24
-msgid "``LIBLZMA_FOUND``"
+#: ../../../../Modules/FindLibLZMA.cmake:23
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:25
-msgid "True if liblzma headers and library were found."
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:26
-msgid "``LIBLZMA_INCLUDE_DIRS``"
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:27
-msgid "Directory where liblzma headers are located."
+msgid "``LibLZMA_FOUND``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:28
-msgid "``LIBLZMA_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:29
-msgid "Lzma libraries to link against."
+msgid ""
+"Boolean indicating whether the liblzma is found.  For backward "
+"compatibility, the ``LIBLZMA_FOUND`` variable is also set to the same value."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:30
-msgid "``LIBLZMA_HAS_AUTO_DECODER``"
+msgid "``LIBLZMA_INCLUDE_DIRS``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:31
-msgid "True if lzma_auto_decoder() is found (required)."
+msgid "Include directories containing headers needed to use liblzma."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:32
-msgid "``LIBLZMA_HAS_EASY_ENCODER``"
+msgid "``LIBLZMA_LIBRARIES``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:33
-msgid "True if lzma_easy_encoder() is found (required)."
+msgid "Libraries needed to link against to use liblzma."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:34
-msgid "``LIBLZMA_HAS_LZMA_PRESET``"
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:35
-msgid "True if lzma_lzma_preset() is found (required)."
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:36
 msgid "``LIBLZMA_VERSION``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:37
-msgid "the version of LZMA found."
+msgid ""
+"The version of liblzma found (available as a string, for example, ``5.0.3``)."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:40
-msgid "See also legacy variable ``LIBLZMA_VERSION_STRING``."
+msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindLibLZMA.cmake:43
-msgid "Legacy Variables"
+#: ../../../../Modules/FindLibLZMA.cmake:42
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:44
+msgid "``LIBLZMA_HAS_AUTO_DECODER``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:45
-msgid "The following variables are provided for backward compatibility:"
+msgid ""
+"Boolean sanity check result indicating whether the ``lzma_auto_decoder()`` "
+"function (automatic decoder functionality) is found in liblzma (required)."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:47
-msgid "``LIBLZMA_VERSION_MAJOR``"
+msgid "``LIBLZMA_HAS_EASY_ENCODER``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:48
-msgid "The major version of lzma"
-msgstr ""
-
-#: ../../../../Modules/FindLibLZMA.cmake:49
-msgid "``LIBLZMA_VERSION_MINOR``"
+msgid ""
+"Boolean sanity check result indicating whether the ``lzma_easy_encoder()`` "
+"function (basic encoder API) is found in liblzma (required)."
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:50
-msgid "The minor version of lzma"
+msgid "``LIBLZMA_HAS_LZMA_PRESET``"
 msgstr ""
 
 #: ../../../../Modules/FindLibLZMA.cmake:51
+msgid ""
+"Boolean sanity check result indicating whether the ``lzma_lzma_preset()`` "
+"function (preset compression configuration) is found in liblzma (required)."
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:55
+msgid "Legacy Variables"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:57
+msgid "The following variables are provided for backward compatibility:"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:59
+msgid "``LIBLZMA_VERSION_MAJOR``"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:60
+msgid "The major version of liblzma found."
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:61
+msgid "``LIBLZMA_VERSION_MINOR``"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:62
+msgid "The minor version of liblzma found."
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:63
 msgid "``LIBLZMA_VERSION_PATCH``"
 msgstr ""
 
-#: ../../../../Modules/FindLibLZMA.cmake:52
-msgid "The patch version of lzma"
+#: ../../../../Modules/FindLibLZMA.cmake:64
+msgid "The patch version of liblzma found."
 msgstr ""
 
-#: ../../../../Modules/FindLibLZMA.cmake:53
+#: ../../../../Modules/FindLibLZMA.cmake:65
 msgid "``LIBLZMA_VERSION_STRING``"
 msgstr ""
 
-#: ../../../../Modules/FindLibLZMA.cmake:54
-msgid "version number as a string (ex: \"5.0.3\")"
+#: ../../../../Modules/FindLibLZMA.cmake:66
+msgid "The version of liblzma found."
 msgstr ""
 
-#: ../../../../Modules/FindLibLZMA.cmake:56
+#: ../../../../Modules/FindLibLZMA.cmake:68
 msgid "Superseded by ``LIBLZMA_VERSION``."
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:72
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:74
+msgid "Finding the liblzma library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindLibLZMA.cmake:76
+msgid ""
+"find_package(LibLZMA)\n"
+"target_link_libraries(project_target PRIVATE LibLZMA::LibLZMA)"
 msgstr ""

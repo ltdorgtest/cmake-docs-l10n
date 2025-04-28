@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,7 @@ msgid ""
 "populated with the specified directories."
 msgstr ""
 
-#: ../../../command/GENEX_NOTE.txt:4
+#: ../../../command/include/GENEX_NOTE.rst:4
 msgid ""
 "Arguments to |command_name| may use generator expressions with the syntax "
 "``$<...>``. See the :manual:`cmake-generator-expressions(7)` manual for "
@@ -125,7 +125,7 @@ msgstr ""
 msgid "Creating Relocatable Packages"
 msgstr ""
 
-#: ../../../include/INTERFACE_INCLUDE_DIRECTORIES_WARNING.txt:2
+#: ../../../include/INTERFACE_INCLUDE_DIRECTORIES_WARNING.rst:2
 msgid ""
 "Note that it is not advisable to populate the :genex:`INSTALL_INTERFACE` of "
 "the |INTERFACE_PROPERTY_LINK| of a target with absolute paths to the include "
@@ -134,7 +134,7 @@ msgid ""
 "package was made on**."
 msgstr ""
 
-#: ../../../include/INTERFACE_INCLUDE_DIRECTORIES_WARNING.txt:8
+#: ../../../include/INTERFACE_INCLUDE_DIRECTORIES_WARNING.rst:8
 msgid ""
 "The :genex:`INSTALL_INTERFACE` of the |INTERFACE_PROPERTY_LINK| is only "
 "suitable for specifying the required include directories for headers "
@@ -144,7 +144,7 @@ msgid ""
 "their own header locations in |INTERFACE_PROPERTY_LINK|."
 msgstr ""
 
-#: ../../../include/INTERFACE_INCLUDE_DIRECTORIES_WARNING.txt:15
+#: ../../../include/INTERFACE_INCLUDE_DIRECTORIES_WARNING.rst:15
 msgid ""
 "See the :ref:`Creating Relocatable Packages` section of the :manual:`cmake-"
 "packages(7)` manual for discussion of additional care that must be taken "

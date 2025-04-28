@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -410,17 +410,36 @@ msgid ""
 "Builds targeting macOS no longer choose any SDK or pass an ``-isysroot`` "
 "flag to the compiler by default.  Instead, compilers are expected to choose "
 "a default macOS SDK on their own.  In order to use a compiler that does not "
-"do this, users must now specify ``-DCMAKE_OSX_SYSROOT=macosx`` when "
-"configuring their build."
+"do this, users must now specify :variable:`CMAKE_OSX_SYSROOT` when "
+"configuring their build, e.g., ``-DCMAKE_OSX_SYSROOT=macosx``."
 msgstr ""
 
 #: ../../../release/4.0.rst:238
+msgid ""
+"Note that Xcode's compilers, when not invoked with ``-isysroot``, search for "
+"headers in ``/usr/local/include`` before system SDK paths, matching the "
+"convention on many platforms.  Users on macOS-x86_64 hosts with Homebrew "
+"installed in ``/usr/local`` should pass ``-DCMAKE_OSX_SYSROOT=macosx``, or "
+"``export SDKROOT=macosx``, when not building with Homebrew tools."
+msgstr ""
+
+#: ../../../release/4.0.rst:244
+msgid ""
+"On Windows, file paths named in project code, e.g., in ``CMakeLists.txt``, "
+"are no longer automatically converted to their on-disk upper/lower case. "
+"Projects are expected to spell source file paths consistently using their "
+"canonical case, e.g., in calls to :command:`add_library`, :command:"
+"`set_property(SOURCE)`, or :command:`set_source_files_properties`. This "
+"matches the behavior on platforms with case-sensitive filesystems."
+msgstr ""
+
+#: ../../../release/4.0.rst:251
 msgid ""
 "On AIX, ``SHARED`` library targets now produce a shared library archive by "
 "default.  See policy :policy:`CMP0182`."
 msgstr ""
 
-#: ../../../release/4.0.rst:241
+#: ../../../release/4.0.rst:254
 msgid ""
 "The :option:`cmake --preset` command no longer outputs a summary of the "
 "preset's CMake cache and environment variables by default.  That summary is "
@@ -429,8 +448,27 @@ msgid ""
 "`CMAKE_MESSAGE_LOG_LEVEL` cache variable."
 msgstr ""
 
-#: ../../../release/4.0.rst:247
+#: ../../../release/4.0.rst:260
 msgid ""
 "Precompiled SunOS ``sparc64`` and ``x86_64`` binaries are now provided on "
 "`cmake.org`_."
+msgstr ""
+
+#: ../../../release/4.0.rst:266
+msgid "Updates"
+msgstr ""
+
+#: ../../../release/4.0.rst:268
+msgid "Changes made since CMake 4.0.0 include the following."
+msgstr ""
+
+#: ../../../release/4.0.rst:271
+msgid "4.0.1"
+msgstr ""
+
+#: ../../../release/4.0.rst:273
+msgid ""
+"This version made no changes to documented features or interfaces. Some "
+"implementation updates were made to support ecosystem changes and/or fix "
+"regressions."
 msgstr ""

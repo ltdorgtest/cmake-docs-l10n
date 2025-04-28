@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,7 @@ msgid ""
 "for further details."
 msgstr ""
 
-#: ../../../command/UNSET_NOTE.txt:3
+#: ../../../command/include/UNSET_NOTE.rst:3
 msgid ""
 "When evaluating :ref:`Variable References` of the form ``${VAR}``, CMake "
 "first searches for a normal variable with that name.  If no such normal "

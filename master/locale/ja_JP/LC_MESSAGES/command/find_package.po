@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-17 10:27+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -735,7 +735,7 @@ msgid ""
 "specified as part of ``PATHS`` and ``HINTS``."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:1
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:1
 msgid ""
 "Specify which registry views must be queried. This option is only meaningful "
 "on ``Windows`` platforms and will be ignored on other ones. When not "
@@ -744,90 +744,90 @@ msgid ""
 "default view when the policy is ``OLD``."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:7
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:7
 msgid "``64``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:8
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:8
 msgid ""
 "Query the 64-bit registry. On 32-bit Windows, it always returns the string "
 "``/REGISTRY-NOTFOUND``."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:11
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:11
 msgid "``32``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:12
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:12
 msgid "Query the 32-bit registry."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:14
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:14
 msgid "``64_32``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:15
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:15
 msgid "Query both views (``64`` and ``32``) and generate a path for each."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:17
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:17
 msgid "``32_64``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:18
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:18
 msgid "Query both views (``32`` and ``64``) and generate a path for each."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:20
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:20
 msgid "``HOST``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:21
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:21
 msgid ""
 "Query the registry matching the architecture of the host: ``64`` on 64-bit "
 "Windows and ``32`` on 32-bit Windows."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:24
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:24
 msgid "``TARGET``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:25
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:25
 msgid ""
 "Query the registry matching the architecture specified by the :variable:"
 "`CMAKE_SIZEOF_VOID_P` variable. If not defined, fall back to ``HOST`` view."
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:29
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:29
 msgid "``BOTH``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:30
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:30
 msgid ""
 "Query both views (``32`` and ``64``). The order depends on the following "
 "rules: If the :variable:`CMAKE_SIZEOF_VOID_P` variable is defined, use the "
 "following view depending on the content of this variable:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:34
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:34
 msgid "``8``: ``64_32``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:35
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:35
 msgid "``4``: ``32_64``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:37
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:37
 msgid ""
 "If the :variable:`CMAKE_SIZEOF_VOID_P` variable is not defined, rely on the "
 "architecture of the host:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:40
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:40
 msgid "64-bit: ``64_32``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_REGISTRY_VIEW.txt:41
+#: ../../../command/include/FIND_XXX_REGISTRY_VIEW.rst:41
 msgid "32-bit: ``32``"
 msgstr ""
 
@@ -1116,7 +1116,7 @@ msgid ""
 "versions of CMake, this order was unspecified."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:1
+#: ../../../command/include/FIND_XXX_ROOT.rst:1
 msgid ""
 "The CMake variable :variable:`CMAKE_FIND_ROOT_PATH` specifies one or more "
 "directories to be prepended to all other search directories.  This "
@@ -1126,14 +1126,14 @@ msgid ""
 "system. By default the :variable:`CMAKE_FIND_ROOT_PATH` is empty."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:8
+#: ../../../command/include/FIND_XXX_ROOT.rst:8
 msgid ""
 "The :variable:`CMAKE_SYSROOT` variable can also be used to specify exactly "
 "one directory to use as a prefix.  Setting :variable:`CMAKE_SYSROOT` also "
 "has other effects.  See the documentation for that variable for more."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:12
+#: ../../../command/include/FIND_XXX_ROOT.rst:12
 msgid ""
 "These variables are especially useful when cross-compiling to point to the "
 "root directory of the target environment and CMake will search there too.  "
@@ -1145,46 +1145,46 @@ msgid ""
 "a per-call basis using options:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:21
+#: ../../../command/include/FIND_XXX_ROOT.rst:21
 msgid "``CMAKE_FIND_ROOT_PATH_BOTH``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:22
+#: ../../../command/include/FIND_XXX_ROOT.rst:22
 msgid "Search in the order described above."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:24
+#: ../../../command/include/FIND_XXX_ROOT.rst:24
 msgid "``NO_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:25
+#: ../../../command/include/FIND_XXX_ROOT.rst:25
 msgid "Do not use the :variable:`CMAKE_FIND_ROOT_PATH` variable."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:27
+#: ../../../command/include/FIND_XXX_ROOT.rst:27
 msgid "``ONLY_CMAKE_FIND_ROOT_PATH``"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ROOT.txt:28
+#: ../../../command/include/FIND_XXX_ROOT.rst:28
 msgid ""
 "Search only the re-rooted directories and directories below :variable:"
 "`CMAKE_STAGING_PREFIX`."
 msgstr ""
 
-#: ../../../command/FIND_XXX_ORDER.txt:1
+#: ../../../command/include/FIND_XXX_ORDER.rst:1
 msgid ""
 "The default search order is designed to be most-specific to least-specific "
 "for common use cases. Projects may override the order by simply calling the "
 "command multiple times and using the ``NO_*`` options:"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ORDER.txt:712
+#: ../../../command/include/FIND_XXX_ORDER.rst:712
 msgid ""
 "|FIND_XXX| (|FIND_ARGS_XXX| PATHS paths... NO_DEFAULT_PATH)\n"
 "|FIND_XXX| (|FIND_ARGS_XXX|)"
 msgstr ""
 
-#: ../../../command/FIND_XXX_ORDER.txt:11
+#: ../../../command/include/FIND_XXX_ORDER.rst:11
 msgid ""
 "Once one of the calls succeeds the result variable will be set and stored in "
 "the cache so that no call will search again."

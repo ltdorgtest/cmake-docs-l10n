@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,44 +29,44 @@ msgstr ""
 msgid "The allowed values are:"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:1
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:1
 msgid "``PossibleDataLoss``"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:2
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:2
 msgid ""
 "Compile with ``-RTCc`` or equivalent flag(s) to enable possible data loss "
 "checks."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:4
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:4
 msgid "``StackFrameErrorCheck``"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:5
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:5
 msgid ""
 "Compile with ``-RTCs`` or equivalent flag(s) to enable stack frame error "
 "checks."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:7
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:7
 msgid "``UninitializedVariable``"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:8
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:8
 msgid ""
 "Compile with ``-RTCu`` or equivalent flag(s) to enable uninitialized "
 "variables checks."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:11
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:11
 msgid ""
 "The value is ignored on compilers not targeting the MSVC ABI, but an "
 "unsupported value will be rejected as an error when using a compiler "
 "targeting the MSVC ABI."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_RUNTIME_CHECKS-VALUES.txt:15
+#: ../../../prop_tgt/include/MSVC_RUNTIME_CHECKS-VALUES.rst:15
 msgid ""
 "The value may also be the empty string (``\"\"``), in which case no runtime "
 "error check flags will be added explicitly by CMake."

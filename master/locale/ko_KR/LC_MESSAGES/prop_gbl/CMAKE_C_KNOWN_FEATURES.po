@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,7 +88,7 @@ msgstr ""
 msgid "Compiler mode is at least C 23."
 msgstr ""
 
-#: ../../../prop_gbl/CMAKE_LANG_STD_FLAGS.txt:3
+#: ../../../prop_gbl/include/CMAKE_LANG_STD_FLAGS.rst:3
 msgid ""
 "If the compiler's default standard level is at least that of the requested "
 "feature, CMake may omit the ``-std=`` flag. The flag may still be added if "

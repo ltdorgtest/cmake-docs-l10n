@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-17 10:27+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,14 +37,14 @@ msgid ""
 "<cmake-generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../prop_tgt/PDB_NOTE.txt:2
+#: ../../../prop_tgt/include/PDB_NOTE.rst:2
 msgid ""
 "This property does not apply to STATIC library targets because no linker is "
 "invoked to produce them so they have no linker-generated ``.pdb`` file "
 "containing debug symbols."
 msgstr ""
 
-#: ../../../prop_tgt/PDB_NOTE.txt:6
+#: ../../../prop_tgt/include/PDB_NOTE.rst:6
 msgid ""
 "The linker-generated program database files are specified by the ``/pdb`` "
 "linker flag and are not the same as compiler-generated program database "

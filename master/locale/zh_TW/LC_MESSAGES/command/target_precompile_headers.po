@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,11 +113,11 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../command/GENEX_NOTE.txt:1
+#: ../../../command/include/GENEX_NOTE.rst:1
 msgid "for more on defining buildsystem properties."
 msgstr ""
 
-#: ../../../command/GENEX_NOTE.txt:3
+#: ../../../command/include/GENEX_NOTE.rst:3
 msgid ""
 "Arguments to |command_name| may use generator expressions with the syntax "
 "``$<...>``. See the :manual:`cmake-generator-expressions(7)` manual for "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,89 +22,115 @@ msgid "FindJasper"
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:8
-msgid "Find the Jasper JPEG2000 library."
+msgid ""
+"Finds the JasPer Image Coding Toolkit for handling image data in a variety "
+"of formats, such as the JPEG-2000."
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:11
+#: ../../../../Modules/FindJasper.cmake:12
 msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:13
+#: ../../../../Modules/FindJasper.cmake:14
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:16
 msgid "``Jasper::Jasper``"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:14
-msgid "The jasper library, if found."
-msgstr ""
-
-#: ../../../../Modules/FindJasper.cmake:17
-msgid "Result Variables"
-msgstr ""
-
 #: ../../../../Modules/FindJasper.cmake:19
-msgid "This module defines the following variables:"
-msgstr ""
-
-#: ../../../../Modules/FindJasper.cmake:21
-msgid "``JASPER_FOUND``"
-msgstr ""
-
-#: ../../../../Modules/FindJasper.cmake:22
-msgid "system has Jasper"
+msgid ""
+"Target encapsulating the JasPer library usage requirements, available only "
+"if the library is found."
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:23
-msgid "``JASPER_INCLUDE_DIRS``"
+msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:26
-msgid "the Jasper include directory"
+#: ../../../../Modules/FindJasper.cmake:25
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:27
-msgid "``JASPER_LIBRARIES``"
+msgid "``Jasper_FOUND``"
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:28
-msgid "the libraries needed to use Jasper"
+msgid ""
+"Boolean indicating whether the JasPer is found.  For backward compatibility, "
+"the ``JASPER_FOUND`` variable is also set to the same value."
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:29
-msgid "``JASPER_VERSION_STRING``"
+#: ../../../../Modules/FindJasper.cmake:31
+msgid "``JASPER_INCLUDE_DIRS``"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:30
-msgid "the version of Jasper found"
+#: ../../../../Modules/FindJasper.cmake:34
+msgid "The include directories needed to use the JasPer library."
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:33
-msgid "Cache variables"
-msgstr ""
-
-#: ../../../../Modules/FindJasper.cmake:35
-msgid "The following cache variables may also be set:"
+#: ../../../../Modules/FindJasper.cmake:36
+msgid "``JASPER_LIBRARIES``"
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:37
-msgid "``JASPER_INCLUDE_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindJasper.cmake:38
-msgid "where to find jasper/jasper.h, etc."
+msgid "The libraries needed to use JasPer."
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:39
-msgid "``JASPER_LIBRARY_RELEASE``"
+msgid "``JASPER_VERSION_STRING``"
 msgstr ""
 
 #: ../../../../Modules/FindJasper.cmake:40
-msgid "where to find the Jasper library (optimized)."
+msgid "The version of JasPer found."
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:41
+#: ../../../../Modules/FindJasper.cmake:43
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:45
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:47
+msgid "``JASPER_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:48
+msgid ""
+"The directory containing the ``jasper/jasper.h`` and other headers needed to "
+"use the JasPer library."
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:51
+msgid "``JASPER_LIBRARY_RELEASE``"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:52
+msgid "The path to the release (optimized) variant of the JasPer library."
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:54
 msgid "``JASPER_LIBRARY_DEBUG``"
 msgstr ""
 
-#: ../../../../Modules/FindJasper.cmake:42
-msgid "where to find the Jasper library (debug)."
+#: ../../../../Modules/FindJasper.cmake:55
+msgid "The path to the debug variant of the JasPer library."
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:58
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:60
+msgid "Finding the JasPer library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindJasper.cmake:62
+msgid ""
+"find_package(Jasper)\n"
+"target_link_libraries(project_target PRIVATE Jasper::Jasper)"
 msgstr ""

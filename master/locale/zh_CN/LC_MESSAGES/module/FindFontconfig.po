@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "FindFontconfig"
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:10
-msgid "Find Fontconfig headers and library."
+msgid "Finds Fontconfig, a library for font configuration and customization."
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:13
@@ -30,59 +30,81 @@ msgid "Imported Targets"
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:15
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:17
 msgid "``Fontconfig::Fontconfig``"
 msgstr ""
 
-#: ../../../../Modules/FindFontconfig.cmake:16
-msgid "The Fontconfig library, if found."
+#: ../../../../Modules/FindFontconfig.cmake:18
+msgid ""
+"Target encapsulating the Fontconfig usage requirements, available if "
+"Fontconfig is found."
 msgstr ""
 
-#: ../../../../Modules/FindFontconfig.cmake:19
+#: ../../../../Modules/FindFontconfig.cmake:22
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindFontconfig.cmake:21
-msgid "This will define the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindFontconfig.cmake:23
-msgid "``Fontconfig_FOUND``"
-msgstr ""
-
 #: ../../../../Modules/FindFontconfig.cmake:24
-msgid "true if (the requested version of) Fontconfig is available."
-msgstr ""
-
-#: ../../../../Modules/FindFontconfig.cmake:25
-msgid "``Fontconfig_VERSION``"
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:26
-msgid "the version of Fontconfig."
+msgid "``Fontconfig_FOUND``"
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:27
-msgid "``Fontconfig_LIBRARIES``"
+msgid ""
+"Boolean indicating whether the (requested version of) Fontconfig is found."
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:28
-msgid "the libraries to link against to use Fontconfig."
+msgid "``Fontconfig_VERSION``"
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:29
-msgid "``Fontconfig_INCLUDE_DIRS``"
+msgid "The version of Fontconfig found."
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:30
-msgid "where to find the Fontconfig headers."
+msgid "``Fontconfig_LIBRARIES``"
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:31
-msgid "``Fontconfig_COMPILE_OPTIONS``"
+msgid "The libraries to link against to use Fontconfig."
 msgstr ""
 
 #: ../../../../Modules/FindFontconfig.cmake:32
+msgid "``Fontconfig_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:33
+msgid "The include directories containing headers needed to use Fontconfig."
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:34
+msgid "``Fontconfig_COMPILE_OPTIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:35
 msgid ""
-"this should be passed to target_compile_options(), if the target is not used "
-"for linking"
+"Compiler options needed to use Fontconfig.  These should be passed to :"
+"command:`target_compile_options` when not using the ``Fontconfig::"
+"Fontconfig`` imported target."
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:40
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:42
+msgid "Finding Fontconfig and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindFontconfig.cmake:44
+msgid ""
+"find_package(Fontconfig)\n"
+"target_link_libraries(project_target PRIVATE Fontconfig::Fontconfig)"
 msgstr ""

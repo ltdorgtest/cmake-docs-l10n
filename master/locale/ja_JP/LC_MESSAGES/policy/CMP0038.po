@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "CMP0038"
 msgstr ""
 
-#: ../../../policy/REMOVED_PROLOGUE.txt:2
+#: ../../../policy/include/REMOVED_PROLOGUE.rst:2
 msgid ""
 "The ``OLD`` behavior of this policy was removed in CMake version |"
 "REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
@@ -46,7 +46,7 @@ msgid ""
 "policy is to report an error if a target attempts to link to itself."
 msgstr ""
 
-#: ../../../policy/REMOVED_EPILOGUE.txt:1
+#: ../../../policy/include/REMOVED_EPILOGUE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "

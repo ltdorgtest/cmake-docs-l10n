@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,124 +23,171 @@ msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:8
 msgid ""
-"Find the TIFF library (``libtiff``, https://libtiff.gitlab.io/libtiff/)."
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:11
-msgid "Optional COMPONENTS"
+"Finds the `TIFF library <https://libtiff.gitlab.io/libtiff/>`_ "
+"(``libtiff``). This module also takes into account the upstream TIFF "
+"library's exported CMake package configuration, if available."
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:13
+msgid "Components"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:15
+msgid "This module supports the following components:"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:17
+msgid "``CXX``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:20
 msgid ""
-"This module supports the optional component `CXX`, for use with the "
-"COMPONENTS argument of the :command:`find_package` command. This component "
-"has an associated imported target, as described below."
+"Optional component that ensures that the C++ wrapper library (``libtiffxx``) "
+"is found."
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:18
-msgid "Imported Targets"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:22
-msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:24
-msgid "``TIFF::TIFF``"
+#: ../../../../Modules/FindTIFF.cmake:23
+msgid "Components can be specified using the standard syntax:"
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:25
-msgid "The TIFF library, if found."
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:27
-msgid "``TIFF::CXX``"
+msgid "find_package(TIFF [COMPONENTS <components>...])"
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:30
-msgid ""
-"The C++ wrapper libtiffxx, if requested by the `COMPONENTS CXX` option, if "
-"the compiler is not MSVC (which includes the C++ wrapper in libtiff), and if "
-"found."
+msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:35
-msgid "Result variables"
+#: ../../../../Modules/FindTIFF.cmake:32
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:34
+msgid "``TIFF::TIFF``"
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:37
-msgid "This module will set the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:39
-msgid "``TIFF_FOUND``"
+msgid ""
+"Target encapsulating the TIFF library usage requirements, available only if "
+"the TIFF is found."
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:40
-msgid "true if the TIFF headers and libraries were found"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:41 ../../../../Modules/FindTIFF.cmake:53
-msgid "``TIFF_INCLUDE_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:42 ../../../../Modules/FindTIFF.cmake:44
-#: ../../../../Modules/FindTIFF.cmake:54
-msgid "the directory containing the TIFF headers"
+msgid "``TIFF::CXX``"
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:43
-msgid "``TIFF_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:45
-msgid "``TIFF_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:46
-msgid "TIFF libraries to be linked"
+msgid ""
+"Target encapsulating the usage requirements for the the C++ wrapper library "
+"``libtiffxx``, available only if TIFF is found.  This target provides CXX "
+"usage requirements only if the compiler is not MSVC.  It also has the "
+"``TIFF::TIFF`` target linked in to simplify its usage."
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:49
-msgid "Cache variables"
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:51
-msgid "The following cache variables may also be set:"
+msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:55
-msgid "``TIFF_LIBRARY_RELEASE``"
+#: ../../../../Modules/FindTIFF.cmake:53
+msgid "``TIFF_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:54
+msgid "Boolean indicating whether the TIFF is found."
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:56
-msgid "the path to the TIFF library for release configurations"
+msgid "``TIFF_VERSION_STRING``"
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:57
-msgid "``TIFF_LIBRARY_DEBUG``"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:58
-msgid "the path to the TIFF library for debug configurations"
+msgid "The version of the TIFF library found."
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:59
-msgid "``TIFFXX_LIBRARY_RELEASE``"
+msgid "``TIFF_INCLUDE_DIRS``"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:60
-msgid "the path to the TIFFXX library for release configurations"
-msgstr ""
-
-#: ../../../../Modules/FindTIFF.cmake:61
-msgid "``TIFFXX_LIBRARY_DEBUG``"
+#: ../../../../Modules/FindTIFF.cmake:60 ../../../../Modules/FindTIFF.cmake:71
+msgid "The directory containing the TIFF headers."
 msgstr ""
 
 #: ../../../../Modules/FindTIFF.cmake:62
-msgid "the path to the TIFFXX library for debug configurations"
+msgid "``TIFF_LIBRARIES``"
 msgstr ""
 
-#: ../../../../Modules/FindTIFF.cmake:64
-msgid "Debug and Release variants are found separately."
+#: ../../../../Modules/FindTIFF.cmake:63
+msgid "TIFF libraries to be linked."
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:66
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:68
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:70
+msgid "``TIFF_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:73
+msgid "``TIFF_LIBRARY_RELEASE``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:76
+msgid "The path to the TIFF library for release configurations."
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:78
+msgid "``TIFF_LIBRARY_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:81
+msgid "The path to the TIFF library for debug configurations."
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:83
+msgid "``TIFFXX_LIBRARY_RELEASE``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:86
+msgid "The path to the TIFFXX library for release configurations."
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:88
+msgid "``TIFFXX_LIBRARY_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:91
+msgid "The path to the TIFFXX library for debug configurations."
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:94
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:96
+msgid "Finding TIFF library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:98
+msgid ""
+"find_package(TIFF)\n"
+"target_link_libraries(project_target PRIVATE TIFF::TIFF)"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:103
+msgid "Finding TIFF and TIFFXX libraries by specifying the ``CXX`` component:"
+msgstr ""
+
+#: ../../../../Modules/FindTIFF.cmake:105
+msgid ""
+"find_package(TIFF COMPONENTS CXX)\n"
+"target_link_libraries(project_target PRIVATE TIFF::CXX)"
 msgstr ""

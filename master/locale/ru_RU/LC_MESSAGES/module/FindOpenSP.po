@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,119 +22,145 @@ msgid "FindOpenSP"
 msgstr ""
 
 #: ../../../../Modules/FindOpenSP.cmake:10
-msgid "Try to find the OpenSP library."
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:13
-msgid "Result Variables"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:15
-msgid "This will define the following variables:"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:17
-msgid "``OpenSP_FOUND``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:18
-msgid "True if (the requested version of) ``OpenSP`` is available"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:20
-msgid "``OpenSP_VERSION``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:21
-msgid "The version of ``OpenSP``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:23
-msgid "``OpenSP_VERSION_MAJOR``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:24
-msgid "The major version of ``OpenSP``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:26
-msgid "``OpenSP_VERSION_MINOR``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:27
-msgid "The minor version of ``OpenSP``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:29
-msgid "``OpenSP_VERSION_PATCH``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:30
-msgid "The patch version of ``OpenSP``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:32
-msgid "``OpenSP_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:33
-msgid "The include dirs of ``OpenSP`` with its headers"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:35
-msgid "``OpenSP_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:36
 msgid ""
-"The OpenSP library for use with target_link_libraries(). This can be passed "
-"to target_link_libraries() instead of the :prop_tgt:`IMPORTED` ``OpenSP::"
-"OpenSP`` target"
+"Finds the OpenSP library.  OpenSP is an open-source implementation of the "
+"SGML (Standard Generalized Markup Language) parser."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:40
-msgid "``OpenSP_MULTI_BYTE``"
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:41
-msgid ""
-"True if ``SP_MULTI_BYTE`` was found to be defined in OpenSP's ``config.h`` "
-"header file, which indicates that the ``OpenSP`` library was compiled with "
-"support for multi-byte characters. The consuming target needs to define the "
-"``SP_MULTI_BYTE`` to match this value in order to avoid issues with "
-"character decoding."
-msgstr ""
-
-#: ../../../../Modules/FindOpenSP.cmake:48
+#: ../../../../Modules/FindOpenSP.cmake:14
 msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:50
+#: ../../../../Modules/FindOpenSP.cmake:16
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:18
+msgid "``OpenSP::OpenSP``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:19
 msgid ""
-"This module defines the :prop_tgt:`IMPORTED` target ``OpenSP::OpenSP``, if "
-"OpenSP has been found."
+"Target encapsulating the OpenSP library usage requirements, available only "
+"if the OpenSP is found."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:54
-msgid "Cache variables"
+#: ../../../../Modules/FindOpenSP.cmake:23
+msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:56
+#: ../../../../Modules/FindOpenSP.cmake:25
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:27
+msgid "``OpenSP_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:28
+msgid ""
+"Boolean indicating whether the (requested version of) OpenSP is available."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:30
+msgid "``OpenSP_VERSION``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:31
+msgid "The version of found OpenSP."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:33
+msgid "``OpenSP_VERSION_MAJOR``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:34
+msgid "The major version of OpenSP."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:36
+msgid "``OpenSP_VERSION_MINOR``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:37
+msgid "The minor version of OpenSP."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:39
+msgid "``OpenSP_VERSION_PATCH``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:40
+msgid "The patch version of OpenSP."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:42
+msgid "``OpenSP_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:43
+msgid ""
+"The include directories containing headers needed to use the OpenSP library."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:45
+msgid "``OpenSP_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:46
+msgid ""
+"Libraries required to link against to use OpenSP.  These can be passed to "
+"the :command:`target_link_libraries` command when not using the ``OpenSP::"
+"OpenSP`` imported target."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:51
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:53
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:58
+#: ../../../../Modules/FindOpenSP.cmake:55
 msgid "``OpenSP_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:59
-msgid "the OpenSP include directory"
+#: ../../../../Modules/FindOpenSP.cmake:56
+msgid "The OpenSP include directory."
 msgstr ""
 
-#: ../../../../Modules/FindOpenSP.cmake:61
+#: ../../../../Modules/FindOpenSP.cmake:58
 msgid "``OpenSP_LIBRARY``"
 msgstr ""
 
+#: ../../../../Modules/FindOpenSP.cmake:59
+msgid "The absolute path of the ``osp`` library."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:61
+msgid "``OpenSP_MULTI_BYTE``"
+msgstr ""
+
 #: ../../../../Modules/FindOpenSP.cmake:62
-msgid "the absolute path of the osp library"
+msgid ""
+"True if ``SP_MULTI_BYTE`` was found to be defined in OpenSP's ``config.h`` "
+"header file, which indicates that the OpenSP library was compiled with "
+"support for multi-byte characters.  The consuming target needs to define the "
+"``SP_MULTI_BYTE`` preprocessor macro to match this value in order to avoid "
+"issues with character decoding."
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:69
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:71
+msgid "Finding the OpenSP library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindOpenSP.cmake:73
+msgid ""
+"find_package(OpenSP)\n"
+"target_link_libraries(project_target PRIVATE OpenSP::OpenSP)"
 msgstr ""

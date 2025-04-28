@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -345,23 +345,23 @@ msgstr ""
 msgid "Options"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:3
+#: ../../../manual/include/OPTIONS_BUILD.rst:3
 msgid "Path to root directory of the CMake project to build."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:7
+#: ../../../manual/include/OPTIONS_BUILD.rst:7
 msgid "Path to directory which CMake will use as the root of build directory."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:9
+#: ../../../manual/include/OPTIONS_BUILD.rst:9
 msgid "If the directory doesn't already exist CMake will make it."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:13
+#: ../../../manual/include/OPTIONS_BUILD.rst:13
 msgid "Pre-load a script to populate the cache."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:15
+#: ../../../manual/include/OPTIONS_BUILD.rst:15
 msgid ""
 "When CMake is first run in an empty build tree, it creates a ``CMakeCache."
 "txt`` file and populates it with customizable settings for the project.  "
@@ -372,17 +372,17 @@ msgid ""
 "``CACHE`` option, not a cache-format file."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:24
+#: ../../../manual/include/OPTIONS_BUILD.rst:24
 msgid ""
 "References to :variable:`CMAKE_SOURCE_DIR` and :variable:`CMAKE_BINARY_DIR` "
 "within the script evaluate to the top-level source and build tree."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:29
+#: ../../../manual/include/OPTIONS_BUILD.rst:29
 msgid "Create or update a CMake ``CACHE`` entry."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:31
+#: ../../../manual/include/OPTIONS_BUILD.rst:31
 msgid ""
 "When CMake is first run in an empty build tree, it creates a ``CMakeCache."
 "txt`` file and populates it with customizable settings for the project.  "
@@ -391,7 +391,7 @@ msgid ""
 "entries as desired."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:37
+#: ../../../manual/include/OPTIONS_BUILD.rst:37
 msgid ""
 "If the ``:<type>`` portion is given it must be one of the types specified by "
 "the :command:`set` command documentation for its ``CACHE`` signature. If the "
@@ -401,13 +401,13 @@ msgid ""
 "an absolute path."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:45
+#: ../../../manual/include/OPTIONS_BUILD.rst:45
 msgid ""
 "This option may also be given as a single argument: ``-D<var>:"
 "<type>=<value>`` or ``-D<var>=<value>``."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:48
+#: ../../../manual/include/OPTIONS_BUILD.rst:48
 msgid ""
 "It's important to note that the order of ``-C`` and ``-D`` arguments is "
 "significant. They will be carried out in the order they are listed, with the "
@@ -416,18 +416,18 @@ msgid ""
 "file that calls:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:54
+#: ../../../manual/include/OPTIONS_BUILD.rst:54
 msgid "set(CMAKE_BUILD_TYPE \"Release\" CACHE STRING \"\" FORCE)"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:58
+#: ../../../manual/include/OPTIONS_BUILD.rst:58
 msgid ""
 "then the ``-C`` argument will take precedence, and ``CMAKE_BUILD_TYPE`` will "
 "be set to ``Release``. However, if the ``-D`` argument comes after the ``-"
 "C`` argument, it will be set to ``Debug``."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:62
+#: ../../../manual/include/OPTIONS_BUILD.rst:62
 msgid ""
 "If a ``set(... CACHE ...)`` call in the ``-C`` file does not use ``FORCE``, "
 "and a ``-D`` argument sets the same variable, the ``-D`` argument will take "
@@ -435,11 +435,11 @@ msgid ""
 "``set(... CACHE ...)`` calls."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:69
+#: ../../../manual/include/OPTIONS_BUILD.rst:69
 msgid "Remove matching entries from CMake ``CACHE``."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:71
+#: ../../../manual/include/OPTIONS_BUILD.rst:71
 msgid ""
 "This option may be used to remove one or more variables from the "
 "``CMakeCache.txt`` file, globbing expressions using ``*`` and ``?`` are "
@@ -447,80 +447,80 @@ msgid ""
 "desired."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:76
+#: ../../../manual/include/OPTIONS_BUILD.rst:76
 msgid "Use with care, you can make your ``CMakeCache.txt`` non-working."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:80
+#: ../../../manual/include/OPTIONS_BUILD.rst:80
 msgid "Specify a build system generator."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:82
+#: ../../../manual/include/OPTIONS_BUILD.rst:82
 msgid ""
 "CMake may support multiple native build systems on certain platforms.  A "
 "generator is responsible for generating a particular build system.  Possible "
 "generator names are specified in the :manual:`cmake-generators(7)` manual."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:87
+#: ../../../manual/include/OPTIONS_BUILD.rst:87
 msgid ""
 "If not specified, CMake checks the :envvar:`CMAKE_GENERATOR` environment "
 "variable and otherwise falls back to a builtin default selection."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:92
+#: ../../../manual/include/OPTIONS_BUILD.rst:92
 msgid "Toolset specification for the generator, if supported."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:94
+#: ../../../manual/include/OPTIONS_BUILD.rst:94
 msgid ""
 "Some CMake generators support a toolset specification to tell the native "
 "build system how to choose a compiler.  See the :variable:"
 "`CMAKE_GENERATOR_TOOLSET` variable for details."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:100
+#: ../../../manual/include/OPTIONS_BUILD.rst:100
 msgid "Specify platform name if supported by generator."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:102
+#: ../../../manual/include/OPTIONS_BUILD.rst:102
 msgid ""
 "Some CMake generators support a platform name to be given to the native "
 "build system to choose a compiler or SDK.  See the :variable:"
 "`CMAKE_GENERATOR_PLATFORM` variable for details."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:110
+#: ../../../manual/include/OPTIONS_BUILD.rst:110
 msgid ""
 "Specify the cross compiling toolchain file, equivalent to setting :variable:"
 "`CMAKE_TOOLCHAIN_FILE` variable. Relative paths are interpreted as relative "
 "to the build directory, and if not found, relative to the source directory."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:119
+#: ../../../manual/include/OPTIONS_BUILD.rst:119
 msgid ""
 "Specify the installation directory, used by the :variable:"
 "`CMAKE_INSTALL_PREFIX` variable. Must be an absolute path."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:126
+#: ../../../manual/include/OPTIONS_BUILD.rst:126
 msgid "Specify an alternate project file name."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:128
+#: ../../../manual/include/OPTIONS_BUILD.rst:128
 msgid ""
 "This determines the top-level file processed by CMake when configuring a "
 "project, and the file processed by :command:`add_subdirectory`."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:131
+#: ../../../manual/include/OPTIONS_BUILD.rst:131
 msgid ""
 "By default, this is ``CMakeLists.txt``. If set to anything else, "
 "``CMakeLists.txt`` will be used as a fallback whenever the specified file "
 "cannot be found within a project subdirectory."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:137
+#: ../../../manual/include/OPTIONS_BUILD.rst:137
 msgid ""
 "This feature is intended for temporary use by developers during an "
 "incremental transition and not for publication of a final product. CMake "
@@ -528,92 +528,94 @@ msgid ""
 "``CMakeLists.txt``."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:143
+#: ../../../manual/include/OPTIONS_BUILD.rst:143
 msgid "Suppress developer warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:145
+#: ../../../manual/include/OPTIONS_BUILD.rst:145
 msgid ""
 "Suppress warnings that are meant for the author of the ``CMakeLists.txt`` "
 "files. By default this will also turn off deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:151
+#: ../../../manual/include/OPTIONS_BUILD.rst:151
 msgid "Enable developer warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:153
+#: ../../../manual/include/OPTIONS_BUILD.rst:153
 msgid ""
 "Enable warnings that are meant for the author of the ``CMakeLists.txt`` "
 "files. By default this will also turn on deprecation warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:158
+#: ../../../manual/include/OPTIONS_BUILD.rst:158
 msgid "Enable deprecated functionality warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:160
+#: ../../../manual/include/OPTIONS_BUILD.rst:160
 msgid ""
 "Enable warnings for usage of deprecated functionality, that are meant for "
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:165
+#: ../../../manual/include/OPTIONS_BUILD.rst:165
 msgid "Suppress deprecated functionality warnings."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:167
+#: ../../../manual/include/OPTIONS_BUILD.rst:167
 msgid ""
 "Suppress warnings for usage of deprecated functionality, that are meant for "
 "the author of the ``CMakeLists.txt`` files."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:172
+#: ../../../manual/include/OPTIONS_BUILD.rst:172
 msgid ""
 "Treat CMake warnings as errors. ``<what>`` must be one of the following:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:174 ../../../manual/OPTIONS_BUILD.txt:190
+#: ../../../manual/include/OPTIONS_BUILD.rst:174
+#: ../../../manual/include/OPTIONS_BUILD.rst:190
 msgid "``dev``"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:175
+#: ../../../manual/include/OPTIONS_BUILD.rst:175
 msgid "Make developer warnings errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:177
+#: ../../../manual/include/OPTIONS_BUILD.rst:177
 msgid ""
 "Make warnings that are meant for the author of the ``CMakeLists.txt`` files "
 "errors. By default this will also turn on deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:180 ../../../manual/OPTIONS_BUILD.txt:194
+#: ../../../manual/include/OPTIONS_BUILD.rst:180
+#: ../../../manual/include/OPTIONS_BUILD.rst:194
 msgid "``deprecated``"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:181
+#: ../../../manual/include/OPTIONS_BUILD.rst:181
 msgid "Make deprecated macro and function warnings errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:183
+#: ../../../manual/include/OPTIONS_BUILD.rst:183
 msgid ""
 "Make warnings for usage of deprecated macros and functions, that are meant "
 "for the author of the ``CMakeLists.txt`` files, errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:188
+#: ../../../manual/include/OPTIONS_BUILD.rst:188
 msgid ""
 "Do not treat CMake warnings as errors. ``<what>`` must be one of the "
 "following:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:191
+#: ../../../manual/include/OPTIONS_BUILD.rst:191
 msgid ""
 "Make warnings that are meant for the author of the ``CMakeLists.txt`` files "
 "not errors. By default this will also turn off deprecated warnings as errors."
 msgstr ""
 
-#: ../../../manual/OPTIONS_BUILD.txt:195
+#: ../../../manual/include/OPTIONS_BUILD.rst:195
 msgid ""
 "Make warnings for usage of deprecated macros and functions, that are meant "
 "for the author of the ``CMakeLists.txt`` files, not errors."
@@ -2258,209 +2260,209 @@ msgstr ""
 msgid "with one of the following options:"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:5
+#: ../../../manual/include/OPTIONS_HELP.rst:5
 msgid "Show program name/version banner and exit. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:10
+#: ../../../manual/include/OPTIONS_HELP.rst:10
 msgid "Print usage information and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:12
+#: ../../../manual/include/OPTIONS_HELP.rst:12
 msgid "Usage describes the basic command line interface and its options."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:16
+#: ../../../manual/include/OPTIONS_HELP.rst:16
 msgid "Print help for one CMake keyword."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:18
+#: ../../../manual/include/OPTIONS_HELP.rst:18
 msgid ""
 "``<keyword>`` can be a property, variable, command, policy, generator or "
 "module."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:21
+#: ../../../manual/include/OPTIONS_HELP.rst:21
 msgid ""
 "The relevant manual entry for ``<keyword>`` is printed in a human-readable "
 "text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:27
+#: ../../../manual/include/OPTIONS_HELP.rst:27
 msgid "Prior to CMake 3.28, this option supported command names only."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:31
+#: ../../../manual/include/OPTIONS_HELP.rst:31
 msgid "Print all help manuals and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:33
+#: ../../../manual/include/OPTIONS_HELP.rst:33
 msgid "All manuals are printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:38
+#: ../../../manual/include/OPTIONS_HELP.rst:38
 msgid "Print one help manual and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:40
+#: ../../../manual/include/OPTIONS_HELP.rst:40
 msgid "The specified manual is printed in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:45
+#: ../../../manual/include/OPTIONS_HELP.rst:45
 msgid "List help manuals available and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:47
+#: ../../../manual/include/OPTIONS_HELP.rst:47
 msgid ""
 "The list contains all manuals for which help may be obtained by using the "
 "``--help-manual`` option followed by a manual name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:53
+#: ../../../manual/include/OPTIONS_HELP.rst:53
 msgid "Print help for one command and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:55
+#: ../../../manual/include/OPTIONS_HELP.rst:55
 msgid ""
 "The :manual:`cmake-commands(7)` manual entry for ``<cmd>`` is printed in a "
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:61
+#: ../../../manual/include/OPTIONS_HELP.rst:61
 msgid "List commands with help available and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:63
+#: ../../../manual/include/OPTIONS_HELP.rst:63
 msgid ""
 "The list contains all commands for which help may be obtained by using the "
 "``--help-command`` option followed by a command name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:69
+#: ../../../manual/include/OPTIONS_HELP.rst:69
 msgid "Print cmake-commands manual and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:71
+#: ../../../manual/include/OPTIONS_HELP.rst:71
 msgid ""
 "The :manual:`cmake-commands(7)` manual is printed in a human-readable text "
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:77
+#: ../../../manual/include/OPTIONS_HELP.rst:77
 msgid "Print help for one module and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:79
+#: ../../../manual/include/OPTIONS_HELP.rst:79
 msgid ""
 "The :manual:`cmake-modules(7)` manual entry for ``<mod>`` is printed in a "
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:85
+#: ../../../manual/include/OPTIONS_HELP.rst:85
 msgid "List modules with help available and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:87
+#: ../../../manual/include/OPTIONS_HELP.rst:87
 msgid ""
 "The list contains all modules for which help may be obtained by using the "
 "``--help-module`` option followed by a module name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:93
+#: ../../../manual/include/OPTIONS_HELP.rst:93
 msgid "Print cmake-modules manual and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:95
+#: ../../../manual/include/OPTIONS_HELP.rst:95
 msgid ""
 "The :manual:`cmake-modules(7)` manual is printed in a human-readable text "
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:101
+#: ../../../manual/include/OPTIONS_HELP.rst:101
 msgid "Print help for one policy and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:103
+#: ../../../manual/include/OPTIONS_HELP.rst:103
 msgid ""
 "The :manual:`cmake-policies(7)` manual entry for ``<cmp>`` is printed in a "
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:109
+#: ../../../manual/include/OPTIONS_HELP.rst:109
 msgid "List policies with help available and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:111
+#: ../../../manual/include/OPTIONS_HELP.rst:111
 msgid ""
 "The list contains all policies for which help may be obtained by using the "
 "``--help-policy`` option followed by a policy name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:117
+#: ../../../manual/include/OPTIONS_HELP.rst:117
 msgid "Print cmake-policies manual and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:119
+#: ../../../manual/include/OPTIONS_HELP.rst:119
 msgid ""
 "The :manual:`cmake-policies(7)` manual is printed in a human-readable text "
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:125
+#: ../../../manual/include/OPTIONS_HELP.rst:125
 msgid "Print help for one property and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:127
+#: ../../../manual/include/OPTIONS_HELP.rst:127
 msgid ""
 "The :manual:`cmake-properties(7)` manual entries for ``<prop>`` are printed "
 "in a human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:133
+#: ../../../manual/include/OPTIONS_HELP.rst:133
 msgid "List properties with help available and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:135
+#: ../../../manual/include/OPTIONS_HELP.rst:135
 msgid ""
 "The list contains all properties for which help may be obtained by using the "
 "``--help-property`` option followed by a property name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:141
+#: ../../../manual/include/OPTIONS_HELP.rst:141
 msgid "Print cmake-properties manual and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:143
+#: ../../../manual/include/OPTIONS_HELP.rst:143
 msgid ""
 "The :manual:`cmake-properties(7)` manual is printed in a human-readable text "
 "format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:149
+#: ../../../manual/include/OPTIONS_HELP.rst:149
 msgid "Print help for one variable and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:151
+#: ../../../manual/include/OPTIONS_HELP.rst:151
 msgid ""
 "The :manual:`cmake-variables(7)` manual entry for ``<var>`` is printed in a "
 "human-readable text format. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:157
+#: ../../../manual/include/OPTIONS_HELP.rst:157
 msgid "List variables with help available and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:159
+#: ../../../manual/include/OPTIONS_HELP.rst:159
 msgid ""
 "The list contains all variables for which help may be obtained by using the "
 "``--help-variable`` option followed by a variable name. |file|"
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:165
+#: ../../../manual/include/OPTIONS_HELP.rst:165
 msgid "Print cmake-variables manual and exit."
 msgstr ""
 
-#: ../../../manual/OPTIONS_HELP.txt:167
+#: ../../../manual/include/OPTIONS_HELP.rst:167
 msgid ""
 "The :manual:`cmake-variables(7)` manual is printed in a human-readable text "
 "format. |file|"
@@ -2494,44 +2496,44 @@ msgstr ""
 msgid "See Also"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:1
+#: ../../../manual/include/LINKS.rst:1
 msgid "The following resources are available to get help using CMake:"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:3
+#: ../../../manual/include/LINKS.rst:3
 msgid "Home Page"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:4
+#: ../../../manual/include/LINKS.rst:4
 msgid "https://cmake.org"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:6
+#: ../../../manual/include/LINKS.rst:6
 msgid "The primary starting point for learning about CMake."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:8
+#: ../../../manual/include/LINKS.rst:8
 msgid "Online Documentation and Community Resources"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:9
+#: ../../../manual/include/LINKS.rst:9
 msgid "https://cmake.org/documentation"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:11
+#: ../../../manual/include/LINKS.rst:11
 msgid ""
 "Links to available documentation and community resources may be found on "
 "this web page."
 msgstr ""
 
-#: ../../../manual/LINKS.txt:14
+#: ../../../manual/include/LINKS.rst:14
 msgid "Discourse Forum"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:15
+#: ../../../manual/include/LINKS.rst:15
 msgid "https://discourse.cmake.org"
 msgstr ""
 
-#: ../../../manual/LINKS.txt:17
+#: ../../../manual/include/LINKS.rst:17
 msgid "The Discourse Forum hosts discussion and questions about CMake."
 msgstr ""

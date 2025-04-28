@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,39 +92,39 @@ msgstr ""
 msgid "Specify the 4-component VS Build Version, a.k.a. Build Number."
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:1
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:1
 msgid "The components are:"
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:3
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:3
 msgid "``<major>.<minor>``"
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:5
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:5
 msgid ""
 "The VS major and minor version numbers. These are the same as the release "
 "version numbers."
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:8
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:8
 msgid "``<date>``"
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:10
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:10
 msgid ""
 "A build date in the format ``MMMDD``, where ``MMM`` is a month index since "
 "an epoch used by Microsoft, and ``DD`` is a day in that month."
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:13
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:13
 msgid "``<build>``"
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:15
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:15
 msgid "A build index on the day represented by ``<date>``."
 msgstr ""
 
-#: ../../../variable/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.txt:17
+#: ../../../variable/include/CMAKE_VS_VERSION_BUILD_NUMBER_COMPONENTS.rst:17
 msgid ""
 "The build number is reported by ``vswhere`` as ``installationVersion``. For "
 "example, VS 16.11.10 has build number ``16.11.32126.315``."

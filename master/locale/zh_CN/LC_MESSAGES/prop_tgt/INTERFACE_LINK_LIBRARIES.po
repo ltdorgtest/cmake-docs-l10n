@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,7 @@ msgid ""
 "buildsystem(7)` manual for more on defining buildsystem properties."
 msgstr ""
 
-#: ../../../prop_tgt/LINK_LIBRARIES_INDIRECTION.txt:2
+#: ../../../prop_tgt/include/LINK_LIBRARIES_INDIRECTION.rst:2
 msgid ""
 "A call to :command:`target_link_libraries(<target> ...)` may update this "
 "property on ``<target>``.  If ``<target>`` was not created in the same "
@@ -76,11 +76,11 @@ msgid ""
 "`INTERFACE_LINK_LIBRARIES_DIRECT_EXCLUDE` target properties."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:2
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:2
 msgid "Handling Compiler Driver Differences"
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:6
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:6
 msgid ""
 "To pass options to the linker tool, each compiler driver has its own syntax. "
 "The ``LINKER:`` prefix and ``,`` separator can be used to specify, in a "
@@ -91,20 +91,20 @@ msgid ""
 "`CMAKE_<LANG>_LINKER_WRAPPER_FLAG_SEP` variables."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:14
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:14
 msgid ""
 "For example, ``\"LINKER:-z,defs\"`` becomes ``-Xlinker -z -Xlinker defs`` "
 "for ``Clang`` and ``-Wl,-z,defs`` for ``GNU GCC``."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:17
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:17
 msgid ""
 "The ``LINKER:`` prefix supports, as an alternative syntax, specification of "
 "arguments using the ``SHELL:`` prefix and space as separator. The previous "
 "example then becomes ``\"LINKER:SHELL:-z defs\"``."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:23
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:23
 msgid ""
 "Specifying the ``SHELL:`` prefix anywhere other than at the beginning of the "
 "``LINKER:`` prefix is not supported."
@@ -114,7 +114,7 @@ msgstr ""
 msgid "Creating Relocatable Packages"
 msgstr ""
 
-#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.txt:2
+#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.rst:2
 msgid ""
 "Note that it is not advisable to populate the |INTERFACE_PROPERTY_LINK| of a "
 "target with absolute paths to dependencies. That would hard-code into "
@@ -122,7 +122,7 @@ msgid ""
 "machine the package was made on**."
 msgstr ""
 
-#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.txt:7
+#: ../../../include/INTERFACE_LINK_LIBRARIES_WARNING.rst:7
 msgid ""
 "See the :ref:`Creating Relocatable Packages` section of the :manual:`cmake-"
 "packages(7)` manual for discussion of additional care that must be taken "

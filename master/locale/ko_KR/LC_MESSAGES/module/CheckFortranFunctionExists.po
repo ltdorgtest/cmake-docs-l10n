@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,21 +63,21 @@ msgid ""
 "way the check is run:"
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_OPTIONS.txt:1
+#: ../../../module/include/CMAKE_REQUIRED_LINK_OPTIONS.rst:1
 msgid "``CMAKE_REQUIRED_LINK_OPTIONS``"
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_OPTIONS.txt:4
+#: ../../../module/include/CMAKE_REQUIRED_LINK_OPTIONS.rst:4
 msgid ""
 "A :ref:`;-list <CMake Language Lists>` of options to add to the link command "
 "(see :command:`try_compile` for further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LIBRARIES.txt:1
+#: ../../../module/include/CMAKE_REQUIRED_LIBRARIES.rst:1
 msgid "``CMAKE_REQUIRED_LIBRARIES``"
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LIBRARIES.txt:2
+#: ../../../module/include/CMAKE_REQUIRED_LIBRARIES.rst:2
 msgid ""
 "A :ref:`;-list <CMake Language Lists>` of libraries to add to the link "
 "command. These can be the name of system libraries or they can be :ref:"
@@ -85,11 +85,11 @@ msgid ""
 "further details)."
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_DIRECTORIES.txt:1
+#: ../../../module/include/CMAKE_REQUIRED_LINK_DIRECTORIES.rst:1
 msgid "``CMAKE_REQUIRED_LINK_DIRECTORIES``"
 msgstr ""
 
-#: ../../../module/CMAKE_REQUIRED_LINK_DIRECTORIES.txt:4
+#: ../../../module/include/CMAKE_REQUIRED_LINK_DIRECTORIES.rst:4
 msgid ""
 "A :ref:`;-list <CMake Language Lists>` of libraries search paths to pass to "
 "the linker (see :command:`try_compile` for further details)."

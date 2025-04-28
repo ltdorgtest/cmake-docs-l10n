@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,34 +43,34 @@ msgid ""
 "`LINK_LIBRARY` generator expression is evaluated."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:1
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:1
 msgid ""
 "Feature names are case-sensitive and may only contain letters, numbers and "
 "underscores.  Feature names defined in all uppercase are reserved for "
 "CMake's own built-in features (see `Predefined Features`_ further below)."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:5
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:5
 msgid ""
 "Some aspects of feature behavior can be defined by the :variable:"
 "`CMAKE_<LANG>_LINK_LIBRARY_<FEATURE>_ATTRIBUTES` and :variable:"
 "`CMAKE_LINK_LIBRARY_<FEATURE>_ATTRIBUTES` variables."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:10
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:10
 msgid "Feature Definitions"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:12
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:12
 msgid ""
 "A library feature definition is a list that contains one or three elements:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:16
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:16
 msgid "[<PREFIX>] <LIBRARY_EXPRESSION> [<SUFFIX>]"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:18
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:18
 msgid ""
 "When ``<PREFIX>`` and ``<SUFFIX>`` are specified, they precede and follow "
 "respectively the whole list of libraries specified in the :genex:"
@@ -83,34 +83,34 @@ msgid ""
 "generator expression should be used instead for such constructs."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:29
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:29
 msgid ""
 "``<LIBRARY_EXPRESSION>`` is used to specify the pattern for constructing the "
 "corresponding fragment on the linker command line for each library. The "
 "following placeholders can be used in the expression:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:33
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:33
 msgid ""
 "``<LIBRARY>`` is expanded to the full path to the library for CMake targets, "
 "or to a platform-specific value based on the item otherwise (the same as "
 "``<LINK_ITEM>`` on Windows, or the library base name for other platforms)."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:36
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:36
 msgid ""
 "``<LINK_ITEM>`` is expanded to how the library would normally be linked on "
 "the linker command line."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:38
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:38
 msgid ""
 "``<LIB_ITEM>`` is expanded to the full path to the library for CMake "
 "targets, or the item itself exactly as specified in the "
 "``<LIBRARY_EXPRESSION>`` otherwise."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:42
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:42
 msgid ""
 "In addition to the above, it is possible to have one pattern for paths "
 "(CMake targets and external libraries specified with file paths) and another "
@@ -119,21 +119,21 @@ msgid ""
 "respectively. When wrappers are used, both must be present.  For example:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:48
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:48
 msgid ""
 "set(CMAKE_LINK_LIBRARY_USING_weak_library\n"
 "    \"PATH{-weak_library <LIBRARY>}NAME{LINKER:-weak-l<LIB_ITEM>}\"\n"
 ")"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:54
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:54
 msgid ""
 "For all three elements of this variable (``<PREFIX>``, "
 "``<LIBRARY_EXPRESSION>``, and ``<SUFFIX>``), the ``LINKER:`` prefix can be "
 "used."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:1
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:1
 msgid ""
 "To pass options to the linker tool, each compiler driver has its own syntax. "
 "The ``LINKER:`` prefix and ``,`` separator can be used to specify, in a "
@@ -144,40 +144,40 @@ msgid ""
 "`CMAKE_<LANG>_LINKER_WRAPPER_FLAG_SEP` variables."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:9
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:9
 msgid ""
 "For example, ``\"LINKER:-z,defs\"`` becomes ``-Xlinker -z -Xlinker defs`` "
 "for ``Clang`` and ``-Wl,-z,defs`` for ``GNU GCC``."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:12
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:12
 msgid ""
 "The ``LINKER:`` prefix can be specified as part of a ``SHELL:`` prefix "
 "expression."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:15
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:15
 msgid ""
 "The ``LINKER:`` prefix supports, as an alternative syntax, specification of "
 "arguments using the ``SHELL:`` prefix and space as separator. The previous "
 "example then becomes ``\"LINKER:SHELL:-z defs\"``."
 msgstr ""
 
-#: ../../../command/LINK_OPTIONS_LINKER.txt:21
+#: ../../../command/include/LINK_OPTIONS_LINKER.rst:21
 msgid ""
 "Specifying the ``SHELL:`` prefix anywhere other than at the beginning of the "
 "``LINKER:`` prefix is not supported."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:61
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:61
 msgid "Examples"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:64
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:64
 msgid "Loading a whole static library"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:66
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:66
 msgid ""
 "A common need is to prevent the linker from discarding any symbols from a "
 "static library.  Different linkers use different syntax for achieving this. "
@@ -188,7 +188,7 @@ msgid ""
 "functionality."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:73
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:73
 msgid ""
 "set(CMAKE_C_LINK_LIBRARY_USING_load_archive_SUPPORTED TRUE)\n"
 "if(CMAKE_C_COMPILER_ID STREQUAL \"AppleClang\")\n"
@@ -223,31 +223,31 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:106
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:106
 msgid "CMake will generate the following link expressions:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:108
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:108
 msgid ""
 "``AppleClang``: ``-force_load /path/to/lib1.a -force_load libexternal.a``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:109
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:109
 msgid ""
 "``GNU``: ``-Wl,--push-state,--whole-archive /path/to/lib1.a -lexternal -Wl,--"
 "pop-state``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:110
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:110
 msgid ""
 "``MSVC``: ``/WHOLEARCHIVE:/path/to/lib1.lib /WHOLEARCHIVE:external.lib``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:113
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:113
 msgid "Linking a library as weak"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:115
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:115
 msgid ""
 "On macOS, it is possible to link a library in weak mode (the library and all "
 "references are marked as weak imports).  Different flags must be used for a "
@@ -260,7 +260,7 @@ msgid ""
 "this functionality."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:125
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:125
 msgid ""
 "if (CMAKE_C_COMPILER_ID STREQUAL \"AppleClang\")\n"
 "  set(CMAKE_LINK_LIBRARY_USING_weak_library\n"
@@ -279,29 +279,29 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:142
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:142
 msgid ""
 "CMake will generate the following linker command line fragment when linking "
 "``main`` using the ``AppleClang`` toolchain:"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:145
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:145
 msgid "``-weak_library /path/to/lib -Xlinker -weak-lexternal``."
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:149
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:149
 msgid "Predefined Features"
 msgstr ""
 
-#: ../../../variable/CMAKE_LINK_LIBRARY_USING_FEATURE.txt:151
+#: ../../../variable/include/CMAKE_LINK_LIBRARY_USING_FEATURE.rst:151
 msgid "The following built-in library features are pre-defined by CMake:"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:1
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:1
 msgid "``DEFAULT``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:2
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:2
 msgid ""
 "This feature corresponds to standard linking, essentially equivalent to "
 "using no feature at all.  It is typically only used with the :prop_tgt:"
@@ -309,11 +309,11 @@ msgid ""
 "target properties."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:7
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:7
 msgid "``WHOLE_ARCHIVE``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:8
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:8
 msgid ""
 "Force inclusion of all members of a static library when linked as a "
 "dependency of consuming :ref:`Executables`, :ref:`Shared Libraries`, and :"
@@ -321,19 +321,19 @@ msgid ""
 "platforms, with limitations as noted:"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:13
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:13
 msgid "Linux."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:14
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:14
 msgid "All BSD variants."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:15
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:15
 msgid "SunOS."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:16
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:16
 msgid ""
 "All Apple variants.  The library must be specified as a CMake target name, a "
 "library file name (such as ``libfoo.a``), or a library file path (such as ``/"
@@ -342,21 +342,21 @@ msgid ""
 "target."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:21
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:21
 msgid ""
 "Windows.  When using a MSVC or MSVC-like toolchain, the MSVC version must be "
 "greater than 1900."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:23
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:23
 msgid "Cygwin."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:24
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:24
 msgid "MSYS."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:28
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:28
 msgid ""
 "Since :ref:`Static Libraries` are archives and not linked binaries, CMake "
 "records their link dependencies for transitive use when linking consuming "
@@ -365,11 +365,11 @@ msgid ""
 "Libraries` for that."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:34
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:34
 msgid "``FRAMEWORK``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:35
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:35
 msgid ""
 "This option tells the linker to search for the specified framework using the "
 "``-framework`` linker option.  It can only be used on Apple platforms, and "
@@ -377,7 +377,7 @@ msgid ""
 "provided with Xcode, or one compatible with it)."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:40
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:40
 msgid ""
 "The framework can be specified as a CMake framework target, a bare framework "
 "name, or a file path.  If a target is given, that target must have the :"
@@ -386,7 +386,7 @@ msgid ""
 "search path."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:46
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:46
 msgid ""
 "add_library(lib SHARED ...)\n"
 "target_link_libraries(lib PRIVATE \"$<LINK_LIBRARY:FRAMEWORK,/path/to/"
@@ -396,25 +396,25 @@ msgid ""
 "#   -F/path/to -framework my_framework"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:54
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:54
 msgid ""
 "File paths must conform to one of the following patterns (``*`` is a "
 "wildcard, and optional parts are shown as ``[...]``):"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:57
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:57
 msgid "``[/path/to/]FwName[.framework]``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:58
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:58
 msgid "``[/path/to/]FwName.framework/FwName[suffix]``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:59
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:59
 msgid "``[/path/to/]FwName.framework/Versions/*/FwName[suffix]``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:61
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:61
 msgid ""
 "Note that CMake recognizes and automatically handles framework targets, even "
 "without using the :genex:`$<LINK_LIBRARY:FRAMEWORK,...>` expression. The "
@@ -428,18 +428,18 @@ msgid ""
 "is clear."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:72
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:72
 msgid ""
 "The :prop_tgt:`FRAMEWORK_MULTI_CONFIG_POSTFIX_<CONFIG>` target property as "
 "well as the ``suffix`` of the framework library name are now supported by "
 "the ``FRAMEWORK`` features."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:77
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:77
 msgid "``NEEDED_FRAMEWORK``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:78
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:78
 msgid ""
 "This is similar to the ``FRAMEWORK`` feature, except it forces the linker to "
 "link with the framework even if no symbols are used from it.  It uses the ``-"
@@ -447,11 +447,11 @@ msgid ""
 "``FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:83
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:83
 msgid "``REEXPORT_FRAMEWORK``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:84
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:84
 msgid ""
 "This is similar to the ``FRAMEWORK`` feature, except it tells the linker "
 "that the framework should be available to clients linking to the library "
@@ -459,22 +459,22 @@ msgid ""
 "linker constraints as ``FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:89
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:89
 msgid "``WEAK_FRAMEWORK``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:90
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:90
 msgid ""
 "This is similar to the ``FRAMEWORK`` feature, except it forces the linker to "
 "mark the framework and all references to it as weak imports.  It uses the ``-"
 "weak_framework`` option and has the same linker constraints as ``FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:95
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:95
 msgid "``NEEDED_LIBRARY``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:96
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:96
 msgid ""
 "This is similar to the ``NEEDED_FRAMEWORK`` feature, except it is for use "
 "with non-framework targets or libraries (Apple platforms only). It uses the "
@@ -482,11 +482,11 @@ msgid ""
 "linker constraints as ``NEEDED_FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:101
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:101
 msgid "``REEXPORT_LIBRARY``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:102
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:102
 msgid ""
 "This is similar to the ``REEXPORT_FRAMEWORK`` feature,  except it is for use "
 "with non-framework targets or libraries (Apple platforms only). It uses the "
@@ -494,11 +494,11 @@ msgid ""
 "same linker constraints as ``REEXPORT_FRAMEWORK``."
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:107
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:107
 msgid "``WEAK_LIBRARY``"
 msgstr ""
 
-#: ../../../variable/LINK_LIBRARY_PREDEFINED_FEATURES.txt:108
+#: ../../../variable/include/LINK_LIBRARY_PREDEFINED_FEATURES.rst:108
 msgid ""
 "This is similar to the ``WEAK_FRAMEWORK`` feature, except it is for use with "
 "non-framework targets or libraries (Apple platforms only). It uses the ``-"

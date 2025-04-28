@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,61 @@ msgstr ""
 
 #: ../../../../Modules/FindCygwin.cmake:8
 msgid ""
-"Find Cygwin, a POSIX-compatible environment that runs natively on Microsoft "
-"Windows"
+"Finds Cygwin, a POSIX-compatible environment that runs natively on Microsoft "
+"Windows."
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:13
+msgid ""
+"This module is primarily intended for use in other :ref:`Find Modules` to "
+"help locate programs when using the ``find_*()`` commands, such as :command:"
+"`find_program`.  In most cases, direct use of those commands is sufficient.  "
+"Use this module only if a specific program is known to be installed via "
+"Cygwin and is usable from Windows."
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:20
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:22
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:24
+msgid "``CYGWIN_INSTALL_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:25
+msgid "The path to the Cygwin root installation directory."
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:28
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:30
+msgid ""
+"Finding the Cygwin installation and using its path in a custom find module:"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:32
+msgid "FindFoo.cmake"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:32
+msgid ""
+"find_package(Cygwin)\n"
+"find_program(Foo_EXECUTABLE NAMES foo PATHS ${CYGWIN_INSTALL_PATH}/bin)\n"
+"\n"
+"include(FindPackageHandleStandardArgs)\n"
+"find_package_handle_standard_args(Foo REQUIRED_VARS Foo_EXECUTABLE)"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:42
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/FindCygwin.cmake:44
+msgid "The :module:`FindMsys` module to find MSYS path in a similar way."
 msgstr ""
