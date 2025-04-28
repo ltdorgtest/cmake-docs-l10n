@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2025-04-21 08:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,37 +39,36 @@ msgstr ""
 
 #: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:15
 msgid ""
-"The unity file's path to the original source file will use the following "
-"priority:"
+"The unity file's path to an original source file uses the following priority:"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:18
+#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:17
 msgid ""
-"relative path to the generated unity file if the source file exists directly "
-"or in subfolder under the :variable:`CMAKE_BINARY_DIR`"
+"a path relative to the generated unity file if the source file exists "
+"directly in :variable:`CMAKE_BINARY_DIR`, or in a subfolder under it."
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:21
+#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:20
 msgid ""
-"relative path to :variable:`CMAKE_SOURCE_DIR` if the source file exists "
-"directly or in subfolder under the :variable:`CMAKE_SOURCE_DIR`"
+"a path relative to :variable:`CMAKE_SOURCE_DIR` if the source file exists "
+"directly in :variable:`CMAKE_SOURCE_DIR`, or in a subfolder under it."
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:24
-msgid "absolute path to the source file."
+#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:23
+msgid "an absolute path to the source file."
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:26
+#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:25
 msgid ""
 "This target property *does not* guarantee a consistent unity file across "
 "different environments as the final priority is an absolute path."
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:29
+#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:28
 msgid "Example usage:"
 msgstr ""
 
-#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:31
+#: ../../../prop_tgt/UNITY_BUILD_RELOCATABLE.rst:30
 msgid ""
 "add_library(example_library\n"
 "            source1.cxx\n"

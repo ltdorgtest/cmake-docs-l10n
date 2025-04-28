@@ -17,22 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../../variable/CMAKE_XCODE_SCHEME_LAUNCH_MODE.rst:2
-msgid "CMAKE_XCODE_SCHEME_LAUNCH_MODE"
+#: ../../../variable/CMAKE_UNITY_BUILD_RELOCATABLE.rst:2
+msgid "CMAKE_UNITY_BUILD_RELOCATABLE"
 msgstr ""
 
-#: ../../../variable/CMAKE_XCODE_SCHEME_LAUNCH_MODE.rst:6
-msgid "Populate ``Launch`` in the Info section of the generated Xcode scheme."
-msgstr ""
-
-#: ../../../variable/CMAKE_XCODE_SCHEME_LAUNCH_MODE.rst:9
+#: ../../../variable/CMAKE_UNITY_BUILD_RELOCATABLE.rst:6
 msgid ""
-"This variable initializes the :prop_tgt:`XCODE_SCHEME_LAUNCH_MODE` property "
-"on all targets."
-msgstr ""
-
-#: ../../../variable/CMAKE_XCODE_SCHEME_LAUNCH_MODE.rst:12
-msgid ""
-"Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property "
-"documentation to see all Xcode schema related properties."
+"This variable is used to initialize the :prop_tgt:`UNITY_BUILD_RELOCATABLE` "
+"property of targets when they are created.  Setting it to true causes "
+"sources generated for :variable:`CMAKE_UNITY_BUILD` to ``#include`` the "
+"original source files using relative paths where possible."
 msgstr ""
