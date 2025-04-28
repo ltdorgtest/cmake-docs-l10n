@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -633,19 +633,19 @@ msgid ""
 "are provided by CMake or have meaning to CMake when set by project code."
 msgstr ""
 
-#: ../../../manual/ID_RESERVE.txt:3
+#: ../../../manual/include/ID_RESERVE.rst:3
 msgid "CMake reserves identifiers that:"
 msgstr ""
 
-#: ../../../manual/ID_RESERVE.txt:5
+#: ../../../manual/include/ID_RESERVE.rst:5
 msgid "begin with ``CMAKE_`` (upper-, lower-, or mixed-case), or"
 msgstr ""
 
-#: ../../../manual/ID_RESERVE.txt:6
+#: ../../../manual/include/ID_RESERVE.rst:6
 msgid "begin with ``_CMAKE_`` (upper-, lower-, or mixed-case), or"
 msgstr ""
 
-#: ../../../manual/ID_RESERVE.txt:7
+#: ../../../manual/include/ID_RESERVE.rst:7
 msgid ""
 "begin with ``_`` followed by the name of any :manual:`CMake Command <cmake-"
 "commands(7)>`."

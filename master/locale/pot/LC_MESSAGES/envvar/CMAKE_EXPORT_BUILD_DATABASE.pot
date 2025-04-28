@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "CMAKE_EXPORT_BUILD_DATABASE"
 msgstr ""
 
-#: ../../../envvar/ENV_VAR.txt:1
+#: ../../../envvar/include/ENV_VAR.rst:1
 msgid ""
 "This is a CMake :ref:`Environment Variable <CMake Language Environment "
 "Variables>`. Its initial value is taken from the calling process environment."

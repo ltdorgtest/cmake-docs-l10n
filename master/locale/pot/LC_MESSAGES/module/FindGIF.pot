@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-04-21 08:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,92 +37,92 @@ msgstr ""
 msgid "``GIF::GIF``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:16
+#: ../../../../Modules/FindGIF.cmake:18
 msgid ""
 "Target that encapsulates the usage requirements of the GIF library, "
 "available when the library is found."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:20
+#: ../../../../Modules/FindGIF.cmake:22
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:22
+#: ../../../../Modules/FindGIF.cmake:24
 msgid "This module sets the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:24
+#: ../../../../Modules/FindGIF.cmake:26
 msgid "``GIF_FOUND``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:25
+#: ../../../../Modules/FindGIF.cmake:27
 msgid "Boolean indicating whether the GIF library was found."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:26
+#: ../../../../Modules/FindGIF.cmake:28
 msgid "``GIF_INCLUDE_DIRS``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:27
+#: ../../../../Modules/FindGIF.cmake:29
 msgid "Include directories needed to use the GIF library."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:28
+#: ../../../../Modules/FindGIF.cmake:30
 msgid "``GIF_LIBRARIES``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:29
+#: ../../../../Modules/FindGIF.cmake:31
 msgid "Libraries needed to link to the GIF library."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:30
+#: ../../../../Modules/FindGIF.cmake:32
 msgid "``GIF_VERSION``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:31
+#: ../../../../Modules/FindGIF.cmake:33
 msgid ""
 "Version string of the GIF library found (for example, ``5.1.4``).  For GIF "
 "library versions prior to 4.1.6, version string will be set only to ``3`` or "
 "``4`` as these versions did not provide version information in their headers."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:36
+#: ../../../../Modules/FindGIF.cmake:38
 msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:38
+#: ../../../../Modules/FindGIF.cmake:40
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:40
+#: ../../../../Modules/FindGIF.cmake:42
 msgid "``GIF_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:41
+#: ../../../../Modules/FindGIF.cmake:43
 msgid "Directory containing the ``gif_lib.h`` and other GIF library headers."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:42
+#: ../../../../Modules/FindGIF.cmake:44
 msgid "``GIF_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:43
+#: ../../../../Modules/FindGIF.cmake:45
 msgid "Path to the GIF library."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:46
+#: ../../../../Modules/FindGIF.cmake:48
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:48
+#: ../../../../Modules/FindGIF.cmake:50
 msgid "This module accepts the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:50
+#: ../../../../Modules/FindGIF.cmake:52
 msgid "``GIF_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:51
+#: ../../../../Modules/FindGIF.cmake:53
 msgid ""
 "Environment variable that can be set to help locate a GIF library installed "
 "in a custom location.  It should point to the installation destination that "
@@ -130,15 +130,15 @@ msgid ""
 "configure --prefix=$GIF_DIR``."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:57
+#: ../../../../Modules/FindGIF.cmake:59
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:59
+#: ../../../../Modules/FindGIF.cmake:61
 msgid "Finding GIF library and linking it to a project target:"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:61
+#: ../../../../Modules/FindGIF.cmake:63
 msgid ""
 "find_package(GIF)\n"
 "target_link_libraries(project_target PRIVATE GIF::GIF)"
