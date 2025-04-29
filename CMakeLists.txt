@@ -11,10 +11,10 @@ project(cmake-docs-l10n NONE)
 set(LANGUAGE "all"
     CACHE STRING "The language code of the documentation.")
     # Possible values are "all" and languages listed in languages.json.
-    # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language for details.
 
 set(LANGUAGE_SOURCE "en_US"
     CACHE STRING "The source language code of the documentation")
+    # Possible values are "en_US".
 
 set(VERSION "master"
     CACHE STRING "The current version of the documentation.")
