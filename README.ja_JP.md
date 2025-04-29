@@ -374,7 +374,7 @@ You can switch to other available languages and versions by the flyout switcher.
 Licenses
 </a></h2>
 
-All the script files (<code>CMakeLists.txt</code> and <code>.cmake</code> files) and workflow files (<code>.yml</code> files inside <code>.github/workflows/</code> directory) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
+All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
 All the translation files (<code>.po</code> and <code>.pot</code> files inside the <a href="https://github.com/ltdorgtest/cmake-docs-l10n/tree/l10n">l10n</a> branch) are owned by the upstream, and are subject to its copyright and license.
 
