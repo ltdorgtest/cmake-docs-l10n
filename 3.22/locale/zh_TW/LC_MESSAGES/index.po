@@ -28,6 +28,9 @@ msgid ""
 "generates modern buildsystems such as ``Ninja`` as well as project files for "
 "IDEs such as Visual Studio and Xcode."
 msgstr ""
+"CMake 是一款管理來源碼建置的工具。原本，CMake 被設計成作為各種 ``Makefile`` "
+"方言的生成器。如今 CMake 可以生成現代建置系統（例如：``Ninja``）以及 IDE 的專"
+"案檔（例如：Visual Studio 和 Xcode）。"
 
 #: ../../../index.rst:11
 msgid ""
