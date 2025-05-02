@@ -43,7 +43,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
 
     message(STATUS "Preparing to download '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from Crowdin...")
-    set(CROWDIN_PO_DIR   "${PROJ_L10N_VERSION_CROWDIN_DIR}/${_LANGUAGE}")
+    set(CROWDIN_PO_DIR  "${PROJ_L10N_VERSION_CROWDIN_DIR}/${_LANGUAGE}")
     set(COMPEND_PO_FILE "${PROJ_L10N_VERSION_COMPEND_DIR}/${_LANGUAGE}.po")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
     set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")

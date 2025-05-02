@@ -91,6 +91,8 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     else()
         message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
     endif()
+    set(HTML_BASEURL                "${BASEURL_HREF}")
+    set(WARNING_FILE_PATH           "${PROJ_BINARY_DIR}/log-${SPHINX_BUILDER}-${VERSION}-${_LANGTAG}.txt")
     remove_cmake_message_indent()
     message("")
     execute_process(
@@ -104,7 +106,8 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
                 -D templates_path=${TMPLS_TO_CONFIG_DIR}            # Relative to <configdir>.
                 -D gettext_compact=${SPHINX_GETTEXT_COMPACT}
                 -D gettext_additional_targets=${SPHINX_GETTEXT_TARGETS}
-                -D html_baseurl=${BASEURL_HREF}
+                -D html_baseurl=${HTML_BASEURL}
+                -w ${WARNING_FILE_PATH}
                 -j ${SPHINX_JOB_NUMBER}
                 ${SPHINX_VERBOSE_ARGS}
                 -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}                 # <configdir>, where conf.py locates.

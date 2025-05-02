@@ -272,6 +272,7 @@ elseif (CMAKE_HOST_WIN32)
 else()
     message(FATAL_ERROR "Invalid OS platform. (${CMAKE_HOST_SYSTEM_NAME})")
 endif()
+set(WARNING_FILE_PATH           "${PROJ_BINARY_DIR}/log-gettext-${VERSION}.txt")
 remove_cmake_message_indent()
 message("")
 execute_process(
@@ -283,6 +284,7 @@ execute_process(
             -D templates_path=${TMPLS_TO_SOURCE_DIR}            # Relative to <sourcedir>.
             -D gettext_compact=${SPHINX_GETTEXT_COMPACT}
             -D gettext_additional_targets=${SPHINX_GETTEXT_TARGETS}
+            -w ${WARNING_FILE_PATH}
             -j ${SPHINX_JOB_NUMBER}
             ${SPHINX_VERBOSE_ARGS}
             -c ${PROJ_OUT_REPO_DOCS_CONFIG_DIR}                 # <configdir>, where conf.py locates.
