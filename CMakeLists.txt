@@ -565,10 +565,10 @@ add_custom_target(gettext_statistic_po
             -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_statistic_po.cmake
     VERBATIM)
 
-add_custom_target(gettext_compend_po
+add_custom_target(gettext_compendium
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_compend_po.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_compendium.cmake
     VERBATIM)
 
 add_custom_target(crowdin_upload_pot
