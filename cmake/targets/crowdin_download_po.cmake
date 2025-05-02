@@ -44,7 +44,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
 
     message(STATUS "Preparing to download '${_LANGUAGE_CROWDIN}' translations for '${VERSION}' version from Crowdin...")
     set(CROWDIN_PO_DIR  "${PROJ_L10N_VERSION_CROWDIN_DIR}/${_LANGUAGE}")
-    set(COMPEND_PO_FILE "${PROJ_L10N_VERSION_COMPEND_DIR}/${_LANGUAGE}.po")
+    set(SINGLE_PO_FILE  "${PROJ_L10N_VERSION_SINGLE_DIR}/${_LANGUAGE}.po")
     set(LOCALE_PO_DIR   "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
     set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
     remove_cmake_message_indent()
@@ -53,7 +53,7 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message("_LANGUAGE_CROWDIN    = ${_LANGUAGE_CROWDIN}")
     message("CROWDIN_YML_PATH     = ${CROWDIN_YML_PATH}")
     message("CROWDIN_PO_DIR       = ${CROWDIN_PO_DIR}")
-    message("COMPEND_PO_FILE      = ${COMPEND_PO_FILE}")
+    message("SINGLE_PO_FILE       = ${SINGLE_PO_FILE}")
     message("LOCALE_PO_DIR        = ${LOCALE_PO_DIR}")
     message("LOCALE_POT_DIR       = ${LOCALE_POT_DIR}")
     message("")
@@ -79,13 +79,13 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     restore_cmake_message_indent()
 
 
-    message(STATUS "Concatenating '${_LANGUAGE}' translations of '${VERSION}' verison from Crowdin into a compendium file...")
+    message(STATUS "Concatenating '${_LANGUAGE}' translations of '${VERSION}' verison from Crowdin into a single compendium file...")
     remove_cmake_message_indent()
     message("")
-    concat_po_from_locale_to_compendium(
-        IN_WRAP_WIDTH        "${GETTEXT_WRAP_WIDTH}"
-        IN_LOCALE_PO_DIR     "${CROWDIN_PO_DIR}"
-        IN_COMPEND_PO_FILE   "${COMPEND_PO_FILE}")
+    concat_po_from_locale_to_single(
+        IN_LOCALE_PO_DIR          "${CROWDIN_PO_DIR}"
+        IN_SINGLE_PO_FILE         "${SINGLE_PO_FILE}"
+        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}")
     message("")
     restore_cmake_message_indent()
 
@@ -93,10 +93,10 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message(STATUS "Merging '${_LANGUAGE}' translations of '${VERSION}' verison from Crowdin with the compendium file...")
     remove_cmake_message_indent()
     message("")
-    merge_po_from_src_to_dst_with_compendium(
+    merge_po_with_compendium_from_src_to_dst(
         IN_LANGUAGE               "${_LANGUAGE}"
         IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
-        IN_SRC_COMPEND_PO_FILE    "${COMPEND_PO_FILE}"
+        IN_SRC_SINGLE_PO_FILE     "${SINGLE_PO_FILE}"
         IN_SRC_LOCALE_PO_DIR      "${CROWDIN_PO_DIR}"
         IN_DST_LOCALE_PO_DIR      "${LOCALE_PO_DIR}"
         IN_DST_LOCALE_POT_DIR     "${LOCALE_POT_DIR}")
