@@ -162,8 +162,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </td>
       </tr>
       <tr>
-        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml">
-            <img alt="ci-gettext-compend-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compend-po.yml/badge.svg" />
+        <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml">
+            <img alt="ci-gettext-compendium" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml/badge.svg" />
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
