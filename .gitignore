@@ -1,4 +1,4 @@
 # Ignore the following directoreis/files
 .crowdin
-.compend
+.single
 *.mo
