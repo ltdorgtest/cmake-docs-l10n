@@ -130,8 +130,8 @@ set(LANGUAGES_JSON_PATH             "${PROJ_SOURCE_DIR}/languages.json")
 set(PREV_PACKAGES_TXT_PATH          "${PROJ_CONDA_DIR}/prev/packages.txt")
 set(PREV_REFERENCE_TXT_PATH         "${PROJ_CONDA_DIR}/prev/reference.txt")
 set(REFERENCES_JSON_PATH            "${PROJ_L10N_VERSION_DIR}/references.json")
+set(STATISTICS_TXT_PATH             "${PROJ_L10N_VERSION_DIR}/statistics.txt")
 set(CROWDIN_YML_PATH                "${PROJ_L10N_VERSION_DIR}/crowdin.yml")
-set(STATISTIC_TXT_PATH              "${PROJ_L10N_VERSION_DIR}/statistic.txt")
 
 #[============================================================[
 # Include CMake modules.
@@ -410,8 +410,8 @@ message(STATUS "LANGUAGES_JSON_PATH             = ${LANGUAGES_JSON_PATH}")
 message(STATUS "PREV_PACKAGES_TXT_PATH          = ${PREV_PACKAGES_TXT_PATH}")
 message(STATUS "PREV_REFERENCE_TXT_PATH         = ${PREV_REFERENCE_TXT_PATH}")
 message(STATUS "REFERENCES_JSON_PATH            = ${REFERENCES_JSON_PATH}")
+message(STATUS "STATISTICS_TXT_PATH             = ${STATISTICS_TXT_PATH}")
 message(STATUS "CROWDIN_YML_PATH                = ${CROWDIN_YML_PATH}")
-message(STATUS "STATISTIC_TXT_PATH              = ${STATISTIC_TXT_PATH}")
 message(STATUS "---------- Other Variables ----------")
 message(STATUS "TMPLS_TO_SOURCE_DIR             = ${TMPLS_TO_SOURCE_DIR}")
 message(STATUS "TMPLS_TO_CONFIG_DIR             = ${TMPLS_TO_CONFIG_DIR}")
@@ -508,8 +508,8 @@ set(SCRIPT_MODE_CACHE
     -D PREV_PACKAGES_TXT_PATH=${PREV_PACKAGES_TXT_PATH}
     -D PREV_REFERENCE_TXT_PATH=${PREV_REFERENCE_TXT_PATH}
     -D REFERENCES_JSON_PATH=${REFERENCES_JSON_PATH}
+    -D STATISTICS_TXT_PATH=${STATISTICS_TXT_PATH}
     -D CROWDIN_YML_PATH=${CROWDIN_YML_PATH}
-    -D STATISTIC_TXT_PATH=${STATISTIC_TXT_PATH}
     # [Other Variables]
     -D TMPLS_TO_SOURCE_DIR=${TMPLS_TO_SOURCE_DIR}
     -D TMPLS_TO_CONFIG_DIR=${TMPLS_TO_CONFIG_DIR}
@@ -559,10 +559,10 @@ add_custom_target(sphinx_build_docs ALL
 # Optional Targets.
 #]============================================================]
 
-add_custom_target(gettext_statistic_po
+add_custom_target(gettext_statistics
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
-            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_statistic_po.cmake
+            -P ${PROJ_CMAKE_TARGETS_DIR}/gettext_statistics.cmake
     VERBATIM)
 
 add_custom_target(gettext_compendium

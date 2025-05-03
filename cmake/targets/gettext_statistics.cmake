@@ -15,17 +15,17 @@ include(JsonUtils)
 include(GettextUtils)
 
 
-set(STATISTIC_TXT_CNT "")
+set(STATISTICS_TXT_CNT "")
 foreach(_LANGUAGE ${LANGUAGE_LIST})
     if (_LANGUAGE STREQUAL LANGUAGE_SOURCE)
         continue()
     endif()
 
 
-    message(STATUS "Counting the percentage for '${_LANGUAGE}' language...")
+    message(STATUS "Calculating the statistics for '${_LANGUAGE}' language...")
     remove_cmake_message_indent()
     message("")
-    caculate_statistic_info_of_gettext(
+    caculate_statistics_of_gettext(
         IN_LOCALE_PO_DIR              "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}"
         IN_PADDING_LENGTH             "3"
         OUT_NUM_OF_PO_COMPLETED       NUM_OF_PO_COMPLETED
@@ -51,9 +51,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     message("${LOG_MESSAGES}")
     message("")
     restore_cmake_message_indent()
-    set(STATISTIC_TXT_CNT "${STATISTIC_TXT_CNT}${LOG_MESSAGES}\n")
+    set(STATISTICS_TXT_CNT "${STATISTICS_TXT_CNT}${LOG_MESSAGES}\n")
 endforeach()
 unset(_LANGUAGE)
 
 
-file(WRITE "${STATISTIC_TXT_PATH}" "${STATISTIC_TXT_CNT}")
+file(WRITE "${STATISTICS_TXT_PATH}" "${STATISTICS_TXT_CNT}")

@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
 # See accompanying file LICENSE.txt for details.
 
-name: ci-gettext-statistic-po
+name: ci-gettext-statistics
 
 on:
   # Triggers the workflow based on a schedule.
@@ -141,7 +141,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}
       cancel-in-progress: true
-    uses: ltdorgtest/ci-common/.github/workflows/use-gettext-statistic-po.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-gettext-statistics.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
