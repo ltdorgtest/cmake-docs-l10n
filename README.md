@@ -182,12 +182,12 @@ The translations are contributed in Crowdin Project and downloaded automatically
       </tr>
       <tr>
         <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;">
-          <a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml">
-            <img alt="ci-gettext-statistic-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistic-po.yml/badge.svg" />
+          <a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml">
+            <img alt="ci-gettext-statistics" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml/badge.svg" />
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          Update statistic information of <code>.po</code> files by Gettext toolkit.
+          Update statistics information of <code>.po</code> files by Gettext toolkit.
         </td>
       </tr>
       <tr>
