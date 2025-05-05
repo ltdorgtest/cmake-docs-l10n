@@ -51,7 +51,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
         IN_JSON_OBJECT    "${LANGUAGES_JSON_CNT}"
         IN_DOT_NOTATION   ".${_LANGUAGE}.readthedocs"
         OUT_JSON_VALUE    _LANGUAGE_READTHEDOCS)
-    if ("${_LANGUAGE}" STREQUAL "${_LANGUAGE_READTHEDOCS}")
+
+
+    if (_LANGUAGE STREQUAL _LANGUAGE_READTHEDOCS)
         message("No need to create ReadTheDocs symlink for language directory '${_LANGUAGE}'.")
     else()
         if (NOT EXISTS "${PROJ_L10N_VERSION_LOCALE_DIR}/${_LANGUAGE}")
