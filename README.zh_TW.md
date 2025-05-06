@@ -40,8 +40,8 @@ CMake 文件的在地化
   <li><a href="#about-author">Maintainers List</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
   <li><a href="#sponsorship">Sponsorship</a></li>
-  <li><a href="#code-contributors">Code Contributors</a></li>
-  <li><a href="#financial-contributors">Financial Contributors</a></li>
+  <li><a href="#code-contributors">程式碼貢獻者</a></li>
+  <li><a href="#financial-contributors">財務貢獻者</a></li>
 </ul>
 
 <h2 id="introduction"><a href="#table-of-contents">
@@ -181,7 +181,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-crowdin-download-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml/badge.svg" />
           </a>
         </td>
-        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;"><span>Download <code>.pot</code> files from Crowdin by its CLI tool.</span>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;"><span>使用 CLI 工具從 Crowdin 下載 <code>.pot</code> 檔案。</span>
         </td>
       </tr>
       <tr>
