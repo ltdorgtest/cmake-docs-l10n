@@ -11,7 +11,7 @@
 
 <div align="center">
 <h1 id="localization-of-cmake-documentation">
-Localization of CMake Documentation
+CMake 文件的在地化
 </h1>
 </div>
 
@@ -33,7 +33,7 @@ Localization of CMake Documentation
 
 <ul>
   <li><a href="#introduction">介紹</a></li>
-  <li><a href="#progress-of-translations">Progress of Translations</a></li>
+  <li><a href="#progress-of-translations">預覽翻譯</a></li>
   <li><a href="#preview-translations">預覽翻譯</a></li>
   <li><a href="#licenses">授權條款</a></li>
   <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
@@ -229,16 +229,16 @@ The translations are contributed in Crowdin Project and downloaded automatically
 </div>
 
 <h2 id="progress-of-translations"><a href="#table-of-contents">
-Progress of Translations
+翻譯進度
 </a></h2>
 
 <div align="center">
   <table>
     <thead>
       <tr>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">English Name<br />Localized Name</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Translated<br />Proofread</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">語言</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">英文名稱<br />在地化名稱</th>
+        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">已翻譯<br />已校對</th>
       </tr>
     </thead>
     <tbody>
