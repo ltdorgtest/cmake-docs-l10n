@@ -38,16 +38,10 @@ Table of Contents
   <li><a href="#licenses">Licenses</a></li>
   <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
   <li><a href="#about-author">Maintainers List</a></li>
-  <li><a href="#support-this-project">Support This Project</a></li>
+  <li><a href="#support-this-project">Support this Project</a></li>
   <li><a href="#sponsorship">Sponsorship</a></li>
-  <li><a href="#contributors-list">Contributors List</a>
-    <p></p>
-    <ul>
-      <li><a href="#code-contributors">Code Contributors</a></li>
-      <li><a href="#financial-contributors">Financial Contributors</a></li>
-    </ul>
-    <p></p>
-  </li>
+  <li><a href="#code-contributors">Code Contributors</a></li>
+  <li><a href="#financial-contributors">Financial Contributors</a></li>
 </ul>
 
 <h2 id="introduction"><a href="#table-of-contents">
@@ -175,8 +169,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-gettext-statistics" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml/badge.svg" />
           </a>
         </td>
-        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          Update statistics information of <code>.po</code> files by Gettext toolkit.
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;"><span>Update statistics information of <code>.po</code> files by Gettext toolkit.</span>
         </td>
       </tr>
       <tr>
@@ -184,7 +177,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
             <img alt="ci-crowdin-upload-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml/badge.svg" />
           </a>
         </td>
-        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">Upload <code>.pot</code> files to Crowdin by its CLI tool.</td>
+        <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;"><span>Upload <code>.pot</code> files to Crowdin by its CLI tool.</span>
+        </td>
       </tr>
       <tr>
         <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
@@ -368,15 +362,13 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
   </table>
 </div>
 
-You can switch to other available languages and versions by the flyout switcher.
+You can switch to other available languages and versions by the flyout navigation menu.
 
 <h2 id="licenses"><a href="#table-of-contents">
 Licenses
 </a></h2>
 
 All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
-
-All the translation files (<code>.po</code> and <code>.pot</code> files inside the <a href="https://github.com/ltdorgtest/cmake-docs-l10n/tree/l10n">l10n</a> branch) are owned by the upstream, and are subject to its copyright and license.
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">
 Translation Disclaimer
@@ -498,18 +490,18 @@ You can sponsor the author through the following platforms:
   </table>
 </div>
 
-<h2 id="contributors-list"><a href="#table-of-contents">
-Contributors List
-</a></h2>
-
-<h3 id="code-contributors"><a href="#table-of-contents">
+<h2 id="code-contributors"><a href="#table-of-contents">
 Code Contributors
-</a></h3>
+</a></h2>
 
 <img alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true">
 
-<h3 id="financial-contributors"><a href="#table-of-contents">
+<h2 id="financial-contributors"><a href="#table-of-contents">
 Financial Contributors
-</a></h3>
+</a></h2>
+
+<div align="center">
+<h3>Sponsors to Haowei Hsu</h3>
+</div>
 
 TODO: Provided by <a href="https://github.com/antfu/sponsorkit">sponsorkit</a>.
