@@ -134,7 +134,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-        <p>Build documents by Sphinx and upload build artifacts.</p>
+        <p>透過 Sphinx 建置文件並上傳建置工件。</p>
       </td>
     </tr>
     <tr>
@@ -143,7 +143,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-        <p>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</p>
+        <p>透過 Sphinx 搭配 <code>gettext</code> 建置器更新 <code>.pot</code> 檔。</p>
       </td>
     </tr>
     <tr>
@@ -152,7 +152,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-        <p>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</p>
+        <p>透過 Gettext 工具組從 <code>.pot</code> 檔更新 <code>.po</code> 檔。</p>
       </td>
     </tr>
     <tr>
@@ -206,7 +206,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-        <p>Download and deploy build artifacts to <code>pages</code> branch.</p>
+        <p>下載建置製品並將其部署到 <code>pages</code> 分支。</p>
       </td>
     </tr>
     <tr>
@@ -215,7 +215,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-        <p>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</p>
+        <p>將 <code>.po</code> 檔部署到 <code>po/${VERSION}</code> 分支。</p>
       </td>
     </tr>
     <tr>
