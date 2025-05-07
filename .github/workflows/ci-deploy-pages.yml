@@ -97,7 +97,6 @@ jobs:
       BUILD_RUN_ID: ${{ github.event.client_payload.BUILD_RUN_ID || inputs.BUILD_RUN_ID }}
       DEPLOY_ONLY: ${{ github.event.client_payload.DEPLOY_ONLY || inputs.DEPLOY_ONLY }}
       DEPLOY_BRANCH: 'pages'
-      CALLER_JOB: 'caller'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}

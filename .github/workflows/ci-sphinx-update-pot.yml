@@ -158,7 +158,6 @@ jobs:
       VERSION: ${{ matrix.VERSION }}
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
       CREATE_PR: true
-      CALLER_JOB: 'caller (${{ matrix.VERSION }})'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}

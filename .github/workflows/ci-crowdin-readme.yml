@@ -111,7 +111,6 @@ jobs:
       VERSION: 'readme'
       LANGUAGE: ${{ inputs.LANGUAGE || 'all' }}
       LANGUAGE_SOURCE: 'en_US'
-      CALLER_JOB: 'caller'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
