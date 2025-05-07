@@ -49,32 +49,32 @@ Introduction
 </a></h2>
 
 <div align="center"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
-    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/network/members" title="GitHub Forks" target="_blank">
-    <img alt="GitHub Forks" src="https://img.shields.io/github/forks/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/graphs/contributors" title="GitHub Contributors" target="_blank">
-    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
-    <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
-    <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
-  </a>
-  <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
-    <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
-  </a><br />
-  <!-- Newline --><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
-    <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
-  </a>
-  <a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
-    <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
-  </a>
-  <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" title="Crowdin Localized" target="_blank">
-    <img alt="Crowdin Localized" src="https://badges.crowdin.net/e/6e49ade8b84b4f6dd1f7eb93600fb223/localized.svg" />
-  </a>
+  <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/ltdorgtest/cmake-docs-l10n/network/members" title="GitHub Forks" target="_blank">
+  <img alt="GitHub Forks" src="https://img.shields.io/github/forks/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/ltdorgtest/cmake-docs-l10n/graphs/contributors" title="GitHub Contributors" target="_blank">
+  <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/ltdorgtest/cmake-docs-l10n" title="GitHub Repo Size" target="_blank">
+  <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
+</a>
+<a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
+  <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
+</a>
+<a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
+  <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
+</a><br />
+<!-- Newline --><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
+  <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
+</a>
+<a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
+  <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
+</a>
+<a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" title="Crowdin Localized" target="_blank">
+  <img alt="Crowdin Localized" src="https://badges.crowdin.net/e/6e49ade8b84b4f6dd1f7eb93600fb223/localized.svg" />
+</a>
 </div>
 
 <p></p>
@@ -120,7 +120,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">GitHub Workflows</th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">GitHub Actions</th>
     </tr>
     <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Status Badges</th>
