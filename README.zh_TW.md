@@ -37,7 +37,7 @@ CMake 文件的在地化
   <li><a href="#preview-translations">預覽翻譯</a></li>
   <li><a href="#licenses">授權條款</a></li>
   <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
-  <li><a href="#about-author">Maintainers List</a></li>
+  <li><a href="#maintainers">Maintainers</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
   <li><a href="#sponsorship">Sponsorship</a></li>
   <li><a href="#code-contributors">程式碼貢獻者</a></li>
@@ -387,9 +387,7 @@ All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>
 
 Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
-<h2 id="about-author"><a href="#table-of-contents">
-Maintainers List
-</a></h2>
+<h2 id="maintainers"><a href="#table-of-contents">Maintainers</a></h2>
 
 This project is created and currently maintained by the author, Haowei Hsu.
 
@@ -455,8 +453,7 @@ This project is created and currently maintained by the author, Haowei Hsu.
 </table>
 </div>
 
-<h2 id="support-this-project"><a href="#table-of-contents">Support this Project</a>
-</h2>
+<h2 id="support-this-project"><a href="#table-of-contents">Support this Project</a></h2>
 
 You can contribute and support this project by doing any of the following:
 
@@ -470,8 +467,7 @@ You can contribute and support this project by doing any of the following:
 
 It will inspire author to make more and more localization projects for open-source documentation.
 
-<h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a>
-</h2>
+<h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
 
 You can sponsor the author through the following platforms:
 
@@ -501,13 +497,13 @@ You can sponsor the author through the following platforms:
 </table>
 </div>
 
-<h2 id="code-contributors"><a href="#table-of-contents">程式碼貢獻者</a>
-</h2>
+<h2 id="code-contributors"><a href="#table-of-contents">Code Contributors</a></h2>
 
-<img alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true">
+<div align="center">
+<img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true">
+</div>
 
-<h2 id="financial-contributors"><a href="#table-of-contents">財務貢獻者</a>
-</h2>
+<h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
 <div align="center">
 <h3>Sponsors to Haowei Hsu</h3>
