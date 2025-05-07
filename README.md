@@ -141,7 +141,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Build documents by Sphinx and upload build artifacts.</strong>
+          <p>Build documents by Sphinx and upload build artifacts.</p>
         </td>
       </tr>
       <tr>
@@ -151,7 +151,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</strong>
+          <p>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</p>
         </td>
       </tr>
       <tr>
@@ -161,7 +161,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</strong>
+          <p>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</p>
         </td>
       </tr>
       <tr>
@@ -171,7 +171,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update <code>.po</code> files from the compendium by Gettext toolkit.</strong>
+          <p>Update <code>.po</code> files from the compendium by Gettext toolkit.</p>
         </td>
       </tr>
       <tr>
@@ -181,7 +181,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update statistics information of <code>.po</code> files by Gettext toolkit.</strong>
+          <p>Update statistics information of <code>.po</code> files by Gettext toolkit.</p>
         </td>
       </tr>
       <tr>
@@ -191,7 +191,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Upload <code>.pot</code> files to Crowdin by its CLI tool.</strong>
+          <p>Upload <code>.pot</code> files to Crowdin by its CLI tool.</p>
         </td>
       </tr>
       <tr>
@@ -201,7 +201,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Download <code>.pot</code> files from Crowdin by its CLI tool.</strong>
+          <p>Download <code>.pot</code> files from Crowdin by its CLI tool.</p>
         </td>
       </tr>
       <tr>
@@ -211,7 +211,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update README translations by Crowdin CLI tool.</strong>
+          <p>Update README translations by Crowdin CLI tool.</p>
         </td>
       </tr>
       <tr>
@@ -221,7 +221,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Download and deploy build artifacts to <code>pages</code> branch.</strong>
+          <p>Download and deploy build artifacts to <code>pages</code> branch.</p>
         </td>
       </tr>
       <tr>
@@ -231,7 +231,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</strong>
+          <p>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</p>
         </td>
       </tr>
       <tr>
@@ -241,7 +241,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update LICENSE file to the latest year.</strong>
+          <p>Update LICENSE file to the latest year.</p>
         </td>
       </tr>
       <tr>
@@ -251,7 +251,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
           </a>
         </td>
         <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
-          <strong>Update each of the submodules to their latest commit.</strong>
+          <p>Update each of the submodules to their latest commit.</p>
         </td>
       </tr>
     </tbody>
