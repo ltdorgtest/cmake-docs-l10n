@@ -84,36 +84,36 @@ This is a localization project for CMake Documentation.
 The translations are contributed in Crowdin Project and downloaded automatically in Git Repository.
 
 <div align="center">
-  <table>
-    <tbody>
-      <!-- TMS -->
-      <tr>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-        </td>
-      </tr>
-      <!-- Main -->
-      <tr>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-        </td>
-      </tr>
-      <!-- Mirror -->
-      <tr>
-        <th rowspan="2" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-        </td>
-      </tr>
-      <tr>
-        <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<table>
+  <tbody>
+    <!-- TMS -->
+    <tr>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      </td>
+    </tr>
+    <!-- Main -->
+    <tr>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      </td>
+    </tr>
+    <!-- Mirror -->
+    <tr>
+      <th rowspan="2" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      </td>
+    </tr>
+    <tr>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 </div>
 
 <div align="center">
@@ -470,9 +470,8 @@ You can contribute and support this project by doing any of the following:
 
 It will inspire author to make more and more localization projects for open-source documentation.
 
-<h2 id="sponsorship"><a href="#table-of-contents">
-Sponsorship
-</a></h2>
+<h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a>
+</h2>
 
 You can sponsor the author through the following platforms:
 
