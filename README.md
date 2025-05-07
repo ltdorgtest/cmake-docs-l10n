@@ -408,15 +408,15 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 
 You can switch to other available languages and versions by the flyout navigation menu.
 
-<h2 id="licenses"><a href="#table-of-contents">
-Licenses
-</a></h2>
+<h2 id="licenses">
+<a href="#table-of-contents">Licenses</a>
+</h2>
 
 All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
-<h2 id="translation-disclaimer"><a href="#table-of-contents">
-Translation Disclaimer
-</a></h2>
+<h2 id="translation-disclaimer">
+<a href="#table-of-contents">Translation Disclaimer</a>
+</h2>
 
 Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
@@ -471,7 +471,9 @@ This project is created and currently maintained by the author, Haowei Hsu.
       <tr>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
+          <a href="https://github.com/hwhsu1231">hwhsu1231</a>
+        </td>
       </tr>
       <!-- zh_TW -->
       <tr>
@@ -480,15 +482,17 @@ This project is created and currently maintained by the author, Haowei Hsu.
       <tr>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Haowei Hsu</td>
         <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language Coordinator</td>
-        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/hwhsu1231">hwhsu1231</a></td>
+        <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
+          <a href="https://github.com/hwhsu1231">hwhsu1231</a>
+        </td>
       </tr>
     </tbody>
   </table>
 </div>
 
-<h2 id="support-this-project"><a href="#table-of-contents">
-Support this Project
-</a></h2>
+<h2 id="support-this-project">
+<a href="#table-of-contents">Support this Project</a>
+</h2>
 
 You can contribute and support this project by doing any of the following:
 
