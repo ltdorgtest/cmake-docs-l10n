@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,209 +23,372 @@ msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:8
 msgid ""
-"Find the GTK2 widget libraries and several of its other optional components "
-"like ``gtkmm``, ``glade``, and ``glademm``."
+"Finds the GTK widget libraries and several of its other optional components."
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:11
-msgid ""
-"Specify one or more of the following components as you call this find "
-"module.  See example below."
+#: ../../../../Modules/FindGTK2.cmake:10
+msgid "GTK is a multi-platform toolkit for creating graphical user interfaces."
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:14
-msgid "``gtk``"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:15
-msgid "``gtkmm``"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:16
-msgid "``glade``"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:17
-msgid "``glademm``"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:20
-msgid "Imported Targets"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:22
 msgid ""
-"This module defines the following :prop_tgt:`IMPORTED` targets (subject to "
-"component selection):"
+"This module is specifically for GTK version 2.x, which is obsolete and no "
+"longer maintained.  Use the latest supported GTK version and :module:"
+"`FindPkgConfig` module to find GTK in CMake instead of this module. For "
+"example:"
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:25
+#: ../../../../Modules/FindGTK2.cmake:19
 msgid ""
-"``GTK2::atk``, ``GTK2::atkmm``, ``GTK2::cairo``, ``GTK2::cairomm``, ``GTK2::"
-"gdk_pixbuf``, ``GTK2::gdk``, ``GTK2::gdkmm``, ``GTK2::gio``, ``GTK2::"
-"giomm``, ``GTK2::glade``, ``GTK2::glademm``, ``GTK2::glib``, ``GTK2::"
-"glibmm``, ``GTK2::gmodule``, ``GTK2::gobject``, ``GTK2::gthread``, ``GTK2::"
-"gtk``, ``GTK2::gtkmm``, ``GTK2::harfbuzz``, ``GTK2::pango``, ``GTK2::"
-"pangocairo``, ``GTK2::pangoft2``, ``GTK2::pangomm``, ``GTK2::pangoxft``, "
-"``GTK2::sigc``."
+"find_package(PkgConfig REQUIRED)\n"
+"pkg_check_modules(GTK REQUIRED IMPORTED_TARGET gtk4>=4.14)\n"
+"target_link_libraries(example PRIVATE PkgConfig::GTK)"
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:33
-msgid "Added the ``GTK2::harfbuzz`` target."
+#: ../../../../Modules/FindGTK2.cmake:26
+msgid "Components"
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:37
-msgid "Result Variables"
+#: ../../../../Modules/FindGTK2.cmake:28
+msgid ""
+"This module supports optional components, which can be specified with the :"
+"command:`find_package` command:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:31
+msgid "find_package(GTK2 [COMPONENTS <components>...])"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:35
+msgid "Supported components include:"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:39
-msgid "The following variables will be defined for your use"
+msgid "``atk``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:40
+msgid "``atkmm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:41
-msgid "``GTK2_FOUND``"
+msgid "``cairo``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:42
-msgid "Were all of your specified components found?"
+msgid "``cairomm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:43
-msgid "``GTK2_INCLUDE_DIRS``"
+msgid "``gdk_pixbuf``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:44
-msgid "All include directories"
+msgid "``gdk``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:45
-msgid "``GTK2_LIBRARIES``"
+msgid "``gdkmm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:46
-msgid "All libraries"
+msgid "``gio``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:47
-msgid "``GTK2_TARGETS``"
+msgid "``giomm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:48
-msgid "All imported targets"
+msgid "``glade``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:49
+msgid "``glademm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:50
-msgid "``GTK2_DEFINITIONS``"
+msgid "``glib``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:51
-msgid "Additional compiler flags"
+msgid "``glibmm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:52
-msgid "``GTK2_VERSION``"
+msgid "``gmodule``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:53
-msgid "The version of GTK2 found (x.y.z)"
+msgid "``gobject``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:54
-msgid "``GTK2_MAJOR_VERSION``"
+msgid "``gthread``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:55
-msgid "The major version of GTK2"
+msgid "``gtk``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:56
-msgid "``GTK2_MINOR_VERSION``"
+msgid "``gtkmm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:57
-msgid "The minor version of GTK2"
+msgid "``pango``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:58
-msgid "``GTK2_PATCH_VERSION``"
+msgid "``pangocairo``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:59
-msgid "The patch version of GTK2"
+msgid "``pangoft2``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:60
+msgid "``pangomm``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:61
+msgid "``pangoxft``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:62
+msgid "``sigc``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:64
+msgid "``harfbuzz``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:67
 msgid ""
-"When ``GTK2_USE_IMPORTED_TARGETS`` is set to ``TRUE``, ``GTK2_LIBRARIES`` "
-"will list imported targets instead of library paths."
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:66
-msgid "Input Variables"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:68
-msgid "Optional variables you can define prior to calling this module:"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:70
-msgid "``GTK2_DEBUG``"
+"If no components are specified, module by default searches for the ``gtk`` "
+"component."
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:71
-msgid "Enables verbose debugging of the module"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:72
-msgid "``GTK2_ADDITIONAL_SUFFIXES``"
+msgid "Imported Targets"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:73
-msgid "Allows defining additional directories to search for include files"
+msgid ""
+"This module provides the following :ref:`Imported Targets` (subject to "
+"component selection):"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:76
-msgid "Example Usage"
+msgid "``GTK2::<component>``"
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:78
+#: ../../../../Modules/FindGTK2.cmake:77
 msgid ""
-"Call :command:`find_package` once.  Here are some examples to pick from:"
+"Target encapsulating the specified GTK component usage requirements, "
+"available if GTK and this component are found.  The ``<component>`` should "
+"be written in the same case, as listed above.  For example, use ``GTK2::"
+"gtk`` for the ``gtk`` component, or ``GTK2::gdk_pixbuf`` for the "
+"``gdk_pixbuf`` component, etc."
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:80
-msgid "Require GTK 2.6 or later:"
-msgstr ""
-
-#: ../../../../Modules/FindGTK2.cmake:82
-msgid "find_package(GTK2 2.6 REQUIRED gtk)"
+#: ../../../../Modules/FindGTK2.cmake:83
+msgid "``GTK2::sigc++``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:86
-msgid "Require GTK 2.10 or later and Glade:"
+msgid ""
+"Target encapsulating the usage requirements to enable c++11 on its "
+"dependents when using sigc++ 2.5.1 or higher.  This target is automatically "
+"applied to dependent targets as needed."
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:88
-msgid "find_package(GTK2 2.10 REQUIRED gtk glade)"
+#: ../../../../Modules/FindGTK2.cmake:91
+msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:92
-msgid "Search for GTK/GTKMM 2.8 or later:"
+#: ../../../../Modules/FindGTK2.cmake:93
+msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindGTK2.cmake:94
-msgid "find_package(GTK2 2.8 COMPONENTS gtk gtkmm)"
+#: ../../../../Modules/FindGTK2.cmake:95
+msgid "``GTK2_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:96
+msgid "Boolean indicating whether GTK and all specified components are found."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:97
+msgid "``GTK2_VERSION``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:98
-msgid "Use the results:"
+msgid "The version of GTK found (x.y.z)."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:99
+msgid "``GTK2_MAJOR_VERSION``"
 msgstr ""
 
 #: ../../../../Modules/FindGTK2.cmake:100
+msgid "The major version of GTK found."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:101
+msgid "``GTK2_MINOR_VERSION``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:102
+msgid "The minor version of GTK found."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:103
+msgid "``GTK2_PATCH_VERSION``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:104
+msgid "The patch version of GTK found."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:105
+msgid "``GTK2_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:106
+msgid "Include directories containing headers needed to use GTK."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:107
+msgid "``GTK2_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:108
+msgid "Libraries needed to link against to use GTK."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:109
+msgid "``GTK2_TARGETS``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:112
+msgid "A list of all defined imported targets."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:113
+msgid "``GTK2_DEFINITIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:114
+msgid "Additional compiler flags needed to use GTK."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:117
+msgid "Input Variables"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:119
 msgid ""
-"if(GTK2_FOUND)\n"
-"  include_directories(${GTK2_INCLUDE_DIRS})\n"
-"  add_executable(mygui mygui.cc)\n"
-"  target_link_libraries(mygui ${GTK2_LIBRARIES})\n"
-"endif()"
+"This module accepts the following optional variables before calling the "
+"``find_package(GTK2)``:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:122
+msgid "``GTK2_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:123
+msgid "Boolean variable that enables verbose debugging output of this module."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:125
+msgid "``GTK2_ADDITIONAL_SUFFIXES``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:126
+msgid "A list of additional path suffixes to search for include files."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:128
+msgid "``GTK2_USE_IMPORTED_TARGETS``"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:131
+msgid ""
+"When this variable is set to boolean true, ``GTK2_LIBRARIES`` variable will "
+"contain a list imported targets instead of library paths."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:135
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:138
+msgid "Examples: Finding GTK version 2"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:140
+msgid ""
+"Call :command:`find_package` once.  Here are some examples to pick from."
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:142
+msgid "Require GTK 2.6 or later:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:144
+msgid "find_package(GTK2 2.6 REQUIRED COMPONENTS gtk)"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:148
+msgid "Require GTK 2.10 or later and its Glade component:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:150
+msgid "find_package(GTK2 2.10 REQUIRED COMPONENTS gtk glade)"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:154
+msgid "Search for GTK/GTKMM 2.8 or later:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:156
+msgid "find_package(GTK2 2.8 COMPONENTS gtk gtkmm)"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:160
+msgid "Finding GTK 2 and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:162
+msgid ""
+"find_package(GTK2)\n"
+"add_executable(mygui mygui.cc)\n"
+"target_link_libraries(mygui PRIVATE GTK2::gtk)"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:169
+msgid "Examples: Finding GTK version 3 or later"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:171
+msgid "Finding GTK 3 with :module:`FindPkgConfig` instead of this module:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:173
+msgid ""
+"find_package(PkgConfig REQUIRED)\n"
+"pkg_check_modules(GTK3 REQUIRED IMPORTED_TARGET gtk+-3.0>=3.14)\n"
+"target_link_libraries(example PRIVATE PkgConfig::GTK3)"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:179
+msgid "Or similarly to find GTK 4:"
+msgstr ""
+
+#: ../../../../Modules/FindGTK2.cmake:181
+msgid ""
+"find_package(PkgConfig REQUIRED)\n"
+"pkg_check_modules(GTK4 REQUIRED IMPORTED_TARGET gtk4>=4.14)\n"
+"target_link_libraries(example PRIVATE PkgConfig::GTK4)"
 msgstr ""

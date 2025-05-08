@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -322,6 +322,7 @@ msgid "The keys specific to ``try_compile-v1`` mappings are:"
 msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:212
+#: ../../../manual/cmake-configure-log.7.rst:395
 msgid "``description``"
 msgstr ""
 
@@ -385,6 +386,7 @@ msgstr ""
 
 #: ../../../manual/cmake-configure-log.7.rst:240
 #: ../../../manual/cmake-configure-log.7.rst:306
+#: ../../../manual/cmake-configure-log.7.rst:392
 msgid "``variable``"
 msgstr ""
 
@@ -536,4 +538,192 @@ msgid ""
 "An optional key that is present when the test project built successfully. "
 "Its value is an integer specifying the exit code, or a string containing an "
 "error message, from trying to run the test executable."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:341
+msgid "Event Kind ``find``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:343
+msgid ""
+"The :command:`find_file`, :command:`find_path`, :command:`find_library`, "
+"and :command:`find_program` commands log ``find`` events."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:346
+msgid "There is only one ``find`` event major version, version 1."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:351
+msgid "``find-v1`` Event"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:355
+msgid "A ``find-v1`` event is a YAML mapping:"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:357
+msgid ""
+"kind: \"find-v1\"\n"
+"backtrace:\n"
+"  - \"CMakeLists.txt:456 (find_program)\"\n"
+"mode: \"program\"\n"
+"variable: \"PROGRAM_PATH\"\n"
+"description: \"Docstring for variable\"\n"
+"settings:\n"
+"  SearchFramework: \"NEVER\"\n"
+"  SearchAppBundle: \"NEVER\"\n"
+"  CMAKE_FIND_USE_CMAKE_PATH: true\n"
+"  CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true\n"
+"  CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true\n"
+"  CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true\n"
+"  CMAKE_FIND_USE_INSTALL_PREFIX: true\n"
+"names:\n"
+"  - \"name1\"\n"
+"  - \"name2\"\n"
+"candidate_directories:\n"
+"  - \"/path/to/search\"\n"
+"  - \"/other/path/to/search\"\n"
+"  - \"/path/to/found\"\n"
+"  - \"/further/path/to/search\"\n"
+"searched_directories:\n"
+"  - \"/path/to/search\"\n"
+"  - \"/other/path/to/search\"\n"
+"found: \"/path/to/found/program\""
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:386
+msgid "The keys specific to ``find-v1`` mappings are:"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:388
+msgid "``mode``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:389
+msgid ""
+"A string describing the command using the search performed. One of ``file``, "
+"``path``, ``program``, or ``library``."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:393
+msgid "The variable to which the search stored its result."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:396
+msgid "The documentation string of the variable."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:398
+msgid "``settings``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:399
+msgid "Search settings active for the search."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:401
+msgid "``SearchFramework``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:402
+msgid ""
+"A string describing how framework search is performed. One of ``FIRST``, "
+"``LAST``, ``ONLY``, or ``NEVER``. See :variable:`CMAKE_FIND_FRAMEWORK`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:405
+msgid "``SearchAppBundle``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:406
+msgid ""
+"A string describing how application bundle search is performed. One of "
+"``FIRST``, ``LAST``, ``ONLY``, or ``NEVER``. See :variable:"
+"`CMAKE_FIND_APPBUNDLE`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:410
+msgid "``CMAKE_FIND_USE_CMAKE_PATH``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:411
+msgid ""
+"A boolean indicating whether or not CMake-specific cache variables are used "
+"when searching. See :variable:`CMAKE_FIND_USE_CMAKE_PATH`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:414
+msgid "``CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:415
+msgid ""
+"A boolean indicating whether or not CMake-specific environment variables are "
+"used when searching. See :variable:`CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:419
+msgid "``CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:420
+msgid ""
+"A boolean indicating whether or not platform-specific environment variables "
+"are used when searching. See :variable:"
+"`CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:424
+msgid "``CMAKE_FIND_USE_CMAKE_SYSTEM_PATH``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:425
+msgid ""
+"A boolean indicating whether or not platform-specific CMake variables are "
+"used when searching. See :variable:`CMAKE_FIND_USE_CMAKE_SYSTEM_PATH`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:428
+msgid "``CMAKE_FIND_USE_INSTALL_PREFIX``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:429
+msgid ""
+"A boolean indicating whether or not the install prefix is used when "
+"searching. See :variable:`CMAKE_FIND_USE_INSTALL_PREFIX`."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:432
+msgid "``names``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:433
+msgid "The names to look for the queries."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:435
+msgid "``candidate_directories``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:436
+msgid "Candidate directories, in order, to look in during the search."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:438
+msgid "``searched_directories``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:439
+msgid "Directories, in order, looked at during the search process."
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:441
+msgid "``found``"
+msgstr ""
+
+#: ../../../manual/cmake-configure-log.7.rst:442
+msgid ""
+"Either a string representing the found value or ``false`` if it was not "
+"found."
 msgstr ""

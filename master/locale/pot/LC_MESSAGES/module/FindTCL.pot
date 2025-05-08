@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,86 +125,42 @@ msgstr ""
 msgid "The path to the ``wish`` windowing shell command-line executable."
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:48
-msgid "Changelog"
+#: ../../../../Modules/FindTCL.cmake:49
+msgid "Other Libraries"
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:52
+#: ../../../../Modules/FindTCL.cmake:51
 msgid ""
-"To reduce clutter and clarify usage for users who are not Tcl/Tk experts, "
-"some variables have been removed or relocated.  Many of the previous "
-"variables were primarily useful only when writing Tcl/Tk extensions."
+"The Tcl Stub Library can be found using the separate :module:`FindTclStub` "
+"module."
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:56
-msgid ""
-"The Tcl Stub Library can now be found using the separate :module:"
-"`FindTclStub` module."
-msgstr ""
-
-#: ../../../../Modules/FindTCL.cmake:59
-msgid ""
-"The ``TCL_STUB_LIBRARY_DEBUG`` and ``TK_STUB_LIBRARY_DEBUG`` cache variables "
-"have been removed.  They provided a path to the debug variant of the Tcl "
-"Stub Library."
-msgstr ""
-
-#: ../../../../Modules/FindTCL.cmake:63
-msgid ""
-"The extension-related libraries are not typically packaged with standard Tcl/"
-"Tk distributions.  Even when building Tcl/Tk from source, several debug "
-"variants (e.g., ``tcl84g``, ``tcl84gs``, ``tcl84sgx``, ``tclstub84g``, "
-"``tclstub84gs``, or ``tclstub84sgx``) may be produced."
-msgstr ""
-
-#: ../../../../Modules/FindTCL.cmake:68
-msgid ""
-"Rather than enforcing one specific variant, users are now free to set "
-"``TCL_LIBRARY`` to any desired variant (debug or release) when using this "
-"module, and ``TCL_STUB_LIBRARY`` to any desired variant via the :module:"
-"`FindTclStub` module."
-msgstr ""
-
-#: ../../../../Modules/FindTCL.cmake:73
-msgid ""
-"The ``TK_INTERNAL_PATH`` cache variable has been removed.  It specified the "
-"directory containing the ``tkWinInt.h`` header file."
-msgstr ""
-
-#: ../../../../Modules/FindTCL.cmake:76
-msgid ""
-"This variable was Windows-specific and often caused confusion regarding file "
-"locations within Tcl/Tk installation trees (as seen with version 8.5).  When "
-"internal paths are needed, it's now safer to locate the Tcl/Tk source tree "
-"directly, or use the ``TK_INCLUDE_PATH`` variable instead."
-msgstr ""
-
-#: ../../../../Modules/FindTCL.cmake:82
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:84
+#: ../../../../Modules/FindTCL.cmake:58
 msgid "Finding Tcl:"
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:86
+#: ../../../../Modules/FindTCL.cmake:60
 msgid "find_package(TCL)"
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:91
+#: ../../../../Modules/FindTCL.cmake:65
 msgid "See Also"
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:93
+#: ../../../../Modules/FindTCL.cmake:67
 msgid ""
 "The :module:`FindTclsh` module to find the Tcl shell command-line executable."
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:94
+#: ../../../../Modules/FindTCL.cmake:68
 msgid "The :module:`FindTclStub` module to find the Tcl Stubs Library."
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:95
+#: ../../../../Modules/FindTCL.cmake:69
 msgid ""
 "The :module:`FindWish` module to find the ``wish`` windowing shell command-"
 "line executable ."

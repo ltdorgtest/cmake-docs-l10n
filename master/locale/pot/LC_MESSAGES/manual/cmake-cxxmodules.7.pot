@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,7 +165,7 @@ msgid ""
 msgstr ""
 
 #: ../../../manual/cmake-cxxmodules.7.rst:95
-msgid "Clang 18.1.2 and newer with ``-stdlib=libc++``"
+msgid "Clang 18.1.2 and newer with ``-stdlib=libc++`` or ``-stdlib=libstdc++``"
 msgstr ""
 
 #: ../../../manual/cmake-cxxmodules.7.rst:96
@@ -174,93 +174,97 @@ msgid ""
 "newer)"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:99
+#: ../../../manual/cmake-cxxmodules.7.rst:98
+msgid "GCC 15 and newer."
+msgstr ""
+
+#: ../../../manual/cmake-cxxmodules.7.rst:100
 msgid ""
 "The :variable:`CMAKE_CXX_COMPILER_IMPORT_STD` variable may be used to detect "
 "support for a standard level with the active C++ toolchain."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:104
+#: ../../../manual/cmake-cxxmodules.7.rst:105
 msgid ""
 "This support is provided only when experimental support for ``import std;`` "
 "has been enabled by the ``CMAKE_EXPERIMENTAL_CXX_IMPORT_STD`` gate."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:109
+#: ../../../manual/cmake-cxxmodules.7.rst:110
 msgid "Generator Support"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:111
+#: ../../../manual/cmake-cxxmodules.7.rst:112
 msgid ""
 "The list of generators which support scanning sources for C++ modules "
 "include:"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:113
+#: ../../../manual/cmake-cxxmodules.7.rst:114
 msgid ":generator:`Ninja`"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:114
+#: ../../../manual/cmake-cxxmodules.7.rst:115
 msgid ":generator:`Ninja Multi-Config`"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:115
+#: ../../../manual/cmake-cxxmodules.7.rst:116
 msgid ":generator:`Visual Studio 17 2022`"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:118
+#: ../../../manual/cmake-cxxmodules.7.rst:119
 msgid "Limitations"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:120
+#: ../../../manual/cmake-cxxmodules.7.rst:121
 msgid ""
 "There are a number of known limitations of the current C++ module support in "
 "CMake.  This does not document known limitations or bugs in compilers as "
 "these can change over time."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:124
+#: ../../../manual/cmake-cxxmodules.7.rst:125
 msgid "For all generators:"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:126
+#: ../../../manual/cmake-cxxmodules.7.rst:127
 msgid "Header units are not supported."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:127
+#: ../../../manual/cmake-cxxmodules.7.rst:128
 msgid ""
 "No builtin support for ``import std;`` or other compiler-provided modules."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:129
+#: ../../../manual/cmake-cxxmodules.7.rst:130
 msgid "For the Ninja Generators:"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:131
+#: ../../../manual/cmake-cxxmodules.7.rst:132
 msgid "``ninja`` 1.11 or newer is required."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:133
+#: ../../../manual/cmake-cxxmodules.7.rst:134
 msgid "For the :ref:`Visual Studio Generators`:"
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:135
+#: ../../../manual/cmake-cxxmodules.7.rst:136
 msgid ""
 "Only Visual Studio 2022 and MSVC toolsets 14.34 (Visual Studio 17.4) and "
 "newer."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:137
+#: ../../../manual/cmake-cxxmodules.7.rst:138
 msgid "No support for exporting or installing BMI or module information."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:138
+#: ../../../manual/cmake-cxxmodules.7.rst:139
 msgid ""
 "No support for compiling BMIs from ``IMPORTED`` targets with C++ modules "
 "(including ``import std``)."
 msgstr ""
 
-#: ../../../manual/cmake-cxxmodules.7.rst:140
+#: ../../../manual/cmake-cxxmodules.7.rst:141
 msgid ""
 "No diagnosis of using modules provided by ``PRIVATE`` sources from "
 "``PUBLIC`` module sources."

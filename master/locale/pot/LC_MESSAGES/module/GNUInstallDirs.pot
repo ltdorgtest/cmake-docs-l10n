@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -273,10 +273,16 @@ msgid ""
 msgstr ""
 
 #: ../../../../Modules/GNUInstallDirs.cmake:132
+msgid ""
+"The ``CMAKE_INSTALL_<dir>`` variables are cached with the ``usr/`` prefix. "
+"See policy :policy:`CMP0193`."
+msgstr ""
+
+#: ../../../../Modules/GNUInstallDirs.cmake:136
 msgid "``/usr``"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:134
+#: ../../../../Modules/GNUInstallDirs.cmake:138
 msgid ""
 "For ``<dir>`` equal to ``SYSCONFDIR``, ``LOCALSTATEDIR`` or ``RUNSTATEDIR``, "
 "the ``CMAKE_INSTALL_FULL_<dir>`` is computed by prepending just ``/`` to the "
@@ -285,7 +291,7 @@ msgid ""
 "by the `GNU Coding Standards`_."
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:141
+#: ../../../../Modules/GNUInstallDirs.cmake:145
 msgid ""
 "The default values of ``CMAKE_INSTALL_<dir>`` for ``<dir>`` equal to "
 "``SYSCONFDIR``, ``LOCALSTATEDIR`` and ``RUNSTATEDIR`` are the absolute paths "
@@ -293,11 +299,11 @@ msgid ""
 "`CMP0192`."
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:147
+#: ../../../../Modules/GNUInstallDirs.cmake:151
 msgid "``/opt/...``"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:149
+#: ../../../../Modules/GNUInstallDirs.cmake:153
 msgid ""
 "For ``<dir>`` equal to ``SYSCONFDIR``, ``LOCALSTATEDIR`` or ``RUNSTATEDIR``, "
 "the ``CMAKE_INSTALL_FULL_<dir>`` is computed by *appending* the prefix to "
@@ -306,11 +312,11 @@ msgid ""
 "is defined by the `Filesystem Hierarchy Standard`_."
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:156
+#: ../../../../Modules/GNUInstallDirs.cmake:160
 msgid "This behavior does not apply to paths under ``/opt/homebrew/...``."
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:158
+#: ../../../../Modules/GNUInstallDirs.cmake:162
 msgid ""
 "The default values of ``CMAKE_INSTALL_<dir>`` for ``<dir>`` equal to "
 "``SYSCONFDIR``, ``LOCALSTATEDIR`` and ``RUNSTATEDIR`` are the absolute paths "
@@ -318,27 +324,32 @@ msgid ""
 "See policy :policy:`CMP0192`."
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:167
-msgid "Macros"
+#: ../../../../Modules/GNUInstallDirs.cmake:171
+msgid "Functions"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:171
+#: ../../../../Modules/GNUInstallDirs.cmake:175
 msgid "GNUInstallDirs_get_absolute_install_dir(absvar var dirname)"
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:177
+#: ../../../../Modules/GNUInstallDirs.cmake:181
 msgid ""
 "Set the given variable ``absvar`` to the absolute path contained within the "
 "variable ``var``.  This is to allow the computation of an absolute path, "
-"accounting for all the special cases documented above.  While this macro is "
-"used to compute the various ``CMAKE_INSTALL_FULL_<dir>`` variables, it is "
+"accounting for all the special cases documented above.  While this function "
+"is used to compute the various ``CMAKE_INSTALL_FULL_<dir>`` variables, it is "
 "exposed publicly to allow users who create additional path variables to also "
 "compute absolute paths where necessary, using the same logic.  ``dirname`` "
 "is the directory name to get, e.g. ``BINDIR``."
 msgstr ""
 
-#: ../../../../Modules/GNUInstallDirs.cmake:186
+#: ../../../../Modules/GNUInstallDirs.cmake:190
 msgid ""
 "Added the ``<dirname>`` parameter.  Previous versions of CMake passed this "
 "value through the variable ``${dir}``."
+msgstr ""
+
+#: ../../../../Modules/GNUInstallDirs.cmake:194
+msgid ""
+"The ``var`` variable is no longer altered. See policy :policy:`CMP0193`."
 msgstr ""

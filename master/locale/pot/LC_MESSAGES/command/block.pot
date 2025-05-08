@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,29 +92,32 @@ msgstr ""
 msgid ""
 "set(var1 \"INIT1\")\n"
 "set(var2 \"INIT2\")\n"
+"set(var3 \"INIT3\")\n"
 "\n"
 "block(PROPAGATE var1 var2)\n"
 "  set(var1 \"VALUE1\")\n"
 "  unset(var2)\n"
+"  set(var3 \"VALUE3\")\n"
 "endblock()\n"
 "\n"
-"# Now var1 holds VALUE1, and var2 is unset"
+"# Now var1 holds VALUE1, var2 is unset, and var3 holds the initial value "
+"INIT3"
 msgstr ""
 
-#: ../../../command/block.rst:54
+#: ../../../command/block.rst:56
 msgid ""
 "This option is only allowed when a variable scope is created. An error will "
 "be raised in the other cases."
 msgstr ""
 
-#: ../../../command/block.rst:57
+#: ../../../command/block.rst:59
 msgid ""
 "When the ``block()`` is inside a :command:`foreach` or :command:`while` "
 "command, the :command:`break` and :command:`continue` commands can be used "
 "inside the block."
 msgstr ""
 
-#: ../../../command/block.rst:61
+#: ../../../command/block.rst:63
 msgid ""
 "while(TRUE)\n"
 "  block()\n"
@@ -125,18 +128,18 @@ msgid ""
 "endwhile()"
 msgstr ""
 
-#: ../../../command/block.rst:73
+#: ../../../command/block.rst:75
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/block.rst:75
+#: ../../../command/block.rst:77
 msgid ":command:`endblock`"
 msgstr ""
 
-#: ../../../command/block.rst:76
+#: ../../../command/block.rst:78
 msgid ":command:`return`"
 msgstr ""
 
-#: ../../../command/block.rst:77
+#: ../../../command/block.rst:79
 msgid ":command:`cmake_policy`"
 msgstr ""

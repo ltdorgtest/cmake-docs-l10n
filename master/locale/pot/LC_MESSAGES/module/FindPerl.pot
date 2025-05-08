@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,34 +49,34 @@ msgstr ""
 msgid "``PERL_VERSION_STRING``"
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:23
+#: ../../../../Modules/FindPerl.cmake:21
 msgid "The version of Perl found."
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:26
+#: ../../../../Modules/FindPerl.cmake:24
 msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:28
+#: ../../../../Modules/FindPerl.cmake:26
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:30
+#: ../../../../Modules/FindPerl.cmake:28
 msgid "``PERL_EXECUTABLE``"
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:31
+#: ../../../../Modules/FindPerl.cmake:29
 msgid "Full path to the ``perl`` executable."
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:34
+#: ../../../../Modules/FindPerl.cmake:32
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:36
+#: ../../../../Modules/FindPerl.cmake:34
 msgid "Finding the Perl interpreter:"
 msgstr ""
 
-#: ../../../../Modules/FindPerl.cmake:38
+#: ../../../../Modules/FindPerl.cmake:36
 msgid "find_package(Perl)"
 msgstr ""

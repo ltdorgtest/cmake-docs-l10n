@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,61 +73,61 @@ msgstr ""
 msgid "``CUPS_VERSION_STRING``"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:34
+#: ../../../../Modules/FindCups.cmake:32
 msgid "The version of CUPS found."
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:37
+#: ../../../../Modules/FindCups.cmake:35
 msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:39
+#: ../../../../Modules/FindCups.cmake:37
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:41
+#: ../../../../Modules/FindCups.cmake:39
 msgid "``CUPS_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:42
+#: ../../../../Modules/FindCups.cmake:40
 msgid "The directory containing the CUPS headers."
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:43
+#: ../../../../Modules/FindCups.cmake:41
 msgid "``CUPS_LIBRARIES``"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:44
+#: ../../../../Modules/FindCups.cmake:42
 msgid "Libraries needed to link against to use CUPS."
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:47
+#: ../../../../Modules/FindCups.cmake:45
 msgid "Hints"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:49
+#: ../../../../Modules/FindCups.cmake:47
 msgid "This module accepts the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:51
+#: ../../../../Modules/FindCups.cmake:49
 msgid "``CUPS_REQUIRE_IPP_DELETE_ATTRIBUTE``"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:52
+#: ../../../../Modules/FindCups.cmake:50
 msgid ""
 "Set this variable to ``TRUE`` to require CUPS version which features the "
 "``ippDeleteAttribute()`` function (i.e. at least of CUPS ``1.1.19``)."
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:56
+#: ../../../../Modules/FindCups.cmake:54
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:58
+#: ../../../../Modules/FindCups.cmake:56
 msgid "Finding CUPS and linking it to a project target:"
 msgstr ""
 
-#: ../../../../Modules/FindCups.cmake:60
+#: ../../../../Modules/FindCups.cmake:58
 msgid ""
 "find_package(Cups)\n"
 "target_link_libraries(project_target PRIVATE Cups::Cups)"

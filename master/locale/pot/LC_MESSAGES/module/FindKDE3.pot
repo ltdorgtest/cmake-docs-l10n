@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -319,37 +319,13 @@ msgid ""
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:193
-msgid "Deprecated Variables"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:195
-msgid ""
-"The following variables have been either removed or are provided for "
-"backward compatibility:"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:198
-msgid "``KDE3_ENABLE_FINAL``"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:199
-msgid "This variable is now removed and no longer supported."
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:202
-msgid ""
-"This hint variable was provided as an option in earlier CMake versions to "
-"enable all-in-one compilation."
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:206
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:208
+#: ../../../../Modules/FindKDE3.cmake:195
 msgid "Finding KDE 3:"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:210
+#: ../../../../Modules/FindKDE3.cmake:197
 msgid "find_package(KDE3)"
 msgstr ""

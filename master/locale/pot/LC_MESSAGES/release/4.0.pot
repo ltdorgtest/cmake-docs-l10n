@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -407,23 +407,34 @@ msgstr ""
 
 #: ../../../release/4.0.rst:232
 msgid ""
-"Builds targeting macOS no longer choose any SDK or pass an ``-isysroot`` "
-"flag to the compiler by default.  Instead, compilers are expected to choose "
-"a default macOS SDK on their own.  In order to use a compiler that does not "
-"do this, users must now specify :variable:`CMAKE_OSX_SYSROOT` when "
-"configuring their build, e.g., ``-DCMAKE_OSX_SYSROOT=macosx``."
+"In builds targeting macOS, :variable:`CMAKE_OSX_SYSROOT` now defaults to "
+"empty, deferring to the compiler's default macOS SDK selection.  In order to "
+"pass an explicit macOS SDK via the compiler's ``-isysroot`` flag, users may "
+"configure their build tree with ``-DCMAKE_OSX_SYSROOT=macosx``, or ``export "
+"SDKROOT=\"$(xcrun --sdk macosx --show-sdk-path)\"`` in their environment."
 msgstr ""
 
-#: ../../../release/4.0.rst:238
+#: ../../../release/4.0.rst:239
+msgid "Notes:"
+msgstr ""
+
+#: ../../../release/4.0.rst:241
 msgid ""
-"Note that Xcode's compilers, when not invoked with ``-isysroot``, search for "
-"headers in ``/usr/local/include`` before system SDK paths, matching the "
+"macOS compilers in ``/usr/bin``, when not invoked with ``-isysroot``, search "
+"for headers in ``/usr/local/include`` before system SDK paths, matching the "
 "convention on many platforms.  Users on macOS-x86_64 hosts with Homebrew "
-"installed in ``/usr/local`` should pass ``-DCMAKE_OSX_SYSROOT=macosx``, or "
-"``export SDKROOT=macosx``, when not building with Homebrew tools."
+"installed in ``/usr/local`` should pass an explicit SDK, as described above, "
+"when not building with Homebrew tools."
 msgstr ""
 
-#: ../../../release/4.0.rst:244
+#: ../../../release/4.0.rst:247
+msgid ""
+"Some Clang compilers have no default macOS SDK selection.  For these, if :"
+"variable:`CMAKE_OSX_SYSROOT` is empty, CMake will automatically pass ``-"
+"isysroot`` with the macOS SDK printed by ``xcrun --show-sdk-path``."
+msgstr ""
+
+#: ../../../release/4.0.rst:251
 msgid ""
 "On Windows, file paths named in project code, e.g., in ``CMakeLists.txt``, "
 "are no longer automatically converted to their on-disk upper/lower case. "
@@ -433,13 +444,13 @@ msgid ""
 "matches the behavior on platforms with case-sensitive filesystems."
 msgstr ""
 
-#: ../../../release/4.0.rst:251
+#: ../../../release/4.0.rst:258
 msgid ""
 "On AIX, ``SHARED`` library targets now produce a shared library archive by "
 "default.  See policy :policy:`CMP0182`."
 msgstr ""
 
-#: ../../../release/4.0.rst:254
+#: ../../../release/4.0.rst:261
 msgid ""
 "The :option:`cmake --preset` command no longer outputs a summary of the "
 "preset's CMake cache and environment variables by default.  That summary is "
@@ -448,27 +459,48 @@ msgid ""
 "`CMAKE_MESSAGE_LOG_LEVEL` cache variable."
 msgstr ""
 
-#: ../../../release/4.0.rst:260
+#: ../../../release/4.0.rst:267
 msgid ""
 "Precompiled SunOS ``sparc64`` and ``x86_64`` binaries are now provided on "
 "`cmake.org`_."
 msgstr ""
 
-#: ../../../release/4.0.rst:266
+#: ../../../release/4.0.rst:273
 msgid "Updates"
 msgstr ""
 
-#: ../../../release/4.0.rst:268
+#: ../../../release/4.0.rst:275
 msgid "Changes made since CMake 4.0.0 include the following."
 msgstr ""
 
-#: ../../../release/4.0.rst:271
+#: ../../../release/4.0.rst:278
 msgid "4.0.1"
 msgstr ""
 
-#: ../../../release/4.0.rst:273
+#: ../../../release/4.0.rst:280
 msgid ""
 "This version made no changes to documented features or interfaces. Some "
 "implementation updates were made to support ecosystem changes and/or fix "
 "regressions."
+msgstr ""
+
+#: ../../../release/4.0.rst:285
+msgid "4.0.2"
+msgstr ""
+
+#: ../../../release/4.0.rst:287
+msgid ""
+"When building for macOS with a Clang that has no default macOS SDK, if :"
+"variable:`CMAKE_OSX_SYSROOT` is empty, CMake now automatically passes ``-"
+"isysroot`` with the macOS SDK printed by ``xcrun --show-sdk-path``. This "
+"restores support for using LLVM/Clang on macOS without manually setting "
+"``CMAKE_OSX_SYSROOT``, which was broken by CMake 4.0.0's removal of a "
+"default value."
+msgstr ""
+
+#: ../../../release/4.0.rst:294
+msgid ""
+"The :prop_tgt:`DEBUGGER_WORKING_DIRECTORY` target property is now used by "
+"the :generator:`Xcode` generator as a fallback for the :prop_tgt:"
+"`XCODE_SCHEME_WORKING_DIRECTORY` target property."
 msgstr ""

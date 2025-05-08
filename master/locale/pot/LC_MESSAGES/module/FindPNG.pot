@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,43 +94,43 @@ msgstr ""
 msgid "``PNG_VERSION_STRING``"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:43
+#: ../../../../Modules/FindPNG.cmake:41
 msgid "The version of the PNG library found."
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:46
+#: ../../../../Modules/FindPNG.cmake:44
 msgid "Obsolete Variables"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:48
+#: ../../../../Modules/FindPNG.cmake:46
 msgid "The following variables may also be set for backward compatibility:"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:50
+#: ../../../../Modules/FindPNG.cmake:48
 msgid "``PNG_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:51
+#: ../../../../Modules/FindPNG.cmake:49
 msgid "Path to the PNG library."
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:52
+#: ../../../../Modules/FindPNG.cmake:50
 msgid "``PNG_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:53
+#: ../../../../Modules/FindPNG.cmake:51
 msgid "Directory containing the PNG headers (same as ``PNG_INCLUDE_DIRS``)."
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:56
+#: ../../../../Modules/FindPNG.cmake:54
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:58
+#: ../../../../Modules/FindPNG.cmake:56
 msgid "Finding PNG library and using it in a project:"
 msgstr ""
 
-#: ../../../../Modules/FindPNG.cmake:60
+#: ../../../../Modules/FindPNG.cmake:58
 msgid ""
 "find_package(PNG)\n"
 "target_link_libraries(project_target PRIVATE PNG::PNG)"

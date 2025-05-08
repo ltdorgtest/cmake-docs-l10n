@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,76 +21,172 @@ msgstr ""
 msgid "FindosgTerrain"
 msgstr ""
 
-#: ../../../../Modules/FindosgTerrain.cmake:10
+#: ../../../../Modules/FindosgTerrain.cmake:8
+msgid "Finds the osgTerrain NodeKit from the OpenSceneGraph toolkit."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:12
 msgid ""
-"This is part of the ``Findosg*`` suite used to find OpenSceneGraph "
-"components.  Each component is separate and you must opt in to each module.  "
-"You must also opt into OpenGL and OpenThreads (and Producer if needed) as "
-"these modules won't do it for you.  This is to allow you control over your "
-"own system piece by piece in case you need to opt out of certain components "
-"or change the Find behavior for a particular module (perhaps because the "
-"default :module:`FindOpenGL` module doesn't work with your system as an "
-"example).  If you want to use a more convenient module that includes "
-"everything, use the :module:`FindOpenSceneGraph` instead of the ``Findosg*."
-"cmake`` modules."
+"In most cases, it's recommended to use the :module:`FindOpenSceneGraph` "
+"module instead and list osgTerrain as a component.  This will automatically "
+"handle dependencies such as the OpenThreads and core osg libraries:"
 msgstr ""
 
-#: ../../../../Modules/FindosgTerrain.cmake:21
-msgid "Locate osgTerrain This module defines:"
+#: ../../../../Modules/FindosgTerrain.cmake:16
+msgid "find_package(OpenSceneGraph COMPONENTS osgTerrain)"
 msgstr ""
 
-#: ../../../../Modules/FindosgTerrain.cmake:23
-msgid "``OSGTERRAIN_FOUND``"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:24
-msgid "Was osgTerrain found?"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:25
-msgid "``OSGTERRAIN_INCLUDE_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:26
-msgid "Where to find the headers"
+#: ../../../../Modules/FindosgTerrain.cmake:20
+msgid ""
+"This module is used internally by :module:`FindOpenSceneGraph` to find the "
+"osgTerrain NodeKit.  It is not intended to be included directly during "
+"typical use of the :command:`find_package` command.  However, it is "
+"available as a standalone module for advanced use cases where finer control "
+"over detection is needed.  For example, to find the osgTerrain explicitly or "
+"bypass automatic component detection:"
 msgstr ""
 
 #: ../../../../Modules/FindosgTerrain.cmake:27
-msgid "``OSGTERRAIN_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:28
-msgid "The libraries to link for osgTerrain (use this)"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:29
-msgid "``OSGTERRAIN_LIBRARY``"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:30
-msgid "The osgTerrain library"
+msgid "find_package(osgTerrain)"
 msgstr ""
 
 #: ../../../../Modules/FindosgTerrain.cmake:31
-msgid "``OSGTERRAIN_LIBRARY_DEBUG``"
-msgstr ""
-
-#: ../../../../Modules/FindosgTerrain.cmake:32
-msgid "The osgTerrain debug library"
+msgid ""
+"OpenSceneGraph and osgTerrain headers are intended to be included in C++ "
+"project source code as:"
 msgstr ""
 
 #: ../../../../Modules/FindosgTerrain.cmake:34
-msgid "``$OSGDIR`` is an environment variable that would correspond to::"
+msgid "``example.cxx``"
 msgstr ""
 
-#: ../../../../Modules/FindosgTerrain.cmake:36
-msgid "./configure --prefix=$OSGDIR"
+#: ../../../../Modules/FindosgTerrain.cmake:34
+msgid ""
+"#include <osg/PositionAttitudeTransform>\n"
+"#include <osgTerrain/Terrain>\n"
+"// ..."
 msgstr ""
 
-#: ../../../../Modules/FindosgTerrain.cmake:38
-msgid "used in building osg."
+#: ../../../../Modules/FindosgTerrain.cmake:41
+msgid ""
+"When working with the OpenSceneGraph toolkit, other libraries such as OpenGL "
+"may also be required."
 msgstr ""
 
-#: ../../../../Modules/FindosgTerrain.cmake:40
-msgid "Created by Eric Wing."
+#: ../../../../Modules/FindosgTerrain.cmake:45
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:47
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:49
+msgid "``osgTerrain_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:50
+msgid ""
+"Boolean indicating whether the osgTerrain NodeKit of the OpenSceneGraph "
+"toolkit is found.  For backward compatibility, the ``OSGTERRAIN_FOUND`` "
+"variable is also set to the same value."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:54
+msgid "``OSGTERRAIN_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:55
+msgid "The libraries needed to link against to use osgTerrain."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:57
+msgid "``OSGTERRAIN_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:58
+msgid ""
+"A result variable that is set to the same value as the "
+"``OSGTERRAIN_LIBRARIES`` variable."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:62
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:64
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:66
+msgid "``OSGTERRAIN_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:67
+msgid "The include directory containing headers needed to use osgTerrain."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:69
+msgid "``OSGTERRAIN_LIBRARY_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:70
+msgid "The path to the osgTerrain debug library."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:73
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:75
+msgid "This module accepts the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:77
+msgid "``OSGDIR``"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:78
+msgid ""
+"Environment variable that can be set to help locate the OpenSceneGraph "
+"toolkit, including its osgTerrain NodeKit, when installed in a custom "
+"location.  It should point to the OpenSceneGraph installation prefix used "
+"when it was configured, built, and installed: ``./configure --"
+"prefix=$OSGDIR``."
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:84
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:86
+msgid ""
+"Finding osgTerrain explicitly with this module and creating an interface :"
+"ref:`imported target <Imported Targets>` that encapsulates its usage "
+"requirements for linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:90
+msgid ""
+"find_package(osgTerrain)\n"
+"\n"
+"if(osgTerrain_FOUND AND NOT TARGET osgTerrain::osgTerrain)\n"
+"  add_library(osgTerrain::osgTerrain INTERFACE IMPORTED)\n"
+"  set_target_properties(\n"
+"    osgTerrain::osgTerrain\n"
+"    PROPERTIES\n"
+"      INTERFACE_INCLUDE_DIRECTORIES \"${OSGTERRAIN_INCLUDE_DIR}\"\n"
+"      INTERFACE_LINK_LIBRARIES \"${OSGTERRAIN_LIBRARIES}\"\n"
+"  )\n"
+"endif()\n"
+"\n"
+"target_link_libraries(example PRIVATE osgTerrain::osgTerrain)"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:107
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/FindosgTerrain.cmake:109
+msgid "The :module:`FindOpenSceneGraph` module to find OpenSceneGraph toolkit."
 msgstr ""

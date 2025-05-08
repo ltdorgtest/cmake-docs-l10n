@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -239,7 +239,7 @@ msgstr ""
 
 #: ../../../release/3.4.rst:120
 msgid ""
-"The :module:`FindBISON` module ``BISON_TARGET`` macro learned a new "
+"The :module:`FindBISON` module ``bison_target()`` command learned a new "
 "``DEFINES_FILE`` option to specify a custom output header to be generated."
 msgstr ""
 
@@ -280,7 +280,7 @@ msgstr ""
 #: ../../../release/3.4.rst:142
 msgid ""
 "The :module:`FindProtobuf` module gained a new :command:"
-"`protobuf_generate_python` function to generate python sources from ``."
+"`protobuf_generate_python` command to generate Python sources from ``."
 "proto`` files."
 msgstr ""
 

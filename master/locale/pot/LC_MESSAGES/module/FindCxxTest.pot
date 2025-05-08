@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,191 +22,266 @@ msgid "FindCxxTest"
 msgstr ""
 
 #: ../../../../Modules/FindCxxTest.cmake:8
-msgid "Find CxxTest unit testing framework."
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:10
 msgid ""
-"Find the `CxxTest`_ suite and declare a helper macro for creating unit tests "
-"and integrating them with CTest."
+"Finds `CxxTest`_, a C++ unit testing framework suite, and provides a helper "
+"command to create test runners and integrate them with CTest."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:16
-msgid "Input Variables"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:18
-msgid "``CXXTEST_USE_PYTHON``"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:21
-msgid ""
-"Only used in the case both Python & Perl are detected on the system to "
-"control which CxxTest code generator is used. Valid only for CxxTest version "
-"3."
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:26
-msgid ""
-"In older versions of this Find Module, this variable controlled if the "
-"Python test generator was used instead of the Perl one, regardless of which "
-"scripting language the user had installed."
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:32
-msgid "``CXXTEST_TESTGEN_ARGS``"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:35
-msgid ""
-"Specify a list of options to pass to the CxxTest code generator.  If not "
-"defined, ``--error-printer`` is passed."
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:39
+#: ../../../../Modules/FindCxxTest.cmake:14
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:41
+#: ../../../../Modules/FindCxxTest.cmake:16
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:18
 msgid "``CXXTEST_FOUND``"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:42
-msgid "True if the CxxTest framework was found"
+#: ../../../../Modules/FindCxxTest.cmake:19
+msgid "Boolean indicating whether the CxxTest framework is found."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:44
+#: ../../../../Modules/FindCxxTest.cmake:21
 msgid "``CXXTEST_INCLUDE_DIRS``"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:45
-msgid "Where to find the CxxTest include directory"
+#: ../../../../Modules/FindCxxTest.cmake:22
+msgid "Include directories containing headers needed to use CxxTest."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:47
-msgid "``CXXTEST_PERL_TESTGEN_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:48
-msgid "The perl-based test generator"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:50
-msgid "``CXXTEST_PYTHON_TESTGEN_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:51
-msgid "The python-based test generator"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:53
+#: ../../../../Modules/FindCxxTest.cmake:24
 msgid "``CXXTEST_TESTGEN_EXECUTABLE``"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:56
+#: ../../../../Modules/FindCxxTest.cmake:25
 msgid ""
-"The test generator that is actually used (chosen using user preferences and "
-"interpreters found in the system)"
+"The path to the found CxxTest test generator script (Perl- or Python-based), "
+"selected based on the found interpreter or user-specified preference."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:59
+#: ../../../../Modules/FindCxxTest.cmake:28
 msgid "``CXXTEST_TESTGEN_INTERPRETER``"
 msgstr ""
 
+#: ../../../../Modules/FindCxxTest.cmake:29
+msgid ""
+"The path to the found Perl or Python interpreter used to run the test "
+"generator script, if needed (e.g., on platforms where script shebang lines "
+"are not supported)."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:34
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:36
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:38
+msgid "``CXXTEST_PERL_TESTGEN_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:39
+msgid "The path to the Perl-based CxxTest test generator script."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:41
+msgid "``CXXTEST_PYTHON_TESTGEN_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:42
+msgid "The path to the Python-based CxxTest test generator script."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:45
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:47
+msgid ""
+"This module accepts the following variables before calling "
+"``find_package(CxxTest)``:"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:50
+msgid "``CXXTEST_TESTGEN_ARGS``"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:51
+msgid ""
+"This variable can be set to specify a semicolon-separated list of command-"
+"line options to pass to the CxxTest code generator.  If not set, the default "
+"value is ``--error-printer``."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:56
+msgid "Commands"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:58
+msgid "This module provides the following command if CxxTest is found:"
+msgstr ""
+
 #: ../../../../Modules/FindCxxTest.cmake:62
+msgid "Creates a CxxTest runner and adds it to the CTest testing suite:"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:64
 msgid ""
-"The full path to the Perl or Python executable on the system, on platforms "
-"where the script cannot be executed using its shebang line."
+"cxxtest_add_test(<test-name> <gen-source-file> <input-files-to-testgen>...)"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:67
-msgid "Module Commands"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:71
-msgid "Create a CxxTest runner and adds it to the CTest testing suite:"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:73
-msgid ""
-"CXXTEST_ADD_TEST(<test_name> <gen_source_file>\n"
-"                 <input_files_to_testgen>...)"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:78
+#: ../../../../Modules/FindCxxTest.cmake:68
 msgid "Parameters:"
 msgstr ""
 
+#: ../../../../Modules/FindCxxTest.cmake:70
+msgid "``<test-name>``"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:71
+msgid ""
+"The name of the test executable target to be created and registered as a "
+"test in the CTest suite."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:74
+msgid "``<gen-source-file>``"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:75
+msgid ""
+"The name of the source file to be generated by the CxxTest code generator. "
+"This must be a relative path.  It is interpreted relative to the current "
+"binary directory (:variable:`CMAKE_CURRENT_BINARY_DIR`)."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:79
+msgid "``<input-files-to-testgen>``"
+msgstr ""
+
 #: ../../../../Modules/FindCxxTest.cmake:80
-msgid "``test_name``"
+msgid ""
+"A list of header files containing test suite classes derived from the C++ "
+"class ``CxxTest::TestSuite``, to be included in the test runner.  These must "
+"be given as absolute paths."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:81
-msgid "The name of the test"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:83
-msgid "``gen_source_file``"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:84
-msgid "The generated source filename to be generated by CxxTest"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:86
-msgid "``input_files_to_testgen``"
+#: ../../../../Modules/FindCxxTest.cmake:85
+msgid "Deprecated Variables"
 msgstr ""
 
 #: ../../../../Modules/FindCxxTest.cmake:87
 msgid ""
-"The list of header files containing the CxxTest::TestSuite's to be included "
-"in this runner"
+"The following variables are deprecated and provided for backward "
+"compatibility:"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:91
-msgid "Example Usage"
+#: ../../../../Modules/FindCxxTest.cmake:89
+msgid "``CXXTEST_USE_PYTHON``"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:93
-msgid "The following example, if CxxTest is found, will:"
-msgstr ""
-
-#: ../../../../Modules/FindCxxTest.cmake:95
+#: ../../../../Modules/FindCxxTest.cmake:90
 msgid ""
-"Invoke the testgen executable to autogenerate foo_test.cc in the binary tree "
-"from \"foo_test.h\" in the current source directory."
+"In earlier versions of CMake, this hint variable was used to force the use "
+"of the Python-based test generator instead of the Perl one, regardless of "
+"which scripting language was installed.  It is now only considered when both "
+"Perl and Python interpreters are found."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:97
-msgid "Create an executable and test called unittest_foo."
+#: ../../../../Modules/FindCxxTest.cmake:96
+msgid ""
+"A boolean hint variable that, when set to true, prefers the Python code "
+"generator over the Perl one if both interpreters are found.  This variable "
+"is only relevant when using CxxTest version 3."
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:99
+#: ../../../../Modules/FindCxxTest.cmake:101
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:103
+msgid ""
+"The following example demonstrates how CxxTest can be used in CMake with "
+"this module.  If CxxTest is found:"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:106
+msgid ""
+"Additional interface :ref:`imported target <Imported Targets>` is created "
+"manually in the project to encapsulate the CxxTest usage requirements and "
+"link it to specified tests.  Such target is useful, for example, when "
+"dealing with multiple tests."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:111
+msgid ""
+"Test generator is invoked to create ``foo_test.cc`` in the current binary "
+"directory from the input header ``foo_test.h`` located in the current source "
+"directory."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:115
+msgid ""
+"An executable named ``unit_test_foo`` is built and registered as a test in "
+"CTest."
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:118
+msgid "``CMakeLists.txt``"
+msgstr ""
+
+#: ../../../../Modules/FindCxxTest.cmake:118
 msgid ""
 "find_package(CxxTest)\n"
+"\n"
+"# Create interface imported target:\n"
+"if(CXXTEST_FOUND AND NOT TARGET CxxTest::CxxTest)\n"
+"  add_library(CxxTest::CxxTest INTERFACE IMPORTED)\n"
+"  set_target_properties(\n"
+"    CxxTest::CxxTest\n"
+"    PROPERTIES INTERFACE_INCLUDE_DIRECTORIES \"${CXXTEST_INCLUDE_DIRS}\"\n"
+"  )\n"
+"endif()\n"
+"\n"
+"# Add test:\n"
 "if(CXXTEST_FOUND)\n"
-"  include_directories(${CXXTEST_INCLUDE_DIR})\n"
 "  enable_testing()\n"
-"  CXXTEST_ADD_TEST(unittest_foo foo_test.cc\n"
-"                   ${CMAKE_CURRENT_SOURCE_DIR}/foo_test.h)\n"
-"  target_link_libraries(unittest_foo foo) # as needed\n"
+"\n"
+"  cxxtest_add_test(\n"
+"    unit_test_foo\n"
+"    foo_test.cc\n"
+"    ${CMAKE_CURRENT_SOURCE_DIR}/foo_test.h\n"
+"  )\n"
+"\n"
+"  target_link_libraries(\n"
+"    unit_test_foo\n"
+"    PRIVATE\n"
+"      CxxTest::CxxTest\n"
+"      # Link any project targets as needed, if test depends on them:\n"
+"      foo\n"
+"  )\n"
 "endif()"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:110
-msgid "``foo_test.h`` contains:"
+#: ../../../../Modules/FindCxxTest.cmake:151
+msgid "``foo_test.h``"
 msgstr ""
 
-#: ../../../../Modules/FindCxxTest.cmake:112
+#: ../../../../Modules/FindCxxTest.cmake:151
 msgid ""
 "#include <cxxtest/TestSuite.h>\n"
+"\n"
 "class MyTestSuite : public CxxTest::TestSuite\n"
 "{\n"
 "public:\n"
-"   void testAddition( void )\n"
-"   {\n"
-"      TS_ASSERT( 1 + 1 > 1 );\n"
-"      TS_ASSERT_EQUALS( 1 + 1, 2 );\n"
-"   }\n"
+"  void testAddition(void)\n"
+"  {\n"
+"    TS_ASSERT(1 + 1 > 1);\n"
+"    TS_ASSERT_EQUALS(1 + 1, 2);\n"
+"  }\n"
 "};"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,7 +301,7 @@ msgstr ""
 
 #: ../../../release/3.7.rst:171
 msgid ""
-"The :module:`FindBISON` module ``BISON_TARGET`` macro learned a new "
+"The :module:`FindBISON` module ``bison_target()`` command learned a new "
 "``REPORT_FILE`` option to specify the bison ``--report-file=`` option."
 msgstr ""
 

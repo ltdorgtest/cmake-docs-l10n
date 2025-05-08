@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-05-08 10:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,51 +97,51 @@ msgstr ""
 msgid "``LIBXML2_VERSION_STRING``"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:43
+#: ../../../../Modules/FindLibXml2.cmake:41
 msgid "The version of the libxml2 found."
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:46
+#: ../../../../Modules/FindLibXml2.cmake:44
 msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:48
+#: ../../../../Modules/FindLibXml2.cmake:46
 msgid "The following cache variables may also be set:"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:50
+#: ../../../../Modules/FindLibXml2.cmake:48
 msgid "``LIBXML2_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:51
+#: ../../../../Modules/FindLibXml2.cmake:49
 msgid "The include directory containing libxml2 headers."
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:52
+#: ../../../../Modules/FindLibXml2.cmake:50
 msgid "``LIBXML2_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:53
+#: ../../../../Modules/FindLibXml2.cmake:51
 msgid "The path to the libxml2 library."
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:54
+#: ../../../../Modules/FindLibXml2.cmake:52
 msgid "``LIBXML2_XMLLINT_EXECUTABLE``"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:55
+#: ../../../../Modules/FindLibXml2.cmake:53
 msgid "The path to the XML checking tool ``xmllint`` coming with libxml2."
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:58
+#: ../../../../Modules/FindLibXml2.cmake:56
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:60
+#: ../../../../Modules/FindLibXml2.cmake:58
 msgid "Finding the libxml2 library and linking it to a project target:"
 msgstr ""
 
-#: ../../../../Modules/FindLibXml2.cmake:62
+#: ../../../../Modules/FindLibXml2.cmake:60
 msgid ""
 "find_package(LibXml2)\n"
 "target_link_libraries(project_target PRIVATE LibXml2::LibXml2)"
