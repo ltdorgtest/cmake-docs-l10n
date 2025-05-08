@@ -10,9 +10,7 @@
 </div>
 
 <div align="center">
-<h1 id="localization-of-cmake-documentation">
-CMake 文件的在地化
-</h1>
+<h1 id="localization-of-cmake-documentation">Localization of CMake Documentation</h1>
 </div>
 
 <details><summary><strong>切換語言</strong></summary>
@@ -27,9 +25,7 @@ CMake 文件的在地化
 </ul>
 </details>
 
-<h2 id="table-of-contents">
-目次表
-</h2>
+<h2 id="table-of-contents">Table of Contents</h2>
 
 <ul>
   <li><a href="#introduction">介紹</a></li>
@@ -123,7 +119,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">GitHub Actions</th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Status Badges</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Workflow Status</th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Purpose</th>
     </tr>
   </thead>
@@ -240,9 +236,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 </table>
 </div>
 
-<h2 id="progress-of-translations"><a href="#table-of-contents">
-翻譯進度
-</a></h2>
+<h2 id="progress-of-translations"><a href="#table-of-contents">Progress of Translations</a></h2>
 
 <div align="center">
 <table>
@@ -321,8 +315,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
 </div>
 
-<h2 id="preview-translations"><a href="#table-of-contents">Preview Translations</a>
-</h2>
+<h2 id="preview-translations"><a href="#table-of-contents">Preview Translations</a></h2>
 
 You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs-l10n">GitHub Pages</a>:
 
@@ -377,13 +370,11 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 
 You can switch to other available languages and versions by the flyout navigation menu.
 
-<h2 id="licenses"><a href="#table-of-contents">Licenses</a>
-</h2>
+<h2 id="licenses"><a href="#table-of-contents">Licenses</a></h2>
 
 All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
-<h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a>
-</h2>
+<h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
 
 Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
@@ -497,13 +488,13 @@ You can sponsor the author through the following platforms:
 </table>
 </div>
 
-<h2 id="code-contributors"><a href="#table-of-contents">Code Contributors</a></h2>
+<h2 id="code-contributors"><a href="#table-of-contents">程式碼貢獻者</a></h2>
 
 <div align="center">
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true">
 </div>
 
-<h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
+<h2 id="financial-contributors"><a href="#table-of-contents">財務貢獻者</a></h2>
 
 <div align="center">
 <h3>Sponsors to Haowei Hsu</h3>
