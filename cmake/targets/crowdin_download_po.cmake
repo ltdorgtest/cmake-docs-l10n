@@ -49,13 +49,13 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     set(LOCALE_POT_DIR  "${PROJ_L10N_VERSION_LOCALE_DIR}/pot")
     remove_cmake_message_indent()
     message("")
-    message("_LANGUAGE            = ${_LANGUAGE}")
-    message("_LANGUAGE_CROWDIN    = ${_LANGUAGE_CROWDIN}")
-    message("CROWDIN_YML_PATH     = ${CROWDIN_YML_PATH}")
-    message("CROWDIN_PO_DIR       = ${CROWDIN_PO_DIR}")
-    message("SINGLE_PO_FILE       = ${SINGLE_PO_FILE}")
-    message("LOCALE_PO_DIR        = ${LOCALE_PO_DIR}")
-    message("LOCALE_POT_DIR       = ${LOCALE_POT_DIR}")
+    message("_LANGUAGE          = ${_LANGUAGE}")
+    message("_LANGUAGE_CROWDIN  = ${_LANGUAGE_CROWDIN}")
+    message("CROWDIN_YML_PATH   = ${CROWDIN_YML_PATH}")
+    message("CROWDIN_PO_DIR     = ${CROWDIN_PO_DIR}")
+    message("SINGLE_PO_FILE     = ${SINGLE_PO_FILE}")
+    message("LOCALE_PO_DIR      = ${LOCALE_PO_DIR}")
+    message("LOCALE_POT_DIR     = ${LOCALE_POT_DIR}")
     message("")
     restore_cmake_message_indent()
 
@@ -83,9 +83,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     remove_cmake_message_indent()
     message("")
     concat_po_from_locale_to_single(
-        IN_LOCALE_PO_DIR          "${CROWDIN_PO_DIR}"
-        IN_SINGLE_PO_FILE         "${SINGLE_PO_FILE}"
-        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}")
+        IN_LOCALE_PO_DIR        "${CROWDIN_PO_DIR}"
+        IN_SINGLE_PO_FILE       "${SINGLE_PO_FILE}"
+        IN_WRAP_WIDTH           "${GETTEXT_WRAP_WIDTH}")
     message("")
     restore_cmake_message_indent()
 
@@ -94,12 +94,12 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     remove_cmake_message_indent()
     message("")
     merge_po_with_compendium_from_src_to_dst(
-        IN_LANGUAGE               "${_LANGUAGE}"
-        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
-        IN_SRC_SINGLE_PO_FILE     "${SINGLE_PO_FILE}"
-        IN_SRC_LOCALE_PO_DIR      "${CROWDIN_PO_DIR}"
-        IN_DST_LOCALE_PO_DIR      "${LOCALE_PO_DIR}"
-        IN_DST_LOCALE_POT_DIR     "${LOCALE_POT_DIR}")
+        IN_LANGUAGE             "${_LANGUAGE}"
+        IN_WRAP_WIDTH           "${GETTEXT_WRAP_WIDTH}"
+        IN_SRC_SINGLE_PO_FILE   "${SINGLE_PO_FILE}"
+        IN_SRC_LOCALE_PO_DIR    "${CROWDIN_PO_DIR}"
+        IN_DST_LOCALE_PO_DIR    "${LOCALE_PO_DIR}"
+        IN_DST_LOCALE_POT_DIR   "${LOCALE_POT_DIR}")
     message("")
     restore_cmake_message_indent()
 endforeach()

@@ -52,9 +52,9 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     remove_cmake_message_indent()
     message("")
     concat_po_from_locale_to_single(
-        IN_LOCALE_PO_DIR          "${SRC_LOCALE_PO_DIR}"
-        IN_SINGLE_PO_FILE         "${SRC_SINGLE_PO_FILE}"
-        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}")
+        IN_LOCALE_PO_DIR        "${SRC_LOCALE_PO_DIR}"
+        IN_SINGLE_PO_FILE       "${SRC_SINGLE_PO_FILE}"
+        IN_WRAP_WIDTH           "${GETTEXT_WRAP_WIDTH}")
     message("")
     restore_cmake_message_indent()
 
@@ -63,12 +63,12 @@ foreach(_LANGUAGE ${LANGUAGE_LIST})
     remove_cmake_message_indent()
     message("")
     merge_po_with_compendium_from_src_to_dst(
-        IN_LANGUAGE               "${_LANGUAGE}"
-        IN_WRAP_WIDTH             "${GETTEXT_WRAP_WIDTH}"
-        IN_SRC_SINGLE_PO_FILE     "${SRC_SINGLE_PO_FILE}"
-        IN_SRC_LOCALE_PO_DIR      "${SRC_LOCALE_PO_DIR}"
-        IN_DST_LOCALE_PO_DIR      "${DST_LOCALE_PO_DIR}"
-        IN_DST_LOCALE_POT_DIR     "${DST_LOCALE_POT_DIR}")
+        IN_LANGUAGE             "${_LANGUAGE}"
+        IN_WRAP_WIDTH           "${GETTEXT_WRAP_WIDTH}"
+        IN_SRC_SINGLE_PO_FILE   "${SRC_SINGLE_PO_FILE}"
+        IN_SRC_LOCALE_PO_DIR    "${SRC_LOCALE_PO_DIR}"
+        IN_DST_LOCALE_PO_DIR    "${DST_LOCALE_PO_DIR}"
+        IN_DST_LOCALE_POT_DIR   "${DST_LOCALE_POT_DIR}")
     message("")
     restore_cmake_message_indent()
 endforeach()
