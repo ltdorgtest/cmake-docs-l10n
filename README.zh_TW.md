@@ -40,9 +40,7 @@
   <li><a href="#financial-contributors">財務貢獻者</a></li>
 </ul>
 
-<h2 id="introduction"><a href="#table-of-contents">
-Introduction
-</a></h2>
+<h2 id="introduction"><a href="#table-of-contents">Introduction</a></h2>
 
 <div align="center"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
