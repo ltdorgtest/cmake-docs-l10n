@@ -456,7 +456,7 @@ You can contribute and support this project by doing any of the following:
   <li>If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.</li>
 </ul>
 
-It will inspire author to make more and more localization projects for open-source documentation.
+It will inspire the author to make more and more l10n projects for open-source documentation.
 
 <h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
 
