@@ -537,5 +537,3 @@ You can sponsor the author through the following platforms:
 <div align="center">
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
-
-TODO: Provided by <a href="https://github.com/antfu/sponsorkit">sponsorkit</a>.
