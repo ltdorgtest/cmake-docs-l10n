@@ -482,7 +482,7 @@ You can contribute and support this project by doing any of the following:
 
 <ul>
   <li>Star the project on GitHub or other mirrors.</li>
-  <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a>/<a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n/issues">GitCode</a> if you found any bug.</li>
+  <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a> if you found any bug.</li>
   <li>Submit pull requests on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls">GitHub</a> if you know how to fix the bug.</li>
   <li>Contribute your translations on <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n">Crowdin</a>.</li>
   <li>If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.</li>
@@ -525,13 +525,17 @@ You can sponsor the author through the following platforms:
 <h2 id="code-contributors"><a href="#table-of-contents">Code Contributors</a></h2>
 
 <div align="center">
-<img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true">
+<img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
 
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
 <div align="center">
 <h3>Sponsors to Haowei Hsu</h3>
+</div>
+
+<div align="center">
+<img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
 
 TODO: Provided by <a href="https://github.com/antfu/sponsorkit">sponsorkit</a>.
