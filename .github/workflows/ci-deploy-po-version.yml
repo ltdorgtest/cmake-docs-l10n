@@ -148,7 +148,7 @@ jobs:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
-      CREATE_RTD: true
+      DEPLOY_RTD: true
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
