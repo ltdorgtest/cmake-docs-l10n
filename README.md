@@ -321,12 +321,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-        <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
+        <p><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
           <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br />
-        <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
+        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
           <img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a>
+        </a></p>
       </td>
     </tr>
   </tbody>
