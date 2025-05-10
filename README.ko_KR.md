@@ -262,14 +262,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Korean<br />한국인</td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
-        <p style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
+      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><span><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
           <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br />
-        <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko proofreading" target="_blank">
+        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko proofreading" target="_blank">
           <img alt="ko proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a>
-        </p>
+        </a></span>
       </td>
     </tr>
     <!-- ru_RU -->
