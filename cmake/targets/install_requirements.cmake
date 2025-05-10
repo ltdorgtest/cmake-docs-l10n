@@ -106,7 +106,7 @@ else()
 endif()
 
 
-message(STATUS "Running 'conda create' command to (re)create the virtual environemnt...")
+message(STATUS "Running 'conda create' command to (re)create the Conda Environment...")
 remove_cmake_message_indent()
 message("")
 execute_process(
@@ -188,7 +188,7 @@ set(Sphinx_ROOT_DIR     "${PROJ_CONDA_DIR}")
 find_package(Sphinx     MODULE REQUIRED)
 
 
-message(STATUS "The followings are the installed packages in Conda Environment...")
+message(STATUS "The followings are the installed packages in the Conda Environment...")
 execute_process(
     COMMAND ${Conda_EXECUTABLE} list --export --prefix ${PROJ_CONDA_DIR}
     RESULT_VARIABLE RES_VAR
