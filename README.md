@@ -269,11 +269,13 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ja_JP</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">Japanese<br />日本語</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <p style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
-          <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
-          <img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a></p>
+        <p style="text-align: center;">
+          <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
+            <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
+          </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
+            <img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
+          </a>
+        </p>
       </td>
     </tr>
     <!-- ko_KR -->
