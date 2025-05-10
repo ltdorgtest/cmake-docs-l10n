@@ -351,42 +351,42 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>en_US</code></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
-        <a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">https://ltdorgtest.github.io/cmake-docs-l10n/en-us</a>
+        <p style="text-align: left;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">https://ltdorgtest.github.io/cmake-docs-l10n/en-us</a></p>
       </td>
     </tr>
     <!-- ja_JP -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ja_JP</code></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
-        <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp</a>
+        <p style="text-align: left;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp</a></p>
       </td>
     </tr>
     <!-- ko_KR -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ko_KR</code></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
-        <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr">https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr</a>
+        <p style="text-align: left;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr">https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr</a></p>
       </td>
     </tr>
     <!-- ru_RU -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ru_RU</code></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
-        <a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru</a>
+        <p style="text-align: left;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru</a></p>
       </td>
     </tr>
     <!-- zh_CN -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_CN</code></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
-        <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn</a>
+        <p style="text-align: left;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn</a></p>
       </td>
     </tr>
     <!-- zh_TW -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_TW</code></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
-        <a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw</a>
+        <p style="text-align: left;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw</a></p>
       </td>
     </tr>
   </tbody>
