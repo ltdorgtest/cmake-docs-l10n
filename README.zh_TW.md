@@ -82,28 +82,28 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <tbody>
     <!-- TMS -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">TMS</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Crowdin</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">TMS</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Crowdin</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
       </td>
     </tr>
     <!-- Main -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Main</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Main</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitHub</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
       </td>
     </tr>
     <!-- Mirror -->
     <tr>
-      <th rowspan="2" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Mirror</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitCode</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="2" colspan="1" align="center" style="text-align: center;">Mirror</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitCode</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
       </td>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitFlic</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitFlic</th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
       </td>
     </tr>
   </tbody>
@@ -114,119 +114,119 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center" style="text-align: center; vertical-align: middle;">GitHub Actions</th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center;">GitHub Actions</th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">工作流狀態</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Purpose</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">工作流狀態</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Purpose</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
           <img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>透過 Sphinx 建置文件並上傳建置工件。</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
           <img alt="ci-sphinx-update-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>透過 Sphinx 搭配 <code>gettext</code> 建置器更新 <code>.pot</code> 檔。</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
           <img alt="ci-gettext-update-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>透過 Gettext 工具組從 <code>.pot</code> 檔更新 <code>.po</code> 檔。</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml">
           <img alt="ci-gettext-compendium" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Update <code>.po</code> files from the compendium by Gettext toolkit.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml">
           <img alt="ci-gettext-statistics" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Update statistics information of <code>.po</code> files by Gettext toolkit.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml">
           <img alt="ci-crowdin-upload-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Upload <code>.pot</code> files to Crowdin by its CLI tool.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
           <img alt="ci-crowdin-download-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Download <code>.pot</code> files from Crowdin by its CLI tool.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
           <img alt="ci-crowdin-readme" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Update README translations by Crowdin CLI tool.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml">
           <img alt="ci-deploy-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>下載建置製品並將其部署到 <code>pages</code> 分支。</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
           <img alt="ci-deploy-po-version" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>將 <code>.po</code> 檔部署到 <code>po/${VERSION}</code> 分支。</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
           <img alt="ci-update-license-year" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Update LICENSE file to the latest year.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right; vertical-align: middle;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
           <img alt="ci-update-submodule" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml/badge.svg" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" align="left" style="text-align: left; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <p>Update each of the submodules to their latest commit.</p>
       </td>
     </tr>
@@ -240,17 +240,17 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">語言</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">英文名稱<br />在地化名稱</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">已翻譯<br />已校對</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">語言</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">英文名稱<br />在地化名稱</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">已翻譯<br />已校對</th>
     </tr>
   </thead>
   <tbody>
     <!-- ja_JP -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Japanese<br />日本語</td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ja_JP</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Japanese<br />日本語</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <p style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
           <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
@@ -260,9 +260,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- ko_KR -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Korean<br />한국인</td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><span><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ko_KR</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Korean<br />한국인</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><span><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
           <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko proofreading" target="_blank">
           <img alt="ko proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
@@ -271,9 +271,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- ru_RU -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Russian<br />Русский</td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ru_RU</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Russian<br />Русский</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
           <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank">
@@ -283,9 +283,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- zh_CN -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_CN</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Simplified Chinese<br />简体中文</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
           <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank">
@@ -295,9 +295,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- zh_TW -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_TW</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Traditional Chinese<br />繁體中文</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <p><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
           <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
@@ -320,45 +320,45 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Language</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">GitHub Pages</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Language</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitHub Pages</th>
     </tr>
   </thead>
   <tbody>
     <!-- en_US -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>en_US</code></td>
-      <td rowspan="1" colspan="1" align="left"   style="text-align: left;   vertical-align: middle;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">https://ltdorgtest.github.io/cmake-docs-l10n/en-us</a>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>en_US</code></td>
+      <td rowspan="1" colspan="1" align="left"   style="text-align: left;  "><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">https://ltdorgtest.github.io/cmake-docs-l10n/en-us</a>
       </td>
     </tr>
     <!-- ja_JP -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
-      <td rowspan="1" colspan="1" align="left"   style="text-align: left;   vertical-align: middle;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp</a>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ja_JP</code></td>
+      <td rowspan="1" colspan="1" align="left"   style="text-align: left;  "><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp</a>
       </td>
     </tr>
     <!-- ko_KR -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
-      <td rowspan="1" colspan="1" align="left"   style="text-align: left;   vertical-align: middle;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr">https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr</a>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ko_KR</code></td>
+      <td rowspan="1" colspan="1" align="left"   style="text-align: left;  "><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr">https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr</a>
       </td>
     </tr>
     <!-- ru_RU -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
-      <td rowspan="1" colspan="1" align="left"   style="text-align: left;   vertical-align: middle;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru</a>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ru_RU</code></td>
+      <td rowspan="1" colspan="1" align="left"   style="text-align: left;  "><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru</a>
       </td>
     </tr>
     <!-- zh_CN -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
-      <td rowspan="1" colspan="1" align="left"   style="text-align: left;   vertical-align: middle;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn</a>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_CN</code></td>
+      <td rowspan="1" colspan="1" align="left"   style="text-align: left;  "><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn</a>
       </td>
     </tr>
     <!-- zh_TW -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
-      <td rowspan="1" colspan="1" align="left"   style="text-align: left;   vertical-align: middle;"><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw</a>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_TW</code></td>
+      <td rowspan="1" colspan="1" align="left"   style="text-align: left;  "><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw</a>
       </td>
     </tr>
   </tbody>
@@ -401,20 +401,20 @@ You can sponsor the author through the following platforms:
 <table>
   <tbody>
     <tr>
-      <th rowspan="1" colspan="2" style="text-align: center; vertical-align: middle; width: 100%;">Haowei Hsu</th>
+      <th rowspan="1" colspan="2" style="text-align: center; width: 100%;">Haowei Hsu</th>
     </tr>
     <!-- Row 1 -->
     <tr>
-      <th rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Patreon</th>
-      <th rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;">Afdian</th>
+      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;">Patreon</th>
+      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;">Afdian</th>
     </tr>
     <!-- Row 2 -->
     <tr>
-      <td rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center"><a href="https://www.patreon.com/hwhsu1231" target="_blank">
+      <td rowspan="1" colspan="1" style="text-align: center; width: 50%;" align="center"><a href="https://www.patreon.com/hwhsu1231" target="_blank">
           <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon" />
         </a>
       </td>
-      <td rowspan="1" colspan="1" style="text-align: center; vertical-align: middle; width: 50%;" align="center"><a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
+      <td rowspan="1" colspan="1" style="text-align: center; width: 50%;" align="center"><a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
           <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian" />
         </a>
       </td>
