@@ -439,14 +439,14 @@ You can sponsor the author through the following platforms:
     <!-- Row 2 -->
     <tr>
       <td rowspan="1" colspan="1" style="text-align: center; width: 50%;" align="center">
-        <a href="https://www.patreon.com/hwhsu1231" target="_blank">
+        <p style="text-align: center;"><a href="https://www.patreon.com/hwhsu1231" target="_blank">
           <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon" />
-        </a>
+        </a></p>
       </td>
-      <td rowspan="1" colspan="1" style="text-align: center; width: 50%;" align="center">
-        <a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
+      <td rowspan="1" colspan="1" style="text-align: center; width: 20%;" align="center">
+        <p style="text-align: center;"><a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
           <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian" />
-        </a>
+        </a></p>
       </td>
     </tr>
   </tbody>
