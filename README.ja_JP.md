@@ -441,7 +441,7 @@ You can sponsor the author through the following platforms:
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
 <div align="center">
-<h3>Sponsors to Haowei Hsu</h3>
+<h3 id="sponsors-to-haowei-hsu">Sponsors to Haowei Hsu</h3>
 </div>
 
 <div align="center">
