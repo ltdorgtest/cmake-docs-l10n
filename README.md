@@ -443,7 +443,7 @@ You can sponsor the author through the following platforms:
           <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-patreon.png" alt="Patreon" />
         </a></p>
       </td>
-      <td rowspan="1" colspan="1" style="text-align: center; width: 20%;" align="center">
+      <td rowspan="1" colspan="1" style="text-align: center; width: 50%;" align="center">
         <p style="text-align: center;"><a href="https://www.afdian.com/a/hwhsu1231" target="_blank">
           <img width="200" src="https://cdn.jsdelivr.net/gh/hwhsu1231/static/sponsor-button-afdian.png" alt="Afdian" />
         </a></p>
