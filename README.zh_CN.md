@@ -251,10 +251,10 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ja_JP</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Japanese<br />日本語</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
-          <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
-          <img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a>
       </td>
     </tr>
@@ -263,10 +263,10 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ko_KR</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Korean<br />한국인</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
-          <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko proofreading" target="_blank">
-          <img alt="ko proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="ko proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a>
       </td>
     </tr>
@@ -275,10 +275,10 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>ru_RU</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Russian<br />Русский</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
-          <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank">
-          <img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a>
       </td>
     </tr>
@@ -287,10 +287,10 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_CN</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Simplified Chinese<br />简体中文</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
-          <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank">
-          <img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a>
       </td>
     </tr>
@@ -299,10 +299,10 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><code>zh_TW</code></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;">Traditional Chinese<br />繁體中文</td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center; vertical-align: middle;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
-          <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a><br />
         <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
-          <img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1.json" />
+          <img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
         </a>
       </td>
     </tr>
