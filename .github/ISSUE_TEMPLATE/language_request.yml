@@ -16,13 +16,15 @@ body:
         Examples:
         - **Language Code:** `zh_TW`
         - **Crowdin Code:** `zh-TW`
-        - **Language Name:** Traditional Chinese
+        - **ReadTheDocs Code:** `zh_TW`
+        - **English Name:** Traditional Chinese
         - **Localized Name:** 繁體中文
         - **Discussion Group:**
       value: |
         - **Language Code:**
         - **Crowdin Code:**
-        - **Language Name:**
+        - **ReadTheDocs Code:**
+        - **English Name:**
         - **Localized Name:**
         - **Discussion Group:**
     validations:
