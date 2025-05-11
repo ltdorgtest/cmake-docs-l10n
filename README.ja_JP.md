@@ -118,11 +118,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center"><div>GitHub Actions</div></th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>GitHub Actions</div></th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center"><div>Workflow Status</div></th>
-      <th rowspan="1" colspan="1" align="center"><div>Purpose</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Workflow Status</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Purpose</div></th>
     </tr>
   </thead>
   <tbody>
@@ -256,16 +256,16 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Language</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">English Name<br />Localized Name</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Translated<br />Proofread</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>English Name<br />Localized Name</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Translated<br />Proofread</div></th>
     </tr>
   </thead>
   <tbody>
     <!-- ja_JP -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ja_JP</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Japanese<br />日本語</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ja_JP</code></div></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Japanese<br />日本語</div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
           <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
@@ -276,8 +276,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- ko_KR -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ko_KR</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Korean<br />한국인</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ko_KR</code></div></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Korean<br />한국인</div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
           <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
@@ -288,8 +288,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- ru_RU -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ru_RU</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Russian<br />Русский</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ru_RU</code></div></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Russian<br />Русский<div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
           <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
@@ -300,8 +300,8 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- zh_CN -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_CN</code></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;">Simplified Chinese<br />简体中文</td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>zh_CN</code></div></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Simplified Chinese<br />简体中文</div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
           <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
