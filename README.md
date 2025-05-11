@@ -129,7 +129,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
   </thead>
   <tbody>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+      <td rowspan="1" colspan="1" align="right">
         <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
           <img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" />
         </a></p>
