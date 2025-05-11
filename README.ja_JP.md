@@ -126,12 +126,12 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <tbody>
     <tr>
       <td rowspan="1" colspan="1" align="right">
-        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
+        <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" >
           <img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" />
-        </a></p>
+        </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <p style="text-align: left;">Build documents by Sphinx and upload build artifacts.</p>
+        <div>Build documents by Sphinx and upload build artifacts.</div>
       </td>
     </tr>
     <tr>
