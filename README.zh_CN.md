@@ -129,106 +129,117 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Build documents by Sphinx and upload build artifacts.</p>
+        <p style="text-align: left;">Build documents by Sphinx and upload build artifacts.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" >
           <img alt="ci-sphinx-update-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</p>
+        <p style="text-align: left;">Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" >
           <img alt="ci-gettext-update-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</p>
+        <p style="text-align: left;">Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml">
           <img alt="ci-gettext-compendium" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-compendium.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update <code>.po</code> files from the compendium by Gettext toolkit.</p>
+        <p style="text-align: left;">Update <code>.po</code> files from the compendium by Gettext toolkit.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml">
           <img alt="ci-gettext-statistics" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-statistics.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update statistics information of <code>.po</code> files by Gettext toolkit.</p>
+        <p style="text-align: left;">Update statistics information of <code>.po</code> files by Gettext toolkit.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml">
           <img alt="ci-crowdin-upload-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-upload-pot.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Upload <code>.pot</code> files to Crowdin by its CLI tool.</p>
+        <p style="text-align: left;">Upload <code>.pot</code> files to Crowdin by its CLI tool.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml">
           <img alt="ci-crowdin-download-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Download <code>.pot</code> files from Crowdin by its CLI tool.</p>
+        <p style="text-align: left;">Download <code>.pot</code> files from Crowdin by its CLI tool.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml">
           <img alt="ci-crowdin-readme" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update README translations by Crowdin CLI tool.</p>
+        <p style="text-align: left;">Update README translations by Crowdin CLI tool.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml">
           <img alt="ci-deploy-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Download and deploy build artifacts to <code>pages</code> branch.</p>
+        <p style="text-align: left;">Download and deploy build artifacts to <code>pages</code> branch.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml">
           <img alt="ci-deploy-po-version" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</p>
+        <p style="text-align: left;">Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml">
           <img alt="ci-update-license-year" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update LICENSE file to the latest year.</p>
+        <p style="text-align: left;">Update LICENSE file to the latest year.</p>
       </td>
     </tr>
     <tr>
-      <td rowspan="1" colspan="1" align="right" style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
+      <td rowspan="1" colspan="1" align="right" style="text-align: right;">
+        <p style="text-align: right;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml">
           <img alt="ci-update-submodule" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-submodule.yml/badge.svg" />
-        </a>
+        </a></p>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <p>Update each of the submodules to their latest commit.</p>
+        <p style="text-align: left;">Update each of the submodules to their latest commit.</p>
       </td>
     </tr>
   </tbody>
