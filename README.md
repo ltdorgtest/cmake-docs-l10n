@@ -137,7 +137,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <p style="text-align: left;">Build documents by Sphinx and upload build artifacts.</p>
+        <div>Build documents by Sphinx and upload build artifacts.</div>
       </td>
     </tr>
     <tr>
