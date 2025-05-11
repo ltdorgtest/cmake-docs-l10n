@@ -82,7 +82,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <tbody>
     <!-- TMS -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">TMS</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>TMS</div>
+      </th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">Crowdin</th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
       </td>
@@ -114,11 +116,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center"><p style="text-align: center;">GitHub Actions</p></th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center;">GitHub Actions</th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center"><p style="text-align: center;">Workflow Status</p></th>
-      <th rowspan="1" colspan="1" align="center"><p style="text-align: center;">Purpose</p></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Workflow Status</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Purpose</th>
     </tr>
   </thead>
   <tbody>
