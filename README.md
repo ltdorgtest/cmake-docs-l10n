@@ -120,11 +120,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center"><p style="text-align: center;">GitHub Actions</p></th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center;">GitHub Actions</th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center"><p style="text-align: center;">Workflow Status</p></th>
-      <th rowspan="1" colspan="1" align="center"><p style="text-align: center;">Purpose</p></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Workflow Status</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Purpose</th>
     </tr>
   </thead>
   <tbody>
