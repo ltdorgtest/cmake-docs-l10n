@@ -14,19 +14,17 @@ body:
       label: Language Request
       description: |
         Examples:
-        - **Language Code:** `zh_TW`
-        - **Crowdin Code:** `zh-TW`
-        - **ReadTheDocs Code:** `zh_TW`
-        - **English Name:** Traditional Chinese
-        - **Localized Name:** 繁體中文
-        - **Discussion Group:**
+        - **Language Code:** `zh_CN`
+        - **Crowdin Code:** `zh-CN`
+        - **ReadTheDocs Code:** `zh_CN`
+        - **English Name:** Simplified Chinese
+        - **Localized Name:** 简体中文
       value: |
         - **Language Code:**
         - **Crowdin Code:**
         - **ReadTheDocs Code:**
         - **English Name:**
         - **Localized Name:**
-        - **Discussion Group:**
     validations:
       required: true
   - type: checkboxes
@@ -36,7 +34,7 @@ body:
       options:
         - label: I confirm that the requested language is not listed or not requested.
           required: true
-        - label: I confirm that the requested language is available in [both Sphinx and Crowdin](https://github.com/hwhsu1231/s2clm).
+        - label: I confirm that the requested language is available in [Language Code Table](https://github.com/ltdorgtest/s2clm).
           required: true
         - label: I agree to follow this project's [Code of Conduct](https://example.com).
           required: true
