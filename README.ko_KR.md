@@ -424,12 +424,12 @@ You can sponsor the author through the following platforms:
 <table>
   <tbody>
     <tr>
-      <th rowspan="1" colspan="2" style="text-align: center; width: 100%;">Haowei Hsu</th>
+      <th rowspan="1" colspan="2" style="text-align: center; width: 100%;"><div>Haowei Hsu</div></th>
     </tr>
     <!-- Row 1 -->
     <tr>
-      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;">Patreon</th>
-      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;">Afdian</th>
+      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;"><div>Patreon</div></th>
+      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;"><div>Afdian</div></th>
     </tr>
     <!-- Row 2 -->
     <tr>
