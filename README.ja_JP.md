@@ -82,30 +82,32 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <tbody>
     <!-- TMS -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <div>TMS</div>
-      </th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Crowdin</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>TMS</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Crowdin</div></th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
       </td>
     </tr>
     <!-- Main -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Main</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitHub</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Main</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub</div></th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
       </td>
     </tr>
     <!-- Mirror -->
     <tr>
-      <th rowspan="2" colspan="1" align="center" style="text-align: center;">Mirror</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitCode</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="2" colspan="1" align="center" style="text-align: center;"><div>Mirror</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitCode</div></th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
       </td>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitFlic</th>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitFlic</div></th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div><a href="https://gitflic.ru/project/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
       </td>
     </tr>
   </tbody>
