@@ -121,7 +121,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>GitHub Actions</div></th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Workflow Status</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>工作流狀態</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Purpose</div></th>
     </tr>
   </thead>
@@ -133,7 +133,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <div>Build documents by Sphinx and upload build artifacts.</div>
+        <div>透過 Sphinx 建置文件並上傳建置工件。</div>
       </td>
     </tr>
     <tr>
@@ -143,7 +143,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <div>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</div>
+        <div>透過 Sphinx 搭配 <code>gettext</code> 建置器更新 <code>.pot</code> 檔。</div>
       </td>
     </tr>
     <tr>
@@ -153,7 +153,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <div>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</div>
+        <div>透過 Gettext 工具組從 <code>.pot</code> 檔更新 <code>.po</code> 檔。</div>
       </td>
     </tr>
     <tr>
@@ -213,7 +213,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <div>Download and deploy build artifacts to <code>pages</code> branch.</div>
+        <div>下載建置製品並將其部署到 <code>pages</code> 分支。</div>
       </td>
     </tr>
     <tr>
@@ -223,7 +223,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         </a></div>
       </td>
       <td rowspan="1" colspan="1" align="left">
-        <div>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</div>
+        <div>將 <code>.po</code> 檔部署到 <code>po/${VERSION}</code> 分支。</div>
       </td>
     </tr>
     <tr>
@@ -256,9 +256,9 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>English Name<br />Localized Name</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Translated<br />Proofread</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語言</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>英文名稱<br />在地化名稱</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>已翻譯<br />已校對</div></th>
     </tr>
   </thead>
   <tbody>
@@ -337,7 +337,7 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Language</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">語言</th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitHub Pages</th>
     </tr>
   </thead>
@@ -429,7 +429,7 @@ You can sponsor the author through the following platforms:
     <!-- Row 1 -->
     <tr>
       <th rowspan="1" colspan="1" style="text-align: center; width: 50%;"><div>Patreon</div></th>
-      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;"><div>Afdian</div></th>
+      <th rowspan="1" colspan="1" style="text-align: center; width: 50%;"><div>愛發電</div></th>
     </tr>
     <!-- Row 2 -->
     <tr>
