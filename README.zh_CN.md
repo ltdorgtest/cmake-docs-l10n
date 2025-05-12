@@ -59,15 +59,9 @@
 </a>
 <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
   <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
-</a><br />
-<!-- Newline --><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
+</a>
+<a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
   <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
-</a>
-<a href="https://www.contributor-covenant.org/" title="Contributor Covenant" target="_blank">
-  <img alt="Contributor Covenant" src="https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg" />
-</a>
-<a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" title="Crowdin Localized" target="_blank">
-  <img alt="Crowdin Localized" src="https://badges.crowdin.net/e/6e49ade8b84b4f6dd1f7eb93600fb223/localized.svg" />
 </a>
 </div>
 
