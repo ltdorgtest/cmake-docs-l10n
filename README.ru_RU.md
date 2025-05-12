@@ -337,49 +337,49 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">Language</th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;">GitHub Pages</th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Pages</div></th>
     </tr>
   </thead>
   <tbody>
     <!-- en_US -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>en_US</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>en_US</code></div></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
         <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n/en-us">https://ltdorgtest.github.io/cmake-docs-l10n/en-us</a></div>
       </td>
     </tr>
     <!-- ja_JP -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ja_JP</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ja_JP</code></div></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
         <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp">https://ltdorgtest.github.io/cmake-docs-l10n/ja-jp</a></div>
       </td>
     </tr>
     <!-- ko_KR -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ko_KR</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ko_KR</code></div></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
         <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr">https://ltdorgtest.github.io/cmake-docs-l10n/ko-kr</a></div>
       </td>
     </tr>
     <!-- ru_RU -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>ru_RU</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ru_RU</code></div></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
         <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru">https://ltdorgtest.github.io/cmake-docs-l10n/ru-ru</a></div>
       </td>
     </tr>
     <!-- zh_CN -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_CN</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>zh_CN</code></div></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
         <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn">https://ltdorgtest.github.io/cmake-docs-l10n/zh-cn</a></div>
       </td>
     </tr>
     <!-- zh_TW -->
     <tr>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><code>zh_TW</code></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>zh_TW</code></div></td>
       <td rowspan="1" colspan="1" align="left"   style="text-align: left;  ">
         <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw">https://ltdorgtest.github.io/cmake-docs-l10n/zh-tw</a></div>
       </td>
