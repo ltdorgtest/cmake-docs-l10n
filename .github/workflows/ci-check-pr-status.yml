@@ -47,7 +47,7 @@ jobs:
       #   id: gvprt
       #   uses: ltdorgtest/ci-common/.github/actions/get-version-from-pull-request-title@main
       #   with:
-      #     pr-title: ${{ github.event.pull_request.title }}
+      #     pull-request-title: ${{ github.event.pull_request.title }}
       - name: Filter Changes in the Pull Request
         id: filter
         uses: dorny/paths-filter@v3
