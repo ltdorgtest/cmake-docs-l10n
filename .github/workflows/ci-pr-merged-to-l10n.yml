@@ -70,7 +70,7 @@ jobs:
         id: gvprt
         uses: hwhsu1231/ci-sphinx/.github/actions/get-version-from-pull-request-title@main
         with:
-          pr-title: ${{ github.event.pull_request.title }}
+          pull-request-title: ${{ github.event.pull_request.title }}
 
       - name: Dispatch the 'pr-merged-to-l10n' event to the repository
         uses: peter-evans/repository-dispatch@v3
