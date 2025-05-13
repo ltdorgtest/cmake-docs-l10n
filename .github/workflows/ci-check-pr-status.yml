@@ -17,8 +17,8 @@ jobs:
   before-check:
     runs-on: ubuntu-latest
     outputs:
-      CICD_CHANGE: ${{ steps.filter.outputs.cicd }}
-      DOCS_CHANGE: ${{ steps.filter.outputs.docs }}
+      WORKFLOW_CHANGE: ${{ steps.filter.outputs.workflow }}
+      DOCUMENT_CHANGE: ${{ steps.filter.outputs.document }}
       BUILD_CHANGE: ${{ steps.filter.outputs.build }}
     steps:
       - name: Print Contexts
@@ -54,9 +54,9 @@ jobs:
         with:
           token: ${{ secrets.ACTOR_GITHUB_TOKEN }}
           filters: |
-            cicd:
+            workflow:
               - '.github/workflows/*.yml'
-            docs:
+            document:
               - 'README.md'
             build:
               - 'cmake/custom/**/*'
@@ -65,12 +65,12 @@ jobs:
               - 'CMakePresets.json'
       - name: Check Outputs of paths-filter
         run: |
-          echo "steps.filter.outputs.cicd   = ${{ steps.filter.outputs.cicd }}"
-          echo "steps.filter.outputs.docs   = ${{ steps.filter.outputs.docs }}"
-          echo "steps.filter.outputs.build  = ${{ steps.filter.outputs.build }}"
-          echo "steps.filter.outputs.cicd_count   = ${{ steps.filter.outputs.cicd_count }}"
-          echo "steps.filter.outputs.docs_count   = ${{ steps.filter.outputs.docs_count }}"
-          echo "steps.filter.outputs.build_count  = ${{ steps.filter.outputs.build_count }}"
+          echo "steps.filter.outputs.workflow = ${{ steps.filter.outputs.workflow }}"
+          echo "steps.filter.outputs.document = ${{ steps.filter.outputs.document }}"
+          echo "steps.filter.outputs.build    = ${{ steps.filter.outputs.build }}"
+          echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
+          echo "steps.filter.outputs.document_count = ${{ steps.filter.outputs.document_count }}"
+          echo "steps.filter.outputs.build_count    = ${{ steps.filter.outputs.build_count }}"
 
   check-crowdin-readme:
     needs: [ 'before-check' ]
@@ -81,7 +81,7 @@ jobs:
       VERSION: 'check'
       LANGUAGE: 'all'
       LANGUAGE_SOURCE: 'en_US'
-      ENABLE_JOB: ${{ needs.before-check.outputs.DOCS_CHANGE == 'true' }}
+      ENABLE_JOB: ${{ needs.before-check.outputs.DOCUMENT_CHANGE == 'true' }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
       CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
@@ -101,6 +101,7 @@ jobs:
       MODE_OF_UPDATE: 'COMPARE'
       BASEURL_HREF: ${{ vars.BASEURL_HREF }}
       SPHINX_BUILDER: 'html'
+      DEPLOY_PAGES: false
       ENABLE_JOB: ${{ needs.before-check.outputs.BUILD_CHANGE == 'true' }}
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
