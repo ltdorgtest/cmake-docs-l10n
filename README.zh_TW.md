@@ -229,14 +229,14 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語言</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
-          <div>English Name</div>
-          <div>Localized Name</div>
+          <div>英文名稱</div>
+          <div>在地化名稱</div>
         </div>
       </th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
-          <div>Translated</div>
-          <div>Proofread</div>
+          <div>已翻譯</div>
+          <div>已校對</div>
         </div>
       </th>
     </tr>
@@ -333,7 +333,7 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語言</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Pages</div></th>
     </tr>
   </thead>
