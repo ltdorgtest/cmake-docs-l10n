@@ -73,7 +73,7 @@ This is a localization project for CMake Documentation.
 The translations are contributed in Crowdin Project and downloaded automatically in Git Repository.
 
 <div align="center">
-<table align="center">
+<table>
   <tbody>
     <!-- TMS -->
     <tr>
