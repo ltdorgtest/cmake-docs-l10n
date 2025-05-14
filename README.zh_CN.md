@@ -251,33 +251,51 @@ The translations are contributed in Crowdin Project and downloaded automatically
   <thead>
     <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>English Name<br />Localized Name</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Translated<br />Proofread</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>
+          <div>English Name</div>
+          <div>Localized Name</div>
+        </div>
+      </th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>
+          <div>Translated</div>
+          <div>Proofread</div>
+        </div>
+      </th>
     </tr>
   </thead>
   <tbody>
     <!-- ja_JP -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ja_JP</code></div></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Japanese<br />日本語</div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank">
-          <img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank">
-          <img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a></div>
+        <div>
+          <div>Japanese</div>
+          <div>日本語</div>
+        </div>
       </td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja translation" target="_blank"><img alt="ja translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ja" title="ja proofreading" target="_blank"><img alt="ja proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ja&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+        </div>
+    </td>
     </tr>
     <!-- ko_KR -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ko_KR</code></div></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Korean<br />한국인</div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank">
-          <img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko proofreading" target="_blank">
-          <img alt="ko proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a></div>
+        <div>
+          <div>Korean</div>
+          <div>한국인</div>
+        </div>
+      </td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko translation" target="_blank"><img alt="ko translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ko" title="ko proofreading" target="_blank"><img alt="ko proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ko&style=flat&logo=crowdin&query=%24.progress.1.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+        </div>
       </td>
     </tr>
     <!-- ru_RU -->
@@ -285,41 +303,43 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>ru_RU</code></div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Russian<br />Русский<div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank">
-          <img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank">
-          <img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a></div>
+        <div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank"><img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank"><img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+        </div>
+      </div>
       </td>
     </tr>
     <!-- zh_CN -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>zh_CN</code></div></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>
-        <div>Simplified Chinese</div>
-        <div>简体中文</div>
-      </div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank">
-          <img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank">
-          <img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a></div>
+        <div>
+          <div>Simplified Chinese</div>
+          <div>简体中文</div>
+        </div>
+      </td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN translation" target="_blank"><img alt="zh-CN translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-CN" title="zh-CN proofreading" target="_blank"><img alt="zh-CN proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-CN&style=flat&logo=crowdin&query=%24.progress.3.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+        </div>
       </td>
     </tr>
     <!-- zh_TW -->
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div><code>zh_TW</code></div></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>
-        <div>Traditional Chinese</div>
-        <div>繁體中文</div>
-      </div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
-        <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank">
-          <img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a><br /><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank">
-          <img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" />
-        </a></div>
+        <div>
+          <div>Traditional Chinese</div>
+          <div>繁體中文</div>
+        </div>
+      </td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW translation" target="_blank"><img alt="zh-TW translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+          <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/zh-TW" title="zh-TW proofreading" target="_blank"><img alt="zh-TW proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=zh-TW&style=flat&logo=crowdin&query=%24.progress.4.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
+        </div>
       </td>
     </tr>
   </tbody>
