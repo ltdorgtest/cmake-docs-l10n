@@ -281,14 +281,13 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div>
           <div>Russian</div>
           <div>Русский</div>
-        <div>
+        </div>
       </td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
           <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru translation" target="_blank"><img alt="ru translation" src="https://img.shields.io/badge/dynamic/json?color=blue&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.translationProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
           <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n/ru" title="ru proofreading" target="_blank"><img alt="ru proofreading" src="https://img.shields.io/badge/dynamic/json?color=green&label=ru&style=flat&logo=crowdin&query=%24.progress.2.data.approvalProgress&url=https%3A%2F%2Fbadges.awesome-crowdin.com%2Fstats-200037927-1-update.json" /></a></div>
         </div>
-      </div>
       </td>
     </tr>
     <!-- zh_CN -->
