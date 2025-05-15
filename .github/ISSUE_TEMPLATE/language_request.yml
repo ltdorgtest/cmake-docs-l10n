@@ -37,7 +37,7 @@ body:
           required: true
         - label: I confirm that the requested language had a language team created in [Logo Design](https://github.com/ltdorgtest/logo-design).
           required: true
-        - label: I confirm that the requested language is not requested yet.
+        - label: I confirm that the requested language is not requested in [Issues](https://github.com/ltdorgtest/cmake-docs-l10n/labels/Language%20Request).
           required: true
         - label: I agree to follow this project's [Code of Conduct](https://example.com).
           required: true
