@@ -1,7 +1,8 @@
 name: Request a New Language
 description: Use this template for requesting a new language.
 title: "[LANG] Request a New Language '<language-code>'"
-labels: ["lang"]
+labels:
+  - "Language Request"
 assignees:
   - hwhsu1231
 body:
@@ -32,11 +33,11 @@ body:
       label: Checklist
       # description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
-        - label: I confirm that the requested language is not listed or not requested.
-          required: true
         - label: I confirm that the requested language is available in [Language Code Table](https://github.com/ltdorgtest/s2clm).
           required: true
         - label: I confirm that the requested language had a language team created in [Logo Design](https://github.com/ltdorgtest/logo-design).
+          required: true
+        - label: I confirm that the requested language is not requested yet.
           required: true
         - label: I agree to follow this project's [Code of Conduct](https://example.com).
           required: true
