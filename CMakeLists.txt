@@ -225,11 +225,11 @@ if (NOT SPHINX_BUILDER MATCHES "^(html)$")
     message(FATAL_ERROR "Invalid SPHINX_BUILDER value. (${SPHINX_BUILDER})")
 endif()
 
-if (NOT SPHINX_JOB_NUMBER MATCHES "^(auto|1|2|3|4|5|6|7|8)$")
+if (NOT SPHINX_JOB_NUMBER MATCHES "^(auto|[1-9][0-9]*)$")
     message(FATAL_ERROR "Invalid SPHINX_JOB_NUMBER value. (${SPHINX_JOB_NUMBER})")
 endif()
 
-if (NOT SPHINX_VERBOSE_LEVEL MATCHES "^(0|1|2|3|4)$")
+if (NOT SPHINX_VERBOSE_LEVEL MATCHES "^(0|1|2|3)$")
     message(FATAL_ERROR "Invalid SPHINX_VERBOSE_LEVEL value. (${SPHINX_VERBOSE_LEVEL})")
 endif()
 
