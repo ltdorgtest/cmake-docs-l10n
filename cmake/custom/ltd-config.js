@@ -14,7 +14,6 @@ var CONFIG_OPTIONS = {
     ["master",  "Development"],
     ["latest",  "Latest Release"],
     ["4.0",     "Release 4.0"],
-    ["newline", "newline"],
     ["3.31",    "Release 3.31"],
     ["3.30",    "Release 3.30"],
     ["3.29",    "Release 3.29"],
