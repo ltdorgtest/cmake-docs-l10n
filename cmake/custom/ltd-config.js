@@ -2,13 +2,13 @@
 
 var CONFIG_OPTIONS = {
   CONFIG_LANGUAGES: [
-    ["en-us",   "English (United States)"],
-    ["he-il",   "עברית (ישראל)"],
-    ["ja-jp",   "Japanese (Japan)"],
-    ["ko-kr",   "Korean (South Korea)"],
-    ["ru-ru",   "Russian (Russia)"],
-    ["zh-cn",   "Simplified Chinese (China)"],
-    ["zh-tw",   "Traditional Chinese (Taiwan)"],
+    ["en-us",   "English"],
+    ["he-il",   "עברית"],
+    ["ja-jp",   "日本語"],
+    ["ko-kr",   "한국인"],
+    ["ru-ru",   "Русский"],
+    ["zh-cn",   "简体中文"],
+    ["zh-tw",   "繁體中文"],
   ],
   CONFIG_VERSIONS: [
     ["master",  "Development"],
