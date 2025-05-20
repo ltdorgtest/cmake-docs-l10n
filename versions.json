@@ -3,13 +3,13 @@
     {
       "VERSION" : "master",
       "VERSION_COMPENDIUM" : ""
-    },
-    {
-      "VERSION" : "latest",
-      "VERSION_COMPENDIUM" : "master"
     }
   ],
   "v4" : [
+    {
+      "VERSION" : "latest",
+      "VERSION_COMPENDIUM" : "master"
+    },
     {
       "VERSION" : "4.0",
       "VERSION_COMPENDIUM" : "master"
