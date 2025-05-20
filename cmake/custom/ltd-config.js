@@ -3,12 +3,11 @@
 var CONFIG_OPTIONS = {
   CONFIG_LANGUAGES: [
     ["en-us",   "English"],
-    ["he-il",   "עברית"],
-    ["ja-jp",   "日本語 (日本)"],
-    ["ko-kr",   "한국인 (대한민국)"],
-    ["ru-ru",   "Русский (Россия)"],
-    ["zh-cn",   "简体中文 (中国)"],
-    ["zh-tw",   "繁體中文 (臺灣)"],
+    ["ja-jp",   "日本語"],
+    ["ko-kr",   "한국인"],
+    ["ru-ru",   "Русский"],
+    ["zh-cn",   "简体中文"],
+    ["zh-tw",   "繁體中文"],
   ],
   CONFIG_VERSIONS: [
     ["master",  "Development"],
