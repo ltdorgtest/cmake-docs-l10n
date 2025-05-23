@@ -68,7 +68,7 @@ jobs:
     steps:
       - name: Get VERSION from the Pull Request Title
         id: gvprt
-        uses: hwhsu1231/ci-sphinx/.github/actions/get-version-from-pull-request-title@main
+        uses: ltdorgtest/ci-common/.github/actions/get-version-from-pull-request-title@main
         with:
           pull-request-title: ${{ github.event.pull_request.title }}
 
