@@ -577,6 +577,12 @@ add_custom_target(crowdin_upload_pot
             -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_upload_pot.cmake
     VERBATIM)
 
+add_custom_target(crowdin_upload_po
+    COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
+            ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
+            -P ${PROJ_CMAKE_TARGETS_DIR}/crowdin_upload_po.cmake
+    VERBATIM)
+
 add_custom_target(crowdin_download_po
     COMMAND ${CMAKE_COMMAND} -E env ${SCRIPT_MODE_ENV}
             ${CMAKE_COMMAND} ${SCRIPT_MODE_CACHE}
