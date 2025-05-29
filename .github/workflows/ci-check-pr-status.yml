@@ -43,11 +43,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           ref: ${{ github.ref }}
-      # - name: Get VERSION from the Pull Request Title
-      #   id: gvprt
-      #   uses: ltdorgtest/ci-common/.github/actions/get-version-from-pull-request-title@main
-      #   with:
-      #     pull-request-title: ${{ github.event.pull_request.title }}
       - name: Filter Changes in the Pull Request
         id: filter
         uses: dorny/paths-filter@v3
