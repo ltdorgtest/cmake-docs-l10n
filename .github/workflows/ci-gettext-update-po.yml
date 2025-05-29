@@ -11,8 +11,8 @@ on:
   # Triggers the workflow manually through the GitHub UI.
   workflow_dispatch:
     inputs:
-      TYPE:
-        description: 'TYPE input'
+      MODE:
+        description: 'MODE input'
         required: true
         type: choice
         default: 'group'
@@ -61,13 +61,13 @@ jobs:
           echo "github.ref_name = ${{ github.ref_name }}"
           echo "github.event_name = ${{ github.event_name }}"
           echo "github.event.action = ${{ github.event.action }}" # For 'repository_dispatch' event's type
-          echo "github.event.client_payload.TYPE = ${{ github.event.client_payload.TYPE }}"
+          echo "github.event.client_payload.MODE = ${{ github.event.client_payload.MODE }}"
           echo "github.event.client_payload.VERSION = ${{ github.event.client_payload.VERSION }}"
           echo "github.event.client_payload.LANGUAGE = ${{ github.event.client_payload.LANGUAGE }}"
           echo "github.event.client_payload.GETTEXT = ${{ github.event.client_payload.GETTEXT }}"
           echo "github.event.client_payload.CROWDIN = ${{ github.event.client_payload.CROWDIN }}"
           echo "[Inputs]"
-          echo "inputs.TYPE = ${{ inputs.TYPE }}"
+          echo "inputs.MODE = ${{ inputs.MODE }}"
           echo "inputs.VERSION = ${{ inputs.VERSION }}"
           echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
           echo "inputs.LANGUAGE = ${{ inputs.LANGUAGE }}"
@@ -130,7 +130,7 @@ jobs:
         id: gvlv
         uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
-          type: ${{ inputs.TYPE || github.event.client_payload.TYPE }}
+          mode: ${{ inputs.MODE || github.event.client_payload.MODE }}
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP }}
           version-filter: 'all'

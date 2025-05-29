@@ -12,8 +12,8 @@ on:
   # Triggers the workflow manually through the GitHub UI.
   workflow_dispatch:
     inputs:
-      TYPE:
-        description: 'TYPE input'
+      MODE:
+        description: 'MODE input'
         required: true
         type: choice
         default: 'group'
@@ -54,7 +54,7 @@ jobs:
           echo "github.event_name = ${{ github.event_name }}"
           echo "github.event.schedule = ${{ github.event.schedule }}"
           echo "[Inputs]"
-          echo "inputs.TYPE = ${{ inputs.TYPE }}"
+          echo "inputs.MODE = ${{ inputs.MODE }}"
           echo "inputs.VERSION = ${{ inputs.VERSION }}"
           echo "inputs.VERSION_GROUP = ${{ inputs.VERSION_GROUP }}"
           echo "[Variables]"
@@ -119,7 +119,7 @@ jobs:
         id: gvlv
         uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
-          type: ${{ inputs.TYPE || steps.gos.outputs.TYPE }}
+          mode: ${{ inputs.MODE || steps.gos.outputs.MODE }}
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
           version-filter: 'all'
