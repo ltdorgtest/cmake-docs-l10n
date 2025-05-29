@@ -21,12 +21,12 @@ on:
           - 'single'
           - 'group'
       VERSION:
-        description: 'VERSION input (for single type)'
+        description: 'VERSION input (for single mode)'
         required: true
         type: string
         default: 'master'
       VERSION_GROUP:
-        description: 'VERSION_GROUP input (for group type)'
+        description: 'VERSION_GROUP input (for group mode)'
         required: true
         type: choice
         default: 'dev'
