@@ -79,7 +79,7 @@ jobs:
           event-type: pr-merged-to-l10n
           client-payload: |
             {
-              "TYPE" : "single",
+              "MODE" : "single",
               "VERSION" : "${{ steps.gvprt.outputs.VERSION }}",
               "LANGUAGE" : "all",
               "GETTEXT" : "${{ contains(github.event.pull_request.labels.*.name, 'gettext') }}",
