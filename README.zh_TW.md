@@ -400,7 +400,26 @@ Translators who contribute to this project will never make use of the copyright 
 
 <h2 id="maintainers"><a href="#table-of-contents">Maintainers</a></h2>
 
-This project is created and currently maintained by the author, Haowei Hsu.
+This project is currently maintained by:
+
+<div align="center">
+<table>
+  <thead>
+    <tr>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Name</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Handle</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Contact Info</div></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Haowei Hsu</div></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>@hwhsu1231</div></td>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div></div></td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 <h2 id="support-this-project"><a href="#table-of-contents">Support this Project</a></h2>
 
