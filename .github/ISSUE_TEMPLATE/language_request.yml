@@ -33,7 +33,7 @@ body:
       label: Checklist
       # description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
-        - label: I confirm that the requested language is available in [Language Code Table](https://github.com/ltdorgtest/s2clm).
+        - label: I confirm that the requested language is available in [Language Code Table](https://github.com/ltdorgtest/lang-table).
           required: true
         - label: I confirm that the requested language had a language team created in [Logo Design](https://github.com/ltdorgtest/logo-design).
           required: true
