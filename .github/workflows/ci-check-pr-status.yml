@@ -58,6 +58,8 @@ jobs:
               - 'cmake/targets/*.cmake'
               - 'CMakeLists.txt'
               - 'CMakePresets.json'
+              - 'languages.json'
+              - 'versions.json'
       - name: Check Outputs of paths-filter
         run: |
           echo "steps.filter.outputs.workflow = ${{ steps.filter.outputs.workflow }}"

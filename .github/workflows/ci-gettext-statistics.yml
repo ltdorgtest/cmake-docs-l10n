@@ -115,7 +115,7 @@ jobs:
         uses: ltdorgtest/ci-common/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
-      - name: Get VERSION_ARRAY from versions.json
+      - name: Get VERSION_ARRAY from the versions.json file
         id: gvlv
         uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:

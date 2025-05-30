@@ -125,7 +125,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           submodules: false
-      - name: Get VERSION_ARRAY from versions.json
+      - name: Get VERSION_ARRAY from the versions.json file
         id: gvlv
         uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:

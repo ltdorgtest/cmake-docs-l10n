@@ -123,7 +123,7 @@ jobs:
         uses: ltdorgtest/ci-common/.github/actions/get-outputs-from-schedule@main
         with:
           schedule: ${{ github.event.schedule }}
-      - name: Get VERSION_ARRAY from versions.json
+      - name: Get VERSION_ARRAY from the versions.json file
         id: gvlv
         uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
@@ -131,7 +131,7 @@ jobs:
           version: ${{ inputs.VERSION || steps.gos.outputs.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP || steps.gos.outputs.VERSION_GROUP }}
           version-filter: 'gettext'
-      - name: Get LANGUAGE_ARRAY from languages.json
+      - name: Get LANGUAGE_ARRAY from the languages.json file
         id: glal
         uses: ltdorgtest/ci-common/.github/actions/get-language-array-from-languages-file@main
         with:

@@ -126,7 +126,7 @@ jobs:
         with:
           ref: ${{ github.ref }}
           submodules: false
-      - name: Get VERSION_ARRAY from versions.json
+      - name: Get VERSION_ARRAY from the versions.json file
         id: gvlv
         uses: ltdorgtest/ci-common/.github/actions/get-version-array-from-versions-file@main
         with:
@@ -134,7 +134,7 @@ jobs:
           version: ${{ inputs.VERSION || github.event.client_payload.VERSION }}
           version-group: ${{ inputs.VERSION_GROUP }}
           version-filter: 'all'
-      - name: Get LANGUAGE_ARRAY from languages.json
+      - name: Get LANGUAGE_ARRAY from the languages.json file
         id: glal
         uses: ltdorgtest/ci-common/.github/actions/get-language-array-from-languages-file@main
         with:
