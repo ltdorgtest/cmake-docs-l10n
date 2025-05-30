@@ -345,10 +345,10 @@ create_git_worktree_for_l10n_branch(
 
 init_references_json_file(
     IN_FILEPATH         "${REFERENCES_JSON_PATH}"
+    IN_VERSION_TYPE     "${VERSION_TYPE}"
     IN_VERSION          "${VERSION}"
-    IN_TYPE             "${VERSION_TYPE}"
-    IN_MODE             "language"
-    IN_LANGUAGE         "${LANGUAGE_LIST}")
+    IN_INIT_MODE        "language"
+    IN_INIT_LIST        "${LANGUAGE_LIST}")
 
 #[============================================================[
 # Initialize ${CROWDIN_YML_PATH}.
