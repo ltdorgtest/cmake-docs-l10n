@@ -178,7 +178,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <tr>
       <td rowspan="1" colspan="1" align="right" style="text-align: right;">
-        <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml"><img alt="ci-crowdin-readme" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" /></a></div>
+        <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-document.yml"><img alt="ci-crowdin-document" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-document.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
         <div>Update README translations by Crowdin CLI tool.</div>
