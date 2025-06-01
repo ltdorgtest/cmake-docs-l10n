@@ -61,15 +61,15 @@ set(SPHINX_VERBOSE_LEVEL "1"
     # See https://www.sphinx-doc.org/en/master/man/sphinx-build.html#cmdoption-sphinx-build-v for details.
 
 set(SPHINX_GETTEXT_COMPACT "0"
-    CACHE STRING "The Gettext text domain generation for Sphinx.")
-    # Possible values are "1/0".
+    CACHE STRING "The compacting domain style for Sphinx with gettext builder.")
+    # Possible values are "1" (compact) or "0" (non-compact).
     # Passed to sphinx-build as -Dgettext_compact=${SPHINX_GETTEXT_COMPACT}.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_compact for details.
 
 set(SPHINX_GETTEXT_TARGETS "index,literal-block,raw"
-    CACHE STRING "The Gettext additional targets for Sphinx.")
-    # Possible values are "index", "literal-block", "doctest-block", "raw", and "image".
-    # A comma-separated list
+    CACHE STRING "The additional targets for Sphinx with gettext builder.")
+    # Possible values are a comma-separated list of the following targets:
+    # "index", "literal-block", "doctest-block", "raw", and "image".
     # Passed to sphinx-build as -Dgettext_additional_targets=${SPHINX_GETTEXT_TARGETS}.
     # See https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-gettext_additional_targets for details.
 
