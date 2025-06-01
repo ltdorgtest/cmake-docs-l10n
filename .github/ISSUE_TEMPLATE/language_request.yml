@@ -2,7 +2,7 @@ name: Request a New Language
 description: Use this template for requesting a new language.
 title: "[LANG] Request a New Language '<language-code>'"
 labels:
-  - "Language Request"
+  - Language Request
 assignees:
   - hwhsu1231
 body:
