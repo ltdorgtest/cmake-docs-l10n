@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
 # See accompanying file LICENSE.txt for details.
 
-name: ci-sphinx-build-docs
+name: ci-common-build-docs
 
 on:
   # Triggers the workflow based on a schedule.
@@ -169,7 +169,7 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}-${{ matrix.VERSION }}-${{ matrix.LANGUAGE }}
       cancel-in-progress: true
-    uses: ltdorgtest/ci-sphinx/.github/workflows/use-sphinx-build-docs.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-sphinx-build-docs.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}

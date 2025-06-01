@@ -89,7 +89,7 @@ jobs:
 
   check-sphinx-build-docs:
     needs: [ 'before-check' ]
-    uses: ltdorgtest/ci-sphinx/.github/workflows/use-sphinx-build-docs.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-sphinx-build-docs.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}
