@@ -17,6 +17,7 @@ body:
         Example 1:
         - **Version Name:** `4.0`
         - **Version Type:** `tag`
+
         Example 2:
         - **Version Name:** `master`
         - **Version Type:** `branch`
