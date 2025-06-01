@@ -407,7 +407,7 @@ This project is currently maintained by:
   <thead>
     <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Name</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Handle</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Username</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Contact Info</div></th>
     </tr>
   </thead>
