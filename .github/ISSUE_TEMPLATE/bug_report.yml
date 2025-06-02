@@ -1,9 +1,8 @@
 name: Report a Bug
 description: Create a report to help us improve
-title: "[BUG] "
-labels: [bug]
-assignees:
-  - hwhsu1231
+title: "[Bug] "
+labels:
+  - bug
 body:
   - type: markdown
     attributes:

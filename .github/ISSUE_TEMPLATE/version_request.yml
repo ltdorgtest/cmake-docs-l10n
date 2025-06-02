@@ -2,14 +2,8 @@ name: Request a New Version
 description: Use this template for requesting a new version.
 title: "[Version] Request New Version '<version>'"
 labels:
-  - Version Request
-assignees:
-  - hwhsu1231
+  - version_request
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this version request!
   - type: textarea
     attributes:
       label: Version Request
