@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2025-06-02 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,14 +34,27 @@ msgid ""
 "other Visual Studio specific parameters."
 msgstr ""
 
-#: ../../../prop_sf/VS_CSHARP_tagname.rst:15
+#: ../../../prop_sf/VS_CSHARP_tagname.rst:16
+msgid "Examples"
+msgstr ""
+
+#: ../../../prop_sf/VS_CSHARP_tagname.rst:18
 msgid "Example usage:"
 msgstr ""
 
-#: ../../../prop_sf/VS_CSHARP_tagname.rst:17
+#: ../../../prop_sf/VS_CSHARP_tagname.rst:20
 msgid ""
 "set_source_files_properties(<filename>\n"
 "         PROPERTIES\n"
 "         VS_CSHARP_DependentUpon <other file>\n"
 "         VS_CSHARP_SubType \"Form\")"
+msgstr ""
+
+#: ../../../prop_sf/VS_CSHARP_tagname.rst:28
+msgid "See Also"
+msgstr ""
+
+#: ../../../prop_sf/VS_CSHARP_tagname.rst:30
+msgid ""
+"The :module:`CSharpUtilities` module for configuring CSharp/.NET targets."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-06-02 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1248,11 +1248,11 @@ msgid ""
 "convention for the meaning of version numbers."
 msgstr ""
 
-#: ../../../command/find_package.rst:663
+#: ../../../command/find_package.rst:665
 msgid "CMake-script"
 msgstr ""
 
-#: ../../../command/find_package.rst:665
+#: ../../../command/find_package.rst:667
 msgid ""
 "For CMake-script package configuration files, package version numbers are "
 "checked by \"version\" files provided by the packages themselves or by :"
@@ -1267,64 +1267,64 @@ msgid ""
 "a nested scope in which the following variables have been defined:"
 msgstr ""
 
-#: ../../../command/find_package.rst:679
+#: ../../../command/find_package.rst:681
 msgid "``PACKAGE_FIND_NAME``"
 msgstr ""
 
-#: ../../../command/find_package.rst:680
+#: ../../../command/find_package.rst:682
 msgid "The ``<PackageName>``"
 msgstr ""
 
-#: ../../../command/find_package.rst:681
+#: ../../../command/find_package.rst:683
 msgid "``PACKAGE_FIND_VERSION``"
 msgstr ""
 
-#: ../../../command/find_package.rst:682 ../../../command/find_package.rst:877
+#: ../../../command/find_package.rst:684 ../../../command/find_package.rst:884
 msgid "Full requested version string"
 msgstr ""
 
-#: ../../../command/find_package.rst:683
+#: ../../../command/find_package.rst:685
 msgid "``PACKAGE_FIND_VERSION_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:684 ../../../command/find_package.rst:879
+#: ../../../command/find_package.rst:686 ../../../command/find_package.rst:886
 msgid "Major version if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:685
+#: ../../../command/find_package.rst:687
 msgid "``PACKAGE_FIND_VERSION_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:686 ../../../command/find_package.rst:881
+#: ../../../command/find_package.rst:688 ../../../command/find_package.rst:888
 msgid "Minor version if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:687
+#: ../../../command/find_package.rst:689
 msgid "``PACKAGE_FIND_VERSION_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:688 ../../../command/find_package.rst:883
+#: ../../../command/find_package.rst:690 ../../../command/find_package.rst:890
 msgid "Patch version if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:689
+#: ../../../command/find_package.rst:691
 msgid "``PACKAGE_FIND_VERSION_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:690 ../../../command/find_package.rst:885
+#: ../../../command/find_package.rst:692 ../../../command/find_package.rst:892
 msgid "Tweak version if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:691
+#: ../../../command/find_package.rst:693
 msgid "``PACKAGE_FIND_VERSION_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:692 ../../../command/find_package.rst:769
-#: ../../../command/find_package.rst:887
+#: ../../../command/find_package.rst:694 ../../../command/find_package.rst:771
+#: ../../../command/find_package.rst:894
 msgid "Number of version components, 0 to 4"
 msgstr ""
 
-#: ../../../command/find_package.rst:694 ../../../command/find_package.rst:896
+#: ../../../command/find_package.rst:696 ../../../command/find_package.rst:903
 msgid ""
 "When a version range is specified, the above version variables will hold "
 "values based on the lower end of the version range.  This is to preserve "
@@ -1333,179 +1333,179 @@ msgid ""
 "variables:"
 msgstr ""
 
-#: ../../../command/find_package.rst:700
+#: ../../../command/find_package.rst:702
 msgid "``PACKAGE_FIND_VERSION_RANGE``"
 msgstr ""
 
-#: ../../../command/find_package.rst:701 ../../../command/find_package.rst:903
+#: ../../../command/find_package.rst:703 ../../../command/find_package.rst:910
 msgid "Full requested version range string"
 msgstr ""
 
-#: ../../../command/find_package.rst:702
+#: ../../../command/find_package.rst:704
 msgid "``PACKAGE_FIND_VERSION_RANGE_MIN``"
 msgstr ""
 
-#: ../../../command/find_package.rst:703
+#: ../../../command/find_package.rst:705
 msgid ""
 "This specifies whether the lower end point of the version range should be "
 "included or excluded.  Currently, the only supported value for this variable "
 "is ``INCLUDE``."
 msgstr ""
 
-#: ../../../command/find_package.rst:706
+#: ../../../command/find_package.rst:708
 msgid "``PACKAGE_FIND_VERSION_RANGE_MAX``"
 msgstr ""
 
-#: ../../../command/find_package.rst:707
+#: ../../../command/find_package.rst:709
 msgid ""
 "This specifies whether the upper end point of the version range should be "
 "included or excluded.  The supported values for this variable are "
 "``INCLUDE`` and ``EXCLUDE``."
 msgstr ""
 
-#: ../../../command/find_package.rst:711
+#: ../../../command/find_package.rst:713
 msgid "``PACKAGE_FIND_VERSION_MIN``"
 msgstr ""
 
-#: ../../../command/find_package.rst:712 ../../../command/find_package.rst:913
+#: ../../../command/find_package.rst:714 ../../../command/find_package.rst:920
 msgid "Full requested version string of the lower end point of the range"
 msgstr ""
 
-#: ../../../command/find_package.rst:713
+#: ../../../command/find_package.rst:715
 msgid "``PACKAGE_FIND_VERSION_MIN_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:714 ../../../command/find_package.rst:915
+#: ../../../command/find_package.rst:716 ../../../command/find_package.rst:922
 msgid "Major version of the lower end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:715
+#: ../../../command/find_package.rst:717
 msgid "``PACKAGE_FIND_VERSION_MIN_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:716 ../../../command/find_package.rst:917
+#: ../../../command/find_package.rst:718 ../../../command/find_package.rst:924
 msgid "Minor version of the lower end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:717
+#: ../../../command/find_package.rst:719
 msgid "``PACKAGE_FIND_VERSION_MIN_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:718 ../../../command/find_package.rst:919
+#: ../../../command/find_package.rst:720 ../../../command/find_package.rst:926
 msgid "Patch version of the lower end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:719
+#: ../../../command/find_package.rst:721
 msgid "``PACKAGE_FIND_VERSION_MIN_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:720 ../../../command/find_package.rst:921
+#: ../../../command/find_package.rst:722 ../../../command/find_package.rst:928
 msgid "Tweak version of the lower end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:721
+#: ../../../command/find_package.rst:723
 msgid "``PACKAGE_FIND_VERSION_MIN_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:722 ../../../command/find_package.rst:923
+#: ../../../command/find_package.rst:724 ../../../command/find_package.rst:930
 msgid "Number of version components of the lower end point, 0 to 4"
 msgstr ""
 
-#: ../../../command/find_package.rst:724
+#: ../../../command/find_package.rst:726
 msgid "``PACKAGE_FIND_VERSION_MAX``"
 msgstr ""
 
-#: ../../../command/find_package.rst:725 ../../../command/find_package.rst:926
+#: ../../../command/find_package.rst:727 ../../../command/find_package.rst:933
 msgid "Full requested version string of the upper end point of the range"
 msgstr ""
 
-#: ../../../command/find_package.rst:726
+#: ../../../command/find_package.rst:728
 msgid "``PACKAGE_FIND_VERSION_MAX_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:727 ../../../command/find_package.rst:928
+#: ../../../command/find_package.rst:729 ../../../command/find_package.rst:935
 msgid "Major version of the upper end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:728
+#: ../../../command/find_package.rst:730
 msgid "``PACKAGE_FIND_VERSION_MAX_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:729 ../../../command/find_package.rst:930
+#: ../../../command/find_package.rst:731 ../../../command/find_package.rst:937
 msgid "Minor version of the upper end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:730
+#: ../../../command/find_package.rst:732
 msgid "``PACKAGE_FIND_VERSION_MAX_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:731 ../../../command/find_package.rst:932
+#: ../../../command/find_package.rst:733 ../../../command/find_package.rst:939
 msgid "Patch version of the upper end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:732
+#: ../../../command/find_package.rst:734
 msgid "``PACKAGE_FIND_VERSION_MAX_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:733 ../../../command/find_package.rst:934
+#: ../../../command/find_package.rst:735 ../../../command/find_package.rst:941
 msgid "Tweak version of the upper end point if requested, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:734
+#: ../../../command/find_package.rst:736
 msgid "``PACKAGE_FIND_VERSION_MAX_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:735 ../../../command/find_package.rst:936
+#: ../../../command/find_package.rst:737 ../../../command/find_package.rst:943
 msgid "Number of version components of the upper end point, 0 to 4"
 msgstr ""
 
-#: ../../../command/find_package.rst:737
+#: ../../../command/find_package.rst:739
 msgid ""
 "Regardless of whether a single version or a version range is specified, the "
 "variable ``PACKAGE_FIND_VERSION_COMPLETE`` will be defined and will hold the "
 "full requested version string as specified."
 msgstr ""
 
-#: ../../../command/find_package.rst:741
+#: ../../../command/find_package.rst:743
 msgid ""
 "The version file checks whether it satisfies the requested version and sets "
 "these variables:"
 msgstr ""
 
-#: ../../../command/find_package.rst:744
+#: ../../../command/find_package.rst:746
 msgid "``PACKAGE_VERSION``"
 msgstr ""
 
-#: ../../../command/find_package.rst:745 ../../../command/find_package.rst:759
-#: ../../../command/find_package.rst:849
+#: ../../../command/find_package.rst:747 ../../../command/find_package.rst:761
+#: ../../../command/find_package.rst:856
 msgid "Full provided version string"
 msgstr ""
 
-#: ../../../command/find_package.rst:746
+#: ../../../command/find_package.rst:748
 msgid "``PACKAGE_VERSION_EXACT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:747
+#: ../../../command/find_package.rst:749
 msgid "True if version is exact match"
 msgstr ""
 
-#: ../../../command/find_package.rst:748
+#: ../../../command/find_package.rst:750
 msgid "``PACKAGE_VERSION_COMPATIBLE``"
 msgstr ""
 
-#: ../../../command/find_package.rst:749
+#: ../../../command/find_package.rst:751
 msgid "True if version is compatible"
 msgstr ""
 
-#: ../../../command/find_package.rst:750
+#: ../../../command/find_package.rst:752
 msgid "``PACKAGE_VERSION_UNSUITABLE``"
 msgstr ""
 
-#: ../../../command/find_package.rst:751
+#: ../../../command/find_package.rst:753
 msgid "True if unsuitable as any version"
 msgstr ""
 
-#: ../../../command/find_package.rst:753
+#: ../../../command/find_package.rst:755
 msgid ""
 "These variables are checked by the ``find_package`` command to determine "
 "whether the configuration file provides an acceptable version.  They are not "
@@ -1513,51 +1513,51 @@ msgid ""
 "acceptable, the following variables are set:"
 msgstr ""
 
-#: ../../../command/find_package.rst:758 ../../../command/find_package.rst:848
+#: ../../../command/find_package.rst:760 ../../../command/find_package.rst:855
 msgid "``<PackageName>_VERSION``"
 msgstr ""
 
-#: ../../../command/find_package.rst:760 ../../../command/find_package.rst:850
+#: ../../../command/find_package.rst:762 ../../../command/find_package.rst:857
 msgid "``<PackageName>_VERSION_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:761 ../../../command/find_package.rst:851
+#: ../../../command/find_package.rst:763 ../../../command/find_package.rst:858
 msgid "Major version if provided, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:762 ../../../command/find_package.rst:852
+#: ../../../command/find_package.rst:764 ../../../command/find_package.rst:859
 msgid "``<PackageName>_VERSION_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:763 ../../../command/find_package.rst:853
+#: ../../../command/find_package.rst:765 ../../../command/find_package.rst:860
 msgid "Minor version if provided, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:764 ../../../command/find_package.rst:854
+#: ../../../command/find_package.rst:766 ../../../command/find_package.rst:861
 msgid "``<PackageName>_VERSION_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:765 ../../../command/find_package.rst:855
+#: ../../../command/find_package.rst:767 ../../../command/find_package.rst:862
 msgid "Patch version if provided, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:766 ../../../command/find_package.rst:856
+#: ../../../command/find_package.rst:768 ../../../command/find_package.rst:863
 msgid "``<PackageName>_VERSION_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:767 ../../../command/find_package.rst:857
+#: ../../../command/find_package.rst:769 ../../../command/find_package.rst:864
 msgid "Tweak version if provided, else 0"
 msgstr ""
 
-#: ../../../command/find_package.rst:768 ../../../command/find_package.rst:858
+#: ../../../command/find_package.rst:770 ../../../command/find_package.rst:865
 msgid "``<PackageName>_VERSION_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:771
+#: ../../../command/find_package.rst:773
 msgid "and the corresponding package configuration file is loaded."
 msgstr ""
 
-#: ../../../command/find_package.rst:774
+#: ../../../command/find_package.rst:776
 msgid ""
 "While the exact behavior of version matching is determined by the individual "
 "package, many packages use :command:`write_basic_package_version_file` to "
@@ -1565,7 +1565,7 @@ msgid ""
 "notable caveats with respect to version ranges:"
 msgstr ""
 
-#: ../../../command/find_package.rst:779
+#: ../../../command/find_package.rst:781
 msgid ""
 "The upper end of a version range acts as a hard limit on what versions will "
 "be accepted.  Thus, while a request for version ``1.4.0`` might be satisfied "
@@ -1574,7 +1574,7 @@ msgid ""
 "version range is ``1.4.0...1.5.0``."
 msgstr ""
 
-#: ../../../command/find_package.rst:785
+#: ../../../command/find_package.rst:787
 msgid ""
 "Both ends of the version range must match the package's advertised "
 "compatibility level. For example, if a package advertises 'same major and "
@@ -1583,51 +1583,51 @@ msgid ""
 "even if the package version is ``1.4.1``."
 msgstr ""
 
-#: ../../../command/find_package.rst:791
+#: ../../../command/find_package.rst:793
 msgid ""
 "As a result, it is not possible to use a version range to extend the range "
 "of compatible package versions that will be accepted."
 msgstr ""
 
-#: ../../../command/find_package.rst:795
+#: ../../../command/find_package.rst:799
 msgid "|CPS|"
 msgstr ""
 
-#: ../../../command/find_package.rst:797
+#: ../../../command/find_package.rst:801
 msgid ""
 "For |CPS| package configuration files, package version numbers are checked "
 "by CMake according to the set of recognized version schemas. At present, the "
 "following schemas are recognized:"
 msgstr ""
 
-#: ../../../command/find_package.rst:801
+#: ../../../command/find_package.rst:805
 msgid "``simple``"
 msgstr ""
 
-#: ../../../command/find_package.rst:802
+#: ../../../command/find_package.rst:806
 msgid ""
 "Version numbers are a tuple of integers followed by an optional trailing "
 "segment which is ignored with respect to version comparisons."
 msgstr ""
 
-#: ../../../command/find_package.rst:805
+#: ../../../command/find_package.rst:809
 msgid "``custom``"
 msgstr ""
 
-#: ../../../command/find_package.rst:806
+#: ../../../command/find_package.rst:810
 msgid ""
 "The mechanism for interpreting version numbers is unspecified.  The version "
 "strings must match exactly for the package to be accepted."
 msgstr ""
 
-#: ../../../command/find_package.rst:809
+#: ../../../command/find_package.rst:813
 msgid ""
 "Refer to |cps-version_schema|_ for a more detailed explanation of each "
 "schema and how comparisons for each are performed.  Note that the "
 "specification may include schemas that are not supported by CMake."
 msgstr ""
 
-#: ../../../command/find_package.rst:813
+#: ../../../command/find_package.rst:817
 msgid ""
 "In addition to the package's ``version``, CPS allows packages to optionally "
 "specify a |cps-compat_version|_, which is the oldest version for which the "
@@ -1638,232 +1638,232 @@ msgid ""
 "backwards compatibility is provided."
 msgstr ""
 
-#: ../../../command/find_package.rst:821
+#: ../../../command/find_package.rst:828
 msgid ""
 "When a package uses a recognized schema, CMake will determine the package's "
 "acceptability according to the following rules:"
 msgstr ""
 
-#: ../../../command/find_package.rst:824
+#: ../../../command/find_package.rst:831
 msgid ""
 "If ``EXACT`` was specified, or if the package does not supply a "
 "``compat_version``, the package's ``version`` must equal the requested "
 "version."
 msgstr ""
 
-#: ../../../command/find_package.rst:828
+#: ../../../command/find_package.rst:835
 msgid "Otherwise:"
 msgstr ""
 
-#: ../../../command/find_package.rst:830
+#: ../../../command/find_package.rst:837
 msgid ""
 "The package's ``version`` must be greater than or equal to the requested "
 "(minimum) version, and"
 msgstr ""
 
-#: ../../../command/find_package.rst:833
+#: ../../../command/find_package.rst:840
 msgid ""
 "the package's ``compat_version`` must be less than or equal to the requested "
 "(minimum) version, and"
 msgstr ""
 
-#: ../../../command/find_package.rst:836
+#: ../../../command/find_package.rst:843
 msgid ""
 "if a requested maximum version was given, it must be greater than (or equal "
 "to, depending on whether the maximum version is specified as inclusive or "
 "exclusive) the package's ``version``."
 msgstr ""
 
-#: ../../../command/find_package.rst:841
+#: ../../../command/find_package.rst:848
 msgid ""
 "This implementation of range matching was chosen in order to most closely "
 "match the behavior of :command:`write_basic_package_version_file`, albeit "
 "without the case where an overly broad range matches nothing."
 msgstr ""
 
-#: ../../../command/find_package.rst:845
+#: ../../../command/find_package.rst:852
 msgid ""
 "For packages using the ``simple`` version schema, if the version is "
 "acceptable, the following variables are set:"
 msgstr ""
 
-#: ../../../command/find_package.rst:859
+#: ../../../command/find_package.rst:866
 msgid "Number of version components, non-negative"
 msgstr ""
 
-#: ../../../command/find_package.rst:862
+#: ../../../command/find_package.rst:869
 msgid "Package File Interface Variables"
 msgstr ""
 
-#: ../../../command/find_package.rst:864
+#: ../../../command/find_package.rst:871
 msgid ""
 "When loading a find module or CMake-script package configuration file, "
 "``find_package`` defines variables to provide information about the call "
 "arguments (and restores their original state before returning):"
 msgstr ""
 
-#: ../../../command/find_package.rst:868
+#: ../../../command/find_package.rst:875
 msgid "``CMAKE_FIND_PACKAGE_NAME``"
 msgstr ""
 
-#: ../../../command/find_package.rst:869
+#: ../../../command/find_package.rst:876
 msgid "The ``<PackageName>`` which is searched for"
 msgstr ""
 
-#: ../../../command/find_package.rst:870
+#: ../../../command/find_package.rst:877
 msgid "``<PackageName>_FIND_REQUIRED``"
 msgstr ""
 
-#: ../../../command/find_package.rst:871
+#: ../../../command/find_package.rst:878
 msgid "True if ``REQUIRED`` option was given"
 msgstr ""
 
-#: ../../../command/find_package.rst:872
+#: ../../../command/find_package.rst:879
 msgid "``<PackageName>_FIND_QUIETLY``"
 msgstr ""
 
-#: ../../../command/find_package.rst:873
+#: ../../../command/find_package.rst:880
 msgid "True if ``QUIET`` option was given"
 msgstr ""
 
-#: ../../../command/find_package.rst:874
+#: ../../../command/find_package.rst:881
 msgid "``<PackageName>_FIND_REGISTRY_VIEW``"
 msgstr ""
 
-#: ../../../command/find_package.rst:875
+#: ../../../command/find_package.rst:882
 msgid "The requested view if ``REGISTRY_VIEW`` option was given"
 msgstr ""
 
-#: ../../../command/find_package.rst:876
+#: ../../../command/find_package.rst:883
 msgid "``<PackageName>_FIND_VERSION``"
 msgstr ""
 
-#: ../../../command/find_package.rst:878
+#: ../../../command/find_package.rst:885
 msgid "``<PackageName>_FIND_VERSION_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:880
+#: ../../../command/find_package.rst:887
 msgid "``<PackageName>_FIND_VERSION_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:882
+#: ../../../command/find_package.rst:889
 msgid "``<PackageName>_FIND_VERSION_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:884
+#: ../../../command/find_package.rst:891
 msgid "``<PackageName>_FIND_VERSION_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:886
+#: ../../../command/find_package.rst:893
 msgid "``<PackageName>_FIND_VERSION_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:888
+#: ../../../command/find_package.rst:895
 msgid "``<PackageName>_FIND_VERSION_EXACT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:889
+#: ../../../command/find_package.rst:896
 msgid "True if ``EXACT`` option was given"
 msgstr ""
 
-#: ../../../command/find_package.rst:890
+#: ../../../command/find_package.rst:897
 msgid "``<PackageName>_FIND_COMPONENTS``"
 msgstr ""
 
-#: ../../../command/find_package.rst:891
+#: ../../../command/find_package.rst:898
 msgid "List of specified components (required and optional)"
 msgstr ""
 
-#: ../../../command/find_package.rst:892
+#: ../../../command/find_package.rst:899
 msgid "``<PackageName>_FIND_REQUIRED_<c>``"
 msgstr ""
 
-#: ../../../command/find_package.rst:893
+#: ../../../command/find_package.rst:900
 msgid ""
 "True if component ``<c>`` is required, false if component ``<c>`` is optional"
 msgstr ""
 
-#: ../../../command/find_package.rst:902
+#: ../../../command/find_package.rst:909
 msgid "``<PackageName>_FIND_VERSION_RANGE``"
 msgstr ""
 
-#: ../../../command/find_package.rst:904
+#: ../../../command/find_package.rst:911
 msgid "``<PackageName>_FIND_VERSION_RANGE_MIN``"
 msgstr ""
 
-#: ../../../command/find_package.rst:905
+#: ../../../command/find_package.rst:912
 msgid ""
 "This specifies whether the lower end point of the version range is included "
 "or excluded.  Currently, ``INCLUDE`` is the only supported value."
 msgstr ""
 
-#: ../../../command/find_package.rst:907
+#: ../../../command/find_package.rst:914
 msgid "``<PackageName>_FIND_VERSION_RANGE_MAX``"
 msgstr ""
 
-#: ../../../command/find_package.rst:908
+#: ../../../command/find_package.rst:915
 msgid ""
 "This specifies whether the upper end point of the version range is included "
 "or excluded.  The possible values for this variable are ``INCLUDE`` or "
 "``EXCLUDE``."
 msgstr ""
 
-#: ../../../command/find_package.rst:912
+#: ../../../command/find_package.rst:919
 msgid "``<PackageName>_FIND_VERSION_MIN``"
 msgstr ""
 
-#: ../../../command/find_package.rst:914
+#: ../../../command/find_package.rst:921
 msgid "``<PackageName>_FIND_VERSION_MIN_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:916
+#: ../../../command/find_package.rst:923
 msgid "``<PackageName>_FIND_VERSION_MIN_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:918
+#: ../../../command/find_package.rst:925
 msgid "``<PackageName>_FIND_VERSION_MIN_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:920
+#: ../../../command/find_package.rst:927
 msgid "``<PackageName>_FIND_VERSION_MIN_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:922
+#: ../../../command/find_package.rst:929
 msgid "``<PackageName>_FIND_VERSION_MIN_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:925
+#: ../../../command/find_package.rst:932
 msgid "``<PackageName>_FIND_VERSION_MAX``"
 msgstr ""
 
-#: ../../../command/find_package.rst:927
+#: ../../../command/find_package.rst:934
 msgid "``<PackageName>_FIND_VERSION_MAX_MAJOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:929
+#: ../../../command/find_package.rst:936
 msgid "``<PackageName>_FIND_VERSION_MAX_MINOR``"
 msgstr ""
 
-#: ../../../command/find_package.rst:931
+#: ../../../command/find_package.rst:938
 msgid "``<PackageName>_FIND_VERSION_MAX_PATCH``"
 msgstr ""
 
-#: ../../../command/find_package.rst:933
+#: ../../../command/find_package.rst:940
 msgid "``<PackageName>_FIND_VERSION_MAX_TWEAK``"
 msgstr ""
 
-#: ../../../command/find_package.rst:935
+#: ../../../command/find_package.rst:942
 msgid "``<PackageName>_FIND_VERSION_MAX_COUNT``"
 msgstr ""
 
-#: ../../../command/find_package.rst:938
+#: ../../../command/find_package.rst:945
 msgid ""
 "Regardless of whether a single version or a version range is specified, the "
 "variable ``<PackageName>_FIND_VERSION_COMPLETE`` will be defined and will "
 "hold the full requested version string as specified."
 msgstr ""
 
-#: ../../../command/find_package.rst:942
+#: ../../../command/find_package.rst:949
 msgid ""
 "In Module mode the loaded find module is responsible to honor the request "
 "detailed by these variables; see the find module for details. In Config mode "
@@ -1874,11 +1874,11 @@ msgid ""
 "``find_package`` that component requirements are not satisfied."
 msgstr ""
 
-#: ../../../command/find_package.rst:961
+#: ../../../command/find_package.rst:968
 msgid "CPS Transitive Requirements"
 msgstr ""
 
-#: ../../../command/find_package.rst:963
+#: ../../../command/find_package.rst:970
 msgid ""
 "A |CPS| package description consists of one or more components which may in "
 "turn depend on other components either internal or external to the package. "
@@ -1887,7 +1887,7 @@ msgid ""
 "components is typically noted in said external package requirement."
 msgstr ""
 
-#: ../../../command/find_package.rst:969
+#: ../../../command/find_package.rst:976
 msgid ""
 "Where a CMake-script package description would use the :command:"
 "`find_dependency` command to handle transitive dependencies, CMake handles "
@@ -1897,7 +1897,7 @@ msgid ""
 "which the CPS component dependencies are handled is subject to some caveats."
 msgstr ""
 
-#: ../../../command/find_package.rst:976
+#: ../../../command/find_package.rst:983
 msgid ""
 "When the candidate for resolving a transitive dependency is another CPS "
 "package, things are simple; ``COMPONENTS`` and CPS \"components\" are "
@@ -1911,7 +1911,7 @@ msgid ""
 "failures to resolve dependencies."
 msgstr ""
 
-#: ../../../command/find_package.rst:986
+#: ../../../command/find_package.rst:993
 msgid ""
 "To address this, if a candidate for resolving a CPS transitive dependency is "
 "a CMake-script package, CMake passes the required components as declared by "
