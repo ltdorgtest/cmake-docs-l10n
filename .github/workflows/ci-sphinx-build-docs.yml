@@ -178,7 +178,7 @@ jobs:
       MODE_OF_UPDATE: 'NEVER'
       BASEURL_HREF: ${{ vars.BASEURL_HREF }}
       SPHINX_BUILDER: 'html'
-      DEPLOY_PAGES: ${{ inputs.ENABLE_DEPLOY }}
+      DEPLOY_PAGES: ${{ inputs.ENABLE_DEPLOY || 'true' }}
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
