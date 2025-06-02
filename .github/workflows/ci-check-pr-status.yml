@@ -69,9 +69,9 @@ jobs:
           echo "steps.filter.outputs.document_count = ${{ steps.filter.outputs.document_count }}"
           echo "steps.filter.outputs.build_count    = ${{ steps.filter.outputs.build_count }}"
 
-  check-crowdin-document:
+  check-crowdin-readme:
     needs: [ 'before-check' ]
-    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-document.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-readme.yml@main
     with:
       RUNNER: 'ubuntu-latest'
       CHECKOUT: ${{ github.ref }}

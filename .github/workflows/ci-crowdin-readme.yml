@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
 # See accompanying file LICENSE.txt for details.
 
-name: ci-crowdin-document
+name: ci-crowdin-readme
 
 on:
   # Triggers the workflow when README changes are pushed to the 'main' branch.
@@ -104,11 +104,11 @@ jobs:
     concurrency:
       group: ${{ github.workflow }}
       cancel-in-progress: true
-    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-document.yml@main
+    uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-readme.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
-      VERSION: 'document'
+      VERSION: 'readme'
       LANGUAGE: ${{ inputs.LANGUAGE || 'all' }}
       LANGUAGE_SOURCE: 'en_US'
       ENABLE_JOB: true
