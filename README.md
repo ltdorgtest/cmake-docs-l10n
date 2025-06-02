@@ -65,7 +65,7 @@
   <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
 </a>
 <a href="https://ltdorgtest.zulipchat.com" title="Join Zulip Chat" target="_blank">
-  <img src="https://img.shields.io/badge/Zulip-join_chat-brightgreen.svg?logo=zulip" />
+  <img alt="Join Zulip Chat" src="https://img.shields.io/badge/Zulip-join_chat-brightgreen.svg?logo=zulip" />
 </a>
 </div>
 
