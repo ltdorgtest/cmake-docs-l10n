@@ -42,7 +42,10 @@
 
 <h2 id="introduction"><a href="#table-of-contents">Introduction</a></h2>
 
-<div align="center"><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
+<div align="center"><a href="https://ltdorgtest.zulipchat.com" title="Join Zulip Chat" target="_blank">
+  <img src="https://img.shields.io/badge/Zulip-join_chat-brightgreen.svg?logo=zulip" />
+</a>
+<a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
   <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
 </a>
 <a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
