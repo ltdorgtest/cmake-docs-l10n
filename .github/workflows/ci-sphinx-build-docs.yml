@@ -1,7 +1,7 @@
 # Distributed under the OSI-approved BSD 3-Clause License.
 # See accompanying file LICENSE.txt for details.
 
-name: ci-common-build-docs
+name: ci-sphinx-build-docs
 
 on:
   # Triggers the workflow based on a schedule.
