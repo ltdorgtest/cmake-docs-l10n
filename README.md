@@ -185,7 +185,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml"><img alt="ci-crowdin-readme" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update document translations by Crowdin CLI tool.</div>
+        <div>Update README translations by Crowdin CLI tool.</div>
       </td>
     </tr>
     <tr>
@@ -209,7 +209,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml"><img alt="ci-update-license-year" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update LICENSE file to the latest year.</div>
+        <div>Update the copyright year in LICENSE to the current year.</div>
       </td>
     </tr>
     <tr>
