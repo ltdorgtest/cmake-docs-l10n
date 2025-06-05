@@ -2,7 +2,7 @@ name: Request a New Language
 description: Use this template for requesting a new language.
 title: "[Langauge] Request New Language '<language-code>'"
 labels:
-  - language_request
+  - "new language"
 body:
   - type: markdown
     attributes:
@@ -13,17 +13,17 @@ body:
       label: Language Request
       description: |
         Examples:
-        - **Language Code:** `zh_CN`
+        - **Locale Code:** `zh_CN`
+        - **English Name:** Simplified Chinese
+        - **Native Name:** 简体中文
         - **Crowdin Code:** `zh-CN`
         - **ReadTheDocs Code:** `zh_CN`
-        - **English Name:** Simplified Chinese
-        - **Localized Name:** 简体中文
       value: |
-        - **Language Code:**
+        - **Locale Code:**
+        - **English Name:**
+        - **Native Name:**
         - **Crowdin Code:**
         - **ReadTheDocs Code:**
-        - **English Name:**
-        - **Localized Name:**
     validations:
       required: true
   - type: checkboxes
