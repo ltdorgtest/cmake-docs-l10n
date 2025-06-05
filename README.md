@@ -230,7 +230,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language<br/>Code</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale<br/>Code</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
           <div>English Name</div>
