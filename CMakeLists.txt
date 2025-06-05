@@ -9,11 +9,11 @@ project(cmake-docs-l10n NONE)
 #]============================================================]
 
 set(LANGUAGE "all"
-    CACHE STRING "The language code of the documentation.")
+    CACHE STRING "The language of the documentation.")
     # Possible values are "all" and languages listed in languages.json.
 
 set(LANGUAGE_SOURCE "en_US"
-    CACHE STRING "The source language code of the documentation")
+    CACHE STRING "The source language of the documentation")
     # Possible values are "en_US".
 
 set(VERSION "master"
