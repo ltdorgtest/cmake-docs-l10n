@@ -18,7 +18,8 @@ on:
 
 jobs:
   precondition:
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
+    if: ${{ ( github.repository == 'ltdorgtest/cmake-docs-l10n' ) &&
+            ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     steps:
@@ -72,7 +73,8 @@ jobs:
           fi
 
   get-matrix:
-    if: ${{ ( ( github.event_name == 'schedule' ) ||
+    if: ${{ ( github.repository == 'ltdorgtest/cmake-docs-l10n' ) &&
+            ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     runs-on: ${{ vars.RUNNER }}
     outputs:
@@ -98,7 +100,8 @@ jobs:
 
   caller:
     needs: [ 'precondition', 'get-matrix' ]
-    if: ${{ ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
+    if: ${{ ( github.repository == 'ltdorgtest/cmake-docs-l10n' ) &&
+            ( needs.get-matrix.outputs.MATRIX_NUM != '0' ) &&
             ( ( github.event_name == 'schedule' ) ||
               ( github.event_name == 'workflow_dispatch' ) ) }}
     strategy:
