@@ -4,10 +4,6 @@ title: "[Langauge] Request New Language '<language-code>'"
 labels:
   - "new language"
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this language request!
   - type: textarea
     attributes:
       label: Language Request
@@ -29,7 +25,6 @@ body:
   - type: checkboxes
     attributes:
       label: Checklist
-      # description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
       options:
         - label: The language is available in [Language Code Table](https://github.com/ltdorgtest/lang-table).
           required: true
