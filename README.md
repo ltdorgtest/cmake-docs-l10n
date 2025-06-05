@@ -435,7 +435,7 @@ You can contribute and support this project by doing any of the following:
   <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a> if you found any bug.</li>
   <li>Submit pull requests on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls">GitHub</a> if you know how to fix the bug.</li>
   <li>Contribute your translations on <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n">Crowdin</a>.</li>
-  <li>If you love these kind of l10n projects documentation, please consider <a href="#sponsorship">sponsorship</a>.</li>
+  <li>If you love this kind of l10n projects documentation, please consider <a href="#sponsorship">sponsorship</a>.</li>
 </ul>
 
 It will inspire the author to make more and more l10n projects for open-source documentation.
