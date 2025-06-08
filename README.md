@@ -478,6 +478,10 @@ You can sponsor the author through the following platforms:
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
 
+<a href="https://github.com/ltdorgtest/cmake-docs-l10n/graphs/contributors">
+  <img width="100%" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@contrib/github-contributors.svg" />
+</a>
+
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
 <div align="center">
@@ -487,3 +491,5 @@ You can sponsor the author through the following platforms:
 <div align="center">
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
+
+<h2 id="spacial-thanks"><a href="#table-of-contents">Special Thanks</a></h2>
