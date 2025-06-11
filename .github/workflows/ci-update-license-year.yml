@@ -85,7 +85,7 @@ jobs:
       ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
-      LICENSE_FILE: LICENSE*
+      LICENSE_PATH: LICENSE*
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
