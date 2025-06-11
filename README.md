@@ -177,7 +177,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml"><img alt="ci-crowdin-download-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Download <code>.pot</code> files from Crowdin by its CLI tool.</div>
+        <div>Download <code>.po</code> files from Crowdin by its CLI tool.</div>
       </td>
     </tr>
     <tr>
