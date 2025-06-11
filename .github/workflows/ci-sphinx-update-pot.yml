@@ -153,12 +153,12 @@ jobs:
       cancel-in-progress: true
     uses: ltdorgtest/ci-common/.github/workflows/use-sphinx-update-pot.yml@main
     with:
+      ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
       MODE_OF_UPDATE: ${{ inputs.MODE_OF_UPDATE || 'COMPARE' }}
       CREATE_PR: true
-      ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:

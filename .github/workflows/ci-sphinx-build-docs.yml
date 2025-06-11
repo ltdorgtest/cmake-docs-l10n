@@ -171,6 +171,7 @@ jobs:
       cancel-in-progress: true
     uses: ltdorgtest/ci-common/.github/workflows/use-sphinx-build-docs.yml@main
     with:
+      ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
@@ -179,7 +180,6 @@ jobs:
       BASEURL_HREF: ${{ vars.BASEURL_HREF }}
       SPHINX_BUILDER: 'html'
       DEPLOY_PAGES: ${{ inputs.DEPLOY_PAGES || 'true' }}
-      ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:

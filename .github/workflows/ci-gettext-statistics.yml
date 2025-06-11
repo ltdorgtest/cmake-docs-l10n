@@ -143,10 +143,10 @@ jobs:
       cancel-in-progress: true
     uses: ltdorgtest/ci-common/.github/workflows/use-gettext-statistics.yml@main
     with:
+      ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: ${{ matrix.VERSION }}
-      ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
