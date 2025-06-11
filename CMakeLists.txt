@@ -5,6 +5,10 @@ cmake_minimum_required(VERSION 3.25)
 project(cmake-docs-l10n NONE)
 
 #[============================================================[
+# Constants.
+#]============================================================]
+
+#[============================================================[
 # Cache Variables.
 #]============================================================]
 
@@ -362,6 +366,7 @@ file(COPY_FILE
 # Print Information.
 #]============================================================]
 
+message(STATUS "---------- Constants ----------")
 message(STATUS "---------- Cache Variables ----------")
 message(STATUS "LANGUAGE                        = ${LANGUAGE}")
 message(STATUS "LANGUAGE_SOURCE                 = ${LANGUAGE_SOURCE}")
@@ -460,6 +465,7 @@ set(SCRIPT_MODE_ENV
 #]============================================================]
 
 set(SCRIPT_MODE_CACHE
+    # [Constants]
     # [Cache Variables]
     -D LANGUAGE=${LANGUAGE}
     -D LANGUAGE_SOURCE=${LANGUAGE_SOURCE}
