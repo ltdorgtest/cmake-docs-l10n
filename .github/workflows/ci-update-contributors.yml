@@ -71,7 +71,7 @@ jobs:
     uses: ltdorgtest/ci-common/.github/workflows/use-update-contributors.yml@main
     with:
       RUNNER: ${{ vars.RUNNER }}
-      CHECKOUT: ${{ github.ref }}
+      # CHECKOUT: ${{ github.ref }}
       DEPLOY_BRANCH: 'contrib'
       ENABLE_JOB: true
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
