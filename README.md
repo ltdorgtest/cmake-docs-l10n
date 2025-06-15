@@ -438,7 +438,7 @@ You can contribute and support this project by doing any of the following:
   <li>If you love this kind of l10n projects, please consider <a href="#sponsorship">sponsorship</a>.</li>
 </ul>
 
-It will inspire the author to make more and more l10n projects for open-source documentation.
+It will facilitate the creation and ongoing maintenance of l10n projects for open-source documentation.
 
 <h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
 
@@ -477,10 +477,6 @@ You can sponsor the author through the following platforms:
 <div align="center">
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
-
-<a href="https://github.com/ltdorgtest/cmake-docs-l10n/graphs/contributors">
-  <img width="100%" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@contrib/github-contributors.svg" />
-</a>
 
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
