@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2025 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-16 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../release/dev/install-nonextant-file-set.rst:2
+msgid "install-nonextant-file-set"
+msgstr ""
+
+#: ../../../release/dev/install-nonextant-file-set.rst:4
+msgid ""
+"The :command:`install(TARGETS)` command no longer ignores file sets which "
+"haven't been defined at the point it is called. The ordering of :command:"
+"`target_sources(FILE_SET)` and ``install(TARGETS)`` is no longer "
+"semantically relevant."
+msgstr ""

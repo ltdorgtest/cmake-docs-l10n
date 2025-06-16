@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2025 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-16 08:38+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../release/dev/implicit-find-events.rst:2
+msgid "implicit-find-events"
+msgstr ""
+
+#: ../../../release/dev/implicit-find-events.rst:4
+msgid ""
+"The :manual:`cmake-configure-log(7)` will report events from ``find_`` "
+"commands without any find-debug flags (e.g., :variable:"
+"`CMAKE_FIND_DEBUG_MODE`) when they transition between \"found\" and \"not "
+"found\" or when they are first defined. The :variable:"
+"`CMAKE_FIND_DEBUG_MODE_NO_IMPLICIT_CONFIGURE_LOG` variable will suppress "
+"these events without any explicit request for a debug mode."
+msgstr ""
