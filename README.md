@@ -77,6 +77,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
 
 <div align="center">
 <table>
+  <thead>
+    <tr>
+      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>Project Links</div></th>
+    </tr>
+  </thead>
   <tbody>
     <!-- TMS -->
     <tr>
