@@ -190,7 +190,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-update-docs.yml"><img alt="ci-crowdin-update-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-update-docs.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update README translations by Crowdin CLI tool.</div>
+        <div>Update documentation translations by Crowdin CLI tool.</div>
       </td>
     </tr>
     <tr>
