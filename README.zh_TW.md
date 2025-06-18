@@ -10,10 +10,10 @@
 </div>
 
 <div align="center">
-<h1 id="localization-of-cmake-documentation">Localization of CMake Documentation</h1>
+<h1 id="localization-of-cmake-documentation">CMake 文件的在地化</h1>
 </div>
 
-<details><summary><strong>Switch Languages</strong></summary>
+<details><summary><strong>切換語言</strong></summary>
 <p></p>
 <ul>
   <li><a href="./README.md"><code>en_US</code> : English</a></li>
@@ -25,22 +25,22 @@
 </ul>
 </details>
 
-<h2 id="table-of-contents">Table of Contents</h2>
+<h2 id="table-of-contents">目次表</h2>
 
 <ul>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#progress-of-translations">Progress of Translations</a></li>
-  <li><a href="#preview-translations">Preview Translations</a></li>
-  <li><a href="#licenses">Licenses</a></li>
-  <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
+  <li><a href="#introduction">介紹</a></li>
+  <li><a href="#progress-of-translations">翻譯進度</a></li>
+  <li><a href="#preview-translations">預覽翻譯</a></li>
+  <li><a href="#licenses">授權條款</a></li>
+  <li><a href="#translation-disclaimer">翻譯免責聲明</a></li>
   <li><a href="#maintainers">Maintainers</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
   <li><a href="#sponsorship">Sponsorship</a></li>
-  <li><a href="#code-contributors">Code Contributors</a></li>
-  <li><a href="#financial-contributors">Financial Contributors</a></li>
+  <li><a href="#code-contributors">程式碼貢獻者</a></li>
+  <li><a href="#financial-contributors">財務貢獻者</a></li>
 </ul>
 
-<h2 id="introduction"><a href="#table-of-contents">Introduction</a></h2>
+<h2 id="introduction"><a href="#table-of-contents">介紹</a></h2>
 
 <div align="center"><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
   <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
@@ -78,7 +78,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>Project Links</div></th>
+      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>專案連結</div></th>
     </tr>
   </thead>
   <tbody>
@@ -92,7 +92,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- Main -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Main</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>主要倉</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
@@ -100,7 +100,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- Mirror -->
     <tr>
-      <th rowspan="2" colspan="1" align="center" style="text-align: center;"><div>Mirror</div></th>
+      <th rowspan="2" colspan="1" align="center" style="text-align: center;"><div>鏡像倉</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitCode</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
@@ -123,7 +123,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>GitHub Actions</div></th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Workflow Status</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>工作流狀態</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Purpose</div></th>
     </tr>
   </thead>
@@ -133,7 +133,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" ><img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Build documents by Sphinx and upload build artifacts.</div>
+        <div>透過 Sphinx 建置文件並上傳建置工件。</div>
       </td>
     </tr>
     <tr>
@@ -141,7 +141,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" ><img alt="ci-sphinx-update-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</div>
+        <div>透過 Sphinx 搭配 <code>gettext</code> 建置器更新 <code>.pot</code> 檔。</div>
       </td>
     </tr>
     <tr>
@@ -149,7 +149,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" ><img alt="ci-gettext-update-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</div>
+        <div>透過 Gettext 工具組從 <code>.pot</code> 檔更新 <code>.po</code> 檔。</div>
       </td>
     </tr>
     <tr>
@@ -197,7 +197,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml"><img alt="ci-deploy-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Download and deploy build artifacts to <code>pages</code> branch.</div>
+        <div>下載建置製品並將其部署到 <code>pages</code> 分支。</div>
       </td>
     </tr>
     <tr>
@@ -205,7 +205,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml"><img alt="ci-deploy-po-version" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</div>
+        <div>將 <code>.po</code> 檔部署到 <code>po/${VERSION}</code> 分支。</div>
       </td>
     </tr>
     <tr>
@@ -228,7 +228,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 </table>
 </div>
 
-<h2 id="progress-of-translations"><a href="#table-of-contents">Progress of Translations</a></h2>
+<h2 id="progress-of-translations"><a href="#table-of-contents">翻譯進度</a></h2>
 
 <div align="center">
 <table>
@@ -237,14 +237,14 @@ The translations are contributed in Crowdin Project and downloaded automatically
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale<br/>Code</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
-          <div>English Name</div>
+          <div>英文名稱</div>
           <div>Native Name</div>
         </div>
       </th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
-          <div>Translated</div>
-          <div>Proofread</div>
+          <div>已翻譯</div>
+          <div>已校對</div>
         </div>
       </th>
     </tr>
