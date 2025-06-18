@@ -76,6 +76,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
 
 <div align="center">
 <table>
+  <thead>
+    <tr>
+      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>Project Links</div></th>
+    </tr>
+  </thead>
   <tbody>
     <!-- TMS -->
     <tr>
@@ -176,7 +181,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml"><img alt="ci-crowdin-download-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-download-po.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Download <code>.pot</code> files from Crowdin by its CLI tool.</div>
+        <div>Download <code>.po</code> files from Crowdin by its CLI tool.</div>
       </td>
     </tr>
     <tr>
@@ -184,7 +189,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml"><img alt="ci-crowdin-readme" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-readme.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update document translations by Crowdin CLI tool.</div>
+        <div>Update README translations by Crowdin CLI tool.</div>
       </td>
     </tr>
     <tr>
@@ -208,7 +213,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml"><img alt="ci-update-license-year" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-update-license-year.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update LICENSE file to the latest year.</div>
+        <div>Update the copyright year in LICENSE to the current year.</div>
       </td>
     </tr>
     <tr>
@@ -229,7 +234,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language<br/>Code</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale<br/>Code</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
           <div>English Name</div>
@@ -329,7 +334,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 </table>
 </div>
 
-<div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
+<div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img style="background-color:white;padding:20px;" src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
 </div>
 
 <h2 id="preview-translations"><a href="#table-of-contents">Preview Translations</a></h2>
@@ -433,10 +438,10 @@ You can contribute and support this project by doing any of the following:
   <li>Submit issues on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues">GitHub</a> if you found any bug.</li>
   <li>Submit pull requests on <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls">GitHub</a> if you know how to fix the bug.</li>
   <li>Contribute your translations on <a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n">Crowdin</a>.</li>
-  <li>If you love this project or hope your wished documentation be localized, please consider <a href="#sponsorship">sponsorship</a>.</li>
+  <li>If you love this kind of l10n projects, please consider <a href="#sponsorship">sponsorship</a>.</li>
 </ul>
 
-It will inspire the author to make more and more l10n projects for open-source documentation.
+It will facilitate the creation and ongoing maintenance of l10n projects for open-source documentation.
 
 <h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
 
@@ -485,3 +490,5 @@ You can sponsor the author through the following platforms:
 <div align="center">
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
+
+<h2 id="spacial-thanks"><a href="#table-of-contents">Special Thanks</a></h2>
