@@ -109,7 +109,7 @@ jobs:
       ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
-      VERSION: 'readme'
+      VERSION: 'docs'
       LANGUAGE: ${{ inputs.LANGUAGE || 'all' }}
       LANGUAGE_SOURCE: 'en_US'
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
