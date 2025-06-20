@@ -35,7 +35,7 @@
   <li><a href="#translation-disclaimer">翻譯免責聲明</a></li>
   <li><a href="#maintainers">Maintainers</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
-  <li><a href="#sponsorship">Sponsorship</a></li>
+  <li><a href="#sponsorship">贊助</a></li>
   <li><a href="#code-contributors">程式碼貢獻者</a></li>
   <li><a href="#financial-contributors">財務貢獻者</a></li>
 </ul>
