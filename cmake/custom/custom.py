@@ -1,7 +1,7 @@
 import json
 import os
 
-# Default configuration values
+# Default configuration values.
 DEFAULT_CONFIG_VALUES = {
     "current_version"   : "",
     "current_language"  : "",
@@ -29,7 +29,7 @@ def setup(app):
     """
     add_default_config_values(app)
 
-    # Connect to the builder-inited event to configure the HTML context
+    # Connect to the builder-inited event to configure the HTML context.
     app.connect("builder-inited", configure_html_context)
 
     return {
