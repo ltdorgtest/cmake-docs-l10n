@@ -48,6 +48,7 @@ jobs:
           echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
           echo "vars.CROWDIN_PROJECT_ID = ${{ vars.CROWDIN_PROJECT_ID }}"
           echo "vars.CROWDIN_BASE_URL = ${{ vars.CROWDIN_BASE_URL }}"
+          echo "vars.GPG_FINGERPRINT = ${{ vars.GPG_FINGERPRINT }}"
           echo "[Secrets]"
           echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
           echo "secrets.CROWDIN_PERSONAL_TOKEN = ${{ secrets.CROWDIN_PERSONAL_TOKEN }}"
@@ -75,6 +76,10 @@ jobs:
           fi
           if [[ -z "${{ vars.CROWDIN_BASE_URL }}" ]]; then
             echo "vars.CROWDIN_BASE_URL is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.GPG_FINGERPRINT }}" ]]; then
+            echo "vars.GPG_FINGERPRINT is missing."
             REQUIRED_VARIABLES_EXIST=false
           fi
           if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
@@ -126,6 +131,7 @@ jobs:
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
       CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
       CROWDIN_BASE_URL: ${{ vars.CROWDIN_BASE_URL }}
+      GPG_FINGERPRINT: ${{ vars.GPG_FINGERPRINT }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
