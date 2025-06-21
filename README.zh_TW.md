@@ -234,11 +234,11 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale<br/>Code</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語區<br/>代碼</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
           <div>英文名稱</div>
-          <div>Native Name</div>
+          <div>在地名稱</div>
         </div>
       </th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
@@ -337,15 +337,15 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img style="background-color:white;padding:20px;" src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
 </div>
 
-<h2 id="preview-translations"><a href="#table-of-contents">Preview Translations</a></h2>
+<h2 id="preview-translations"><a href="#table-of-contents">預覽翻譯</a></h2>
 
-You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs-l10n">GitHub Pages</a>:
+您可以在 <a href="https://ltdorgtest.github.io/cmake-docs-l10n">GitHub Pages</a> 中預覽翻譯：
 
 <div align="center">
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語言</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Pages</div></th>
     </tr>
   </thead>
@@ -398,11 +398,11 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 
 You can switch to other available languages and versions by the flyout navigation menu.
 
-<h2 id="licenses"><a href="#table-of-contents">Licenses</a></h2>
+<h2 id="licenses"><a href="#table-of-contents">授權條款</a></h2>
 
 All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE">LICENSE</a> for details.
 
-<h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
+<h2 id="translation-disclaimer"><a href="#table-of-contents">翻譯免責聲明</a></h2>
 
 Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
@@ -443,7 +443,7 @@ You can contribute and support this project by doing any of the following:
 
 It will facilitate the creation and ongoing maintenance of l10n projects for open-source documentation.
 
-<h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
+<h2 id="sponsorship"><a href="#table-of-contents">贊助</a></h2>
 
 You can sponsor the author through the following platforms:
 
@@ -456,7 +456,7 @@ You can sponsor the author through the following platforms:
     <!-- Row 1 -->
     <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center; width: 50%;"><div>Patreon</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; width: 50%;"><div>Afdian</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; width: 50%;"><div>愛發電</div></th>
     </tr>
     <!-- Row 2 -->
     <tr>
@@ -475,13 +475,13 @@ You can sponsor the author through the following platforms:
 </table>
 </div>
 
-<h2 id="code-contributors"><a href="#table-of-contents">Code Contributors</a></h2>
+<h2 id="code-contributors"><a href="#table-of-contents">程式碼貢獻者</a></h2>
 
 <div align="center">
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
 
-<h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
+<h2 id="financial-contributors"><a href="#table-of-contents">財務貢獻者</a></h2>
 
 <div align="center">
 <h3 id="sponsors-to-haowei-hsu">Sponsors to Haowei Hsu</h3>
