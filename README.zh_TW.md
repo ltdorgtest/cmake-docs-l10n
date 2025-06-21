@@ -334,7 +334,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
 </table>
 </div>
 
-<div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img style="background-color:white;padding:20px;" src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
+<div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
 </div>
 
 <h2 id="preview-translations"><a href="#table-of-contents">預覽翻譯</a></h2>
