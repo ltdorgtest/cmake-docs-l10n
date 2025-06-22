@@ -400,7 +400,7 @@ You can switch to other available languages and versions by the flyout navigatio
 
 <h2 id="licenses"><a href="#table-of-contents">Licenses</a></h2>
 
-All the build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
+All the CMake build files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
 
