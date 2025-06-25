@@ -8,6 +8,10 @@ project(cmake-docs-l10n NONE)
 # Constants.
 #]============================================================]
 
+set(ENV_LANG              "en_US.UTF-8")
+set(ENV_LANGUAGE          "en_US")
+set(ENV_PYTHONNOUSERSITE  "1")
+
 #[============================================================[
 # Cache Variables.
 #]============================================================]
@@ -367,6 +371,9 @@ file(COPY_FILE
 #]============================================================]
 
 message(STATUS "---------- Constants ----------")
+message(STATUS "ENV_LANG                        = ${ENV_LANG}")
+message(STATUS "ENV_LANGUAGE                    = ${ENV_LANGUAGE}")
+message(STATUS "ENV_PYTHONNOUSERSITE            = ${ENV_PYTHONNOUSERSITE}")
 message(STATUS "---------- Cache Variables ----------")
 message(STATUS "LANGUAGE                        = ${LANGUAGE}")
 message(STATUS "LANGUAGE_SOURCE                 = ${LANGUAGE_SOURCE}")
@@ -456,9 +463,9 @@ string(REPLACE ";" "\\\\;" LANGUAGE_LIST "${LANGUAGE_LIST}")
 #]============================================================]
 
 set(SCRIPT_MODE_ENV
-    LANG=en_US.UTF-8
-    LANGUAGE=en_US
-    PYTHONNOUSERSITE=1)
+    LANG=${ENV_LANG}
+    LANGUAGE=${ENV_LANGUAGE}
+    PYTHONNOUSERSITE=${ENV_PYTHONNOUSERSITE})
 
 #[============================================================[
 # Cache variables passed to script mode.
