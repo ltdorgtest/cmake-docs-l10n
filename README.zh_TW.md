@@ -1,6 +1,6 @@
 <div align="center">
 <picture>
-  <img width="100" height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/cmake.svg">
+  <img height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/cmake.svg">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-white.svg">
