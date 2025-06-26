@@ -42,10 +42,7 @@
 
 <h2 id="introduction"><a href="#table-of-contents">Introduction</a></h2>
 
-<div align="center"><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
-  <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg?logo=opensourceinitiative&style=flat&logoColor=white" />
-</a>
-<a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
+<div align="center"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
 </a>
 <a href="https://github.com/ltdorgtest/cmake-docs-l10n/network/members" title="GitHub Forks" target="_blank">
@@ -58,13 +55,20 @@
   <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
 </a>
 <a href="https://github.com/ltdorgtest/cmake-docs-l10n/issues" title="GitHub Open Issues" target="_blank">
-  <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=brightgreen" />
+  <img alt="GitHub Open Issues" src="https://img.shields.io/github/issues/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
 </a>
 <a href="https://github.com/ltdorgtest/cmake-docs-l10n/pulls" title="GitHub Open Pull Requests" target="_blank">
-  <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=brightgreen" />
+  <img alt="GitHub Open Pull Requests" src="https://img.shields.io/github/issues-pr/ltdorgtest/cmake-docs-l10n?logo=github&style=flat&color=blue" />
 </a>
-<a href="https://ltdorgtest.zulipchat.com" title="Join Zulip Chat" target="_blank">
-  <img alt="Join Zulip Chat" src="https://img.shields.io/badge/Zulip-join_chat-brightgreen.svg?logo=zulip" />
+</div>
+<div align="center"><a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
+  <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg?logo=opensourceinitiative&style=flat&logoColor=white" />
+</a>
+<a href="https://ltdorgtest.crowdin.com" title="Crowdin TMS" target="_blank">
+  <img alt="Crowdin TMS" src="https://img.shields.io/badge/Crowdin-TMS-blue.svg?logo=crowdin&logoColor=white" />
+</a>
+<a href="https://ltdorgtest.zulipchat.com" title="Zulip Chat" target="_blank">
+  <img alt="Zulip Chat" src="https://img.shields.io/badge/Zulip-Chat-blue.svg?logo=zulip&logoColor=white" />
 </a>
 </div>
 
@@ -72,7 +76,7 @@
 
 This is a localization project for CMake Documentation.
 
-The translations are contributed in Crowdin Project and downloaded automatically in Git Repository.
+The translations are contributed in the Crowdin Project and downloaded automatically in GitHub Repository.
 
 <div align="center">
 <table>
