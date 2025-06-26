@@ -40,6 +40,10 @@ jobs:
         shell: bash
         run: |
           REQUIRED_VARIABLES_EXIST=true
+          if [[ -z "${{ vars.RUNNER }}" ]]; then
+            echo "vars.RUNNER is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
           if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
             echo "Error: Some variables are missing." >&2
             exit 1
