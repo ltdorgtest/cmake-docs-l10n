@@ -44,7 +44,7 @@
 
 <div align="center">
 <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
-  <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg" />
+  <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg?logo=opensourceinitiative&style=flat&logoColor=white" />
 </a>
 <a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
