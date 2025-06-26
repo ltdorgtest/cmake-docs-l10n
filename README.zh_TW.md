@@ -78,12 +78,13 @@ The translations are contributed in Crowdin Project and downloaded automatically
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>專案連結</div></th>
+      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>專案連結</div></th>
     </tr>
   </thead>
   <tbody>
     <!-- TMS -->
     <tr>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>TMS</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Crowdin</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
@@ -91,6 +92,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- Main -->
     <tr>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Main</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
@@ -98,6 +100,7 @@ The translations are contributed in Crowdin Project and downloaded automatically
     </tr>
     <!-- Mirror -->
     <tr>
+      <th rowspan="2" colspan="1" align="center" style="text-align: center;"><div>Mirror</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitCode</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
