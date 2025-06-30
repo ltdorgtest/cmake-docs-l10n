@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-06-30 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2049,9 +2049,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1159
 msgid ""
-"Optional member that is present when the DEBUGGER_WORKING_DIRECTORY target "
-"property is set. The member will also be present in Visual Studio Generator "
-"scenarios when VS_DEBUGGER_WORKING_DIRECTORY is set."
+"Optional member that is present when the :prop_tgt:"
+"`DEBUGGER_WORKING_DIRECTORY` target property is set. The member will also be "
+"present in :ref:`Visual Studio Generators` when :prop_tgt:"
+"`VS_DEBUGGER_WORKING_DIRECTORY` is set."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1166
