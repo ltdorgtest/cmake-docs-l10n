@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2025-07-02 08:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,6 +115,7 @@ msgid "Search for a BLAS/LAPACK with 64-bit integer interfaces."
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:54
+#: ../../../../Modules/FindLAPACK.cmake:67
 msgid "``ANY``"
 msgstr ""
 
@@ -124,79 +125,113 @@ msgid ""
 "interfaces will be found."
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:59
-msgid "Imported Targets"
+#: ../../../../Modules/FindLAPACK.cmake:58
+msgid "``BLA_THREAD``"
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:61
-msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
+msgid "Specify the BLAS/LAPACK threading model:"
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:63
-msgid "``LAPACK::LAPACK``"
+msgid "``SEQ``"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:64
+msgid "Sequential model"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:65
+msgid "``OMP``"
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:66
-msgid "The libraries to use for LAPACK, if found."
+msgid "OpenMP model"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:69
-msgid "Result Variables"
+#: ../../../../Modules/FindLAPACK.cmake:68
+msgid ""
+"Search for any BLAS/LAPACK, if both are available most likely ``OMP`` will "
+"be found."
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:71
-msgid "This module defines the following variables:"
-msgstr ""
-
-#: ../../../../Modules/FindLAPACK.cmake:73
-msgid "``LAPACK_FOUND``"
+msgid "This is currently only supported by NVIDIA NVPL."
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:74
-msgid "library implementing the LAPACK interface is found"
-msgstr ""
-
-#: ../../../../Modules/FindLAPACK.cmake:75
-msgid "``LAPACK_LINKER_FLAGS``"
+msgid "Imported Targets"
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:76
-msgid "uncached list of required linker flags (excluding ``-l`` and ``-L``)."
-msgstr ""
-
-#: ../../../../Modules/FindLAPACK.cmake:77
-msgid "``LAPACK_LIBRARIES``"
+msgid "This module defines the following :prop_tgt:`IMPORTED` targets:"
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:78
+msgid "``LAPACK::LAPACK``"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:81
+msgid "The libraries to use for LAPACK, if found."
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:84
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:86
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:88
+msgid "``LAPACK_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:89
+msgid "library implementing the LAPACK interface is found"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:90
+msgid "``LAPACK_LINKER_FLAGS``"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:91
+msgid "uncached list of required linker flags (excluding ``-l`` and ``-L``)."
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:92
+msgid "``LAPACK_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindLAPACK.cmake:93
 msgid ""
 "uncached list of libraries (using full path name) to link against to use "
 "LAPACK"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:80
+#: ../../../../Modules/FindLAPACK.cmake:95
 msgid "``LAPACK95_LIBRARIES``"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:81
+#: ../../../../Modules/FindLAPACK.cmake:96
 msgid ""
 "uncached list of libraries (using full path name) to link against to use "
 "LAPACK95"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:83
+#: ../../../../Modules/FindLAPACK.cmake:98
 msgid "``LAPACK95_FOUND``"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:84
+#: ../../../../Modules/FindLAPACK.cmake:99
 msgid "library implementing the LAPACK95 interface is found"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:87
+#: ../../../../Modules/FindLAPACK.cmake:102
 msgid "Intel MKL"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:89
+#: ../../../../Modules/FindLAPACK.cmake:104
 msgid ""
 "To use the Intel MKL implementation of LAPACK, a project must enable at "
 "least one of the ``C`` or ``CXX`` languages.  Set ``BLA_VENDOR`` to an Intel "
@@ -204,13 +239,13 @@ msgid ""
 "in project code:"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:94
+#: ../../../../Modules/FindLAPACK.cmake:109
 msgid ""
 "set(BLA_VENDOR Intel10_64lp)\n"
 "find_package(LAPACK)"
 msgstr ""
 
-#: ../../../../Modules/FindLAPACK.cmake:99
+#: ../../../../Modules/FindLAPACK.cmake:114
 msgid ""
 "In order to build a project using Intel MKL, and end user must first "
 "establish an Intel MKL environment.  See the :module:`FindBLAS` module "

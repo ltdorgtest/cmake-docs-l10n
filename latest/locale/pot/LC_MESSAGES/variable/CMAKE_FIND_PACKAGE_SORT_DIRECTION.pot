@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2025-07-02 08:19+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,22 +28,22 @@ msgid ""
 msgstr ""
 
 #: ../../../variable/CMAKE_FIND_PACKAGE_SORT_DIRECTION.rst:9
-msgid "``DEC``"
+msgid "``ASC``"
 msgstr ""
 
 #: ../../../variable/CMAKE_FIND_PACKAGE_SORT_DIRECTION.rst:10
 msgid ""
-"Default.  Ordering is done in descending mode. The highest folder found will "
+"Default.  Ordering is done in ascending mode. The lowest folder found will "
 "be tested first."
 msgstr ""
 
 #: ../../../variable/CMAKE_FIND_PACKAGE_SORT_DIRECTION.rst:13
-msgid "``ASC``"
+msgid "``DEC``"
 msgstr ""
 
 #: ../../../variable/CMAKE_FIND_PACKAGE_SORT_DIRECTION.rst:14
 msgid ""
-"Ordering is done in ascending mode. The lowest folder found will be tested "
+"Ordering is done in descending mode. The highest folder found will be tested "
 "first."
 msgstr ""
 
