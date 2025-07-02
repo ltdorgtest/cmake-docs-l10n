@@ -1,5 +1,5 @@
 #
-# Your Crowdin credentials
+# Your Crowdin credentials.
 #
 project_id_env : CROWDIN_PROJECT_ID
 api_token_env : CROWDIN_PERSONAL_TOKEN
@@ -7,12 +7,12 @@ base_path : "."
 base_url_env : CROWDIN_BASE_URL
 
 #
-# Choose file structure in Crowdin
+# Choose file structure in Crowdin.
 #
 preserve_hierarchy : true
 
 #
-# Use YAML anchor to implement the global languages mapping
+# Use YAML anchor to implement the global languages mapping.
 #
 languages_mapping: &languages_mapping
   locale:
