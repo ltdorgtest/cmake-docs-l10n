@@ -489,8 +489,6 @@ You can sponsor the author through the following platforms:
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
 
-<h2 id="spacial-thanks"><a href="#table-of-contents">Special Thanks</a></h2>
-
 <h2 id="licenses"><a href="#table-of-contents">授權條款</a></h2>
 
 All the CMake script files (e.g. <code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (e.g. <code>.github/workflows/\*.yml</code> files) of this project are licensed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
