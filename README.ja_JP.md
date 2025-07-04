@@ -124,11 +124,11 @@ The translations are contributed in the Crowdin Project and downloaded automatic
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>GitHub Actions</div></th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>GitHub Workflows</div></th>
     </tr>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Workflow Status</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Purpose</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Status</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Description</div></th>
     </tr>
   </thead>
   <tbody>
