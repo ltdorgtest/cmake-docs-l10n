@@ -2,11 +2,6 @@
 <picture>
   <img height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/cmake.svg">
 </picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-white.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-dark.svg">
-  <img height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-dark.svg">
-</picture>
 </div>
 
 <div align="center">
@@ -498,11 +493,10 @@ You can sponsor the author through the following platforms:
 
 <h2 id="licenses"><a href="#table-of-contents">授權條款</a></h2>
 
-All the CMake script files (e.g. <code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (e.g. <code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
+All the CMake script files (e.g. <code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (e.g. <code>.github/workflows/\*.yml</code> files) of this project are licensed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
 
-All the document files (e.g. <code>README.md</code>) of this project are distributed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> license. See <a href="./LICENSE-CC-BY">LICENSE-CC-BY</a> for details.
+All the document files (e.g. <code>README.md</code>) of this project are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license. See <a href="./LICENSE-CC-BY">LICENSE-CC-BY</a> for details.
 
-[![CC BY 4.0][cc-by-image]][cc-by]
-
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
+<a href="http://creativecommons.org/licenses/by/4.0/" title="CC BY 4.0" target="_blank">
+  <img alt="CC BY 4.0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+</a>
