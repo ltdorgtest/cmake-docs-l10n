@@ -66,6 +66,9 @@
 <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
   <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg?logo=opensourceinitiative&style=flat&logoColor=white" />
 </a>
+<a href="http://creativecommons.org/licenses/by/4.0/" title="License: CC-BY-4.0" target="_blank">
+  <img alt="License: CC-BY-4.0" src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg?logo=creativecommons&style=flat&logoColor=white" />
+</a>
 <a href="https://ltdorgtest.crowdin.com" title="Crowdin TMS" target="_blank">
   <img alt="Crowdin TMS" src="https://img.shields.io/badge/Crowdin-TMS-blue.svg?logo=crowdin&logoColor=white" />
 </a>
@@ -195,7 +198,7 @@ The translations are contributed in the Crowdin Project and downloaded automatic
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-update-docs.yml"><img alt="ci-crowdin-update-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-crowdin-update-docs.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>Update documentation translations by Crowdin CLI tool.</div>
+        <div>Update <code>docs</code> translations by Crowdin CLI tool.</div>
       </td>
     </tr>
     <tr>
@@ -407,7 +410,9 @@ You can switch to other available languages and versions by the flyout navigatio
 
 <h2 id="licenses"><a href="#table-of-contents">Licenses</a></h2>
 
-All the CMake script files (<code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (<code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
+All the CMake script files (e.g. <code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (e.g. <code>.github/workflows/\*.yml</code> files) of this project are distributed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
+
+All the document files (e.g. <code>README.md</code>) of this project are distributed under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a> license. See <a href="./LICENSE-CC-BY">LICENSE-CC-BY</a> for details.
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
 
