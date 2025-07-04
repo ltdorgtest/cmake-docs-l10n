@@ -2,11 +2,6 @@
 <picture>
   <img height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/cmake.svg">
 </picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-white.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-dark.svg">
-  <img height="100" src="https://cdn.jsdelivr.net/gh/ltdorgtest/static/mark/crowdin-dark.svg">
-</picture>
 </div>
 
 <div align="center">
