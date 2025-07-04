@@ -19,9 +19,9 @@ jobs:
     outputs:
       WORKFLOW_CHANGE: ${{ steps.filter.outputs.workflow }}
       DOCUMENT_CHANGE: ${{ steps.filter.outputs.document }}
-      BUILD_CHANGE: ${{ steps.filter.outputs.build }}
+      SCRIPT_CHANGE: ${{ steps.filter.outputs.script }}
     steps:
-      - name: Print Contexts
+      - name: Print Contexts/Inputs/Variables/Secrets
         shell: bash
         run: |
           echo "[Contexts]"
@@ -37,8 +37,18 @@ jobs:
           echo "github.head_ref = ${{ github.head_ref }}"
           echo "github.event.before = ${{ github.event.before }}"
           echo "github.sha = ${{ github.sha }}"
+          echo "[Variables]"
+          echo "vars.RUNNER = ${{ vars.RUNNER }}"
+          echo "vars.ACTOR_NAME = ${{ vars.ACTOR_NAME }}"
+          echo "vars.ACTOR_EMAIL = ${{ vars.ACTOR_EMAIL }}"
+          echo "vars.CROWDIN_PROJECT_ID = ${{ vars.CROWDIN_PROJECT_ID }}"
+          echo "vars.CROWDIN_BASE_URL = ${{ vars.CROWDIN_BASE_URL }}"
+          echo "vars.GPG_FINGERPRINT = ${{ vars.GPG_FINGERPRINT }}"
           echo "[Secrets]"
           echo "secrets.ACTOR_GITHUB_TOKEN = ${{ secrets.ACTOR_GITHUB_TOKEN }}"
+          echo "secrets.CROWDIN_PERSONAL_TOKEN = ${{ secrets.CROWDIN_PERSONAL_TOKEN }}"
+          echo "secrets.GPG_PRIVATE_KEY = ${{ secrets.GPG_PRIVATE_KEY }}"
+          echo "secrets.GPG_PASSPHRASE = ${{ secrets.GPG_PASSPHRASE }}"
       - name: Checkout to '${{ github.ref }}'
         uses: actions/checkout@v4
         with:
@@ -53,7 +63,7 @@ jobs:
               - '.github/workflows/*.yml'
             document:
               - 'README.md'
-            build:
+            script:
               - 'cmake/custom/**/*'
               - 'cmake/targets/*.cmake'
               - 'CMakeLists.txt'
@@ -64,17 +74,17 @@ jobs:
         run: |
           echo "steps.filter.outputs.workflow = ${{ steps.filter.outputs.workflow }}"
           echo "steps.filter.outputs.document = ${{ steps.filter.outputs.document }}"
-          echo "steps.filter.outputs.build    = ${{ steps.filter.outputs.build }}"
+          echo "steps.filter.outputs.script   = ${{ steps.filter.outputs.script }}"
           echo "steps.filter.outputs.workflow_count = ${{ steps.filter.outputs.workflow_count }}"
           echo "steps.filter.outputs.document_count = ${{ steps.filter.outputs.document_count }}"
-          echo "steps.filter.outputs.build_count    = ${{ steps.filter.outputs.build_count }}"
+          echo "steps.filter.outputs.script_count   = ${{ steps.filter.outputs.script_count }}"
 
   check-crowdin-update-docs:
     needs: [ 'before-check' ]
     uses: ltdorgtest/ci-common/.github/workflows/use-crowdin-update-docs.yml@main
     with:
       ENABLE: ${{ needs.before-check.outputs.DOCUMENT_CHANGE == 'true' }}
-      RUNNER: 'ubuntu-latest'
+      RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: 'check'
       LANGUAGE: 'all'
@@ -83,16 +93,19 @@ jobs:
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
       CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
       CROWDIN_BASE_URL: ${{ vars.CROWDIN_BASE_URL }}
+      GPG_FINGERPRINT: ${{ vars.GPG_FINGERPRINT }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+      GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+      GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
   check-sphinx-build-docs:
     needs: [ 'before-check' ]
     uses: ltdorgtest/ci-common/.github/workflows/use-sphinx-build-docs.yml@main
     with:
-      ENABLE: ${{ needs.before-check.outputs.BUILD_CHANGE == 'true' }}
-      RUNNER: 'ubuntu-latest'
+      ENABLE: ${{ needs.before-check.outputs.SCRIPT_CHANGE == 'true' }}
+      RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
       VERSION: 'master'
       LANGUAGE: 'all'
