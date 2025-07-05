@@ -26,12 +26,12 @@
   <li><a href="#introduction">Introduction</a></li>
   <li><a href="#progress-of-translations">Progress of Translations</a></li>
   <li><a href="#preview-translations">Preview Translations</a></li>
-  <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
   <li><a href="#maintainers">Maintainers</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
   <li><a href="#sponsorship">Sponsorship</a></li>
   <li><a href="#code-contributors">Code Contributors</a></li>
   <li><a href="#financial-contributors">Financial Contributors</a></li>
+  <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
   <li><a href="#licenses">Licenses</a></li>
 </ul>
 
@@ -71,9 +71,7 @@
 
 <p></p>
 
-This is a localization project for CMake Documentation.
-
-The translations are contributed in the Crowdin Project and downloaded automatically in GitHub Repository.
+This is a localization project of CMake Documentation. Translations are contributed via the Crowdin platform and automatically synchronized with the GitHub repository.
 
 <div align="center">
 <table>
@@ -399,10 +397,6 @@ You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs
 
 You can switch to other available languages and versions by the flyout navigation menu.
 
-<h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
-
-Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
-
 <h2 id="maintainers"><a href="#table-of-contents">Maintainers</a></h2>
 
 This project is currently maintained by:
@@ -487,6 +481,10 @@ You can sponsor the author through the following platforms:
 <div align="center">
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
+
+<h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
+
+Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
 <h2 id="licenses"><a href="#table-of-contents">Licenses</a></h2>
 

@@ -26,12 +26,12 @@
   <li><a href="#introduction">介紹</a></li>
   <li><a href="#progress-of-translations">翻譯進度</a></li>
   <li><a href="#preview-translations">預覽翻譯</a></li>
-  <li><a href="#translation-disclaimer">翻譯免責聲明</a></li>
   <li><a href="#maintainers">Maintainers</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
   <li><a href="#sponsorship">贊助</a></li>
   <li><a href="#code-contributors">程式碼貢獻者</a></li>
   <li><a href="#financial-contributors">財務貢獻者</a></li>
+  <li><a href="#translation-disclaimer">翻譯免責聲明</a></li>
   <li><a href="#licenses">授權條款</a></li>
 </ul>
 
@@ -71,15 +71,13 @@
 
 <p></p>
 
-This is a localization project for CMake Documentation.
-
-The translations are contributed in the Crowdin Project and downloaded automatically in GitHub Repository.
+This is a localization project of CMake Documentation. Translations are contributed via the Crowdin platform and automatically synchronized with the GitHub repository.
 
 <div align="center">
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>專案連結</div></th>
+      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>Project Links</div></th>
     </tr>
   </thead>
   <tbody>
@@ -134,7 +132,7 @@ The translations are contributed in the Crowdin Project and downloaded automatic
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml" ><img alt="ci-sphinx-build-docs" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-build-docs.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>透過 Sphinx 建置文件並上傳建置工件。</div>
+        <div>Build documents by Sphinx and upload build artifacts.</div>
       </td>
     </tr>
     <tr>
@@ -142,7 +140,7 @@ The translations are contributed in the Crowdin Project and downloaded automatic
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml" ><img alt="ci-sphinx-update-pot" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-sphinx-update-pot.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>透過 Sphinx 搭配 <code>gettext</code> 建置器更新 <code>.pot</code> 檔。</div>
+        <div>Update <code>.pot</code> files by Sphinx with <code>gettext</code> builder.</div>
       </td>
     </tr>
     <tr>
@@ -150,7 +148,7 @@ The translations are contributed in the Crowdin Project and downloaded automatic
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml" ><img alt="ci-gettext-update-po" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-gettext-update-po.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>透過 Gettext 工具組從 <code>.pot</code> 檔更新 <code>.po</code> 檔。</div>
+        <div>Update <code>.po</code> files from <code>.pot</code> files by Gettext toolkit.</div>
       </td>
     </tr>
     <tr>
@@ -198,7 +196,7 @@ The translations are contributed in the Crowdin Project and downloaded automatic
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml"><img alt="ci-deploy-pages" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-pages.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>下載建置製品並將其部署到 <code>pages</code> 分支。</div>
+        <div>Download and deploy build artifacts to <code>pages</code> branch.</div>
       </td>
     </tr>
     <tr>
@@ -206,7 +204,7 @@ The translations are contributed in the Crowdin Project and downloaded automatic
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml"><img alt="ci-deploy-po-version" src="https://github.com/ltdorgtest/cmake-docs-l10n/actions/workflows/ci-deploy-po-version.yml/badge.svg" /></a></div>
       </td>
       <td rowspan="1" colspan="1" align="left" style="text-align: left;">
-        <div>將 <code>.po</code> 檔部署到 <code>po/${VERSION}</code> 分支。</div>
+        <div>Deploy <code>.po</code> files to <code>po/${VERSION}</code> branch.</div>
       </td>
     </tr>
     <tr>
@@ -229,23 +227,23 @@ The translations are contributed in the Crowdin Project and downloaded automatic
 </table>
 </div>
 
-<h2 id="progress-of-translations"><a href="#table-of-contents">翻譯進度</a></h2>
+<h2 id="progress-of-translations"><a href="#table-of-contents">Progress of Translations</a></h2>
 
 <div align="center">
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語區<br/>代碼</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale<br/>Code</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
-          <div>英文名稱</div>
-          <div>在地名稱</div>
+          <div>English Name</div>
+          <div>Native Name</div>
         </div>
       </th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
-          <div>已翻譯</div>
-          <div>已校對</div>
+          <div>Translated</div>
+          <div>Proofread</div>
         </div>
       </th>
     </tr>
@@ -338,15 +336,15 @@ The translations are contributed in the Crowdin Project and downloaded automatic
 <div align="center"><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n"><img src="https://badges.awesome-crowdin.com/translation-200037927-1.png"></a>
 </div>
 
-<h2 id="preview-translations"><a href="#table-of-contents">預覽翻譯</a></h2>
+<h2 id="preview-translations"><a href="#table-of-contents">Preview Translations</a></h2>
 
-您可以在 <a href="https://ltdorgtest.github.io/cmake-docs-l10n">GitHub Pages</a> 中預覽翻譯：
+You can preview translations in <a href="https://ltdorgtest.github.io/cmake-docs-l10n">GitHub Pages</a>:
 
 <div align="center">
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>語言</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Language</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Pages</div></th>
     </tr>
   </thead>
@@ -398,10 +396,6 @@ The translations are contributed in the Crowdin Project and downloaded automatic
 </div>
 
 You can switch to other available languages and versions by the flyout navigation menu.
-
-<h2 id="translation-disclaimer"><a href="#table-of-contents">翻譯免責聲明</a></h2>
-
-Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
 <h2 id="maintainers"><a href="#table-of-contents">Maintainers</a></h2>
 
@@ -488,7 +482,11 @@ You can sponsor the author through the following platforms:
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
 
-<h2 id="licenses"><a href="#table-of-contents">授權條款</a></h2>
+<h2 id="translation-disclaimer"><a href="#table-of-contents">翻譯免責聲明</a></h2>
+
+Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
+
+<h2 id="licenses"><a href="#table-of-contents">Licenses</a></h2>
 
 All the CMake script files (e.g. <code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (e.g. <code>.github/workflows/\*.yml</code> files) of this project are licensed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
 
