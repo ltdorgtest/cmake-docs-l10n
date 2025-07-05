@@ -59,8 +59,8 @@
 <a href="https://opensource.org/licenses/BSD-3-Clause" title="License: BSD-3-Clause" target="_blank">
   <img alt="License: BSD-3-Clause" src="https://img.shields.io/badge/License-BSD--3--Clause-blue.svg?logo=opensourceinitiative&style=flat&logoColor=white" />
 </a>
-<a href="http://creativecommons.org/licenses/by/4.0/" title="License: CC-BY-4.0" target="_blank">
-  <img alt="License: CC-BY-4.0" src="https://img.shields.io/badge/License-CC--BY--4.0-blue.svg?logo=creativecommons&style=flat&logoColor=white" />
+<a href="http://creativecommons.org/licenses/by-sa/4.0/" title="License: CC-BY-SA-4.0" target="_blank">
+  <img alt="License: CC-BY-SA-4.0" src="https://img.shields.io/badge/License-CC--BY--SA--4.0-blue.svg?logo=creativecommons&style=flat&logoColor=white" />
 </a>
 <a href="https://ltdorgtest.crowdin.com" title="Crowdin TMS" target="_blank">
   <img alt="Crowdin TMS" src="https://img.shields.io/badge/Crowdin-TMS-blue.svg?logo=crowdin&logoColor=white" />
@@ -494,8 +494,8 @@ You can sponsor the author through the following platforms:
 
 All the CMake script files (e.g. <code>CMakeLists.txt</code>, <code>CMakePresets.json</code>, and <code>cmake/\*\*/\*</code> files) and the GitHub workflow files (e.g. <code>.github/workflows/\*.yml</code> files) of this project are licensed under <a href="https://opensource.org/license/bsd-3-clause/">3-Clause BSD</a> license. See <a href="./LICENSE-BSD">LICENSE-BSD</a> for details.
 
-All the document files (e.g. <code>README.md</code>) of this project are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a> license. See <a href="./LICENSE-CC-BY">LICENSE-CC-BY</a> for details.
+All the document files (e.g. <code>README.md</code>) of this project are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a> license. See <a href="./LICENSE-CC">LICENSE-CC</a> for details.
 
-<a href="http://creativecommons.org/licenses/by/4.0/" title="CC BY 4.0" target="_blank">
-  <img alt="CC BY 4.0" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+<a href="http://creativecommons.org/licenses/by-sa/4.0/" title="CC BY SA 4.0" target="_blank">
+  <img alt="CC BY SA 4.0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"/>
 </a>
