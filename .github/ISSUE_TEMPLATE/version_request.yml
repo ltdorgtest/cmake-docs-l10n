@@ -1,6 +1,6 @@
 name: Request a New Version
 description: Use this template for requesting a new version.
-title: "[Version] Request New Version '<version>'"
+title: "[Version] Request New Version `<version>`"
 labels:
   - "new version"
 body:
