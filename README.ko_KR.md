@@ -436,7 +436,7 @@ It will facilitate the creation and ongoing maintenance of l10n projects for ope
 
 <h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
 
-You can sponsor the author through the following platforms:
+You can sponsor the maintainers directly through the following platforms:
 
 <div align="center">
 <table>
