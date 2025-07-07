@@ -5,12 +5,21 @@ cmake_minimum_required(VERSION 3.25)
 project(cmake-docs-l10n NONE)
 
 #[============================================================[
-# Constants.
+# Environment Variables.
 #]============================================================]
 
 set(ENV_LANG              "en_US.UTF-8")
 set(ENV_LANGUAGE          "en_US")
 set(ENV_PYTHONNOUSERSITE  "1")
+
+#[============================================================[
+# CMP<NNNN> Defaults.
+#]============================================================]
+
+if (POLICY CMP0144)
+    cmake_policy(SET CMP0144 NEW)
+    cmake_policy(GET CMP0144 CMAKE_POLICY_DEFAULT_CMP0144)
+endif()
 
 #[============================================================[
 # Cache Variables.
@@ -260,26 +269,32 @@ endif()
 #]============================================================]
 
 if     (VERSION MATCHES "^master$")
+    set(VERSION_OF_CMAKE    "")
     set(VERSION_OF_PYTHON   "3.12")
     set(VERSION_OF_SPHINX   "8.1")
 elseif (VERSION MATCHES "^latest$")
+    set(VERSION_OF_CMAKE    "")
     set(VERSION_OF_PYTHON   "3.12")
     set(VERSION_OF_SPHINX   "8.1")
 elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
     if     (VERSION VERSION_LESS_EQUAL    "4.0" AND
             VERSION VERSION_GREATER_EQUAL "4.0")
+        set(VERSION_OF_CMAKE    "4")
         set(VERSION_OF_PYTHON   "3.12")
         set(VERSION_OF_SPHINX   "8.1")
     elseif (VERSION VERSION_LESS_EQUAL    "3.31" AND
             VERSION VERSION_GREATER_EQUAL "3.19")
+        set(VERSION_OF_CMAKE    "3")
         set(VERSION_OF_PYTHON   "3.12")
         set(VERSION_OF_SPHINX   "8.1")
     elseif (VERSION VERSION_LESS_EQUAL    "3.18" AND
             VERSION VERSION_GREATER_EQUAL "3.9")
+        set(VERSION_OF_CMAKE    "3")
         set(VERSION_OF_PYTHON   "3.12")
         set(VERSION_OF_SPHINX   "8.1")
     elseif (VERSION VERSION_LESS_EQUAL    "3.8" AND
             VERSION VERSION_GREATER_EQUAL "3.0")
+        set(VERSION_OF_CMAKE    "3")
         set(VERSION_OF_PYTHON   "3.12")
         set(VERSION_OF_SPHINX   "8.1")
     else()
@@ -370,10 +385,12 @@ file(COPY_FILE
 # Print Information.
 #]============================================================]
 
-message(STATUS "---------- Constants ----------")
+message(STATUS "---------- Environment Variables ----------")
 message(STATUS "ENV_LANG                        = ${ENV_LANG}")
 message(STATUS "ENV_LANGUAGE                    = ${ENV_LANGUAGE}")
 message(STATUS "ENV_PYTHONNOUSERSITE            = ${ENV_PYTHONNOUSERSITE}")
+message(STATUS "---------- CMP<NNNN> Defaults ----------")
+message(STATUS "CMAKE_POLICY_DEFAULT_CMP0144    = ${CMAKE_POLICY_DEFAULT_CMP0144}")
 message(STATUS "---------- Cache Variables ----------")
 message(STATUS "LANGUAGE                        = ${LANGUAGE}")
 message(STATUS "LANGUAGE_SOURCE                 = ${LANGUAGE_SOURCE}")
@@ -392,6 +409,7 @@ message(STATUS "GETTEXT_WRAP_WIDTH              = ${GETTEXT_WRAP_WIDTH}")
 message(STATUS "REMOTE_URL_OF_L10N              = ${REMOTE_URL_OF_L10N}")
 message(STATUS "REMOTE_URL_OF_DOCS              = ${REMOTE_URL_OF_DOCS}")
 message(STATUS "BASEURL_HREF                    = ${BASEURL_HREF}")
+message(STATUS "VERSION_OF_CMAKE                = ${VERSION_OF_CMAKE} (CACHE: $CACHE{VERSION_OF_CMAKE})")
 message(STATUS "VERSION_OF_PYTHON               = ${VERSION_OF_PYTHON} (CACHE: $CACHE{VERSION_OF_PYTHON})")
 message(STATUS "VERSION_OF_SPHINX               = ${VERSION_OF_SPHINX} (CACHE: $CACHE{VERSION_OF_SPHINX})")
 message(STATUS "---------- Directory-Related Variables ----------")
@@ -472,7 +490,8 @@ set(SCRIPT_MODE_ENV
 #]============================================================]
 
 set(SCRIPT_MODE_CACHE
-    # [Constants]
+    # [CMP<NNNN> Defaults]
+    -D CMAKE_POLICY_DEFAULT_CMP0144=${CMAKE_POLICY_DEFAULT_CMP0144}
     # [Cache Variables]
     -D LANGUAGE=${LANGUAGE}
     -D LANGUAGE_SOURCE=${LANGUAGE_SOURCE}
@@ -491,6 +510,7 @@ set(SCRIPT_MODE_CACHE
     -D REMOTE_URL_OF_L10N=${REMOTE_URL_OF_L10N}
     -D REMOTE_URL_OF_DOCS=${REMOTE_URL_OF_DOCS}
     -D BASEURL_HREF=${BASEURL_HREF}
+    -D VERSION_OF_CMAKE=${VERSION_OF_CMAKE}
     -D VERSION_OF_PYTHON=${VERSION_OF_PYTHON}
     -D VERSION_OF_SPHINX=${VERSION_OF_SPHINX}
     # [Directory-Related Variables]
