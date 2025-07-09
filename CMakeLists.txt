@@ -106,6 +106,9 @@ set(REMOTE_URL_OF_DOCS "https://github.com/Kitware/CMake.git"
 set(BASEURL_HREF "file://${PROJECT_SOURCE_DIR}/out/$CACHE{SPHINX_BUILDER}"
     CACHE STRING "The base URL of the deployed documentation.")
 
+set(VERSION_OF_CMAKE "[default]"
+    CACHE STRING "The version of CMake to install.")
+
 set(VERSION_OF_PYTHON "[default]"
     CACHE STRING "The version of Python to install.")
 
@@ -283,16 +286,6 @@ elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
         set(VERSION_OF_PYTHON   "3.12")
         set(VERSION_OF_SPHINX   "8.1")
     elseif (VERSION VERSION_LESS_EQUAL    "3.31" AND
-            VERSION VERSION_GREATER_EQUAL "3.19")
-        set(VERSION_OF_CMAKE    "3")
-        set(VERSION_OF_PYTHON   "3.12")
-        set(VERSION_OF_SPHINX   "8.1")
-    elseif (VERSION VERSION_LESS_EQUAL    "3.18" AND
-            VERSION VERSION_GREATER_EQUAL "3.9")
-        set(VERSION_OF_CMAKE    "3")
-        set(VERSION_OF_PYTHON   "3.12")
-        set(VERSION_OF_SPHINX   "8.1")
-    elseif (VERSION VERSION_LESS_EQUAL    "3.8" AND
             VERSION VERSION_GREATER_EQUAL "3.0")
         set(VERSION_OF_CMAKE    "3")
         set(VERSION_OF_PYTHON   "3.12")
@@ -302,6 +295,9 @@ elseif (VERSION MATCHES "^([0-9]+)\\.([0-9]+)$")
     endif()
 else()
     message(FATAL_ERROR "Invalid VERSION value. (${VERSION})")
+endif()
+if (NOT "$CACHE{VERSION_OF_CMAKE}" STREQUAL "[default]")
+    set(VERSION_OF_CMAKE "$CACHE{VERSION_OF_CMAKE}")
 endif()
 if (NOT "$CACHE{VERSION_OF_PYTHON}" STREQUAL "[default]")
     set(VERSION_OF_PYTHON "$CACHE{VERSION_OF_PYTHON}")
