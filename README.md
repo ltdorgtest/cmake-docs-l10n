@@ -78,29 +78,29 @@ This is a localization project of CMake Documentation. Translations are contribu
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="3" align="center" style="text-align: center;"><div>Project Links</div></th>
+      <th rowspan="1" colspan="2" align="center" style="text-align: center;"><div>Project Links</div></th>
     </tr>
   </thead>
   <tbody>
-    <!-- TMS -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>TMS</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Preview</div></th>
+      <td rowspan="1" colspan="1" align="center" style="text-align: center;">
+        <div><a href="https://ltdorgtest.github.io/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
+      </td>
+    </tr>
+    <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Crowdin</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://ltdorgtest.crowdin.com/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
       </td>
     </tr>
-    <!-- Main -->
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Main</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://github.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
       </td>
     </tr>
-    <!-- Mirror -->
     <tr>
-      <th rowspan="2" colspan="1" align="center" style="text-align: center;"><div>Mirror</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitCode</div></th>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div><a href="https://gitcode.com/ltdorgtest/cmake-docs-l10n" target="_blank">cmake-docs-l10n</a></div>
@@ -234,7 +234,7 @@ This is a localization project of CMake Documentation. Translations are contribu
 <table>
   <thead>
     <tr>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale<br/>Code</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Locale</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;">
         <div>
           <div>English Name</div>
@@ -409,14 +409,12 @@ This project is currently maintained by:
     <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Name</div></th>
       <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>GitHub Username</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Contact Info</div></th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>Haowei Hsu</div></td>
       <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div>@hwhsu1231</div></td>
-      <td rowspan="1" colspan="1" align="center" style="text-align: center;"><div></div></td>
     </tr>
   </tbody>
 </table>
