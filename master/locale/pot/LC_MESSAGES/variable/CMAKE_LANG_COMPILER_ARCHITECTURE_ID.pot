@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2025-07-28 08:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -403,8 +403,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:203
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:229
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:270
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:290
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:287
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:307
 msgid "``ARM``"
 msgstr ""
 
@@ -431,7 +431,7 @@ msgid ""
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:226
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:264
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:281
 msgid "``8051``"
 msgstr ""
 
@@ -452,7 +452,7 @@ msgid "Microchip AVR 8-bit"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:235
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:296
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:313
 msgid "``MSP430``"
 msgstr ""
 
@@ -461,6 +461,7 @@ msgid "Texas Instruments MSP430 16-bit"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:238
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:264
 msgid "``RH850``"
 msgstr ""
 
@@ -477,6 +478,7 @@ msgid "RISC-V 32-/64-bit"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:244
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:267
 msgid "``RL78``"
 msgstr ""
 
@@ -485,6 +487,7 @@ msgid "Renesas Electronics RL78 16-bit"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:247
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:270
 msgid "``RX``"
 msgstr ""
 
@@ -509,53 +512,75 @@ msgid "Renesas Electronics V850 32-bit"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:257
-msgid "TASKING Platforms"
+msgid "Renesas Compiler Platforms"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:261
 msgid ""
 "These identifiers are used when :variable:`CMAKE_<LANG>_COMPILER_ID` is "
+"``Renesas``."
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:265
+msgid "Renesas Electronics RH850"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:268
+msgid "Renesas Electronics RL78"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:271
+msgid "Renesas Electronics RX"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:274
+msgid "TASKING Platforms"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:278
+msgid ""
+"These identifiers are used when :variable:`CMAKE_<LANG>_COMPILER_ID` is "
 "``Tasking``."
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:267
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:284
 msgid "``ARC``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:273
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:290
 msgid "``MCS``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:276
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:293
 msgid "``PCP``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:279
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:296
 msgid "``TriCore``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:283
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:300
 msgid "Texas Instruments Platforms"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:287
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:304
 msgid ""
 "These identifiers are used when :variable:`CMAKE_<LANG>_COMPILER_ID` is "
 "``TI``."
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:293
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:310
 msgid "``Blackfin``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:299
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:316
 msgid "``SHARC``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:302
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:319
 msgid "``TMS320C28x``"
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:305
+#: ../../../variable/CMAKE_LANG_COMPILER_ARCHITECTURE_ID.rst:322
 msgid "``TMS320C6x``"
 msgstr ""
