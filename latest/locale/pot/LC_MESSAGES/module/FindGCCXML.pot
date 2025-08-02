@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2025-08-02 08:17+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,24 @@ msgid "FindGCCXML"
 msgstr ""
 
 #: ../../../../Modules/FindGCCXML.cmake:8
-msgid "Find the GCC-XML front-end executable."
+msgid ""
+"This module is available only if policy :policy:`CMP0188` is not set to "
+"``NEW``. Port projects to search for CastXML by calling ``find_program`` "
+"directly."
 msgstr ""
 
 #: ../../../../Modules/FindGCCXML.cmake:12
+msgid "Find the GCC-XML front-end executable."
+msgstr ""
+
+#: ../../../../Modules/FindGCCXML.cmake:14
 msgid "This module will define the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindGCCXML.cmake:16
-msgid "GCCXML - the GCC-XML front-end executable."
+msgid "``GCCXML``"
+msgstr ""
+
+#: ../../../../Modules/FindGCCXML.cmake:17
+msgid "The GCC-XML front-end executable."
 msgstr ""
