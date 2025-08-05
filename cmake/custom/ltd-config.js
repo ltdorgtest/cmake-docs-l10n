@@ -44,7 +44,7 @@ var CONFIG_OPTIONS = {
     ["3.0",     "Release 3.0"],
   ],
   CONFIG_PROJECTS: [
-    ["Index",   "https://ltdorgtest.github.io/cmake-docs-l10n"],
+    ["Index",   "https://ltdorgtest.github.io"],
     ["Crowdin", "https://ltdorgtest.crowdin.com/cmake-docs-l10n"],
     ["GitHub",  "https://github.com/ltdorgtest/cmake-docs-l10n"],
     ["GitCode", "https://gitcode.com/ltdorgtest/cmake-docs-l10n"],
