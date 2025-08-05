@@ -63,7 +63,6 @@ jobs:
 
   dispatch:
     needs: [ 'precondition' ]
-    # Beware of https://stackoverflow.com/a/62199280/16265240
     if: ${{ ( ( github.event_name == 'pull_request' ) &&
               ( github.event.pull_request.merged == true ) &&
               ( contains(github.event.pull_request.labels.*.name, 'gettext') ||

@@ -1,4 +1,4 @@
-# Ignore the following directoreis/files
+# Ignore the following directoreis/files.
 .crowdin/
 .single/
 *.mo
