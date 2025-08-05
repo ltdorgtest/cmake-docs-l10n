@@ -31,6 +31,3 @@ body:
         - label: The language is not requested yet.
           required: true
         - label: The language is available in [Language Table](https://github.com/ltdorgtest/lang-table).
-          required: true
-        - label: The language had a language team created in [Logo Design](https://github.com/ltdorgtest/logo-design).
-          required: true
