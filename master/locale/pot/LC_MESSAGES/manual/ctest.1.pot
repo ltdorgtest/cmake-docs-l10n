@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2025-11-10 08:38+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2868,12 +2868,12 @@ msgstr ""
 msgid "The string \"ctestInfo\"."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1621 ../../../manual/ctest.1.rst:1808
+#: ../../../manual/ctest.1.rst:1621 ../../../manual/ctest.1.rst:1832
 msgid "``version``"
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1622
-msgid "A JSON object specifying the version components.  Its members are"
+msgid "A JSON object specifying the version components.  Its members are:"
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1624
@@ -2881,138 +2881,179 @@ msgid "``major``"
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1625
-msgid "A non-negative integer specifying the major version component."
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1626
-msgid "``minor``"
+msgid ""
+"A positive integer specifying the major version component of the JSON object "
+"model."
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1627
-msgid "A non-negative integer specifying the minor version component."
+msgid "``minor``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1629
+#: ../../../manual/ctest.1.rst:1628
+msgid ""
+"A non-negative integer specifying the minor version component of the JSON "
+"object model."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1631
 msgid "``backtraceGraph``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1630
+#: ../../../manual/ctest.1.rst:1632
 msgid ""
 "JSON object representing backtrace information with the following members:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1633
+#: ../../../manual/ctest.1.rst:1635
 msgid "``commands``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1634
+#: ../../../manual/ctest.1.rst:1636
 msgid "List of command names."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1635
+#: ../../../manual/ctest.1.rst:1637
 msgid "``files``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1636
+#: ../../../manual/ctest.1.rst:1638
 msgid "List of file names."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1637
+#: ../../../manual/ctest.1.rst:1639
 msgid "``nodes``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1638
+#: ../../../manual/ctest.1.rst:1640
 msgid "List of node JSON objects with members:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1640 ../../../manual/ctest.1.rst:1659
+#: ../../../manual/ctest.1.rst:1642 ../../../manual/ctest.1.rst:1670
 msgid "``command``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1641
-msgid "Index into the ``commands`` member of the ``backtraceGraph``."
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1642
-msgid "``file``"
-msgstr ""
-
 #: ../../../manual/ctest.1.rst:1643
-msgid "Index into the ``files`` member of the ``backtraceGraph``."
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1644
-msgid "``line``"
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1645
-msgid "Line number in the file where the backtrace was added."
+msgid ""
+"An optional member present when the node represents a command invocation "
+"within the file.  The value is an unsigned integer 0-based index into the "
+"``commands`` member of the ``backtraceGraph``."
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1646
-msgid "``parent``"
+msgid "``file``"
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1647
 msgid ""
-"Index into the ``nodes`` member of the ``backtraceGraph`` representing the "
-"parent in the graph."
+"An unsigned integer 0-based index into the ``files`` member of the "
+"``backtraceGraph``."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1649
+msgid "``line``"
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1650
+msgid ""
+"An optional member present when the node represents a line within the file.  "
+"The value is an unsigned integer 1-based line number in the file where the "
+"backtrace was added."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1653
+msgid "``parent``"
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1654
+msgid ""
+"An optional member present when the node is not the bottom of the call "
+"stack.  The value is an unsigned integer 0-based index into the ``nodes`` "
+"member of the ``backtraceGraph`` representing the parent in the graph."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1659
 msgid "``tests``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1651
+#: ../../../manual/ctest.1.rst:1660
 msgid ""
 "A JSON array listing information about each test.  Each entry is a JSON "
 "object with members:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1654
+#: ../../../manual/ctest.1.rst:1663 ../../../manual/ctest.1.rst:1682
 msgid "``name``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1655
-msgid "Test name."
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1656
-msgid "``config``"
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1657
-msgid "Configuration that the test can run on. Empty string means any config."
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1660
-msgid ""
-"List where the first element is the test command and the remaining elements "
-"are the command arguments."
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1662
-msgid "``backtrace``"
-msgstr ""
-
-#: ../../../manual/ctest.1.rst:1663
-msgid "Index into the ``nodes`` member of the ``backtraceGraph``."
-msgstr ""
-
 #: ../../../manual/ctest.1.rst:1664
-msgid "``properties``"
+msgid "Test name. This cannot be empty."
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1665
+msgid "``config``"
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1666
 msgid ""
-"Test properties. Can contain keys for each of the supported test properties."
+"Optional field specifying the configuration for which the test will run. "
+"This will always match the :option:`-C <ctest -C>` option specified on the "
+"``ctest`` command line.  If no such option was given, this field will not be "
+"present."
 msgstr ""
 
 #: ../../../manual/ctest.1.rst:1671
+msgid ""
+"Optional array where the first element is the test command and the remaining "
+"elements are the command arguments.  Normally, this field should be present "
+"and non-empty, but in certain corner cases involving generator expressions, "
+"it is possible for a test to have no command and therefore this field can be "
+"missing."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1676
+msgid "``backtrace``"
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1677
+msgid "Index into the ``nodes`` member of the ``backtraceGraph``."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1678
+msgid "``properties``"
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1679
+msgid ""
+"Optional array of test properties. Each array item will be a JSON object "
+"with the following members:"
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1683
+msgid "The name of the test property. This cannot be empty."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1684
+msgid "``value``"
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1685
+msgid ""
+"The property value, which can be a string, a number, a boolean, or an array "
+"of strings."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1688
+msgid ""
+"The JSON output format is described in machine-readable form by :download:"
+"`this JSON schema </manual/ctest/show-only-schema.json>`."
+msgstr ""
+
+#: ../../../manual/ctest.1.rst:1695
 msgid "Resource Allocation"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1673
+#: ../../../manual/ctest.1.rst:1697
 msgid ""
 "CTest provides a mechanism for tests to specify the resources that they need "
 "in a fine-grained way, and for users to specify the resources available on "
@@ -3021,7 +3062,7 @@ msgid ""
 "prevents them from trying to claim resources that are not available."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1679
+#: ../../../manual/ctest.1.rst:1703
 msgid ""
 "When the resource allocation feature is used, CTest will not oversubscribe "
 "resources. For example, if a resource has 8 slots, CTest will not run tests "
@@ -3033,7 +3074,7 @@ msgid ""
 "Run``)."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1688
+#: ../../../manual/ctest.1.rst:1712
 msgid ""
 "A common use case for this feature is for tests that require the use of a "
 "GPU. Multiple tests can simultaneously allocate memory from a GPU, but if "
@@ -3045,7 +3086,7 @@ msgid ""
 "exhaust the GPU's memory pool."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1697
+#: ../../../manual/ctest.1.rst:1721
 msgid ""
 "Please note that CTest has no concept of what a GPU is or how much memory it "
 "has. It does not have any way of communicating with a GPU to retrieve this "
@@ -3054,7 +3095,7 @@ msgid ""
 "resource-dynamically-generated-spec-file`)."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1703
+#: ../../../manual/ctest.1.rst:1727
 msgid ""
 "CTest keeps track of a list of abstract resource types, each of which has a "
 "certain number of slots available for tests to use. Each test specifies the "
@@ -3065,23 +3106,23 @@ msgid ""
 "exclusive use of those slots for the duration of the test's process."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1711
+#: ../../../manual/ctest.1.rst:1735
 msgid "The CTest resource allocation feature consists of at least two inputs:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1713
+#: ../../../manual/ctest.1.rst:1737
 msgid ""
 "The :ref:`resource specification file <ctest-resource-specification-file>`, "
 "described below, which describes the resources available on the system."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1715
+#: ../../../manual/ctest.1.rst:1739
 msgid ""
 "The :prop_test:`RESOURCE_GROUPS` property of tests, which describes the "
 "resources required by the test."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1718
+#: ../../../manual/ctest.1.rst:1742
 msgid ""
 "When CTest runs a test, the resources allocated to that test are passed in "
 "the form of a set of :ref:`environment variables <ctest-resource-environment-"
@@ -3089,7 +3130,7 @@ msgid ""
 "resource to connect to is left to the test writer."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1724
+#: ../../../manual/ctest.1.rst:1748
 msgid ""
 "The ``RESOURCE_GROUPS`` property tells CTest what resources a test expects "
 "to use grouped in a way meaningful to the test.  The test itself must read "
@@ -3098,7 +3139,7 @@ msgid ""
 "each group may correspond to a process the test will spawn when executed."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1730
+#: ../../../manual/ctest.1.rst:1754
 msgid ""
 "Note that even if a test specifies a ``RESOURCE_GROUPS`` property, it is "
 "still possible for that to test to run without any resource allocation (and "
@@ -3118,11 +3159,11 @@ msgid ""
 "properties to indicate a skipped test."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1750
+#: ../../../manual/ctest.1.rst:1774
 msgid "Resource Specification File"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1752
+#: ../../../manual/ctest.1.rst:1776
 msgid ""
 "The resource specification file is a JSON file which is passed to CTest in "
 "one of a number of ways. It can be specified on the command line with the :"
@@ -3132,7 +3173,7 @@ msgid ""
 "dynamically-generated-spec-file`)."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1759
+#: ../../../manual/ctest.1.rst:1783
 msgid ""
 "If a dashboard script is used and ``RESOURCE_SPEC_FILE`` is not specified, "
 "the value of :variable:`CTEST_RESOURCE_SPEC_FILE` in the dashboard script is "
@@ -3143,13 +3184,13 @@ msgid ""
 "these are specified, no resource spec file is used."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1767
+#: ../../../manual/ctest.1.rst:1791
 msgid ""
 "The resource specification file must be a JSON object. All examples in this "
 "document assume the following resource specification file:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1770
+#: ../../../manual/ctest.1.rst:1794
 msgid ""
 "{\n"
 "  \"version\": {\n"
@@ -3186,28 +3227,28 @@ msgid ""
 "}"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1806
+#: ../../../manual/ctest.1.rst:1830
 msgid "The members are:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1809
+#: ../../../manual/ctest.1.rst:1833
 msgid ""
 "An object containing a ``major`` integer field and a ``minor`` integer "
 "field. Currently, the only supported version is major ``1``, minor ``0``. "
 "Any other value is an error."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1813
+#: ../../../manual/ctest.1.rst:1837
 msgid "``local``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1814
+#: ../../../manual/ctest.1.rst:1838
 msgid ""
 "A JSON array of resource sets present on the system.  Currently, this array "
 "is restricted to being of size 1."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1817
+#: ../../../manual/ctest.1.rst:1841
 msgid ""
 "Each array element is a JSON object with members whose names are equal to "
 "the desired resource types, such as ``gpus``. These names must start with a "
@@ -3220,32 +3261,32 @@ msgid ""
 "``crypto_chip``.)"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1827
+#: ../../../manual/ctest.1.rst:1851
 msgid ""
 "Please note that the names ``gpus`` and ``crypto_chips`` are just examples, "
 "and CTest does not interpret them in any way. You are free to make up any "
 "resource type you want to meet your own requirements."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1831
+#: ../../../manual/ctest.1.rst:1855
 msgid ""
 "The value for each resource type is a JSON array consisting of JSON objects, "
 "each of which describe a specific instance of the specified resource. These "
 "objects have the following members:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1835
+#: ../../../manual/ctest.1.rst:1859
 msgid "``id``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1836
+#: ../../../manual/ctest.1.rst:1860
 msgid ""
 "A string consisting of an identifier for the resource. Each character in the "
 "identifier can be a lowercase letter, a digit, or an underscore. Uppercase "
 "letters are not allowed."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1840
+#: ../../../manual/ctest.1.rst:1864
 msgid ""
 "Identifiers must be unique within a resource type. However, they do not have "
 "to be unique across resource types. For example, it is valid to have a "
@@ -3253,18 +3294,18 @@ msgid ""
 "but not two ``gpus`` resources both named ``0``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1845
+#: ../../../manual/ctest.1.rst:1869
 msgid ""
 "Please note that the IDs ``0``, ``1``, ``2``, ``3``, and ``card0`` are just "
 "examples, and CTest does not interpret them in any way. You are free to make "
 "up any IDs you want to meet your own requirements."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1849
+#: ../../../manual/ctest.1.rst:1873
 msgid "``slots``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1850
+#: ../../../manual/ctest.1.rst:1874
 msgid ""
 "An optional unsigned number specifying the number of slots available on the "
 "resource. For example, this could be megabytes of RAM on a GPU, or "
@@ -3272,26 +3313,26 @@ msgid ""
 "specified, a default value of ``1`` is assumed."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1855
+#: ../../../manual/ctest.1.rst:1879
 msgid ""
 "In the example file above, there are four GPUs with ID's 0 through 3. GPU 0 "
 "has 2 slots, GPU 1 has 4, GPU 2 has 2, and GPU 3 has a default of 1 slot. "
 "There is also one cryptography chip with 4 slots."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1860
+#: ../../../manual/ctest.1.rst:1884
 msgid "``RESOURCE_GROUPS`` Property"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1862
+#: ../../../manual/ctest.1.rst:1886
 msgid "See :prop_test:`RESOURCE_GROUPS` for a description of this property."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1867
+#: ../../../manual/ctest.1.rst:1891
 msgid "Environment Variables"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1869
+#: ../../../manual/ctest.1.rst:1893
 msgid ""
 "Once CTest has decided which resources to allocate to a test, it passes this "
 "information to the test executable as a series of environment variables. For "
@@ -3300,21 +3341,21 @@ msgid ""
 "crypto_chips:2``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1875
+#: ../../../manual/ctest.1.rst:1899
 msgid "The following variables are passed to the test process:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1879
+#: ../../../manual/ctest.1.rst:1903
 msgid ""
 "The total number of groups specified by the :prop_test:`RESOURCE_GROUPS` "
 "property. For example:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1882
+#: ../../../manual/ctest.1.rst:1906
 msgid "``CTEST_RESOURCE_GROUP_COUNT=3``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1884
+#: ../../../manual/ctest.1.rst:1908
 msgid ""
 "This variable will only be defined if :manual:`ctest(1)` has been given a "
 "``--resource-spec-file``, or if :command:`ctest_test` has been given a "
@@ -3322,7 +3363,7 @@ msgid ""
 "this variable will not be defined."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1891
+#: ../../../manual/ctest.1.rst:1915
 msgid ""
 "The list of resource types allocated to each group, with each item separated "
 "by a comma. ``<num>`` is a number from zero to "
@@ -3330,19 +3371,19 @@ msgid ""
 "defined for each ``<num>`` in this range. For example:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1896
+#: ../../../manual/ctest.1.rst:1920
 msgid "``CTEST_RESOURCE_GROUP_0=gpus``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1897
+#: ../../../manual/ctest.1.rst:1921
 msgid "``CTEST_RESOURCE_GROUP_1=gpus``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1898
+#: ../../../manual/ctest.1.rst:1922
 msgid "``CTEST_RESOURCE_GROUP_2=crypto_chips,gpus``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1902
+#: ../../../manual/ctest.1.rst:1926
 msgid ""
 "The list of resource IDs and number of slots from each ID allocated to each "
 "group for a given resource type. This variable consists of a series of "
@@ -3353,30 +3394,30 @@ msgid ""
 "the given group. For example:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1910
+#: ../../../manual/ctest.1.rst:1934
 msgid "``CTEST_RESOURCE_GROUP_0_GPUS=id:0,slots:2``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1911
+#: ../../../manual/ctest.1.rst:1935
 msgid "``CTEST_RESOURCE_GROUP_1_GPUS=id:2,slots:2``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1912
+#: ../../../manual/ctest.1.rst:1936
 msgid "``CTEST_RESOURCE_GROUP_2_GPUS=id:1,slots:4;id:3,slots:1``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1913
+#: ../../../manual/ctest.1.rst:1937
 msgid "``CTEST_RESOURCE_GROUP_2_CRYPTO_CHIPS=id:card0,slots:2``"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1915
+#: ../../../manual/ctest.1.rst:1939
 msgid ""
 "In this example, group 0 gets 2 slots from GPU ``0``, group 1 gets 2 slots "
 "from GPU ``2``, and group 2 gets 4 slots from GPU ``1``, 1 slot from GPU "
 "``3``, and 2 slots from cryptography chip ``card0``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1919
+#: ../../../manual/ctest.1.rst:1943
 msgid ""
 "``<num>`` is a number from zero to ``CTEST_RESOURCE_GROUP_COUNT`` minus one. "
 "``<resource-type>`` is the name of a resource type, converted to uppercase. "
@@ -3385,7 +3426,7 @@ msgid ""
 "``CTEST_RESOURCE_GROUP_<num>``."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1925
+#: ../../../manual/ctest.1.rst:1949
 msgid ""
 "Because some platforms have case-insensitive names for environment "
 "variables, the names of resource types may not clash in a case-insensitive "
@@ -3396,11 +3437,11 @@ msgid ""
 "``CTEST_RESOURCE_GROUP_<num>_<resource-type>`` environment variable."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1937
+#: ../../../manual/ctest.1.rst:1961
 msgid "Dynamically-Generated Resource Specification File"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1941
+#: ../../../manual/ctest.1.rst:1965
 msgid ""
 "A project may optionally specify a single test which will be used to "
 "dynamically generate the resource specification file that CTest will use for "
@@ -3415,11 +3456,11 @@ msgid ""
 "argument or the :variable:`CTEST_RESOURCE_SPEC_FILE` variable."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1956
+#: ../../../manual/ctest.1.rst:1980
 msgid "Job Server Integration"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1960
+#: ../../../manual/ctest.1.rst:1984
 msgid ""
 "On POSIX systems, when running under the context of a `Job Server`_, CTest "
 "shares its job slots.  This is independent of the :prop_test:`PROCESSORS` "
@@ -3428,27 +3469,27 @@ msgid ""
 "running each test, and returns it when the test finishes."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1966
+#: ../../../manual/ctest.1.rst:1990
 msgid "For example, consider the ``Makefile``:"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1968
+#: ../../../manual/ctest.1.rst:1992
 msgid ""
 "test:\n"
 "\t+ctest -j 8\n"
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1971
+#: ../../../manual/ctest.1.rst:1995
 msgid ""
 "When invoked via ``make -j 2 test``, ``ctest`` connects to the job server, "
 "acquires a token for each test, and runs at most 2 tests concurrently."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1974
+#: ../../../manual/ctest.1.rst:1998
 msgid "On Windows systems, job server integration is not yet implemented."
 msgstr ""
 
-#: ../../../manual/ctest.1.rst:1979
+#: ../../../manual/ctest.1.rst:2003
 msgid "See Also"
 msgstr ""
 
