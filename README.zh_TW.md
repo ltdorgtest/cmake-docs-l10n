@@ -5,10 +5,10 @@
 </div>
 
 <div align="center">
-<h1 id="localization-of-cmake-documentation">CMake 文件的在地化</h1>
+<h1 id="localization-of-cmake-documentation">Localization of CMake Documentation</h1>
 </div>
 
-<details><summary><strong>切換語言</strong></summary>
+<details><summary><strong>Switch Languages</strong></summary>
 <p></p>
 <ul>
   <li><a href="./README.md"><code>en_US</code> : English</a></li>
@@ -20,22 +20,22 @@
 </ul>
 </details>
 
-<h2 id="table-of-contents">目次表</h2>
+<h2 id="table-of-contents">Table of Contents</h2>
 
 <ul>
-  <li><a href="#introduction">介紹</a></li>
-  <li><a href="#progress-of-translations">翻譯進度</a></li>
-  <li><a href="#preview-translations">預覽翻譯</a></li>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#progress-of-translations">Progress of Translations</a></li>
+  <li><a href="#preview-translations">Preview Translations</a></li>
   <li><a href="#maintainers">Maintainers</a></li>
   <li><a href="#support-this-project">Support this Project</a></li>
-  <li><a href="#sponsorship">贊助</a></li>
-  <li><a href="#code-contributors">程式碼貢獻者</a></li>
-  <li><a href="#financial-contributors">財務貢獻者</a></li>
-  <li><a href="#translation-disclaimer">翻譯免責聲明</a></li>
-  <li><a href="#licenses">授權條款</a></li>
+  <li><a href="#sponsorship">Sponsorship</a></li>
+  <li><a href="#code-contributors">Code Contributors</a></li>
+  <li><a href="#financial-contributors">Financial Contributors</a></li>
+  <li><a href="#translation-disclaimer">Translation Disclaimer</a></li>
+  <li><a href="#licenses">Licenses</a></li>
 </ul>
 
-<h2 id="introduction"><a href="#table-of-contents">介紹</a></h2>
+<h2 id="introduction"><a href="#table-of-contents">Introduction</a></h2>
 
 <div align="center"><a href="https://github.com/ltdorgtest/cmake-docs-l10n/stargazers" title="GitHub Stars" target="_blank">
   <img alt="GitHub Stars" src="https://img.shields.io/github/stars/ltdorgtest/cmake-docs-l10n.svg?logo=github&style=flat&color=blue" />
@@ -432,7 +432,7 @@ You can contribute and support this project by doing any of the following:
 
 It will facilitate the creation and ongoing maintenance of l10n projects for open-source documentation.
 
-<h2 id="sponsorship"><a href="#table-of-contents">贊助</a></h2>
+<h2 id="sponsorship"><a href="#table-of-contents">Sponsorship</a></h2>
 
 You can sponsor the maintainers directly through the following platforms:
 
@@ -445,7 +445,7 @@ You can sponsor the maintainers directly through the following platforms:
     <!-- Row 1 -->
     <tr>
       <th rowspan="1" colspan="1" align="center" style="text-align: center; width: 50%;"><div>Patreon</div></th>
-      <th rowspan="1" colspan="1" align="center" style="text-align: center; width: 50%;"><div>愛發電</div></th>
+      <th rowspan="1" colspan="1" align="center" style="text-align: center; width: 50%;"><div>Afdian</div></th>
     </tr>
     <!-- Row 2 -->
     <tr>
@@ -464,13 +464,13 @@ You can sponsor the maintainers directly through the following platforms:
 </table>
 </div>
 
-<h2 id="code-contributors"><a href="#table-of-contents">程式碼貢獻者</a></h2>
+<h2 id="code-contributors"><a href="#table-of-contents">Code Contributors</a></h2>
 
 <div align="center">
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
 
-<h2 id="financial-contributors"><a href="#table-of-contents">財務貢獻者</a></h2>
+<h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
 <div align="center">
 <h3 id="sponsors-to-haowei-hsu">Sponsors to Haowei Hsu</h3>
@@ -480,7 +480,7 @@ You can sponsor the maintainers directly through the following platforms:
 <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
 </div>
 
-<h2 id="translation-disclaimer"><a href="#table-of-contents">翻譯免責聲明</a></h2>
+<h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
 
 Translators who contribute to this project will never make use of the copyright on his or her translations, will never forbid copying them, and will never ask for some kind of compensation. Everyone will always be allowed to freely use, modify, and distribute these translations.
 
