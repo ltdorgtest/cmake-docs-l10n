@@ -73,7 +73,7 @@ jobs:
       ENABLE: true
       RUNNER: ${{ vars.RUNNER }}
       CHECKOUT: ${{ github.ref }}
-      DEPLOY_BRANCH: 'contrib'
+      DEPLOY_BRANCH: 'static'
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
     secrets:
