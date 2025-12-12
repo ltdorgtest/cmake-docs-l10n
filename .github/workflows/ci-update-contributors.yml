@@ -77,7 +77,7 @@ jobs:
       ACTOR_NAME: ${{ vars.ACTOR_NAME }}
       ACTOR_EMAIL: ${{ vars.ACTOR_EMAIL }}
       CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
-      CROWDIN_BASE_URL: ${{ vars.CROWDIN_BASE_URL }}
+      CROWDIN_ORGANIZATION: ${{ vars.CROWDIN_ORGANIZATION }}
     secrets:
       ACTOR_GITHUB_TOKEN: ${{ secrets.ACTOR_GITHUB_TOKEN }}
       CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
