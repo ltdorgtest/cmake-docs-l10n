@@ -2,8 +2,8 @@
   xmlns="http://www.w3.org/2000/svg" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
   width="840" 
-  height="180"
-  viewBox="0 0 840 180"
+  height="210"
+  viewBox="0 0 840 210"
 >
   <style>
     .contributor { cursor: pointer; }
@@ -15,14 +15,14 @@
       text-anchor: middle;
     }
     .username {
-      font-size: 12px;
+      font-size: 14px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-weight: bold;
       fill: #6B6B6C;
       text-anchor: middle;
     }
     .words { 
-      font-size: 12px; 
+      font-size: 14px; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
       font-weight: bold;
       fill: #6B6B6C;
@@ -45,7 +45,7 @@
           <circle cx="70" cy="70" r="50"/>
         </clipPath>
       </defs>
-      <title>Haowei Hsu (hwhsu1231)</title>
+      <title>hwhsu1231</title>
       <image 
         x="20" 
         y="20" 
@@ -55,9 +55,8 @@
         clip-path="url(#clip-1)"
         preserveAspectRatio="xMidYMid slice"
       />
-      <text x="70" y="140" class="name">Haowei Hsu</text>
-      <text x="70" y="156" class="username">(hwhsu1231)</text>
-      <text x="70" y="172" class="words">720 words</text>
+      <text x="70" y="145" class="name">hwhsu1231</text>
+      <text x="70" y="165" class="words">720 words</text>
     </g>
     <g class="contributor">
       <defs>
@@ -75,8 +74,8 @@
         clip-path="url(#clip-5)"
         preserveAspectRatio="xMidYMid slice"
       />
-      <text x="210" y="140" class="name">Localize The Docs</text>
-      <text x="210" y="156" class="username">(localizethedocs)</text>
-      <text x="210" y="172" class="words">26 words</text>
+      <text x="210" y="145" class="name">Localize The Docs</text>
+      <text x="210" y="165" class="username">(localizethedocs)</text>
+      <text x="210" y="185" class="words">26 words</text>
     </g>
 </svg>
