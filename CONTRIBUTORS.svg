@@ -1,28 +1,28 @@
 <svg 
   xmlns="http://www.w3.org/2000/svg" 
   xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="720" 
-  height="160"
-  viewBox="0 0 720 160"
+  width="840" 
+  height="180"
+  viewBox="0 0 840 180"
 >
   <style>
     .contributor { cursor: pointer; }
     .name { 
-      font-size: 12px; 
+      font-size: 14px; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
       font-weight: bold;
       fill: #6B6B6C;
       text-anchor: middle;
     }
     .username {
-      font-size: 10px;
+      font-size: 12px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-weight: bold;
       fill: #6B6B6C;
       text-anchor: middle;
     }
     .words { 
-      font-size: 10px; 
+      font-size: 12px; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
       font-weight: bold;
       fill: #6B6B6C;
@@ -42,41 +42,41 @@
     <g class="contributor">
       <defs>
         <clipPath id="clip-1">
-          <circle cx="60" cy="60" r="50"/>
+          <circle cx="70" cy="70" r="50"/>
         </clipPath>
       </defs>
       <title>Haowei Hsu (hwhsu1231)</title>
       <image 
-        x="10" 
-        y="10" 
+        x="20" 
+        y="20" 
         width="100" 
         height="100" 
         xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACv0lEQVR42u2dsU4yQRRGv5lQ0FgQ4vaU0FiRbeAVlMre1poYnsFYk2wsTCyt1MYH0EZKi6XcHrPZwoYEM/NXFmbXQp39QTgnoVmSe2HOztybLDMYSV6wNixDgAAEAAIQAAhAACAAAYAABAACEAAIQAAgAAFQL42QwYwxMsZs9YB57+W93zwBxhhdXV2p1+tttYA0TXVychJMQlABvV5P/X5/65cNY0wwAdQAijACAAG0obUyn8/1+PgYJFYURTo8PJS1n+8d55zu7++1WCyC5BkOh+p2u/+ntQ3xstb62Wzmq0iSxIfKE8exX61WpRyr1crHcRwsT5Ikld9lNpt5a22wPCxB1AAEAALogtZj31q1Wq1SRyNJb29vWi6XQfI0m03t7e2VrjvnVBSFnHO7KaDVaunp6Untdrv03ng81vX1dZA8x8fHuri4KF3P81yDwUB5nu/uDGi329rf36+8a0PRbDYrc3x8BmoARRgQgADYuSL8E7Is0+npaenZs/deWZYhoG4Wi4UuLy9ZggABCAAE0AXVRafTURzHwWIh4JucnZ1pPB6HmebWIuAng7bJA0cNQAAggC6oPpxzwR4VbnI92VgB5+fnur29DRJrNBppMpkg4DtkWabn5+cgsQ4ODqgBgAAEAAIowr8liiIdHR1VPpK8u7sLtj8AAV/Q6XQ0nU7VaHz+6O/v73p5eflzAliCEIAAQABd0Fpwzn350/BQewM+Yr2+vpau53m+1r0BaxdQFIUGg8GXGzRCcXNzo4eHh8oboCgKZkDdLJfLoDOKGkARBgQgAP5MER4Oh0qSJEisKIoquyZrrSaTSdDDOrZGQLfbrf3kEWutRqMRSxAgAAGAgN3rgrz3StN06wcsTdOgJ+caBfwzT44uXrMAoAYgABCAAEAAAgABCAAEIAAQgABAAAIAAQgABGwc/wBRjl+W9J6jBgAAAABJRU5ErkJggg=="
         clip-path="url(#clip-1)"
         preserveAspectRatio="xMidYMid slice"
       />
-      <text x="60" y="125" class="name">Haowei Hsu</text>
-      <text x="60" y="137" class="username">(hwhsu1231)</text>
-      <text x="60" y="149" class="words">720 words</text>
+      <text x="70" y="140" class="name">Haowei Hsu</text>
+      <text x="70" y="156" class="username">(hwhsu1231)</text>
+      <text x="70" y="172" class="words">720 words</text>
     </g>
     <g class="contributor">
       <defs>
         <clipPath id="clip-5">
-          <circle cx="180" cy="60" r="50"/>
+          <circle cx="210" cy="70" r="50"/>
         </clipPath>
       </defs>
       <title>Localize The Docs (localizethedocs)</title>
       <image 
-        x="130" 
-        y="10" 
+        x="160" 
+        y="20" 
         width="100" 
         height="100" 
         xlink:href="data:image/png;base64,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"
         clip-path="url(#clip-5)"
         preserveAspectRatio="xMidYMid slice"
       />
-      <text x="180" y="125" class="name">Localize The Docs</text>
-      <text x="180" y="137" class="username">(localizethedocs)</text>
-      <text x="180" y="149" class="words">26 words</text>
+      <text x="210" y="140" class="name">Localize The Docs</text>
+      <text x="210" y="156" class="username">(localizethedocs)</text>
+      <text x="210" y="172" class="words">26 words</text>
     </g>
 </svg>
