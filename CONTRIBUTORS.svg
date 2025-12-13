@@ -11,43 +11,31 @@
       font-size: 12px; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
       font-weight: bold;
+      fill: #4b5563;
       text-anchor: middle;
     }
     .username {
       font-size: 10px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-weight: bold;
+      fill: #4b5563;
       text-anchor: middle;
     }
     .words { 
       font-size: 10px; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; 
       font-weight: bold;
+      fill: #4b5563;
       text-anchor: middle;
     }
     .project-link {
       font-size: 14px;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      fill: #3b82f6;
       text-anchor: middle;
     }
     .project-link:hover {
       text-decoration: underline;
-    }
-    
-    /* Light mode colors (default) */
-    @media (prefers-color-scheme: light) {
-      .name { fill: #24292f; }
-      .username { fill: #24292f; }
-      .words { fill: #24292f; }
-      .project-link { fill: #0969da; }
-    }
-    
-    /* Dark mode colors */
-    @media (prefers-color-scheme: dark) {
-      .name { fill: #e6edf3; }
-      .username { fill: #e6edf3; }
-      .words { fill: #e6edf3; }
-      .project-link { fill: #58a6ff; }
     }
   </style>
   
