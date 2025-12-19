@@ -473,11 +473,7 @@ You can sponsor the maintainers directly through the following platforms:
 
 <h2 id="translation-contributors"><a href="#table-of-contents">Translation Contributors</a></h2>
 
-<img width="100%" alt="Crowdin Contributors SVG" src="https://fastly.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/crowdin-contributors.svg">
-
-<img width="100%" alt="Crowdin Contributors SVG" src="https://fastly.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@main/CONTRIBUTORS.svg">
-
-<img width="100%" alt="Crowdin Contributors SVG" src="CONTRIBUTORS.svg">
+<img width="100%" alt="Crowdin Contributors SVG" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/crowdin-contributors.svg">
 
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
