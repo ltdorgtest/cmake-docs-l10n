@@ -473,9 +473,15 @@ You can sponsor the maintainers directly through the following platforms:
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
 
+<div align="center">
+<img width="100%" alt="Crowdin Contributors SVG" src="https://gcore.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/github-contributors.svg">
+</div>
+
 <h2 id="translation-contributors"><a href="#table-of-contents">Translation Contributors</a></h2>
 
+<div align="center">
 <img width="100%" alt="Crowdin Contributors SVG" src="https://gcore.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/crowdin-contributors.svg">
+</div>
 
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
