@@ -471,15 +471,15 @@ You can sponsor the maintainers directly through the following platforms:
 <img width="100%" alt="GitHub Contributors SVG" src="https://contrib.nn.ci/api?repo=ltdorgtest/cmake-docs-l10n&no_bot=true" />
 </div>
 
-<div align="center"><a href="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/github-contributors.svg">
-  <img width="100%" alt="Crowdin Contributors SVG" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/github-contributors.svg">
-</a></div>
+<div align="center">
+<img width="100%" alt="Crowdin Contributors SVG" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/github-contributors.svg">
+</div>
 
 <h2 id="translation-contributors"><a href="#table-of-contents">Translation Contributors</a></h2>
 
-<div align="center"><a href="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/crowdin-contributors.svg">
-  <img width="100%" alt="Crowdin Contributors SVG" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/crowdin-contributors.svg">
-</a></div>
+<div align="center">
+<img width="100%" alt="Crowdin Contributors SVG" src="https://cdn.jsdelivr.net/gh/ltdorgtest/cmake-docs-l10n@static/crowdin-contributors.svg">
+</div>
 
 <h2 id="financial-contributors"><a href="#table-of-contents">Financial Contributors</a></h2>
 
@@ -487,9 +487,9 @@ You can sponsor the maintainers directly through the following platforms:
 <h3 id="sponsors-to-haowei-hsu">Sponsors to Haowei Hsu</h3>
 </div>
 
-<div align="center"><a href="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg">
-  <img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
-</a></div>
+<div align="center">
+<img width="100%" alt="Sponsors to Haowei Hsu" src="https://cdn.jsdelivr.net/gh/hwhsu1231/sponsors/static/sponsors.svg" />
+</div>
 
 <h2 id="translation-disclaimer"><a href="#table-of-contents">Translation Disclaimer</a></h2>
 
