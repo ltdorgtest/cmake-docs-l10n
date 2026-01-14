@@ -48,6 +48,14 @@ jobs:
             echo "vars.ACTOR_EMAIL is missing."
             REQUIRED_VARIABLES_EXIST=false
           fi
+          if [[ -z "${{ vars.CROWDIN_PROJECT_ID }}" ]]; then
+            echo "vars.CROWDIN_PROJECT_ID is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
+          if [[ -z "${{ vars.CROWDIN_ORGANIZATION }}" ]]; then
+            echo "vars.CROWDIN_ORGANIZATION is missing."
+            REQUIRED_VARIABLES_EXIST=false
+          fi
           if [[ "${REQUIRED_VARIABLES_EXIST}" == "false" ]]; then
             echo "Error: Some variables are missing." >&2
             exit 1
@@ -58,6 +66,10 @@ jobs:
           REQUIRED_SECRETS_EXIST=true
           if [[ -z "${{ secrets.ACTOR_GITHUB_TOKEN }}" ]]; then
             echo "secrets.ACTOR_GITHUB_TOKEN is missing."
+            REQUIRED_SECRETS_EXIST=false
+          fi
+          if [[ -z "${{ secrets.CROWDIN_PERSONAL_TOKEN }}" ]]; then
+            echo "secrets.CROWDIN_PERSONAL_TOKEN is missing."
             REQUIRED_SECRETS_EXIST=false
           fi
           if [[ "${REQUIRED_SECRETS_EXIST}" == "false" ]]; then
