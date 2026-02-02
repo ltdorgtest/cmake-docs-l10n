@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,27 +101,27 @@ msgstr ""
 msgid "cmake_policy(VERSION <min>[...<max>])"
 msgstr ""
 
-#: ../../../command/POLICY_VERSION.txt:1
+#: ../../../command/include/POLICY_VERSION.rst:1
 msgid ""
 "This specifies that the current CMake code is written for the given range of "
 "CMake versions, ``<min>[...<max>]``. It sets the \"policy version\" to:"
 msgstr ""
 
-#: ../../../command/POLICY_VERSION.txt:4
+#: ../../../command/include/POLICY_VERSION.rst:4
 msgid "the range's ``<max>`` version, if specified, or to"
 msgstr ""
 
-#: ../../../command/POLICY_VERSION.txt:5
+#: ../../../command/include/POLICY_VERSION.rst:5
 msgid "the ``<min>`` version, or to"
 msgstr ""
 
-#: ../../../command/POLICY_VERSION.txt:6
+#: ../../../command/include/POLICY_VERSION.rst:6
 msgid ""
 "the value of the :variable:`CMAKE_POLICY_VERSION_MINIMUM` variable if it is "
 "higher than the other two versions."
 msgstr ""
 
-#: ../../../command/POLICY_VERSION.txt:9
+#: ../../../command/include/POLICY_VERSION.rst:9
 msgid ""
 "The policy version effectively requests behavior preferred as of a given "
 "CMake version and tells newer CMake versions to warn about their new "
@@ -133,7 +133,7 @@ msgid ""
 "CMake versions to warn about their new policies."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:3
+#: ../../../command/include/DEPRECATED_POLICY_VERSIONS.rst:3
 msgid ""
 "Compatibility with versions of CMake older than 3.5 is removed. Calls to :"
 "command:`cmake_minimum_required(VERSION)` or :command:"
@@ -142,7 +142,7 @@ msgid ""
 "above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:11
+#: ../../../command/include/DEPRECATED_POLICY_VERSIONS.rst:11
 msgid ""
 "Compatibility with versions of CMake older than 3.10 is deprecated. Calls "
 "to :command:`cmake_minimum_required(VERSION)` or :command:"
@@ -151,7 +151,7 @@ msgid ""
 "CMake 3.31 and above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:19
+#: ../../../command/include/DEPRECATED_POLICY_VERSIONS.rst:19
 msgid ""
 "Compatibility with versions of CMake older than 3.5 is deprecated. Calls to :"
 "command:`cmake_minimum_required(VERSION)` or :command:"
@@ -160,7 +160,7 @@ msgid ""
 "CMake 3.27 and above."
 msgstr ""
 
-#: ../../../command/DEPRECATED_POLICY_VERSIONS.txt:27
+#: ../../../command/include/DEPRECATED_POLICY_VERSIONS.rst:27
 msgid ""
 "Compatibility with versions of CMake older than 2.8.12 is deprecated. Calls "
 "to :command:`cmake_minimum_required(VERSION)` or :command:"

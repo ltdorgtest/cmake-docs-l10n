@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,16 +27,16 @@ msgstr ""
 
 #: ../../../policy/CMP0132.rst:8
 msgid ""
-"Apart from when using the Xcode generator and some Visual Studio generators, "
-"CMake 3.23 and below will set environment variables like :envvar:`CC`, :"
-"envvar:`CXX`, etc. when the corresponding language is enabled. This only "
-"occurs on the very first time CMake is run in a build directory, and the "
-"environment variables are only defined at configure time, not build time. On "
-"subsequent CMake runs, these environment variables are not set, opening up "
-"the opportunity for different behavior between the first and subsequent "
-"CMake runs. CMake 3.24 and above prefer to not set these environment "
-"variables when a language is enabled, even on the first run in a build "
-"directory."
+"Apart from when using the :generator:`Xcode` generator and some :ref:`Visual "
+"Studio Generators`, CMake 3.23 and below will set environment variables "
+"like :envvar:`CC`, :envvar:`CXX`, etc. when the corresponding language is "
+"enabled. This only occurs on the very first time CMake is run in a build "
+"directory, and the environment variables are only defined at configure time, "
+"not build time. On subsequent CMake runs, these environment variables are "
+"not set, opening up the opportunity for different behavior between the first "
+"and subsequent CMake runs. CMake 3.24 and above prefer to not set these "
+"environment variables when a language is enabled, even on the first run in a "
+"build directory."
 msgstr ""
 
 #: ../../../policy/CMP0132.rst:19
@@ -46,7 +46,7 @@ msgid ""
 "policy does not set any such environment variables."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/include/STANDARD_ADVICE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "It may be set by :command:`cmake_policy` or :command:"
@@ -54,7 +54,7 @@ msgid ""
 "and uses ``OLD`` behavior."
 msgstr ""
 
-#: ../../../policy/DEPRECATED.txt:2
+#: ../../../policy/include/DEPRECATED.rst:2
 msgid ""
 "The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
 "policies(7)>` and may be removed in a future version of CMake."

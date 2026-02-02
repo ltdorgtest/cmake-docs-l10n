@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -185,23 +185,23 @@ msgstr ""
 #: ../../../guide/ide-integration/index.rst:117
 msgid ""
 "If an IDE project generator is used, such as :generator:`Xcode` or one of "
-"the Visual Studio generators, and the IDE understands the project format "
-"used, the IDE should read the project file and build it the same way it "
-"would otherwise."
+"the :ref:`Visual Studio Generators`, and the IDE understands the project "
+"format used, the IDE should read the project file and build it the same way "
+"it would otherwise."
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:121
+#: ../../../guide/ide-integration/index.rst:122
 msgid ""
 "The :manual:`File API <cmake-file-api(7)>` can be used to obtain a list of "
 "build configurations from the build tree, and the IDE should present this "
 "list to the user to select a build configuration."
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:126
+#: ../../../guide/ide-integration/index.rst:127
 msgid "Testing"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:128
+#: ../../../guide/ide-integration/index.rst:129
 msgid ""
 ":manual:`ctest(1)` supports outputting a JSON format with information about "
 "the available tests and test configurations. IDEs which want to run CTest "
@@ -209,55 +209,55 @@ msgid ""
 "tests."
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:132
+#: ../../../guide/ide-integration/index.rst:133
 msgid ""
 "IDEs should not invoke the ``test`` target of the generated buildsystem. "
 "Instead, they should invoke :manual:`ctest(1)` directly."
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:136
+#: ../../../guide/ide-integration/index.rst:137
 msgid "IDEs with CMake integration"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:138
+#: ../../../guide/ide-integration/index.rst:139
 msgid "The following IDEs support CMake natively:"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:140
+#: ../../../guide/ide-integration/index.rst:141
 msgid "`CLion`_"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:141
+#: ../../../guide/ide-integration/index.rst:142
 msgid "`KDevelop`_"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:142
+#: ../../../guide/ide-integration/index.rst:143
 msgid "`QtCreator`_"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:143
+#: ../../../guide/ide-integration/index.rst:144
 msgid "`Vim`_ (via a plugin)"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:144
+#: ../../../guide/ide-integration/index.rst:145
 msgid "`Visual Studio`_"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:145
+#: ../../../guide/ide-integration/index.rst:146
 msgid "`VSCode`_ (via a plugin)"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:154
+#: ../../../guide/ide-integration/index.rst:155
 msgid "Additionally, CMake has builtin support for some IDEs:"
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:156
+#: ../../../guide/ide-integration/index.rst:157
 msgid ""
-":ref:`IDE Build Tool Generators`: Generate IDE native build systems such as "
-"Visual Studio or Xcode."
+":ref:`IDE Build Tool Generators`: Generate IDE native build systems such as :"
+"ref:`Visual Studio <Visual Studio Generators>` or :generator:`Xcode`."
 msgstr ""
 
-#: ../../../guide/ide-integration/index.rst:158
+#: ../../../guide/ide-integration/index.rst:160
 msgid ""
 ":ref:`Extra Generators`: Extend :ref:`Command-Line Build Tool Generators` to "
 "generate IDE project files that hook into the command-line build system. "

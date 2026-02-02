@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,51 +22,116 @@ msgid "FindTclStub"
 msgstr ""
 
 #: ../../../../Modules/FindTclStub.cmake:8
-msgid "TCL_STUB_LIBRARY_DEBUG and TK_STUB_LIBRARY_DEBUG were removed."
-msgstr ""
-
-#: ../../../../Modules/FindTclStub.cmake:10
 msgid ""
-"This module finds Tcl stub libraries.  It first finds Tcl include files and "
-"libraries by calling FindTCL.cmake.  How to Use the Tcl Stubs Library:"
+"Finds the Tcl Stub Library, which is used for building version-independent "
+"Tcl extensions:"
 msgstr ""
 
-#: ../../../../Modules/FindTclStub.cmake:16
-msgid "http://tcl.activestate.com/doc/howto/stubs.html"
+#: ../../../../Modules/FindTclStub.cmake:11
+msgid "find_package(TclStub [...])"
 msgstr ""
 
-#: ../../../../Modules/FindTclStub.cmake:18
-msgid "Using Stub Libraries:"
+#: ../../../../Modules/FindTclStub.cmake:15
+msgid ""
+"Tcl (Tool Command Language) is a dynamic programming language, and the Tcl "
+"Stub Library provides a mechanism to allow Tcl extensions to be compiled in "
+"a way that they can work across multiple Tcl versions, without requiring "
+"recompilation."
 msgstr ""
 
-#: ../../../../Modules/FindTclStub.cmake:22
-msgid "http://safari.oreilly.com/0130385603/ch48lev1sec3"
+#: ../../../../Modules/FindTclStub.cmake:20
+msgid ""
+"This module is typically used in conjunction with Tcl development projects "
+"that aim to be portable across different Tcl releases.  It first calls the :"
+"module:`FindTCL` module to locate Tcl installation and then attempts to find "
+"the stub libraries corresponding to the located Tcl version."
 msgstr ""
 
-#: ../../../../Modules/FindTclStub.cmake:24
-msgid "This code sets the following variables:"
+#: ../../../../Modules/FindTclStub.cmake:26
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindTclStub.cmake:28
-msgid ""
-"TCL_STUB_LIBRARY       = path to Tcl stub library\n"
-"TK_STUB_LIBRARY        = path to Tk stub library\n"
-"TTK_STUB_LIBRARY       = path to ttk stub library"
+msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindTclStub.cmake:34
-msgid ""
-"In an effort to remove some clutter and clear up some issues for people who "
-"are not necessarily Tcl/Tk gurus/developers, some variables were moved or "
-"removed.  Changes compared to CMake 2.4 are:"
+#: ../../../../Modules/FindTclStub.cmake:30
+msgid "``TclStub_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:33
+msgid "Boolean indicating whether the Tcl Stub Library was found."
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:36
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:38
+msgid "The following cache variables may also be set:"
 msgstr ""
 
 #: ../../../../Modules/FindTclStub.cmake:40
+msgid "``TCL_STUB_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:41
+msgid "The path to the Tcl stub library."
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:42
+msgid "``TK_STUB_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:43
+msgid "The path to the Tk stub library."
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:44
+msgid "``TTK_STUB_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:45
+msgid "The path to the ttk stub library."
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:48
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:50
+msgid "Finding Tcl Stubs Library:"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:52
+msgid "find_package(TclStub)"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:57
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:59
+msgid "The :module:`FindTCL` module to find the Tcl installation."
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:60
 msgid ""
-"=> these libs are not packaged by default with Tcl/Tk distributions.\n"
-"   Even when Tcl/Tk is built from source, several flavors of debug libs\n"
-"   are created and there is no real reason to pick a single one\n"
-"   specifically (say, amongst tclstub84g, tclstub84gs, or tclstub84sgx).\n"
-"   Let's leave that choice to the user by allowing him to assign\n"
-"   TCL_STUB_LIBRARY to any Tcl library, debug or not."
+"The :module:`FindTclsh` module to find the Tcl shell command-line executable."
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:62
+msgid "Online references:"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:64
+msgid ""
+"`How to Use the Tcl Stubs Library <https://www.tcl-lang.org/doc/howto/stubs."
+"html>`_"
+msgstr ""
+
+#: ../../../../Modules/FindTclStub.cmake:67
+msgid ""
+"`Practical Programming in Tcl and Tk <https://www.oreilly.com/library/view/"
+"practical-programming-in/0130385603/>`_"
 msgstr ""

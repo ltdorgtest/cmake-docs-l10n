@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,8 +220,8 @@ msgid ""
 "``Foo_FIND_COMPONENTS`` if it is set , and only set ``Foo_FOUND`` to true if "
 "for each searched-for component ``<c>`` that was not found, "
 "``Foo_FIND_REQUIRED_<c>`` is not set to true.  The ``HANDLE_COMPONENTS`` "
-"argument of ``find_package_handle_standard_args()`` can be used to implement "
-"this."
+"argument of :command:`find_package_handle_standard_args` can be used to "
+"implement this."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:160
@@ -424,35 +424,36 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:273
 msgid ""
-"The full version string of the package found, if any.  Note that many "
-"existing modules provide ``Xxx_VERSION_STRING`` instead."
-msgstr ""
-
-#: ../../../manual/cmake-developer.7.rst:276
-msgid "``Xxx_VERSION_MAJOR``"
+"The full version string of the package found, if any.  Note that some "
+"existing modules may also provide ``Xxx_VERSION_STRING``, as it was "
+"traditionally used before the current naming convention."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:277
+msgid "``Xxx_VERSION_MAJOR``"
+msgstr ""
+
+#: ../../../manual/cmake-developer.7.rst:278
 msgid "The major version of the package found, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:279
+#: ../../../manual/cmake-developer.7.rst:280
 msgid "``Xxx_VERSION_MINOR``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:280
+#: ../../../manual/cmake-developer.7.rst:281
 msgid "The minor version of the package found, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:282
+#: ../../../manual/cmake-developer.7.rst:283
 msgid "``Xxx_VERSION_PATCH``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:283
+#: ../../../manual/cmake-developer.7.rst:284
 msgid "The patch version of the package found, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:285
+#: ../../../manual/cmake-developer.7.rst:286
 msgid ""
 "The following names should not usually be used in ``CMakeLists.txt`` files. "
 "They are intended for use by Find modules to specify and cache the locations "
@@ -461,22 +462,22 @@ msgid ""
 "path to a library manually):"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:291
+#: ../../../manual/cmake-developer.7.rst:292
 msgid "``Xxx_LIBRARY``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:292
+#: ../../../manual/cmake-developer.7.rst:293
 msgid ""
 "The path of the library.  Use this form only when the module provides a "
 "single library.  It is appropriate to use this as the result variable in a :"
 "command:`find_library` command."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:296
+#: ../../../manual/cmake-developer.7.rst:297
 msgid "``Xxx_Yy_LIBRARY``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:297
+#: ../../../manual/cmake-developer.7.rst:298
 msgid ""
 "The path of library ``Yy`` provided by the module ``Xxx``.  Use this form "
 "when the module provides more than one library or where other modules may "
@@ -484,11 +485,11 @@ msgid ""
 "form as the result variable in a :command:`find_library` command."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:302
+#: ../../../manual/cmake-developer.7.rst:303
 msgid "``Xxx_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:303
+#: ../../../manual/cmake-developer.7.rst:304
 msgid ""
 "When the module provides only a single library, this variable can be used to "
 "specify where to find headers for using the library (or more accurately, the "
@@ -497,11 +498,11 @@ msgid ""
 "`find_path` command."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:309
+#: ../../../manual/cmake-developer.7.rst:310
 msgid "``Xxx_Yy_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:310
+#: ../../../manual/cmake-developer.7.rst:311
 msgid ""
 "If the module provides more than one library or where other modules may also "
 "provide a library of the same name, this form is recommended for specifying "
@@ -510,7 +511,7 @@ msgid ""
 "command:`find_path` command."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:316
+#: ../../../manual/cmake-developer.7.rst:317
 msgid ""
 "To prevent users being overwhelmed with settings to configure, try to keep "
 "as many options as possible out of the cache, leaving at least one option "
@@ -523,23 +524,24 @@ msgid ""
 "be helpful for such cases."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:326
+#: ../../../manual/cmake-developer.7.rst:327
 msgid ""
-"While these are the standard variable names, you should provide backwards "
-"compatibility for any old names that were actually in use. Make sure you "
-"comment them as deprecated, so that no-one starts using them."
+"While these are the standard variable names, backward compatibility should "
+"be provided for any previously used names in the find module that is "
+"replacing an older version.  Old variable names should be documented as "
+"deprecated to discourage further use."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:332
+#: ../../../manual/cmake-developer.7.rst:333
 msgid "A Sample Find Module"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:334
+#: ../../../manual/cmake-developer.7.rst:335
 msgid ""
 "We will describe how to create a simple find module for a library ``Foo``."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:336
+#: ../../../manual/cmake-developer.7.rst:337
 msgid ""
 "The top of the module should begin with a license notice, followed by a "
 "blank line, and then followed by a :ref:`Bracket Comment`.  The comment "
@@ -547,7 +549,7 @@ msgid ""
 "reStructuredText-format documentation.  For example:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:343
+#: ../../../manual/cmake-developer.7.rst:344
 msgid ""
 "# Distributed under the OSI-approved BSD 3-Clause License.  See "
 "accompanying\n"
@@ -571,10 +573,10 @@ msgid ""
 "Result Variables\n"
 "^^^^^^^^^^^^^^^^\n"
 "\n"
-"This will define the following variables:\n"
+"This module defines the following variables:\n"
 "\n"
 "``Foo_FOUND``\n"
-"  True if the system has the Foo library.\n"
+"  Boolean indicating whether (the requested version of) Foo was found.\n"
 "``Foo_VERSION``\n"
 "  The version of the Foo library which was found.\n"
 "``Foo_INCLUDE_DIRS``\n"
@@ -595,42 +597,42 @@ msgid ""
 "#]=======================================================================]"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:386
+#: ../../../manual/cmake-developer.7.rst:387
 msgid "The module documentation consists of:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:388
+#: ../../../manual/cmake-developer.7.rst:389
 msgid "An underlined heading specifying the module name."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:390
+#: ../../../manual/cmake-developer.7.rst:391
 msgid ""
 "A simple description of what the module finds. More description may be "
 "required for some packages.  If there are caveats or other details users of "
 "the module should be aware of, specify them here."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:395
+#: ../../../manual/cmake-developer.7.rst:396
 msgid "A section listing imported targets provided by the module, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:397
+#: ../../../manual/cmake-developer.7.rst:398
 msgid "A section listing result variables provided by the module."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:399
+#: ../../../manual/cmake-developer.7.rst:400
 msgid ""
 "Optionally a section listing cache variables used by the module, if any."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:401
+#: ../../../manual/cmake-developer.7.rst:402
 msgid ""
 "If the package provides any macros or functions, they should be listed in an "
 "additional section, but can be documented by additional ``.rst:`` comment "
 "blocks immediately above where those macros or functions are defined."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:405
+#: ../../../manual/cmake-developer.7.rst:406
 msgid ""
 "The find module implementation may begin below the documentation block. Now "
 "the actual libraries and so on have to be found.  The code here will "
@@ -638,35 +640,35 @@ msgid ""
 "point of find modules), but there tends to be a common pattern for libraries."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:410
+#: ../../../manual/cmake-developer.7.rst:411
 msgid ""
 "First, we try to use ``pkg-config`` to find the library.  Note that we "
 "cannot rely on this, as it may not be available, but it provides a good "
 "starting point."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:414
+#: ../../../manual/cmake-developer.7.rst:415
 msgid ""
 "find_package(PkgConfig)\n"
-"if(PKG_CONFIG_FOUND)\n"
+"if(PkgConfig_FOUND)\n"
 "  pkg_check_modules(PC_Foo QUIET Foo)\n"
 "endif()"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:421
+#: ../../../manual/cmake-developer.7.rst:422
 msgid ""
 "This should define some variables starting ``PC_Foo_`` that contain the "
 "information from the ``Foo.pc`` file."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:424
+#: ../../../manual/cmake-developer.7.rst:425
 msgid ""
 "Now we need to find the libraries and include files; we use the information "
 "from ``pkg-config`` to provide hints to CMake about where to look before "
 "checking other default paths."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:428
+#: ../../../manual/cmake-developer.7.rst:429
 msgid ""
 "find_path(Foo_INCLUDE_DIR\n"
 "  NAMES foo.h\n"
@@ -679,14 +681,14 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:440
+#: ../../../manual/cmake-developer.7.rst:441
 msgid ""
-"Alternatively, if the library is available with multiple configurations, you "
-"can use :module:`SelectLibraryConfigurations` to automatically set the "
-"``Foo_LIBRARY`` variable instead:"
+"Alternatively, if the library is available with multiple configurations, "
+"the :module:`SelectLibraryConfigurations` module can be used to "
+"automatically set the ``Foo_LIBRARY`` variable instead:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:444
+#: ../../../manual/cmake-developer.7.rst:445
 msgid ""
 "find_library(Foo_LIBRARY_RELEASE\n"
 "  NAMES foo\n"
@@ -701,26 +703,24 @@ msgid ""
 "select_library_configurations(Foo)"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:458
+#: ../../../manual/cmake-developer.7.rst:459
 msgid ""
-"If you have a good way of getting the version (from a header file, for "
-"example), you can use that information to set ``Foo_VERSION`` (although note "
-"that find modules have traditionally used ``Foo_VERSION_STRING``, so you may "
-"want to set both).  Otherwise, attempt to use the information from ``pkg-"
-"config``"
+"If there is a good way of getting the version (from a header file, for "
+"example), that information can be used to set ``Foo_VERSION``.  Otherwise, "
+"attempt to use the information from the ``pkg-config``:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:464
+#: ../../../manual/cmake-developer.7.rst:463
 msgid "set(Foo_VERSION ${PC_Foo_VERSION})"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:468
+#: ../../../manual/cmake-developer.7.rst:467
 msgid ""
-"Now we can use :module:`FindPackageHandleStandardArgs` to do most of the "
-"rest of the work for us"
+"Now we can use the :module:`FindPackageHandleStandardArgs` module to handle "
+"most of the remaining steps for us:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:471
+#: ../../../manual/cmake-developer.7.rst:470
 msgid ""
 "include(FindPackageHandleStandardArgs)\n"
 "find_package_handle_standard_args(Foo\n"
@@ -731,7 +731,7 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:481
+#: ../../../manual/cmake-developer.7.rst:480
 msgid ""
 "This will check that the ``REQUIRED_VARS`` contain values (that do not end "
 "in ``-NOTFOUND``) and set ``Foo_FOUND`` appropriately.  It will also cache "
@@ -742,7 +742,7 @@ msgid ""
 "required variable to indicate where it was found."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:489
+#: ../../../manual/cmake-developer.7.rst:488
 msgid ""
 "At this point, we have to provide a way for users of the find module to link "
 "to the library or libraries that were found.  There are two approaches, as "
@@ -750,7 +750,7 @@ msgid ""
 "approach looks like"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:494
+#: ../../../manual/cmake-developer.7.rst:493
 msgid ""
 "if(Foo_FOUND)\n"
 "  set(Foo_LIBRARIES ${Foo_LIBRARY})\n"
@@ -759,13 +759,13 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:502
+#: ../../../manual/cmake-developer.7.rst:501
 msgid ""
 "If more than one library was found, all of them should be included in these "
 "variables (see the `Standard Variable Names`_ section for more information)."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:506
+#: ../../../manual/cmake-developer.7.rst:505
 msgid ""
 "When providing imported targets, these should be namespaced (hence the "
 "``Foo::`` prefix); CMake will recognize that values passed to :command:"
@@ -775,7 +775,7 @@ msgid ""
 "policy:`CMP0028`)."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:513
+#: ../../../manual/cmake-developer.7.rst:512
 msgid ""
 "if(Foo_FOUND AND NOT TARGET Foo::Foo)\n"
 "  add_library(Foo::Foo UNKNOWN IMPORTED)\n"
@@ -787,7 +787,7 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:524
+#: ../../../manual/cmake-developer.7.rst:523
 msgid ""
 "One thing to note about this is that the ``INTERFACE_INCLUDE_DIRECTORIES`` "
 "and similar properties should only contain information about the target "
@@ -796,7 +796,7 @@ msgid ""
 "target. CMake will then combine all the necessary information automatically."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:530
+#: ../../../manual/cmake-developer.7.rst:529
 msgid ""
 "The type of the :prop_tgt:`IMPORTED` target created in the :command:"
 "`add_library` command can always be specified as ``UNKNOWN`` type.  This "
@@ -804,13 +804,13 @@ msgid ""
 "and CMake will determine the type by inspecting the files."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:535
+#: ../../../manual/cmake-developer.7.rst:534
 msgid ""
 "If the library is available with multiple configurations, the :prop_tgt:"
 "`IMPORTED_CONFIGURATIONS` target property should also be populated:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:539
+#: ../../../manual/cmake-developer.7.rst:538
 msgid ""
 "if(Foo_FOUND)\n"
 "  if (NOT TARGET Foo::Foo)\n"
@@ -839,17 +839,18 @@ msgid ""
 "endif()"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:567
+#: ../../../manual/cmake-developer.7.rst:566
 msgid ""
 "The ``RELEASE`` variant should be listed first in the property so that the "
 "variant is chosen if the user uses a configuration which is not an exact "
 "match for any listed ``IMPORTED_CONFIGURATIONS``."
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:571
+#: ../../../manual/cmake-developer.7.rst:570
 msgid ""
-"Most of the cache variables should be hidden in the :program:`ccmake` "
-"interface unless the user explicitly asks to edit them."
+"Most of the cache variables should be marked as advanced to remain hidden in "
+"GUI interfaces such as :manual:`cmake-gui(1)` or :manual:`ccmake(1)`, unless "
+"the user explicitly chooses to display and modify them:"
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:574
@@ -862,12 +863,14 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:581
 msgid ""
-"If this module replaces an older version, you should set compatibility "
-"variables to cause the least disruption possible."
+"If this find module replaces an older module version that provided variables "
+"before the current standard variables naming conventions, also backward "
+"compatibility variables should be provided to cause the least disruption "
+"possible.  For example:"
 msgstr ""
 
-#: ../../../manual/cmake-developer.7.rst:584
+#: ../../../manual/cmake-developer.7.rst:586
 msgid ""
-"# compatibility variables\n"
+"# Backward compatibility variables\n"
 "set(Foo_VERSION_STRING ${Foo_VERSION})"
 msgstr ""

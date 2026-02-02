@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,4 +64,20 @@ msgid ""
 "Only the \"Ninja Multi-Config\" generator supports a property value that "
 "varies by configuration.  For all other generators the value of this "
 "property must be the same for all configurations."
+msgstr ""
+
+#: ../../../prop_tgt/EXCLUDE_FROM_ALL.rst:31
+msgid "See Also"
+msgstr ""
+
+#: ../../../prop_tgt/EXCLUDE_FROM_ALL.rst:33
+msgid ""
+"To exclude targets from the whole directory subtree, see the :prop_dir:"
+"`EXCLUDE_FROM_ALL` directory property."
+msgstr ""
+
+#: ../../../prop_tgt/EXCLUDE_FROM_ALL.rst:36
+msgid ""
+"To exclude targets from the Visual Studio solution build, use :prop_tgt:"
+"`EXCLUDE_FROM_DEFAULT_BUILD`."
 msgstr ""

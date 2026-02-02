@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,18 +50,18 @@ msgid ""
 "property."
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:2
+#: ../../../command/include/OPTIONS_SHELL.rst:2
 msgid "Option De-duplication"
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:4
+#: ../../../command/include/OPTIONS_SHELL.rst:4
 msgid ""
 "The final set of options used for a target is constructed by accumulating "
 "options from the current target and the usage requirements of its "
 "dependencies.  The set of options is de-duplicated to avoid repetition."
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:8
+#: ../../../command/include/OPTIONS_SHELL.rst:8
 msgid ""
 "While beneficial for individual options, the de-duplication step can break "
 "up option groups.  For example, ``-option A -option B`` becomes ``-option A "
@@ -72,11 +72,11 @@ msgid ""
 "B\"`` becomes ``-option A -option B``."
 msgstr ""
 
-#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:2
+#: ../../../prop_tgt/include/STATIC_LIBRARY_OPTIONS_ARCHIVER.rst:2
 msgid "Handling Archiver Driver Differences"
 msgstr ""
 
-#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:6
+#: ../../../prop_tgt/include/STATIC_LIBRARY_OPTIONS_ARCHIVER.rst:6
 msgid ""
 "To pass options to the archiver tool, each compiler driver has its own "
 "syntax. The ``ARCHIVER:`` prefix and ``,`` separator can be used to specify, "
@@ -87,19 +87,19 @@ msgid ""
 "`CMAKE_<LANG>_ARCHIVER_WRAPPER_FLAG_SEP` variables."
 msgstr ""
 
-#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:14
+#: ../../../prop_tgt/include/STATIC_LIBRARY_OPTIONS_ARCHIVER.rst:14
 msgid ""
 "The ``ARCHIVER:`` prefix can be specified as part of a ``SHELL:`` prefix "
 "expression."
 msgstr ""
 
-#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:17
+#: ../../../prop_tgt/include/STATIC_LIBRARY_OPTIONS_ARCHIVER.rst:17
 msgid ""
 "The ``ARCHIVER:`` prefix supports, as an alternative syntax, specification "
 "of arguments using the ``SHELL:`` prefix and space as separator."
 msgstr ""
 
-#: ../../../prop_tgt/STATIC_LIBRARY_OPTIONS_ARCHIVER.txt:22
+#: ../../../prop_tgt/include/STATIC_LIBRARY_OPTIONS_ARCHIVER.rst:22
 msgid ""
 "Specifying the ``SHELL:`` prefix anywhere other than at the beginning of the "
 "``ARCHIVER:`` prefix is not supported."

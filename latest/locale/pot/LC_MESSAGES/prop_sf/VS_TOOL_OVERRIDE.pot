@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,21 @@ msgstr ""
 
 #: ../../../prop_sf/VS_TOOL_OVERRIDE.rst:6
 msgid ""
-"Override the default Visual Studio tool that will be applied to the source "
-"file with a new tool not based on the extension of the file."
+"Override the MSBuild item type of a source file in a Visual Studio project."
+msgstr ""
+
+#: ../../../prop_sf/VS_TOOL_OVERRIDE.rst:8
+msgid ""
+"Together with :prop_sf:`VS_SETTINGS`, this property can be used to configure "
+"items for custom MSBuild tasks."
+msgstr ""
+
+#: ../../../prop_sf/VS_TOOL_OVERRIDE.rst:11
+msgid "Setting the item type to ``None`` will exclude the file from the build."
+msgstr ""
+
+#: ../../../prop_sf/VS_TOOL_OVERRIDE.rst:13
+msgid ""
+"This property is honored for all source file types. Previously, it only "
+"worked for source types unknown to CMake."
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "CLICOLOR_FORCE"
 msgstr ""
 
-#: ../../../envvar/ENV_VAR.txt:1
+#: ../../../envvar/include/ENV_VAR.rst:1
 msgid ""
 "This is a CMake :ref:`Environment Variable <CMake Language Environment "
 "Variables>`. Its initial value is taken from the calling process environment."
@@ -36,11 +36,13 @@ msgstr ""
 
 #: ../../../envvar/CLICOLOR_FORCE.rst:12
 msgid ""
-"See also the :envvar:`CLICOLOR` environment variable. :envvar:`!"
-"CLICOLOR_FORCE`, if activated, takes precedence over :envvar:`CLICOLOR`."
+"See also the :envvar:`NO_COLOR` and :envvar:`CLICOLOR` environment "
+"variables. If :envvar:`NO_COLOR` is activated, it takes precedence over :"
+"envvar:`!CLICOLOR_FORCE`.  Otherwise, if :envvar:`!CLICOLOR_FORCE` is "
+"activated, it takes precedence over :envvar:`CLICOLOR`."
 msgstr ""
 
-#: ../../../envvar/CLICOLOR_FORCE.rst:16
+#: ../../../envvar/CLICOLOR_FORCE.rst:17
 msgid ""
 "See the :variable:`CMAKE_COLOR_DIAGNOSTICS` variable to control color in a "
 "generated build system."

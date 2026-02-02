@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,44 +29,44 @@ msgstr ""
 msgid "The allowed values are:"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:1
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:1
 msgid "``Embedded``"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:2
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:2
 msgid ""
 "Compile with ``-Z7`` or equivalent flag(s) to produce object files with full "
 "symbolic debugging information."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:4
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:4
 msgid "``ProgramDatabase``"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:5
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:5
 msgid ""
 "Compile with ``-Zi`` or equivalent flag(s) to produce a program database "
 "that contains all the symbolic debugging information."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:7
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:7
 msgid "``EditAndContinue``"
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:8
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:8
 msgid ""
 "Compile with ``-ZI`` or equivalent flag(s) to produce a program database "
 "that supports the Edit and Continue feature."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:11
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:11
 msgid ""
 "The value is ignored on compilers not targeting the MSVC ABI, but an "
 "unsupported value will be rejected as an error when using a compiler "
 "targeting the MSVC ABI."
 msgstr ""
 
-#: ../../../prop_tgt/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.txt:15
+#: ../../../prop_tgt/include/MSVC_DEBUG_INFORMATION_FORMAT-VALUES.rst:15
 msgid ""
 "The value may also be the empty string (``\"\"``), in which case no debug "
 "information format flag will be added explicitly by CMake."

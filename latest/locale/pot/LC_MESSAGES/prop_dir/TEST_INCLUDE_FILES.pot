@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,11 +22,55 @@ msgid "TEST_INCLUDE_FILES"
 msgstr ""
 
 #: ../../../prop_dir/TEST_INCLUDE_FILES.rst:6
-msgid "A list of cmake files that will be included when ctest is run."
+msgid ""
+"This directory property specifies a list of CMake scripts to be included and "
+"processed when ``ctest`` runs on the directory.  Use absolute paths, to "
+"avoid ambiguity.  Script files are included in the specified order."
 msgstr ""
 
-#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:8
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:10
 msgid ""
-"If you specify ``TEST_INCLUDE_FILES``, those files will be included and "
-"processed when ctest is run on the directory."
+"``TEST_INCLUDE_FILES`` scripts are processed when running ``ctest``, not "
+"during the ``cmake`` configuration phase.  These scripts should be written "
+"as if they were CTest dashboard scripts.  It is common to generate such "
+"scripts dynamically since many variables and commands available during "
+"configuration are not accessible at test phase."
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:17
+msgid "Examples"
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:19
+msgid "Setting this directory property to append one or more CMake scripts:"
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:21
+msgid "CMakeLists.txt"
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:21
+msgid ""
+"configure_file(script.cmake.in script.cmake)\n"
+"\n"
+"set_property(\n"
+"  DIRECTORY\n"
+"  APPEND\n"
+"  PROPERTY TEST_INCLUDE_FILES\n"
+"    ${CMAKE_CURRENT_BINARY_DIR}/script.cmake\n"
+"    ${CMAKE_CURRENT_SOURCE_DIR}/foo.cmake\n"
+"    ${dir}/bar.cmake\n"
+")"
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:35
+msgid "script.cmake.in"
+msgstr ""
+
+#: ../../../prop_dir/TEST_INCLUDE_FILES.rst:35
+msgid ""
+"execute_process(\n"
+"  COMMAND \"@CMAKE_COMMAND@\" -E echo \"script.cmake executed during "
+"CTest\"\n"
+")"
 msgstr ""

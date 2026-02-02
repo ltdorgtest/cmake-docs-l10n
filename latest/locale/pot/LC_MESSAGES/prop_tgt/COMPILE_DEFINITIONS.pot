@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "Any leading ``-D`` on an item will be removed."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:1
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:1
 msgid ""
 "Disclaimer: Most native build tools have poor support for escaping certain "
 "values.  CMake has work-arounds for many cases but some values may just not "
@@ -56,55 +56,55 @@ msgid ""
 "limitations include:"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:11
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:11
 msgid "``#``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:11
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:11
 msgid "Broken almost everywhere."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:12
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:12
 msgid "``;``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:12
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:12
 msgid "Broken in VS IDE 7.0 and Borland Makefiles."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:13
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:13
 msgid "``,``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:13
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:13
 msgid "Broken in VS IDE."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:14
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:14
 msgid "``%``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:14
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:14
 msgid "Broken in some cases in NMake."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:15
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:15
 msgid "``& |``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:15
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:15
 msgid "Broken in some cases on MinGW."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:16
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:16
 msgid "``^ < > \\ \"``"
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:16
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:16
 msgid "Broken in most Make tools on Windows."
 msgstr ""
 
-#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.txt:19
+#: ../../../include/COMPILE_DEFINITIONS_DISCLAIMER.rst:19
 msgid ""
 "CMake does not reject these values outright because they do work in some "
 "cases.  Use with caution."

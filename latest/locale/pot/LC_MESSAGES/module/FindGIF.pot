@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,95 +22,129 @@ msgid "FindGIF"
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:8
-msgid "This finds the Graphics Interchange Format (GIF) library (``giflib``)"
+msgid "Finds the Graphics Interchange Format (GIF) library (``giflib``):"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:11
-msgid "Imported Targets"
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:13
-msgid "This module defines the following :prop_tgt:`IMPORTED` target:"
+#: ../../../../Modules/FindGIF.cmake:10
+msgid "find_package(GIF [<version>] [...])"
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:15
-msgid "``GIF::GIF``"
+msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:16
-msgid "The ``giflib`` library, if found."
+#: ../../../../Modules/FindGIF.cmake:17
+msgid "This module provides the following :ref:`Imported Targets`:"
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:19
-msgid "Result variables"
+msgid "``GIF::GIF``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:21
-msgid "This module will set the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:23
-msgid "``GIF_FOUND``"
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:24
-msgid "If false, do not try to use GIF."
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:25
-msgid "``GIF_INCLUDE_DIRS``"
+#: ../../../../Modules/FindGIF.cmake:22
+msgid ""
+"Target that encapsulates the usage requirements of the GIF library, "
+"available when the library is found."
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:26
-msgid "where to find gif_lib.h, etc."
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:27
-msgid "``GIF_LIBRARIES``"
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:28
-msgid "the libraries needed to use GIF."
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:29
-msgid "``GIF_VERSION``"
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:30
-msgid "3, 4 or a full version string (eg 5.1.4) for versions >= 4.1.6."
+msgid "``GIF_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:31
+msgid ""
+"Boolean indicating whether the (requested version of) GIF library was found."
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:33
-msgid "Cache variables"
+msgid "``GIF_VERSION``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:35
-msgid "The following cache variables may also be set:"
-msgstr ""
-
-#: ../../../../Modules/FindGIF.cmake:37
-msgid "``GIF_INCLUDE_DIR``"
+#: ../../../../Modules/FindGIF.cmake:34
+msgid ""
+"Version string of the GIF library found (for example, ``5.1.4``).  For GIF "
+"library versions prior to 4.1.6, version string will be set only to ``3`` or "
+"``4`` as these versions did not provide version information in their headers."
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:38
-msgid "where to find the GIF headers."
+msgid "``GIF_INCLUDE_DIRS``"
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:39
-msgid "``GIF_LIBRARY``"
+msgid "Include directories needed to use the GIF library."
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:40
-msgid "where to find the GIF library."
+#: ../../../../Modules/FindGIF.cmake:41
+msgid "``GIF_LIBRARIES``"
 msgstr ""
 
-#: ../../../../Modules/FindGIF.cmake:43
-msgid "Hints"
+#: ../../../../Modules/FindGIF.cmake:42
+msgid "Libraries needed to link to the GIF library."
 msgstr ""
 
 #: ../../../../Modules/FindGIF.cmake:45
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:47
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:49
+msgid "``GIF_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:50
+msgid "Directory containing the ``gif_lib.h`` and other GIF library headers."
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:52
+msgid "``GIF_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:53
+msgid "Path to the GIF library."
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:56
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:58
+msgid "This module accepts the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:60
+msgid "``GIF_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:61
 msgid ""
-"``GIF_DIR`` is an environment variable that would correspond to the ``./"
+"Environment variable that can be set to help locate a GIF library installed "
+"in a custom location.  It should point to the installation destination that "
+"was used when configuring, building, and installing GIF library: ``./"
 "configure --prefix=$GIF_DIR``."
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:67
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:69
+msgid "Finding GIF library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindGIF.cmake:71
+msgid ""
+"find_package(GIF)\n"
+"target_link_libraries(project_target PRIVATE GIF::GIF)"
 msgstr ""

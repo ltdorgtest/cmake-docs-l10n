@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,16 +24,17 @@ msgstr ""
 #: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:6
 msgid ""
 "Postfix to append to the framework file name for configuration ``<CONFIG>``, "
-"when using a multi-config generator (like Xcode and Ninja Multi-Config)."
+"when using a multi-config generator (like :generator:`Xcode` and :generator:"
+"`Ninja Multi-Config`)."
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:9
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:10
 msgid ""
 "When building with configuration ``<CONFIG>`` the value of this property is "
 "appended to the framework file name built on disk."
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:12
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:13
 msgid ""
 "For example, given a framework called ``my_fw``, a value of ``_debug`` for "
 "the ``FRAMEWORK_MULTI_CONFIG_POSTFIX_DEBUG`` property, and ``Debug;Release`` "
@@ -41,30 +42,30 @@ msgid ""
 "be created for the ``Debug`` and ``Release`` configurations:"
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:18
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:19
 msgid "``Release/my_fw.framework/my_fw``"
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:19
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:20
 msgid "``Release/my_fw.framework/Versions/A/my_fw``"
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:20
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:21
 msgid "``Debug/my_fw.framework/my_fw_debug``"
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:21
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:22
 msgid "``Debug/my_fw.framework/Versions/A/my_fw_debug``"
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:23
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:24
 msgid ""
 "For framework targets, this property is initialized by the value of the :"
 "variable:`CMAKE_FRAMEWORK_MULTI_CONFIG_POSTFIX_<CONFIG>` variable if it is "
 "set when a target is created."
 msgstr ""
 
-#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:27
+#: ../../../prop_tgt/FRAMEWORK_MULTI_CONFIG_POSTFIX_CONFIG.rst:28
 msgid ""
 "This property is ignored for non-framework targets, and when using single "
 "config generators."

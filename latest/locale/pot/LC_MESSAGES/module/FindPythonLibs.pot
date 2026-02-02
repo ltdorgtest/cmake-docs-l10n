@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,56 +29,187 @@ msgstr ""
 
 #: ../../../../Modules/FindPythonLibs.cmake:13
 msgid ""
-"Use :module:`FindPython3`, :module:`FindPython2` or :module:`FindPython` "
+"Use :module:`FindPython3`, :module:`FindPython2`, or :module:`FindPython` "
 "instead."
 msgstr ""
 
-#: ../../../../Modules/FindPythonLibs.cmake:15
-msgid "Find python libraries"
+#: ../../../../Modules/FindPythonLibs.cmake:16
+msgid ""
+"Finds the Python installation and determines the location of its include "
+"directories and libraries, as well as the name of the Python library to link "
+"against:"
 msgstr ""
 
-#: ../../../../Modules/FindPythonLibs.cmake:17
-msgid ""
-"This module finds if Python is installed and determines where the include "
-"files and libraries are.  It also determines what the name of the library "
-"is.  This code sets the following variables:"
+#: ../../../../Modules/FindPythonLibs.cmake:20
+msgid "find_package(PythonLibs [<version>] [...])"
 msgstr ""
 
-#: ../../../../Modules/FindPythonLibs.cmake:23
+#: ../../../../Modules/FindPythonLibs.cmake:26
 msgid ""
-"PYTHONLIBS_FOUND           - have the Python libs been found\n"
-"PYTHON_LIBRARIES           - path to the python library\n"
-"PYTHON_INCLUDE_PATH        - path to where Python.h is found (deprecated)\n"
-"PYTHON_INCLUDE_DIRS        - path to where Python.h is found\n"
-"PYTHON_DEBUG_LIBRARIES     - path to the debug library (deprecated)\n"
-"PYTHONLIBS_VERSION_STRING  - version of the Python libs found (since CMake "
-"2.8.8)"
+"When using both this and the :module:`FindPythonInterp` module, call "
+"``find_package(PythonInterp)`` before ``find_package(PythonLibs)``.  This "
+"ensures that the detected interpreter version is used to guide the selection "
+"of compatible libraries, resulting in a consistent ``PYTHON_LIBRARIES`` "
+"value."
 msgstr ""
 
 #: ../../../../Modules/FindPythonLibs.cmake:32
-msgid ""
-"The Python_ADDITIONAL_VERSIONS variable can be used to specify a list of "
-"version numbers that should be taken into account when searching for "
-"Python.  You need to set this variable before calling "
-"find_package(PythonLibs)."
+msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindPythonLibs.cmake:37
+#: ../../../../Modules/FindPythonLibs.cmake:34
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:36
+msgid "``PythonLibs_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:39
+#: ../../../../Modules/FindPythonLibs.cmake:82
 msgid ""
-"If you'd like to specify the installation of Python to use, you should "
-"modify the following cache variables:"
+"Boolean indicating whether the (requested version of) Python libraries were "
+"found."
 msgstr ""
 
 #: ../../../../Modules/FindPythonLibs.cmake:42
-msgid ""
-"PYTHON_LIBRARY             - path to the python library\n"
-"PYTHON_INCLUDE_DIR         - path to where Python.h is found"
+msgid "``PYTHONLIBS_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:43
+msgid "The version of the Python libraries found."
 msgstr ""
 
 #: ../../../../Modules/FindPythonLibs.cmake:45
+msgid "``PYTHON_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:46
+msgid "Libraries needed to link against to use Python."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:48
+msgid "``PYTHON_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:49
+msgid "Include directories needed to use Python."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:52
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:54
 msgid ""
-"If calling both ``find_package(PythonInterp)`` and "
-"``find_package(PythonLibs)``, call ``find_package(PythonInterp)`` first to "
-"get the currently active Python version by default with a consistent version "
-"of PYTHON_LIBRARIES."
+"The following cache variables may also be set to specify the Python "
+"installation to use:"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:57
+msgid "``PYTHON_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:58
+msgid "The path to the Python library."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:60
+msgid "``PYTHON_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:61
+msgid "The directory containing the ``Python.h`` header file."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:64
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:66
+msgid ""
+"This module accepts the following variables before calling "
+"``find_package(PythonLibs)``:"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:69
+msgid "``Python_ADDITIONAL_VERSIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:70
+msgid ""
+"This variable can be used to specify a list of version numbers that should "
+"be taken into account when searching for Python."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:74
+msgid "Deprecated Variables"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:76
+msgid "The following variables are provided for backward compatibility:"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:78
+msgid "``PYTHONLIBS_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:79
+msgid "Use ``PythonLibs_FOUND``, which has the same value."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:85
+msgid "``PYTHON_DEBUG_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:86
+msgid "Use ``PYTHON_LIBRARIES`` instead."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:89
+msgid "Result variable that holds the path to the debug library."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:91
+msgid "``PYTHON_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:92
+msgid "Use ``PYTHON_INCLUDE_DIR`` or ``PYTHON_INCLUDE_DIRS`` instead."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:95
+msgid ""
+"Result variable that holds the path to the directory containing the ``Python."
+"h`` header file."
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:99
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:101
+msgid ""
+"In earlier versions of CMake, Python libraries were found and used in a "
+"project like this:"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:104
+msgid ""
+"find_package(PythonLibs)\n"
+"target_link_libraries(app PRIVATE ${PYTHON_LIBRARIES})\n"
+"target_include_directories(app PRIVATE ${PYTHON_INCLUDE_DIRS})"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:110
+msgid ""
+"Starting with CMake 3.12, Python libraries can be found using the :module:"
+"`FindPython` module.  The equivalent example using the modern approach with "
+"an imported target is:"
+msgstr ""
+
+#: ../../../../Modules/FindPythonLibs.cmake:114
+msgid ""
+"find_package(Python COMPONENTS Development)\n"
+"target_link_libraries(app PRIVATE Python::Python)"
 msgstr ""

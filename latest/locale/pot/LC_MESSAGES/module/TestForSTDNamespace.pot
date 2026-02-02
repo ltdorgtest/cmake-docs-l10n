@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,13 +22,94 @@ msgid "TestForSTDNamespace"
 msgstr ""
 
 #: ../../../../Modules/TestForSTDNamespace.cmake:8
-msgid "Test for std:: namespace support"
+msgid ""
+"This module checks whether the ``CXX`` compiler supports the ``std`` "
+"namespace for the C++ Standard Library."
 msgstr ""
 
-#: ../../../../Modules/TestForSTDNamespace.cmake:10
-msgid "check if the compiler supports std:: on stl classes"
+#: ../../../../Modules/TestForSTDNamespace.cmake:11
+msgid "Load this module in a CMake project with:"
 msgstr ""
 
-#: ../../../../Modules/TestForSTDNamespace.cmake:14
-msgid "CMAKE_NO_STD_NAMESPACE - defined by the results"
+#: ../../../../Modules/TestForSTDNamespace.cmake:13
+msgid "include(TestForSTDNamespace)"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:17
+msgid ""
+"Early versions of C++ (pre-C++98) did not have a requirement for a dedicated "
+"namespace of C++ Standard Template Library (STL) components (e.g. ``list``, "
+"etc.) and other parts of the C++ Standard Library (such as I/O streams "
+"``cout``, ``endl``, etc), so they were available globally."
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:22
+msgid "This module defines the following cache variable:"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:24
+msgid "``CMAKE_NO_STD_NAMESPACE``"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:25
+msgid ""
+"A cache variable containing the result of the check.  It will be set to "
+"value ``0`` if the ``std`` namespace is supported (``C++ 98`` and newer), "
+"and to value ``1`` if not (``ANSI C++``)."
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:31
+msgid ""
+"The ``std`` namespace got formally introduced in ``C++ 98`` standard, making "
+"this issue obsolete."
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:35
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:37
+msgid ""
+"Including this module will check for the ``std`` namespace support and "
+"define the ``CMAKE_NO_STD_NAMESPACE`` cache variable:"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:40
+msgid "``CMakeLists.txt``"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:40
+msgid ""
+"include(TestForSTDNamespace)\n"
+"file(\n"
+"  CONFIGURE\n"
+"  OUTPUT config.h\n"
+"  CONTENT \"#cmakedefine CMAKE_NO_STD_NAMESPACE\"\n"
+")"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:50
+msgid ""
+"which can be then used in a C++ program to define the missing namespace:"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:52
+msgid "``example.cxx``"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:52
+msgid ""
+"#include \"config.h\"\n"
+"\n"
+"#ifdef CMAKE_NO_STD_NAMESPACE\n"
+"#  define std\n"
+"#endif"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:62
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/TestForSTDNamespace.cmake:64
+msgid "The :module:`CMakeBackwardCompatibilityCXX` module."
 msgstr ""

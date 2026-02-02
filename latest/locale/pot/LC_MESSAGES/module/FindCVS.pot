@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,27 +22,57 @@ msgid "FindCVS"
 msgstr ""
 
 #: ../../../../Modules/FindCVS.cmake:8
-msgid "Find the Concurrent Versions System (CVS)."
+msgid "Finds the Concurrent Versions System (CVS):"
 msgstr ""
 
 #: ../../../../Modules/FindCVS.cmake:10
-msgid "The module defines the following variables:"
+msgid "find_package(CVS [...])"
 msgstr ""
 
-#: ../../../../Modules/FindCVS.cmake:14
-msgid ""
-"CVS_EXECUTABLE - path to cvs command line client\n"
-"CVS_FOUND - true if the command line client was found"
+#: ../../../../Modules/FindCVS.cmake:15
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindCVS.cmake:17
-msgid "Example usage:"
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindCVS.cmake:19
+msgid "``CVS_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:20
+msgid "Boolean indicating whether the ``cvs`` command-line client was found."
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:23
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:25
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:27
+msgid "``CVS_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:28
+msgid "Path to ``cvs`` command-line client."
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:31
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:33
+msgid "Finding CVS and executing it in a process:"
+msgstr ""
+
+#: ../../../../Modules/FindCVS.cmake:35
 msgid ""
 "find_package(CVS)\n"
 "if(CVS_FOUND)\n"
-"  message(\"CVS found: ${CVS_EXECUTABLE}\")\n"
+"  execute_process(COMMAND ${CVS_EXECUTABLE} --help)\n"
 "endif()"
 msgstr ""

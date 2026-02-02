@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "LIBRARY_OUTPUT_DIRECTORY"
 msgstr ""
 
-#: ../../../prop_tgt/XXX_OUTPUT_DIRECTORY.txt:1
+#: ../../../prop_tgt/include/XXX_OUTPUT_DIRECTORY.rst:1
 msgid "Output directory in which to build |XXX| target files."
 msgstr ""
 
-#: ../../../prop_tgt/XXX_OUTPUT_DIRECTORY.txt:3
+#: ../../../prop_tgt/include/XXX_OUTPUT_DIRECTORY.rst:3
 msgid ""
 "This property specifies the directory into which |xxx| target files should "
 "be built.  The property value may use :manual:`generator expressions <cmake-"
@@ -35,7 +35,7 @@ msgid ""
 "directory unless a generator expression is used."
 msgstr ""
 
-#: ../../../prop_tgt/XXX_OUTPUT_DIRECTORY.txt:11
+#: ../../../prop_tgt/include/XXX_OUTPUT_DIRECTORY.rst:11
 msgid ""
 "This property is initialized by the value of the |"
 "CMAKE_XXX_OUTPUT_DIRECTORY| variable if it is set when a target is created."

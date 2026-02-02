@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgid ""
 "that are created by the :command:`project` command."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:2
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:2
 msgid ""
 "Supported languages are ``C``, ``CXX`` (i.e.  C++), ``CSharp`` (i.e.  C#), "
 "``CUDA``, ``OBJC`` (i.e. Objective-C), ``OBJCXX`` (i.e. Objective-C++), "
@@ -44,31 +44,31 @@ msgid ""
 "``ASM_MARMASM``, ``ASM_MASM``, and ``ASM-ATT``."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:6
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:6
 msgid "Added ``CSharp`` and ``CUDA`` support."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:9
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:9
 msgid "Added ``Swift`` support."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:12
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:12
 msgid "Added ``OBJC`` and ``OBJCXX`` support."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:15
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:15
 msgid "Added ``ISPC`` support."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:18
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:18
 msgid "Added ``HIP`` support."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:21
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:21
 msgid "Added ``ASM_MARMASM`` support."
 msgstr ""
 
-#: ../../../command/SUPPORTED_LANGUAGES.txt:24
+#: ../../../command/include/SUPPORTED_LANGUAGES.rst:24
 msgid ""
 "If enabling ``ASM``, list it last so that CMake can check whether compilers "
 "for other languages like ``C`` work for assembly too."

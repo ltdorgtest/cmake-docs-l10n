@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,39 +22,53 @@ msgid "VS_SETTINGS"
 msgstr ""
 
 #: ../../../prop_sf/VS_SETTINGS.rst:6
-msgid "Set any item metadata on a file."
+msgid "Add arbitrary MSBuild item metadata to a file."
 msgstr ""
 
-#: ../../../prop_sf/VS_SETTINGS.rst:10
+#: ../../../prop_sf/VS_SETTINGS.rst:8
 msgid ""
-"This property is honored for all source file types. Previously it worked "
-"only for non-built files."
+"This property accepts a list of ``Key=Value`` pairs. The Visual Studio "
+"generator will add these key-value pairs as item metadata to the file. :"
+"manual:`Generator expressions <cmake-generator-expressions(7)>` are "
+"supported."
 msgstr ""
 
-#: ../../../prop_sf/VS_SETTINGS.rst:13
-msgid ""
-"Takes a list of ``Key=Value`` pairs. Tells the Visual Studio generator to "
-"set ``Key`` to ``Value`` as item metadata on the file."
-msgstr ""
-
-#: ../../../prop_sf/VS_SETTINGS.rst:16
+#: ../../../prop_sf/VS_SETTINGS.rst:12
 msgid "For example:"
 msgstr ""
 
-#: ../../../prop_sf/VS_SETTINGS.rst:18
+#: ../../../prop_sf/VS_SETTINGS.rst:14
 msgid ""
 "set_property(SOURCE file.hlsl PROPERTY VS_SETTINGS \"Key=Value\" "
 "\"Key2=Value2\")"
 msgstr ""
 
-#: ../../../prop_sf/VS_SETTINGS.rst:22
-msgid ""
-"will set ``Key`` to ``Value`` and ``Key2`` to ``Value2`` on the ``file."
-"hlsl`` item as metadata."
+#: ../../../prop_sf/VS_SETTINGS.rst:18
+msgid "will set the ``file.hlsl`` item metadata as follows:"
 msgstr ""
 
-#: ../../../prop_sf/VS_SETTINGS.rst:25
+#: ../../../prop_sf/VS_SETTINGS.rst:20
 msgid ""
-":manual:`Generator expressions <cmake-generator-expressions(7)>` are "
-"supported."
+"<FXCompile Include=\"source_path\\file.hlsl\">\n"
+"  <Key>Value</Key>\n"
+"  <Key2>Value2</Key2>\n"
+"</FXCompile>"
+msgstr ""
+
+#: ../../../prop_sf/VS_SETTINGS.rst:27
+msgid ""
+"Together with :prop_sf:`VS_TOOL_OVERRIDE`, this property can be used to "
+"configure items for custom MSBuild tasks."
+msgstr ""
+
+#: ../../../prop_sf/VS_SETTINGS.rst:30
+msgid ""
+"Adding the metadata ``ExcludedFromBuild=true`` will exclude the file from "
+"the build."
+msgstr ""
+
+#: ../../../prop_sf/VS_SETTINGS.rst:33
+msgid ""
+"This property is honored for all source file types. Previously, it only "
+"worked for source types unknown to CMake."
 msgstr ""

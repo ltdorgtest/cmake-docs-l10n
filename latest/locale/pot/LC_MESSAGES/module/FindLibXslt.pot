@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,84 +23,208 @@ msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:8
 msgid ""
-"Find the XSL Transformations, Extensible Stylesheet Language Transformations "
-"(XSLT) library (LibXslt)"
+"Finds the XSL Transformations, Extensible Stylesheet Language "
+"Transformations (XSLT) library (libxslt):"
 msgstr ""
 
-#: ../../../../Modules/FindLibXslt.cmake:12
-msgid "Imported Targets"
+#: ../../../../Modules/FindLibXslt.cmake:11
+msgid "find_package(LibXslt [<version>] [...])"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:16
-msgid "The following :prop_tgt:`IMPORTED` targets may be defined:"
-msgstr ""
-
-#: ../../../../Modules/FindLibXslt.cmake:18
-msgid "``LibXslt::LibXslt``"
-msgstr ""
-
-#: ../../../../Modules/FindLibXslt.cmake:19
-msgid "If the libxslt library has been found"
+msgid "Imported Targets"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:20
-msgid "``LibXslt::LibExslt``"
-msgstr ""
-
-#: ../../../../Modules/FindLibXslt.cmake:21
-msgid "If the libexslt library has been found"
+msgid "This module provides the following :ref:`Imported Targets`:"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:22
-msgid "``LibXslt::xsltproc``"
+msgid "``LibXslt::LibXslt``"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:23
-msgid "If the xsltproc command-line executable has been found"
+msgid ""
+"Target encapsulating the usage requirements of the libxslt library.  This "
+"target is available only if libxslt is found."
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:26
-msgid "Result variables"
+msgid "``LibXslt::LibExslt``"
 msgstr ""
 
-#: ../../../../Modules/FindLibXslt.cmake:28
-msgid "This module will set the following variables in your project:"
-msgstr ""
-
-#: ../../../../Modules/FindLibXslt.cmake:30
+#: ../../../../Modules/FindLibXslt.cmake:27
 msgid ""
-"LIBXSLT_FOUND - system has LibXslt LIBXSLT_INCLUDE_DIR - the LibXslt include "
-"directory LIBXSLT_LIBRARIES - Link these to LibXslt LIBXSLT_DEFINITIONS - "
-"Compiler switches required for using LibXslt LIBXSLT_VERSION_STRING - "
-"version of LibXslt found (since CMake 2.8.8)"
+"Target encapsulating the usage requirements for the libexslt library. Part "
+"of the libxslt package, libexslt provides optional extensions to XSLT on top "
+"of libxslt.  This target is available only if the main libxslt library is "
+"found."
 msgstr ""
 
-#: ../../../../Modules/FindLibXslt.cmake:36
+#: ../../../../Modules/FindLibXslt.cmake:31
+msgid "``LibXslt::xsltproc``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:32
 msgid ""
-"Additionally, the following two variables are set (but not required for "
-"using xslt):"
+"Target encapsulating the command-line XSLT processor (``xsltproc``).  This "
+"tool, part of the libxslt package, applies XSLT stylesheets to XML documents "
+"as a command-line alternative to the libxslt library.  This target is "
+"available only if the ``xsltproc`` executable is found."
 msgstr ""
 
-#: ../../../../Modules/FindLibXslt.cmake:39
-msgid "``LIBXSLT_EXSLT_INCLUDE_DIR``"
+#: ../../../../Modules/FindLibXslt.cmake:38
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:40
-msgid "The include directory for exslt."
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:42
-msgid "``LIBXSLT_EXSLT_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindLibXslt.cmake:43
-msgid "Link to these if you need to link against the exslt library."
-msgstr ""
-
-#: ../../../../Modules/FindLibXslt.cmake:44
-msgid "``LIBXSLT_XSLTPROC_EXECUTABLE``"
+msgid "``LibXslt_FOUND``"
 msgstr ""
 
 #: ../../../../Modules/FindLibXslt.cmake:45
-msgid "Contains the full path to the xsltproc executable if found."
+#: ../../../../Modules/FindLibXslt.cmake:89
+msgid ""
+"Boolean indicating whether (the requested version of) libxslt was found."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:47
+msgid "``LibXslt_VERSION``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:50
+#: ../../../../Modules/FindLibXslt.cmake:95
+msgid "The version of libxslt found."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:52
+msgid "``LIBXSLT_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:53
+msgid "Libraries needed to link to libxslt."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:55
+msgid "``LIBXSLT_DEFINITIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:56
+msgid "Compiler switches required for using libxslt."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:58
+msgid "``LIBXSLT_EXSLT_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:59
+msgid ""
+"Libraries needed when linking against the exslt library.  These are "
+"available and needed only when using exslt library."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:63
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:65
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:67
+msgid "``LIBXSLT_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:68
+msgid "Directory containing ``libxslt/xslt.h`` and other libxslt header files."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:70
+msgid "``LIBXSLT_EXSLT_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:73
+msgid ""
+"Directory containing ``libexslt/exslt.h`` and other exslt-related headers. "
+"These are needed only when using exslt (extensions to XSLT)."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:76
+msgid "``LIBXSLT_XSLTPROC_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:77
+msgid ""
+"Full path to the XSLT processor executable ``xsltproc`` if found.  This path "
+"is optional."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:81
+msgid "Deprecated Variables"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:83
+msgid "The following variables are provided for backward compatibility:"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:85
+msgid "``LIBXSLT_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:86
+msgid "Use ``LibXslt_FOUND``, which has the same value."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:91
+msgid "``LIBXSLT_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:92
+msgid "Superseded by the ``LibXslt_VERSION``."
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:98
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:100
+msgid "Finding libxslt library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:102
+msgid ""
+"find_package(LibXslt)\n"
+"target_link_libraries(foo PRIVATE LibXslt::LibXslt)"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:107
+msgid ""
+"When project also needs the extensions to XSLT (exslt) library, both targets "
+"should be linked:"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:110
+msgid ""
+"find_package(LibXslt)\n"
+"target_link_libraries(foo PRIVATE LibXslt::LibXslt LibXslt::LibExslt)"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:115
+msgid "Example, how to use XSLT processor in a custom command build rule:"
+msgstr ""
+
+#: ../../../../Modules/FindLibXslt.cmake:117
+msgid ""
+"find_package(LibXslt)\n"
+"\n"
+"if(TARGET LibXslt::xsltproc)\n"
+"  # Executed when some build rule depends on example.html.\n"
+"  add_custom_command(\n"
+"    OUTPUT example.html\n"
+"    COMMAND LibXslt::xsltproc -o example.html transform.xslt example.xml\n"
+"  )\n"
+"endif()"
 msgstr ""
