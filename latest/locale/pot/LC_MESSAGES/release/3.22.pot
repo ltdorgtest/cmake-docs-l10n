@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,7 +110,7 @@ msgstr ""
 #: ../../../release/3.22.rst:60
 msgid ""
 "The :module:`CMakeDependentOption` module :command:`cmake_dependent_option` "
-"macro now supports full :ref:`Condition Syntax`. See policy :policy:"
+"command now supports full :ref:`Condition Syntax`. See policy :policy:"
 "`CMP0127`."
 msgstr ""
 
@@ -140,8 +140,8 @@ msgstr ""
 
 #: ../../../release/3.22.rst:78
 msgid ""
-"The :module:`FindPkgConfig` module gained a :variable:`PKG_CONFIG_ARGN` "
-"variable to specify arguments to ``pkg-config`` calls."
+"The :module:`FindPkgConfig` module gained a ``PKG_CONFIG_ARGN`` variable to "
+"specify arguments to ``pkg-config`` calls."
 msgstr ""
 
 #: ../../../release/3.22.rst:81

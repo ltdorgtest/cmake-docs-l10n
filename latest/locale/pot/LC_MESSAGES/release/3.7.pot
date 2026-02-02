@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -282,8 +282,8 @@ msgstr ""
 
 #: ../../../release/3.7.rst:161
 msgid ""
-"The :module:`CheckFortranSourceCompiles` module macro "
-"``CHECK_Fortran_SOURCE_COMPILES`` gained a ``SRC_EXT`` option to specify a "
+"The :module:`CheckFortranSourceCompiles` module command "
+"``check_fortran_source_compiles()`` gained a ``SRC_EXT`` option to specify a "
 "custom test Fortran source file extension."
 msgstr ""
 
@@ -301,7 +301,7 @@ msgstr ""
 
 #: ../../../release/3.7.rst:171
 msgid ""
-"The :module:`FindBISON` module ``BISON_TARGET`` macro learned a new "
+"The :module:`FindBISON` module ``bison_target()`` command learned a new "
 "``REPORT_FILE`` option to specify the bison ``--report-file=`` option."
 msgstr ""
 

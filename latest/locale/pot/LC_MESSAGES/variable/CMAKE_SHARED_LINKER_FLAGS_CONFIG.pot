@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,11 +31,11 @@ msgid ""
 "libraries."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:2
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:2
 msgid "Handling Compiler Driver Differences"
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:6
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:6
 msgid ""
 "To pass options to the linker tool, each compiler driver has its own syntax. "
 "The ``LINKER:`` prefix and ``,`` separator can be used to specify, in a "
@@ -46,26 +46,26 @@ msgid ""
 "`CMAKE_<LANG>_LINKER_WRAPPER_FLAG_SEP` variables."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:14
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:14
 msgid ""
 "For example, ``\"LINKER:-z,defs\"`` becomes ``-Xlinker -z -Xlinker defs`` "
 "for ``Clang`` and ``-Wl,-z,defs`` for ``GNU GCC``."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:17
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:17
 msgid ""
 "The ``LINKER:`` prefix supports, as an alternative syntax, specification of "
 "arguments using the ``SHELL:`` prefix and space as separator. The previous "
 "example then becomes ``\"LINKER:SHELL:-z defs\"``."
 msgstr ""
 
-#: ../../../command/LINK_LIBRARIES_LINKER.txt:23
+#: ../../../command/include/LINK_LIBRARIES_LINKER.rst:23
 msgid ""
 "Specifying the ``SHELL:`` prefix anywhere other than at the beginning of the "
 "``LINKER:`` prefix is not supported."
 msgstr ""
 
-#: ../../../variable/LINKER_FLAGS.txt:4
+#: ../../../variable/include/LINKER_FLAGS.rst:4
 msgid ""
 "This support implies to parse and re-quote the content of the variable. See "
 "policy :policy:`CMP0181`."

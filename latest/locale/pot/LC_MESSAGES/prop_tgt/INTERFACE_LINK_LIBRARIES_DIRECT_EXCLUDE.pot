@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,13 +56,13 @@ msgid ""
 "`INTERFACE_LINK_LIBRARIES` property on other dependencies."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.txt:1
+#: ../../../prop_tgt/include/INTERFACE_LINK_LIBRARIES_DIRECT.rst:1
 msgid ""
 "The value of |INTERFACE_PROPERTY_LINK_DIRECT| may use :manual:`generator "
 "expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../prop_tgt/INTERFACE_LINK_LIBRARIES_DIRECT.txt:6
+#: ../../../prop_tgt/include/INTERFACE_LINK_LIBRARIES_DIRECT.rst:6
 msgid ""
 "The |INTERFACE_PROPERTY_LINK_DIRECT| target property is intended for "
 "advanced use cases such as injection of static plugins into a consuming "

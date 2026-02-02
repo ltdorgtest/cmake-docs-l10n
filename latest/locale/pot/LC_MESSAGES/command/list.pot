@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -274,100 +274,107 @@ msgstr ""
 
 #: ../../../command/list.rst:249
 msgid ""
+"The ``^`` anchor now matches only at the beginning of the input element "
+"instead of the beginning of each repeated search. See policy :policy:"
+"`CMP0186`."
+msgstr ""
+
+#: ../../../command/list.rst:254
+msgid ""
 "``<SELECTOR>`` determines which elements of the list will be transformed. "
 "Only one type of selector can be specified at a time. When given, "
 "``<SELECTOR>`` must be one of the following:"
 msgstr ""
 
-#: ../../../command/list.rst:253
+#: ../../../command/list.rst:258
 msgid "``AT``"
 msgstr ""
 
-#: ../../../command/list.rst:254
+#: ../../../command/list.rst:259
 msgid "Specify a list of indexes."
 msgstr ""
 
-#: ../../../command/list.rst:256
+#: ../../../command/list.rst:261
 msgid "list(TRANSFORM <list> <ACTION> AT <index> [<index> ...] ...)"
 msgstr ""
 
-#: ../../../command/list.rst:260
+#: ../../../command/list.rst:265
 msgid "``FOR``"
 msgstr ""
 
-#: ../../../command/list.rst:261
+#: ../../../command/list.rst:266
 msgid ""
 "Specify a range with, optionally, an increment used to iterate over the "
 "range."
 msgstr ""
 
-#: ../../../command/list.rst:264
+#: ../../../command/list.rst:269
 msgid "list(TRANSFORM <list> <ACTION> FOR <start> <stop> [<step>] ...)"
 msgstr ""
 
-#: ../../../command/list.rst:268
+#: ../../../command/list.rst:273
 msgid "``REGEX``"
 msgstr ""
 
-#: ../../../command/list.rst:269
+#: ../../../command/list.rst:274
 msgid ""
 "Specify a regular expression. Only elements matching the regular expression "
 "will be transformed."
 msgstr ""
 
-#: ../../../command/list.rst:272
+#: ../../../command/list.rst:277
 msgid "list(TRANSFORM <list> <ACTION> REGEX <regular_expression> ...)"
 msgstr ""
 
-#: ../../../command/list.rst:278
+#: ../../../command/list.rst:283
 msgid "Ordering"
 msgstr ""
 
-#: ../../../command/list.rst:283
+#: ../../../command/list.rst:288
 msgid "Reverses the contents of the list in-place."
 msgstr ""
 
-#: ../../../command/list.rst:288
+#: ../../../command/list.rst:293
 msgid "Sorts the list in-place alphabetically."
 msgstr ""
 
-#: ../../../command/list.rst:290
+#: ../../../command/list.rst:295
 msgid "Added the ``COMPARE``, ``CASE``, and ``ORDER`` options."
 msgstr ""
 
-#: ../../../command/list.rst:293
+#: ../../../command/list.rst:298
 msgid "Added the ``COMPARE NATURAL`` option."
 msgstr ""
 
-#: ../../../command/list.rst:296
+#: ../../../command/list.rst:301
 msgid ""
 "Use the ``COMPARE`` keyword to select the comparison method for sorting. The "
 "``<compare>`` option should be one of:"
 msgstr ""
 
-#: ../../../command/list.rst:299
+#: ../../../command/list.rst:304
 msgid "``STRING``"
 msgstr ""
 
-#: ../../../command/list.rst:300
+#: ../../../command/list.rst:305
 msgid ""
 "Sorts a list of strings alphabetically. This is the default behavior if the "
 "``COMPARE`` option is not given."
 msgstr ""
 
-#: ../../../command/list.rst:303
+#: ../../../command/list.rst:308
 msgid "``FILE_BASENAME``"
 msgstr ""
 
-#: ../../../command/list.rst:304
+#: ../../../command/list.rst:309
 msgid "Sorts a list of pathnames of files by their basenames."
 msgstr ""
 
-#: ../../../command/list.rst:306
+#: ../../../command/list.rst:311
 msgid "``NATURAL``"
 msgstr ""
 
-#: ../../../command/list.rst:307
+#: ../../../command/list.rst:312
 msgid ""
 "Sorts a list of strings using natural order (see ``strverscmp(3)`` manual), "
 "i.e. such that contiguous digits are compared as whole numbers. For example: "
@@ -376,52 +383,52 @@ msgid ""
 "sorted as *1.1 10.0 2.0 2.1 3.1 8.0* with the ``STRING`` comparison."
 msgstr ""
 
-#: ../../../command/list.rst:315
+#: ../../../command/list.rst:320
 msgid ""
 "Use the ``CASE`` keyword to select a case sensitive or case insensitive sort "
 "mode.  The ``<case>`` option should be one of:"
 msgstr ""
 
-#: ../../../command/list.rst:318
+#: ../../../command/list.rst:323
 msgid "``SENSITIVE``"
 msgstr ""
 
-#: ../../../command/list.rst:319
+#: ../../../command/list.rst:324
 msgid ""
 "List items are sorted in a case-sensitive manner. This is the default "
 "behavior if the ``CASE`` option is not given."
 msgstr ""
 
-#: ../../../command/list.rst:322
+#: ../../../command/list.rst:327
 msgid "``INSENSITIVE``"
 msgstr ""
 
-#: ../../../command/list.rst:323
+#: ../../../command/list.rst:328
 msgid ""
 "List items are sorted case insensitively.  The order of items which differ "
 "only by upper/lowercase is not specified."
 msgstr ""
 
-#: ../../../command/list.rst:326
+#: ../../../command/list.rst:331
 msgid ""
 "To control the sort order, the ``ORDER`` keyword can be given. The "
 "``<order>`` option should be one of:"
 msgstr ""
 
-#: ../../../command/list.rst:329
+#: ../../../command/list.rst:334
 msgid "``ASCENDING``"
 msgstr ""
 
-#: ../../../command/list.rst:330
+#: ../../../command/list.rst:335
 msgid ""
 "Sorts the list in ascending order. This is the default behavior when the "
 "``ORDER`` option is not given."
 msgstr ""
 
-#: ../../../command/list.rst:333
+#: ../../../command/list.rst:338
 msgid "``DESCENDING``"
 msgstr ""
 
-#: ../../../command/list.rst:334
+#: ../../../command/list.rst:339
 msgid "Sorts the list in descending order."
 msgstr ""

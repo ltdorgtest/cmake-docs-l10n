@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,25 +45,25 @@ msgstr ""
 msgid "Arguments"
 msgstr ""
 
-#: ../../../command/GENEX_NOTE.txt:4
+#: ../../../command/include/GENEX_NOTE.rst:4
 msgid ""
 "Arguments to |command_name| may use generator expressions with the syntax "
 "``$<...>``. See the :manual:`cmake-generator-expressions(7)` manual for "
 "available expressions.  |more_see_also|"
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:2
+#: ../../../command/include/OPTIONS_SHELL.rst:2
 msgid "Option De-duplication"
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:4
+#: ../../../command/include/OPTIONS_SHELL.rst:4
 msgid ""
 "The final set of options used for a target is constructed by accumulating "
 "options from the current target and the usage requirements of its "
 "dependencies.  The set of options is de-duplicated to avoid repetition."
 msgstr ""
 
-#: ../../../command/OPTIONS_SHELL.txt:8
+#: ../../../command/include/OPTIONS_SHELL.rst:8
 msgid ""
 "While beneficial for individual options, the de-duplication step can break "
 "up option groups.  For example, ``-option A -option B`` becomes ``-option A "
@@ -98,14 +98,15 @@ msgstr ""
 #: ../../../command/add_compile_options.rst:43
 msgid ""
 "To set per-language options, use the :genex:`$<COMPILE_LANGUAGE>` or :genex:"
-"`$<COMPILE_LANGUAGE:languages>` generator expressions."
+"`$<COMPILE_LANGUAGE:languages> <COMPILE_LANGUAGE:languages>` generator "
+"expressions."
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:47
+#: ../../../command/add_compile_options.rst:48
 msgid "See Also"
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:49
+#: ../../../command/add_compile_options.rst:50
 msgid ""
 "This command can be used to add any options. However, for adding "
 "preprocessor definitions and include directories it is recommended to use "
@@ -113,29 +114,29 @@ msgid ""
 "`include_directories`."
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:54
+#: ../../../command/add_compile_options.rst:55
 msgid ""
 "The command :command:`target_compile_options` adds target-specific options."
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:56
+#: ../../../command/add_compile_options.rst:57
 msgid ""
 "This command adds compile options for all languages. Use the :genex:"
 "`COMPILE_LANGUAGE` generator expression to specify per-language compile "
 "options."
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:60
+#: ../../../command/add_compile_options.rst:61
 msgid ""
 "The source file property :prop_sf:`COMPILE_OPTIONS` adds options to one "
 "source file."
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:63
+#: ../../../command/add_compile_options.rst:64
 msgid ":command:`add_link_options` adds options for linking."
 msgstr ""
 
-#: ../../../command/add_compile_options.rst:65
+#: ../../../command/add_compile_options.rst:66
 msgid ""
 ":variable:`CMAKE_<LANG>_FLAGS` and :variable:`CMAKE_<LANG>_FLAGS_<CONFIG>` "
 "add language-wide flags passed to all invocations of the compiler. This "

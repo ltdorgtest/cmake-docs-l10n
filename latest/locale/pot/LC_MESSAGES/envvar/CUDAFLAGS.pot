@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "CUDAFLAGS"
 msgstr ""
 
-#: ../../../envvar/ENV_VAR.txt:1
+#: ../../../envvar/include/ENV_VAR.rst:1
 msgid ""
 "This is a CMake :ref:`Environment Variable <CMake Language Environment "
 "Variables>`. Its initial value is taken from the calling process environment."
@@ -31,7 +31,7 @@ msgstr ""
 msgid "Add default compilation flags to be used when compiling ``CUDA`` files."
 msgstr ""
 
-#: ../../../envvar/LANG_FLAGS.txt:1
+#: ../../../envvar/include/LANG_FLAGS.rst:1
 msgid ""
 "CMake uses this environment variable value, in combination with its own "
 "builtin default flags for the toolchain, to initialize and store the |"

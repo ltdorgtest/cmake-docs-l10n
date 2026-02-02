@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,18 +22,67 @@ msgid "FindPike"
 msgstr ""
 
 #: ../../../../Modules/FindPike.cmake:8
-msgid "Find Pike"
+msgid "Finds the Pike compiler and interpreter:"
 msgstr ""
 
 #: ../../../../Modules/FindPike.cmake:10
-msgid ""
-"This module finds if PIKE is installed and determines where the include "
-"files and libraries are.  It also determines what the name of the library "
-"is.  This code sets the following variables:"
+msgid "find_package(Pike [...])"
 msgstr ""
 
-#: ../../../../Modules/FindPike.cmake:16
+#: ../../../../Modules/FindPike.cmake:14
 msgid ""
-"PIKE_INCLUDE_PATH       = path to where program.h is found\n"
-"PIKE_EXECUTABLE         = full path to the pike binary"
+"Pike is interpreted, general purpose, high-level, dynamic programming "
+"language."
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:18
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:20
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:22
+msgid "``Pike_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:25
+msgid "Boolean indicating whether Pike was found."
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:28
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:30
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:32
+msgid "``PIKE_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:33
+msgid "The directory containing ``program.h``."
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:34
+msgid "``PIKE_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:35
+msgid "Full path to the pike binary."
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:38
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:40
+msgid "Finding Pike:"
+msgstr ""
+
+#: ../../../../Modules/FindPike.cmake:42
+msgid "find_package(Pike)"
 msgstr ""

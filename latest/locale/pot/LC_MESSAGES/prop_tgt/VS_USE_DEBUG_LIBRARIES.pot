@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,14 +21,14 @@ msgstr ""
 msgid "VS_USE_DEBUG_LIBRARIES"
 msgstr ""
 
-#: ../../../prop_tgt/VS_USE_DEBUG_LIBRARIES-PURPOSE.txt:1
+#: ../../../prop_tgt/include/VS_USE_DEBUG_LIBRARIES-PURPOSE.rst:1
 msgid ""
 "Indicate to :ref:`Visual Studio Generators` what configurations are "
 "considered debug configurations.  This controls the ``UseDebugLibraries`` "
 "setting in each configuration of a ``.vcxproj`` file."
 msgstr ""
 
-#: ../../../prop_tgt/VS_USE_DEBUG_LIBRARIES-PURPOSE.txt:5
+#: ../../../prop_tgt/include/VS_USE_DEBUG_LIBRARIES-PURPOSE.rst:5
 msgid ""
 "The \"Use Debug Libraries\" setting in Visual Studio projects, despite its "
 "specific-sounding name, is a general-purpose indicator of what "
@@ -42,7 +42,7 @@ msgid ""
 "behavior of platform-specific SDKs."
 msgstr ""
 
-#: ../../../prop_tgt/VS_USE_DEBUG_LIBRARIES-PURPOSE.txt:15
+#: ../../../prop_tgt/include/VS_USE_DEBUG_LIBRARIES-PURPOSE.rst:15
 msgid ""
 "Set |VS_USE_DEBUG_LIBRARIES| to a true or false value to indicate whether "
 "each configuration is considered a debug configuration.  The value may also "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,48 +22,150 @@ msgid "FindTCL"
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:8
-msgid "TK_INTERNAL_PATH was removed."
+msgid "Finds the Tcl (Tool Command Language), dynamic programming language:"
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:10
-msgid ""
-"This module finds if Tcl is installed and determines where the include files "
-"and libraries are.  It also determines what the name of the library is.  "
-"This code sets the following variables:"
+msgid "find_package(TCL [...])"
 msgstr ""
 
-#: ../../../../Modules/FindTCL.cmake:16
+#: ../../../../Modules/FindTCL.cmake:14
 msgid ""
-"TCL_FOUND              = Tcl was found\n"
-"TK_FOUND               = Tk was found\n"
-"TCLTK_FOUND            = Tcl and Tk were found\n"
-"TCL_LIBRARY            = path to Tcl library (tcl tcl80)\n"
-"TCL_INCLUDE_PATH       = path to where tcl.h can be found\n"
-"TCL_TCLSH              = path to tclsh binary (tcl tcl80)\n"
-"TK_LIBRARY             = path to Tk library (tk tk80 etc)\n"
-"TK_INCLUDE_PATH        = path to where tk.h can be found\n"
-"TK_WISH                = full path to the wish executable"
+"This module locates a Tcl installation, including its include directories "
+"and libraries, and determines the appropriate Tcl library name for linking.  "
+"As part of the Tcl ecosystem, it also finds Tk, a GUI toolkit that provides "
+"a library of basic widgets for building graphical user interfaces."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:20
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:22
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:24
+msgid "``TCL_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:25
+msgid "Boolean indicating whether Tcl was found."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:26
+msgid "``TK_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:27
+msgid "Boolean indicating whether Tk was found."
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:28
-msgid ""
-"In an effort to remove some clutter and clear up some issues for people who "
-"are not necessarily Tcl/Tk gurus/developers, some variables were moved or "
-"removed.  Changes compared to CMake 2.4 are:"
+msgid "``TCLTK_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:29
+msgid "Boolean indicating whether both Tcl and Tk were found."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:32
+msgid "Cache Variables"
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:34
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:36
+msgid "``TCL_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:37
+msgid "The path to the Tcl library (e.g., ``tcl``, etc.)."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:38
+msgid "``TCL_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:39
 msgid ""
-"=> they were only useful for people writing Tcl/Tk extensions.\n"
-"=> these libs are not packaged by default with Tcl/Tk distributions.\n"
-"   Even when Tcl/Tk is built from source, several flavors of debug libs\n"
-"   are created and there is no real reason to pick a single one\n"
-"   specifically (say, amongst tcl84g, tcl84gs, or tcl84sgx).\n"
-"   Let's leave that choice to the user by allowing him to assign\n"
-"   TCL_LIBRARY to any Tcl library, debug or not.\n"
-"=> this ended up being only a Win32 variable, and there is a lot of\n"
-"   confusion regarding the location of this file in an installed Tcl/Tk\n"
-"   tree anyway (see 8.5 for example). If you need the internal path at\n"
-"   this point it is safer you ask directly where the *source* tree is\n"
-"   and dig from there."
+"The directory containing ``tcl.h`` and other Tcl-related headers needed to "
+"use Tcl."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:41
+msgid "``TCL_TCLSH``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:42
+msgid "The path to the ``tclsh`` command-line executable."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:43
+msgid "``TK_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:44
+msgid "The path to the Tk library (e.g., ``tk``, etc.)."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:45
+msgid "``TK_INCLUDE_PATH``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:46
+msgid ""
+"The directory containing ``tk.h`` and other Tk-related headers needed to use "
+"Tk."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:48
+msgid "``TK_WISH``"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:49
+msgid "The path to the ``wish`` windowing shell command-line executable."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:52
+msgid "Other Libraries"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:54
+msgid ""
+"The Tcl Stub Library can be found using the separate :module:`FindTclStub` "
+"module."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:58
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:60
+msgid "Finding Tcl:"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:62
+msgid "find_package(TCL)"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:67
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:69
+msgid ""
+"The :module:`FindTclsh` module to find the Tcl shell command-line executable."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:70
+msgid "The :module:`FindTclStub` module to find the Tcl Stubs Library."
+msgstr ""
+
+#: ../../../../Modules/FindTCL.cmake:71
+msgid ""
+"The :module:`FindWish` module to find the ``wish`` windowing shell command-"
+"line executable ."
 msgstr ""

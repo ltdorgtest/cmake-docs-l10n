@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,4 +32,12 @@ msgid ""
 "This variable is used to initialize the :prop_tgt:"
 "`INTERPROCEDURAL_OPTIMIZATION_<CONFIG>` property on all the targets.  See "
 "that target property for additional information."
+msgstr ""
+
+#: ../../../variable/CMAKE_INTERPROCEDURAL_OPTIMIZATION_CONFIG.rst:13
+msgid "See Also"
+msgstr ""
+
+#: ../../../variable/CMAKE_INTERPROCEDURAL_OPTIMIZATION_CONFIG.rst:15
+msgid "The :variable:`CMAKE_INTERPROCEDURAL_OPTIMIZATION` variable."
 msgstr ""

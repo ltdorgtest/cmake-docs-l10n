@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,12 +29,19 @@ msgstr ""
 msgid ""
 "Compilers typically pass language runtime library names and other flags when "
 "they invoke a linker.  These flags are implicit link options for the "
-"compiler's language.  For each language enabled by the :command:`project` "
-"or :command:`enable_language` command, CMake automatically detects these "
-"libraries and flags and reports the results in this variable."
+"compiler's language."
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_IMPLICIT_LINK_LIBRARIES.rst:13
+#: ../../../variable/CMAKE_LANG_IMPLICIT_LINK_LIBRARIES.rst:10
+msgid ""
+"For each language enabled by the :command:`project` or :command:"
+"`enable_language` command, CMake automatically detects these libraries and "
+"flags and reports the results in this variable. The :envvar:"
+"`CMAKE_<LANG>_IMPLICIT_LINK_LIBRARIES_EXCLUDE` environment variable may be "
+"set to exclude specific libraries from the automatically detected results."
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_IMPLICIT_LINK_LIBRARIES.rst:17
 msgid ""
 "When linking to a static library, CMake adds the implicit link libraries and "
 "flags from this variable for each language used in the static library "
@@ -49,7 +56,7 @@ msgid ""
 "enabled, or used as a fallback."
 msgstr ""
 
-#: ../../../variable/CMAKE_LANG_IMPLICIT_LINK_LIBRARIES.rst:24
+#: ../../../variable/CMAKE_LANG_IMPLICIT_LINK_LIBRARIES.rst:28
 msgid ""
 "See also the :variable:`CMAKE_<LANG>_IMPLICIT_LINK_DIRECTORIES` variable."
 msgstr ""

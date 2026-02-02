@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,11 +32,11 @@ msgstr ""
 msgid "The allowed values are:"
 msgstr ""
 
-#: ../../../prop_tgt/Swift_COMPILATION_MODE-VALUES.txt:1
+#: ../../../prop_tgt/include/Swift_COMPILATION_MODE-VALUES.rst:1
 msgid "``incremental``"
 msgstr ""
 
-#: ../../../prop_tgt/Swift_COMPILATION_MODE-VALUES.txt:2
+#: ../../../prop_tgt/include/Swift_COMPILATION_MODE-VALUES.rst:2
 msgid ""
 "Compiles each Swift source in the module separately, resulting in better "
 "parallelism in the build. The compiler emits additional information into the "
@@ -45,22 +45,22 @@ msgid ""
 "on changes in a project."
 msgstr ""
 
-#: ../../../prop_tgt/Swift_COMPILATION_MODE-VALUES.txt:8
+#: ../../../prop_tgt/include/Swift_COMPILATION_MODE-VALUES.rst:8
 msgid "``wholemodule``"
 msgstr ""
 
-#: ../../../prop_tgt/Swift_COMPILATION_MODE-VALUES.txt:9
+#: ../../../prop_tgt/include/Swift_COMPILATION_MODE-VALUES.rst:9
 msgid ""
 "Whole-module optimizations are slowest to compile, but results in the most "
 "optimized library. The entire context is loaded into once instance of the "
 "compiler, so there is no parallelism across source files in the module."
 msgstr ""
 
-#: ../../../prop_tgt/Swift_COMPILATION_MODE-VALUES.txt:13
+#: ../../../prop_tgt/include/Swift_COMPILATION_MODE-VALUES.rst:13
 msgid "``singlefile``"
 msgstr ""
 
-#: ../../../prop_tgt/Swift_COMPILATION_MODE-VALUES.txt:14
+#: ../../../prop_tgt/include/Swift_COMPILATION_MODE-VALUES.rst:14
 msgid ""
 "Compiles each source in a Swift modules separately, resulting in better "
 "parallelism. Unlike the ``incremental`` build mode, no additional "

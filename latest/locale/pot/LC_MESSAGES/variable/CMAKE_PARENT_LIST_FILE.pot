@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,21 @@ msgstr ""
 #: ../../../variable/CMAKE_PARENT_LIST_FILE.rst:6
 msgid ""
 "While processing a CMake file loaded by :command:`include` or :command:"
-"`find_package` this variable contains the full path to the file including "
-"it.  The top of the include stack is always the ``CMakeLists.txt`` for the "
-"current directory.  See also :variable:`CMAKE_CURRENT_LIST_FILE`."
+"`find_package` this variable contains the full path to the file including it."
+msgstr ""
+
+#: ../../../variable/CMAKE_PARENT_LIST_FILE.rst:10
+msgid ""
+"While processing a ``CMakeLists.txt`` file, even in subdirectories, this "
+"variable is not defined.  See policy :policy:`CMP0198`."
+msgstr ""
+
+#: ../../../variable/CMAKE_PARENT_LIST_FILE.rst:13
+msgid ""
+"While processing a :option:`cmake -P` script, this variable is not defined "
+"in the outermost script."
+msgstr ""
+
+#: ../../../variable/CMAKE_PARENT_LIST_FILE.rst:16
+msgid "See also :variable:`CMAKE_CURRENT_LIST_FILE`."
 msgstr ""

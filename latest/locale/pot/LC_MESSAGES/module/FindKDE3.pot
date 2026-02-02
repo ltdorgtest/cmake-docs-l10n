@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,213 +21,319 @@ msgstr ""
 msgid "FindKDE3"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:8
+#: ../../../../Modules/FindKDE3.cmake:10
 msgid ""
-"Find the KDE3 include and library dirs, KDE preprocessors and define a some "
-"macros"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:12
-msgid "This module defines the following variables:"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:14
-msgid "``KDE3_DEFINITIONS``"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:15
-msgid "compiler definitions required for compiling KDE software"
+"This module is specifically intended for KDE version 3, which is obsolete "
+"and no longer maintained.  For modern application development using KDE "
+"technologies with CMake, use a newer version of KDE, and refer to the `KDE "
+"documentation <https://develop.kde.org/docs/getting-started/building/cmake-"
+"build/>`_."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:16
-msgid "``KDE3_INCLUDE_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:17
-msgid "the KDE include directory"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:18
-msgid "``KDE3_INCLUDE_DIRS``"
+msgid ""
+"Finds KDE 3 include directories, libraries, and KDE-specific preprocessor "
+"tools:"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:19
-msgid ""
-"the KDE and the Qt include directory, for use with include_directories()"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:20
-msgid "``KDE3_LIB_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:21
-msgid ""
-"the directory where the KDE libraries are installed, for use with "
-"link_directories()"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:22
-msgid "``QT_AND_KDECORE_LIBS``"
+msgid "find_package(KDE3 [...])"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:23
-msgid "this contains both the Qt and the kdecore library"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:24
-msgid "``KDE3_DCOPIDL_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:25
-msgid "the dcopidl executable"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:26
-msgid "``KDE3_DCOPIDL2CPP_EXECUTABLE``"
+msgid ""
+"This module provides usage requirements for building KDE 3 software and "
+"defines several helper commands to simplify working with KDE 3 in CMake."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:27
-msgid "the dcopidl2cpp executable"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:28
-msgid "``KDE3_KCFGC_EXECUTABLE``"
+msgid "Result Variables"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:29
-msgid "the kconfig_compiler executable"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:30
-msgid "``KDE3_FOUND``"
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:31
-msgid "set to TRUE if all of the above has been found"
+msgid "``KDE3_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:32
+msgid "Boolean indicating whether KDE 3 was found."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:33
-msgid "The following user adjustable options are provided:"
+msgid "``KDE3_DEFINITIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:34
+msgid "Compiler definitions required for compiling KDE 3 software."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:35
-msgid "``KDE3_BUILD_TESTS``"
+msgid "``KDE3_INCLUDE_DIRS``"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:36
-msgid "enable this to build KDE testcases"
+msgid ""
+"The KDE and the Qt include directories, for use with the :command:"
+"`target_include_directories` command."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:38
+msgid "``KDE3_LIB_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:39
 msgid ""
-"It also adds the following macros (from ``KDE3Macros.cmake``) ``SRCS_VAR`` "
-"is always the variable which contains the list of source files for your "
-"application or library."
+"The directory containing the installed KDE 3 libraries, for use with the :"
+"command:`target_link_directories` command."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:41
+msgid "``QT_AND_KDECORE_LIBS``"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:42
-msgid "KDE3_AUTOMOC(file1 ...  fileN)"
+msgid ""
+"A list containing both the Qt and the kdecore library, typically used "
+"together when linking KDE 3."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:46
-msgid ""
-"Call this if you want to have automatic moc file handling.\n"
-"This means if you include \"foo.moc\" in the source file foo.cpp\n"
-"a moc file for the header foo.h will be created automatically.\n"
-"You can set the property SKIP_AUTOMAKE using set_source_files_properties()\n"
-"to exclude some files in the list from being processed."
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:48
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:50
+msgid "``KDE3_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:51
+msgid "The directory containing KDE 3 header files."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:52
+msgid "``KDE3_DCOPIDL_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:53
+msgid "The path to the ``dcopidl`` executable."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:54
-msgid "KDE3_ADD_MOC_FILES(SRCS_VAR file1 ...  fileN )"
+msgid "``KDE3_DCOPIDL2CPP_EXECUTABLE``"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:58
+#: ../../../../Modules/FindKDE3.cmake:55
+msgid "The path to the ``dcopidl2cpp`` executable."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:56
+msgid "``KDE3_KCFGC_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:57
+msgid "The path to the ``kconfig_compiler`` executable."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:60
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:62
+msgid "This module accepts the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:64
+msgid "``KDE3_BUILD_TESTS``"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:65
 msgid ""
-"If you don't use the KDE3_AUTOMOC() macro, for the files\n"
-"listed here moc files will be created (named \"foo.moc.cpp\")"
+"Provided as a user adjustable option.  Set this variable to boolean true to "
+"build KDE 3 testcases."
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:63
-msgid "KDE3_ADD_DCOP_SKELS(SRCS_VAR header1.h ...  headerN.h )"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:67
-msgid "Use this to generate DCOP skeletions from the listed headers."
+#: ../../../../Modules/FindKDE3.cmake:69
+msgid "Commands"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:71
-msgid "KDE3_ADD_DCOP_STUBS(SRCS_VAR header1.h ...  headerN.h )"
+msgid ""
+"This module provides the following commands to work with KDE 3 in CMake:"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:75
-msgid "Use this to generate DCOP stubs from the listed headers."
+msgid "Enables automatic processing with ``moc`` for the given source files:"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:79
-msgid "KDE3_ADD_UI_FILES(SRCS_VAR file1.ui ...  fileN.ui )"
+#: ../../../../Modules/FindKDE3.cmake:77
+msgid "kde3_automoc(<sources>...)"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:83
-msgid "Use this to add the Qt designer ui files to your application/library."
+#: ../../../../Modules/FindKDE3.cmake:81
+msgid ""
+"Call this command to enable automatic ``moc`` file handling.  For example, "
+"if a source file (e.g., ``foo.cpp``) contains ``include \"foo.moc\"``, a "
+"``moc`` file for the corresponding header (``foo.h``) will be generated "
+"automatically.  To skip processing for a specific source file, set the :"
+"prop_sf:`SKIP_AUTOMOC` source file property."
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:87
-msgid "KDE3_ADD_KCFG_FILES(SRCS_VAR file1.kcfgc ...  fileN.kcfgc )"
+#: ../../../../Modules/FindKDE3.cmake:89
+msgid "Processes header files with ``moc``:"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:91
-msgid "Use this to add KDE kconfig compiler files to your application/library."
+msgid "kde3_add_moc_files(<variable> <headers>...)"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:95
-msgid "KDE3_INSTALL_LIBTOOL_FILE(target)"
-msgstr ""
-
-#: ../../../../Modules/FindKDE3.cmake:99
 msgid ""
-"This will create and install a simple libtool file for the given target."
+"If not using ``kde3_automoc()``, this command can be used to generate "
+"``moc`` files for one or more ``<headers>`` files.  The generated files are "
+"named ``<filename>.moc.cpp`` and the resulting list of these generated "
+"source files is stored in the variable named ``<variable>`` for use in "
+"project targets."
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:103
-msgid "KDE3_ADD_EXECUTABLE(name file1 ...  fileN )"
+#: ../../../../Modules/FindKDE3.cmake:102
+msgid "Generates KIDL and DCOP skeletons:"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:107
+#: ../../../../Modules/FindKDE3.cmake:104
+msgid "kde3_add_dcop_skels(<variable> <dcop-headers>...)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:108
 msgid ""
-"Currently identical to add_executable(), may provide some advanced\n"
-"features in the future."
+"This command generates ``.kidl`` and DCOP skeleton source files from the "
+"given DCOP header files.  The resulting list of generated source files is "
+"stored in the variable named ``<variable>`` for use in project targets."
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:112
-msgid "KDE3_ADD_KPART(name [WITH_PREFIX] file1 ...  fileN )"
+#: ../../../../Modules/FindKDE3.cmake:114
+msgid "Generates DCOP stubs:"
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:116
-msgid ""
-"Create a KDE plugin (KPart, kioslave, etc.) from the given source files.\n"
-"If WITH_PREFIX is given, the resulting plugin will have the prefix \"lib\",\n"
-"otherwise it won't.\n"
-"It creates and installs an appropriate libtool la-file."
+msgid "kde3_add_dcop_stubs(<variable> <headers>...)"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:123
-msgid "KDE3_ADD_KDEINIT_EXECUTABLE(name file1 ...  fileN )"
+#: ../../../../Modules/FindKDE3.cmake:120
+msgid ""
+"Use this command to generate DCOP stubs from one or more given header files. "
+"The resulting list of generated source files is stored in the variable named "
+"``<variable>`` for use in project targets."
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:127
-msgid ""
-"Create a KDE application in the form of a module loadable via kdeinit.\n"
-"A library named kdeinit_<name> will be created and a small executable\n"
-"which links to it."
+#: ../../../../Modules/FindKDE3.cmake:126
+msgid "Adds Qt designer UI files:"
 msgstr ""
 
-#: ../../../../Modules/FindKDE3.cmake:133
+#: ../../../../Modules/FindKDE3.cmake:128
+msgid "kde3_add_ui_files(<variable> <ui-files>...)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:132
 msgid ""
-"The option KDE3_ENABLE_FINAL to enable all-in-one compilation is no longer "
-"supported."
+"This command creates the implementation files from the given Qt designer ``."
+"ui`` files.  The resulting list of generated files is stored in the variable "
+"named ``<variable>`` for use in project targets."
 msgstr ""
 
 #: ../../../../Modules/FindKDE3.cmake:138
-msgid "Author: Alexander Neundorf <neundorf@kde.org>"
+msgid "Adds KDE kconfig compiler files:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:140
+msgid "kde3_add_kcfg_files(<variable> <kcfgc-files>...)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:144
+msgid ""
+"Use this command to add KDE kconfig compiler files (``.kcfgc``) to the "
+"application/library.  The resulting list of generated source files is stored "
+"in the variable named ``<variable>`` for use in project targets."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:150
+msgid "Creates and installs a libtool file:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:152
+msgid "kde3_install_libtool_file(<target>)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:156
+msgid ""
+"This command creates and installs a basic libtool file for the given target "
+"``<target>``."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:161
+msgid "Adds KDE executable:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:163
+msgid "kde3_add_executable(<name> <sources>...)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:167
+msgid ""
+"This command is functionally identical to the built-in :command:"
+"`add_executable` command.  It was originally intended to support additional "
+"features in future versions of this module."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:173
+msgid "Creates a KDE plugin:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:175
+msgid "kde3_add_kpart(<name> [WITH_PREFIX] <sources>...)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:179
+msgid ""
+"This command creates a KDE plugin (KPart, kioslave, etc.) from one or more "
+"source files ``<sources>``.  It also creates and installs an appropriate "
+"libtool ``.la`` file."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:183
+msgid ""
+"If the ``WITH_PREFIX`` option is given, the resulting plugin name will be "
+"prefixed with ``lib``.  Otherwise, no prefix is added."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:188
+msgid "Creates a KDE application as a module loadable via kdeinit:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:190
+msgid "kde3_add_kdeinit_executable(<name> <sources>...)"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:194
+msgid ""
+"This command creates a library named ``kdeinit_<name>`` from one or more "
+"source files ``<sources>``.  It also builds a small executable linked "
+"against this library."
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:199
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:201
+msgid "Finding KDE 3:"
+msgstr ""
+
+#: ../../../../Modules/FindKDE3.cmake:203
+msgid "find_package(KDE3)"
 msgstr ""

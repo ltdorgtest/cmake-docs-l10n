@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-02-02 08:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,7 @@ msgid ""
 "is for uses of the modules to fail as if they do not exist."
 msgstr ""
 
-#: ../../../policy/STANDARD_ADVICE.txt:1
+#: ../../../policy/include/STANDARD_ADVICE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "It may be set by :command:`cmake_policy` or :command:"
@@ -59,7 +59,7 @@ msgid ""
 "and uses ``OLD`` behavior."
 msgstr ""
 
-#: ../../../policy/DEPRECATED.txt:2
+#: ../../../policy/include/DEPRECATED.rst:2
 msgid ""
 "The ``OLD`` behavior of a policy is :manual:`deprecated by definition <cmake-"
 "policies(7)>` and may be removed in a future version of CMake."
