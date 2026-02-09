@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,178 +21,217 @@ msgstr ""
 msgid "DeployQt4"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:8
+#: ../../../../Modules/DeployQt4.cmake:10
 msgid ""
-"This module provides a collection of CMake utility functions useful for "
+"This module is for Qt version 4.  New code should follow the :manual:`cmake-"
+"qt(7)` instead of using this module."
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:13
+msgid ""
+"This module provides a collection of CMake utility commands useful for "
 "assembling and deploying standalone Qt4 executables."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:12
-msgid "Functions"
-msgstr ""
-
-#: ../../../../Modules/DeployQt4.cmake:14
-msgid "This module defines the following functions:"
-msgstr ""
-
 #: ../../../../Modules/DeployQt4.cmake:16
-msgid ":command:`write_qt4_conf`"
-msgstr ""
-
-#: ../../../../Modules/DeployQt4.cmake:17
-msgid ":command:`resolve_qt4_paths`"
+msgid "Load this module in a CMake project with:"
 msgstr ""
 
 #: ../../../../Modules/DeployQt4.cmake:18
-msgid ":command:`fixup_qt4_executable`"
+msgid "include(DeployQt4)"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:19
-msgid ":command:`install_qt4_plugin_path`"
-msgstr ""
-
-#: ../../../../Modules/DeployQt4.cmake:20
-msgid ":command:`install_qt4_plugin`"
-msgstr ""
-
-#: ../../../../Modules/DeployQt4.cmake:21
-msgid ":command:`install_qt4_executable`"
+#: ../../../../Modules/DeployQt4.cmake:23
+msgid "Commands"
 msgstr ""
 
 #: ../../../../Modules/DeployQt4.cmake:25
-msgid "write_qt4_conf(<qt_conf_dir> <qt_conf_contents>)"
+msgid "This module provides the following commands:"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:27
+msgid ":command:`write_qt4_conf`"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:28
+msgid ":command:`resolve_qt4_paths`"
 msgstr ""
 
 #: ../../../../Modules/DeployQt4.cmake:29
-msgid ""
-"Writes a ``qt.conf`` file with the ``<qt_conf_contents>`` into the "
-"``<qt_conf_dir>`` directory."
+msgid ":command:`fixup_qt4_executable`"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:34
-msgid "resolve_qt4_paths(<paths_var> [<executable_path>])"
+#: ../../../../Modules/DeployQt4.cmake:30
+msgid ":command:`install_qt4_plugin_path`"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:31
+msgid ":command:`install_qt4_plugin`"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:32
+msgid ":command:`install_qt4_executable`"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:36
+msgid "Creates a Qt configuration file:"
 msgstr ""
 
 #: ../../../../Modules/DeployQt4.cmake:38
-msgid ""
-"Loops through the ``<paths_var>`` list and if any path doesn't exist, it "
-"resolves them relative to the ``<executable_path>`` (if supplied) or the :"
-"variable:`CMAKE_INSTALL_PREFIX`."
+msgid "write_qt4_conf(<qt-conf-dir> <qt-conf-contents>)"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:44
+#: ../../../../Modules/DeployQt4.cmake:42
+msgid ""
+"This command writes a ``qt.conf`` file with the ``<qt-conf-contents>`` into "
+"the ``<qt-conf-dir>`` directory."
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:47
+msgid "Resolves relative paths to absolute:"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:49
+msgid "resolve_qt4_paths(<paths-var> [<executable-path>])"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:53
+msgid ""
+"This command loops through the ``<paths-var>`` list and if any path doesn't "
+"exist, it resolves them relative to the ``<executable-path>`` (if supplied) "
+"or the :variable:`CMAKE_INSTALL_PREFIX`."
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:59
+msgid "Fixes up a Qt4 executable:"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:61
 msgid ""
 "fixup_qt4_executable(\n"
 "  <executable>\n"
-"  [<qtplugins> <libs> <dirs> <plugins_dir> <request_qt_conf>]\n"
+"  [<qtplugins> <libs> <dirs> <plugins-dir> <request-qt-conf>]\n"
 ")"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:51
+#: ../../../../Modules/DeployQt4.cmake:68
 msgid ""
-"Copies Qt plugins, writes a Qt configuration file (if needed) and fixes up a "
-"Qt4 executable using the :module:`BundleUtilities` module so it is "
-"standalone and can be drag-and-drop copied to another machine as long as all "
-"of the system libraries are compatible."
+"This command copies Qt plugins, writes a Qt configuration file (if needed) "
+"and fixes up a Qt4 executable using the :module:`BundleUtilities` module so "
+"it is standalone and can be drag-and-drop copied to another machine as long "
+"as all of the system libraries are compatible."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:56
+#: ../../../../Modules/DeployQt4.cmake:73
 msgid "``<executable>`` should point to the executable to be fixed-up."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:58
+#: ../../../../Modules/DeployQt4.cmake:75
 msgid ""
 "``<qtplugins>`` should contain a list of the names or paths of any Qt "
 "plugins to be installed."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:61
+#: ../../../../Modules/DeployQt4.cmake:78
 msgid ""
 "``<libs>`` will be passed to the :module:`BundleUtilities` module and should "
 "be a list of any already installed plugins, libraries or executables to also "
 "be fixed-up."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:65
+#: ../../../../Modules/DeployQt4.cmake:82
 msgid ""
 "``<dirs>`` will be passed to the :module:`BundleUtilities` module and should "
 "contain directories to be searched to find library dependencies."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:68
-msgid "``<plugins_dir>`` allows a custom plugins directory to be used."
+#: ../../../../Modules/DeployQt4.cmake:85
+msgid "``<plugins-dir>`` allows a custom plugins directory to be used."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:70
+#: ../../../../Modules/DeployQt4.cmake:87
 msgid ""
-"``<request_qt_conf>`` will force a ``qt.conf`` file to be written even if "
+"``<request-qt-conf>`` will force a ``qt.conf`` file to be written even if "
 "not needed."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:75
+#: ../../../../Modules/DeployQt4.cmake:92
+msgid "Installs a resolved Qt4 plugin:"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:94
 msgid ""
 "install_qt4_plugin_path(\n"
 "  <plugin>\n"
 "  <executable>\n"
 "  <copy>\n"
-"  <installed_plugin_path_var>\n"
-"  [<plugins_dir> <component> <configurations>]\n"
+"  <installed-plugin-path-var>\n"
+"  [<plugins-dir> <component> <configurations>]\n"
 ")"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:85
+#: ../../../../Modules/DeployQt4.cmake:104
 msgid ""
-"Installs (or copies) a resolved ``<plugin>`` to the default plugins "
-"directory (or ``<plugins_dir>``) relative to ``<executable>`` and stores the "
-"result in a variable ``<installed_plugin_path_var>``."
+"This command installs (or copies) a resolved ``<plugin>`` to the default "
+"plugins directory (or ``<plugins-dir>``) relative to ``<executable>`` and "
+"stores the result in a variable ``<installed-plugin-path-var>``."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:89
+#: ../../../../Modules/DeployQt4.cmake:108
 msgid ""
 "If ``<copy>`` is set to ``TRUE`` then the plugins will be copied rather than "
 "installed.  This is to allow this module to be used at CMake time rather "
 "than install time."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:93
+#: ../../../../Modules/DeployQt4.cmake:112
 msgid ""
 "If ``<component>`` is set then anything installed will use this COMPONENT."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:97
+#: ../../../../Modules/DeployQt4.cmake:116
+msgid "Installs an unresolved Qt4 plugin:"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:118
 msgid ""
 "install_qt4_plugin(\n"
 "  <plugin>\n"
 "  <executable>\n"
 "  <copy>\n"
-"  <installed_plugin_path_var>\n"
-"  [<plugins_dir> <component>]\n"
+"  <installed-plugin-path-var>\n"
+"  [<plugins-dir> <component>]\n"
 ")"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:107
+#: ../../../../Modules/DeployQt4.cmake:128
 msgid ""
-"Installs (or copies) an unresolved ``<plugin>`` to the default plugins "
-"directory (or ``<plugins_dir>``) relative to ``<executable>`` and stores the "
-"result in a variable ``<installed_plugin_path_var>``.  For other arguments, "
-"see also :command:`install_qt4_plugin_path`."
+"This command installs (or copies) an unresolved ``<plugin>`` to the default "
+"plugins directory (or ``<plugins-dir>``) relative to ``<executable>`` and "
+"stores the result in a variable ``<installed-plugin-path-var>``.  For other "
+"arguments, see also :command:`install_qt4_plugin_path`."
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:114
+#: ../../../../Modules/DeployQt4.cmake:135
+msgid ""
+"Installs Qt plugins, writes a Qt configuration file (if needed) and fixes up "
+"a Qt4 executable:"
+msgstr ""
+
+#: ../../../../Modules/DeployQt4.cmake:138
 msgid ""
 "install_qt4_executable(\n"
 "  <executable>\n"
-"  [<qtplugins> <libs> <dirs> <plugins_dir> <request_qt_conf> <component>]\n"
+"  [<qtplugins> <libs> <dirs> <plugins-dir> <request-qt-conf> <component>]\n"
 ")"
 msgstr ""
 
-#: ../../../../Modules/DeployQt4.cmake:121
+#: ../../../../Modules/DeployQt4.cmake:145
 msgid ""
-"Installs Qt plugins, writes a Qt configuration file (if needed) and fixes up "
-"a Qt4 executable using the :module:`BundleUtilities` module so it is "
+"This command uses the :module:`BundleUtilities` module so executable is "
 "standalone and can be drag-and-drop copied to another machine as long as all "
 "of the system libraries are compatible.  The executable will be fixed-up at "
-"install time.  ``<component>`` is the COMPONENT used for bundle fixup and "
-"plugin installation.  For other arguments, see also :command:"
+"install time.  The ``<component>`` is the COMPONENT used for bundle fixup "
+"and plugin installation.  For other arguments, see also :command:"
 "`fixup_qt4_executable`."
 msgstr ""

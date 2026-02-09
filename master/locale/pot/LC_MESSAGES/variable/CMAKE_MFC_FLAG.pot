@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,18 +33,35 @@ msgid ""
 msgstr ""
 
 #: ../../../variable/CMAKE_MFC_FLAG.rst:11
-msgid "Usage example:"
+msgid ""
+"Contents of ``CMAKE_MFC_FLAG`` may use :manual:`generator expressions <cmake-"
+"generator-expressions(7)>`."
 msgstr ""
 
-#: ../../../variable/CMAKE_MFC_FLAG.rst:13
-msgid ""
-"add_definitions(-D_AFXDLL)\n"
-"set(CMAKE_MFC_FLAG 2)\n"
-"add_executable(CMakeSetup WIN32 ${SRCS})"
+#: ../../../variable/CMAKE_MFC_FLAG.rst:15
+msgid "Examples"
+msgstr ""
+
+#: ../../../variable/CMAKE_MFC_FLAG.rst:17
+msgid "Usage example:"
 msgstr ""
 
 #: ../../../variable/CMAKE_MFC_FLAG.rst:19
 msgid ""
-"Contents of ``CMAKE_MFC_FLAG`` may use :manual:`generator expressions <cmake-"
-"generator-expressions(7)>`."
+"set(CMAKE_MFC_FLAG 2)\n"
+"\n"
+"add_executable(CMakeSetup WIN32 ${SRCS})\n"
+"\n"
+"# Visual Studio generators add this flag automatically based on the\n"
+"# CMAKE_MFC_FLAG value, but generators matching \"Make\" require it:\n"
+"target_compile_definitions(CMakeSetup PRIVATE _AFXDLL)"
+msgstr ""
+
+#: ../../../variable/CMAKE_MFC_FLAG.rst:30
+msgid "See Also"
+msgstr ""
+
+#: ../../../variable/CMAKE_MFC_FLAG.rst:32
+msgid ""
+"The :module:`FindMFC` module to check whether MFC is installed and available."
 msgstr ""

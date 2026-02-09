@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,19 +27,14 @@ msgid ""
 "Variables>`. Its initial value is taken from the calling process environment."
 msgstr ""
 
-#: ../../../envvar/CTEST_USE_VERBOSE_INSTRUMENTATION.rst:10
+#: ../../../envvar/CTEST_USE_VERBOSE_INSTRUMENTATION.rst:8
 msgid ""
-"This feature is only available when experimental support for instrumentation "
-"has been enabled by the ``CMAKE_EXPERIMENTAL_INSTRUMENTATION`` gate."
+"Setting this environment variable to ``1``, ``True``, or ``ON`` causes CTest "
+"to report the full command line (including arguments) to CDash for each "
+"instrumented command. By default, CTest truncates the command line at the "
+"first space."
 msgstr ""
 
 #: ../../../envvar/CTEST_USE_VERBOSE_INSTRUMENTATION.rst:13
-msgid ""
-"Setting this environment variable causes CTest to report the full command "
-"line (including arguments) to CDash for each instrumented command. By "
-"default, CTest truncates the command line at the first space."
-msgstr ""
-
-#: ../../../envvar/CTEST_USE_VERBOSE_INSTRUMENTATION.rst:17
 msgid "See also :envvar:`CTEST_USE_INSTRUMENTATION`"
 msgstr ""

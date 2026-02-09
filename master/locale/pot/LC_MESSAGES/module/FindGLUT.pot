@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,114 +22,127 @@ msgid "FindGLUT"
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:8
-msgid "Find OpenGL Utility Toolkit (GLUT) library and include files."
+msgid ""
+"Finds the OpenGL Utility Toolkit (GLUT) library, which provides a simple API "
+"for creating windows, handling input, and managing events in OpenGL "
+"applications:"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:11
-msgid "Imported Targets"
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:15
-msgid "This module defines the :prop_tgt:`IMPORTED` targets:"
+#: ../../../../Modules/FindGLUT.cmake:12
+msgid "find_package(GLUT [...])"
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:17
-msgid "``GLUT::GLUT``"
+msgid "Imported Targets"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:18
-msgid "Defined if the system has GLUT."
+#: ../../../../Modules/FindGLUT.cmake:19
+msgid "This module provides the following :ref:`Imported Targets`:"
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:21
+msgid "``GLUT::GLUT``"
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:24
+msgid ""
+"Target encapsulating the GLUT usage requirements, available if GLUT is found."
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:27
 msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:23
+#: ../../../../Modules/FindGLUT.cmake:29
 msgid "This module defines the following variables:"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:25
+#: ../../../../Modules/FindGLUT.cmake:31
 msgid "``GLUT_FOUND``"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:26
-msgid "True if ``glut`` was found."
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:28
-msgid "``GLUT_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:31
-msgid "Where to find GL/glut.h, etc."
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:33
-msgid "``GLUT_LIBRARIES``"
+#: ../../../../Modules/FindGLUT.cmake:32
+msgid "Boolean indicating whether GLUT was found."
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:34
-msgid "List of libraries for using ``glut``."
+msgid "``GLUT_INCLUDE_DIRS``"
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:37
+msgid ""
+"Include directories needed to use GLUT.  Starting with CMake 3.23, this "
+"variable is intended to be used in target usage requirements instead of the "
+"cache variable ``GLUT_INCLUDE_DIR``, which is intended for finding GLUT."
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:41
+msgid "``GLUT_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:42
+msgid "List of libraries needed to link against for using GLUT."
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:45
 msgid "Cache Variables"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:39
-msgid ""
-"This module may set the following variables depending on platform. These "
-"variables may optionally be set to help this module find the correct files, "
-"but clients should not use these as results:"
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:43 ../../../../Modules/FindGLUT.cmake:61
-msgid "``GLUT_INCLUDE_DIR``"
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:44
-msgid ""
-"The full path to the directory containing ``GL/glut.h``, not including ``GL/"
-"``."
-msgstr ""
-
 #: ../../../../Modules/FindGLUT.cmake:47
-msgid "``GLUT_glut_LIBRARY``"
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:48
-msgid "The full path to the glut library."
-msgstr ""
-
-#: ../../../../Modules/FindGLUT.cmake:50
-msgid "``GLUT_Xmu_LIBRARY``"
+msgid ""
+"This module may set the following cache variables depending on platform. "
+"These variables may optionally be set to help this module find the correct "
+"files, but should not be used as result variables:"
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:51
-msgid "The full path to the Xmu library."
+msgid "``GLUT_INCLUDE_DIR``"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:53
-msgid "``GLUT_Xi_LIBRARY``"
+#: ../../../../Modules/FindGLUT.cmake:52
+msgid ""
+"The full path to the directory containing ``GL/glut.h`` (without the ``GL/"
+"``)."
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:54
-msgid "The full path to the Xi Library."
+msgid "``GLUT_glut_LIBRARY``"
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:55
+msgid "The full path to the ``glut`` library."
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:57
-msgid "Obsolete Variables"
+msgid "``GLUT_Xi_LIBRARY``"
 msgstr ""
 
-#: ../../../../Modules/FindGLUT.cmake:59
+#: ../../../../Modules/FindGLUT.cmake:58
 msgid ""
-"The following variables may also be provided, for backwards compatibility:"
+"The full path to the dependent ``Xi`` (X Input Device Extension) library on "
+"some systems."
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:61
+msgid "``GLUT_Xmu_LIBRARY``"
 msgstr ""
 
 #: ../../../../Modules/FindGLUT.cmake:62
 msgid ""
-"This is one of above `Cache Variables`_, but prior to CMake 3.23 was also a "
-"result variable.  Prefer to use ``GLUT_INCLUDE_DIRS`` instead in CMake 3.23 "
-"and above."
+"The full path to the dependent ``Xmu`` (X Miscellaneous Utilities) library "
+"on some systems."
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:66
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:68
+msgid "Finding GLUT and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindGLUT.cmake:70
+msgid ""
+"find_package(GLUT)\n"
+"target_link_libraries(project_target PRIVATE GLUT::GLUT)"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,15 @@ msgid ""
 "`try_compile` command and since CMake 3.2 for :command:`try_run` command)."
 msgstr ""
 
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:19
+msgid "Load this module in a CMake project with:"
+msgstr ""
+
 #: ../../../../Modules/CMakeExpandImportedTargets.cmake:21
+msgid "include(CMakeExpandImportedTargets)"
+msgstr ""
+
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:27
 msgid ""
 "This module does not support the policy :policy:`CMP0022` ``NEW`` behavior, "
 "nor does it use the :prop_tgt:`INTERFACE_LINK_LIBRARIES` property, because :"
@@ -42,15 +50,22 @@ msgid ""
 "evaluated at the configuration phase."
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:27
-msgid "Functions"
-msgstr ""
-
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:29
-msgid "This module defines the following function:"
-msgstr ""
-
 #: ../../../../Modules/CMakeExpandImportedTargets.cmake:33
+msgid "Commands"
+msgstr ""
+
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:35
+msgid "This module provides the following command:"
+msgstr ""
+
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:39
+msgid ""
+"Expands all imported targets in a given list of libraries to their "
+"corresponding file paths on disk and stores the resulting list in a local "
+"variable:"
+msgstr ""
+
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:43
 msgid ""
 "cmake_expand_imported_targets(\n"
 "  <result-var>\n"
@@ -59,22 +74,23 @@ msgid ""
 ")"
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:41
-msgid ""
-"Expands all imported targets in a list of libraries ``<libs>...`` to their "
-"corresponding file paths on disk and stores the resulting list in a local "
-"variable ``<result-var>``."
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:51
+msgid "The arguments are:"
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:45
-msgid "The options are:"
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:53
+msgid "``<result-var>``"
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:47
-msgid "``LIBRARIES``"
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:54
+msgid "Name of a CMake variable containing the resulting list of file paths."
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:48
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:56
+msgid "``LIBRARIES <libs>...``"
+msgstr ""
+
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:57
 msgid ""
 "A :ref:`semicolon-separated list <CMake Language Lists>` of system and "
 "imported targets.  Imported targets in this list are replaced with their "
@@ -82,11 +98,11 @@ msgid ""
 "interfaces."
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:53
-msgid "``CONFIGURATION``"
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:62
+msgid "``CONFIGURATION <config>``"
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:54
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:63
 msgid ""
 "If this option is given, it uses the respective build configuration "
 "``<config>`` of the imported targets if it exists.  If omitted, it defaults "
@@ -95,15 +111,15 @@ msgid ""
 "is not set."
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:61
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:70
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:63
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:72
 msgid "Using this module to get a list of library paths:"
 msgstr ""
 
-#: ../../../../Modules/CMakeExpandImportedTargets.cmake:65
+#: ../../../../Modules/CMakeExpandImportedTargets.cmake:74
 msgid ""
 "include(CMakeExpandImportedTargets)\n"
 "cmake_expand_imported_targets(\n"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-17 10:27+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,43 +23,66 @@ msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:8
 msgid ""
-"This module is intended to be used in :ref:`FindXXX.cmake modules <Find "
-"Modules>` and provides a function for printing find result messages."
+"This module provides a command for printing find result messages and is "
+"intended for use in :ref:`Find Modules` implementing :command:"
+"`find_package(<PackageName>)` calls."
+msgstr ""
+
+#: ../../../../Modules/FindPackageMessage.cmake:12
+msgid "Load this module in a CMake find module with:"
 msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:14
-msgid "find_package_message(<PackageName> <message> <details>)"
+#: ../../../../Modules/FindPackageMessage.cmake:54
+#: ../../../../Modules/FindPackageMessage.cmake:77
+msgid "``FindFoo.cmake``"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:18
-msgid ""
-"Prints a ``<message>`` once for each unique find result to inform the user "
-"which package was found and where."
+#: ../../../../Modules/FindPackageMessage.cmake:14
+msgid "include(FindPackageMessage)"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:21
-msgid "``<PackageName>``"
+#: ../../../../Modules/FindPackageMessage.cmake:20
+msgid "Commands"
 msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:22
+msgid "This module provides the following command:"
+msgstr ""
+
+#: ../../../../Modules/FindPackageMessage.cmake:26
+msgid ""
+"Prints a message once for each unique find result to inform the user which "
+"package was found and where:"
+msgstr ""
+
+#: ../../../../Modules/FindPackageMessage.cmake:29
+msgid "find_package_message(<PackageName> <message> <details>)"
+msgstr ""
+
+#: ../../../../Modules/FindPackageMessage.cmake:33
+msgid "``<PackageName>``"
+msgstr ""
+
+#: ../../../../Modules/FindPackageMessage.cmake:34
 msgid ""
 "The name of the package (for example, as used in the ``Find<PackageName>."
 "cmake`` module filename)."
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:25
+#: ../../../../Modules/FindPackageMessage.cmake:37
 msgid "``<message>``"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:26
+#: ../../../../Modules/FindPackageMessage.cmake:38
 msgid "The message string to display."
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:28
+#: ../../../../Modules/FindPackageMessage.cmake:40
 msgid "``<details>``"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:29
+#: ../../../../Modules/FindPackageMessage.cmake:41
 msgid ""
 "A unique identifier for tracking message display.  The ``<message>`` is "
 "printed only once per distinct ``<details>`` value.  If ``<details>`` string "
@@ -67,53 +90,47 @@ msgid ""
 "again."
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:34
+#: ../../../../Modules/FindPackageMessage.cmake:46
 msgid ""
 "If :command:`find_package` was called with the ``QUIET`` option, the "
 "``<message>`` is not printed."
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:38
+#: ../../../../Modules/FindPackageMessage.cmake:50
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:40
-msgid "Printing result message in a find module:"
+#: ../../../../Modules/FindPackageMessage.cmake:52
+msgid "Printing a result message in a custom find module:"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:42
-#: ../../../../Modules/FindPackageMessage.cmake:66
-msgid "FindFoo.cmake"
-msgstr ""
-
-#: ../../../../Modules/FindPackageMessage.cmake:42
+#: ../../../../Modules/FindPackageMessage.cmake:54
 msgid ""
 "find_library(Foo_LIBRARY foo)\n"
 "find_path(Foo_INCLUDE_DIR foo.h)\n"
 "\n"
-"# ...\n"
-"\n"
 "include(FindPackageMessage)\n"
 "\n"
-"if(Foo_FOUND)\n"
+"if(Foo_LIBRARY AND Foo_INCLUDE_DIR)\n"
 "  find_package_message(\n"
 "    Foo\n"
 "    \"Found Foo: ${Foo_LIBRARY}\"\n"
 "    \"[${Foo_LIBRARY}][${Foo_INCLUDE_DIR}]\"\n"
 "  )\n"
 "else()\n"
-"  # ...\n"
+"  message(STATUS \"Could NOT find Foo\")\n"
 "endif()"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:62
+#: ../../../../Modules/FindPackageMessage.cmake:72
 msgid ""
-"When writing standard :ref:`Find modules <Find Modules>`, use the :module:"
-"`find_package_handle_standard_args() <FindPackageHandleStandardArgs>` "
-"function, which automatically prints the find result message:"
+"When writing standard find modules, use the :module:"
+"`FindPackageHandleStandardArgs` module and its :command:"
+"`find_package_handle_standard_args` command which automatically prints the "
+"find result message based on whether the package was found:"
 msgstr ""
 
-#: ../../../../Modules/FindPackageMessage.cmake:66
+#: ../../../../Modules/FindPackageMessage.cmake:77
 msgid ""
 "# ...\n"
 "\n"

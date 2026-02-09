@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,9 +76,10 @@ msgstr ""
 
 #: ../../../command/link_directories.rst:43
 msgid ""
-"Project generators like Xcode where the user can switch target architecture "
-"at build time, but a full path to a library cannot be used because it only "
-"provides one architecture (i.e. it is not a universal binary)."
+"Project generators like :generator:`Xcode` where the user can switch target "
+"architecture at build time, but a full path to a library cannot be used "
+"because it only provides one architecture (i.e. it is not a universal "
+"binary)."
 msgstr ""
 
 #: ../../../command/link_directories.rst:47

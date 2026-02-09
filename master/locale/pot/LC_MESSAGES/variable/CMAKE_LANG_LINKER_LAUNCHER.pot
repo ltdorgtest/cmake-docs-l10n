@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,10 +25,38 @@ msgstr ""
 msgid ""
 "Default value for :prop_tgt:`<LANG>_LINKER_LAUNCHER` target property. This "
 "variable is used to initialize the property on each target as it is created. "
-"This is done only when ``<LANG>`` is ``C``, ``CXX``, ``OBJC``, or ``OBJCXX``."
+"This is done only when ``<LANG>`` is one of:"
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:10
+msgid "``C``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:12
+msgid "``CXX``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:14
+msgid "``CUDA``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:18
+msgid "``OBJC``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:20
+msgid "``OBJCXX``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:22
+msgid "``Fortran``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:26
+msgid "``HIP``"
+msgstr ""
+
+#: ../../../variable/CMAKE_LANG_LINKER_LAUNCHER.rst:30
 msgid ""
 "This variable is initialized to the :envvar:`CMAKE_<LANG>_LINKER_LAUNCHER` "
 "environment variable if it is set."

@@ -1,0 +1,46 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2026 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../release/dev/instrumentation.rst:2
+msgid "instrumentation"
+msgstr ""
+
+#: ../../../release/dev/instrumentation.rst:4
+msgid ""
+":manual:`cmake-instrumentation(7)` introduces a new API for the collection "
+"of timing data, target information and system diagnostic information during "
+"the configure, generate, build, test and install steps for a CMake project."
+msgstr ""
+
+#: ../../../release/dev/instrumentation.rst:7
+msgid ""
+"When CMake instrumentation is enabled, instrumentation data will be sent as "
+"part of submissions to CDash."
+msgstr ""
+
+#: ../../../release/dev/instrumentation.rst:9
+msgid ""
+"CMake can generate Google Trace Event Format files to visualize "
+"instrumentation data."
+msgstr ""
+
+#: ../../../release/dev/instrumentation.rst:11
+msgid ""
+"The :command:`cmake_instrumentation` was added for adding project-level "
+"instrumentation queries."
+msgstr ""

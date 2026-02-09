@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -505,23 +505,23 @@ msgstr ""
 
 #: ../../../release/3.12.rst:285
 msgid ""
-"The :module:`CheckIncludeFile` module ``check_include_file`` macro learned "
-"to honor the ``CMAKE_REQUIRED_LIBRARIES`` variable. See policy :policy:"
-"`CMP0075`."
-msgstr ""
-
-#: ../../../release/3.12.rst:289
-msgid ""
-"The :module:`CheckIncludeFileCXX` module ``check_include_file_cxx`` macro "
+"The :module:`CheckIncludeFile` module ``check_include_file()`` command "
 "learned to honor the ``CMAKE_REQUIRED_LIBRARIES`` variable. See policy :"
 "policy:`CMP0075`."
 msgstr ""
 
+#: ../../../release/3.12.rst:289
+msgid ""
+"The :module:`CheckIncludeFileCXX` module ``check_include_file_cxx()`` "
+"command learned to honor the ``CMAKE_REQUIRED_LIBRARIES`` variable. See "
+"policy :policy:`CMP0075`."
+msgstr ""
+
 #: ../../../release/3.12.rst:293
 msgid ""
-"The :module:`CheckIncludeFiles` module ``check_include_files`` macro learned "
-"to honor the ``CMAKE_REQUIRED_LIBRARIES`` variable. See policy :policy:"
-"`CMP0075`."
+"The :module:`CheckIncludeFiles` module ``check_include_files()`` command "
+"learned to honor the ``CMAKE_REQUIRED_LIBRARIES`` variable. See policy :"
+"policy:`CMP0075`."
 msgstr ""
 
 #: ../../../release/3.12.rst:297

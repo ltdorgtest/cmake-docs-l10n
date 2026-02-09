@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,43 +23,62 @@ msgstr ""
 
 #: ../../../../Modules/ProcessorCount.cmake:8
 msgid ""
-"This module provides the following function to determine the number of "
-"processors/cores:"
+"This module provides a command to determine the number of processors/cores."
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:13
-msgid "ProcessorCount(<variable>)"
+#: ../../../../Modules/ProcessorCount.cmake:10
+msgid "Load this module in CMake with:"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:12
+msgid "include(ProcessorCount)"
 msgstr ""
 
 #: ../../../../Modules/ProcessorCount.cmake:17
-msgid ""
-"Sets a local variable named ``<variable>`` to the number of logical CPU "
-"cores available on the machine, if the information can be determined.  If "
-"successful, the variable is guaranteed to be set to a positive integer "
-"(>=1). If the processor count cannot be determined, it is set to 0."
+msgid "Commands"
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:22
+#: ../../../../Modules/ProcessorCount.cmake:19
+msgid "This module provides the following command:"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:23
+msgid "Determines the number of logical CPU cores available on the machine:"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:25
+msgid "ProcessorCount(<variable>)"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:29
+msgid ""
+"This command sets a variable named ``<variable>`` to the number of logical "
+"CPU cores available on the machine, if the information can be determined. If "
+"successful, the variable is guaranteed to be set to a positive integer "
+"(>=1).  If the processor count cannot be determined, it is set to 0."
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:34
 msgid ""
 "Currently, this functionality is implemented for AIX, Cygwin, FreeBSD, "
 "Haiku, HPUX, Linux, macOS, QNX, Sun and Windows."
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:25
+#: ../../../../Modules/ProcessorCount.cmake:37
 msgid ""
-"This function provides an approximation of the number of compute cores "
+"This command provides an approximation of the number of compute cores "
 "available on the current machine, making it useful for parallel building and "
 "testing.  It is meant to help utilize as much of the machine as seems "
 "reasonable, though users should consider other workloads running on the "
 "machine before using its full capacity for parallel tasks."
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:31
+#: ../../../../Modules/ProcessorCount.cmake:43
 msgid ""
 "On Linux, returns the container CPU count instead of the host CPU count."
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:36
+#: ../../../../Modules/ProcessorCount.cmake:48
 msgid ""
 "This module relies on system-dependent commands to determine the number of "
 "processors, which may not always provide accurate information in certain "
@@ -67,20 +86,22 @@ msgid ""
 "obtained with the :command:`cmake_host_system_information`:"
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:41
+#: ../../../../Modules/ProcessorCount.cmake:53
 msgid "cmake_host_system_information(RESULT n QUERY NUMBER_OF_LOGICAL_CORES)"
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:46
+#: ../../../../Modules/ProcessorCount.cmake:58
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:48
+#: ../../../../Modules/ProcessorCount.cmake:60
 msgid ""
-"Using ``ProcessorCount`` module in a :option:`ctest -S` dashboard script:"
+"In the following example this module is used in a :option:`ctest -S` "
+"dashboard script to determine number of cores to use for a parallel :ref:"
+"`CTest Build Step`:"
 msgstr ""
 
-#: ../../../../Modules/ProcessorCount.cmake:50
+#: ../../../../Modules/ProcessorCount.cmake:64
 msgid ""
 "include(ProcessorCount)\n"
 "ProcessorCount(n)\n"

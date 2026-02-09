@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,9 +27,9 @@ msgstr ""
 
 #: ../../../prop_tgt/VS_SOURCE_SETTINGS_tool.rst:8
 msgid ""
-"Takes a list of ``Key=Value`` pairs. Tells the Visual Studio generator to "
-"set ``Key`` to ``Value`` as item metadata on all non-built files that use "
-"``<tool>``."
+"Takes a list of ``Key=Value`` pairs. Tells the :ref:`Visual Studio "
+"Generators` to set ``Key`` to ``Value`` as item metadata on all non-built "
+"files that use ``<tool>``."
 msgstr ""
 
 #: ../../../prop_tgt/VS_SOURCE_SETTINGS_tool.rst:12

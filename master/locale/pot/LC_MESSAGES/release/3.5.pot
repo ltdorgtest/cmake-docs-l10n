@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../../../release/3.5.rst:76
 msgid ""
-"The :module:`FindFLEX` module ``FLEX_TARGET`` macro learned a new "
+"The :module:`FindFLEX` module ``flex_target()`` command learned a new "
 "``DEFINES_FILE`` option to specify a custom output header to be generated."
 msgstr ""
 
