@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,51 +22,85 @@ msgid "CheckCSourceCompiles"
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:8
-msgid "Check once if C source code can be built."
+msgid ""
+"This module provides a command to check whether a C source can be built."
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:10
+msgid "Load this module in a CMake project with:"
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:12
-msgid ""
-"check_c_source_compiles(<code> <resultVar>\n"
-"                        [FAIL_REGEX <regex1> [<regex2>...]])"
+msgid "include(CheckCSourceCompiles)"
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:17
-msgid ""
-"Check once that the source supplied in ``<code>`` can be built. The result "
-"is stored in the internal cache variable specified by ``<resultVar>``, with "
-"boolean ``true`` for success and boolean ``false`` for failure."
+msgid "Commands"
 msgstr ""
 
-#: ../../../../Modules/CheckCSourceCompiles.cmake:21
-msgid ""
-"If ``FAIL_REGEX`` is provided, then failure is determined by checking if "
-"anything in the compiler output matches any of the specified regular "
-"expressions."
+#: ../../../../Modules/CheckCSourceCompiles.cmake:19
+msgid "This module provides the following command:"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:23
+msgid "Checks once whether the given C source code can be built:"
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:25
-msgid ""
-"Internally, :command:`try_compile` is used to compile the source. If :"
-"variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` is set to ``EXECUTABLE`` (default), "
-"the source is compiled and linked as an executable program. If set to "
-"``STATIC_LIBRARY``, the source is compiled but not linked. In any case, all "
-"functions must be declared as usual."
+msgid "check_c_source_compiles(<code> <variable> [FAIL_REGEX <regexes>...])"
 msgstr ""
 
-#: ../../../../Modules/CheckCSourceCompiles.cmake:31
+#: ../../../../Modules/CheckCSourceCompiles.cmake:29
 msgid ""
-"See also :command:`check_source_compiles` for a more general command syntax."
+"This command checks once that the source supplied in ``<code>`` can be "
+"compiled (and linked into an executable).  The result of the check is stored "
+"in the internal cache variable specified by ``<variable>``."
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:33
-msgid "See also :command:`check_source_runs` to run compiled source."
+msgid "The arguments are:"
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:35
+msgid "``<code>``"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:36
 msgid ""
-"The compile and link commands can be influenced by setting any of the "
-"following variables prior to calling ``check_c_source_compiles()``:"
+"C source code to check.  This must be an entire program, as written in a "
+"file containing the body block.  All symbols used in the source code are "
+"expected to be declared as usual in their corresponding headers."
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:40
+msgid "``<variable>``"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:41
+msgid ""
+"Variable name of an internal cache variable to store the result of the "
+"check, with boolean true for success and boolean false for failure."
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:44
+msgid "``FAIL_REGEX <regexes>...``"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:45
+msgid ""
+"If one or more regular expression patterns are provided, then failure is "
+"determined by checking if anything in the compiler output matches any of the "
+"specified regular expressions."
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:50
+msgid "Variables Affecting the Check"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:51
+msgid ""
+"The following variables may be set before calling this command to modify the "
+"way the check is run:"
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_FLAGS.rst:1
@@ -75,11 +109,11 @@ msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_FLAGS.rst:2
 msgid ""
-"String of additional flags to pass to the compiler. The string must be space-"
-"delimited--a :ref:`;-list <CMake Language Lists>` will not work. The "
-"contents of :variable:`CMAKE_<LANG>_FLAGS <CMAKE_<LANG>_FLAGS>` and its "
-"associated configuration-specific variable are automatically added to the "
-"compiler command before the contents of ``CMAKE_REQUIRED_FLAGS``."
+"A space-separated string of additional flags to pass to the compiler. A :ref:"
+"`semicolon-separated list <CMake Language Lists>` will not work. The "
+"contents of :variable:`CMAKE_<LANG>_FLAGS` and its associated configuration-"
+"specific :variable:`CMAKE_<LANG>_FLAGS_<CONFIG>` variables are automatically "
+"prepended to the compiler command before the contents of this variable."
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_DEFINITIONS.rst:1
@@ -88,9 +122,10 @@ msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_DEFINITIONS.rst:2
 msgid ""
-"A :ref:`;-list <CMake Language Lists>` of compiler definitions of the form "
-"``-DFOO`` or ``-DFOO=bar``. A definition for the name specified by "
-"``<resultVar>`` will also be added automatically."
+"A :ref:`semicolon-separated list <CMake Language Lists>` of compiler "
+"definitions, each of the form ``-DFOO`` or ``-DFOO=bar``.  A definition for "
+"the name specified by the result variable argument of the check command is "
+"also added automatically."
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_INCLUDES.rst:1
@@ -99,9 +134,10 @@ msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_INCLUDES.rst:2
 msgid ""
-"A :ref:`;-list <CMake Language Lists>` of header search paths to pass to the "
-"compiler. These will be the only header search paths used--the contents of "
-"the :prop_dir:`INCLUDE_DIRECTORIES` directory property will be ignored."
+"A :ref:`semicolon-separated list <CMake Language Lists>` of header search "
+"paths to pass to the compiler.  These will be the only header search paths "
+"used; the contents of the :prop_dir:`INCLUDE_DIRECTORIES` directory property "
+"will be ignored."
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_LINK_OPTIONS.rst:1
@@ -110,8 +146,8 @@ msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_LINK_OPTIONS.rst:4
 msgid ""
-"A :ref:`;-list <CMake Language Lists>` of options to add to the link command "
-"(see :command:`try_compile` for further details)."
+"A :ref:`semicolon-separated list <CMake Language Lists>` of options to add "
+"to the link command (see :command:`try_compile` for further details)."
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_LIBRARIES.rst:1
@@ -120,10 +156,10 @@ msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_LIBRARIES.rst:2
 msgid ""
-"A :ref:`;-list <CMake Language Lists>` of libraries to add to the link "
-"command. These can be the name of system libraries or they can be :ref:"
-"`Imported Targets <Imported Targets>` (see :command:`try_compile` for "
-"further details)."
+"A :ref:`semicolon-separated list <CMake Language Lists>` of libraries to add "
+"to the link command.  These can be the names of system libraries, or they "
+"can be :ref:`Imported Targets` (see :command:`try_compile` for further "
+"details)."
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_LINK_DIRECTORIES.rst:1
@@ -132,8 +168,8 @@ msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_LINK_DIRECTORIES.rst:4
 msgid ""
-"A :ref:`;-list <CMake Language Lists>` of libraries search paths to pass to "
-"the linker (see :command:`try_compile` for further details)."
+"A :ref:`semicolon-separated list <CMake Language Lists>` of library search "
+"paths to pass to the linker (see :command:`try_compile` for further details)."
 msgstr ""
 
 #: ../../../module/include/CMAKE_REQUIRED_QUIET.rst:1
@@ -144,4 +180,58 @@ msgstr ""
 msgid ""
 "If this variable evaluates to a boolean true value, all status messages "
 "associated with the check will be suppressed."
+msgstr ""
+
+#: ../../../module/include/CMAKE_TRY_COMPILE_TARGET_TYPE.rst:1
+msgid ":variable:`CMAKE_TRY_COMPILE_TARGET_TYPE`"
+msgstr ""
+
+#: ../../../module/include/CMAKE_TRY_COMPILE_TARGET_TYPE.rst:2
+msgid ""
+"Internally, the :command:`try_compile` command is used to perform the check, "
+"and this variable controls the type of target it creates.  If this variable "
+"is set to ``EXECUTABLE`` (the default), the check compiles and links the "
+"test source code as an executable program.  If set to ``STATIC_LIBRARY``, "
+"the test source code is compiled but not linked."
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:71
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:73
+msgid ""
+"Checking whether C source code containing SSE2 intrinsic can be compiled and "
+"linked:"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:76
+msgid ""
+"include(CheckCSourceCompiles)\n"
+"\n"
+"check_c_source_compiles(\"\n"
+"  #include <emmintrin.h>\n"
+"  int main(void)\n"
+"  {\n"
+"    __m128d a = _mm_setzero_pd();\n"
+"    (void)a;\n"
+"    return 0;\n"
+"  }\n"
+"\" PROJECT_HAVE_SSE2_INTRINSICS)"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:91
+msgid "See Also"
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:93
+msgid ""
+"The :module:`CheckSourceCompiles` module for a more general command to check "
+"whether source can be built."
+msgstr ""
+
+#: ../../../../Modules/CheckCSourceCompiles.cmake:95
+msgid ""
+"The :module:`CheckSourceRuns` module to check whether source can be built "
+"and run."
 msgstr ""

@@ -1,0 +1,45 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2026 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../release/dev/import-std.rst:2
+msgid "import-std"
+msgstr ""
+
+#: ../../../release/dev/import-std.rst:3
+msgid "The experimental gate for C++23's ``import std`` has been dropped."
+msgstr ""
+
+#: ../../../release/dev/import-std.rst:5
+msgid ""
+"Variable :variable:`CMAKE_CXX_MODULE_STD` and property target :prop_tgt:"
+"`CXX_MODULE_STD` control the availability of ``import std`` for C++ targets."
+msgstr ""
+
+#: ../../../release/dev/import-std.rst:9
+msgid ""
+"Read-only variable :variable:`CMAKE_CXX_COMPILER_IMPORT_STD` lists the C++ "
+"standard levels for which ``import std`` is available on the current "
+"toolchain."
+msgstr ""
+
+#: ../../../release/dev/import-std.rst:13
+msgid ""
+"Variable :variable:`CMAKE_CXX_STDLIB_MODULES_JSON` sets a specific module "
+"metadata file which CMake will use for constructing ``import std`` instead "
+"of relying on automatic detection via the current C++ compiler."
+msgstr ""

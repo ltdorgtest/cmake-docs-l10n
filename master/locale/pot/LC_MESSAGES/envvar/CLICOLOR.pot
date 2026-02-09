@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,8 +36,9 @@ msgstr ""
 
 #: ../../../envvar/CLICOLOR.rst:12
 msgid ""
-"See also the :envvar:`CLICOLOR_FORCE` environment variable. :envvar:"
-"`CLICOLOR_FORCE`, if activated, takes precedence over :envvar:`!CLICOLOR`."
+"See also the :envvar:`NO_COLOR` and :envvar:`CLICOLOR_FORCE` environment "
+"variables.  If either of them is activated, it takes precedence over :envvar:"
+"`!CLICOLOR`."
 msgstr ""
 
 #: ../../../envvar/CLICOLOR.rst:16

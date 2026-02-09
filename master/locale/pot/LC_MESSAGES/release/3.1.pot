@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -317,7 +317,7 @@ msgstr ""
 #: ../../../release/3.1.rst:193
 msgid ""
 "The :module:`CheckFortranSourceCompiles` module was added to provide a "
-"``CHECK_Fortran_SOURCE_COMPILES`` macro."
+"``check_fortran_source_compiles()`` command."
 msgstr ""
 
 #: ../../../release/3.1.rst:196
@@ -393,7 +393,7 @@ msgstr ""
 
 #: ../../../release/3.1.rst:238
 msgid ""
-"The :module:`FindHg` module gained a new ``Hg_WC_INFO`` macro to help run "
+"The :module:`FindHg` module gained a new ``Hg_WC_INFO`` command to help run "
 "``hg`` to extract information about a Mercurial work copy."
 msgstr ""
 
@@ -421,8 +421,8 @@ msgstr ""
 
 #: ../../../release/3.1.rst:252
 msgid ""
-"The :module:`GenerateExportHeader` module ``generate_export_header`` "
-"function learned to allow use with :ref:`Object Libraries`."
+"The :module:`GenerateExportHeader` module ``generate_export_header`` command "
+"learned to allow use with :ref:`Object Libraries`."
 msgstr ""
 
 #: ../../../release/3.1.rst:255

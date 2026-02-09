@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,388 +23,571 @@ msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:8
 msgid ""
-"Find Hierarchical Data Format (HDF5), a library for reading and writing self "
-"describing array data."
+"Finds Hierarchical Data Format (HDF5), a library for reading and writing "
+"self-describing array data:"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:12
+#: ../../../../Modules/FindHDF5.cmake:11
+msgid "find_package(HDF5 [<version>] [COMPONENTS <components>...] [...])"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:15
 msgid ""
-"This module invokes the ``HDF5`` wrapper compiler that should be installed "
-"alongside ``HDF5``.  Depending upon the ``HDF5`` Configuration, the wrapper "
-"compiler is called either ``h5cc`` or ``h5pcc``.  If this succeeds, the "
-"module will then call the compiler with the show argument to see what flags "
-"are used when compiling an ``HDF5`` client application."
+"If the HDF5 library is built using its CMake-based build system, it will as "
+"of HDF5 version 1.8.15 provide its own CMake Package Configuration file "
+"(``hdf5-config.cmake``) for use with the :command:`find_package` command in "
+"*config mode*.  By default, this module searches for this file and, if "
+"found, returns the results based on the found configuration."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:18
+#: ../../../../Modules/FindHDF5.cmake:21
 msgid ""
-"The module will optionally accept the ``COMPONENTS`` argument.  If no "
-"``COMPONENTS`` are specified, then the find module will default to finding "
-"only the ``HDF5`` C library.  If one or more ``COMPONENTS`` are specified, "
-"the module will attempt to find the language bindings for the specified "
-"components.  The valid components are ``C``, ``CXX``, ``Fortran``, ``HL``. "
-"``HL`` refers to the \"high-level\" HDF5 functions for C and Fortran. If the "
-"``COMPONENTS`` argument is not given, the module will attempt to find only "
-"the C bindings. For example, to use Fortran HDF5 and HDF5-HL functions, do: "
-"``find_package(HDF5 COMPONENTS Fortran HL)``."
+"If the upstream configuration file is not found, this module falls back to "
+"*module mode* and invokes the HDF5 wrapper compiler typically installed with "
+"the HDF5 library.  Depending on the configuration, this wrapper compiler is "
+"named either ``h5cc`` (serial) or ``h5pcc`` (parallel).  If found, the "
+"wrapper is queried with the ``-show`` argument to determine the compiler and "
+"linker flags required for building an HDF5 client application. Both serial "
+"and parallel versions of the HDF5 wrapper are considered.  The first "
+"directory containing either is used.  If both versions are found in the same "
+"directory, the serial version is preferred by default.  To change this "
+"behavior, set the variable ``HDF5_PREFER_PARALLEL`` to ``TRUE``."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:29
+#: ../../../../Modules/FindHDF5.cmake:32
 msgid ""
-"This module will read the variable ``HDF5_USE_STATIC_LIBRARIES`` to "
-"determine whether or not to prefer a static link to a dynamic link for "
-"``HDF5`` and all of it's dependencies. To use this feature, make sure that "
-"the ``HDF5_USE_STATIC_LIBRARIES`` variable is set before the call to "
-"find_package."
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:35
-msgid "Support for ``HDF5_USE_STATIC_LIBRARIES`` on Windows."
+"In addition to finding the include directories and libraries needed to "
+"compile an HDF5 application, this module also attempts to find additional "
+"tools provided by the HDF5 distribution, which can be useful for regression "
+"testing or development workflows."
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:38
-msgid ""
-"Both the serial and parallel ``HDF5`` wrappers are considered and the first "
-"directory to contain either one will be used.  In the event that both appear "
-"in the same directory the serial version is preferentially selected. This "
-"behavior can be reversed by setting the variable ``HDF5_PREFER_PARALLEL`` to "
-"``TRUE``."
+msgid "Components"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:44
+#: ../../../../Modules/FindHDF5.cmake:40
 msgid ""
-"In addition to finding the includes and libraries required to compile an "
-"``HDF5`` client application, this module also makes an effort to find tools "
-"that come with the ``HDF5`` distribution that may be useful for regression "
-"testing."
+"This module supports optional components, which can be specified with the :"
+"command:`find_package` command:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:43
+msgid "find_package(HDF5 [COMPONENTS <components>...])"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:47
+msgid "Supported components include:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:49
+msgid "``C``"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:50
-msgid "Result Variables"
+msgid "Finds the ``HDF5`` C library (C bindings)."
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:52
-msgid "This module will set the following variables in your project:"
+msgid "``CXX``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:54
-msgid "``HDF5_FOUND``"
+#: ../../../../Modules/FindHDF5.cmake:53
+msgid "Finds the ``HDF5`` C++ library (C++ bindings)."
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:55
-msgid "HDF5 was found on the system"
+msgid "``Fortran``"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:56
-msgid "``HDF5_VERSION``"
+msgid "Finds the ``HDF5`` Fortran library (Fortran bindings)."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:57
-msgid "HDF5 library version"
+#: ../../../../Modules/FindHDF5.cmake:58
+msgid "``HL``"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:59
-msgid "``HDF5_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:60
-msgid "Location of the HDF5 header files"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:61
-msgid "``HDF5_DEFINITIONS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:62
-msgid "Required compiler definitions for HDF5"
+msgid ""
+"This component can be used in combination with other components to find the "
+"high-level (HL) HDF5 library variants for C, CXX, and/or Fortran, which "
+"provide high-level functions."
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:63
-msgid "``HDF5_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:64
-msgid "Required libraries for all requested bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:65
-msgid "``HDF5_HL_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:66
 msgid ""
-"Required libraries for the HDF5 high level API for all bindings, if the "
-"``HL`` component is enabled"
+"If no components are specified, then this module will by default search for "
+"the ``C`` component."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:67
+msgid "Imported Targets"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:69
-msgid ""
-"Available components are: ``C`` ``CXX`` ``Fortran`` and ``HL``. For each "
-"enabled language binding, a corresponding ``HDF5_${LANG}_LIBRARIES`` "
-"variable, and potentially ``HDF5_${LANG}_DEFINITIONS``, will be defined. If "
-"the ``HL`` component is enabled, then an ``HDF5_${LANG}_HL_LIBRARIES`` will "
-"also be defined.  With all components enabled, the following variables will "
-"be defined:"
+msgid "This module provides the following :ref:`Imported Targets`:"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:75
-msgid "``HDF5_C_DEFINITIONS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:76
-msgid "Required compiler definitions for HDF5 C bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:77
-msgid "``HDF5_CXX_DEFINITIONS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:78
-msgid "Required compiler definitions for HDF5 C++ bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:79
-msgid "``HDF5_Fortran_DEFINITIONS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:80
-msgid "Required compiler definitions for HDF5 Fortran bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:81
-msgid "``HDF5_C_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:82
-msgid "Required include directories for HDF5 C bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:83
-msgid "``HDF5_CXX_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:84
-msgid "Required include directories for HDF5 C++ bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:85
-msgid "``HDF5_Fortran_INCLUDE_DIRS``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:86
-msgid "Required include directories for HDF5 Fortran bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:87
-msgid "``HDF5_C_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:88
-msgid "Required libraries for the HDF5 C bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:89
-msgid "``HDF5_CXX_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:90
-msgid "Required libraries for the HDF5 C++ bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:91
-msgid "``HDF5_Fortran_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:92
-msgid "Required libraries for the HDF5 Fortran bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:93
-msgid "``HDF5_C_HL_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:94
-msgid "Required libraries for the high level C bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:95
-msgid "``HDF5_CXX_HL_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:96
-msgid "Required libraries for the high level C++ bindings"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:97
-msgid "``HDF5_Fortran_HL_LIBRARIES``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:98
-msgid "Required libraries for the high level Fortran bindings."
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:100
-msgid "``HDF5_IS_PARALLEL``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:101
-msgid "HDF5 library has parallel IO support"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:102
-msgid "``HDF5_C_COMPILER_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:103
-msgid "path to the HDF5 C wrapper compiler"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:104
-msgid "``HDF5_CXX_COMPILER_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:105
-msgid "path to the HDF5 C++ wrapper compiler"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:106
-msgid "``HDF5_Fortran_COMPILER_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:107
-msgid "path to the HDF5 Fortran wrapper compiler"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:108
-msgid "``HDF5_C_COMPILER_EXECUTABLE_NO_INTERROGATE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:109
-msgid "path to the primary C compiler which is also the HDF5 wrapper"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:110
-msgid "``HDF5_CXX_COMPILER_EXECUTABLE_NO_INTERROGATE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:111
-msgid "path to the primary C++ compiler which is also the HDF5 wrapper"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:112
-msgid "``HDF5_Fortran_COMPILER_EXECUTABLE_NO_INTERROGATE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:113
-msgid "path to the primary Fortran compiler which is also the HDF5 wrapper"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:114
-msgid "``HDF5_DIFF_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:115
-msgid "path to the HDF5 dataset comparison tool"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:117
-msgid "With all components enabled, the following targets will be defined:"
-msgstr ""
-
-#: ../../../../Modules/FindHDF5.cmake:119
+#: ../../../../Modules/FindHDF5.cmake:71
 msgid "``HDF5::HDF5``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:120
-msgid "All detected ``HDF5_LIBRARIES``."
+#: ../../../../Modules/FindHDF5.cmake:74
+msgid ""
+"Target encapsulating the usage requirements for all found HDF5 binding "
+"libraries (``HDF5_LIBRARIES``), available if HDF5 and all required "
+"components are found."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:121
+#: ../../../../Modules/FindHDF5.cmake:78
 msgid "``hdf5::hdf5``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:122
-msgid "C library."
+#: ../../../../Modules/FindHDF5.cmake:81
+msgid ""
+"Target encapsulating the usage requirements for the HDF5 C library, "
+"available if HDF5 library and its ``C`` component are found."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:123
+#: ../../../../Modules/FindHDF5.cmake:84
 msgid "``hdf5::hdf5_cpp``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:124
-msgid "C++ library."
+#: ../../../../Modules/FindHDF5.cmake:87
+msgid ""
+"Target encapsulating the usage requirements for the HDF5 C and C++ "
+"libraries, available if HDF5 library, and its ``C`` and ``CXX`` components "
+"are found."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:125
+#: ../../../../Modules/FindHDF5.cmake:90
 msgid "``hdf5::hdf5_fortran``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:126
-msgid "Fortran library."
+#: ../../../../Modules/FindHDF5.cmake:93
+msgid ""
+"Target encapsulating the usage requirements for the HDF5 Fortran library, "
+"available if HDF5 library and its ``Fortran`` component are found."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:127
+#: ../../../../Modules/FindHDF5.cmake:96
 msgid "``hdf5::hdf5_hl``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:128
-msgid "High-level C library."
+#: ../../../../Modules/FindHDF5.cmake:99
+msgid ""
+"Target encapsulating the usage requirements for the HDF5 high-level C "
+"library, available if HDF5 library and its ``C``, and ``HL`` components are "
+"found."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:129
+#: ../../../../Modules/FindHDF5.cmake:102
 msgid "``hdf5::hdf5_hl_cpp``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:130
+#: ../../../../Modules/FindHDF5.cmake:105
 msgid "High-level C++ library."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:131
+#: ../../../../Modules/FindHDF5.cmake:107
+msgid ""
+"Target encapsulating the usage requirements for the HDF5 high-level C and "
+"high-level C++ libraries, available if HDF5 library and its ``C``, ``CXX``, "
+"and ``HL`` components are found."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:111
 msgid "``hdf5::hdf5_hl_fortran``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:132
-msgid "High-level Fortran library."
+#: ../../../../Modules/FindHDF5.cmake:114
+msgid ""
+"Target encapsulating the usage requirements for the HDF5 high-level Fortran "
+"library, available if HDF5 library and its ``Fortran``, and ``HL`` "
+"components are found."
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:133
+#: ../../../../Modules/FindHDF5.cmake:118
 msgid "``hdf5::h5diff``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:134
-msgid "``h5diff`` executable."
+#: ../../../../Modules/FindHDF5.cmake:121
+msgid ""
+"Imported executable target encapsulating the usage requirements for the "
+"``h5diff`` executable, available if ``h5diff`` is found."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:125
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:127
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:129
+msgid "``HDF5_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:130
+msgid "Boolean indicating whether (the requested version of) HDF5 was found."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:132
+msgid "``HDF5_VERSION``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:135
+msgid "The version of HDF5 library found."
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:137
-msgid "Hints"
+msgid "``HDF5_INCLUDE_DIRS``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:139
-msgid ""
-"The following variables can be set to guide the search for HDF5 libraries "
-"and includes:"
+#: ../../../../Modules/FindHDF5.cmake:138
+msgid "Include directories containing header files needed to use HDF5."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:140
+msgid "``HDF5_DEFINITIONS``"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:141
-msgid "``HDF5_PREFER_PARALLEL``"
+msgid "Required compiler definitions for using HDF5."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:143
+msgid "``HDF5_LIBRARIES``"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:144
-msgid "set ``true`` to prefer parallel HDF5 (by default, serial is preferred)"
+msgid "Libraries of all requested bindings needed to link against to use HDF5."
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:146
-msgid "``HDF5_FIND_DEBUG``"
+msgid "``HDF5_HL_LIBRARIES``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:149
-msgid "Set ``true`` to get extra debugging output."
+#: ../../../../Modules/FindHDF5.cmake:147
+msgid ""
+"Required libraries for the HDF5 high-level API for all bindings, if the "
+"``HL`` component is enabled."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:150
+msgid "``HDF5_IS_PARALLEL``"
 msgstr ""
 
 #: ../../../../Modules/FindHDF5.cmake:151
+msgid "Boolean indicating whether the HDF5 library has parallel IO support."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:153
+msgid ""
+"For each enabled language binding component, a corresponding "
+"``HDF5_<LANG>_LIBRARIES`` variable, and potentially "
+"``HDF5_<LANG>_DEFINITIONS``, will be defined.  If the ``HL`` component is "
+"enabled, then ``HDF5_<LANG>_HL_LIBRARIES`` variables will also be defined:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:158
+msgid "``HDF5_C_DEFINITIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:159
+msgid "Required compiler definitions for HDF5 C bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:161
+msgid "``HDF5_CXX_DEFINITIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:162
+msgid "Required compiler definitions for HDF5 C++ bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:164
+msgid "``HDF5_Fortran_DEFINITIONS``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:165
+msgid "Required compiler definitions for HDF5 Fortran bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:167
+msgid "``HDF5_C_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:168
+msgid "Required include directories for HDF5 C bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:170
+msgid "``HDF5_CXX_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:171
+msgid "Required include directories for HDF5 C++ bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:173
+msgid "``HDF5_Fortran_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:174
+msgid "Required include directories for HDF5 Fortran bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:176
+msgid "``HDF5_C_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:177
+msgid "Required libraries for the HDF5 C bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:179
+msgid "``HDF5_CXX_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:180
+msgid "Required libraries for the HDF5 C++ bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:182
+msgid "``HDF5_Fortran_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:183
+msgid "Required libraries for the HDF5 Fortran bindings."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:185
+msgid "``HDF5_C_HL_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:186
+msgid ""
+"Required libraries for the high-level C bindings, if the ``HL`` component is "
+"enabled."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:189
+msgid "``HDF5_CXX_HL_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:190
+msgid ""
+"Required libraries for the high-level C++ bindings, if the ``HL`` component "
+"is enabled."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:193
+msgid "``HDF5_Fortran_HL_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:194
+msgid ""
+"Required libraries for the high-level Fortran bindings, if the ``HL`` "
+"component is enabled."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:198
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:200
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:202
+msgid "``HDF5_C_COMPILER_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:203
+msgid "The path to the HDF5 C wrapper compiler."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:205
+msgid "``HDF5_CXX_COMPILER_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:206
+msgid "The path to the HDF5 C++ wrapper compiler."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:208
+msgid "``HDF5_Fortran_COMPILER_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:209
+msgid "The path to the HDF5 Fortran wrapper compiler."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:211
+msgid "``HDF5_C_COMPILER_EXECUTABLE_NO_INTERROGATE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:214
+msgid ""
+"The path to the primary C compiler which is also the HDF5 wrapper. This "
+"variable is used only in *module mode*."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:217
+msgid "``HDF5_CXX_COMPILER_EXECUTABLE_NO_INTERROGATE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:220
+msgid ""
+"The path to the primary C++ compiler which is also the HDF5 wrapper. This "
+"variable is used only in *module mode*."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:223
+msgid "``HDF5_Fortran_COMPILER_EXECUTABLE_NO_INTERROGATE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:226
+msgid ""
+"The path to the primary Fortran compiler which is also the HDF5 wrapper. "
+"This variable is used only in *module mode*."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:229
+msgid "``HDF5_DIFF_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:230
+msgid "The path to the HDF5 dataset comparison tool (``h5diff``)."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:233
+msgid "Hints"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:235
+msgid ""
+"The following variables can be set before calling the ``find_package(HDF5)`` "
+"to guide the search for HDF5 library:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:238
+msgid "``HDF5_PREFER_PARALLEL``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:241
+msgid ""
+"Set this to boolean true to prefer parallel HDF5 (by default, serial is "
+"preferred).  This variable is used only in *module mode*."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:244
+msgid "``HDF5_FIND_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:247
+msgid "Set this to boolean true to get extra debugging output by this module."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:249
 msgid "``HDF5_NO_FIND_PACKAGE_CONFIG_FILE``"
 msgstr ""
 
-#: ../../../../Modules/FindHDF5.cmake:154
-msgid "Set ``true`` to skip trying to find ``hdf5-config.cmake``."
+#: ../../../../Modules/FindHDF5.cmake:252
+msgid ""
+"Set this to boolean true to skip finding and using CMake package "
+"configuration file (``hdf5-config.cmake``)."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:255
+msgid "``HDF5_USE_STATIC_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:256
+msgid ""
+"Set this to boolean value to determine whether or not to prefer a static "
+"link to a dynamic link for ``HDF5`` and all of its dependencies."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:259
+msgid "Support for ``HDF5_USE_STATIC_LIBRARIES`` on Windows."
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:263
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:266
+msgid "Examples: Finding HDF5"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:268
+msgid "Finding HDF5:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:270
+msgid "find_package(HDF5)"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:274
+msgid "Specifying a minimum required version of HDF5 to find:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:276
+msgid "find_package(HDF5 1.8.15)"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:280
+msgid ""
+"Finding HDF5 and making it required (if HDF5 is not found, processing stops "
+"with an error message):"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:283
+msgid "find_package(HDF5 1.8.15 REQUIRED)"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:287
+msgid "Searching for static HDF5 libraries:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:289
+msgid ""
+"set(HDF5_USE_STATIC_LIBRARIES TRUE)\n"
+"find_package(HDF5)"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:294
+msgid "Specifying components to find high-level C and C++ functions:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:296
+msgid "find_package(HDF5 COMPONENTS C CXX HL)"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:301
+msgid "Examples: Using HDF5"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:303
+msgid "Finding HDF5 and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:305
+msgid ""
+"find_package(HDF5)\n"
+"target_link_libraries(project_target PRIVATE HDF5::HDF5)"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:310
+msgid "Using Fortran HDF5 and HDF5-HL functions:"
+msgstr ""
+
+#: ../../../../Modules/FindHDF5.cmake:312
+msgid ""
+"find_package(HDF5 COMPONENTS Fortran HL)\n"
+"target_link_libraries(project_target PRIVATE HDF5::HDF5)"
 msgstr ""

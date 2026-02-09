@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"POT-Creation-Date: 2026-02-09 09:05+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,103 +24,131 @@ msgstr ""
 #: ../../../../Modules/FindHg.cmake:8
 msgid ""
 "Finds the Mercurial command-line client executable (``hg``) and provides a "
-"command for extracting information from a Mercurial working copy."
+"command for extracting information from a Mercurial working copy:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:12
-msgid "Result Variables"
-msgstr ""
-
-#: ../../../../Modules/FindHg.cmake:14
-msgid "This module sets the following variables:"
+#: ../../../../Modules/FindHg.cmake:11
+msgid "find_package(Hg [<version>] [...])"
 msgstr ""
 
 #: ../../../../Modules/FindHg.cmake:16
-msgid "``Hg_FOUND``"
+msgid "Result Variables"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:17
-msgid ""
-"Boolean indicating whether the Mercurial client was found.  For backward "
-"compatibility, the ``HG_FOUND`` variable is also set to the same value."
+#: ../../../../Modules/FindHg.cmake:18
+msgid "This module defines the following variables:"
 msgstr ""
 
 #: ../../../../Modules/FindHg.cmake:20
-msgid "``HG_VERSION_STRING``"
+msgid "``Hg_FOUND``"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:21
-msgid "The version of Mercurial found."
-msgstr ""
-
-#: ../../../../Modules/FindHg.cmake:24
-msgid "Cache Variables"
+#: ../../../../Modules/FindHg.cmake:23 ../../../../Modules/FindHg.cmake:73
+msgid ""
+"Boolean indicating whether the (requested version of) Mercurial client was "
+"found."
 msgstr ""
 
 #: ../../../../Modules/FindHg.cmake:26
-msgid "The following cache variables may also be set:"
+msgid "``Hg_VERSION``"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:28
-msgid "``HG_EXECUTABLE``"
-msgstr ""
-
-#: ../../../../Modules/FindHg.cmake:29
-msgid "Absolute path to the Mercurial command-line client (``hg``)."
+#: ../../../../Modules/FindHg.cmake:29 ../../../../Modules/FindHg.cmake:80
+msgid "The version of Mercurial found."
 msgstr ""
 
 #: ../../../../Modules/FindHg.cmake:32
-msgid "Commands"
+msgid "Cache Variables"
 msgstr ""
 
 #: ../../../../Modules/FindHg.cmake:34
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:36
+msgid "``HG_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:37
+msgid "Absolute path to the Mercurial command-line client (``hg``)."
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:40
+msgid "Commands"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:42
 msgid ""
-"This module defines the following command when Mercurial client (``hg``) is "
+"This module provides the following command when Mercurial client (``hg``) is "
 "found:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:41
+#: ../../../../Modules/FindHg.cmake:49
 msgid "Extracts information of a Mercurial working copy:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:43
+#: ../../../../Modules/FindHg.cmake:51
 msgid "Hg_WC_INFO(<dir> <var-prefix>)"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:47
+#: ../../../../Modules/FindHg.cmake:55
 msgid ""
-"This macro defines the following variables if running Mercurial client on "
+"This command defines the following variables if running Mercurial client on "
 "working copy located at a given location ``<dir>`` succeeds; otherwise a "
 "``SEND_ERROR`` message is generated:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:51
+#: ../../../../Modules/FindHg.cmake:59
 msgid "``<var-prefix>_WC_CHANGESET``"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:52
+#: ../../../../Modules/FindHg.cmake:60
 msgid "Current changeset."
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:53
+#: ../../../../Modules/FindHg.cmake:61
 msgid "``<var-prefix>_WC_REVISION``"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:54
+#: ../../../../Modules/FindHg.cmake:62
 msgid "Current revision."
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:57
+#: ../../../../Modules/FindHg.cmake:65
+msgid "Deprecated Variables"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:67
+msgid "The following variables are provided for backward compatibility:"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:69
+msgid "``HG_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:70
+msgid "Use ``Hg_FOUND``, which has the same value."
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:76
+msgid "``HG_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:77
+msgid "Use ``Hg_VERSION``, which has the same value."
+msgstr ""
+
+#: ../../../../Modules/FindHg.cmake:83
 msgid "Examples"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:59
+#: ../../../../Modules/FindHg.cmake:85
 msgid ""
 "Finding the Mercurial client and retrieving information about the current "
 "project's working copy:"
 msgstr ""
 
-#: ../../../../Modules/FindHg.cmake:62
+#: ../../../../Modules/FindHg.cmake:88
 msgid ""
 "find_package(Hg)\n"
 "if(Hg_FOUND)\n"
