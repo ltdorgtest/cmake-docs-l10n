@@ -35,12 +35,12 @@ msgstr "發行備註"
 
 #: ../../../index.rst:60
 msgid "Index and Search"
-msgstr ""
+msgstr "索引與搜尋"
 
 #: ../../../index.rst:62
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 #: ../../../index.rst:63
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"
