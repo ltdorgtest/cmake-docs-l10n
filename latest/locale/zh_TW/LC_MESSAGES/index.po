@@ -46,12 +46,16 @@ msgid ""
 "the steps needed to run the :manual:`cmake(1)` or :manual:`cmake-gui(1)` "
 "executable and how to choose a generator, and how to complete the build."
 msgstr ""
+"第一次接觸 CMake 的人可能有不同的初始目標。要學習如何建構從網際網路下載的原始"
+"碼套件，請從 :guide:`使用者互動指南` 開始。這將詳細說明執行 :manual:"
+"`cmake(1)` 或 :manual:`cmake-gui(1)` 可執行檔所需的步驟，以及如何選擇產生器和"
+"完成建構的方法。"
 
 #: ../../../index.rst:21
 msgid ""
 "The :guide:`Using Dependencies Guide` is aimed at developers wishing to get "
 "started using a third-party library."
-msgstr ""
+msgstr ":guide:`使用依賴性指南` 專為希望開始使用第三方程式庫的開發人員而設。"
 
 #: ../../../index.rst:24
 msgid ""
@@ -63,6 +67,10 @@ msgid ""
 "packages which can easily be consumed by third-party CMake-based "
 "buildsystems."
 msgstr ""
+"對於使用 CMake 開始專案的開發人員，:guide:`CMake 教學課程` 是一個合適的起"
+"點。:manual:`cmake-buildsystem(7)` 手冊則針對希望擴展維護建置系統知識並熟悉可"
+"在 CMake 中表示之建置目標的開發人員。:manual:`cmake-packages(7)` 手冊解釋了如"
+"何建立可輕易被第三方基於 CMake 的建置系統所使用的套件。"
 
 #: ../../../index.rst:33
 msgid "Command-Line Tools"
@@ -86,12 +94,12 @@ msgstr "發行備註"
 
 #: ../../../index.rst:107
 msgid "Index and Search"
-msgstr ""
+msgstr "索引與搜尋"
 
 #: ../../../index.rst:109
 msgid ":ref:`genindex`"
-msgstr ""
+msgstr ":ref:`genindex`"
 
 #: ../../../index.rst:110
 msgid ":ref:`search`"
-msgstr ""
+msgstr ":ref:`search`"
