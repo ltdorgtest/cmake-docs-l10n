@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2025 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-17 10:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../Modules/TestForANSIForScope.cmake:6
+msgid "TestForANSIForScope"
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:8
+msgid ""
+"This module checks whether the ``CXX`` compiler restricts the scope of "
+"variables declared in a for-init-statement to the loop body.  In early C++ "
+"(pre-C++98), variables declared in ``for(<init-statement> ...)`` could "
+"remain accessible outside the loop after its body (``for() { <body> }``)."
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:13
+msgid "This module defines the following cache variable:"
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:15
+msgid "``CMAKE_NO_ANSI_FOR_SCOPE``"
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:16
+msgid ""
+"A cache variable containing the result of the check.  It will be set to "
+"value ``0`` if the for-init-statement has restricted scope (``C++ 98`` and "
+"newer), and to value ``1`` if not (``ANSI C++``)."
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:22
+msgid ""
+"As of the ``C++ 98`` standard, variables declared in a for-init-statement "
+"are restricted to the loop body, making this behavior obsolete."
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:26
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:28
+msgid ""
+"Including this module will check the ``for()`` loop scope behavior and "
+"define the ``CMAKE_NO_ANSI_FOR_SCOPE`` cache variable:"
+msgstr ""
+
+#: ../../../../Modules/TestForANSIForScope.cmake:31
+msgid "include(TestForANSIForScope)"
+msgstr ""

@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2025 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../Modules/ProcessorCount.cmake:6
+msgid "ProcessorCount"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:8
+msgid ""
+"This module provides the following function to determine the number of "
+"processors/cores:"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:13
+msgid "ProcessorCount(<variable>)"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:17
+msgid ""
+"Sets a local variable named ``<variable>`` to the number of logical CPU "
+"cores available on the machine, if the information can be determined.  If "
+"successful, the variable is guaranteed to be set to a positive integer "
+"(>=1). If the processor count cannot be determined, it is set to 0."
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:22
+msgid ""
+"Currently, this functionality is implemented for AIX, Cygwin, FreeBSD, "
+"Haiku, HPUX, Linux, macOS, QNX, Sun and Windows."
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:25
+msgid ""
+"This function provides an approximation of the number of compute cores "
+"available on the current machine, making it useful for parallel building and "
+"testing.  It is meant to help utilize as much of the machine as seems "
+"reasonable, though users should consider other workloads running on the "
+"machine before using its full capacity for parallel tasks."
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:31
+msgid ""
+"On Linux, returns the container CPU count instead of the host CPU count."
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:36
+msgid ""
+"This module relies on system-dependent commands to determine the number of "
+"processors, which may not always provide accurate information in certain "
+"environments.  A more generally accurate logical CPU count can be also "
+"obtained with the :command:`cmake_host_system_information`:"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:41
+msgid "cmake_host_system_information(RESULT n QUERY NUMBER_OF_LOGICAL_CORES)"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:46
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:48
+msgid ""
+"Using ``ProcessorCount`` module in a :option:`ctest -S` dashboard script:"
+msgstr ""
+
+#: ../../../../Modules/ProcessorCount.cmake:50
+msgid ""
+"include(ProcessorCount)\n"
+"ProcessorCount(n)\n"
+"if(NOT n EQUAL 0)\n"
+"  set(CTEST_BUILD_FLAGS -j${n})\n"
+"  set(ctest_test_args ${ctest_test_args} PARALLEL_LEVEL ${n})\n"
+"endif()"
+msgstr ""
