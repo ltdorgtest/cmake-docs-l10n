@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+<html lang="zh-TW" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>ccmake(1) &mdash; CMake 3.25.3 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a3862c66" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css?v=f3f52a85" />
+    
+    <script src="../_static/documentation_options.js?v=4d4d551f"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/translations.js?v=cbf116e0"></script>
+    
+    <link rel="canonical" href="https://ltdorgtest.github.io/cmake-docs-l10n/manual/ccmake.1.html" />
+    <link rel="icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜尋" href="../search.html" />
+    <link rel="next" title="cmake-buildsystem(7)" href="cmake-buildsystem.7.html" />
+    <link rel="prev" title="cmake-gui(1)" href="cmake-gui.1.html" />
+    <script type="text/javascript" src="../ltd-current.js"></script>
+    <script type="text/javascript" src="../../../ltd-config.js"></script>
+    <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+ 
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             accesskey="I">索引</a></li>
+        <li class="right" >
+          <a href="cmake-buildsystem.7.html" title="cmake-buildsystem(7)"
+             accesskey="N">下一頁</a> |</li>
+        <li class="right" >
+          <a href="cmake-gui.1.html" title="cmake-gui(1)"
+             accesskey="P">上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+        <li class="nav-item nav-item-this"><a href="">ccmake(1)</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <span class="target" id="manual:ccmake(1)"></span><section id="ccmake-1">
+<h1>ccmake(1)<a class="headerlink" href="#ccmake-1" title="連結到這個標頭">¶</a></h1>
+<section id="synopsis">
+<h2>簡介<a class="headerlink" href="#synopsis" title="連結到這個標頭">¶</a></h2>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>ccmake [&lt;options&gt;] &lt;path-to-source | path-to-existing-build&gt;
+</pre></div>
+</div>
+</section>
+<section id="description">
+<h2>描述<a class="headerlink" href="#description" title="連結到這個標頭">¶</a></h2>
+<p>The <strong>ccmake</strong> executable is the CMake curses interface.  Project
+configuration settings may be specified interactively through this
+GUI.  Brief instructions are provided at the bottom of the terminal
+when the program is running.</p>
+<p>CMake 是一個跨平台的建置系統產生器。專案以平台無關的 CMake 清單檔案來指定其建置程序，這些清單檔案包含在原始碼樹的每個目錄中，名稱為 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code>。使用者使用 CMake 在其平台上為原生工具產生建置系統，從而建置專案。</p>
+</section>
+<section id="options">
+<h2>選項<a class="headerlink" href="#options" title="連結到這個標頭">¶</a></h2>
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-S">
+<span class="sig-name descname"><span class="pre">-S</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;path-to-source&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-S" title="連結到這個定義">¶</a></dt>
+<dd><p>要建置的 CMake 專案根目錄路徑。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-B">
+<span class="sig-name descname"><span class="pre">-B</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;path-to-build&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-B" title="連結到這個定義">¶</a></dt>
+<dd><p>CMake 將用作建置目錄根目錄的目錄路徑。</p>
+<p>如果該目錄尚不存在，CMake 會建立它。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-C">
+<span class="sig-name descname"><span class="pre">-C</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;initial-cache&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-C" title="連結到這個定義">¶</a></dt>
+<dd><p>預載腳本以填充快取。</p>
+<p>當 CMake 第一次在空的建置樹上運行時，它會建立一個 <code class="docutils literal notranslate"><span class="pre">CMakeCache.txt</span></code> 檔案，並以專案的可自訂設定來填充它。此選項可用於指定一個檔案，以便在首次遍歷專案的 CMake 清單檔案之前加載快取項目。加載的項目優先於專案的預設值。給定的檔案應為包含 <span class="target" id="index-0-command:set"></span><a class="reference internal" href="../command/set.html#command:set" title="set"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">set()</span></code></a> 命令且使用 <code class="docutils literal notranslate"><span class="pre">CACHE</span></code> 選項的 CMake 腳本，而非快取格式的檔案。</p>
+<p>腳本內對 <span class="target" id="index-0-variable:CMAKE_SOURCE_DIR"></span><a class="reference internal" href="../variable/CMAKE_SOURCE_DIR.html#variable:CMAKE_SOURCE_DIR" title="CMAKE_SOURCE_DIR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_SOURCE_DIR</span></code></a> 和 <span class="target" id="index-0-variable:CMAKE_BINARY_DIR"></span><a class="reference internal" href="../variable/CMAKE_BINARY_DIR.html#variable:CMAKE_BINARY_DIR" title="CMAKE_BINARY_DIR"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_BINARY_DIR</span></code></a> 的引用會評估為頂層原始碼和建置樹。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-D">
+<span id="cmdoption-ccmake-D"></span><span class="sig-name descname"><span class="pre">-D</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;var&gt;:&lt;type&gt;=&lt;value&gt;</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-D</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;var&gt;=&lt;value&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-D" title="連結到這個定義">¶</a></dt>
+<dd><p>建立或更新 CMake <code class="docutils literal notranslate"><span class="pre">CACHE</span></code> 項目。</p>
+<p>當 CMake 第一次在空的建置樹上運行時，它會建立一個 <code class="docutils literal notranslate"><span class="pre">CMakeCache.txt</span></code> 檔案，並以專案的可自訂設定來填充它。此選項可用於指定一個優先於專案預設值的設定。此選項可重複使用，以設定任意數量的 <code class="docutils literal notranslate"><span class="pre">CACHE</span></code> 項目。</p>
+<p>如果給出了 <code class="docutils literal notranslate"><span class="pre">:&lt;type&gt;</span></code> 部分，它必須是 <span class="target" id="index-1-command:set"></span><a class="reference internal" href="../command/set.html#command:set" title="set"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">set()</span></code></a> 命令文檔中爲其 <code class="docutils literal notranslate"><span class="pre">CACHE</span></code> 簽名所指定的類型之一。如果省略了 <code class="docutils literal notranslate"><span class="pre">:&lt;type&gt;</span></code> 部分，則如果該條目尚未具有類型，將創建不帶類型的條目。如果專案中的命令將類型設置爲 <code class="docutils literal notranslate"><span class="pre">PATH</span></code> 或 <code class="docutils literal notranslate"><span class="pre">FILEPATH</span></code>，則 <code class="docutils literal notranslate"><span class="pre">&lt;value&gt;</span></code> 將被轉換爲絕對路徑。</p>
+<p>此選項也可以作為單個參數給出：<code class="docutils literal notranslate"><span class="pre">-D&lt;var&gt;:&lt;type&gt;=&lt;value&gt;</span></code> 或 <code class="docutils literal notranslate"><span class="pre">-D&lt;var&gt;=&lt;value&gt;</span></code>。</p>
+<p>需要注意的是，<code class="docutils literal notranslate"><span class="pre">-C</span></code> 和 <code class="docutils literal notranslate"><span class="pre">-D</span></code> 參數的順序很重要。它們將按照列出的順序執行，最後一個參數優先於之前的參數。例如，如果您指定 <code class="docutils literal notranslate"><span class="pre">-DCMAKE_BUILD_TYPE=Debug</span></code>，然後跟隨一個帶有以下內容的 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 參數：</p>
+<div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">set(</span><span class="no">CMAKE_BUILD_TYPE</span><span class="w"> </span><span class="s">&quot;Release&quot;</span><span class="w"> </span><span class="no">CACHE</span><span class="w"> </span><span class="no">STRING</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="no">FORCE</span><span class="nf">)</span>
+</pre></div>
+</div>
+<p>那麼 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 參數將優先，並且 <code class="docutils literal notranslate"><span class="pre">CMAKE_BUILD_TYPE</span></code> 將被設置為 <code class="docutils literal notranslate"><span class="pre">Release</span></code>。然而，如果 <code class="docutils literal notranslate"><span class="pre">-D</span></code> 參數在 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 參數之後出現，它將被設置為 <code class="docutils literal notranslate"><span class="pre">Debug</span></code>。</p>
+<p>如果 <code class="docutils literal notranslate"><span class="pre">-C</span></code> 檔案中的 <code class="docutils literal notranslate"><span class="pre">set(...</span> <span class="pre">CACHE</span> <span class="pre">...)</span></code> 呼叫未使用 <code class="docutils literal notranslate"><span class="pre">FORCE</span></code>，而 <code class="docutils literal notranslate"><span class="pre">-D</span></code> 參數設定了同一變量，無論順序如何，由於非 <code class="docutils literal notranslate"><span class="pre">FORCE</span></code> <code class="docutils literal notranslate"><span class="pre">set(...</span> <span class="pre">CACHE</span> <span class="pre">...)</span></code> 呼叫的性質，<code class="docutils literal notranslate"><span class="pre">-D</span></code> 參數將優先。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-U">
+<span class="sig-name descname"><span class="pre">-U</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;globbing_expr&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-U" title="連結到這個定義">¶</a></dt>
+<dd><p>從 CMake <code class="docutils literal notranslate"><span class="pre">CACHE</span></code> 中移除匹配的條目。</p>
+<p>此選項可用於從 <code class="docutils literal notranslate"><span class="pre">CMakeCache.txt</span></code> 檔案中移除一個或多個變量，支援使用 <code class="docutils literal notranslate"><span class="pre">*</span></code> 和 <code class="docutils literal notranslate"><span class="pre">?</span></code> 的 globbing 表達式。此選項可重複使用，以移除任意數量的 <code class="docutils literal notranslate"><span class="pre">CACHE</span></code> 項目。</p>
+<p>小心使用，您可能會使您的 <code class="docutils literal notranslate"><span class="pre">CMakeCache.txt</span></code> 無法正常運作。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-G">
+<span class="sig-name descname"><span class="pre">-G</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;generator-name&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-G" title="連結到這個定義">¶</a></dt>
+<dd><p>指定建置系統產生器。</p>
+<p>在某些平台上，CMake 可能支援多種原生建置系統。產生器負責生成特定的建置系統。可能的產生器名稱在 <span class="target" id="index-0-manual:cmake-generators(7)"></span><a class="reference internal" href="cmake-generators.7.html#manual:cmake-generators(7)" title="cmake-generators(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-generators(7)</span></code></a> 手冊中指定。</p>
+<p>如果未指定，CMake 會檢查 <span class="target" id="index-0-envvar:CMAKE_GENERATOR"></span><a class="reference internal" href="../envvar/CMAKE_GENERATOR.html#envvar:CMAKE_GENERATOR" title="CMAKE_GENERATOR"><code class="xref cmake cmake-envvar docutils literal notranslate"><span class="pre">CMAKE_GENERATOR</span></code></a> 環境變量，否則會回退到內建預設選擇。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-T">
+<span class="sig-name descname"><span class="pre">-T</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;toolset-spec&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-T" title="連結到這個定義">¶</a></dt>
+<dd><p>產生器的工具集規格（若支援）。</p>
+<p>某些 CMake 產生器支援工具集規格，用於告知原生建置系統如何選擇編譯器。詳情請參閱 <span class="target" id="index-0-variable:CMAKE_GENERATOR_TOOLSET"></span><a class="reference internal" href="../variable/CMAKE_GENERATOR_TOOLSET.html#variable:CMAKE_GENERATOR_TOOLSET" title="CMAKE_GENERATOR_TOOLSET"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_GENERATOR_TOOLSET</span></code></a> 變量。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-A">
+<span class="sig-name descname"><span class="pre">-A</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;platform-name&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-A" title="連結到這個定義">¶</a></dt>
+<dd><p>若產生器支援，指定平台名稱。</p>
+<p>某些 CMake 產生器支援向原生建置系統提供平台名稱，以選擇編譯器或 SDK。詳情請參閱 <span class="target" id="index-0-variable:CMAKE_GENERATOR_PLATFORM"></span><a class="reference internal" href="../variable/CMAKE_GENERATOR_PLATFORM.html#variable:CMAKE_GENERATOR_PLATFORM" title="CMAKE_GENERATOR_PLATFORM"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_GENERATOR_PLATFORM</span></code></a> 變量。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-toolchain">
+<span class="sig-name descname"><span class="pre">--toolchain</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;path-to-file&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-toolchain" title="連結到這個定義">¶</a></dt>
+<dd><p>Specify the cross compiling toolchain file, equivalent to setting
+<span class="target" id="index-0-variable:CMAKE_TOOLCHAIN_FILE"></span><a class="reference internal" href="../variable/CMAKE_TOOLCHAIN_FILE.html#variable:CMAKE_TOOLCHAIN_FILE" title="CMAKE_TOOLCHAIN_FILE"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_TOOLCHAIN_FILE</span></code></a> variable.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-install-prefix">
+<span class="sig-name descname"><span class="pre">--install-prefix</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;directory&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-install-prefix" title="連結到這個定義">¶</a></dt>
+<dd><p>指定安裝目錄，由 <span class="target" id="index-0-variable:CMAKE_INSTALL_PREFIX"></span><a class="reference internal" href="../variable/CMAKE_INSTALL_PREFIX.html#variable:CMAKE_INSTALL_PREFIX" title="CMAKE_INSTALL_PREFIX"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_INSTALL_PREFIX</span></code></a> 變量使用。必須是絕對路徑。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-Wno-dev">
+<span class="sig-name descname"><span class="pre">-Wno-dev</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-ccmake-Wno-dev" title="連結到這個定義">¶</a></dt>
+<dd><p>抑制開發人員警告。</p>
+<p>抑制針對 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 檔案作者的警告。預設也會關閉棄用警告。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-Wdev">
+<span class="sig-name descname"><span class="pre">-Wdev</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-ccmake-Wdev" title="連結到這個定義">¶</a></dt>
+<dd><p>啟用開發人員警告。</p>
+<p>啟用針對 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 檔案作者的警告。預設也會開啟棄用警告。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-Wdeprecated">
+<span class="sig-name descname"><span class="pre">-Wdeprecated</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-ccmake-Wdeprecated" title="連結到這個定義">¶</a></dt>
+<dd><p>啟用已棄用功能警告。</p>
+<p>啟用針對已棄用功能使用的警告，這些警告是針對 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 檔案作者的。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-Wno-deprecated">
+<span class="sig-name descname"><span class="pre">-Wno-deprecated</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-ccmake-Wno-deprecated" title="連結到這個定義">¶</a></dt>
+<dd><p>抑制已棄用功能警告。</p>
+<p>抑制針對 <code class="docutils literal notranslate"><span class="pre">CMakeLists.txt</span></code> 檔案作者的已棄用功能使用警告。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-Werror">
+<span class="sig-name descname"><span class="pre">-Werror</span></span><span class="sig-prename descclassname"><span class="pre">=&lt;what&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-Werror" title="連結到這個定義">¶</a></dt>
+<dd><p>將 CMake 警告視為錯誤。<code class="docutils literal notranslate"><span class="pre">&lt;what&gt;</span></code> 必須是下列其中之一：</p>
+<dl>
+<dt><code class="docutils literal notranslate"><span class="pre">dev</span></code></dt><dd><p>將開發人員警告視為錯誤。</p>
+<p>將針對 <cite>CMakeLists.txt</cite> 檔案作者的警告視為錯誤。預設情況下，這也會將已棄用的警告視為錯誤。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">deprecated</span></code></dt><dd><p>將已棄用的巨集和函數警告視為錯誤。</p>
+<p>將針對 <cite>CMakeLists.txt</cite> 檔案作者的已棄用巨集和函數使用警告視為錯誤。</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-Wno-error">
+<span class="sig-name descname"><span class="pre">-Wno-error</span></span><span class="sig-prename descclassname"><span class="pre">=&lt;what&gt;</span></span><a class="headerlink" href="#cmdoption-ccmake-Wno-error" title="連結到這個定義">¶</a></dt>
+<dd><p>不要將 CMake 警告視為錯誤。<code class="docutils literal notranslate"><span class="pre">&lt;what&gt;</span></code> 必須是以下其中之一：</p>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">dev</span></code></dt><dd><p>不要將針對 <cite>CMakeLists.txt</cite> 檔案作者的警告視為錯誤。預設情況下，這也會關閉已棄用的警告視為錯誤。</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">deprecated</span></code></dt><dd><p>不要將針對 <cite>CMakeLists.txt</cite> 檔案作者的已棄用巨集和函數使用警告視為錯誤。</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-version">
+<span id="cmdoption-ccmake-version"></span><span id="cmdoption-ccmake-V"></span><span class="sig-name descname"><span class="pre">-version</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--version</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">/V</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-version" title="連結到這個定義">¶</a></dt>
+<dd><p>顯示程式名稱/版本橫幅並退出。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-h">
+<span id="cmdoption-ccmake-H"></span><span id="cmdoption-ccmake-help"></span><span id="cmdoption-ccmake-help"></span><span id="cmdoption-ccmake-usage"></span><span id="cmdoption-ccmake-0"></span><span class="sig-name descname"><span class="pre">-h</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-H</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">--help</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-help</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">-usage</span></span><span class="sig-prename descclassname"></span><span class="sig-prename descclassname"><span class="pre">,</span> </span><span class="sig-name descname"><span class="pre">/?</span></span><span class="sig-prename descclassname"></span><a class="headerlink" href="#cmdoption-ccmake-h" title="連結到這個定義">¶</a></dt>
+<dd><p>列印使用資訊並退出。</p>
+<p>使用說明描述了基本的命令列介面及其選項。</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-full">
+<span class="sig-name descname"><span class="pre">--help-full</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-full" title="連結到這個定義">¶</a></dt>
+<dd><p>列印所有說明手冊並退出。</p>
+<p>所有手冊均以人類可讀的文字格式列印。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-manual">
+<span class="sig-name descname"><span class="pre">--help-manual</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;man&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-manual" title="連結到這個定義">¶</a></dt>
+<dd><p>列印一本說明手冊並退出。</p>
+<p>指定的手冊以人類可讀的文字格式列印。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-manual-list">
+<span class="sig-name descname"><span class="pre">--help-manual-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-manual-list" title="連結到這個定義">¶</a></dt>
+<dd><p>列出可用的說明手冊並退出。</p>
+<p>該清單包含所有可以使用 <code class="docutils literal notranslate"><span class="pre">--help-manual</span></code> 選項加上手冊名稱來獲取說明的手冊。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-command">
+<span class="sig-name descname"><span class="pre">--help-command</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;cmd&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-command" title="連結到這個定義">¶</a></dt>
+<dd><p>列印一個命令的說明並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-0-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-commands(7)</span></code></a> 手冊中關於 <code class="docutils literal notranslate"><span class="pre">&lt;cmd&gt;</span></code> 的條目。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-command-list">
+<span class="sig-name descname"><span class="pre">--help-command-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-command-list" title="連結到這個定義">¶</a></dt>
+<dd><p>列出有說明的命令並退出。</p>
+<p>該清單包含所有可以使用 <code class="docutils literal notranslate"><span class="pre">--help-command</span></code> 選項加上命令名稱來獲取說明的命令。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-commands">
+<span class="sig-name descname"><span class="pre">--help-commands</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-commands" title="連結到這個定義">¶</a></dt>
+<dd><p>列印 cmake-commands 手冊並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-1-manual:cmake-commands(7)"></span><a class="reference internal" href="cmake-commands.7.html#manual:cmake-commands(7)" title="cmake-commands(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-commands(7)</span></code></a> 手冊。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-module">
+<span class="sig-name descname"><span class="pre">--help-module</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;mod&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-module" title="連結到這個定義">¶</a></dt>
+<dd><p>列印一個模組的說明並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-0-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-modules(7)</span></code></a> 手冊中關於 <code class="docutils literal notranslate"><span class="pre">&lt;mod&gt;</span></code> 的條目。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-module-list">
+<span class="sig-name descname"><span class="pre">--help-module-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-module-list" title="連結到這個定義">¶</a></dt>
+<dd><p>列出有說明的模組並退出。</p>
+<p>該清單包含所有可以使用 <code class="docutils literal notranslate"><span class="pre">--help-module</span></code> 選項加上模組名稱來獲取說明的模組。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-modules">
+<span class="sig-name descname"><span class="pre">--help-modules</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-modules" title="連結到這個定義">¶</a></dt>
+<dd><p>列印 cmake-modules 手冊並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-1-manual:cmake-modules(7)"></span><a class="reference internal" href="cmake-modules.7.html#manual:cmake-modules(7)" title="cmake-modules(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-modules(7)</span></code></a> 手冊。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-policy">
+<span class="sig-name descname"><span class="pre">--help-policy</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;cmp&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-policy" title="連結到這個定義">¶</a></dt>
+<dd><p>列印一個政策的說明並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-0-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-policies(7)</span></code></a> 手冊中關於 <code class="docutils literal notranslate"><span class="pre">&lt;cmp&gt;</span></code> 的條目。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-policy-list">
+<span class="sig-name descname"><span class="pre">--help-policy-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-policy-list" title="連結到這個定義">¶</a></dt>
+<dd><p>列出有說明的政策並退出。</p>
+<p>該清單包含所有可以使用 <code class="docutils literal notranslate"><span class="pre">--help-policy</span></code> 選項加上政策名稱來獲取說明的政策。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-policies">
+<span class="sig-name descname"><span class="pre">--help-policies</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-policies" title="連結到這個定義">¶</a></dt>
+<dd><p>列印 cmake-policies 手冊並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-1-manual:cmake-policies(7)"></span><a class="reference internal" href="cmake-policies.7.html#manual:cmake-policies(7)" title="cmake-policies(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-policies(7)</span></code></a> 手冊。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-property">
+<span class="sig-name descname"><span class="pre">--help-property</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;prop&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-property" title="連結到這個定義">¶</a></dt>
+<dd><p>列印一個屬性的說明並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-0-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-properties(7)</span></code></a> 手冊中關於 <code class="docutils literal notranslate"><span class="pre">&lt;prop&gt;</span></code> 的條目。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-property-list">
+<span class="sig-name descname"><span class="pre">--help-property-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-property-list" title="連結到這個定義">¶</a></dt>
+<dd><p>列出有說明的屬性並退出。</p>
+<p>該清單包含所有可以使用 <code class="docutils literal notranslate"><span class="pre">--help-property</span></code> 選項加上屬性名稱來獲取說明的屬性。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-properties">
+<span class="sig-name descname"><span class="pre">--help-properties</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-properties" title="連結到這個定義">¶</a></dt>
+<dd><p>列印 cmake-properties 手冊並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-1-manual:cmake-properties(7)"></span><a class="reference internal" href="cmake-properties.7.html#manual:cmake-properties(7)" title="cmake-properties(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-properties(7)</span></code></a> 手冊。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-variable">
+<span class="sig-name descname"><span class="pre">--help-variable</span></span><span class="sig-prename descclassname"> <span class="pre">&lt;var&gt;</span> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-variable" title="連結到這個定義">¶</a></dt>
+<dd><p>列印一個變量的說明並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-0-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-variables(7)</span></code></a> 手冊中關於 <code class="docutils literal notranslate"><span class="pre">&lt;var&gt;</span></code> 的條目。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-variable-list">
+<span class="sig-name descname"><span class="pre">--help-variable-list</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-variable-list" title="連結到這個定義">¶</a></dt>
+<dd><p>列出有說明的變量並退出。</p>
+<p>該清單包含所有可以使用 <code class="docutils literal notranslate"><span class="pre">--help-variable</span></code> 選項加上變量名稱來獲取說明的變量。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+<dl class="std option">
+<dt class="sig sig-object std" id="cmdoption-ccmake-help-variables">
+<span class="sig-name descname"><span class="pre">--help-variables</span></span><span class="sig-prename descclassname"> <span class="pre">[&lt;file&gt;]</span></span><a class="headerlink" href="#cmdoption-ccmake-help-variables" title="連結到這個定義">¶</a></dt>
+<dd><p>列印 cmake-variables 手冊並退出。</p>
+<p>以人類可讀的文字格式列印 <span class="target" id="index-1-manual:cmake-variables(7)"></span><a class="reference internal" href="cmake-variables.7.html#manual:cmake-variables(7)" title="cmake-variables(7)"><code class="xref cmake cmake-manual docutils literal notranslate"><span class="pre">cmake-variables(7)</span></code></a> 手冊。The output is printed to a named <code class="docutils literal notranslate"><span class="pre">&lt;file&gt;</span></code> if given.</p>
+</dd></dl>
+
+</section>
+<section id="see-also">
+<h2>參見<a class="headerlink" href="#see-also" title="連結到這個標頭">¶</a></h2>
+<p>以下資源可供您使用 CMake 時獲得協助：</p>
+<dl>
+<dt>首頁</dt><dd><p><a class="reference external" href="https://cmake.org">https://cmake.org</a></p>
+<p>學習 CMake 的主要起點。</p>
+</dd>
+<dt>線上文件與社群資源</dt><dd><p><a class="reference external" href="https://cmake.org/documentation">https://cmake.org/documentation</a></p>
+<p>在此網頁上可以找到可用文件和社群資源的連結。</p>
+</dd>
+<dt>Discourse 論壇</dt><dd><p><a class="reference external" href="https://discourse.cmake.org">https://discourse.cmake.org</a></p>
+<p>Discourse 論壇舉辦有關 CMake 的討論和問題。</p>
+</dd>
+</dl>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">ccmake(1)</a><ul>
+<li><a class="reference internal" href="#synopsis">簡介</a></li>
+<li><a class="reference internal" href="#description">描述</a></li>
+<li><a class="reference internal" href="#options">選項</a></li>
+<li><a class="reference internal" href="#see-also">參見</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>上個主題</h4>
+    <p class="topless"><a href="cmake-gui.1.html"
+                          title="上一章">cmake-gui(1)</a></p>
+  </div>
+  <div>
+    <h4>下個主題</h4>
+    <p class="topless"><a href="cmake-buildsystem.7.html"
+                          title="下一章">cmake-buildsystem(7)</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>本頁</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/manual/ccmake.1.rst.txt"
+            rel="nofollow">顯示原始碼</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">快速搜尋</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="前往" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>瀏覽</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="總索引"
+             >索引</a></li>
+        <li class="right" >
+          <a href="cmake-buildsystem.7.html" title="cmake-buildsystem(7)"
+             >下一頁</a> |</li>
+        <li class="right" >
+          <a href="cmake-gui.1.html" title="cmake-gui(1)"
+             >上一頁</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+        <li class="nav-item nav-item-this"><a href="">ccmake(1)</a></li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; 版權所有 2000-2022 Kitware, Inc. and Contributors.
+      使用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3 建立。
+    </div>
+  </body>
+</html>
