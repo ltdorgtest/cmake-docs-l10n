@@ -1,0 +1,157 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2025 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../Modules/FindBZip2.cmake:6
+msgid "FindBZip2"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:8
+msgid "Finds the BZip2 data compression library (libbz2)."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:11
+msgid "Imported Targets"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:13
+msgid "This module provides the following :ref:`Imported Targets`:"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:15
+msgid "``BZip2::BZip2``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:18
+msgid ""
+"Target encapsulating the usage requirements of BZip2 library.  This target "
+"is available only when BZip2 is found."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:22
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:24
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:26
+msgid "``BZip2_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:27
+msgid ""
+"Boolean indicating whether the BZip2 library is found.  For backward "
+"compatibility, the ``BZIP2_FOUND`` variable is also set to the same value."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:30
+msgid "``BZIP2_INCLUDE_DIRS``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:33
+msgid "Include directories needed to use BZip2 library."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:35
+msgid "``BZIP2_LIBRARIES``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:36
+msgid "Libraries needed for linking to use BZip2."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:38
+msgid "``BZIP2_VERSION``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:41
+#: ../../../../Modules/FindBZip2.cmake:69
+msgid "The version of BZip2 found."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:44
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:46
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:48
+msgid "``BZIP2_INCLUDE_DIR``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:49
+msgid "The directory containing the BZip2 headers."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:51
+msgid "``BZIP2_LIBRARY_RELEASE``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:52
+msgid "The path to the BZip2 library for release configurations."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:54
+msgid "``BZIP2_LIBRARY_DEBUG``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:55
+msgid "The path to the BZip2 library for debug configurations."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:57
+msgid "``BZIP2_NEED_PREFIX``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:58
+msgid "Boolean indicating if the BZip2 functions are prefixed with ``BZ2_``."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:61
+msgid "Legacy Variables"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:63
+msgid "The following variables are provided for backward compatibility:"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:65
+msgid "``BZIP2_VERSION_STRING``"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:66
+msgid "Superseded by ``BZIP2_VERSION``."
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:72
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:74
+msgid "Finding BZip2 library and linking it to a project target:"
+msgstr ""
+
+#: ../../../../Modules/FindBZip2.cmake:76
+msgid ""
+"find_package(BZip2)\n"
+"target_link_libraries(project_target PRIVATE BZip2::BZip2)"
+msgstr ""
