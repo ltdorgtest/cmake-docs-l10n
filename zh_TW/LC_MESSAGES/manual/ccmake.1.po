@@ -1,0 +1,630 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2023 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake 3.28\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-04 17:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../manual/ccmake.1.rst:4
+msgid "ccmake(1)"
+msgstr "ccmake(1)"
+
+#: ../../../manual/ccmake.1.rst:7
+msgid "Synopsis"
+msgstr "簡介"
+
+#: ../../../manual/ccmake.1.rst:11
+msgid ""
+"ccmake [<options>] -B <path-to-build> [-S <path-to-source>]\n"
+"ccmake [<options>] <path-to-source | path-to-existing-build>"
+msgstr ""
+"ccmake [<選項>] -B <建置路徑> [-S <原始碼路徑>]\n"
+"ccmake [<選項>] <原始碼路徑 | 現有建置路徑>"
+
+#: ../../../manual/ccmake.1.rst:15
+msgid "Description"
+msgstr "描述"
+
+#: ../../../manual/ccmake.1.rst:17
+msgid ""
+"The :program:`ccmake` executable is the CMake curses interface.  Project "
+"configuration settings may be specified interactively through this GUI.  "
+"Brief instructions are provided at the bottom of the terminal when the "
+"program is running."
+msgstr ""
+":program:`ccmake` 可執行檔是 CMake 的 curses 介面。專案的配置設定可以透過此 "
+"GUI 互動式地指定。程式執行時，終端機底部會提供簡短說明。"
+
+#: ../../../manual/ccmake.1.rst:22
+msgid ""
+"CMake is a cross-platform build system generator.  Projects specify their "
+"build process with platform-independent CMake listfiles included in each "
+"directory of a source tree with the name ``CMakeLists.txt``. Users build a "
+"project by using CMake to generate a build system for a native tool on their "
+"platform."
+msgstr ""
+"CMake 是一個跨平台的建置系統產生器。專案以平台無關的 CMake 清單檔案來指定其建"
+"置程序，這些清單檔案包含在原始碼樹的每個目錄中，名稱為 ``CMakeLists.txt``。使"
+"用者使用 CMake 在其平台上為原生工具產生建置系統，從而建置專案。"
+
+#: ../../../manual/ccmake.1.rst:29
+msgid "Options"
+msgstr "選項"
+
+#: ../../../manual/OPTIONS_BUILD.txt:3
+msgid "Path to root directory of the CMake project to build."
+msgstr "要建置的 CMake 專案根目錄路徑。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:7
+msgid "Path to directory which CMake will use as the root of build directory."
+msgstr "CMake 將用作建置目錄根目錄的目錄路徑。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:9
+msgid "If the directory doesn't already exist CMake will make it."
+msgstr "如果該目錄尚不存在，CMake 會建立它。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:13
+msgid "Pre-load a script to populate the cache."
+msgstr "預載腳本以填充快取。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:15
+msgid ""
+"When CMake is first run in an empty build tree, it creates a ``CMakeCache."
+"txt`` file and populates it with customizable settings for the project.  "
+"This option may be used to specify a file from which to load cache entries "
+"before the first pass through the project's CMake listfiles.  The loaded "
+"entries take priority over the project's default values.  The given file "
+"should be a CMake script containing :command:`set` commands that use the "
+"``CACHE`` option, not a cache-format file."
+msgstr ""
+"當 CMake 第一次在空的建置樹上運行時，它會建立一個 ``CMakeCache.txt`` 檔案，並"
+"以專案的可自訂設定來填充它。此選項可用於指定一個檔案，以便在首次遍歷專案的 "
+"CMake 清單檔案之前加載快取項目。加載的項目優先於專案的預設值。給定的檔案應為"
+"包含 :command:`set` 命令且使用 ``CACHE`` 選項的 CMake 腳本，而非快取格式的檔"
+"案。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:24
+msgid ""
+"References to :variable:`CMAKE_SOURCE_DIR` and :variable:`CMAKE_BINARY_DIR` "
+"within the script evaluate to the top-level source and build tree."
+msgstr ""
+"腳本內對 :variable:`CMAKE_SOURCE_DIR` 和 :variable:`CMAKE_BINARY_DIR` 的引用"
+"會評估為頂層原始碼和建置樹。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:29
+msgid "Create or update a CMake ``CACHE`` entry."
+msgstr "建立或更新 CMake ``CACHE`` 項目。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:31
+msgid ""
+"When CMake is first run in an empty build tree, it creates a ``CMakeCache."
+"txt`` file and populates it with customizable settings for the project.  "
+"This option may be used to specify a setting that takes priority over the "
+"project's default value.  The option may be repeated for as many ``CACHE`` "
+"entries as desired."
+msgstr ""
+"當 CMake 第一次在空的建置樹上運行時，它會建立一個 ``CMakeCache.txt`` 檔案，並"
+"以專案的可自訂設定來填充它。此選項可用於指定一個優先於專案預設值的設定。此選"
+"項可重複使用，以設定任意數量的 ``CACHE`` 項目。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:37
+msgid ""
+"If the ``:<type>`` portion is given it must be one of the types specified by "
+"the :command:`set` command documentation for its ``CACHE`` signature. If the "
+"``:<type>`` portion is omitted the entry will be created with no type if it "
+"does not exist with a type already.  If a command in the project sets the "
+"type to ``PATH`` or ``FILEPATH`` then the ``<value>`` will be converted to "
+"an absolute path."
+msgstr ""
+"如果給出了 ``:<type>`` 部分，它必須是 :command:`set` 命令文檔中爲其 "
+"``CACHE`` 簽名所指定的類型之一。如果省略了 ``:<type>`` 部分，則如果該條目尚未"
+"具有類型，將創建不帶類型的條目。如果專案中的命令將類型設置爲 ``PATH`` 或 "
+"``FILEPATH``，則 ``<value>`` 將被轉換爲絕對路徑。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:45
+msgid ""
+"This option may also be given as a single argument: ``-D<var>:"
+"<type>=<value>`` or ``-D<var>=<value>``."
+msgstr ""
+"此選項也可以作為單個參數給出：``-D<var>:<type>=<value>`` 或 ``-"
+"D<var>=<value>``。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:48
+msgid ""
+"It's important to note that the order of ``-C`` and ``-D`` arguments is "
+"significant. They will be carried out in the order they are listed, with the "
+"last argument taking precedence over the previous ones. For example, if you "
+"specify ``-DCMAKE_BUILD_TYPE=Debug``, followed by a ``-C`` argument with a "
+"file that calls:"
+msgstr ""
+"需要注意的是，``-C`` 和 ``-D`` 參數的順序很重要。它們將按照列出的順序執行，最"
+"後一個參數優先於之前的參數。例如，如果您指定 ``-DCMAKE_BUILD_TYPE=Debug``，然"
+"後跟隨一個帶有以下內容的 ``-C`` 參數："
+
+#: ../../../manual/OPTIONS_BUILD.txt:54
+msgid "set(CMAKE_BUILD_TYPE \"Release\" CACHE STRING \"\" FORCE)"
+msgstr "set(CMAKE_BUILD_TYPE \"Release\" CACHE STRING \"\" FORCE)"
+
+#: ../../../manual/OPTIONS_BUILD.txt:58
+msgid ""
+"then the ``-C`` argument will take precedence, and ``CMAKE_BUILD_TYPE`` will "
+"be set to ``Release``. However, if the ``-D`` argument comes after the ``-"
+"C`` argument, it will be set to ``Debug``."
+msgstr ""
+"那麼 ``-C`` 參數將優先，並且 ``CMAKE_BUILD_TYPE`` 將被設置為 ``Release``。然"
+"而，如果 ``-D`` 參數在 ``-C`` 參數之後出現，它將被設置為 ``Debug``。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:62
+msgid ""
+"If a ``set(... CACHE ...)`` call in the ``-C`` file does not use ``FORCE``, "
+"and a ``-D`` argument sets the same variable, the ``-D`` argument will take "
+"precedence regardless of order because of the nature of non-``FORCE`` "
+"``set(... CACHE ...)`` calls."
+msgstr ""
+"如果 ``-C`` 檔案中的 ``set(... CACHE ...)`` 呼叫未使用 ``FORCE``，而 ``-D`` "
+"參數設定了同一變量，無論順序如何，由於非 ``FORCE`` ``set(... CACHE ...)`` 呼"
+"叫的性質，``-D`` 參數將優先。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:69
+msgid "Remove matching entries from CMake ``CACHE``."
+msgstr "從 CMake ``CACHE`` 中移除匹配的條目。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:71
+msgid ""
+"This option may be used to remove one or more variables from the "
+"``CMakeCache.txt`` file, globbing expressions using ``*`` and ``?`` are "
+"supported.  The option may be repeated for as many ``CACHE`` entries as "
+"desired."
+msgstr ""
+"此選項可用於從 ``CMakeCache.txt`` 檔案中移除一個或多個變量，支援使用 ``*`` "
+"和 ``?`` 的 globbing 表達式。此選項可重複使用，以移除任意數量的 ``CACHE`` 項"
+"目。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:76
+msgid "Use with care, you can make your ``CMakeCache.txt`` non-working."
+msgstr "小心使用，您可能會使您的 ``CMakeCache.txt`` 無法正常運作。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:80
+msgid "Specify a build system generator."
+msgstr "指定建置系統產生器。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:82
+msgid ""
+"CMake may support multiple native build systems on certain platforms.  A "
+"generator is responsible for generating a particular build system.  Possible "
+"generator names are specified in the :manual:`cmake-generators(7)` manual."
+msgstr ""
+"在某些平台上，CMake 可能支援多種原生建置系統。產生器負責生成特定的建置系統。"
+"可能的產生器名稱在 :manual:`cmake-generators(7)` 手冊中指定。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:87
+msgid ""
+"If not specified, CMake checks the :envvar:`CMAKE_GENERATOR` environment "
+"variable and otherwise falls back to a builtin default selection."
+msgstr ""
+"如果未指定，CMake 會檢查 :envvar:`CMAKE_GENERATOR` 環境變量，否則會回退到內建"
+"預設選擇。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:92
+msgid "Toolset specification for the generator, if supported."
+msgstr "產生器的工具集規格（若支援）。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:94
+msgid ""
+"Some CMake generators support a toolset specification to tell the native "
+"build system how to choose a compiler.  See the :variable:"
+"`CMAKE_GENERATOR_TOOLSET` variable for details."
+msgstr ""
+"某些 CMake 產生器支援工具集規格，用於告知原生建置系統如何選擇編譯器。詳情請參"
+"閱 :variable:`CMAKE_GENERATOR_TOOLSET` 變量。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:100
+msgid "Specify platform name if supported by generator."
+msgstr "若產生器支援，指定平台名稱。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:102
+msgid ""
+"Some CMake generators support a platform name to be given to the native "
+"build system to choose a compiler or SDK.  See the :variable:"
+"`CMAKE_GENERATOR_PLATFORM` variable for details."
+msgstr ""
+"某些 CMake 產生器支援向原生建置系統提供平台名稱，以選擇編譯器或 SDK。詳情請參"
+"閱 :variable:`CMAKE_GENERATOR_PLATFORM` 變量。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:110
+msgid ""
+"Specify the cross compiling toolchain file, equivalent to setting :variable:"
+"`CMAKE_TOOLCHAIN_FILE` variable."
+msgstr ""
+
+#: ../../../manual/OPTIONS_BUILD.txt:117
+msgid ""
+"Specify the installation directory, used by the :variable:"
+"`CMAKE_INSTALL_PREFIX` variable. Must be an absolute path."
+msgstr ""
+"指定安裝目錄，由 :variable:`CMAKE_INSTALL_PREFIX` 變量使用。必須是絕對路徑。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:122
+msgid "Suppress developer warnings."
+msgstr "抑制開發人員警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:124
+msgid ""
+"Suppress warnings that are meant for the author of the ``CMakeLists.txt`` "
+"files. By default this will also turn off deprecation warnings."
+msgstr "抑制針對 ``CMakeLists.txt`` 檔案作者的警告。預設也會關閉棄用警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:130
+msgid "Enable developer warnings."
+msgstr "啟用開發人員警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:132
+msgid ""
+"Enable warnings that are meant for the author of the ``CMakeLists.txt`` "
+"files. By default this will also turn on deprecation warnings."
+msgstr "啟用針對 ``CMakeLists.txt`` 檔案作者的警告。預設也會開啟棄用警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:137
+msgid "Enable deprecated functionality warnings."
+msgstr "啟用已棄用功能警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:139
+msgid ""
+"Enable warnings for usage of deprecated functionality, that are meant for "
+"the author of the ``CMakeLists.txt`` files."
+msgstr ""
+"啟用針對已棄用功能使用的警告，這些警告是針對 ``CMakeLists.txt`` 檔案作者的。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:144
+msgid "Suppress deprecated functionality warnings."
+msgstr "抑制已棄用功能警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:146
+msgid ""
+"Suppress warnings for usage of deprecated functionality, that are meant for "
+"the author of the ``CMakeLists.txt`` files."
+msgstr "抑制針對 ``CMakeLists.txt`` 檔案作者的已棄用功能使用警告。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:151
+msgid ""
+"Treat CMake warnings as errors. ``<what>`` must be one of the following:"
+msgstr "將 CMake 警告視為錯誤。``<what>`` 必須是下列其中之一："
+
+#: ../../../manual/OPTIONS_BUILD.txt:153 ../../../manual/OPTIONS_BUILD.txt:169
+msgid "``dev``"
+msgstr "``dev``"
+
+#: ../../../manual/OPTIONS_BUILD.txt:154
+msgid "Make developer warnings errors."
+msgstr "將開發人員警告視為錯誤。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:156
+msgid ""
+"Make warnings that are meant for the author of the ``CMakeLists.txt`` files "
+"errors. By default this will also turn on deprecated warnings as errors."
+msgstr ""
+"將針對 `CMakeLists.txt` 檔案作者的警告視為錯誤。預設情況下，這也會將已棄用的"
+"警告視為錯誤。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:159 ../../../manual/OPTIONS_BUILD.txt:173
+msgid "``deprecated``"
+msgstr "``deprecated``"
+
+#: ../../../manual/OPTIONS_BUILD.txt:160
+msgid "Make deprecated macro and function warnings errors."
+msgstr "將已棄用的巨集和函數警告視為錯誤。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:162
+msgid ""
+"Make warnings for usage of deprecated macros and functions, that are meant "
+"for the author of the ``CMakeLists.txt`` files, errors."
+msgstr "將針對 `CMakeLists.txt` 檔案作者的已棄用巨集和函數使用警告視為錯誤。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:167
+msgid ""
+"Do not treat CMake warnings as errors. ``<what>`` must be one of the "
+"following:"
+msgstr "不要將 CMake 警告視為錯誤。``<what>`` 必須是以下其中之一："
+
+#: ../../../manual/OPTIONS_BUILD.txt:170
+msgid ""
+"Make warnings that are meant for the author of the ``CMakeLists.txt`` files "
+"not errors. By default this will also turn off deprecated warnings as errors."
+msgstr ""
+"不要將針對 `CMakeLists.txt` 檔案作者的警告視為錯誤。預設情況下，這也會關閉已"
+"棄用的警告視為錯誤。"
+
+#: ../../../manual/OPTIONS_BUILD.txt:174
+msgid ""
+"Make warnings for usage of deprecated macros and functions, that are meant "
+"for the author of the ``CMakeLists.txt`` files, not errors."
+msgstr ""
+"不要將針對 `CMakeLists.txt` 檔案作者的已棄用巨集和函數使用警告視為錯誤。"
+
+#: ../../../manual/OPTIONS_HELP.txt:5
+msgid "Show program name/version banner and exit. |file|"
+msgstr "顯示程式名稱/版本橫幅並退出。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:10
+msgid "Print usage information and exit."
+msgstr "列印使用資訊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:12
+msgid "Usage describes the basic command line interface and its options."
+msgstr "使用說明描述了基本的命令列介面及其選項。"
+
+#: ../../../manual/OPTIONS_HELP.txt:16
+msgid "Print help for one CMake keyword."
+msgstr "列印一個 CMake 關鍵字的說明。"
+
+#: ../../../manual/OPTIONS_HELP.txt:18
+msgid ""
+"``<keyword>`` can be a property, variable, command, policy, generator or "
+"module."
+msgstr "``<keyword>`` 可以是屬性、變數、命令、政策、產生器或模組。"
+
+#: ../../../manual/OPTIONS_HELP.txt:21
+msgid ""
+"The relevant manual entry for ``<keyword>`` is printed in a human-readable "
+"text format. |file|"
+msgstr "以人類可讀的文字格式列印 ``<keyword>`` 的相關手冊條目。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:27
+msgid "Prior to CMake 3.28, this option supported command names only."
+msgstr "在 CMake 3.28 之前，此選項僅支援命令名稱。"
+
+#: ../../../manual/OPTIONS_HELP.txt:31
+msgid "Print all help manuals and exit."
+msgstr "列印所有說明手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:33
+msgid "All manuals are printed in a human-readable text format. |file|"
+msgstr "所有手冊均以人類可讀的文字格式列印。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:38
+msgid "Print one help manual and exit."
+msgstr "列印一本說明手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:40
+msgid "The specified manual is printed in a human-readable text format. |file|"
+msgstr "指定的手冊以人類可讀的文字格式列印。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:45
+msgid "List help manuals available and exit."
+msgstr "列出可用的說明手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:47
+msgid ""
+"The list contains all manuals for which help may be obtained by using the "
+"``--help-manual`` option followed by a manual name. |file|"
+msgstr ""
+"該清單包含所有可以使用 ``--help-manual`` 選項加上手冊名稱來獲取說明的手冊。|"
+"file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:53
+msgid "Print help for one command and exit."
+msgstr "列印一個命令的說明並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:55
+msgid ""
+"The :manual:`cmake-commands(7)` manual entry for ``<cmd>`` is printed in a "
+"human-readable text format. |file|"
+msgstr ""
+"以人類可讀的文字格式列印 :manual:`cmake-commands(7)` 手冊中關於 ``<cmd>`` 的"
+"條目。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:61
+msgid "List commands with help available and exit."
+msgstr "列出有說明的命令並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:63
+msgid ""
+"The list contains all commands for which help may be obtained by using the "
+"``--help-command`` option followed by a command name. |file|"
+msgstr ""
+"該清單包含所有可以使用 ``--help-command`` 選項加上命令名稱來獲取說明的命令。|"
+"file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:69
+msgid "Print cmake-commands manual and exit."
+msgstr "列印 cmake-commands 手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:71
+msgid ""
+"The :manual:`cmake-commands(7)` manual is printed in a human-readable text "
+"format. |file|"
+msgstr "以人類可讀的文字格式列印 :manual:`cmake-commands(7)` 手冊。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:77
+msgid "Print help for one module and exit."
+msgstr "列印一個模組的說明並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:79
+msgid ""
+"The :manual:`cmake-modules(7)` manual entry for ``<mod>`` is printed in a "
+"human-readable text format. |file|"
+msgstr ""
+"以人類可讀的文字格式列印 :manual:`cmake-modules(7)` 手冊中關於 ``<mod>`` 的條"
+"目。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:85
+msgid "List modules with help available and exit."
+msgstr "列出有說明的模組並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:87
+msgid ""
+"The list contains all modules for which help may be obtained by using the "
+"``--help-module`` option followed by a module name. |file|"
+msgstr ""
+"該清單包含所有可以使用 ``--help-module`` 選項加上模組名稱來獲取說明的模組。|"
+"file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:93
+msgid "Print cmake-modules manual and exit."
+msgstr "列印 cmake-modules 手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:95
+msgid ""
+"The :manual:`cmake-modules(7)` manual is printed in a human-readable text "
+"format. |file|"
+msgstr "以人類可讀的文字格式列印 :manual:`cmake-modules(7)` 手冊。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:101
+msgid "Print help for one policy and exit."
+msgstr "列印一個政策的說明並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:103
+msgid ""
+"The :manual:`cmake-policies(7)` manual entry for ``<cmp>`` is printed in a "
+"human-readable text format. |file|"
+msgstr ""
+"以人類可讀的文字格式列印 :manual:`cmake-policies(7)` 手冊中關於 ``<cmp>`` 的"
+"條目。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:109
+msgid "List policies with help available and exit."
+msgstr "列出有說明的政策並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:111
+msgid ""
+"The list contains all policies for which help may be obtained by using the "
+"``--help-policy`` option followed by a policy name. |file|"
+msgstr ""
+"該清單包含所有可以使用 ``--help-policy`` 選項加上政策名稱來獲取說明的政策。|"
+"file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:117
+msgid "Print cmake-policies manual and exit."
+msgstr "列印 cmake-policies 手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:119
+msgid ""
+"The :manual:`cmake-policies(7)` manual is printed in a human-readable text "
+"format. |file|"
+msgstr "以人類可讀的文字格式列印 :manual:`cmake-policies(7)` 手冊。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:125
+msgid "Print help for one property and exit."
+msgstr "列印一個屬性的說明並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:127
+msgid ""
+"The :manual:`cmake-properties(7)` manual entries for ``<prop>`` are printed "
+"in a human-readable text format. |file|"
+msgstr ""
+"以人類可讀的文字格式列印 :manual:`cmake-properties(7)` 手冊中關於 ``<prop>`` "
+"的條目。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:133
+msgid "List properties with help available and exit."
+msgstr "列出有說明的屬性並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:135
+msgid ""
+"The list contains all properties for which help may be obtained by using the "
+"``--help-property`` option followed by a property name. |file|"
+msgstr ""
+"該清單包含所有可以使用 ``--help-property`` 選項加上屬性名稱來獲取說明的屬"
+"性。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:141
+msgid "Print cmake-properties manual and exit."
+msgstr "列印 cmake-properties 手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:143
+msgid ""
+"The :manual:`cmake-properties(7)` manual is printed in a human-readable text "
+"format. |file|"
+msgstr "以人類可讀的文字格式列印 :manual:`cmake-properties(7)` 手冊。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:149
+msgid "Print help for one variable and exit."
+msgstr "列印一個變量的說明並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:151
+msgid ""
+"The :manual:`cmake-variables(7)` manual entry for ``<var>`` is printed in a "
+"human-readable text format. |file|"
+msgstr ""
+"以人類可讀的文字格式列印 :manual:`cmake-variables(7)` 手冊中關於 ``<var>`` 的"
+"條目。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:157
+msgid "List variables with help available and exit."
+msgstr "列出有說明的變量並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:159
+msgid ""
+"The list contains all variables for which help may be obtained by using the "
+"``--help-variable`` option followed by a variable name. |file|"
+msgstr ""
+"該清單包含所有可以使用 ``--help-variable`` 選項加上變量名稱來獲取說明的變"
+"量。|file|"
+
+#: ../../../manual/OPTIONS_HELP.txt:165
+msgid "Print cmake-variables manual and exit."
+msgstr "列印 cmake-variables 手冊並退出。"
+
+#: ../../../manual/OPTIONS_HELP.txt:167
+msgid ""
+"The :manual:`cmake-variables(7)` manual is printed in a human-readable text "
+"format. |file|"
+msgstr "以人類可讀的文字格式列印 :manual:`cmake-variables(7)` 手冊。|file|"
+
+#: ../../../manual/ccmake.1.rst:38
+msgid "See Also"
+msgstr "參見"
+
+#: ../../../manual/LINKS.txt:1
+msgid "The following resources are available to get help using CMake:"
+msgstr "以下資源可供您使用 CMake 時獲得協助："
+
+#: ../../../manual/LINKS.txt:3
+msgid "Home Page"
+msgstr "首頁"
+
+#: ../../../manual/LINKS.txt:4
+msgid "https://cmake.org"
+msgstr "https://cmake.org"
+
+#: ../../../manual/LINKS.txt:6
+msgid "The primary starting point for learning about CMake."
+msgstr "學習 CMake 的主要起點。"
+
+#: ../../../manual/LINKS.txt:8
+msgid "Online Documentation and Community Resources"
+msgstr "線上文件與社群資源"
+
+#: ../../../manual/LINKS.txt:9
+msgid "https://cmake.org/documentation"
+msgstr "https://cmake.org/documentation"
+
+#: ../../../manual/LINKS.txt:11
+msgid ""
+"Links to available documentation and community resources may be found on "
+"this web page."
+msgstr "在此網頁上可以找到可用文件和社群資源的連結。"
+
+#: ../../../manual/LINKS.txt:14
+msgid "Discourse Forum"
+msgstr "Discourse 論壇"
+
+#: ../../../manual/LINKS.txt:15
+msgid "https://discourse.cmake.org"
+msgstr "https://discourse.cmake.org"
+
+#: ../../../manual/LINKS.txt:17
+msgid "The Discourse Forum hosts discussion and questions about CMake."
+msgstr "Discourse 論壇舉辦有關 CMake 的討論和問題。"
