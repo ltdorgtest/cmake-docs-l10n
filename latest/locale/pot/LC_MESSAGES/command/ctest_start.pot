@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-09-02 12:25+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,7 +22,7 @@ msgid "ctest_start"
 msgstr ""
 
 #: ../../../command/ctest_start.rst:4
-msgid "Starts the testing for a given model"
+msgid "Perform the :ref:`CTest Start Step` as a :ref:`Dashboard Client`."
 msgstr ""
 
 #: ../../../command/ctest_start.rst:6
@@ -161,10 +161,9 @@ msgstr ""
 
 #: ../../../command/ctest_start.rst:83
 msgid ""
-"If the :variable:`CTEST_CHECKOUT_COMMAND` variable (or the :variable:"
-"`CTEST_CVS_CHECKOUT` variable) is set, its content is treated as command-"
-"line.  The command is invoked with the current working directory set to the "
-"parent of the source directory, even if the source directory already "
-"exists.  This can be used to create the source tree from a version control "
-"repository."
+"If the :variable:`CTEST_CHECKOUT_COMMAND` variable is set, its content is "
+"treated as command-line.  The command is invoked with the current working "
+"directory set to the parent of the source directory, even if the source "
+"directory already exists.  This can be used to create the source tree from a "
+"version control repository."
 msgstr ""
