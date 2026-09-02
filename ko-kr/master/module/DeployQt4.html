@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="ko-KR" data-content_root="../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>DeployQt4 &mdash; CMake 4.0.20250421-ge66e0b2 Documentation</title>
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a3862c66" />
+    <link rel="stylesheet" type="text/css" href="../_static/cmake.css?v=f2e5d2e8" />
+    
+    <script src="../_static/documentation_options.js?v=71f4c36e"></script>
+    <script src="../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    
+    <link rel="canonical" href="https://ltdorgtest.github.io/cmake-docs-l10n/module/DeployQt4.html" />
+    <link rel="icon" href="../_static/cmake-favicon.ico"/>
+    <link rel="index" title="색인" href="../genindex.html" />
+    <link rel="search" title="검색" href="../search.html" />
+    <link rel="next" title="ExternalData" href="ExternalData.html" />
+    <link rel="prev" title="CTestUseLaunchers" href="CTestUseLaunchers.html" />
+    <script type="text/javascript" src="../ltd-current.js"></script>
+    <script type="text/javascript" src="../../../ltd-config.js"></script>
+    <script type="text/javascript" src="../../../ltd-flyout.js"></script>
+ 
+
+  </head><body>
+
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>탐색</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="전체 색인"
+             accesskey="I">색인</a></li>
+        <li class="right" >
+          <a href="ExternalData.html" title="ExternalData"
+             accesskey="N">다음</a> |</li>
+        <li class="right" >
+          <a href="CTestUseLaunchers.html" title="CTestUseLaunchers"
+             accesskey="P">이전</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" accesskey="U">cmake-modules(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">DeployQt4</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="deployqt4">
+<span id="module:DeployQt4"></span><h1>DeployQt4<a class="headerlink" href="#deployqt4" title="Link to this heading">¶</a></h1>
+<p>This module provides a collection of CMake utility functions useful for
+assembling and deploying standalone Qt4 executables.</p>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading">¶</a></h2>
+<p>This module defines the following functions:</p>
+<ul class="simple">
+<li><p><span class="target" id="index-0-command:write_qt4_conf"></span><a class="reference internal" href="#command:write_qt4_conf" title="write_qt4_conf"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">write_qt4_conf()</span></code></a></p></li>
+<li><p><span class="target" id="index-0-command:resolve_qt4_paths"></span><a class="reference internal" href="#command:resolve_qt4_paths" title="resolve_qt4_paths"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">resolve_qt4_paths()</span></code></a></p></li>
+<li><p><span class="target" id="index-0-command:fixup_qt4_executable"></span><a class="reference internal" href="#command:fixup_qt4_executable" title="fixup_qt4_executable"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">fixup_qt4_executable()</span></code></a></p></li>
+<li><p><span class="target" id="index-0-command:install_qt4_plugin_path"></span><a class="reference internal" href="#command:install_qt4_plugin_path" title="install_qt4_plugin_path"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">install_qt4_plugin_path()</span></code></a></p></li>
+<li><p><span class="target" id="index-0-command:install_qt4_plugin"></span><a class="reference internal" href="#command:install_qt4_plugin" title="install_qt4_plugin"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">install_qt4_plugin()</span></code></a></p></li>
+<li><p><span class="target" id="index-0-command:install_qt4_executable"></span><a class="reference internal" href="#command:install_qt4_executable" title="install_qt4_executable"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">install_qt4_executable()</span></code></a></p></li>
+</ul>
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:write_qt4_conf">
+<span class="sig-name descname"><span class="pre">write_qt4_conf</span></span><a class="headerlink" href="#command:write_qt4_conf" title="Link to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">write_qt4_conf(</span><span class="nv">&lt;qt_conf_dir&gt;</span><span class="w"> </span><span class="nv">&lt;qt_conf_contents&gt;</span><span class="nf">)</span>
+</pre></div>
+</div>
+<p>Writes a <code class="docutils literal notranslate"><span class="pre">qt.conf</span></code> file with the <code class="docutils literal notranslate"><span class="pre">&lt;qt_conf_contents&gt;</span></code> into the
+<code class="docutils literal notranslate"><span class="pre">&lt;qt_conf_dir&gt;</span></code> directory.</p>
+</dd></dl>
+
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:resolve_qt4_paths">
+<span class="sig-name descname"><span class="pre">resolve_qt4_paths</span></span><a class="headerlink" href="#command:resolve_qt4_paths" title="Link to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">resolve_qt4_paths(</span><span class="nv">&lt;paths_var&gt;</span><span class="w"> </span><span class="p">[</span><span class="nv">&lt;executable_path&gt;</span><span class="p">]</span><span class="nf">)</span>
+</pre></div>
+</div>
+<p>Loops through the <code class="docutils literal notranslate"><span class="pre">&lt;paths_var&gt;</span></code> list and if any path doesn't exist, it
+resolves them relative to the <code class="docutils literal notranslate"><span class="pre">&lt;executable_path&gt;</span></code> (if supplied) or the
+<span class="target" id="index-0-variable:CMAKE_INSTALL_PREFIX"></span><a class="reference internal" href="../variable/CMAKE_INSTALL_PREFIX.html#variable:CMAKE_INSTALL_PREFIX" title="CMAKE_INSTALL_PREFIX"><code class="xref cmake cmake-variable docutils literal notranslate"><span class="pre">CMAKE_INSTALL_PREFIX</span></code></a>.</p>
+</dd></dl>
+
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:fixup_qt4_executable">
+<span class="sig-name descname"><span class="pre">fixup_qt4_executable</span></span><a class="headerlink" href="#command:fixup_qt4_executable" title="Link to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">fixup_qt4_executable(</span>
+<span class="w">  </span><span class="nv">&lt;executable&gt;</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">&lt;qtplugins&gt;</span><span class="w"> </span><span class="nv">&lt;libs&gt;</span><span class="w"> </span><span class="nv">&lt;dirs&gt;</span><span class="w"> </span><span class="nv">&lt;plugins_dir&gt;</span><span class="w"> </span><span class="nv">&lt;request_qt_conf&gt;</span><span class="p">]</span>
+<span class="nf">)</span>
+</pre></div>
+</div>
+<p>Copies Qt plugins, writes a Qt configuration file (if needed) and fixes up a
+Qt4 executable using the <span class="target" id="index-0-module:BundleUtilities"></span><a class="reference internal" href="BundleUtilities.html#module:BundleUtilities" title="BundleUtilities"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">BundleUtilities</span></code></a> module so it is standalone
+and can be drag-and-drop copied to another machine as long as all of the
+system libraries are compatible.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;executable&gt;</span></code> should point to the executable to be fixed-up.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;qtplugins&gt;</span></code> should contain a list of the names or paths of any Qt plugins
+to be installed.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;libs&gt;</span></code> will be passed to the <span class="target" id="index-1-module:BundleUtilities"></span><a class="reference internal" href="BundleUtilities.html#module:BundleUtilities" title="BundleUtilities"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">BundleUtilities</span></code></a> module and should
+be a list of any already installed plugins, libraries or executables to also
+be fixed-up.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;dirs&gt;</span></code> will be passed to the <span class="target" id="index-2-module:BundleUtilities"></span><a class="reference internal" href="BundleUtilities.html#module:BundleUtilities" title="BundleUtilities"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">BundleUtilities</span></code></a> module and should
+contain directories to be searched to find library dependencies.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;plugins_dir&gt;</span></code> allows a custom plugins directory to be used.</p>
+<p><code class="docutils literal notranslate"><span class="pre">&lt;request_qt_conf&gt;</span></code> will force a <code class="docutils literal notranslate"><span class="pre">qt.conf</span></code> file to be written even if not
+needed.</p>
+</dd></dl>
+
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:install_qt4_plugin_path">
+<span class="sig-name descname"><span class="pre">install_qt4_plugin_path</span></span><a class="headerlink" href="#command:install_qt4_plugin_path" title="Link to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">install_qt4_plugin_path(</span>
+<span class="w">  </span><span class="nv">&lt;plugin&gt;</span>
+<span class="w">  </span><span class="nv">&lt;executable&gt;</span>
+<span class="w">  </span><span class="nv">&lt;copy&gt;</span>
+<span class="w">  </span><span class="nv">&lt;installed_plugin_path_var&gt;</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">&lt;plugins_dir&gt;</span><span class="w"> </span><span class="nv">&lt;component&gt;</span><span class="w"> </span><span class="nv">&lt;configurations&gt;</span><span class="p">]</span>
+<span class="nf">)</span>
+</pre></div>
+</div>
+<p>Installs (or copies) a resolved <code class="docutils literal notranslate"><span class="pre">&lt;plugin&gt;</span></code> to the default plugins directory
+(or <code class="docutils literal notranslate"><span class="pre">&lt;plugins_dir&gt;</span></code>) relative to <code class="docutils literal notranslate"><span class="pre">&lt;executable&gt;</span></code> and stores the result in
+a variable <code class="docutils literal notranslate"><span class="pre">&lt;installed_plugin_path_var&gt;</span></code>.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">&lt;copy&gt;</span></code> is set to <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> then the plugins will be copied rather than
+installed.  This is to allow this module to be used at CMake time rather than
+install time.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;</span></code> is set then anything installed will use this COMPONENT.</p>
+</dd></dl>
+
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:install_qt4_plugin">
+<span class="sig-name descname"><span class="pre">install_qt4_plugin</span></span><a class="headerlink" href="#command:install_qt4_plugin" title="Link to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">install_qt4_plugin(</span>
+<span class="w">  </span><span class="nv">&lt;plugin&gt;</span>
+<span class="w">  </span><span class="nv">&lt;executable&gt;</span>
+<span class="w">  </span><span class="nv">&lt;copy&gt;</span>
+<span class="w">  </span><span class="nv">&lt;installed_plugin_path_var&gt;</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">&lt;plugins_dir&gt;</span><span class="w"> </span><span class="nv">&lt;component&gt;</span><span class="p">]</span>
+<span class="nf">)</span>
+</pre></div>
+</div>
+<p>Installs (or copies) an unresolved <code class="docutils literal notranslate"><span class="pre">&lt;plugin&gt;</span></code> to the default plugins
+directory (or <code class="docutils literal notranslate"><span class="pre">&lt;plugins_dir&gt;</span></code>) relative to <code class="docutils literal notranslate"><span class="pre">&lt;executable&gt;</span></code> and stores the
+result in a variable <code class="docutils literal notranslate"><span class="pre">&lt;installed_plugin_path_var&gt;</span></code>.  For other arguments,
+see also <span class="target" id="index-1-command:install_qt4_plugin_path"></span><a class="reference internal" href="#command:install_qt4_plugin_path" title="install_qt4_plugin_path"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">install_qt4_plugin_path()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="cmake command">
+<dt class="sig sig-object cmake" id="command:install_qt4_executable">
+<span class="sig-name descname"><span class="pre">install_qt4_executable</span></span><a class="headerlink" href="#command:install_qt4_executable" title="Link to this definition">¶</a></dt>
+<dd><div class="highlight-cmake notranslate"><div class="highlight"><pre><span></span><span class="nf">install_qt4_executable(</span>
+<span class="w">  </span><span class="nv">&lt;executable&gt;</span>
+<span class="w">  </span><span class="p">[</span><span class="nv">&lt;qtplugins&gt;</span><span class="w"> </span><span class="nv">&lt;libs&gt;</span><span class="w"> </span><span class="nv">&lt;dirs&gt;</span><span class="w"> </span><span class="nv">&lt;plugins_dir&gt;</span><span class="w"> </span><span class="nv">&lt;request_qt_conf&gt;</span><span class="w"> </span><span class="nv">&lt;component&gt;</span><span class="p">]</span>
+<span class="nf">)</span>
+</pre></div>
+</div>
+<p>Installs Qt plugins, writes a Qt configuration file (if needed) and fixes up a
+Qt4 executable using the <span class="target" id="index-3-module:BundleUtilities"></span><a class="reference internal" href="BundleUtilities.html#module:BundleUtilities" title="BundleUtilities"><code class="xref cmake cmake-module docutils literal notranslate"><span class="pre">BundleUtilities</span></code></a> module so it is standalone
+and can be drag-and-drop copied to another machine as long as all of the
+system libraries are compatible.  The executable will be fixed-up at install
+time.  <code class="docutils literal notranslate"><span class="pre">&lt;component&gt;</span></code> is the COMPONENT used for bundle fixup and plugin
+installation.  For other arguments, see also <span class="target" id="index-1-command:fixup_qt4_executable"></span><a class="reference internal" href="#command:fixup_qt4_executable" title="fixup_qt4_executable"><code class="xref cmake cmake-command docutils literal notranslate"><span class="pre">fixup_qt4_executable()</span></code></a>.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3>목차</h3>
+    <ul>
+<li><a class="reference internal" href="#">DeployQt4</a><ul>
+<li><a class="reference internal" href="#functions">Functions</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>이전 항목</h4>
+    <p class="topless"><a href="CTestUseLaunchers.html"
+                          title="이전 장">CTestUseLaunchers</a></p>
+  </div>
+  <div>
+    <h4>다음 항목</h4>
+    <p class="topless"><a href="ExternalData.html"
+                          title="다음 장">ExternalData</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>현재 문서</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/DeployQt4.rst.txt"
+            rel="nofollow">소스 보기</a></li>
+    </ul>
+   </div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">빠른 검색</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="이동" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="Related">
+      <h3>탐색</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="전체 색인"
+             >색인</a></li>
+        <li class="right" >
+          <a href="ExternalData.html" title="ExternalData"
+             >다음</a> |</li>
+        <li class="right" >
+          <a href="CTestUseLaunchers.html" title="CTestUseLaunchers"
+             >이전</a> |</li>
+        <li>
+          <img src="../_static/cmake-logo-16.png" alt=""
+              style="vertical-align: middle; margin-top: -2px" />
+        </li>
+        <li>
+          <a href="https://cmake.org/">CMake</a> &#187;
+        </li>
+        <li>
+          <a href="../index.html">Documentation</a> &#187;
+        </li>
+
+          <li class="nav-item nav-item-1"><a href="../manual/cmake-modules.7.html" >cmake-modules(7)</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">DeployQt4</a></li> 
+      </ul>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; 저작권 2000-2025 Kitware, Inc. and Contributors.
+      <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3 버전으로 생성되었습니다.
+    </div>
+  </body>
+</html>
