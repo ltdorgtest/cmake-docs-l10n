@@ -1,0 +1,225 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2000-2025 Kitware, Inc. and Contributors
+# This file is distributed under the same license as the CMake package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: CMake master\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-07 08:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../../Modules/FindSubversion.cmake:6
+msgid "FindSubversion"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:8
+msgid ""
+"This module finds a Subversion command-line client executable (``svn``) and "
+"provides macros for extracting information from a Subversion working copy."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:12
+msgid "Result Variables"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:14
+msgid "This module defines the following variables:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:16
+msgid "``Subversion_FOUND``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:17
+msgid ""
+"True if the Subversion command-line client was found.  For backward "
+"compatibility, the ``SUBVERSION_FOUND`` variable is also set to the same "
+"value."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:21
+msgid "``Subversion_VERSION_SVN``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:22
+msgid "Version of the ``svn`` command-line client."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:25
+msgid "Cache Variables"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:27
+msgid "The following cache variables may also be set:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:29
+msgid "``Subversion_SVN_EXECUTABLE``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:30
+msgid "Path to the ``svn`` command-line client."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:33
+msgid "Macros"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:35
+msgid ""
+"If the Subversion command-line client is found, the following macros are "
+"defined:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:40
+msgid ""
+"Extracts information from a Subversion working copy located at a specified "
+"directory:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:43
+msgid "Subversion_WC_INFO(<dir> <var-prefix> [IGNORE_SVN_FAILURE])"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:47
+msgid ""
+"This macro defines the following variables if running Subversion's ``info`` "
+"subcommand on ``<dir>`` succeeds; otherwise a ``SEND_ERROR`` message is "
+"generated:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:51
+msgid "``<var-prefix>_WC_URL``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:52
+msgid "URL of the repository (at ``<dir>``)."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:53
+msgid "``<var-prefix>_WC_ROOT``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:54
+msgid "Root URL of the repository."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:55
+msgid "``<var-prefix>_WC_REVISION``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:56
+msgid "Current revision."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:57
+msgid "``<var-prefix>_WC_LAST_CHANGED_AUTHOR``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:58
+msgid "Author of last commit."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:59
+msgid "``<var-prefix>_WC_LAST_CHANGED_DATE``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:60
+msgid "Date of last commit."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:61
+msgid "``<var-prefix>_WC_LAST_CHANGED_REV``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:62
+msgid "Revision of last commit."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:63
+msgid "``<var-prefix>_WC_INFO``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:64
+msgid "Output of the command ``svn info <dir>``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:66
+msgid "The options are:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:68
+msgid "``IGNORE_SVN_FAILURE``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:71
+msgid ""
+"When specified, errors from Subversion operation will not trigger a "
+"``SEND_ERROR`` message.  In case of an error, the ``<var-prefix>_*`` "
+"variables remain undefined."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:77
+msgid ""
+"Retrieves the log message of the base revision of a Subversion working copy "
+"at a given location:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:80
+msgid "Subversion_WC_LOG(<dir> <var-prefix>)"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:84
+msgid ""
+"This macro defines the following variable if running Subversion's ``log`` "
+"subcommand on ``<dir>`` succeeds; otherwise a ``SEND_ERROR`` message is "
+"generated:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:88
+msgid "``<var-prefix>_LAST_CHANGED_LOG``"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:89
+msgid ""
+"Last log of the base revision of a Subversion working copy located at "
+"``<dir>``."
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:93
+msgid "Examples"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:95
+msgid "Example usage:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:97
+msgid ""
+"find_package(Subversion)\n"
+"if(Subversion_FOUND)\n"
+"  Subversion_WC_INFO(${PROJECT_SOURCE_DIR} Project)\n"
+"  message(\"Current revision is ${Project_WC_REVISION}\")\n"
+"  Subversion_WC_LOG(${PROJECT_SOURCE_DIR} Project)\n"
+"  message(\"Last changed log is ${Project_LAST_CHANGED_LOG}\")\n"
+"endif()"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:107
+msgid ""
+"The minimum required version of Subversion can be specified using the "
+"standard syntax:"
+msgstr ""
+
+#: ../../../../Modules/FindSubversion.cmake:110
+msgid "find_package(Subversion 1.4)"
+msgstr ""
