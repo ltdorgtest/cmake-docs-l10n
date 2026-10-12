@@ -67,9 +67,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2025-04-21 00:04:16 -0400",
-      "hash" : "e66e0b2cfefaf61fa995a0aa117df31e680b1c7e",
-      "title" : "CMake Nightly Date Stamp"
+      "date" : "2026-10-12 12:14:32 -0400",
+      "hash" : "de5840724de8b18ef0786a02119c780511ed67ec",
+      "title" : "Merge topic 'doc-4.5-relnotes'"
     }
   },
   "type" : "branch",
