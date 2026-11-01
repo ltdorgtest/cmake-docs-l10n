@@ -73,8 +73,8 @@ msgstr ""
 #: ../../../../Modules/FindPython3.cmake:36
 msgid ""
 "``Development.SABIModule``: search for artifacts for Python 3 module "
-"developments using the `Stable Application Binary Interface <https://docs."
-"python.org/3/c-api/stable.html>`_. This component is available only for "
+"developments using the `Stable Application Binary Interface <https://"
+"docs.python.org/3/c-api/stable.html>`_. This component is available only for "
 "version ``3.2`` and upper."
 msgstr ""
 
@@ -138,8 +138,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:76
 msgid ""
-":ref:`Imported Targets <Imported Targets>` are only created when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``."
+":ref:`Imported Targets <Imported Targets>` are only created "
+"when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:80
@@ -204,8 +204,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:109
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:112
@@ -276,9 +277,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:129
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=True)`` or else ``sysconfig."
-"get_path('stdlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)`` "
+"or else ``sysconfig.get_path('stdlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:132
@@ -291,9 +292,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:135
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=True)`` or else ``sysconfig."
-"get_path('platstdlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)`` "
+"or else ``sysconfig.get_path('platstdlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:138
@@ -306,9 +307,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:141
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=False)`` or else ``sysconfig."
-"get_path('purelib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)`` "
+"or else ``sysconfig.get_path('purelib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:144
@@ -321,9 +322,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:147
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=False)`` or else ``sysconfig."
-"get_path('platlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)`` "
+"or else ``sysconfig.get_path('platlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:151
@@ -336,12 +337,12 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:156
 msgid ""
-"Information computed from ``distutils.sysconfig."
-"get_config_var('EXT_SUFFIX')`` or ``distutils.sysconfig."
-"get_config_var('SOABI')`` or ``python3-config --extension-suffix``. If "
-"package ``distutils.sysconfig`` is not available, ``sysconfig."
-"get_config_var('EXT_SUFFIX')`` or ``sysconfig.get_config_var('SOABI')`` are "
-"used."
+"Information computed from "
+"``distutils.sysconfig.get_config_var('EXT_SUFFIX')`` or "
+"``distutils.sysconfig.get_config_var('SOABI')`` or ``python3-config --"
+"extension-suffix``. If package ``distutils.sysconfig`` is not available, "
+"``sysconfig.get_config_var('EXT_SUFFIX')`` or "
+"``sysconfig.get_config_var('SOABI')`` are used."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:162
@@ -667,9 +668,9 @@ msgstr ""
 #: ../../../../Modules/FindPython3.cmake:317
 msgid ""
 "This hint is useful only on ``POSIX`` systems. So, on ``Windows`` systems, "
-"when ``Python3_FIND_ABI`` is defined, ``Python`` distributions from `python."
-"org <https://www.python.org/>`_ will be found only if value for each flag is "
-"``OFF`` or ``ANY``."
+"when ``Python3_FIND_ABI`` is defined, ``Python`` distributions from "
+"`python.org <https://www.python.org/>`_ will be found only if value for each "
+"flag is ``OFF`` or ``ANY``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:322
@@ -738,8 +739,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:360
 msgid ""
-"If ``Python3_FIND_FRAMEWORK`` is not defined, :variable:"
-"`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
+"If ``Python3_FIND_FRAMEWORK`` is not "
+"defined, :variable:`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:363
@@ -990,12 +991,12 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:516
 msgid ""
-"This module defines the command ``Python3_add_library`` (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
-"`add_library` and adds a dependency to target ``Python3::Python`` or, when "
-"library type is ``MODULE``, to target ``Python3::Module`` or ``Python3::"
-"SABIModule`` (when ``USE_SABI`` option is specified) and takes care of "
-"Python module naming rules::"
+"This module defines the command ``Python3_add_library`` "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``), which has the same semantics "
+"as :command:`add_library` and adds a dependency to target "
+"``Python3::Python`` or, when library type is ``MODULE``, to target "
+"``Python3::Module`` or ``Python3::SABIModule`` (when ``USE_SABI`` option is "
+"specified) and takes care of Python module naming rules::"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:523
@@ -1020,12 +1021,12 @@ msgid ""
 "For ``MODULE`` type, if the option ``USE_SABI`` is specified, the "
 "preprocessor definition ``Py_LIMITED_API`` will be specified, as "
 "``PRIVATE``, for the target ``<name>`` with the value computed from "
-"``<version>`` argument. The expected format for ``<version>`` is ``major[."
-"minor]``, where each component is a numeric value. If ``minor`` component is "
-"specified, the version should be, at least, ``3.2`` which is the version "
-"where the `Stable Application Binary Interface <https://docs.python.org/3/c-"
-"api/stable.html>`_ was introduced. Specifying only major version ``3`` is "
-"equivalent to ``3.2``."
+"``<version>`` argument. The expected format for ``<version>`` is "
+"``major[.minor]``, where each component is a numeric value. If ``minor`` "
+"component is specified, the version should be, at least, ``3.2`` which is "
+"the version where the `Stable Application Binary Interface <https://"
+"docs.python.org/3/c-api/stable.html>`_ was introduced. Specifying only major "
+"version ``3`` is equivalent to ``3.2``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:542

@@ -32,8 +32,8 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:11
 msgid ""
-"Also, be aware that including a top level directory (:variable:"
-"`CPACK_INCLUDE_TOPLEVEL_DIRECTORY`) is ignored by this generator."
+"Also, be aware that including a top level directory "
+"(:variable:`CPACK_INCLUDE_TOPLEVEL_DIRECTORY`) is ignored by this generator."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:16
@@ -42,9 +42,10 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:18
 msgid ""
-"The CPack NuGet generator may be used to create NuGet packages using :module:"
-"`CPack`. The CPack NuGet generator is a :module:`CPack` generator thus it "
-"uses the :variable:`!CPACK_XXX` variables used by :module:`CPack`."
+"The CPack NuGet generator may be used to create NuGet packages "
+"using :module:`CPack`. The CPack NuGet generator is a :module:`CPack` "
+"generator thus it uses the :variable:`!CPACK_XXX` variables used "
+"by :module:`CPack`."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:22
@@ -155,8 +156,8 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:93
 msgid ""
-"A comma-separated list of the package creators using profile names on nuget."
-"org_. This is often the same list as in authors, and is ignored when "
+"A comma-separated list of the package creators using profile names on "
+"nuget.org_. This is often the same list as in authors, and is ignored when "
 "uploading the package to nuget.org_."
 msgstr ""
 
@@ -183,8 +184,8 @@ msgstr ""
 #: ../../../cpack_gen/nuget.rst:112
 msgid ""
 "Use a local license file (:variable:`CPACK_NUGET_PACKAGE_LICENSE_FILE_NAME`) "
-"or a `SPDX license identifier`_ (:variable:"
-"`CPACK_NUGET_PACKAGE_LICENSE_EXPRESSION`) instead."
+"or a `SPDX license identifier`_ "
+"(:variable:`CPACK_NUGET_PACKAGE_LICENSE_EXPRESSION`) instead."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:118
@@ -205,8 +206,8 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:136
 msgid ""
-"If :variable:`CPACK_NUGET_PACKAGE_LICENSE_FILE_NAME` is specified, :variable:"
-"`!CPACK_NUGET_PACKAGE_LICENSE_EXPRESSION` is ignored."
+"If :variable:`CPACK_NUGET_PACKAGE_LICENSE_FILE_NAME` is "
+"specified, :variable:`!CPACK_NUGET_PACKAGE_LICENSE_EXPRESSION` is ignored."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:145
@@ -215,8 +216,8 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:147
 msgid ""
-"If :variable:`!CPACK_NUGET_PACKAGE_LICENSE_FILE_NAME` is specified, :"
-"variable:`!CPACK_NUGET_PACKAGE_LICENSE_EXPRESSION` is ignored."
+"If :variable:`!CPACK_NUGET_PACKAGE_LICENSE_FILE_NAME` is "
+"specified, :variable:`!CPACK_NUGET_PACKAGE_LICENSE_EXPRESSION` is ignored."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:158

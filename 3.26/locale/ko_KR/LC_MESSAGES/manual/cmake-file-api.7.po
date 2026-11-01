@@ -854,11 +854,11 @@ msgstr ""
 #: ../../../manual/cmake-file-api.7.rst:500
 msgid ""
 "A JSON array of entries corresponding to available build configurations. On "
-"single-configuration generators there is one entry for the value of the :"
-"variable:`CMAKE_BUILD_TYPE` variable.  For multi-configuration generators "
-"there is an entry for each configuration listed in the :variable:"
-"`CMAKE_CONFIGURATION_TYPES` variable. Each entry is a JSON object containing "
-"members:"
+"single-configuration generators there is one entry for the value of "
+"the :variable:`CMAKE_BUILD_TYPE` variable.  For multi-configuration "
+"generators there is an entry for each configuration listed in "
+"the :variable:`CMAKE_CONFIGURATION_TYPES` variable. Each entry is a JSON "
+"object containing members:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:508
@@ -1058,10 +1058,11 @@ msgstr ""
 #: ../../../manual/cmake-file-api.7.rst:619
 msgid ""
 "A JSON array of entries corresponding to the build system targets. Such "
-"targets are created by calls to :command:`add_executable`, :command:"
-"`add_library`, and :command:`add_custom_target`, excluding imported targets "
-"and interface libraries (which do not generate any build rules).  Each entry "
-"is a JSON object containing members:"
+"targets are created by calls "
+"to :command:`add_executable`, :command:`add_library`, "
+"and :command:`add_custom_target`, excluding imported targets and interface "
+"libraries (which do not generate any build rules).  Each entry is a JSON "
+"object containing members:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:626
@@ -1132,8 +1133,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:674
 msgid ""
-"A string specifying the component selected by the corresponding :command:"
-"`install` command invocation."
+"A string specifying the component selected by the "
+"corresponding :command:`install` command invocation."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:677
@@ -1295,9 +1296,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:756
 msgid ""
-"An :command:`install(RUNTIME_DEPENDENCY_SET)` call or an :command:"
-"`install(TARGETS)` call with ``RUNTIME_DEPENDENCIES``. The ``destination`` "
-"member is populated. This type has additional members "
+"An :command:`install(RUNTIME_DEPENDENCY_SET)` call or "
+"an :command:`install(TARGETS)` call with ``RUNTIME_DEPENDENCIES``. The "
+"``destination`` member is populated. This type has additional members "
 "``runtimeDependencySetName`` and ``runtimeDependencySetType``."
 msgstr ""
 
@@ -1323,8 +1324,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:771
 msgid ""
-"Optional member that is present with boolean value ``true`` when :command:"
-"`install` is called with the ``EXCLUDE_FROM_ALL`` option."
+"Optional member that is present with boolean value ``true`` "
+"when :command:`install` is called with the ``EXCLUDE_FROM_ALL`` option."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:774
@@ -1333,8 +1334,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:775
 msgid ""
-"Optional member that is present with boolean value ``true`` when :command:"
-"`install(SCRIPT|CODE)` is called with the ``ALL_COMPONENTS`` option."
+"Optional member that is present with boolean value ``true`` "
+"when :command:`install(SCRIPT|CODE)` is called with the ``ALL_COMPONENTS`` "
+"option."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:779
@@ -1343,9 +1345,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:780
 msgid ""
-"Optional member that is present with boolean value ``true`` when :command:"
-"`install` is called with the ``OPTIONAL`` option. This is allowed when "
-"``type`` is ``file``, ``directory``, or ``target``."
+"Optional member that is present with boolean value ``true`` "
+"when :command:`install` is called with the ``OPTIONAL`` option. This is "
+"allowed when ``type`` is ``file``, ``directory``, or ``target``."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:784
@@ -1445,9 +1447,9 @@ msgstr ""
 #: ../../../manual/cmake-file-api.7.rst:830
 msgid ""
 "Optional member that is present when ``type`` is ``runtimeDependencySet`` "
-"and the installer was created by an :command:"
-"`install(RUNTIME_DEPENDENCY_SET)` call. The value is a string specifying the "
-"name of the runtime dependency set that was installed."
+"and the installer was created by "
+"an :command:`install(RUNTIME_DEPENDENCY_SET)` call. The value is a string "
+"specifying the name of the runtime dependency set that was installed."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:835
@@ -1554,9 +1556,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:890
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`install` or other command invocation that added this installer is "
-"available.  The value is an unsigned integer 0-based index into the "
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`install` or other command invocation that added this installer "
+"is available.  The value is an unsigned integer 0-based index into the "
 "``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
@@ -1731,8 +1733,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:990
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`install` command invocation that specified this destination is "
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`install` command invocation that specified this destination is "
 "available.  The value is an unsigned integer 0-based index into the "
 "``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
@@ -1830,9 +1832,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1027
 msgid ""
-"Optional member that is present when the :variable:`CMAKE_SYSROOT_LINK` or :"
-"variable:`CMAKE_SYSROOT` variable is defined.  The value is a JSON object "
-"with one member:"
+"Optional member that is present when the :variable:`CMAKE_SYSROOT_LINK` "
+"or :variable:`CMAKE_SYSROOT` variable is defined.  The value is a JSON "
+"object with one member:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1032
@@ -1888,8 +1890,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1068
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`add_dependencies`, :command:`target_link_libraries`, or other "
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`add_dependencies`, :command:`target_link_libraries`, or other "
 "command invocation that created this dependency is available.  The value is "
 "an unsigned integer 0-based index into the ``backtraceGraph`` member's "
 "``nodes`` array."
@@ -2004,11 +2006,11 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1130
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_sources`, :command:`add_executable`, :command:"
-"`add_library`, :command:`add_custom_target`, or other command invocation "
-"that added this source to the target is available.  The value is an unsigned "
-"integer 0-based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_sources`, :command:`add_executable`, :command:`add_library`, :command:`add_custom_target`, "
+"or other command invocation that added this source to the target is "
+"available.  The value is an unsigned integer 0-based index into the "
+"``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1137
@@ -2017,10 +2019,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1138
 msgid ""
-"Optional member that is present when sources are grouped together by the :"
-"command:`source_group` command or by default.  The value is a JSON array of "
-"entries corresponding to the groups.  Each entry is a JSON object with "
-"members:"
+"Optional member that is present when sources are grouped together by "
+"the :command:`source_group` command or by default.  The value is a JSON "
+"array of entries corresponding to the groups.  Each entry is a JSON object "
+"with members:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1144
@@ -2142,10 +2144,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1210
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_include_directories` or other command invocation that added "
-"this include directory is available.  The value is an unsigned integer 0-"
-"based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_include_directories` or other command invocation that "
+"added this include directory is available.  The value is an unsigned integer "
+"0-based index into the ``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1216
@@ -2170,10 +2172,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1226
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_precompile_headers` or other command invocation that added "
-"this precompiled header is available.  The value is an unsigned integer 0-"
-"based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_precompile_headers` or other command invocation that "
+"added this precompiled header is available.  The value is an unsigned "
+"integer 0-based index into the ``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1232
@@ -2203,10 +2205,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1244
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_compile_definitions` or other command invocation that added "
-"this preprocessor definition is available.  The value is an unsigned integer "
-"0-based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_compile_definitions` or other command invocation that "
+"added this preprocessor definition is available.  The value is an unsigned "
+"integer 0-based index into the ``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1251
@@ -2310,8 +2312,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1308
 msgid ""
-"The ``configureLog`` object kind describes the location and contents of a :"
-"manual:`cmake-configure-log(7)` file."
+"The ``configureLog`` object kind describes the location and contents of "
+"a :manual:`cmake-configure-log(7)` file."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1311
@@ -2331,8 +2333,8 @@ msgid ""
 "{\n"
 "  \"kind\": \"configureLog\",\n"
 "  \"version\": { \"major\": 1, \"minor\": 0 },\n"
-"  \"path\": \"/path/to/top-level-build-dir/CMakeFiles/CMakeConfigureLog."
-"yaml\",\n"
+"  \"path\": \"/path/to/top-level-build-dir/CMakeFiles/"
+"CMakeConfigureLog.yaml\",\n"
 "  \"eventKindNames\": [ \"try_compile-v1\", \"try_run-v1\" ]\n"
 "}"
 msgstr ""
@@ -2355,11 +2357,11 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1336
 msgid ""
-"A JSON array whose entries are each a JSON string naming one of the :manual:"
-"`cmake-configure-log(7)` versioned event kinds. At most one version of each "
-"configure log event kind will be listed. Although the configure log may "
-"contain other (versioned) event kinds, clients must ignore those that are "
-"not listed in this field."
+"A JSON array whose entries are each a JSON string naming one of "
+"the :manual:`cmake-configure-log(7)` versioned event kinds. At most one "
+"version of each configure log event kind will be listed. Although the "
+"configure log may contain other (versioned) event kinds, clients must ignore "
+"those that are not listed in this field."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1343
@@ -2684,9 +2686,9 @@ msgstr ""
 #: ../../../manual/cmake-file-api.7.rst:1586
 msgid ""
 "A JSON string specifying the toolchain language, like C or CXX. Language "
-"names are the same as language names that can be passed to the :command:"
-"`project` command. Because CMake only supports a single toolchain per "
-"language, this field can be used as a key."
+"names are the same as language names that can be passed to "
+"the :command:`project` command. Because CMake only supports a single "
+"toolchain per language, this field can be used as a key."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1591
@@ -2702,24 +2704,26 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1600
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_COMPILER_ID` variable is defined for the current language. Its "
-"value is a JSON string holding the ID (GNU, MSVC, etc.) of the compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` variable is defined for the current "
+"language. Its value is a JSON string holding the ID (GNU, MSVC, etc.) of the "
+"compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1606
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_COMPILER_VERSION` variable is defined for the current "
-"language. Its value is a JSON string holding the version of the compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable is defined for the "
+"current language. Its value is a JSON string holding the version of the "
+"compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1612
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_COMPILER_TARGET` variable is defined for the current language. "
-"Its value is a JSON string holding the cross-compiling target of the "
-"compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_COMPILER_TARGET` variable is defined for the "
+"current language. Its value is a JSON string holding the cross-compiling "
+"target of the compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1617
@@ -2732,10 +2736,11 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1621
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_IMPLICIT_INCLUDE_DIRECTORIES` variable is defined for the "
-"current language. Its value is a JSON array of JSON strings where each "
-"string holds a path to an implicit include directory for the compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_IMPLICIT_INCLUDE_DIRECTORIES` variable is "
+"defined for the current language. Its value is a JSON array of JSON strings "
+"where each string holds a path to an implicit include directory for the "
+"compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1627
@@ -2744,10 +2749,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1628
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_IMPLICIT_LINK_DIRECTORIES` variable is defined for the current "
-"language. Its value is a JSON array of JSON strings where each string holds "
-"a path to an implicit link directory for the compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_IMPLICIT_LINK_DIRECTORIES` variable is defined "
+"for the current language. Its value is a JSON array of JSON strings where "
+"each string holds a path to an implicit link directory for the compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1634
@@ -2756,10 +2761,11 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1635
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES` variable is defined for "
-"the current language. Its value is a JSON array of JSON strings where each "
-"string holds a path to an implicit link framework directory for the compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES` variable is "
+"defined for the current language. Its value is a JSON array of JSON strings "
+"where each string holds a path to an implicit link framework directory for "
+"the compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1641
@@ -2768,10 +2774,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1642
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_IMPLICIT_LINK_LIBRARIES` variable is defined for the current "
-"language. Its value is a JSON array of JSON strings where each string holds "
-"a path to an implicit link library for the compiler."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_IMPLICIT_LINK_LIBRARIES` variable is defined for "
+"the current language. Its value is a JSON array of JSON strings where each "
+"string holds a path to an implicit link library for the compiler."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1648
@@ -2780,8 +2786,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:1649
 msgid ""
-"Optional member that is present when the :variable:"
-"`CMAKE_<LANG>_SOURCE_FILE_EXTENSIONS` variable is defined for the current "
-"language. Its value is a JSON array of JSON strings where each each string "
-"holds a file extension (without the leading dot) for the language."
+"Optional member that is present when "
+"the :variable:`CMAKE_<LANG>_SOURCE_FILE_EXTENSIONS` variable is defined for "
+"the current language. Its value is a JSON array of JSON strings where each "
+"each string holds a file extension (without the leading dot) for the "
+"language."
 msgstr ""

@@ -86,8 +86,8 @@ msgstr ""
 
 #: ../../../../Modules/CheckFortranSourceRuns.cmake:51
 msgid ""
-"Additional flags to pass to the compiler. Note that the contents of :"
-"variable:`CMAKE_Fortran_FLAGS <CMAKE_<LANG>_FLAGS>` and its associated "
+"Additional flags to pass to the compiler. Note that the contents "
+"of :variable:`CMAKE_Fortran_FLAGS <CMAKE_<LANG>_FLAGS>` and its associated "
 "configuration-specific variable are automatically added to the compiler "
 "command before the contents of ``CMAKE_REQUIRED_FLAGS``."
 msgstr ""
@@ -132,9 +132,9 @@ msgstr ""
 #: ../../../../Modules/CheckFortranSourceRuns.cmake:72
 msgid ""
 "A :ref:`;-list <CMake Language Lists>` of libraries to add to the link "
-"command. These can be the name of system libraries or they can be :ref:"
-"`Imported Targets <Imported Targets>` (see :command:`try_run` for further "
-"details)."
+"command. These can be the name of system libraries or they can "
+"be :ref:`Imported Targets <Imported Targets>` (see :command:`try_run` for "
+"further details)."
 msgstr ""
 
 #: ../../../../Modules/CheckFortranSourceRuns.cmake:77
