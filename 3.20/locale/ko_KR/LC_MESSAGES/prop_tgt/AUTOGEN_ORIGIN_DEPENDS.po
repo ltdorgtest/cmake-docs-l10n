@@ -32,16 +32,17 @@ msgid ""
 "Targets which have their :prop_tgt:`AUTOMOC` or :prop_tgt:`AUTOUIC` property "
 "``ON`` have a corresponding ``_autogen`` target which generates ``moc`` and "
 "``uic`` files.  As this ``_autogen`` target is created at generate-time, it "
-"is not possible to define dependencies of it using e.g.  :command:"
-"`add_dependencies`.  Instead the :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` target "
-"property decides whether the origin target dependencies should be forwarded "
-"to the ``_autogen`` target or not."
+"is not possible to define dependencies of it using "
+"e.g.  :command:`add_dependencies`.  Instead "
+"the :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` target property decides whether the "
+"origin target dependencies should be forwarded to the ``_autogen`` target or "
+"not."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:17
 msgid ""
-"By default :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` is initialized from :variable:"
-"`CMAKE_AUTOGEN_ORIGIN_DEPENDS` which is ``ON`` by default."
+"By default :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` is initialized "
+"from :variable:`CMAKE_AUTOGEN_ORIGIN_DEPENDS` which is ``ON`` by default."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:20
@@ -50,8 +51,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:22
 msgid ""
-"forwarded origin target dependencies (enabled by default via :prop_tgt:"
-"`AUTOGEN_ORIGIN_DEPENDS`)"
+"forwarded origin target dependencies (enabled by default "
+"via :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS`)"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:24

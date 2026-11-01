@@ -241,10 +241,10 @@ msgstr ""
 msgid ""
 "A required string representing the machine-friendly name of the preset. This "
 "identifier is used in the :ref:`cmake --preset <CMake Options>` option. "
-"There must not be two configure presets in the union of ``CMakePresets."
-"json`` and ``CMakeUserPresets.json`` in the same directory with the same "
-"name. However, a configure preset may have the same name as a build or test "
-"preset."
+"There must not be two configure presets in the union of "
+"``CMakePresets.json`` and ``CMakeUserPresets.json`` in the same directory "
+"with the same name. However, a configure preset may have the same name as a "
+"build or test preset."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:99
@@ -279,8 +279,8 @@ msgid ""
 "``description``, and ``displayName``), but can override them as desired. If "
 "multiple ``inherits`` presets provide conflicting values for the same field, "
 "the earlier preset in the ``inherits`` list will be preferred. Presets in "
-"``CMakePresets.json`` may not inherit from presets in ``CMakeUserPresets."
-"json``."
+"``CMakePresets.json`` may not inherit from presets in "
+"``CMakeUserPresets.json``."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:119
@@ -633,10 +633,10 @@ msgstr ""
 msgid ""
 "A required string representing the machine-friendly name of the preset. This "
 "identifier is used in the :ref:`cmake --build --preset <Build Tool Mode>` "
-"option. There must not be two build presets in the union of ``CMakePresets."
-"json`` and ``CMakeUserPresets.json`` in the same directory with the same "
-"name. However, a build preset may have the same name as a configure or test "
-"preset."
+"option. There must not be two build presets in the union of "
+"``CMakePresets.json`` and ``CMakeUserPresets.json`` in the same directory "
+"with the same name. However, a build preset may have the same name as a "
+"configure or test preset."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:321
@@ -1313,8 +1313,8 @@ msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:813
 msgid ""
-"The last filename component of ``${sourceDir}``. For example, if "
-"``${sourceDir}`` is ``/path/to/source``, this would be ``source``."
+"The last filename component of ``${sourceDir}``. For example, if ``$"
+"{sourceDir}`` is ``/path/to/source``, this would be ``source``."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:816

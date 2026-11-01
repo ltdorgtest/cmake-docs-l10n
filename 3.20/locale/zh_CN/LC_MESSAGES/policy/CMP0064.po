@@ -40,8 +40,9 @@ msgstr ""
 #: ../../../policy/CMP0064.rst:14
 msgid ""
 "This policy was introduced in CMake version 3.4.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy()` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy()` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

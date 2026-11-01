@@ -47,8 +47,8 @@ msgid ""
 "are used. If the ``<depends>`` condition is not true, ``<option>`` will not "
 "be presented and will always have the value given by ``<force>``. Any value "
 "set by the user is preserved for when the option is presented again. Each "
-"element in the fourth parameter is evaluated as an if-condition, so :ref:"
-"`Condition Syntax` can be used."
+"element in the fourth parameter is evaluated as an if-condition, "
+"so :ref:`Condition Syntax` can be used."
 msgstr ""
 
 #: ../../../../Modules/CMakeDependentOption.cmake:27

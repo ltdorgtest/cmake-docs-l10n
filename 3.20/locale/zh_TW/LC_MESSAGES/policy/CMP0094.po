@@ -23,17 +23,18 @@ msgstr ""
 
 #: ../../../policy/CMP0094.rst:6
 msgid ""
-"Modules :module:`FindPython3`, :module:`FindPython2` and :module:"
-"`FindPython` use ``LOCATION`` for lookup strategy."
+"Modules :module:`FindPython3`, :module:`FindPython2` "
+"and :module:`FindPython` use ``LOCATION`` for lookup strategy."
 msgstr ""
 
 #: ../../../policy/CMP0094.rst:9
 msgid ""
-"Starting with CMake 3.15, Modules :module:`FindPython3`, :module:"
-"`FindPython2` and :module:`FindPython` set value ``LOCATION`` for, "
-"respectively, variables ``Python3_FIND_STRATEGY``, ``Python2_FIND_STRATEGY`` "
-"and ``Python_FIND_STRATEGY``. This policy provides compatibility with "
-"projects that expect the legacy behavior."
+"Starting with CMake 3.15, "
+"Modules :module:`FindPython3`, :module:`FindPython2` "
+"and :module:`FindPython` set value ``LOCATION`` for, respectively, variables "
+"``Python3_FIND_STRATEGY``, ``Python2_FIND_STRATEGY`` and "
+"``Python_FIND_STRATEGY``. This policy provides compatibility with projects "
+"that expect the legacy behavior."
 msgstr ""
 
 #: ../../../policy/CMP0094.rst:15
@@ -45,10 +46,10 @@ msgstr ""
 
 #: ../../../policy/CMP0094.rst:19
 msgid ""
-"This policy was introduced in CMake version 3.15.  Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly. Unlike "
-"many policies, CMake version |release| does *not* warn when this policy is "
-"not set and simply uses the ``OLD`` behavior."
+"This policy was introduced in CMake version 3.15.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly. Unlike many policies, CMake version |release| does *not* warn "
+"when this policy is not set and simply uses the ``OLD`` behavior."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

@@ -31,8 +31,8 @@ msgstr ""
 msgid ""
 "CMake 2.8.10.2 and lower allowed the :prop_tgt:`INCLUDE_DIRECTORIES` target "
 "property to contain relative paths.  The base path for such relative entries "
-"is not well defined.  CMake 2.8.12 issues a ``FATAL_ERROR`` if the :prop_tgt:"
-"`INCLUDE_DIRECTORIES` property contains a relative path."
+"is not well defined.  CMake 2.8.12 issues a ``FATAL_ERROR`` if "
+"the :prop_tgt:`INCLUDE_DIRECTORIES` property contains a relative path."
 msgstr ""
 
 #: ../../../policy/CMP0021.rst:12
@@ -46,8 +46,9 @@ msgstr ""
 #: ../../../policy/CMP0021.rst:17
 msgid ""
 "This policy was introduced in CMake version 2.8.12.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

@@ -129,8 +129,8 @@ msgstr ""
 
 #: ../../../command/add_custom_command.rst:79
 msgid ""
-"The :ref:`Makefile Generators` will remove ``BYPRODUCTS`` and other :prop_sf:"
-"`GENERATED` files during ``make clean``."
+"The :ref:`Makefile Generators` will remove ``BYPRODUCTS`` and "
+"other :prop_sf:`GENERATED` files during ``make clean``."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:82
@@ -149,31 +149,32 @@ msgid ""
 "Specify the command-line(s) to execute at build time. If more than one "
 "``COMMAND`` is specified they will be executed in order, but *not* "
 "necessarily composed into a stateful shell or batch script. (To run a full "
-"script, use the :command:`configure_file` command or the :command:"
-"`file(GENERATE)` command to create it, and then specify a ``COMMAND`` to "
-"launch it.) The optional ``ARGS`` argument is for backward compatibility and "
-"will be ignored."
+"script, use the :command:`configure_file` command or "
+"the :command:`file(GENERATE)` command to create it, and then specify a "
+"``COMMAND`` to launch it.) The optional ``ARGS`` argument is for backward "
+"compatibility and will be ignored."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:98
 msgid ""
-"If ``COMMAND`` specifies an executable target name (created by the :command:"
-"`add_executable` command), it will automatically be replaced by the location "
-"of the executable created at build time if either of the following is true:"
+"If ``COMMAND`` specifies an executable target name (created by "
+"the :command:`add_executable` command), it will automatically be replaced by "
+"the location of the executable created at build time if either of the "
+"following is true:"
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:103
 msgid ""
-"The target is not being cross-compiled (i.e. the :variable:"
-"`CMAKE_CROSSCOMPILING` variable is not set to true)."
+"The target is not being cross-compiled (i.e. "
+"the :variable:`CMAKE_CROSSCOMPILING` variable is not set to true)."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:105
 msgid ""
-"The target is being cross-compiled and an emulator is provided (i.e. its :"
-"prop_tgt:`CROSSCOMPILING_EMULATOR` target property is set). In this case, "
-"the contents of :prop_tgt:`CROSSCOMPILING_EMULATOR` will be prepended to the "
-"command before the location of the target executable."
+"The target is being cross-compiled and an emulator is provided (i.e. "
+"its :prop_tgt:`CROSSCOMPILING_EMULATOR` target property is set). In this "
+"case, the contents of :prop_tgt:`CROSSCOMPILING_EMULATOR` will be prepended "
+"to the command before the location of the target executable."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:111
@@ -186,8 +187,8 @@ msgstr ""
 msgid ""
 "Arguments to ``COMMAND`` may use :manual:`generator expressions <cmake-"
 "generator-expressions(7)>`. Use the :genex:`TARGET_FILE` generator "
-"expression to refer to the location of a target later in the command line (i."
-"e. as a command argument rather than as the command to execute)."
+"expression to refer to the location of a target later in the command line "
+"(i.e. as a command argument rather than as the command to execute)."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:120
@@ -195,8 +196,8 @@ msgid ""
 "Whenever one of the following target based generator expressions are used as "
 "a command to execute or is mentioned in a command argument, a target-level "
 "dependency will be added automatically so that the mentioned target will be "
-"built before any target using this custom command (see policy :policy:"
-"`CMP0112`)."
+"built before any target using this custom command (see "
+"policy :policy:`CMP0112`)."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:126
@@ -244,12 +245,13 @@ msgstr ""
 
 #: ../../../command/add_custom_command.rst:145
 msgid ""
-"If the argument is the name of a target (created by the :command:"
-"`add_custom_target`, :command:`add_executable`, or :command:`add_library` "
-"command) a target-level dependency is created to make sure the target is "
-"built before any target using this custom command.  Additionally, if the "
-"target is an executable or library, a file-level dependency is created to "
-"cause the custom command to re-run whenever the target is recompiled."
+"If the argument is the name of a target (created by "
+"the :command:`add_custom_target`, :command:`add_executable`, "
+"or :command:`add_library` command) a target-level dependency is created to "
+"make sure the target is built before any target using this custom command.  "
+"Additionally, if the target is an executable or library, a file-level "
+"dependency is created to cause the custom command to re-run whenever the "
+"target is recompiled."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:154
@@ -313,8 +315,9 @@ msgstr ""
 msgid ""
 "Lists in ``COMMAND`` arguments will be expanded, including those created "
 "with :manual:`generator expressions <cmake-generator-expressions(7)>`, "
-"allowing ``COMMAND`` arguments such as ``${CC} \"-I$<JOIN:$<TARGET_PROPERTY:"
-"foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly expanded."
+"allowing ``COMMAND`` arguments such as ``${CC} \"-I$<JOIN:"
+"$<TARGET_PROPERTY:foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly "
+"expanded."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:195
@@ -434,10 +437,10 @@ msgstr ""
 
 #: ../../../command/add_custom_command.rst:274
 msgid ""
-"Specify a ``.d`` depfile for the :generator:`Ninja` generator and :ref:"
-"`Makefile Generators`. A ``.d`` file holds dependencies usually emitted by "
-"the custom command itself. Using ``DEPFILE`` with other generators than :"
-"generator:`Ninja` or :ref:`Makefile Generators` is an error."
+"Specify a ``.d`` depfile for the :generator:`Ninja` generator "
+"and :ref:`Makefile Generators`. A ``.d`` file holds dependencies usually "
+"emitted by the custom command itself. Using ``DEPFILE`` with other "
+"generators than :generator:`Ninja` or :ref:`Makefile Generators` is an error."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:281
@@ -446,11 +449,11 @@ msgstr ""
 
 #: ../../../command/add_custom_command.rst:284
 msgid ""
-"If the ``DEPFILE`` argument is relative, it should be relative to :variable:"
-"`CMAKE_CURRENT_BINARY_DIR`, and any relative paths inside the ``DEPFILE`` "
-"should also be relative to :variable:`CMAKE_CURRENT_BINARY_DIR` (see policy :"
-"policy:`CMP0116`. This policy is always ``NEW`` for :ref:`Makefile "
-"Generators`)."
+"If the ``DEPFILE`` argument is relative, it should be relative "
+"to :variable:`CMAKE_CURRENT_BINARY_DIR`, and any relative paths inside the "
+"``DEPFILE`` should also be relative to :variable:`CMAKE_CURRENT_BINARY_DIR` "
+"(see policy :policy:`CMP0116`. This policy is always ``NEW`` "
+"for :ref:`Makefile Generators`)."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:292

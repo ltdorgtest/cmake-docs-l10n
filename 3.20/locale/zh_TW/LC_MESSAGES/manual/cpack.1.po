@@ -59,8 +59,8 @@ msgstr ""
 
 #: ../../../manual/cpack.1.rst:31
 msgid ""
-"The **cpack** program is steered by a configuration file written in the :"
-"manual:`CMake language <cmake-language(7)>`. Unless chosen differently "
+"The **cpack** program is steered by a configuration file written in "
+"the :manual:`CMake language <cmake-language(7)>`. Unless chosen differently "
 "through the command-line option ``--config``, the file ``CPackConfig.cmake`` "
 "in the current directory is used."
 msgstr ""
@@ -170,8 +170,8 @@ msgstr ""
 #: ../../../manual/cpack.1.rst:86
 msgid ""
 "Override/define the value of the :variable:`CPACK_PACKAGE_NAME` variable "
-"used for packaging.  Any value set for this variable in the ``CPackConfig."
-"cmake`` file will then be ignored."
+"used for packaging.  Any value set for this variable in the "
+"``CPackConfig.cmake`` file will then be ignored."
 msgstr ""
 
 #: ../../../manual/cpack.1.rst:90
@@ -181,10 +181,10 @@ msgstr ""
 #: ../../../manual/cpack.1.rst:91
 msgid ""
 "Override/define the value of the :variable:`CPACK_PACKAGE_VERSION` variable "
-"used for packaging.  It will override a value set in the ``CPackConfig."
-"cmake`` file or one automatically computed from :variable:"
-"`CPACK_PACKAGE_VERSION_MAJOR`, :variable:`CPACK_PACKAGE_VERSION_MINOR` and :"
-"variable:`CPACK_PACKAGE_VERSION_PATCH`."
+"used for packaging.  It will override a value set in the "
+"``CPackConfig.cmake`` file or one automatically computed "
+"from :variable:`CPACK_PACKAGE_VERSION_MAJOR`, :variable:`CPACK_PACKAGE_VERSION_MINOR` "
+"and :variable:`CPACK_PACKAGE_VERSION_PATCH`."
 msgstr ""
 
 #: ../../../manual/cpack.1.rst:98

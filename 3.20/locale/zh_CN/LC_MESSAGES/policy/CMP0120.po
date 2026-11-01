@@ -34,10 +34,10 @@ msgstr ""
 
 #: ../../../policy/CMP0120.rst:12
 msgid ""
-"Those granular features have been superseded by meta-features for :ref:"
-"`Requiring Language Standards` such as ``cxx_std_11``.  Therefore no new "
-"granular feature checks will be added and projects will need to use other "
-"means to conditionally use new C++ features."
+"Those granular features have been superseded by meta-features "
+"for :ref:`Requiring Language Standards` such as ``cxx_std_11``.  Therefore "
+"no new granular feature checks will be added and projects will need to use "
+"other means to conditionally use new C++ features."
 msgstr ""
 
 #: ../../../policy/CMP0120.rst:17
@@ -78,16 +78,18 @@ msgstr ""
 
 #: ../../../policy/CMP0120.rst:37
 msgid ""
-"The ``OLD`` behavior of this policy is for inclusion of the deprecated :"
-"module:`WriteCompilerDetectionHeader` module to work.  The ``NEW`` behavior "
-"is for inclusion of the module to fail as if it does not exist."
+"The ``OLD`` behavior of this policy is for inclusion of the "
+"deprecated :module:`WriteCompilerDetectionHeader` module to work.  The "
+"``NEW`` behavior is for inclusion of the module to fail as if it does not "
+"exist."
 msgstr ""
 
 #: ../../../policy/CMP0120.rst:41
 msgid ""
 "This policy was introduced in CMake version 3.20.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

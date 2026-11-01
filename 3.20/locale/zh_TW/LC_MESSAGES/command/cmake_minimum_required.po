@@ -58,8 +58,8 @@ msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:28
 msgid ""
-"This command will set the value of the :variable:"
-"`CMAKE_MINIMUM_REQUIRED_VERSION` variable to ``<min>``."
+"This command will set the value of "
+"the :variable:`CMAKE_MINIMUM_REQUIRED_VERSION` variable to ``<min>``."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:31
@@ -74,8 +74,8 @@ msgid ""
 "Call the ``cmake_minimum_required()`` command at the beginning of the top-"
 "level ``CMakeLists.txt`` file even before calling the :command:`project` "
 "command.  It is important to establish version and policy settings before "
-"invoking other commands whose behavior they may affect.  See also policy :"
-"policy:`CMP0000`."
+"invoking other commands whose behavior they may affect.  See also "
+"policy :policy:`CMP0000`."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:42
@@ -91,14 +91,14 @@ msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:49
 msgid ""
-"The ``cmake_minimum_required(VERSION)`` command implicitly invokes the :"
-"command:`cmake_policy(VERSION)` command to specify that the current project "
-"code is written for the given range of CMake versions. All policies known to "
-"the running version of CMake and introduced in the ``<min>`` (or ``<max>``, "
-"if specified) version or earlier will be set to use ``NEW`` behavior.  All "
-"policies introduced in later versions will be unset.  This effectively "
-"requests behavior preferred as of a given CMake version and tells newer "
-"CMake versions to warn about their new policies."
+"The ``cmake_minimum_required(VERSION)`` command implicitly invokes "
+"the :command:`cmake_policy(VERSION)` command to specify that the current "
+"project code is written for the given range of CMake versions. All policies "
+"known to the running version of CMake and introduced in the ``<min>`` (or "
+"``<max>``, if specified) version or earlier will be set to use ``NEW`` "
+"behavior.  All policies introduced in later versions will be unset.  This "
+"effectively requests behavior preferred as of a given CMake version and "
+"tells newer CMake versions to warn about their new policies."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:59

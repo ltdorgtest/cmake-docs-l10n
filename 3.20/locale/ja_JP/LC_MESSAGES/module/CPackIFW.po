@@ -30,8 +30,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:14
 msgid ""
-"The module also defines several commands to control the behavior of the :"
-"cpack_gen:`CPack IFW Generator`."
+"The module also defines several commands to control the behavior of "
+"the :cpack_gen:`CPack IFW Generator`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:18
@@ -154,8 +154,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:91
 msgid ""
-"set to rewrite original description configured by :command:"
-"`cpack_add_component` command."
+"set to rewrite original description configured "
+"by :command:`cpack_add_component` command."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:94 ../../../../Modules/CPackIFW.cmake:231
@@ -360,14 +360,14 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:222
 msgid ""
-"set to rewrite original name configured by :command:"
-"`cpack_add_component_group` command."
+"set to rewrite original name configured "
+"by :command:`cpack_add_component_group` command."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:228
 msgid ""
-"set to rewrite original description configured by :command:"
-"`cpack_add_component_group` command."
+"set to rewrite original description configured "
+"by :command:`cpack_add_component_group` command."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:234
@@ -378,8 +378,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:238
 msgid ""
-"is version of component group. By default used :variable:"
-"`CPACK_PACKAGE_VERSION`."
+"is version of component group. By default "
+"used :variable:`CPACK_PACKAGE_VERSION`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:247
@@ -427,8 +427,8 @@ msgstr ""
 #: ../../../../Modules/CPackIFW.cmake:318
 #: ../../../../Modules/CPackIFW.cmake:352
 msgid ""
-"This command will also add the <reponame> repository to a variable :variable:"
-"`CPACK_IFW_REPOSITORIES_ALL`."
+"This command will also add the <reponame> repository to a "
+"variable :variable:`CPACK_IFW_REPOSITORIES_ALL`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:321
@@ -514,6 +514,6 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:384
 msgid ""
-"This command will also add the specified files to a variable :variable:"
-"`CPACK_IFW_PACKAGE_RESOURCES`."
+"This command will also add the specified files to a "
+"variable :variable:`CPACK_IFW_PACKAGE_RESOURCES`."
 msgstr ""
