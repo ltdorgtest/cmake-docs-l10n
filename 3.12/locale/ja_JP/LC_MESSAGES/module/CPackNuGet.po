@@ -48,11 +48,11 @@ msgstr ""
 
 #: ../../../../Modules/CPackNuGet.cmake:24
 msgid ""
-"CPackNuGet has specific features which are controlled by the specifics :code:"
-"`CPACK_NUGET_XXX` variables. In the \"one per group\" mode (see :variable:"
-"`CPACK_COMPONENTS_GROUPING`), ``<compName>`` placeholder in the variables "
-"below would contain a group name (uppercased and turned into a \"C\" "
-"identifier)."
+"CPackNuGet has specific features which are controlled by the "
+"specifics :code:`CPACK_NUGET_XXX` variables. In the \"one per group\" mode "
+"(see :variable:`CPACK_COMPONENTS_GROUPING`), ``<compName>`` placeholder in "
+"the variables below would contain a group name (uppercased and turned into a "
+"\"C\" identifier)."
 msgstr ""
 
 #: ../../../../Modules/CPackNuGet.cmake:30
@@ -156,8 +156,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackNuGet.cmake:92
 msgid ""
-"A comma-separated list of the package creators using profile names on nuget."
-"org_. This is often the same list as in authors, and is ignored when "
+"A comma-separated list of the package creators using profile names on "
+"nuget.org_. This is often the same list as in authors, and is ignored when "
 "uploading the package to nuget.org_."
 msgstr ""
 
@@ -184,8 +184,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackNuGet.cmake:111
 msgid ""
-"A URL for the package's license, often shown in UI displays as well as nuget."
-"org_."
+"A URL for the package's license, often shown in UI displays as well as "
+"nuget.org_."
 msgstr ""
 
 #: ../../../../Modules/CPackNuGet.cmake:120

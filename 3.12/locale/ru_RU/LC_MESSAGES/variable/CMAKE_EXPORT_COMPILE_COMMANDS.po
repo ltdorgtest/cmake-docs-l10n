@@ -53,6 +53,6 @@ msgstr ""
 
 #: ../../../variable/CMAKE_EXPORT_COMPILE_COMMANDS.rst:29
 msgid ""
-"This option is implemented only by :ref:`Makefile Generators` and the :"
-"generator:`Ninja`.  It is ignored on other generators."
+"This option is implemented only by :ref:`Makefile Generators` and "
+"the :generator:`Ninja`.  It is ignored on other generators."
 msgstr ""

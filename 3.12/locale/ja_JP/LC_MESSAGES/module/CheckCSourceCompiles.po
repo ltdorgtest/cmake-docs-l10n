@@ -53,8 +53,8 @@ msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:29
 msgid ""
-"Additional flags to pass to the compiler. Note that the contents of :"
-"variable:`CMAKE_C_FLAGS <CMAKE_<LANG>_FLAGS>` and its associated "
+"Additional flags to pass to the compiler. Note that the contents "
+"of :variable:`CMAKE_C_FLAGS <CMAKE_<LANG>_FLAGS>` and its associated "
 "configuration-specific variable are automatically added to the compiler "
 "command before the contents of ``CMAKE_REQUIRED_FLAGS``."
 msgstr ""
@@ -89,9 +89,9 @@ msgstr ""
 #: ../../../../Modules/CheckCSourceCompiles.cmake:46
 msgid ""
 "A :ref:`;-list <CMake Language Lists>` of libraries to add to the link "
-"command. These can be the name of system libraries or they can be :ref:"
-"`Imported Targets <Imported Targets>` (see :command:`try_compile` for "
-"further details)."
+"command. These can be the name of system libraries or they can "
+"be :ref:`Imported Targets <Imported Targets>` (see :command:`try_compile` "
+"for further details)."
 msgstr ""
 
 #: ../../../../Modules/CheckCSourceCompiles.cmake:53

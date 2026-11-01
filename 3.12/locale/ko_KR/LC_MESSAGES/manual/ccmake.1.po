@@ -116,9 +116,9 @@ msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:36
 msgid ""
-"This option may be used to remove one or more variables from the CMakeCache."
-"txt file, globbing expressions using * and ? are supported.  The option may "
-"be repeated for as many cache entries as desired."
+"This option may be used to remove one or more variables from the "
+"CMakeCache.txt file, globbing expressions using * and ? are supported.  The "
+"option may be repeated for as many cache entries as desired."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:41
@@ -151,8 +151,8 @@ msgstr ""
 #: ../../../manual/OPTIONS_BUILD.txt:54
 msgid ""
 "Some CMake generators support a toolset specification to tell the native "
-"build system how to choose a compiler.  See the :variable:"
-"`CMAKE_GENERATOR_TOOLSET` variable for details."
+"build system how to choose a compiler.  See "
+"the :variable:`CMAKE_GENERATOR_TOOLSET` variable for details."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:63
@@ -166,8 +166,8 @@ msgstr ""
 #: ../../../manual/OPTIONS_BUILD.txt:61
 msgid ""
 "Some CMake generators support a platform name to be given to the native "
-"build system to choose a compiler or SDK.  See the :variable:"
-"`CMAKE_GENERATOR_PLATFORM` variable for details."
+"build system to choose a compiler or SDK.  See "
+"the :variable:`CMAKE_GENERATOR_PLATFORM` variable for details."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:70
@@ -600,6 +600,6 @@ msgstr ""
 msgid ""
 "For help and discussion about using cmake, a mailing list is provided at "
 "cmake@cmake.org.  The list is member-post-only but one may sign up on the "
-"CMake web page.  Please first read the full documentation at https://cmake."
-"org before posting questions to the list."
+"CMake web page.  Please first read the full documentation at https://"
+"cmake.org before posting questions to the list."
 msgstr ""

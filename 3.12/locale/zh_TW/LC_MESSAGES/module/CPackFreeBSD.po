@@ -140,9 +140,9 @@ msgstr ""
 
 #: ../../../../Modules/CPackFreeBSD.cmake:83
 msgid ""
-":variable:`CMAKE_PROJECT_HOMEPAGE_URL`, or if that is not set, :variable:"
-"`CPACK_DEBIAN_PACKAGE_HOMEPAGE` (this may be set already for Debian "
-"packaging, so we may as well re-use it)."
+":variable:`CMAKE_PROJECT_HOMEPAGE_URL`, or if that is not "
+"set, :variable:`CPACK_DEBIAN_PACKAGE_HOMEPAGE` (this may be set already for "
+"Debian packaging, so we may as well re-use it)."
 msgstr ""
 
 #: ../../../../Modules/CPackFreeBSD.cmake:89

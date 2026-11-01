@@ -88,7 +88,7 @@ msgstr ""
 
 #: ../../../variable/CMAKE_FIND_PACKAGE_SORT_ORDER.rst:34
 msgid ""
-"The sort direction can be controlled using the :variable:"
-"`CMAKE_FIND_PACKAGE_SORT_DIRECTION` variable (by default decrescent, e.g. "
-"lib-B will be tested before lib-A)."
+"The sort direction can be controlled using "
+"the :variable:`CMAKE_FIND_PACKAGE_SORT_DIRECTION` variable (by default "
+"decrescent, e.g. lib-B will be tested before lib-A)."
 msgstr ""
