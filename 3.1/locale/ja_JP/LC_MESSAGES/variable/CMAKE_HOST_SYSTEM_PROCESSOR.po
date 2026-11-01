@@ -27,7 +27,7 @@ msgstr ""
 
 #: ../../../variable/CMAKE_HOST_SYSTEM_PROCESSOR.rst:6
 msgid ""
-"On systems that support uname, this variable is set to the output of uname -"
-"p, on windows it is set to the value of the environment variable "
+"On systems that support uname, this variable is set to the output of uname "
+"-p, on windows it is set to the value of the environment variable "
 "``PROCESSOR_ARCHITECTURE``."
 msgstr ""

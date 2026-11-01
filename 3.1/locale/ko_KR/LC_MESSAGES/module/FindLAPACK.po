@@ -34,8 +34,8 @@ msgstr ""
 #: ../../../../Modules/FindLAPACK.cmake:10
 msgid ""
 "The approach follows that taken for the autoconf macro file, acx_lapack.m4 "
-"(distributed at http://ac-archive.sourceforge.net/ac-archive/acx_lapack."
-"html)."
+"(distributed at http://ac-archive.sourceforge.net/ac-archive/"
+"acx_lapack.html)."
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:14
@@ -62,6 +62,6 @@ msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:33
 msgid ""
-"## List of vendors (BLA_VENDOR) valid in this module # Intel(mkl), ACML,"
-"Apple, NAS, Generic"
+"## List of vendors (BLA_VENDOR) valid in this module # Intel(mkl), "
+"ACML,Apple, NAS, Generic"
 msgstr ""

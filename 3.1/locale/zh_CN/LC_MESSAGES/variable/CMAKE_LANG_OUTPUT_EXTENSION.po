@@ -27,6 +27,6 @@ msgstr ""
 
 #: ../../../variable/CMAKE_LANG_OUTPUT_EXTENSION.rst:6
 msgid ""
-"This is the extension for an object file for the given <LANG>.  For example ."
-"obj for C on Windows."
+"This is the extension for an object file for the given <LANG>.  For "
+"example .obj for C on Windows."
 msgstr ""

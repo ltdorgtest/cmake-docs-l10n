@@ -69,8 +69,9 @@ msgstr ""
 
 #: ../../../../Modules/ExternalData.cmake:36
 msgid ""
-"The ``ExternalData_Add_Test`` function wraps around the CMake :command:"
-"`add_test` command but supports ``DATA{}`` references in its arguments:"
+"The ``ExternalData_Add_Test`` function wraps around the "
+"CMake :command:`add_test` command but supports ``DATA{}`` references in its "
+"arguments:"
 msgstr ""
 
 #: ../../../../Modules/ExternalData.cmake:40
@@ -105,8 +106,8 @@ msgid ""
 "It creates custom commands in the target as necessary to make data files "
 "available for each ``DATA{}`` reference previously evaluated by other "
 "functions provided by this module.  A list of URL templates may be provided "
-"in the variable ``ExternalData_URL_TEMPLATES`` using the placeholders "
-"``%(algo)`` and ``%(hash)`` in each template.  Data fetch rules try each URL "
+"in the variable ``ExternalData_URL_TEMPLATES`` using the placeholders ``%"
+"(algo)`` and ``%(hash)`` in each template.  Data fetch rules try each URL "
 "template in order by substituting the hash algorithm name for ``%(algo)`` "
 "and the hash value for ``%(hash)``."
 msgstr ""
@@ -153,10 +154,10 @@ msgstr ""
 #: ../../../../Modules/ExternalData.cmake:95
 msgid ""
 "When test ``MyTest`` runs the ``DATA{MyInput.png}`` argument will be "
-"replaced by the full path to a real instance of the data file ``MyInput."
-"png`` on disk.  If the source tree contains a content link such as ``MyInput."
-"png.md5`` then the ``MyData`` target creates a real ``MyInput.png`` in the "
-"build tree."
+"replaced by the full path to a real instance of the data file "
+"``MyInput.png`` on disk.  If the source tree contains a content link such as "
+"``MyInput.png.md5`` then the ``MyData`` target creates a real "
+"``MyInput.png`` in the build tree."
 msgstr ""
 
 #: ../../../../Modules/ExternalData.cmake:101

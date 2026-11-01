@@ -28,17 +28,17 @@ msgstr ""
 #: ../../../prop_tgt/INTERFACE_SOURCES.rst:6
 msgid ""
 "Targets may populate this property to publish the sources for consuming "
-"targets to compile.  Consuming targets can add entries to their own :"
-"prop_tgt:`SOURCES` property such as ``$<TARGET_PROPERTY:foo,"
-"INTERFACE_SOURCES>`` to use the sources specified in the interface of "
-"``foo``."
+"targets to compile.  Consuming targets can add entries to their "
+"own :prop_tgt:`SOURCES` property such as "
+"``$<TARGET_PROPERTY:foo,INTERFACE_SOURCES>`` to use the sources specified in "
+"the interface of ``foo``."
 msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_SOURCES.rst:12
 msgid ""
-"Targets with ``INTERFACE_SOURCES`` may not be exported with the :command:"
-"`export` or :command:`install(EXPORT)` commands. This limitation may be "
-"lifted in a future version of CMake."
+"Targets with ``INTERFACE_SOURCES`` may not be exported with "
+"the :command:`export` or :command:`install(EXPORT)` commands. This "
+"limitation may be lifted in a future version of CMake."
 msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_SOURCES.rst:16

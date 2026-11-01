@@ -27,18 +27,18 @@ msgstr ""
 
 #: ../../../policy/CMP0053.rst:6
 msgid ""
-"CMake 3.1 introduced a much faster implementation of evaluation of the :ref:"
-"`Variable References` and :ref:`Escape Sequences` documented in the :manual:"
-"`cmake-language(7)` manual.  While the behavior is identical to the legacy "
-"implementation in most cases, some corner cases were cleaned up to simplify "
-"the behavior.  Specifically:"
+"CMake 3.1 introduced a much faster implementation of evaluation of "
+"the :ref:`Variable References` and :ref:`Escape Sequences` documented in "
+"the :manual:`cmake-language(7)` manual.  While the behavior is identical to "
+"the legacy implementation in most cases, some corner cases were cleaned up "
+"to simplify the behavior.  Specifically:"
 msgstr ""
 
 #: ../../../policy/CMP0053.rst:12
 msgid ""
-"Expansion of ``@VAR@`` reference syntax defined by the :command:"
-"`configure_file` and :command:`string(CONFIGURE)` commands is no longer "
-"performed in other contexts."
+"Expansion of ``@VAR@`` reference syntax defined by "
+"the :command:`configure_file` and :command:`string(CONFIGURE)` commands is "
+"no longer performed in other contexts."
 msgstr ""
 
 #: ../../../policy/CMP0053.rst:16
@@ -80,6 +80,7 @@ msgstr ""
 #: ../../../policy/CMP0053.rst:41
 msgid ""
 "This policy was introduced in CMake version 3.1. CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""

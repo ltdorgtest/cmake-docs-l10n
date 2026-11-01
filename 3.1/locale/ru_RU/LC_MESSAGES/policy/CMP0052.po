@@ -44,15 +44,16 @@ msgstr ""
 
 #: ../../../policy/CMP0052.rst:16
 msgid ""
-"The OLD behavior for this policy is to export the content of the :prop_tgt:"
-"`INTERFACE_INCLUDE_DIRECTORIES` with the source or binary directory.  The "
-"NEW behavior for this policy is to issue an error if such a directory is "
-"used."
+"The OLD behavior for this policy is to export the content of "
+"the :prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` with the source or binary "
+"directory.  The NEW behavior for this policy is to issue an error if such a "
+"directory is used."
 msgstr ""
 
 #: ../../../policy/CMP0052.rst:21
 msgid ""
 "This policy was introduced in CMake version 3.1. CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""

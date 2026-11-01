@@ -46,8 +46,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_PREFIX.rst:19
 msgid ""
-"which will install the concerned software using the installation prefix, e."
-"g.  \"/usr/local\" prepended with the DESTDIR value which finally gives \"/"
+"which will install the concerned software using the installation prefix, "
+"e.g.  \"/usr/local\" prepended with the DESTDIR value which finally gives \"/"
 "home/john/usr/local\"."
 msgstr ""
 

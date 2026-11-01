@@ -301,9 +301,10 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:212
 msgid ""
 "When adding the first supported feature to a particular CompilerId, it is "
-"necessary to list support for all features known to cmake (See :variable:"
-"`CMAKE_C_COMPILE_FEATURES` and :variable:`CMAKE_CXX_COMPILE_FEATURES` as "
-"appropriate), where available for the compiler."
+"necessary to list support for all features known to cmake "
+"(See :variable:`CMAKE_C_COMPILE_FEATURES` "
+"and :variable:`CMAKE_CXX_COMPILE_FEATURES` as appropriate), where available "
+"for the compiler."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:218
@@ -574,8 +575,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:370
 msgid ""
-"A CMake module. See the :manual:`cmake-modules(7)` manual and the :command:"
-"`include` command."
+"A CMake module. See the :manual:`cmake-modules(7)` manual and "
+"the :command:`include` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:377
@@ -584,8 +585,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:375
 msgid ""
-"A CMake policy. See the :manual:`cmake-policies(7)` manual and the :command:"
-"`cmake_policy` command."
+"A CMake policy. See the :manual:`cmake-policies(7)` manual and "
+"the :command:`cmake_policy` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:382
@@ -870,8 +871,8 @@ msgid ""
 "Use \"``OFF``\" and \"``ON``\" for boolean values which can be modified by "
 "the user, such as :prop_tgt:`POSITION_INDEPENDENT_CODE`. Such properties may "
 "be \"enabled\" and \"disabled\". Use \"``True``\" and \"``False``\" for "
-"inherent values which can't be modified after being set, such as the :"
-"prop_tgt:`IMPORTED` property of a build target."
+"inherent values which can't be modified after being set, such as "
+"the :prop_tgt:`IMPORTED` property of a build target."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:556
@@ -898,9 +899,9 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:570
 msgid ""
 "Mark up linkable references as links, including repeats. An alternative, "
-"which is used by wikipedia (`<http://en.wikipedia.org/wiki/WP:"
-"REPEATLINK>`_), is to link to a reference only once per article. That style "
-"is not used in CMake documentation."
+"which is used by wikipedia (`<http://en.wikipedia.org/wiki/"
+"WP:REPEATLINK>`_), is to link to a reference only once per article. That "
+"style is not used in CMake documentation."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:577
@@ -1163,8 +1164,8 @@ msgid ""
 "name>``, and also by enabling the ``SPHINX_HTML`` and ``SPHINX_MAN`` options "
 "to build the documentation. Edit the comments until generated documentation "
 "looks satisfactory.  To have a .cmake file in this directory NOT show up in "
-"the modules documentation, simply leave out the ``Help/module/<module-name>."
-"rst`` file and the ``Help/manual/cmake-modules.7.rst`` toctree entry."
+"the modules documentation, simply leave out the ``Help/module/<module-"
+"name>.rst`` file and the ``Help/manual/cmake-modules.7.rst`` toctree entry."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:769
@@ -1197,11 +1198,11 @@ msgid ""
 "The more modern approach is to behave as much like ``<package>Config.cmake`` "
 "files as possible, by providing imported targets.  As well as matching how "
 "``*Config.cmake`` files work, the libraries, include directories and compile "
-"definitions are all set just by using the target in a :command:"
-"`target_link_libraries` call.   The disadvantage is that ``*Config.cmake`` "
-"files of projects that use imported targets from find modules may require "
-"more work to make sure those imported targets that are in the link interface "
-"are available."
+"definitions are all set just by using the target in "
+"a :command:`target_link_libraries` call.   The disadvantage is that "
+"``*Config.cmake`` files of projects that use imported targets from find "
+"modules may require more work to make sure those imported targets that are "
+"in the link interface are available."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:793
@@ -1227,8 +1228,8 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:805
 msgid ""
 "See the :command:`find_package` documentation for details on what variables "
-"are set for the find module.  Most of these are dealt with by using :module:"
-"`FindPackageHandleStandardArgs`."
+"are set for the find module.  Most of these are dealt with by "
+"using :module:`FindPackageHandleStandardArgs`."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:809
@@ -1571,8 +1572,8 @@ msgstr ""
 msgid ""
 "if(CMAKE_MINIMUM_REQUIRED_VERSION VERSION_LESS 3.0.0)\n"
 "  message(AUTHOR_WARNING\n"
-"    \"Your project should require at least CMake 3.0.0 to use FindFoo."
-"cmake\")\n"
+"    \"Your project should require at least CMake 3.0.0 to use "
+"FindFoo.cmake\")\n"
 "endif()"
 msgstr ""
 
@@ -1690,11 +1691,11 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:1094
 msgid ""
 "When providing imported targets, these should be namespaced (hence the "
-"``Foo::`` prefix); CMake will recognize that values passed to :command:"
-"`target_link_libraries` that contain ``::`` in their name are supposed to be "
-"imported targets (rather than just library names), and will produce "
-"appropriate diagnostic messages if that target does not exist (see policy :"
-"policy:`CMP0028`)."
+"``Foo::`` prefix); CMake will recognize that values passed "
+"to :command:`target_link_libraries` that contain ``::`` in their name are "
+"supposed to be imported targets (rather than just library names), and will "
+"produce appropriate diagnostic messages if that target does not exist (see "
+"policy :policy:`CMP0028`)."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:1101
