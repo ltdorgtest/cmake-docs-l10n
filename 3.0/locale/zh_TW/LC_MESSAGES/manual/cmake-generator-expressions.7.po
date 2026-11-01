@@ -34,11 +34,12 @@ msgstr ""
 #: ../../../manual/cmake-generator-expressions.7.rst:16
 msgid ""
 "Generator expressions are allowed in the context of many target properties, "
-"such as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :"
-"prop_tgt:`COMPILE_DEFINITIONS` and others.  They may also be used when using "
-"commands to populate those properties, such as :command:"
-"`target_link_libraries`, :command:`target_include_directories`, :command:"
-"`target_compile_definitions` and others."
+"such "
+"as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :prop_tgt:`COMPILE_DEFINITIONS` "
+"and others.  They may also be used when using commands to populate those "
+"properties, such "
+"as :command:`target_link_libraries`, :command:`target_include_directories`, :command:`target_compile_definitions` "
+"and others."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:23
@@ -147,8 +148,8 @@ msgstr ""
 msgid ""
 "``1`` if config is ``cfg``, else ``0``. This is a case-insensitive "
 "comparison. The mapping in :prop_tgt:`MAP_IMPORTED_CONFIG_<CONFIG>` is also "
-"considered by this expression when it is evaluated on a property on an :"
-"prop_tgt:`IMPORTED` target."
+"considered by this expression when it is evaluated on a property on "
+"an :prop_tgt:`IMPORTED` target."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:65
@@ -426,8 +427,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:147
 msgid ""
-"Content of the install prefix when the target is exported via :command:"
-"`install(EXPORT)` and empty otherwise."
+"Content of the install prefix when the target is exported "
+"via :command:`install(EXPORT)` and empty otherwise."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:151
@@ -455,8 +456,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:164
 msgid ""
-"$<$<BOOL:$<TARGET_PROPERTY:INCLUDE_DIRECTORIES>>:-I$<JOIN:$<TARGET_PROPERTY:"
-"INCLUDE_DIRECTORIES>, -I>>"
+"$<$<BOOL:$<TARGET_PROPERTY:INCLUDE_DIRECTORIES>>:-I$<JOIN:"
+"$<TARGET_PROPERTY:INCLUDE_DIRECTORIES>, -I>>"
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:166
@@ -511,8 +512,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:179
 msgid ""
-"Content of ``...`` when the property is exported using :command:"
-"`install(EXPORT)`, and empty otherwise."
+"Content of ``...`` when the property is exported "
+"using :command:`install(EXPORT)`, and empty otherwise."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:183

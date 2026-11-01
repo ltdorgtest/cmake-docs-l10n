@@ -43,8 +43,8 @@ msgstr ""
 
 #: ../../../../Modules/CMakeExpandImportedTargets.cmake:23
 msgid ""
-"cmake_expand_imported_targets(expandedLibs LIBRARIES "
-"${CMAKE_REQUIRED_LIBRARIES}\n"
-"                                           CONFIGURATION "
-"\"${CMAKE_TRY_COMPILE_CONFIGURATION}\" )"
+"cmake_expand_imported_targets(expandedLibs LIBRARIES $"
+"{CMAKE_REQUIRED_LIBRARIES}\n"
+"                                           CONFIGURATION \"$"
+"{CMAKE_TRY_COMPILE_CONFIGURATION}\" )"
 msgstr ""

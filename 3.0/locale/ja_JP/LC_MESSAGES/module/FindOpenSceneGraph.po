@@ -39,8 +39,8 @@ msgstr ""
 msgid ""
 "NOTE: To use this module effectively you must either require CMake >= 2.6.3 "
 "with cmake_minimum_required(VERSION 2.6.3) or download and place "
-"FindOpenThreads.cmake, Findosg_functions.cmake, Findosg.cmake, and Find<etc>."
-"cmake files into your CMAKE_MODULE_PATH."
+"FindOpenThreads.cmake, Findosg_functions.cmake, Findosg.cmake, and "
+"Find<etc>.cmake files into your CMAKE_MODULE_PATH."
 msgstr ""
 
 #: ../../../../Modules/FindOpenSceneGraph.cmake:24

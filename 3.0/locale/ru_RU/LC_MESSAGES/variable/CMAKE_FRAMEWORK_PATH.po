@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../variable/CMAKE_FRAMEWORK_PATH.rst:4
 msgid ""
-"Search path for OS X frameworks used by the :command:`find_library`, :"
-"command:`find_package`, :command:`find_path`, and :command:`find_file` "
-"commands."
+"Search path for OS X frameworks used by "
+"the :command:`find_library`, :command:`find_package`, :command:`find_path`, "
+"and :command:`find_file` commands."
 msgstr ""

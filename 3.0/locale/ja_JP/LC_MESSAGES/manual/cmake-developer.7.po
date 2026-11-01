@@ -508,8 +508,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:325
 msgid ""
-"A CMake module. See the :manual:`cmake-modules(7)` manual and the :command:"
-"`include` command."
+"A CMake module. See the :manual:`cmake-modules(7)` manual and "
+"the :command:`include` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:332
@@ -518,8 +518,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:330
 msgid ""
-"A CMake policy. See the :manual:`cmake-policies(7)` manual and the :command:"
-"`cmake_policy` command."
+"A CMake policy. See the :manual:`cmake-policies(7)` manual and "
+"the :command:`cmake_policy` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:337
@@ -529,8 +529,8 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:335
 msgid ""
 "A CMake cache, directory, global, source file, test, or target property, "
-"respectively.  See the :manual:`cmake-properties(7)` manual and the :command:"
-"`set_property` command."
+"respectively.  See the :manual:`cmake-properties(7)` manual and "
+"the :command:`set_property` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:342
@@ -698,8 +698,8 @@ msgid ""
 "Use \"``OFF``\" and \"``ON``\" for boolean values which can be modified by "
 "the user, such as :prop_tgt:`POSITION_INDEPENDENT_CODE`. Such properties may "
 "be \"enabled\" and \"disabled\". Use \"``True``\" and \"``False``\" for "
-"inherent values which can't be modified after being set, such as the :"
-"prop_tgt:`IMPORTED` property of a build target."
+"inherent values which can't be modified after being set, such as "
+"the :prop_tgt:`IMPORTED` property of a build target."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:451
@@ -746,9 +746,9 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:483
 msgid ""
 "Mark up all other linkable references as links, including repeats. An "
-"alternative, which is used by wikipedia (`<http://en.wikipedia.org/wiki/WP:"
-"REPEATLINK>`_), is to link to a reference only once per article. That style "
-"is not used in CMake documentation."
+"alternative, which is used by wikipedia (`<http://en.wikipedia.org/wiki/"
+"WP:REPEATLINK>`_), is to link to a reference only once per article. That "
+"style is not used in CMake documentation."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:489

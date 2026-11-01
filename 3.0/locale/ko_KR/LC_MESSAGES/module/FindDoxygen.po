@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../../Modules/FindDoxygen.cmake:7
 msgid ""
-"Doxygen is a documentation generation tool.  Please see http://www.doxygen."
-"org"
+"Doxygen is a documentation generation tool.  Please see http://"
+"www.doxygen.org"
 msgstr ""
 
 #: ../../../../Modules/FindDoxygen.cmake:10
