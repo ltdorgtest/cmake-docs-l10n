@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../policy/CMP0096.rst:15
 msgid ""
-"The ``OLD`` behavior of this policy drops leading zeros in all components, e."
-"g.  such that version ``1.07.06`` becomes ``1.7.6``.  The ``NEW`` behavior "
+"The ``OLD`` behavior of this policy drops leading zeros in all components, "
+"e.g.  such that version ``1.07.06`` becomes ``1.7.6``.  The ``NEW`` behavior "
 "of this policy preserves the leading zeros in all components, such that "
 "version ``1.07.06`` remains unchanged."
 msgstr ""

@@ -35,14 +35,15 @@ msgstr ""
 
 #: ../../../../Modules/CheckLanguage.cmake:16
 msgid ""
-"where ``<lang>`` is a language that may be passed to :command:"
-"`enable_language` such as ``Fortran``.  If :variable:`CMAKE_<LANG>_COMPILER` "
-"is already defined the check does nothing.  Otherwise it tries enabling the "
-"language in a test project.  The result is cached in :variable:"
-"`CMAKE_<LANG>_COMPILER` as the compiler that was found, or ``NOTFOUND`` if "
-"the language cannot be enabled. For CUDA which can have an explicit host "
-"compiler, the cache :variable:`CMAKE_CUDA_HOST_COMPILER` variable will be "
-"set if it was required for compilation."
+"where ``<lang>`` is a language that may be passed "
+"to :command:`enable_language` such as ``Fortran``.  "
+"If :variable:`CMAKE_<LANG>_COMPILER` is already defined the check does "
+"nothing.  Otherwise it tries enabling the language in a test project.  The "
+"result is cached in :variable:`CMAKE_<LANG>_COMPILER` as the compiler that "
+"was found, or ``NOTFOUND`` if the language cannot be enabled. For CUDA which "
+"can have an explicit host compiler, the "
+"cache :variable:`CMAKE_CUDA_HOST_COMPILER` variable will be set if it was "
+"required for compilation."
 msgstr ""
 
 #: ../../../../Modules/CheckLanguage.cmake:25

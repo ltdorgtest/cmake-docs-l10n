@@ -27,15 +27,15 @@ msgstr ""
 
 #: ../../../policy/CMP0048.rst:6
 msgid ""
-"CMake version 3.0 introduced the ``VERSION`` option of the :command:"
-"`project` command to specify a project version as well as the name.  In "
-"order to keep :variable:`PROJECT_VERSION` and related variables consistent "
-"with variable :variable:`PROJECT_NAME` it is necessary to set the "
-"``VERSION`` variables to the empty string when no ``VERSION`` is given to :"
-"command:`project`. However, this can change behavior for existing projects "
-"that set ``VERSION`` variables themselves since :command:`project` may now "
-"clear them. This policy controls the behavior for compatibility with such "
-"projects."
+"CMake version 3.0 introduced the ``VERSION`` option of "
+"the :command:`project` command to specify a project version as well as the "
+"name.  In order to keep :variable:`PROJECT_VERSION` and related variables "
+"consistent with variable :variable:`PROJECT_NAME` it is necessary to set the "
+"``VERSION`` variables to the empty string when no ``VERSION`` is given "
+"to :command:`project`. However, this can change behavior for existing "
+"projects that set ``VERSION`` variables themselves since :command:`project` "
+"may now clear them. This policy controls the behavior for compatibility with "
+"such projects."
 msgstr ""
 
 #: ../../../policy/CMP0048.rst:15
@@ -48,8 +48,9 @@ msgstr ""
 #: ../../../policy/CMP0048.rst:19
 msgid ""
 "This policy was introduced in CMake version 3.0. CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../variable/CMAKE_GLOBAL_AUTOGEN_TARGET_NAME.rst:6
 msgid ""
 "When :variable:`CMAKE_GLOBAL_AUTOGEN_TARGET` is enabled, a global custom "
-"target named ``autogen`` is created.  :variable:"
-"`CMAKE_GLOBAL_AUTOGEN_TARGET_NAME` allows to set a different name for that "
-"target."
+"target named ``autogen`` is "
+"created.  :variable:`CMAKE_GLOBAL_AUTOGEN_TARGET_NAME` allows to set a "
+"different name for that target."
 msgstr ""
 
 #: ../../../variable/CMAKE_GLOBAL_AUTOGEN_TARGET_NAME.rst:10

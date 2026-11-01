@@ -24,8 +24,8 @@ msgstr ""
 #: ../../../prop_tgt/IMPORTED_OBJECTS.rst:4
 msgid ""
 "A :ref:`semicolon-separated list <CMake Language Lists>` of absolute paths "
-"to the object files on disk for an :ref:`imported <Imported targets>` :ref:"
-"`object library <object libraries>`."
+"to the object files on disk for an :ref:`imported <Imported "
+"targets>` :ref:`object library <object libraries>`."
 msgstr ""
 
 #: ../../../prop_tgt/IMPORTED_OBJECTS.rst:8

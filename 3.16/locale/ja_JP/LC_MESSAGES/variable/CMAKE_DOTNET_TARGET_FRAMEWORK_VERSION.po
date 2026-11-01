@@ -29,9 +29,9 @@ msgstr ""
 
 #: ../../../variable/CMAKE_DOTNET_TARGET_FRAMEWORK_VERSION.rst:7
 msgid ""
-"This variable is used to initialize the :prop_tgt:"
-"`DOTNET_TARGET_FRAMEWORK_VERSION` property on all targets. See that target "
-"property for additional information."
+"This variable is used to initialize "
+"the :prop_tgt:`DOTNET_TARGET_FRAMEWORK_VERSION` property on all targets. See "
+"that target property for additional information."
 msgstr ""
 
 #: ../../../variable/CMAKE_DOTNET_TARGET_FRAMEWORK_VERSION.rst:11

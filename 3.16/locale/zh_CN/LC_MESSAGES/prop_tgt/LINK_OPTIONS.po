@@ -24,15 +24,15 @@ msgstr ""
 #: ../../../prop_tgt/LINK_OPTIONS.rst:4
 msgid ""
 "List of options to use for the link step of shared library, module and "
-"executable targets. Targets that are static libraries need to use the :"
-"prop_tgt:`STATIC_LIBRARY_OPTIONS` target property."
+"executable targets. Targets that are static libraries need to use "
+"the :prop_tgt:`STATIC_LIBRARY_OPTIONS` target property."
 msgstr ""
 
 #: ../../../prop_tgt/LINK_OPTIONS.rst:9
 msgid ""
 "This property holds a :ref:`semicolon-separated list <CMake Language Lists>` "
-"of options specified so far for its target.  Use the :command:"
-"`target_link_options` command to append more options."
+"of options specified so far for its target.  Use "
+"the :command:`target_link_options` command to append more options."
 msgstr ""
 
 #: ../../../prop_tgt/LINK_OPTIONS.rst:13

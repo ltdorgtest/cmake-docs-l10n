@@ -35,9 +35,9 @@ msgstr ""
 
 #: ../../../policy/CMP0062.rst:12
 msgid ""
-"The :command:`install(EXPORT)` generates and installs files which contain :"
-"ref:`Imported Targets`.  These files are generated with relative paths "
-"(unless the user specifies absolute paths), and are designed for multi-"
+"The :command:`install(EXPORT)` generates and installs files which "
+"contain :ref:`Imported Targets`.  These files are generated with relative "
+"paths (unless the user specifies absolute paths), and are designed for multi-"
 "configuration use.  See :ref:`Creating Packages` for more."
 msgstr ""
 
@@ -57,8 +57,9 @@ msgstr ""
 #: ../../../policy/CMP0062.rst:24
 msgid ""
 "This policy was introduced in CMake version 3.3.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy()` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy()` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

@@ -146,8 +146,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:61
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:64
@@ -214,8 +215,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:80
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=True)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:85
@@ -228,8 +229,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:85
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=True)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:90
@@ -242,8 +243,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:90
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=False)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:95
@@ -256,8 +257,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:95
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=False)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:97
@@ -417,8 +418,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:142
 msgid ""
-"This variable defines which ABIs, as defined in `PEP 3149 <https://www."
-"python.org/dev/peps/pep-3149/>`_, should be searched."
+"This variable defines which ABIs, as defined in `PEP 3149 <https://"
+"www.python.org/dev/peps/pep-3149/>`_, should be searched."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:147
@@ -482,9 +483,9 @@ msgstr ""
 #: ../../../../Modules/FindPython3.cmake:177
 msgid ""
 "This hint is useful only on ``POSIX`` systems. So, on ``Windows`` systems, "
-"when ``Python3_FIND_ABI`` is defined, ``Python`` distributions from `python."
-"org <https://www.python.org/>`_ will be found only if value for each flag is "
-"``OFF`` or ``ANY``."
+"when ``Python3_FIND_ABI`` is defined, ``Python`` distributions from "
+"`python.org <https://www.python.org/>`_ will be found only if value for each "
+"flag is ``OFF`` or ``ANY``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:193
@@ -545,8 +546,8 @@ msgstr ""
 msgid ""
 "On macOS the ``Python3_FIND_FRAMEWORK`` variable determine the order of "
 "preference between Apple-style and unix-style package components. This "
-"variable can be set to empty or take same values as :variable:"
-"`CMAKE_FIND_FRAMEWORK` variable."
+"variable can be set to empty or take same values "
+"as :variable:`CMAKE_FIND_FRAMEWORK` variable."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:214
@@ -555,8 +556,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:216
 msgid ""
-"If ``Python3_FIND_FRAMEWORK`` is not defined, :variable:"
-"`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
+"If ``Python3_FIND_FRAMEWORK`` is not "
+"defined, :variable:`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:241
@@ -673,11 +674,11 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:284
 msgid ""
-"This module defines the command ``Python_add_library`` (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
-"`add_library` and adds a dependency to target ``Python3::Python`` or, when "
-"library type is ``MODULE``, to target ``Python3::Module`` and takes care of "
-"Python module naming rules::"
+"This module defines the command ``Python_add_library`` "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``), which has the same semantics "
+"as :command:`add_library` and adds a dependency to target "
+"``Python3::Python`` or, when library type is ``MODULE``, to target "
+"``Python3::Module`` and takes care of Python module naming rules::"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:290

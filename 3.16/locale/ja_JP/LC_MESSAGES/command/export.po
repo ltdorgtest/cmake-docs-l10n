@@ -106,11 +106,11 @@ msgstr ""
 
 #: ../../../command/export.rst:67
 msgid ""
-"By default the ``export(PACKAGE)`` command does nothing (see policy :policy:"
-"`CMP0090`) because populating the user package registry has effects outside "
-"the source and build trees.  Set the :variable:"
-"`CMAKE_EXPORT_PACKAGE_REGISTRY` variable to add build directories to the "
-"CMake user package registry."
+"By default the ``export(PACKAGE)`` command does nothing (see "
+"policy :policy:`CMP0090`) because populating the user package registry has "
+"effects outside the source and build trees.  Set "
+"the :variable:`CMAKE_EXPORT_PACKAGE_REGISTRY` variable to add build "
+"directories to the CMake user package registry."
 msgstr ""
 
 #: ../../../command/export.rst:73
