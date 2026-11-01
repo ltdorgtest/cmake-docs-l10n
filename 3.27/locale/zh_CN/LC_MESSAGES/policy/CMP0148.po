@@ -36,8 +36,9 @@ msgstr ""
 
 #: ../../../policy/CMP0148.rst:13
 msgid ""
-"Projects using the :module:`FindPythonInterp` and/or :module:"
-"`FindPythonLibs` modules should be updated to use one of their replacements:"
+"Projects using the :module:`FindPythonInterp` and/"
+"or :module:`FindPythonLibs` modules should be updated to use one of their "
+"replacements:"
 msgstr ""
 
 #: ../../../policy/CMP0148.rst:16
@@ -62,8 +63,9 @@ msgstr ""
 #: ../../../policy/CMP0148.rst:24
 msgid ""
 "This policy was introduced in CMake version 3.27.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

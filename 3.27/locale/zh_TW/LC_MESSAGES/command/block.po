@@ -55,8 +55,8 @@ msgstr ""
 
 #: ../../../command/block.rst:23
 msgid ""
-"Create a new policy scope. This is equivalent to :command:"
-"`cmake_policy(PUSH)`."
+"Create a new policy scope. This is equivalent "
+"to :command:`cmake_policy(PUSH)`."
 msgstr ""
 
 #: ../../../command/block.rst:26

@@ -472,8 +472,8 @@ msgstr ""
 
 #: ../../../cpack_gen/wix.rst:328
 msgid ""
-"If this variable is set then the inclusion of WixUIExtensions is skipped, i."
-"e. the ``-ext \"WixUIExtension\"`` command line is not included during the "
+"If this variable is set then the inclusion of WixUIExtensions is skipped, "
+"i.e. the ``-ext \"WixUIExtension\"`` command line is not included during the "
 "execution of the WiX light tool."
 msgstr ""
 

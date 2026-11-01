@@ -27,15 +27,15 @@ msgstr ""
 
 #: ../../../policy/CMP0123.rst:8
 msgid ""
-"CMake 3.20 and lower automatically maps the :variable:"
-"`CMAKE_SYSTEM_PROCESSOR` variable and an undocumented ``CMAKE_SYSTEM_ARCH`` "
-"to compile and link options for ``ARMClang``.  For example, the ``-"
-"mcpu=cortex-m33`` flag is added when :variable:`CMAKE_SYSTEM_PROCESSOR` "
-"equals ``cortex-m33``.  CMake requires projects to set either variable or it "
-"raises a fatal error.  However, the project may need to additionally specify "
-"CPU features using e.g. ``-mcpu=cortex-m33+nodsp``, conflicting with the ``-"
-"mcpu=cortex-m33`` added by CMake.  This results in either link errors or "
-"unusable binaries."
+"CMake 3.20 and lower automatically maps "
+"the :variable:`CMAKE_SYSTEM_PROCESSOR` variable and an undocumented "
+"``CMAKE_SYSTEM_ARCH`` to compile and link options for ``ARMClang``.  For "
+"example, the ``-mcpu=cortex-m33`` flag is added "
+"when :variable:`CMAKE_SYSTEM_PROCESSOR` equals ``cortex-m33``.  CMake "
+"requires projects to set either variable or it raises a fatal error.  "
+"However, the project may need to additionally specify CPU features using "
+"e.g. ``-mcpu=cortex-m33+nodsp``, conflicting with the ``-mcpu=cortex-m33`` "
+"added by CMake.  This results in either link errors or unusable binaries."
 msgstr ""
 
 #: ../../../policy/CMP0123.rst:17
@@ -58,8 +58,9 @@ msgstr ""
 #: ../../../policy/CMP0123.rst:28
 msgid ""
 "This policy was introduced in CMake version 3.21.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2
