@@ -30,38 +30,38 @@ msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:8
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0025`` controls the warning for policy :policy:"
-"`CMP0025`."
+"``CMAKE_POLICY_WARNING_CMP0025`` controls the warning for "
+"policy :policy:`CMP0025`."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:10
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0047`` controls the warning for policy :policy:"
-"`CMP0047`."
+"``CMAKE_POLICY_WARNING_CMP0047`` controls the warning for "
+"policy :policy:`CMP0047`."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:12
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0056`` controls the warning for policy :policy:"
-"`CMP0056`."
+"``CMAKE_POLICY_WARNING_CMP0056`` controls the warning for "
+"policy :policy:`CMP0056`."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:14
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0060`` controls the warning for policy :policy:"
-"`CMP0060`."
+"``CMAKE_POLICY_WARNING_CMP0060`` controls the warning for "
+"policy :policy:`CMP0060`."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:16
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0065`` controls the warning for policy :policy:"
-"`CMP0065`."
+"``CMAKE_POLICY_WARNING_CMP0065`` controls the warning for "
+"policy :policy:`CMP0065`."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:18
 msgid ""
-"``CMAKE_POLICY_WARNING_CMP0066`` controls the warning for policy :policy:"
-"`CMP0066`."
+"``CMAKE_POLICY_WARNING_CMP0066`` controls the warning for "
+"policy :policy:`CMP0066`."
 msgstr ""
 
 #: ../../../variable/CMAKE_POLICY_WARNING_CMPNNNN.rst:21

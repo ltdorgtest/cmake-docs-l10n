@@ -384,9 +384,9 @@ msgstr ""
 msgid ""
 "Use this macro to set up information about the named package, which can then "
 "be displayed via ``feature_summary()``.  This can be done either directly in "
-"the Find-module or in the project which uses the module after the :command:"
-"`find_package` call.  The features for which information can be set are "
-"added automatically by the ``find_package()`` command."
+"the Find-module or in the project which uses the module after "
+"the :command:`find_package` call.  The features for which information can be "
+"set are added automatically by the ``find_package()`` command."
 msgstr ""
 
 #: ../../../../Modules/FeatureSummary.cmake:539
