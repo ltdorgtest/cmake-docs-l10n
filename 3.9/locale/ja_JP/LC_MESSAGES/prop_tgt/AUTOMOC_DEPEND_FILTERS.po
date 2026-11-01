@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:20
 msgid ""
-"By default :prop_tgt:`AUTOMOC_DEPEND_FILTERS` is initialized from :variable:"
-"`CMAKE_AUTOMOC_DEPEND_FILTERS`, which is empty by default."
+"By default :prop_tgt:`AUTOMOC_DEPEND_FILTERS` is initialized "
+"from :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS`, which is empty by default."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:23

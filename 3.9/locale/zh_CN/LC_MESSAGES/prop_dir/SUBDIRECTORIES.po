@@ -24,11 +24,11 @@ msgstr ""
 #: ../../../prop_dir/SUBDIRECTORIES.rst:4
 msgid ""
 "This read-only directory property contains a :ref:`;-list <CMake Language "
-"Lists>` of subdirectories processed so far by the :command:"
-"`add_subdirectory` or :command:`subdirs` commands.  Each entry is the "
-"absolute path to the source directory (containing the ``CMakeLists.txt`` "
-"file).  This is suitable to pass to the :command:`get_property` command "
-"``DIRECTORY`` option."
+"Lists>` of subdirectories processed so far by "
+"the :command:`add_subdirectory` or :command:`subdirs` commands.  Each entry "
+"is the absolute path to the source directory (containing the "
+"``CMakeLists.txt`` file).  This is suitable to pass to "
+"the :command:`get_property` command ``DIRECTORY`` option."
 msgstr ""
 
 #: ../../../prop_dir/SUBDIRECTORIES.rst:13

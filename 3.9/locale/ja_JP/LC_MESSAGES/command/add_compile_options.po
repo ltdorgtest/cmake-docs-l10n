@@ -33,16 +33,16 @@ msgstr ""
 msgid ""
 "Adds options to the compiler command line for targets in the current "
 "directory and below that are added after this command is invoked. See "
-"documentation of the :prop_dir:`directory <COMPILE_OPTIONS>` and :prop_tgt:"
-"`target <COMPILE_OPTIONS>` ``COMPILE_OPTIONS`` properties."
+"documentation of the :prop_dir:`directory <COMPILE_OPTIONS>` "
+"and :prop_tgt:`target <COMPILE_OPTIONS>` ``COMPILE_OPTIONS`` properties."
 msgstr ""
 
 #: ../../../command/add_compile_options.rst:15
 msgid ""
 "This command can be used to add any options, but alternative commands exist "
-"to add preprocessor definitions (:command:`target_compile_definitions` and :"
-"command:`add_definitions`) or include directories (:command:"
-"`target_include_directories` and :command:`include_directories`)."
+"to add preprocessor definitions (:command:`target_compile_definitions` "
+"and :command:`add_definitions`) or include directories "
+"(:command:`target_include_directories` and :command:`include_directories`)."
 msgstr ""
 
 #: ../../../command/add_compile_options.rst:20

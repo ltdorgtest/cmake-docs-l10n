@@ -38,8 +38,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:17
 msgid ""
-"CPackRPM has specific features which are controlled by the specifics :code:"
-"`CPACK_RPM_XXX` variables."
+"CPackRPM has specific features which are controlled by the "
+"specifics :code:`CPACK_RPM_XXX` variables."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:20
@@ -287,18 +287,18 @@ msgstr ""
 #: ../../../../Modules/CPackRPM.cmake:133
 msgid ""
 "This is the numbering of the RPM package itself, i.e. the version of the "
-"packaging and not the version of the content (see :variable:"
-"`CPACK_RPM_PACKAGE_VERSION`). One may change the default value if the "
-"previous packaging was buggy and/or you want to put here a fancy Linux "
-"distro specific numbering."
+"packaging and not the version of the content "
+"(see :variable:`CPACK_RPM_PACKAGE_VERSION`). One may change the default "
+"value if the previous packaging was buggy and/or you want to put here a "
+"fancy Linux distro specific numbering."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:141
 msgid ""
 "This is the string that goes into the RPM ``Release:`` field. Some distros "
-"(e.g. Fedora, CentOS) require ``1%{?dist}`` format and not just a number. "
-"``%{?dist}`` part can be added by setting :variable:"
-"`CPACK_RPM_PACKAGE_RELEASE_DIST`."
+"(e.g. Fedora, CentOS) require ``1%{?dist}`` format and not just a number. ``%"
+"{?dist}`` part can be added by "
+"setting :variable:`CPACK_RPM_PACKAGE_RELEASE_DIST`."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:147
@@ -415,9 +415,9 @@ msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:254
 msgid ""
-"Variable enables/disables autoreq and autoprov at the same time. See :"
-"variable:`CPACK_RPM_PACKAGE_AUTOREQ` and :variable:"
-"`CPACK_RPM_PACKAGE_AUTOPROV` for more details."
+"Variable enables/disables autoreq and autoprov at the same time. "
+"See :variable:`CPACK_RPM_PACKAGE_AUTOREQ` "
+"and :variable:`CPACK_RPM_PACKAGE_AUTOPROV` for more details."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:260
@@ -579,9 +579,10 @@ msgstr ""
 #: ../../../../Modules/CPackRPM.cmake:396
 msgid ""
 "in order to install it at an alternate place see rpm(8). Note that currently "
-"this may fail if :variable:`CPACK_SET_DESTDIR` is set to ``ON``. If :"
-"variable:`CPACK_SET_DESTDIR` is set then you will get a warning message but "
-"if there is file installed with absolute path you'll get unexpected behavior."
+"this may fail if :variable:`CPACK_SET_DESTDIR` is set to ``ON``. "
+"If :variable:`CPACK_SET_DESTDIR` is set then you will get a warning message "
+"but if there is file installed with absolute path you'll get unexpected "
+"behavior."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:403
@@ -595,10 +596,10 @@ msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:409
 msgid ""
-"This way of specifying post-install script is deprecated, use :variable:"
-"`CPACK_RPM_POST_INSTALL_SCRIPT_FILE`. May be used to set an RPM post-install "
-"command inside the spec file. For example setting it to ``/bin/true`` may be "
-"used to prevent rpmbuild to strip binaries."
+"This way of specifying post-install script is deprecated, "
+"use :variable:`CPACK_RPM_POST_INSTALL_SCRIPT_FILE`. May be used to set an "
+"RPM post-install command inside the spec file. For example setting it to ``/"
+"bin/true`` may be used to prevent rpmbuild to strip binaries."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:417
@@ -726,8 +727,8 @@ msgid ""
 "list of paths discovered by CPack RPM. The defaut value contains a "
 "reasonable set of values if the variable is not defined by the user. If the "
 "variable is defined by the user then CPackRPM will NOT any of the default "
-"path. If you want to add some path to the default list then you can use :"
-"variable:`CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST_ADDITION` variable."
+"path. If you want to add some path to the default list then you can "
+"use :variable:`CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST_ADDITION` variable."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:544
@@ -737,8 +738,8 @@ msgstr ""
 #: ../../../../Modules/CPackRPM.cmake:549
 msgid ""
 "May be used to add more exclude path (directories or files) from the initial "
-"default list of excluded paths. See :variable:"
-"`CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST`."
+"default list of excluded paths. "
+"See :variable:`CPACK_RPM_EXCLUDE_FROM_AUTO_FILELIST`."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:555
@@ -1106,8 +1107,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:794
 msgid ""
-"Paths that should be appended to :variable:"
-"`CPACK_RPM_DEBUGINFO_EXCLUDE_DIRS` for exclusion."
+"Paths that should be appended "
+"to :variable:`CPACK_RPM_DEBUGINFO_EXCLUDE_DIRS` for exclusion."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:802
@@ -1123,8 +1124,8 @@ msgstr ""
 #: ../../../../Modules/CPackRPM.cmake:810
 msgid ""
 "When using this feature in combination with components packaging and there "
-"is more than one component this variable requires :variable:"
-"`CPACK_RPM_MAIN_COMPONENT` to be set."
+"is more than one component this variable "
+"requires :variable:`CPACK_RPM_MAIN_COMPONENT` to be set."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:816
@@ -1250,8 +1251,9 @@ msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:909
 msgid ""
-"Packaging install prefix that would be provided in :variable:"
-"`CPACK_PACKAGING_INSTALL_PREFIX` variable for producing binary RPM packages."
+"Packaging install prefix that would be provided "
+"in :variable:`CPACK_PACKAGING_INSTALL_PREFIX` variable for producing binary "
+"RPM packages."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:913

@@ -46,8 +46,8 @@ msgstr ""
 #: ../../../release/3.5.rst:19
 msgid ""
 "The :manual:`cmake-gui(1)` learned an option to set the toolset to be used "
-"with VS IDE and Xcode generators, much like the existing ``-T`` option to :"
-"manual:`cmake(1)`."
+"with VS IDE and Xcode generators, much like the existing ``-T`` option "
+"to :manual:`cmake(1)`."
 msgstr ""
 
 #: ../../../release/3.5.rst:23
@@ -93,9 +93,9 @@ msgstr ""
 
 #: ../../../release/3.5.rst:47
 msgid ""
-"The :command:`install(DIRECTORY)` command learned to support :manual:"
-"`generator expressions <cmake-generator-expressions(7)>` in the list of "
-"directories."
+"The :command:`install(DIRECTORY)` command learned to "
+"support :manual:`generator expressions <cmake-generator-expressions(7)>` in "
+"the list of directories."
 msgstr ""
 
 #: ../../../release/3.5.rst:52
@@ -212,8 +212,8 @@ msgstr ""
 msgid ""
 "When building for embedded Apple platforms like iOS CMake learned to build "
 "and install combined targets which contain both a device and a simulator "
-"build. This behavior can be enabled by setting the :prop_tgt:"
-"`IOS_INSTALL_COMBINED` target property."
+"build. This behavior can be enabled by setting "
+"the :prop_tgt:`IOS_INSTALL_COMBINED` target property."
 msgstr ""
 
 #: ../../../release/3.5.rst:121
@@ -225,45 +225,45 @@ msgid ""
 "The :module:`CPackDMG` module learned new variable to specify AppleScript "
 "file run to customize appearance of ``DragNDrop`` installer folder, "
 "including background image setting using supplied PNG or multi-resolution "
-"TIFF file.  See the :variable:`CPACK_DMG_DS_STORE_SETUP_SCRIPT` and :"
-"variable:`CPACK_DMG_BACKGROUND_IMAGE` variables."
+"TIFF file.  See the :variable:`CPACK_DMG_DS_STORE_SETUP_SCRIPT` "
+"and :variable:`CPACK_DMG_BACKGROUND_IMAGE` variables."
 msgstr ""
 
 #: ../../../release/3.5.rst:129
 msgid ""
 "The :module:`CPackDeb` module learned to set the optional config file "
-"``Source`` field using a monolithic or per-component variable. See :variable:"
-"`CPACK_DEBIAN_PACKAGE_SOURCE`."
+"``Source`` field using a monolithic or per-component variable. "
+"See :variable:`CPACK_DEBIAN_PACKAGE_SOURCE`."
 msgstr ""
 
 #: ../../../release/3.5.rst:133
 msgid ""
 "The :module:`CPackDeb` module learned to set Package, Section and Priority "
-"control fields per-component. See variables :variable:"
-"`CPACK_DEBIAN_<COMPONENT>_PACKAGE_SECTION` and :variable:"
-"`CPACK_DEBIAN_<COMPONENT>_PACKAGE_PRIORITY`."
+"control fields per-component. See "
+"variables :variable:`CPACK_DEBIAN_<COMPONENT>_PACKAGE_SECTION` "
+"and :variable:`CPACK_DEBIAN_<COMPONENT>_PACKAGE_PRIORITY`."
 msgstr ""
 
 #: ../../../release/3.5.rst:138
 msgid ""
 "The :module:`CPack DragNDrop generator <CPackDMG>` learned to add multi-"
 "lingual SLAs to a DMG which is presented to the user when they try to mount "
-"the DMG.  See the :variable:`CPACK_DMG_SLA_LANGUAGES` and :variable:"
-"`CPACK_DMG_SLA_DIR` variables for details."
+"the DMG.  See the :variable:`CPACK_DMG_SLA_LANGUAGES` "
+"and :variable:`CPACK_DMG_SLA_DIR` variables for details."
 msgstr ""
 
 #: ../../../release/3.5.rst:143
 msgid ""
 "The :module:`CPackNSIS` module learned new variables to add bitmaps to the "
-"installer.  See the :variable:`CPACK_NSIS_MUI_WELCOMEFINISHPAGE_BITMAP` and :"
-"variable:`CPACK_NSIS_MUI_UNWELCOMEFINISHPAGE_BITMAP` variables."
+"installer.  See the :variable:`CPACK_NSIS_MUI_WELCOMEFINISHPAGE_BITMAP` "
+"and :variable:`CPACK_NSIS_MUI_UNWELCOMEFINISHPAGE_BITMAP` variables."
 msgstr ""
 
 #: ../../../release/3.5.rst:147
 msgid ""
 "The :module:`CPackRPM` module learned to set Name and Group control fields "
-"per-component. See :variable:`CPACK_RPM_<component>_PACKAGE_NAME` and :"
-"variable:`CPACK_RPM_<component>_PACKAGE_GROUP`."
+"per-component. See :variable:`CPACK_RPM_<component>_PACKAGE_NAME` "
+"and :variable:`CPACK_RPM_<component>_PACKAGE_GROUP`."
 msgstr ""
 
 #: ../../../release/3.5.rst:153
@@ -273,8 +273,8 @@ msgstr ""
 #: ../../../release/3.5.rst:155
 msgid ""
 "Warnings about deprecated functionality are now enabled by default. They may "
-"be suppressed with ``-Wno-deprecated`` or by setting the :variable:"
-"`CMAKE_WARN_DEPRECATED` variable to false."
+"be suppressed with ``-Wno-deprecated`` or by setting "
+"the :variable:`CMAKE_WARN_DEPRECATED` variable to false."
 msgstr ""
 
 #: ../../../release/3.5.rst:160
@@ -303,8 +303,8 @@ msgstr ""
 
 #: ../../../release/3.5.rst:176
 msgid ""
-"The :generator:`Visual Studio 14 2015` generator learned to map the ``/debug:"
-"fastlink`` linker flag to the ``.vcxproj`` file property."
+"The :generator:`Visual Studio 14 2015` generator learned to map the ``/"
+"debug:fastlink`` linker flag to the ``.vcxproj`` file property."
 msgstr ""
 
 #: ../../../release/3.5.rst:179

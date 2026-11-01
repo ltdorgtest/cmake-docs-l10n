@@ -107,9 +107,9 @@ msgstr ""
 
 #: ../../../../Modules/CPack.cmake:55
 msgid ""
-"This is the key: For each generator listed in CPACK_GENERATOR in CPackConfig."
-"cmake, cpack will *reset* CPACK_GENERATOR internally to *the one currently "
-"being used* and then include the CPACK_PROJECT_CONFIG_FILE."
+"This is the key: For each generator listed in CPACK_GENERATOR in "
+"CPackConfig.cmake, cpack will *reset* CPACK_GENERATOR internally to *the one "
+"currently being used* and then include the CPACK_PROJECT_CONFIG_FILE."
 msgstr ""
 
 #: ../../../../Modules/CPack.cmake:60

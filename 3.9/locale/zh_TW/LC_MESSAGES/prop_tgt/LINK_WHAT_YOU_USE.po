@@ -35,6 +35,7 @@ msgstr ""
 
 #: ../../../prop_tgt/LINK_WHAT_YOU_USE.rst:13
 msgid ""
-"This property is initialized by the value of the :variable:"
-"`CMAKE_LINK_WHAT_YOU_USE` variable if it is set when a target is created."
+"This property is initialized by the value of "
+"the :variable:`CMAKE_LINK_WHAT_YOU_USE` variable if it is set when a target "
+"is created."
 msgstr ""

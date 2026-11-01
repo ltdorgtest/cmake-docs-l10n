@@ -65,8 +65,8 @@ msgstr ""
 
 #: ../../../../Modules/FindMPI.cmake:26
 msgid ""
-"Compilation flags for MPI programs, separated by spaces. This is *not* a :"
-"ref:`;-list <CMake Language Lists>`."
+"Compilation flags for MPI programs, separated by spaces. This is *not* "
+"a :ref:`;-list <CMake Language Lists>`."
 msgstr ""
 
 #: ../../../../Modules/FindMPI.cmake:28

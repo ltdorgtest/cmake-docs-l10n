@@ -73,8 +73,8 @@ msgstr ""
 msgid ""
 "If the provided ``<FileName>`` is a relative path, it is evaluated relative "
 "to the given base directory ``<BASE_DIR>``.  If no base directory is "
-"provided, the default base directory will be :variable:"
-"`CMAKE_CURRENT_SOURCE_DIR`."
+"provided, the default base directory will "
+"be :variable:`CMAKE_CURRENT_SOURCE_DIR`."
 msgstr ""
 
 #: ../../../command/get_filename_component.rst:48

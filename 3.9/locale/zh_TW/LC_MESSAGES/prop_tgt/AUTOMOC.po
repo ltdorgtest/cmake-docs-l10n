@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:6
 msgid ""
 "AUTOMOC is a boolean specifying whether CMake will handle the Qt ``moc`` "
-"preprocessor automatically, i.e.  without having to use the :module:"
-"`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro.  Currently Qt4 and Qt5 "
-"are supported."
+"preprocessor automatically, i.e.  without having to use "
+"the :module:`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro.  Currently "
+"Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:11
@@ -45,9 +45,10 @@ msgid ""
 "found, the ``Q_OBJECT`` or ``Q_GADGET`` macros are expected in an otherwise "
 "empty line of the ``<basename>.h(xx)`` header file. ``moc`` is run on the "
 "header file to generate ``moc_<basename>.cpp`` in the ``<AUTOGEN_BUILD_DIR>/"
-"include`` directory which is automatically added to the target's :prop_tgt:"
-"`INCLUDE_DIRECTORIES`. This allows the compiler to find the included "
-"``moc_<basename>.cpp`` file regardless of the location the original source."
+"include`` directory which is automatically added to the "
+"target's :prop_tgt:`INCLUDE_DIRECTORIES`. This allows the compiler to find "
+"the included ``moc_<basename>.cpp`` file regardless of the location the "
+"original source."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:23 ../../../prop_tgt/AUTOMOC.rst:40
@@ -79,9 +80,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:42
 msgid ""
 "Additionally, header files with the same base name as a source file, (like "
-"``<basename>.h``) or ``_p`` appended to the base name (like ``<basename>_p."
-"h``), are parsed for ``Q_OBJECT`` or ``Q_GADGET`` macros, and if found, "
-"``moc`` is also executed on those files."
+"``<basename>.h``) or ``_p`` appended to the base name (like "
+"``<basename>_p.h``), are parsed for ``Q_OBJECT`` or ``Q_GADGET`` macros, and "
+"if found, ``moc`` is also executed on those files."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:47
@@ -104,8 +105,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:56
 msgid ""
-"Additional command line options for moc can be set via the :prop_tgt:"
-"`AUTOMOC_MOC_OPTIONS` property."
+"Additional command line options for moc can be set via "
+"the :prop_tgt:`AUTOMOC_MOC_OPTIONS` property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:59
