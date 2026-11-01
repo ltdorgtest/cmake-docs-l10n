@@ -41,8 +41,8 @@ msgstr ""
 #: ../../../guide/tutorial/Packaging an Installer.rst:14
 msgid ""
 "include(InstallRequiredSystemLibraries)\n"
-"set(CPACK_RESOURCE_FILE_LICENSE \"${CMAKE_CURRENT_SOURCE_DIR}/License."
-"txt\")\n"
+"set(CPACK_RESOURCE_FILE_LICENSE \"${CMAKE_CURRENT_SOURCE_DIR}/"
+"License.txt\")\n"
 "set(CPACK_PACKAGE_VERSION_MAJOR \"${Tutorial_VERSION_MAJOR}\")\n"
 "set(CPACK_PACKAGE_VERSION_MINOR \"${Tutorial_VERSION_MINOR}\")\n"
 "include(CPack)\n"
@@ -50,13 +50,13 @@ msgstr ""
 
 #: ../../../guide/tutorial/Packaging an Installer.rst:20
 msgid ""
-"That is all there is to it. We start by including :module:"
-"`InstallRequiredSystemLibraries`. This module will include any runtime "
-"libraries that are needed by the project for the current platform. Next we "
-"set some CPack variables to where we have stored the license and version "
-"information for this project. The version information was set earlier in "
-"this tutorial and the ``license.txt`` has been included in the top-level "
-"source directory for this step."
+"That is all there is to it. We start by "
+"including :module:`InstallRequiredSystemLibraries`. This module will include "
+"any runtime libraries that are needed by the project for the current "
+"platform. Next we set some CPack variables to where we have stored the "
+"license and version information for this project. The version information "
+"was set earlier in this tutorial and the ``license.txt`` has been included "
+"in the top-level source directory for this step."
 msgstr ""
 
 #: ../../../guide/tutorial/Packaging an Installer.rst:28
@@ -68,9 +68,9 @@ msgstr ""
 
 #: ../../../guide/tutorial/Packaging an Installer.rst:32
 msgid ""
-"The next step is to build the project in the usual manner and then run the :"
-"manual:`cpack <cpack(1)>` executable. To build a binary distribution, from "
-"the binary directory run:"
+"The next step is to build the project in the usual manner and then run "
+"the :manual:`cpack <cpack(1)>` executable. To build a binary distribution, "
+"from the binary directory run:"
 msgstr ""
 
 #: ../../../guide/tutorial/Packaging an Installer.rst:36

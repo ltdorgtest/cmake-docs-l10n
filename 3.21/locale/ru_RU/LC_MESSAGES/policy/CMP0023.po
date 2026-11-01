@@ -34,8 +34,9 @@ msgid ""
 "``LINK_PUBLIC`` and ``LINK_PRIVATE`` keywords introduced in CMake 2.8.7. Use "
 "of signatures with any of these keywords sets the link interface of a target "
 "explicitly, even if empty.  This produces confusing behavior when used in "
-"combination with the historical behavior of the plain :command:"
-"`target_link_libraries` signature.  For example, consider the code:"
+"combination with the historical behavior of the "
+"plain :command:`target_link_libraries` signature.  For example, consider the "
+"code:"
 msgstr ""
 
 #: ../../../policy/CMP0023.rst:16
@@ -55,16 +56,18 @@ msgstr ""
 
 #: ../../../policy/CMP0023.rst:26
 msgid ""
-"The ``OLD`` behavior for this policy is to allow keyword and plain :command:"
-"`target_link_libraries` signatures to be mixed.  The ``NEW`` behavior for "
-"this policy is to not to allow mixing of the keyword and plain signatures."
+"The ``OLD`` behavior for this policy is to allow keyword and "
+"plain :command:`target_link_libraries` signatures to be mixed.  The ``NEW`` "
+"behavior for this policy is to not to allow mixing of the keyword and plain "
+"signatures."
 msgstr ""
 
 #: ../../../policy/CMP0023.rst:31
 msgid ""
 "This policy was introduced in CMake version 2.8.12.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

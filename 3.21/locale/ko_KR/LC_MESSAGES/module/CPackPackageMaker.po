@@ -23,6 +23,6 @@ msgstr ""
 
 #: ../../../module/CPackPackageMaker.rst:4
 msgid ""
-"The documentation for the CPack PackageMaker generator has moved here: :"
-"cpack_gen:`CPack PackageMaker Generator`"
+"The documentation for the CPack PackageMaker generator has moved "
+"here: :cpack_gen:`CPack PackageMaker Generator`"
 msgstr ""

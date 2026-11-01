@@ -42,12 +42,12 @@ msgstr ""
 
 #: ../../../generator/Visual Studio 16 2019.rst:18
 msgid ""
-"VS 2019 supports multiple installations on the same machine. The :variable:"
-"`CMAKE_GENERATOR_INSTANCE` variable may be set as a cache entry containing "
-"the absolute path to a Visual Studio instance. If the value is not specified "
-"explicitly by the user or a toolchain file, CMake queries the Visual Studio "
-"Installer to locate VS instances, chooses one, and sets the variable as a "
-"cache entry to hold the value persistently."
+"VS 2019 supports multiple installations on the same machine. "
+"The :variable:`CMAKE_GENERATOR_INSTANCE` variable may be set as a cache "
+"entry containing the absolute path to a Visual Studio instance. If the value "
+"is not specified explicitly by the user or a toolchain file, CMake queries "
+"the Visual Studio Installer to locate VS instances, chooses one, and sets "
+"the variable as a cache entry to hold the value persistently."
 msgstr ""
 
 #: ../../../generator/Visual Studio 16 2019.rst:25

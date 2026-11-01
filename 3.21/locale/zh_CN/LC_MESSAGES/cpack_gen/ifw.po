@@ -50,9 +50,9 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:24
 msgid ""
-"To make use of this generator, QtIFW needs to be installed. The :module:"
-"`CPackIFW` module looks for the location of the QtIFW command-line "
-"utilities, and defines several commands to control the behavior of this "
+"To make use of this generator, QtIFW needs to be installed. "
+"The :module:`CPackIFW` module looks for the location of the QtIFW command-"
+"line utilities, and defines several commands to control the behavior of this "
 "generator."
 msgstr ""
 
@@ -80,8 +80,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:50
 msgid ""
-"Name of the installer as displayed on the title bar. By default used :"
-"variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
+"Name of the installer as displayed on the title bar. By default "
+"used :variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:55
@@ -96,8 +96,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:64
 msgid ""
-"Filename for a custom installer icon. The actual file is '.icns' (macOS), '."
-"ico' (Windows). No functionality on Unix."
+"Filename for a custom installer icon. The actual file is '.icns' (macOS), "
+"'.ico' (Windows). No functionality on Unix."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:69
@@ -166,8 +166,8 @@ msgstr ""
 msgid ""
 "Default target directory for installation. By default used "
 "\"@ApplicationsDir@/:variable:`CPACK_PACKAGE_INSTALL_DIRECTORY`\" (variables "
-"embedded in '@' are expanded by the `QtIFW scripting engine <https://doc.qt."
-"io/qtinstallerframework/scripting.html>`_)."
+"embedded in '@' are expanded by the `QtIFW scripting engine <https://"
+"doc.qt.io/qtinstallerframework/scripting.html>`_)."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:140 ../../../cpack_gen/ifw.rst:146
@@ -261,20 +261,20 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:228
 msgid ""
-"On Linux, the name of the target binary is automatically extended with '."
-"run', if you do not specify the extension."
+"On Linux, the name of the target binary is automatically extended with "
+"'.run', if you do not specify the extension."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:231
 msgid ""
-"On Windows, the target is created as an application with the extension '."
-"exe', which is automatically added, if not supplied."
+"On Windows, the target is created as an application with the extension "
+"'.exe', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:234
 msgid ""
-"On Mac, the target is created as an DMG disk image with the extension '."
-"dmg', which is automatically added, if not supplied."
+"On Mac, the target is created as an DMG disk image with the extension "
+"'.dmg', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:239
@@ -417,8 +417,9 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:351
 msgid ""
-"The :command:`cpack_ifw_add_repository` command and the :variable:"
-"`CPACK_IFW_DOWNLOAD_ALL` variable allow for more specific configuration."
+"The :command:`cpack_ifw_add_repository` command and "
+"the :variable:`CPACK_IFW_DOWNLOAD_ALL` variable allow for more specific "
+"configuration."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:355
@@ -491,8 +492,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:400
 msgid ""
-"Predefined Variables: http://doc.qt.io/qtinstallerframework/scripting."
-"html#predefined-variables"
+"Predefined Variables: http://doc.qt.io/qtinstallerframework/"
+"scripting.html#predefined-variables"
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:403

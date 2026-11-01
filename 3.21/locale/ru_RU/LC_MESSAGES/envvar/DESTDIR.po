@@ -41,9 +41,9 @@ msgstr ""
 
 #: ../../../envvar/DESTDIR.rst:15
 msgid ""
-"which will install the concerned software using the installation prefix, e."
-"g.  ``/usr/local`` prepended with the ``DESTDIR`` value which finally gives "
-"``/home/john/usr/local``."
+"which will install the concerned software using the installation prefix, "
+"e.g.  ``/usr/local`` prepended with the ``DESTDIR`` value which finally "
+"gives ``/home/john/usr/local``."
 msgstr ""
 
 #: ../../../envvar/DESTDIR.rst:19

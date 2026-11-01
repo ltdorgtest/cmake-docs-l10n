@@ -34,10 +34,10 @@ msgstr ""
 
 #: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:12
 msgid ""
-"The features listed here may be used with the :command:"
-"`target_compile_features` command.  See the :manual:`cmake-compile-"
-"features(7)` manual for information on compile features and a list of "
-"supported compilers."
+"The features listed here may be used with "
+"the :command:`target_compile_features` command.  See the :manual:`cmake-"
+"compile-features(7)` manual for information on compile features and a list "
+"of supported compilers."
 msgstr ""
 
 #: ../../../prop_gbl/CMAKE_C_KNOWN_FEATURES.rst:16
