@@ -178,14 +178,15 @@ msgstr ""
 #: ../../../command/if.rst:131
 msgid ""
 "True if the given name is an existing logical target name created by a call "
-"to the :command:`add_executable`, :command:`add_library`, or :command:"
-"`add_custom_target` command that has already been invoked (in any directory)."
+"to the :command:`add_executable`, :command:`add_library`, "
+"or :command:`add_custom_target` command that has already been invoked (in "
+"any directory)."
 msgstr ""
 
 #: ../../../command/if.rst:140
 msgid ""
-"True if the given name is an existing test name created by the :command:"
-"`add_test` command."
+"True if the given name is an existing test name created by "
+"the :command:`add_test` command."
 msgstr ""
 
 #: ../../../command/if.rst:145
@@ -269,10 +270,10 @@ msgstr ""
 
 #: ../../../command/if.rst:209
 msgid ""
-"On Windows hosts, any ``path`` that begins with a drive letter and colon (e."
-"g. ``C:``), a forward slash or a backslash will evaluate to true. This means "
-"a path like ``C:no\\base\\dir`` will evaluate to true, even though the non-"
-"drive part of the path is relative."
+"On Windows hosts, any ``path`` that begins with a drive letter and colon "
+"(e.g. ``C:``), a forward slash or a backslash will evaluate to true. This "
+"means a path like ``C:no\\base\\dir`` will evaluate to true, even though the "
+"non-drive part of the path is relative."
 msgstr ""
 
 #: ../../../command/if.rst:213
@@ -363,9 +364,9 @@ msgstr ""
 #: ../../../command/if.rst:318 ../../../command/if.rst:328
 #: ../../../command/if.rst:338
 msgid ""
-"Component-wise integer version number comparison (version format is ``major[."
-"minor[.patch[.tweak]]]``, omitted components are treated as zero). Any non-"
-"integer version component or non-integer trailing part of a version "
+"Component-wise integer version number comparison (version format is "
+"``major[.minor[.patch[.tweak]]]``, omitted components are treated as zero). "
+"Any non-integer version component or non-integer trailing part of a version "
 "component effectively truncates the string at that point."
 msgstr ""
 

@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../policy/CMP0077.rst:19
 msgid ""
-"a cache entry of the specified name exists but has not been given a type (e."
-"g. via ``-D<name>=ON`` on the command line)."
+"a cache entry of the specified name exists but has not been given a type "
+"(e.g. via ``-D<name>=ON`` on the command line)."
 msgstr ""
 
 #: ../../../policy/CMP0077.rst:22
@@ -101,9 +101,10 @@ msgstr ""
 #: ../../../policy/CMP0077.rst:53
 msgid ""
 "This policy was introduced in CMake version 3.13.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly within a "
-"project.  Use the :variable:`CMAKE_POLICY_DEFAULT_CMP0077 "
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly within a project.  Use "
+"the :variable:`CMAKE_POLICY_DEFAULT_CMP0077 "
 "<CMAKE_POLICY_DEFAULT_CMP\\<NNNN\\>>` variable to set the policy for a third-"
 "party project in a subdirectory without modifying it."
 msgstr ""

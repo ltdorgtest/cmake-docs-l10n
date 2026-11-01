@@ -49,10 +49,10 @@ msgstr ""
 #: ../../../policy/CMP0150.rst:19
 msgid ""
 "The ``NEW`` behavior is to determine the remote from the parent project and "
-"interpret the path relative to that remote.  The value of :variable:"
-"`CMAKE_CURRENT_SOURCE_DIR` when :command:`ExternalProject_Add` or :command:"
-"`FetchContent_Declare` is called determines the parent project. The remote "
-"is selected according to the following (the first match is used):"
+"interpret the path relative to that remote.  The value "
+"of :variable:`CMAKE_CURRENT_SOURCE_DIR` when :command:`ExternalProject_Add` "
+"or :command:`FetchContent_Declare` is called determines the parent project. "
+"The remote is selected according to the following (the first match is used):"
 msgstr ""
 
 #: ../../../policy/CMP0150.rst:25

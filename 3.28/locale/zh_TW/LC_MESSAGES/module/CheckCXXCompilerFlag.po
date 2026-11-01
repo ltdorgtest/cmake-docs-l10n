@@ -44,7 +44,7 @@ msgstr ""
 
 #: ../../../../Modules/CheckCXXCompilerFlag.cmake:25
 msgid ""
-"Since the :command:`try_compile` command forwards flags from variables like :"
-"variable:`CMAKE_CXX_FLAGS <CMAKE_<LANG>_FLAGS>`, unknown flags in such "
+"Since the :command:`try_compile` command forwards flags from variables "
+"like :variable:`CMAKE_CXX_FLAGS <CMAKE_<LANG>_FLAGS>`, unknown flags in such "
 "variables may cause a false negative for this check."
 msgstr ""

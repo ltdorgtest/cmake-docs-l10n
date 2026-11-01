@@ -43,8 +43,9 @@ msgstr ""
 
 #: ../../../policy/CMP0152.rst:17
 msgid ""
-"This policy was introduced in CMake version 3.28.  Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"This policy was introduced in CMake version 3.28.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

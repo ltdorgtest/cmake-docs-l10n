@@ -37,8 +37,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_CROSSCOMPILING_EMULATOR.rst:15
 msgid ""
-"This variable can be initialized via an :envvar:"
-"`CMAKE_CROSSCOMPILING_EMULATOR` environment variable."
+"This variable can be initialized via "
+"an :envvar:`CMAKE_CROSSCOMPILING_EMULATOR` environment variable."
 msgstr ""
 
 #: ../../../variable/CMAKE_CROSSCOMPILING_EMULATOR.rst:19
@@ -49,6 +49,6 @@ msgstr ""
 
 #: ../../../variable/CMAKE_CROSSCOMPILING_EMULATOR.rst:22
 msgid ""
-"It is also used as the default value for the :prop_tgt:"
-"`CROSSCOMPILING_EMULATOR` target property of executables."
+"It is also used as the default value for "
+"the :prop_tgt:`CROSSCOMPILING_EMULATOR` target property of executables."
 msgstr ""

@@ -148,9 +148,9 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:74
 msgid ""
-"CPack tries to determine the correct value with a try compile (see :variable:"
-"`CMAKE_SIZEOF_VOID_P`), but this option can be manually specified too "
-"(especially when using ``ia64`` or cross-platform compilation)."
+"CPack tries to determine the correct value with a try compile "
+"(see :variable:`CMAKE_SIZEOF_VOID_P`), but this option can be manually "
+"specified too (especially when using ``ia64`` or cross-platform compilation)."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:79
@@ -165,8 +165,8 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:86
 msgid ""
-"The full directory of the installation will be: "
-"``${CPACK_INNOSETUP_INSTALL_ROOT}/${CPACK_PACKAGE_INSTALL_DIRECTORY}``."
+"The full directory of the installation will be: ``$"
+"{CPACK_INNOSETUP_INSTALL_ROOT}/${CPACK_PACKAGE_INSTALL_DIRECTORY}``."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:90
@@ -215,10 +215,10 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:127
 msgid ""
-"If you don't specify a license file using :variable:"
-"`CPACK_RESOURCE_FILE_LICENSE`, CPack uses a file for demonstration purposes. "
-"If you want the installer to ignore license files at all, you can enable "
-"this option."
+"If you don't specify a license file "
+"using :variable:`CPACK_RESOURCE_FILE_LICENSE`, CPack uses a file for "
+"demonstration purposes. If you want the installer to ignore license files at "
+"all, you can enable this option."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:133 ../../../cpack_gen/innosetup.rst:297
@@ -227,10 +227,11 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:137
 msgid ""
-"If you don't specify a readme file using :variable:"
-"`CPACK_RESOURCE_FILE_README`, CPack uses a file for demonstration purposes. "
-"If you want the installer to ignore readme files at all, you can enable this "
-"option. Make sure the option is disabled when using a custom readme file."
+"If you don't specify a readme file "
+"using :variable:`CPACK_RESOURCE_FILE_README`, CPack uses a file for "
+"demonstration purposes. If you want the installer to ignore readme files at "
+"all, you can enable this option. Make sure the option is disabled when using "
+"a custom readme file."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:148
@@ -317,10 +318,11 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:203
 msgid ""
-"Before using executables (only ``.exe`` or ``.com``) in shortcuts (e.g. :"
-"variable:`CPACK_CREATE_DESKTOP_LINKS`) or ``[Run]`` entries, you've to add "
-"the raw file name (without path and extension) to :variable:"
-"`CPACK_PACKAGE_EXECUTABLES` and create a start menu shortcut for them."
+"Before using executables (only ``.exe`` or ``.com``) in shortcuts "
+"(e.g. :variable:`CPACK_CREATE_DESKTOP_LINKS`) or ``[Run]`` entries, you've "
+"to add the raw file name (without path and extension) "
+"to :variable:`CPACK_PACKAGE_EXECUTABLES` and create a start menu shortcut "
+"for them."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:209
@@ -358,9 +360,9 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:232
 msgid ""
-"You might want to change the destination directory or the flags of ``my_file."
-"txt``. Since we can also provide a relative path, the line you'd like to "
-"have, is the following:"
+"You might want to change the destination directory or the flags of "
+"``my_file.txt``. Since we can also provide a relative path, the line you'd "
+"like to have, is the following:"
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:236
@@ -392,9 +394,9 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:251
 msgid ""
-"To improve readability, you should go around the escaping problem by using :"
-"variable:`CPACK_VERBATIM_VARIABLES` or by placing the instruction into a "
-"separate CPack project config file."
+"To improve readability, you should go around the escaping problem by "
+"using :variable:`CPACK_VERBATIM_VARIABLES` or by placing the instruction "
+"into a separate CPack project config file."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:255
@@ -427,9 +429,10 @@ msgstr ""
 msgid ""
 "This variable should contain a :ref:`semicolon-separated list <CMake "
 "Language Lists>` of pairs ``link``, ``link name`` and can be used to add "
-"shortcuts into the start menu folder beside those of the executables (see :"
-"variable:`CPACK_PACKAGE_EXECUTABLES`). While ``link name`` is the label, "
-"``link`` can be a URL or a path relative to the installation directory."
+"shortcuts into the start menu folder beside those of the executables "
+"(see :variable:`CPACK_PACKAGE_EXECUTABLES`). While ``link name`` is the "
+"label, ``link`` can be a URL or a path relative to the installation "
+"directory."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:281
@@ -574,8 +577,9 @@ msgstr ""
 #: ../../../cpack_gen/innosetup.rst:400
 msgid ""
 "You can add any section in your file to extend the installer (e.g. adding "
-"additional tasks or registry keys). Prefer using :variable:"
-"`CPACK_INNOSETUP_SETUP_<directive>` when extending the ``[Setup]`` section."
+"additional tasks or registry keys). Prefer "
+"using :variable:`CPACK_INNOSETUP_SETUP_<directive>` when extending the "
+"``[Setup]`` section."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:409
@@ -586,11 +590,11 @@ msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:412
 msgid ""
-"This variable is actually the same as :variable:"
-"`CPACK_INNOSETUP_EXTRA_SCRIPTS`, except you don't have to add ``[Code]`` at "
-"the top of your file. Never change the current section in a code file. This "
-"will result in undefined behavior! Treat them as normal Pascal scripts "
-"instead."
+"This variable is actually the same "
+"as :variable:`CPACK_INNOSETUP_EXTRA_SCRIPTS`, except you don't have to add "
+"``[Code]`` at the top of your file. Never change the current section in a "
+"code file. This will result in undefined behavior! Treat them as normal "
+"Pascal scripts instead."
 msgstr ""
 
 #: ../../../cpack_gen/innosetup.rst:418
