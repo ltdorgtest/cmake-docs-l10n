@@ -42,9 +42,9 @@ msgstr ""
 
 #: ../../../command/include.rst:17
 msgid ""
-"If a module is specified instead of a file, the file with name <modulename>."
-"cmake is searched first in CMAKE_MODULE_PATH, then in the CMake module "
-"directory.  There is one exception to this: if the file which calls "
+"If a module is specified instead of a file, the file with name "
+"<modulename>.cmake is searched first in CMAKE_MODULE_PATH, then in the CMake "
+"module directory.  There is one exception to this: if the file which calls "
 "include() is located itself in the CMake module directory, then first the "
 "CMake module directory is searched and CMAKE_MODULE_PATH afterwards.  See "
 "also policy CMP0017."

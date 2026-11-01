@@ -59,8 +59,8 @@ msgstr ""
 
 #: ../../../command/ctest_test.rst:29
 msgid ""
-"Specify the top-level build directory.  If not given, the :variable:"
-"`CTEST_BINARY_DIRECTORY` variable is used."
+"Specify the top-level build directory.  If not given, "
+"the :variable:`CTEST_BINARY_DIRECTORY` variable is used."
 msgstr ""
 
 #: ../../../command/ctest_test.rst:35

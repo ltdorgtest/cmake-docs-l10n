@@ -31,6 +31,6 @@ msgstr ""
 
 #: ../../../command/set_directory_properties.rst:10
 msgid ""
-"Set a property for the current directory and subdirectories. See :ref:"
-"`Directory Properties` for the list of properties known to CMake."
+"Set a property for the current directory and subdirectories. "
+"See :ref:`Directory Properties` for the list of properties known to CMake."
 msgstr ""
