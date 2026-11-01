@@ -98,8 +98,8 @@ msgstr ""
 msgid ""
 "This command can be used to add any options. However, for adding "
 "preprocessor definitions and include directories it is recommended to use "
-"the more specific commands :command:`add_compile_definitions` and :command:"
-"`include_directories`."
+"the more specific commands :command:`add_compile_definitions` "
+"and :command:`include_directories`."
 msgstr ""
 
 #: ../../../command/add_compile_options.rst:48

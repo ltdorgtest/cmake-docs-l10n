@@ -41,8 +41,8 @@ msgstr ""
 msgid ""
 "The CPack FreeBSD generator may be used to create pkg(8) packages -- these "
 "may be used on FreeBSD, DragonflyBSD, NetBSD, OpenBSD, but also on Linux or "
-"OSX, depending on the installed package-management tools -- using :module:"
-"`CPack`."
+"OSX, depending on the installed package-management tools -- "
+"using :module:`CPack`."
 msgstr ""
 
 #: ../../../cpack_gen/freebsd.rst:21

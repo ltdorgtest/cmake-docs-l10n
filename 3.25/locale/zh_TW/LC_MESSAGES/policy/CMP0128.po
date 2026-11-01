@@ -27,9 +27,9 @@ msgstr ""
 
 #: ../../../policy/CMP0128.rst:8
 msgid ""
-":prop_tgt:`<LANG>_EXTENSIONS` is initialized to :variable:"
-"`CMAKE_<LANG>_EXTENSIONS` if set, otherwise falling back to :variable:"
-"`CMAKE_<LANG>_EXTENSIONS_DEFAULT`."
+":prop_tgt:`<LANG>_EXTENSIONS` is initialized "
+"to :variable:`CMAKE_<LANG>_EXTENSIONS` if set, otherwise falling back "
+"to :variable:`CMAKE_<LANG>_EXTENSIONS_DEFAULT`."
 msgstr ""
 
 #: ../../../policy/CMP0128.rst:12
@@ -50,14 +50,15 @@ msgstr ""
 
 #: ../../../policy/CMP0128.rst:20
 msgid ""
-"Initializes :prop_tgt:`<LANG>_EXTENSIONS` to :variable:"
-"`CMAKE_<LANG>_EXTENSIONS` if set, otherwise falling back to ``ON``."
+"Initializes :prop_tgt:`<LANG>_EXTENSIONS` "
+"to :variable:`CMAKE_<LANG>_EXTENSIONS` if set, otherwise falling back to "
+"``ON``."
 msgstr ""
 
 #: ../../../policy/CMP0128.rst:23
 msgid ""
-"Always adds a flag if :prop_tgt:`<LANG>_STANDARD` is set and :prop_tgt:"
-"`<LANG>_STANDARD_REQUIRED` is ``OFF``."
+"Always adds a flag if :prop_tgt:`<LANG>_STANDARD` is set "
+"and :prop_tgt:`<LANG>_STANDARD_REQUIRED` is ``OFF``."
 msgstr ""
 
 #: ../../../policy/CMP0128.rst:26
@@ -129,16 +130,16 @@ msgid ""
 "If compiler flags affecting the standard mode are used during compiler "
 "detection (for example in :manual:`a toolchain file <cmake-toolchains(7)>` "
 "using :variable:`CMAKE_<LANG>_FLAGS_INIT`) then they will affect the "
-"detected default :variable:`standard <CMAKE_<LANG>_STANDARD_DEFAULT>` and :"
-"variable:`extensions <CMAKE_<LANG>_EXTENSIONS_DEFAULT>`."
+"detected default :variable:`standard <CMAKE_<LANG>_STANDARD_DEFAULT>` "
+"and :variable:`extensions <CMAKE_<LANG>_EXTENSIONS_DEFAULT>`."
 msgstr ""
 
 #: ../../../policy/CMP0128.rst:64
 msgid ""
 "Unlike many policies, CMake version |release| does *not* warn when the "
-"policy is not set and simply uses the ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly. See "
-"documentation of the :variable:`CMAKE_POLICY_WARNING_CMP0128 "
+"policy is not set and simply uses the ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly. See documentation of the :variable:`CMAKE_POLICY_WARNING_CMP0128 "
 "<CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to control the warning."
 msgstr ""
 

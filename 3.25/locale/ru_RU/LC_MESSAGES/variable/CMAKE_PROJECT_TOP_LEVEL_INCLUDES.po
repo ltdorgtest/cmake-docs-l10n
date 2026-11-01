@@ -50,8 +50,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_PROJECT_TOP_LEVEL_INCLUDES.rst:24
 msgid ""
-"See also the :variable:`CMAKE_PROJECT_INCLUDE`, :variable:"
-"`CMAKE_PROJECT_INCLUDE_BEFORE`, :variable:`CMAKE_PROJECT_<PROJECT-"
+"See also "
+"the :variable:`CMAKE_PROJECT_INCLUDE`, :variable:`CMAKE_PROJECT_INCLUDE_BEFORE`, :variable:`CMAKE_PROJECT_<PROJECT-"
 "NAME>_INCLUDE`, and :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE_BEFORE` "
 "variables."
 msgstr ""

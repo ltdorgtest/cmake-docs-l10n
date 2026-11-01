@@ -61,11 +61,11 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:36
 msgid ""
-"CMake variables describing platform settings, and those listed by the :"
-"variable:`CMAKE_TRY_COMPILE_PLATFORM_VARIABLES` variable, are propagated "
-"into the project's build configuration.  See policy :policy:`CMP0137`. "
-"Previously this was only done by the :ref:`source file <Try Compiling Source "
-"Files>` signature."
+"CMake variables describing platform settings, and those listed by "
+"the :variable:`CMAKE_TRY_COMPILE_PLATFORM_VARIABLES` variable, are "
+"propagated into the project's build configuration.  See "
+"policy :policy:`CMP0137`. Previously this was only done by the :ref:`source "
+"file <Try Compiling Source Files>` signature."
 msgstr ""
 
 #: ../../../command/try_compile.rst:43 ../../../command/try_compile.rst:112
@@ -128,8 +128,8 @@ msgid ""
 "will create a ``CMakeLists.txt`` file to build the source(s) as an "
 "executable. If :variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` is set to "
 "``STATIC_LIBRARY``, a static library will be built instead and no definition "
-"for ``main`` is required.  For an executable, the generated ``CMakeLists."
-"txt`` file would contain something like the following:"
+"for ``main`` is required.  For an executable, the generated "
+"``CMakeLists.txt`` file would contain something like the following:"
 msgstr ""
 
 #: ../../../command/try_compile.rst:96
@@ -146,8 +146,8 @@ msgstr ""
 msgid ""
 "CMake automatically generates, for each ``try_compile`` operation, a unique "
 "directory under ``${CMAKE_BINARY_DIR}/CMakeFiles/CMakeScratch`` with an "
-"unspecified name.  These directories are cleaned automatically unless :"
-"option:`--debug-trycompile <cmake --debug-trycompile>` is passed to "
+"unspecified name.  These directories are cleaned automatically "
+"unless :option:`--debug-trycompile <cmake --debug-trycompile>` is passed to "
 "``cmake``. Such directories from previous runs are also unconditionally "
 "cleaned at the beginning of any ``cmake`` execution."
 msgstr ""
@@ -346,9 +346,9 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:232
 msgid ""
-"Specify the :prop_tgt:`C_STANDARD`, :prop_tgt:`CXX_STANDARD`, :prop_tgt:"
-"`OBJC_STANDARD`, :prop_tgt:`OBJCXX_STANDARD`, or :prop_tgt:`CUDA_STANDARD` "
-"target property of the generated project."
+"Specify "
+"the :prop_tgt:`C_STANDARD`, :prop_tgt:`CXX_STANDARD`, :prop_tgt:`OBJC_STANDARD`, :prop_tgt:`OBJCXX_STANDARD`, "
+"or :prop_tgt:`CUDA_STANDARD` target property of the generated project."
 msgstr ""
 
 #: ../../../command/try_compile.rst:236
@@ -357,10 +357,9 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:239
 msgid ""
-"Specify the :prop_tgt:`C_STANDARD_REQUIRED`, :prop_tgt:"
-"`CXX_STANDARD_REQUIRED`, :prop_tgt:`OBJC_STANDARD_REQUIRED`, :prop_tgt:"
-"`OBJCXX_STANDARD_REQUIRED`,or :prop_tgt:`CUDA_STANDARD_REQUIRED` target "
-"property of the generated project."
+"Specify "
+"the :prop_tgt:`C_STANDARD_REQUIRED`, :prop_tgt:`CXX_STANDARD_REQUIRED`, :prop_tgt:`OBJC_STANDARD_REQUIRED`, :prop_tgt:`OBJCXX_STANDARD_REQUIRED`,or :prop_tgt:`CUDA_STANDARD_REQUIRED` "
+"target property of the generated project."
 msgstr ""
 
 #: ../../../command/try_compile.rst:244
@@ -369,9 +368,9 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:247
 msgid ""
-"Specify the :prop_tgt:`C_EXTENSIONS`, :prop_tgt:`CXX_EXTENSIONS`, :prop_tgt:"
-"`OBJC_EXTENSIONS`, :prop_tgt:`OBJCXX_EXTENSIONS`, or :prop_tgt:"
-"`CUDA_EXTENSIONS` target property of the generated project."
+"Specify "
+"the :prop_tgt:`C_EXTENSIONS`, :prop_tgt:`CXX_EXTENSIONS`, :prop_tgt:`OBJC_EXTENSIONS`, :prop_tgt:`OBJCXX_EXTENSIONS`, "
+"or :prop_tgt:`CUDA_EXTENSIONS` target property of the generated project."
 msgstr ""
 
 #: ../../../command/try_compile.rst:252
@@ -414,16 +413,16 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:267
 msgid ""
-"If :policy:`CMP0056` is set to ``NEW``, then :variable:"
-"`CMAKE_EXE_LINKER_FLAGS` is passed in as well."
+"If :policy:`CMP0056` is set to ``NEW``, "
+"then :variable:`CMAKE_EXE_LINKER_FLAGS` is passed in as well."
 msgstr ""
 
 #: ../../../command/try_compile.rst:270
 msgid ""
 "If :policy:`CMP0083` is set to ``NEW``, then in order to obtain correct "
-"behavior at link time, the ``check_pie_supported()`` command from the :"
-"module:`CheckPIESupported` module must be called before using the :command:"
-"`try_compile` command."
+"behavior at link time, the ``check_pie_supported()`` command from "
+"the :module:`CheckPIESupported` module must be called before using "
+"the :command:`try_compile` command."
 msgstr ""
 
 #: ../../../command/try_compile.rst:276
@@ -541,7 +540,7 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:326
 msgid ""
-"If :policy:`CMP0141` is set to ``NEW``, one can use :variable:"
-"`CMAKE_MSVC_DEBUG_INFORMATION_FORMAT` to specify the MSVC debug information "
-"format."
+"If :policy:`CMP0141` is set to ``NEW``, one can "
+"use :variable:`CMAKE_MSVC_DEBUG_INFORMATION_FORMAT` to specify the MSVC "
+"debug information format."
 msgstr ""

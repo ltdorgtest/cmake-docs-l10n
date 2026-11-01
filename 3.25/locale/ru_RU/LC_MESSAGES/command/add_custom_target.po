@@ -43,10 +43,11 @@ msgstr ""
 msgid ""
 "Adds a target with the given name that executes the given commands. The "
 "target has no output file and is *always considered out of date* even if the "
-"commands try to create a file with the name of the target. Use the :command:"
-"`add_custom_command` command to generate a file with dependencies.  By "
-"default nothing depends on the custom target.  Use the :command:"
-"`add_dependencies` command to add dependencies to or from other targets."
+"commands try to create a file with the name of the target. Use "
+"the :command:`add_custom_command` command to generate a file with "
+"dependencies.  By default nothing depends on the custom target.  Use "
+"the :command:`add_dependencies` command to add dependencies to or from other "
+"targets."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:27
@@ -94,8 +95,8 @@ msgstr ""
 
 #: ../../../command/add_custom_target.rst:56
 msgid ""
-"The :ref:`Makefile Generators` will remove ``BYPRODUCTS`` and other :prop_sf:"
-"`GENERATED` files during ``make clean``."
+"The :ref:`Makefile Generators` will remove ``BYPRODUCTS`` and "
+"other :prop_sf:`GENERATED` files during ``make clean``."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:59
@@ -114,30 +115,31 @@ msgid ""
 "Specify the command-line(s) to execute at build time. If more than one "
 "``COMMAND`` is specified they will be executed in order, but *not* "
 "necessarily composed into a stateful shell or batch script. (To run a full "
-"script, use the :command:`configure_file` command or the :command:"
-"`file(GENERATE)` command to create it, and then specify a ``COMMAND`` to "
-"launch it.)"
+"script, use the :command:`configure_file` command or "
+"the :command:`file(GENERATE)` command to create it, and then specify a "
+"``COMMAND`` to launch it.)"
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:73
 msgid ""
-"If ``COMMAND`` specifies an executable target name (created by the :command:"
-"`add_executable` command), it will automatically be replaced by the location "
-"of the executable created at build time if either of the following is true:"
+"If ``COMMAND`` specifies an executable target name (created by "
+"the :command:`add_executable` command), it will automatically be replaced by "
+"the location of the executable created at build time if either of the "
+"following is true:"
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:78
 msgid ""
-"The target is not being cross-compiled (i.e. the :variable:"
-"`CMAKE_CROSSCOMPILING` variable is not set to true)."
+"The target is not being cross-compiled (i.e. "
+"the :variable:`CMAKE_CROSSCOMPILING` variable is not set to true)."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:80
 msgid ""
-"The target is being cross-compiled and an emulator is provided (i.e. its :"
-"prop_tgt:`CROSSCOMPILING_EMULATOR` target property is set). In this case, "
-"the contents of :prop_tgt:`CROSSCOMPILING_EMULATOR` will be prepended to the "
-"command before the location of the target executable."
+"The target is being cross-compiled and an emulator is provided (i.e. "
+"its :prop_tgt:`CROSSCOMPILING_EMULATOR` target property is set). In this "
+"case, the contents of :prop_tgt:`CROSSCOMPILING_EMULATOR` will be prepended "
+"to the command before the location of the target executable."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:86
@@ -150,8 +152,8 @@ msgstr ""
 msgid ""
 "Arguments to ``COMMAND`` may use :manual:`generator expressions <cmake-"
 "generator-expressions(7)>`. Use the :genex:`TARGET_FILE` generator "
-"expression to refer to the location of a target later in the command line (i."
-"e. as a command argument rather than as the command to execute)."
+"expression to refer to the location of a target later in the command line "
+"(i.e. as a command argument rather than as the command to execute)."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:95
@@ -199,9 +201,10 @@ msgstr ""
 
 #: ../../../command/add_custom_target.rst:113
 msgid ""
-"Reference files and outputs of custom commands created with :command:"
-"`add_custom_command` command calls in the same directory (``CMakeLists.txt`` "
-"file).  They will be brought up to date when the target is built."
+"Reference files and outputs of custom commands created "
+"with :command:`add_custom_command` command calls in the same directory "
+"(``CMakeLists.txt`` file).  They will be brought up to date when the target "
+"is built."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:118
@@ -225,8 +228,9 @@ msgstr ""
 msgid ""
 "Lists in ``COMMAND`` arguments will be expanded, including those created "
 "with :manual:`generator expressions <cmake-generator-expressions(7)>`, "
-"allowing ``COMMAND`` arguments such as ``${CC} \"-I$<JOIN:$<TARGET_PROPERTY:"
-"foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly expanded."
+"allowing ``COMMAND`` arguments such as ``${CC} \"-I$<JOIN:"
+"$<TARGET_PROPERTY:foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly "
+"expanded."
 msgstr ""
 
 #: ../../../command/add_custom_target.rst:136

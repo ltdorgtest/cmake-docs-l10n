@@ -23,21 +23,21 @@ msgstr ""
 
 #: ../../../prop_tgt/NO_SYSTEM_FROM_IMPORTED.rst:4
 msgid ""
-"Do not treat include directories from the interfaces of consumed :ref:"
-"`imported targets` as system directories."
+"Do not treat include directories from the interfaces of "
+"consumed :ref:`imported targets` as system directories."
 msgstr ""
 
 #: ../../../prop_tgt/NO_SYSTEM_FROM_IMPORTED.rst:7
 msgid ""
 "The contents of the :prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` target "
-"property are treated as system includes when the consumed target's :prop_tgt:"
-"`SYSTEM` property is set to true.  By default, :prop_tgt:`SYSTEM` is true "
-"for imported targets and false for other target types.  If the "
-"``NO_SYSTEM_FROM_IMPORTED`` property is set to true on a *consuming* target, "
-"compilation of sources in that consuming target will not treat the contents "
-"of the :prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` of consumed imported "
-"targets as system includes, even if that imported target's :prop_tgt:"
-"`SYSTEM` property is false."
+"property are treated as system includes when the consumed "
+"target's :prop_tgt:`SYSTEM` property is set to true.  By "
+"default, :prop_tgt:`SYSTEM` is true for imported targets and false for other "
+"target types.  If the ``NO_SYSTEM_FROM_IMPORTED`` property is set to true on "
+"a *consuming* target, compilation of sources in that consuming target will "
+"not treat the contents of the :prop_tgt:`INTERFACE_INCLUDE_DIRECTORIES` of "
+"consumed imported targets as system includes, even if that imported "
+"target's :prop_tgt:`SYSTEM` property is false."
 msgstr ""
 
 #: ../../../prop_tgt/NO_SYSTEM_FROM_IMPORTED.rst:17
@@ -50,9 +50,9 @@ msgstr ""
 
 #: ../../../prop_tgt/NO_SYSTEM_FROM_IMPORTED.rst:22
 msgid ""
-"This property is initialized by the value of the :variable:"
-"`CMAKE_NO_SYSTEM_FROM_IMPORTED` variable if it is set when a target is "
-"created."
+"This property is initialized by the value of "
+"the :variable:`CMAKE_NO_SYSTEM_FROM_IMPORTED` variable if it is set when a "
+"target is created."
 msgstr ""
 
 #: ../../../prop_tgt/NO_SYSTEM_FROM_IMPORTED.rst:26

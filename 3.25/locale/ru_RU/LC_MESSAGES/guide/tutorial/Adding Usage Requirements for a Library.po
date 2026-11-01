@@ -113,15 +113,15 @@ msgstr ""
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:52
 msgid ""
 "First, add a call to :command:`target_include_directories` in "
-"``MathFunctions/CMakeLists``. Remember that :variable:"
-"`CMAKE_CURRENT_SOURCE_DIR` is the path to the source directory currently "
-"being processed."
+"``MathFunctions/CMakeLists``. Remember "
+"that :variable:`CMAKE_CURRENT_SOURCE_DIR` is the path to the source "
+"directory currently being processed."
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:57
 msgid ""
-"Then, update (and simplify!) the call to :command:"
-"`target_include_directories` in the top-level ``CMakeLists.txt``."
+"Then, update (and simplify!) the call "
+"to :command:`target_include_directories` in the top-level ``CMakeLists.txt``."
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:61
@@ -171,8 +171,9 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:90
 msgid ""
-"At the end of ``MathFunctions/CMakeLists.txt``, use :command:"
-"`target_include_directories` with the ``INTERFACE`` keyword, as follows:"
+"At the end of ``MathFunctions/CMakeLists.txt``, "
+"use :command:`target_include_directories` with the ``INTERFACE`` keyword, as "
+"follows:"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:94

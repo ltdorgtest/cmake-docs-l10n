@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_LANG_FLAGS.rst:6
 msgid ""
-"``<LANG>`` flags used regardless of the value of :variable:"
-"`CMAKE_BUILD_TYPE`."
+"``<LANG>`` flags used regardless of the value "
+"of :variable:`CMAKE_BUILD_TYPE`."
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_FLAGS.rst:8
@@ -89,6 +89,6 @@ msgstr ""
 msgid ""
 "The flags in this variable will be passed to the compiler before those in "
 "the per-configuration :variable:`CMAKE_<LANG>_FLAGS_<CONFIG>` variant, and "
-"before flags added by the :command:`add_compile_options` or :command:"
-"`target_compile_options` commands."
+"before flags added by the :command:`add_compile_options` "
+"or :command:`target_compile_options` commands."
 msgstr ""

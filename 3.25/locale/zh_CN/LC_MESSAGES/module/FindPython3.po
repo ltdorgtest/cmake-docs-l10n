@@ -131,8 +131,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:69
 msgid ""
-":ref:`Imported Targets <Imported Targets>` are only created when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``."
+":ref:`Imported Targets <Imported Targets>` are only created "
+"when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:73
@@ -187,8 +187,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:96
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:99
@@ -259,9 +260,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:116
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=True)`` or else ``sysconfig."
-"get_path('stdlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)`` "
+"or else ``sysconfig.get_path('stdlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:119
@@ -274,9 +275,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:122
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=True)`` or else ``sysconfig."
-"get_path('platstdlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)`` "
+"or else ``sysconfig.get_path('platstdlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:125
@@ -289,9 +290,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:128
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=False)`` or else ``sysconfig."
-"get_path('purelib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)`` "
+"or else ``sysconfig.get_path('purelib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:131
@@ -304,9 +305,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:134
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=False)`` or else ``sysconfig."
-"get_path('platlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)`` "
+"or else ``sysconfig.get_path('platlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:138
@@ -322,8 +323,8 @@ msgid ""
 "Information returned by ``distutils.sysconfig.get_config_var('SOABI')`` or "
 "computed from ``distutils.sysconfig.get_config_var('EXT_SUFFIX')`` or "
 "``python3-config --extension-suffix``. If package ``distutils.sysconfig`` is "
-"not available, ``sysconfig.get_config_var('SOABI')`` or ``sysconfig."
-"get_config_var('EXT_SUFFIX')`` are used."
+"not available, ``sysconfig.get_config_var('SOABI')`` or "
+"``sysconfig.get_config_var('EXT_SUFFIX')`` are used."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:150
@@ -598,9 +599,9 @@ msgstr ""
 #: ../../../../Modules/FindPython3.cmake:277
 msgid ""
 "This hint is useful only on ``POSIX`` systems. So, on ``Windows`` systems, "
-"when ``Python3_FIND_ABI`` is defined, ``Python`` distributions from `python."
-"org <https://www.python.org/>`_ will be found only if value for each flag is "
-"``OFF`` or ``ANY``."
+"when ``Python3_FIND_ABI`` is defined, ``Python`` distributions from "
+"`python.org <https://www.python.org/>`_ will be found only if value for each "
+"flag is ``OFF`` or ``ANY``."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:282
@@ -669,8 +670,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:320
 msgid ""
-"If ``Python3_FIND_FRAMEWORK`` is not defined, :variable:"
-"`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
+"If ``Python3_FIND_FRAMEWORK`` is not "
+"defined, :variable:`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:323
@@ -910,11 +911,11 @@ msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:469
 msgid ""
-"This module defines the command ``Python3_add_library`` (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
-"`add_library` and adds a dependency to target ``Python3::Python`` or, when "
-"library type is ``MODULE``, to target ``Python3::Module`` and takes care of "
-"Python module naming rules::"
+"This module defines the command ``Python3_add_library`` "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``), which has the same semantics "
+"as :command:`add_library` and adds a dependency to target "
+"``Python3::Python`` or, when library type is ``MODULE``, to target "
+"``Python3::Module`` and takes care of Python module naming rules::"
 msgstr ""
 
 #: ../../../../Modules/FindPython3.cmake:475
