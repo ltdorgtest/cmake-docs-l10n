@@ -55,6 +55,6 @@ msgstr ""
 #: ../../../generator/KDevelop3.rst:23
 msgid ""
 "For historical reasons this extra generator may be specified directly as the "
-"main generator and it will be used as the extra generator with :generator:"
-"`Unix Makefiles` automatically."
+"main generator and it will be used as the extra generator "
+"with :generator:`Unix Makefiles` automatically."
 msgstr ""

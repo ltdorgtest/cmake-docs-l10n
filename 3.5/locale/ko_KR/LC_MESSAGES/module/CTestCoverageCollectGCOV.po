@@ -29,8 +29,8 @@ msgid ""
 "source and build directories for CDash to use in parsing the coverage data. "
 "In addtion the Labels.json files for targets that have coverage information "
 "are also put in the tar file for CDash to asign the correct labels. This "
-"file can be sent to a CDash server for display with the :command:"
-"`ctest_submit(CDASH_UPLOAD)` command."
+"file can be sent to a CDash server for display with "
+"the :command:`ctest_submit(CDASH_UPLOAD)` command."
 msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:19

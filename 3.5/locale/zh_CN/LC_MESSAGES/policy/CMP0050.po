@@ -35,9 +35,9 @@ msgstr ""
 
 #: ../../../policy/CMP0050.rst:11
 msgid ""
-"The OLD behavior for this policy is to allow the use of :command:"
-"`add_custom_command` SOURCE signatures.  The NEW behavior for this policy is "
-"to issue an error if such a signature is used."
+"The OLD behavior for this policy is to allow the use "
+"of :command:`add_custom_command` SOURCE signatures.  The NEW behavior for "
+"this policy is to issue an error if such a signature is used."
 msgstr ""
 
 #: ../../../policy/CMP0050.rst:15

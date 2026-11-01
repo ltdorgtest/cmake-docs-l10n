@@ -123,11 +123,11 @@ msgstr ""
 #: ../../../manual/cmake-toolchains.7.rst:79
 msgid ""
 "CMake provides the :command:`try_compile` command and wrapper macros such "
-"as :module:`CheckCXXSourceCompiles`, :module:`CheckCXXSymbolExists` and :"
-"module:`CheckIncludeFile` to test capability and availability of various "
-"toolchain features. These APIs test the toolchain in some way and cache the "
-"result so that the test does not have to be performed again the next time "
-"CMake runs."
+"as :module:`CheckCXXSourceCompiles`, :module:`CheckCXXSymbolExists` "
+"and :module:`CheckIncludeFile` to test capability and availability of "
+"various toolchain features. These APIs test the toolchain in some way and "
+"cache the result so that the test does not have to be performed again the "
+"next time CMake runs."
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:86
@@ -199,9 +199,9 @@ msgstr ""
 #: ../../../manual/cmake-toolchains.7.rst:136
 msgid ""
 "The :variable:`CMAKE_STAGING_PREFIX` is also optional. It may be used to "
-"specify a path on the host to install to. The :variable:"
-"`CMAKE_INSTALL_PREFIX` is always the runtime installation location, even "
-"when cross-compiling."
+"specify a path on the host to install to. "
+"The :variable:`CMAKE_INSTALL_PREFIX` is always the runtime installation "
+"location, even when cross-compiling."
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:140
@@ -215,15 +215,15 @@ msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:145
 msgid ""
-"CMake ``find_*`` commands will look in the sysroot, and the :variable:"
-"`CMAKE_FIND_ROOT_PATH` entries by default in all cases, as well as looking "
-"in the host system root prefix. Although this can be controlled on a case-by-"
-"case basis, when cross-compiling, it can be useful to exclude looking in "
-"either the host or the target for particular artifacts. Generally, includes, "
-"libraries and packages should be found in the target system prefixes, "
-"whereas executables which must be run as part of the build should be found "
-"only on the host and not on the target. This is the purpose of the "
-"``CMAKE_FIND_ROOT_PATH_MODE_*`` variables."
+"CMake ``find_*`` commands will look in the sysroot, and "
+"the :variable:`CMAKE_FIND_ROOT_PATH` entries by default in all cases, as "
+"well as looking in the host system root prefix. Although this can be "
+"controlled on a case-by-case basis, when cross-compiling, it can be useful "
+"to exclude looking in either the host or the target for particular "
+"artifacts. Generally, includes, libraries and packages should be found in "
+"the target system prefixes, whereas executables which must be run as part of "
+"the build should be found only on the host and not on the target. This is "
+"the purpose of the ``CMAKE_FIND_ROOT_PATH_MODE_*`` variables."
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:157
@@ -260,8 +260,8 @@ msgid ""
 "build software for a login node, you will need to either first unload the "
 "currently loaded ``PrgEnv-*`` module or explicitly tell CMake to use the "
 "system compilers in ``/usr/bin`` instead of the Cray wrappers.  If instead "
-"targeting a compute node is desired, just specify the :variable:"
-"`CMAKE_SYSTEM_NAME` as mentioned above."
+"targeting a compute node is desired, just specify "
+"the :variable:`CMAKE_SYSTEM_NAME` as mentioned above."
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:185
@@ -270,9 +270,9 @@ msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:187
 msgid ""
-"Some compilers such as Clang are inherently cross compilers. The :variable:"
-"`CMAKE_<LANG>_COMPILER_TARGET` can be set to pass a value to those supported "
-"compilers when compiling:"
+"Some compilers such as Clang are inherently cross compilers. "
+"The :variable:`CMAKE_<LANG>_COMPILER_TARGET` can be set to pass a value to "
+"those supported compilers when compiling:"
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:191
@@ -292,9 +292,9 @@ msgstr ""
 msgid ""
 "Similarly, some compilers do not ship their own supplementary utilities such "
 "as linkers, but provide a way to specify the location of the external "
-"toolchain which will be used by the compiler driver. The :variable:"
-"`CMAKE_<LANG>_COMPILER_EXTERNAL_TOOLCHAIN` variable can be set in a "
-"toolchain file to pass the path to the compiler driver."
+"toolchain which will be used by the compiler driver. "
+"The :variable:`CMAKE_<LANG>_COMPILER_EXTERNAL_TOOLCHAIN` variable can be set "
+"in a toolchain file to pass the path to the compiler driver."
 msgstr ""
 
 #: ../../../manual/cmake-toolchains.7.rst:210

@@ -32,8 +32,8 @@ msgstr ""
 #: ../../../../Modules/CPackRPM.cmake:10
 msgid ""
 "CPackRPM may be used to create RPM package using CPack.  CPackRPM is a CPack "
-"generator thus it uses the CPACK_XXX variables used by CPack : https://cmake."
-"org/Wiki/CMake:CPackConfiguration"
+"generator thus it uses the CPACK_XXX variables used by CPack : https://"
+"cmake.org/Wiki/CMake:CPackConfiguration"
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:14
@@ -263,9 +263,9 @@ msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:168
 msgid ""
-"Variable enables/disables autoreq and autoprov at the same time. See :"
-"variable:`CPACK_RPM_PACKAGE_AUTOREQ` and :variable:"
-"`CPACK_RPM_PACKAGE_AUTOPROV` for more details."
+"Variable enables/disables autoreq and autoprov at the same time. "
+"See :variable:`CPACK_RPM_PACKAGE_AUTOREQ` "
+"and :variable:`CPACK_RPM_PACKAGE_AUTOPROV` for more details."
 msgstr ""
 
 #: ../../../../Modules/CPackRPM.cmake:174

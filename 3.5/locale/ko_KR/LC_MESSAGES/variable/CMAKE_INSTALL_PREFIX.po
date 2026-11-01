@@ -46,9 +46,9 @@ msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_PREFIX.rst:19
 msgid ""
-"which will install the concerned software using the installation prefix, e."
-"g.  ``/usr/local`` prepended with the ``DESTDIR`` value which finally gives "
-"``/home/john/usr/local``."
+"which will install the concerned software using the installation prefix, "
+"e.g.  ``/usr/local`` prepended with the ``DESTDIR`` value which finally "
+"gives ``/home/john/usr/local``."
 msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_PREFIX.rst:23
@@ -60,10 +60,10 @@ msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_PREFIX.rst:27
 msgid ""
-"The installation prefix is also added to :variable:"
-"`CMAKE_SYSTEM_PREFIX_PATH` so that :command:`find_package`, :command:"
-"`find_program`, :command:`find_library`, :command:`find_path`, and :command:"
-"`find_file` will search the prefix for other software."
+"The installation prefix is also added "
+"to :variable:`CMAKE_SYSTEM_PREFIX_PATH` so "
+"that :command:`find_package`, :command:`find_program`, :command:`find_library`, :command:`find_path`, "
+"and :command:`find_file` will search the prefix for other software."
 msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_PREFIX.rst:34

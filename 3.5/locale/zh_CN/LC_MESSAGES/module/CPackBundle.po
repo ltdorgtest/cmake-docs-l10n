@@ -87,8 +87,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackBundle.cmake:57
 msgid ""
-"Additional parameter that will passed to codesign. Default value: \"--deep -"
-"f\""
+"Additional parameter that will passed to codesign. Default value: \"--deep "
+"-f\""
 msgstr ""
 
 #: ../../../../Modules/CPackBundle.cmake:62

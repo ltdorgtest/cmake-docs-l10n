@@ -68,8 +68,8 @@ msgid ""
 "Call the ``cmake_minimum_required()`` command at the beginning of the top-"
 "level ``CMakeLists.txt`` file even before calling the :command:`project` "
 "command.  It is important to establish version and policy settings before "
-"invoking other commands whose behavior they may affect.  See also policy :"
-"policy:`CMP0000`."
+"invoking other commands whose behavior they may affect.  See also "
+"policy :policy:`CMP0000`."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:39

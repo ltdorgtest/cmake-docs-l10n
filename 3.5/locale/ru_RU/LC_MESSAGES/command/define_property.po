@@ -36,11 +36,12 @@ msgstr ""
 
 #: ../../../command/define_property.rst:14
 msgid ""
-"Define one property in a scope for use with the :command:`set_property` and :"
-"command:`get_property` commands.  This is primarily useful to associate "
-"documentation with property names that may be retrieved with the :command:"
-"`get_property` command. The first argument determines the kind of scope in "
-"which the property should be used.  It must be one of the following:"
+"Define one property in a scope for use with the :command:`set_property` "
+"and :command:`get_property` commands.  This is primarily useful to associate "
+"documentation with property names that may be retrieved with "
+"the :command:`get_property` command. The first argument determines the kind "
+"of scope in which the property should be used.  It must be one of the "
+"following:"
 msgstr ""
 
 #: ../../../command/define_property.rst:23
