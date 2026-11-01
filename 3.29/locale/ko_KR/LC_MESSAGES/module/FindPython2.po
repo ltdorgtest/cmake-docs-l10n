@@ -130,8 +130,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:69
 msgid ""
-":ref:`Imported Targets <Imported Targets>` are only created when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``."
+":ref:`Imported Targets <Imported Targets>` are only created "
+"when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:73
@@ -186,8 +186,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:95
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:98
@@ -258,8 +259,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:115
 msgid ""
-"Information returned by ``sysconfig.get_path('stdlib')`` or else ``distutils."
-"sysconfig.get_python_lib(plat_specific=False,standard_lib=True)``."
+"Information returned by ``sysconfig.get_path('stdlib')`` or else "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:117
@@ -287,8 +288,7 @@ msgstr ""
 #: ../../../../Modules/FindPython2.cmake:125
 msgid ""
 "Information returned by ``sysconfig.get_path('purelib')`` or else "
-"``distutils.sysconfig.get_python_lib(plat_specific=False,"
-"standard_lib=False)``."
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:127
@@ -302,8 +302,7 @@ msgstr ""
 #: ../../../../Modules/FindPython2.cmake:130
 msgid ""
 "Information returned by ``sysconfig.get_path('platlib')`` or else "
-"``distutils.sysconfig.get_python_lib(plat_specific=True,"
-"standard_lib=False)``."
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:132
@@ -577,8 +576,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:259
 msgid ""
-"If ``Python2_FIND_FRAMEWORK`` is not defined, :variable:"
-"`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
+"If ``Python2_FIND_FRAMEWORK`` is not "
+"defined, :variable:`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:262
@@ -822,11 +821,11 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:410
 msgid ""
-"This module defines the command ``Python2_add_library`` (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
-"`add_library` and adds a dependency to target ``Python2::Python`` or, when "
-"library type is ``MODULE``, to target ``Python2::Module`` and takes care of "
-"Python module naming rules::"
+"This module defines the command ``Python2_add_library`` "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``), which has the same semantics "
+"as :command:`add_library` and adds a dependency to target "
+"``Python2::Python`` or, when library type is ``MODULE``, to target "
+"``Python2::Module`` and takes care of Python module naming rules::"
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:416

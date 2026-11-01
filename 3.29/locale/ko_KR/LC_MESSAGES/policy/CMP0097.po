@@ -25,8 +25,8 @@ msgstr ""
 msgid ""
 ":command:`ExternalProject_Add` with ``GIT_SUBMODULES \"\"`` initializes no "
 "submodules.  The policy also applies to :command:`FetchContent_Declare`, "
-"which uses the same download and update features as :command:"
-"`ExternalProject_Add`."
+"which uses the same download and update features "
+"as :command:`ExternalProject_Add`."
 msgstr ""
 
 #: ../../../policy/CMP0097.rst:11
@@ -54,9 +54,9 @@ msgstr ""
 #: ../../../policy/STANDARD_ADVICE.txt:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
-"It may be set by :command:`cmake_policy` or :command:"
-"`cmake_minimum_required`. If it is not set, CMake |WARNS_OR_DOES_NOT_WARN|, "
-"and uses ``OLD`` behavior."
+"It may be set by :command:`cmake_policy` "
+"or :command:`cmake_minimum_required`. If it is not set, CMake |"
+"WARNS_OR_DOES_NOT_WARN|, and uses ``OLD`` behavior."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

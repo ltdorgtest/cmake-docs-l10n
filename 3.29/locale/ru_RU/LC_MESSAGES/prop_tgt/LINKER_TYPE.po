@@ -47,8 +47,8 @@ msgstr ""
 
 #: ../../../variable/LINKER_PREDEFINED_TYPES.txt:11
 msgid ""
-"This type corresponds to standard linking, essentially equivalent to the :"
-"prop_tgt:`LINKER_TYPE` target property not being set at all."
+"This type corresponds to standard linking, essentially equivalent to "
+"the :prop_tgt:`LINKER_TYPE` target property not being set at all."
 msgstr ""
 
 #: ../../../variable/LINKER_PREDEFINED_TYPES.txt:14
@@ -178,14 +178,14 @@ msgstr ""
 
 #: ../../../prop_tgt/LINKER_TYPE.rst:11
 msgid ""
-"This property is not supported on :generator:`Green Hills MULTI` and :"
-"generator:`Visual Studio 9 2008` generators."
+"This property is not supported on :generator:`Green Hills MULTI` "
+"and :generator:`Visual Studio 9 2008` generators."
 msgstr ""
 
 #: ../../../prop_tgt/LINKER_TYPE.rst:14
 msgid ""
-"The implementation details for the selected linker will be provided by the :"
-"variable:`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable. For example:"
+"The implementation details for the selected linker will be provided by "
+"the :variable:`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable. For example:"
 msgstr ""
 
 #: ../../../prop_tgt/LINKER_TYPE.rst:17
@@ -203,7 +203,7 @@ msgstr ""
 
 #: ../../../prop_tgt/LINKER_TYPE.rst:26
 msgid ""
-"Note that the linker would typically be set using :variable:"
-"`CMAKE_LINKER_TYPE` for the whole build rather than setting the "
-"``LINKER_TYPE`` property on individual targets."
+"Note that the linker would typically be set "
+"using :variable:`CMAKE_LINKER_TYPE` for the whole build rather than setting "
+"the ``LINKER_TYPE`` property on individual targets."
 msgstr ""
