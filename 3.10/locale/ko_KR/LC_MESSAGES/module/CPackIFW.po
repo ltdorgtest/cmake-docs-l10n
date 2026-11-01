@@ -166,8 +166,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:104
 msgid ""
-"Name of the installer as displayed on the title bar. By default used :"
-"variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
+"Name of the installer as displayed on the title bar. By default "
+"used :variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:109
@@ -321,20 +321,20 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:228
 msgid ""
-"On Linux, the name of the target binary is automatically extended with '."
-"run', if you do not specify the extension."
+"On Linux, the name of the target binary is automatically extended with "
+"'.run', if you do not specify the extension."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:231
 msgid ""
-"On Windows, the target is created as an application with the extension '."
-"exe', which is automatically added, if not supplied."
+"On Windows, the target is created as an application with the extension "
+"'.exe', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:234
 msgid ""
-"On Mac, the target is created as an DMG disk image with the extension '."
-"dmg', which is automatically added, if not supplied."
+"On Mac, the target is created as an DMG disk image with the extension "
+"'.dmg', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:239
@@ -532,8 +532,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:362
 msgid ""
-"set to rewrite original description configured by :command:"
-"`cpack_add_component` command."
+"set to rewrite original description configured "
+"by :command:`cpack_add_component` command."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:367
@@ -732,14 +732,14 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:463
 msgid ""
-"set to rewrite original name configured by :command:"
-"`cpack_add_component_group` command."
+"set to rewrite original name configured "
+"by :command:`cpack_add_component_group` command."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:467
 msgid ""
-"set to rewrite original description configured by :command:"
-"`cpack_add_component_group` command."
+"set to rewrite original description configured "
+"by :command:`cpack_add_component_group` command."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:471
@@ -750,8 +750,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:475
 msgid ""
-"is version of component group. By default used :variable:"
-"`CPACK_PACKAGE_VERSION`."
+"is version of component group. By default "
+"used :variable:`CPACK_PACKAGE_VERSION`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:482
@@ -802,8 +802,8 @@ msgstr ""
 #: ../../../../Modules/CPackIFW.cmake:537
 #: ../../../../Modules/CPackIFW.cmake:569
 msgid ""
-"This command will also add the <reponame> repository to a variable :variable:"
-"`CPACK_IFW_REPOSITORIES_ALL`."
+"This command will also add the <reponame> repository to a "
+"variable :variable:`CPACK_IFW_REPOSITORIES_ALL`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:541
@@ -889,8 +889,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:599
 msgid ""
-"This command will also add the specified files to a variable :variable:"
-"`CPACK_IFW_PACKAGE_RESOURCES`."
+"This command will also add the specified files to a "
+"variable :variable:`CPACK_IFW_PACKAGE_RESOURCES`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:604
@@ -934,8 +934,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:637
 msgid ""
-"To make a component downloaded, you must set the ``DOWNLOADED`` option in :"
-"command:`cpack_add_component`."
+"To make a component downloaded, you must set the ``DOWNLOADED`` option "
+"in :command:`cpack_add_component`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:640
@@ -946,8 +946,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:643
 msgid ""
-"You also can use command :command:`cpack_ifw_add_repository` and variable :"
-"variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
+"You also can use command :command:`cpack_ifw_add_repository` and "
+"variable :variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:646
@@ -975,8 +975,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:660
 msgid ""
-"Predefined Variables: http://doc.qt.io/qtinstallerframework/scripting."
-"html#predefined-variables"
+"Predefined Variables: http://doc.qt.io/qtinstallerframework/"
+"scripting.html#predefined-variables"
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:663

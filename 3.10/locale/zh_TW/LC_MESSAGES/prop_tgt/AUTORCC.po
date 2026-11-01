@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTORCC.rst:6
 msgid ""
 "``AUTORCC`` is a boolean specifying whether CMake will handle the Qt ``rcc`` "
-"code generator automatically, i.e. without having to use the :module:"
-"`QT4_ADD_RESOURCES() <FindQt4>` or ``QT5_ADD_RESOURCES()`` macro.  Currently "
-"Qt4 and Qt5 are supported."
+"code generator automatically, i.e. without having to use "
+"the :module:`QT4_ADD_RESOURCES() <FindQt4>` or ``QT5_ADD_RESOURCES()`` "
+"macro.  Currently Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:11
@@ -43,8 +43,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:16
 msgid ""
-"Additional command line options for rcc can be set via the :prop_sf:"
-"`AUTORCC_OPTIONS` source file property on the ``.qrc`` file."
+"Additional command line options for rcc can be set via "
+"the :prop_sf:`AUTORCC_OPTIONS` source file property on the ``.qrc`` file."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:19
@@ -63,8 +63,8 @@ msgstr ""
 msgid ""
 "When there are multiple ``.qrc`` files with the same name, CMake will "
 "generate unspecified unique names for ``rcc``.  Therefore if "
-"``Q_INIT_RESOURCE()`` or ``Q_CLEANUP_RESOURCE()`` need to be used the ``."
-"qrc`` file name must be unique."
+"``Q_INIT_RESOURCE()`` or ``Q_CLEANUP_RESOURCE()`` need to be used the "
+"``.qrc`` file name must be unique."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:30

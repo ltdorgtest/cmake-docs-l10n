@@ -39,8 +39,9 @@ msgstr ""
 
 #: ../../../command/link_directories.rst:15
 msgid ""
-"Note that this command is rarely necessary.  Library locations returned by :"
-"command:`find_package` and :command:`find_library` are absolute paths. Pass "
-"these absolute library file paths directly to the :command:"
-"`target_link_libraries` command.  CMake will ensure the linker finds them."
+"Note that this command is rarely necessary.  Library locations returned "
+"by :command:`find_package` and :command:`find_library` are absolute paths. "
+"Pass these absolute library file paths directly to "
+"the :command:`target_link_libraries` command.  CMake will ensure the linker "
+"finds them."
 msgstr ""

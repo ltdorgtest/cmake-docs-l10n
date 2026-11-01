@@ -267,8 +267,8 @@ msgstr ""
 #: ../../../../Modules/UseJava.cmake:252
 msgid ""
 "This command installs a target export file ``<filename>`` for the named jar "
-"targets to the given ``DESTINATION``. Its function is similar to that of :"
-"command:`install(EXPORTS ...)`."
+"targets to the given ``DESTINATION``. Its function is similar to that "
+"of :command:`install(EXPORTS ...)`."
 msgstr ""
 
 #: ../../../../Modules/UseJava.cmake:258
