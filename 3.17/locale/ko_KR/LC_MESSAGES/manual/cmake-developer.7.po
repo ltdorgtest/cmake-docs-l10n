@@ -31,9 +31,9 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:13
 msgid ""
-"This manual is intended for reference by developers working with :manual:"
-"`cmake-language(7)` code, whether writing their own modules, authoring their "
-"own build systems, or working on CMake itself."
+"This manual is intended for reference by developers working "
+"with :manual:`cmake-language(7)` code, whether writing their own modules, "
+"authoring their own build systems, or working on CMake itself."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:17
@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:26
 msgid ""
-"A \"find module\" is a ``Find<PackageName>.cmake`` file to be loaded by the :"
-"command:`find_package` command when invoked for ``<PackageName>``."
+"A \"find module\" is a ``Find<PackageName>.cmake`` file to be loaded by "
+"the :command:`find_package` command when invoked for ``<PackageName>``."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:29
@@ -72,9 +72,9 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:41
 msgid ""
 "The more modern approach is to behave as much like :ref:`config file "
-"packages <Config File Packages>` files as possible, by providing :ref:"
-"`imported target <Imported targets>`.  This has the advantage of "
-"propagating :ref:`Target Usage Requirements` to consumers."
+"packages <Config File Packages>` files as possible, by "
+"providing :ref:`imported target <Imported targets>`.  This has the advantage "
+"of propagating :ref:`Target Usage Requirements` to consumers."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:46
@@ -100,8 +100,8 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:58
 msgid ""
 "See the :command:`find_package` documentation for details on what variables "
-"are set for the find module.  Most of these are dealt with by using :module:"
-"`FindPackageHandleStandardArgs`."
+"are set for the find module.  Most of these are dealt with by "
+"using :module:`FindPackageHandleStandardArgs`."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:62
@@ -393,8 +393,7 @@ msgid ""
 "accompanying\n"
 "# file Copyright.txt or https://cmake.org/licensing for details.\n"
 "\n"
-"#[=======================================================================[."
-"rst:\n"
+"#[=======================================================================[.rst:\n"
 "FindFoo\n"
 "-------\n"
 "\n"
@@ -584,11 +583,11 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:352
 msgid ""
 "When providing imported targets, these should be namespaced (hence the "
-"``Foo::`` prefix); CMake will recognize that values passed to :command:"
-"`target_link_libraries` that contain ``::`` in their name are supposed to be "
-"imported targets (rather than just library names), and will produce "
-"appropriate diagnostic messages if that target does not exist (see policy :"
-"policy:`CMP0028`)."
+"``Foo::`` prefix); CMake will recognize that values passed "
+"to :command:`target_link_libraries` that contain ``::`` in their name are "
+"supposed to be imported targets (rather than just library names), and will "
+"produce appropriate diagnostic messages if that target does not exist (see "
+"policy :policy:`CMP0028`)."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:359
@@ -614,16 +613,17 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:376
 msgid ""
-"The type of the :prop_tgt:`IMPORTED` target created in the :command:"
-"`add_library` command can always be specified as ``UNKNOWN`` type.  This "
-"simplifies the code in cases where static or shared variants may be found, "
-"and CMake will determine the type by inspecting the files."
+"The type of the :prop_tgt:`IMPORTED` target created in "
+"the :command:`add_library` command can always be specified as ``UNKNOWN`` "
+"type.  This simplifies the code in cases where static or shared variants may "
+"be found, and CMake will determine the type by inspecting the files."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:381
 msgid ""
-"If the library is available with multiple configurations, the :prop_tgt:"
-"`IMPORTED_CONFIGURATIONS` target property should also be populated:"
+"If the library is available with multiple configurations, "
+"the :prop_tgt:`IMPORTED_CONFIGURATIONS` target property should also be "
+"populated:"
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:385

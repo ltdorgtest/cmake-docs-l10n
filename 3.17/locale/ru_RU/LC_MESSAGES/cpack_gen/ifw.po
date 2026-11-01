@@ -40,8 +40,9 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:15
 msgid ""
-"To make use of this generator, QtIFW should also be installed. The module :"
-"module:`CPackIFW` looks for the location of the QtIFW command-line utilities."
+"To make use of this generator, QtIFW should also be installed. The "
+"module :module:`CPackIFW` looks for the location of the QtIFW command-line "
+"utilities."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:20
@@ -149,8 +150,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:91
 msgid ""
-"Name of the installer as displayed on the title bar. By default used :"
-"variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
+"Name of the installer as displayed on the title bar. By default "
+"used :variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:96
@@ -165,8 +166,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:105
 msgid ""
-"Filename for a custom installer icon. The actual file is '.icns' (macOS), '."
-"ico' (Windows). No functionality on Unix."
+"Filename for a custom installer icon. The actual file is '.icns' (macOS), "
+"'.ico' (Windows). No functionality on Unix."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:110
@@ -316,20 +317,20 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:225
 msgid ""
-"On Linux, the name of the target binary is automatically extended with '."
-"run', if you do not specify the extension."
+"On Linux, the name of the target binary is automatically extended with "
+"'.run', if you do not specify the extension."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:228
 msgid ""
-"On Windows, the target is created as an application with the extension '."
-"exe', which is automatically added, if not supplied."
+"On Windows, the target is created as an application with the extension "
+"'.exe', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:231
 msgid ""
-"On Mac, the target is created as an DMG disk image with the extension '."
-"dmg', which is automatically added, if not supplied."
+"On Mac, the target is created as an DMG disk image with the extension "
+"'.dmg', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:236
@@ -410,8 +411,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:304
 msgid ""
-"To make a component downloaded, you must set the ``DOWNLOADED`` option in :"
-"command:`cpack_add_component`."
+"To make a component downloaded, you must set the ``DOWNLOADED`` option "
+"in :command:`cpack_add_component`."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:307
@@ -422,8 +423,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:310
 msgid ""
-"You also can use command :command:`cpack_ifw_add_repository` and variable :"
-"variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
+"You also can use command :command:`cpack_ifw_add_repository` and "
+"variable :variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:313
@@ -451,8 +452,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:327
 msgid ""
-"Predefined Variables: http://doc.qt.io/qtinstallerframework/scripting."
-"html#predefined-variables"
+"Predefined Variables: http://doc.qt.io/qtinstallerframework/"
+"scripting.html#predefined-variables"
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:330

@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../policy/CMP0098.rst:4
 msgid ""
-":module:`FindFLEX` runs ``flex`` in directory :variable:"
-"`CMAKE_CURRENT_BINARY_DIR` when executing."
+":module:`FindFLEX` runs ``flex`` in "
+"directory :variable:`CMAKE_CURRENT_BINARY_DIR` when executing."
 msgstr ""
 
 #: ../../../policy/CMP0098.rst:7
@@ -56,10 +56,10 @@ msgstr ""
 
 #: ../../../policy/CMP0098.rst:25
 msgid ""
-"This policy was introduced in CMake version 3.17.  Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly. Unlike "
-"many policies, CMake version |release| does *not* warn when this policy is "
-"not set and simply uses ``OLD`` behavior."
+"This policy was introduced in CMake version 3.17.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly. Unlike many policies, CMake version |release| does *not* warn "
+"when this policy is not set and simply uses ``OLD`` behavior."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

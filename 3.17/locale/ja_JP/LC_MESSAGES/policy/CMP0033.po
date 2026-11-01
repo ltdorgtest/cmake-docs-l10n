@@ -32,8 +32,8 @@ msgid ""
 "internal CMake cache entries to a file for installation with a project. This "
 "was used at the time to allow transitive link dependencies to work for "
 "applications outside of the original build tree of a project. The "
-"functionality has been superseded by the :command:`export` and :command:"
-"`install(EXPORT)` commands."
+"functionality has been superseded by the :command:`export` "
+"and :command:`install(EXPORT)` commands."
 msgstr ""
 
 #: ../../../policy/DISALLOWED_COMMAND.txt:1

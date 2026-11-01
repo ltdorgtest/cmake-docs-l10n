@@ -117,8 +117,8 @@ msgstr ""
 
 #: ../../../command/add_custom_command.rst:71
 msgid ""
-"The :ref:`Makefile Generators` will remove ``BYPRODUCTS`` and other :prop_sf:"
-"`GENERATED` files during ``make clean``."
+"The :ref:`Makefile Generators` will remove ``BYPRODUCTS`` and "
+"other :prop_sf:`GENERATED` files during ``make clean``."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:111
@@ -130,31 +130,32 @@ msgid ""
 "Specify the command-line(s) to execute at build time. If more than one "
 "``COMMAND`` is specified they will be executed in order, but *not* "
 "necessarily composed into a stateful shell or batch script. (To run a full "
-"script, use the :command:`configure_file` command or the :command:"
-"`file(GENERATE)` command to create it, and then specify a ``COMMAND`` to "
-"launch it.) The optional ``ARGS`` argument is for backward compatibility and "
-"will be ignored."
+"script, use the :command:`configure_file` command or "
+"the :command:`file(GENERATE)` command to create it, and then specify a "
+"``COMMAND`` to launch it.) The optional ``ARGS`` argument is for backward "
+"compatibility and will be ignored."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:84
 msgid ""
-"If ``COMMAND`` specifies an executable target name (created by the :command:"
-"`add_executable` command), it will automatically be replaced by the location "
-"of the executable created at build time if either of the following is true:"
+"If ``COMMAND`` specifies an executable target name (created by "
+"the :command:`add_executable` command), it will automatically be replaced by "
+"the location of the executable created at build time if either of the "
+"following is true:"
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:89
 msgid ""
-"The target is not being cross-compiled (i.e. the :variable:"
-"`CMAKE_CROSSCOMPILING` variable is not set to true)."
+"The target is not being cross-compiled (i.e. "
+"the :variable:`CMAKE_CROSSCOMPILING` variable is not set to true)."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:91
 msgid ""
-"The target is being cross-compiled and an emulator is provided (i.e. its :"
-"prop_tgt:`CROSSCOMPILING_EMULATOR` target property is set). In this case, "
-"the contents of :prop_tgt:`CROSSCOMPILING_EMULATOR` will be prepended to the "
-"command before the location of the target executable."
+"The target is being cross-compiled and an emulator is provided (i.e. "
+"its :prop_tgt:`CROSSCOMPILING_EMULATOR` target property is set). In this "
+"case, the contents of :prop_tgt:`CROSSCOMPILING_EMULATOR` will be prepended "
+"to the command before the location of the target executable."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:96
@@ -203,12 +204,13 @@ msgstr ""
 
 #: ../../../command/add_custom_command.rst:121
 msgid ""
-"If the argument is the name of a target (created by the :command:"
-"`add_custom_target`, :command:`add_executable`, or :command:`add_library` "
-"command) a target-level dependency is created to make sure the target is "
-"built before any target using this custom command.  Additionally, if the "
-"target is an executable or library, a file-level dependency is created to "
-"cause the custom command to re-run whenever the target is recompiled."
+"If the argument is the name of a target (created by "
+"the :command:`add_custom_target`, :command:`add_executable`, "
+"or :command:`add_library` command) a target-level dependency is created to "
+"make sure the target is built before any target using this custom command.  "
+"Additionally, if the target is an executable or library, a file-level "
+"dependency is created to cause the custom command to re-run whenever the "
+"target is recompiled."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:130
@@ -268,8 +270,9 @@ msgstr ""
 msgid ""
 "Lists in ``COMMAND`` arguments will be expanded, including those created "
 "with :manual:`generator expressions <cmake-generator-expressions(7)>`, "
-"allowing ``COMMAND`` arguments such as ``${CC} \"-I$<JOIN:$<TARGET_PROPERTY:"
-"foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly expanded."
+"allowing ``COMMAND`` arguments such as ``${CC} \"-I$<JOIN:"
+"$<TARGET_PROPERTY:foo,INCLUDE_DIRECTORIES>,;-I>\" foo.cc`` to be properly "
+"expanded."
 msgstr ""
 
 #: ../../../command/add_custom_command.rst:175
