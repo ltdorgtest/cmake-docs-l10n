@@ -78,8 +78,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:41
 msgid ""
-"Name of the installer as displayed on the title bar. By default used :"
-"variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`"
+"Name of the installer as displayed on the title bar. By default "
+"used :variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`"
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:46
@@ -215,8 +215,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:154
 msgid ""
-"``VERSION`` is version of component. By default used :variable:"
-"`CPACK_PACKAGE_VERSION`."
+"``VERSION`` is version of component. By default "
+"used :variable:`CPACK_PACKAGE_VERSION`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:157
@@ -261,8 +261,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:187
 msgid ""
-"``VERSION`` is version of component group. By default used :variable:"
-"`CPACK_PACKAGE_VERSION`."
+"``VERSION`` is version of component group. By default "
+"used :variable:`CPACK_PACKAGE_VERSION`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:190
@@ -302,8 +302,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:215
 msgid ""
-"This macro will also add the <reponame> repository to a variable :variable:"
-"`CPACK_IFW_REPOSITORIES_ALL`"
+"This macro will also add the <reponame> repository to a "
+"variable :variable:`CPACK_IFW_REPOSITORIES_ALL`"
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:218
@@ -366,8 +366,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:261
 msgid ""
-"To make a component downloaded, you must set the ``DOWNLOADED`` option in :"
-"command:`cpack_add_component`."
+"To make a component downloaded, you must set the ``DOWNLOADED`` option "
+"in :command:`cpack_add_component`."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:264
@@ -378,8 +378,8 @@ msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:267
 msgid ""
-"You also can use command :command:`cpack_ifw_add_repository` and variable :"
-"variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
+"You also can use command :command:`cpack_ifw_add_repository` and "
+"variable :variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
 msgstr ""
 
 #: ../../../../Modules/CPackIFW.cmake:270

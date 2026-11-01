@@ -137,8 +137,8 @@ msgstr ""
 #: ../../../command/if.rst:70
 msgid ""
 "True if the given name is an existing logical target name such as those "
-"created by the :command:`add_executable`, :command:`add_library`, or :"
-"command:`add_custom_target` commands."
+"created by the :command:`add_executable`, :command:`add_library`, "
+"or :command:`add_custom_target` commands."
 msgstr ""
 
 #: ../../../command/if.rst:76
@@ -269,8 +269,8 @@ msgstr ""
 #: ../../../command/if.rst:126 ../../../command/if.rst:130
 #: ../../../command/if.rst:134
 msgid ""
-"Component-wise integer version number comparison (version format is ``major[."
-"minor[.patch[.tweak]]]``)."
+"Component-wise integer version number comparison (version format is "
+"``major[.minor[.patch[.tweak]]]``)."
 msgstr ""
 
 #: ../../../command/if.rst:131

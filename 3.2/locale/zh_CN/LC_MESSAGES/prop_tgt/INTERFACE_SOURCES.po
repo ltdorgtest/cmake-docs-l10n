@@ -35,16 +35,16 @@ msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_SOURCES.rst:11
 msgid ""
-"When target dependencies are specified using :command:"
-"`target_link_libraries`, CMake will read this property from all target "
-"dependencies to determine the sources of the consumer."
+"When target dependencies are specified "
+"using :command:`target_link_libraries`, CMake will read this property from "
+"all target dependencies to determine the sources of the consumer."
 msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_SOURCES.rst:15
 msgid ""
-"Targets with ``INTERFACE_SOURCES`` may not be exported with the :command:"
-"`export` or :command:`install(EXPORT)` commands. This limitation may be "
-"lifted in a future version of CMake."
+"Targets with ``INTERFACE_SOURCES`` may not be exported with "
+"the :command:`export` or :command:`install(EXPORT)` commands. This "
+"limitation may be lifted in a future version of CMake."
 msgstr ""
 
 #: ../../../prop_tgt/INTERFACE_SOURCES.rst:19

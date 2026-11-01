@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../prop_dir/COMPILE_OPTIONS.rst:6
 msgid ""
-"This property specifies the list of options given so far to the :command:"
-"`add_compile_options` command."
+"This property specifies the list of options given so far to "
+"the :command:`add_compile_options` command."
 msgstr ""
 
 #: ../../../prop_dir/COMPILE_OPTIONS.rst:9

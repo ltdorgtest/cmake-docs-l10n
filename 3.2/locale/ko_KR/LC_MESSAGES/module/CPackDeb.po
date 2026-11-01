@@ -32,10 +32,10 @@ msgstr ""
 #: ../../../../Modules/CPackDeb.cmake:10
 msgid ""
 "CPackDeb may be used to create Deb package using CPack. CPackDeb is a CPack "
-"generator thus it uses the CPACK_XXX variables used by CPack : http://www."
-"cmake.org/Wiki/CMake:CPackConfiguration. CPackDeb generator should work on "
-"any linux host but it will produce better deb package when Debian specific "
-"tools 'dpkg-xxx' are usable on the build system."
+"generator thus it uses the CPACK_XXX variables used by CPack : http://"
+"www.cmake.org/Wiki/CMake:CPackConfiguration. CPackDeb generator should work "
+"on any linux host but it will produce better deb package when Debian "
+"specific tools 'dpkg-xxx' are usable on the build system."
 msgstr ""
 
 #: ../../../../Modules/CPackDeb.cmake:17
