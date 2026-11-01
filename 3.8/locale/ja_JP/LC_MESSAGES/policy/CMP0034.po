@@ -28,8 +28,8 @@ msgstr ""
 #: ../../../policy/CMP0034.rst:6
 msgid ""
 "This command was introduced in March 2001 to help build executables used to "
-"generate other files.  This approach has long been replaced by :command:"
-"`add_executable` combined with :command:`add_custom_command`."
+"generate other files.  This approach has long been replaced "
+"by :command:`add_executable` combined with :command:`add_custom_command`."
 msgstr ""
 
 #: ../../../policy/DISALLOWED_COMMAND.txt:1

@@ -92,8 +92,8 @@ msgstr ""
 
 #: ../../../../Modules/UseSWIG.cmake:46
 msgid ""
-"SWIG_OUTFILE_DIR allows one to specify where to write the output file (swig -"
-"o option).  If not specified, CMAKE_SWIG_OUTDIR is used."
+"SWIG_OUTFILE_DIR allows one to specify where to write the output file (swig "
+"-o option).  If not specified, CMAKE_SWIG_OUTDIR is used."
 msgstr ""
 
 #: ../../../../Modules/UseSWIG.cmake:49

@@ -34,11 +34,12 @@ msgstr ""
 #: ../../../manual/cmake-generator-expressions.7.rst:16
 msgid ""
 "Generator expressions are allowed in the context of many target properties, "
-"such as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :"
-"prop_tgt:`COMPILE_DEFINITIONS` and others.  They may also be used when using "
-"commands to populate those properties, such as :command:"
-"`target_link_libraries`, :command:`target_include_directories`, :command:"
-"`target_compile_definitions` and others."
+"such "
+"as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :prop_tgt:`COMPILE_DEFINITIONS` "
+"and others.  They may also be used when using commands to populate those "
+"properties, such "
+"as :command:`target_link_libraries`, :command:`target_include_directories`, :command:`target_compile_definitions` "
+"and others."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:23
@@ -144,8 +145,8 @@ msgstr ""
 msgid ""
 "``1`` if config is ``cfg``, else ``0``. This is a case-insensitive "
 "comparison. The mapping in :prop_tgt:`MAP_IMPORTED_CONFIG_<CONFIG>` is also "
-"considered by this expression when it is evaluated on a property on an :"
-"prop_tgt:`IMPORTED` target."
+"considered by this expression when it is evaluated on a property on "
+"an :prop_tgt:`IMPORTED` target."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:65
@@ -385,8 +386,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:168
 msgid ""
-"The CMake-id of the C compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_ID` variable."
+"The CMake-id of the C compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:171
@@ -395,8 +396,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:171
 msgid ""
-"The CMake-id of the CXX compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_ID` variable."
+"The CMake-id of the CXX compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:174
@@ -405,8 +406,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:174
 msgid ""
-"The version of the C compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_VERSION` variable."
+"The version of the C compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:177
@@ -415,8 +416,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:177
 msgid ""
-"The version of the CXX compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_VERSION` variable."
+"The version of the CXX compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:179
@@ -507,8 +508,9 @@ msgstr ""
 #: ../../../manual/cmake-generator-expressions.7.rst:201
 msgid ""
 "See also the :prop_tgt:`PDB_NAME` and :prop_tgt:`PDB_OUTPUT_DIRECTORY` "
-"target properties and their configuration specific variants :prop_tgt:"
-"`PDB_NAME_<CONFIG>` and :prop_tgt:`PDB_OUTPUT_DIRECTORY_<CONFIG>`."
+"target properties and their configuration specific "
+"variants :prop_tgt:`PDB_NAME_<CONFIG>` "
+"and :prop_tgt:`PDB_OUTPUT_DIRECTORY_<CONFIG>`."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:204
@@ -557,8 +559,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:217
 msgid ""
-"Content of the install prefix when the target is exported via :command:"
-"`install(EXPORT)` and empty otherwise."
+"Content of the install prefix when the target is exported "
+"via :command:`install(EXPORT)` and empty otherwise."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:222
@@ -691,8 +693,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:270
 msgid ""
-"Content of ``...`` when the property is exported using :command:"
-"`install(EXPORT)`, and empty otherwise."
+"Content of ``...`` when the property is exported "
+"using :command:`install(EXPORT)`, and empty otherwise."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:274

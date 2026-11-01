@@ -27,6 +27,6 @@ msgstr ""
 
 #: ../../../variable/CMAKE_PROJECT_NAME.rst:6
 msgid ""
-"This specifies name of the current project from the closest inherited :"
-"command:`project` command."
+"This specifies name of the current project from the closest "
+"inherited :command:`project` command."
 msgstr ""

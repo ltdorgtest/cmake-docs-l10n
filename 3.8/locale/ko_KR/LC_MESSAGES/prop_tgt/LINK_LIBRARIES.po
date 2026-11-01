@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/LINK_LIBRARIES.rst:6
 msgid ""
 "This property specifies the list of libraries or targets which will be used "
-"for linking.  In addition to accepting values from the :command:"
-"`target_link_libraries` command, values may be set directly on any target "
-"using the :command:`set_property` command."
+"for linking.  In addition to accepting values from "
+"the :command:`target_link_libraries` command, values may be set directly on "
+"any target using the :command:`set_property` command."
 msgstr ""
 
 #: ../../../prop_tgt/LINK_LIBRARIES.rst:11

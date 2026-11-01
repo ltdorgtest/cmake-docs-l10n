@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:6
 msgid ""
 "AUTOMOC is a boolean specifying whether CMake will handle the Qt ``moc`` "
-"preprocessor automatically, i.e.  without having to use the :module:"
-"`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro.  Currently Qt4 and Qt5 "
-"are supported."
+"preprocessor automatically, i.e.  without having to use "
+"the :module:`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro.  Currently "
+"Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:11
@@ -45,12 +45,12 @@ msgid ""
 "``Q_OBJECT`` class declaration is expected in the header, and ``moc`` is run "
 "on the header file.  A ``moc_foo.cpp`` file will be generated from the "
 "source's header into the ``<CMAKE_CURRENT_BINARY_DIR>/<TARGETNAME>_autogen/"
-"include`` directory which is automatically added to the target's :prop_tgt:"
-"`INCLUDE_DIRECTORIES`.  This allows the compiler to find the included "
-"``moc_foo.cpp`` file regardless of the location the original source. "
-"However, if multiple source files in different directories do this then "
-"their generated moc files would collide.  In this case a diagnostic will be "
-"issued."
+"include`` directory which is automatically added to the "
+"target's :prop_tgt:`INCLUDE_DIRECTORIES`.  This allows the compiler to find "
+"the included ``moc_foo.cpp`` file regardless of the location the original "
+"source. However, if multiple source files in different directories do this "
+"then their generated moc files would collide.  In this case a diagnostic "
+"will be issued."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:25
@@ -75,8 +75,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:40
 msgid ""
-"Additional command line options for moc can be set via the :prop_tgt:"
-"`AUTOMOC_MOC_OPTIONS` property."
+"Additional command line options for moc can be set via "
+"the :prop_tgt:`AUTOMOC_MOC_OPTIONS` property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:43
