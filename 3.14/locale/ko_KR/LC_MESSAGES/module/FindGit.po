@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../../Modules/FindGit.cmake:8
 msgid ""
-"The module defines the following ``IMPORTED`` targets (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``):"
+"The module defines the following ``IMPORTED`` targets "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``):"
 msgstr ""
 
 #: ../../../../Modules/FindGit.cmake:12

@@ -23,16 +23,17 @@ msgstr ""
 
 #: ../../../command/set.rst:4
 msgid ""
-"Set a normal, cache, or environment variable to a given value. See the :ref:"
-"`cmake-language(7) variables <CMake Language Variables>` documentation for "
-"the scopes and interaction of normal variables and cache entries."
+"Set a normal, cache, or environment variable to a given value. See "
+"the :ref:`cmake-language(7) variables <CMake Language Variables>` "
+"documentation for the scopes and interaction of normal variables and cache "
+"entries."
 msgstr ""
 
 #: ../../../command/set.rst:9
 msgid ""
 "Signatures of this command that specify a ``<value>...`` placeholder expect "
-"zero or more arguments.  Multiple arguments will be joined as a :ref:"
-"`semicolon-separated list <CMake Language Lists>` to form the actual "
+"zero or more arguments.  Multiple arguments will be joined as "
+"a :ref:`semicolon-separated list <CMake Language Lists>` to form the actual "
 "variable value to be set.  Zero arguments will cause normal variables to be "
 "unset.  See the :command:`unset` command to unset variables explicitly."
 msgstr ""

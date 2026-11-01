@@ -67,8 +67,9 @@ msgstr ""
 #: ../../../../Modules/FindPython.cmake:26
 msgid ""
 "This module looks preferably for version 3 of Python. If not found, version "
-"2 is searched. To manage concurrent versions 3 and 2 of Python, use :module:"
-"`FindPython3` and :module:`FindPython2` modules rather than this one."
+"2 is searched. To manage concurrent versions 3 and 2 of Python, "
+"use :module:`FindPython3` and :module:`FindPython2` modules rather than this "
+"one."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:33
@@ -128,8 +129,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:56
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:59
@@ -195,8 +197,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:75
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=True)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:80
@@ -209,8 +211,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:80
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=True)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:85
@@ -223,8 +225,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:85
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=False)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:90
@@ -237,8 +239,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:90
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=False)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:92
@@ -444,11 +446,11 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:164
 msgid ""
-"This module defines the command ``Python_add_library`` (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
-"`add_library`, but takes care of Python module naming rules (only applied if "
-"library is of type ``MODULE``), and adds a dependency to target ``Python::"
-"Python``::"
+"This module defines the command ``Python_add_library`` "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``), which has the same semantics "
+"as :command:`add_library`, but takes care of Python module naming rules "
+"(only applied if library is of type ``MODULE``), and adds a dependency to "
+"target ``Python::Python``::"
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:170

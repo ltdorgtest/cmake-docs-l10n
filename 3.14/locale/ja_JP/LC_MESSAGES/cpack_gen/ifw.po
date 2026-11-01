@@ -158,8 +158,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:96
 msgid ""
-"Name of the installer as displayed on the title bar. By default used :"
-"variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
+"Name of the installer as displayed on the title bar. By default "
+"used :variable:`CPACK_PACKAGE_DESCRIPTION_SUMMARY`."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:101
@@ -174,8 +174,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:110
 msgid ""
-"Filename for a custom installer icon. The actual file is '.icns' (macOS), '."
-"ico' (Windows). No functionality on Unix."
+"Filename for a custom installer icon. The actual file is '.icns' (macOS), "
+"'.ico' (Windows). No functionality on Unix."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:115
@@ -321,20 +321,20 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:226
 msgid ""
-"On Linux, the name of the target binary is automatically extended with '."
-"run', if you do not specify the extension."
+"On Linux, the name of the target binary is automatically extended with "
+"'.run', if you do not specify the extension."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:229
 msgid ""
-"On Windows, the target is created as an application with the extension '."
-"exe', which is automatically added, if not supplied."
+"On Windows, the target is created as an application with the extension "
+"'.exe', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:232
 msgid ""
-"On Mac, the target is created as an DMG disk image with the extension '."
-"dmg', which is automatically added, if not supplied."
+"On Mac, the target is created as an DMG disk image with the extension "
+"'.dmg', which is automatically added, if not supplied."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:237
@@ -415,8 +415,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:305
 msgid ""
-"To make a component downloaded, you must set the ``DOWNLOADED`` option in :"
-"command:`cpack_add_component`."
+"To make a component downloaded, you must set the ``DOWNLOADED`` option "
+"in :command:`cpack_add_component`."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:308
@@ -427,8 +427,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:311
 msgid ""
-"You also can use command :command:`cpack_ifw_add_repository` and variable :"
-"variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
+"You also can use command :command:`cpack_ifw_add_repository` and "
+"variable :variable:`CPACK_IFW_DOWNLOAD_ALL` for more specific configuration."
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:314
@@ -456,8 +456,8 @@ msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:328
 msgid ""
-"Predefined Variables: http://doc.qt.io/qtinstallerframework/scripting."
-"html#predefined-variables"
+"Predefined Variables: http://doc.qt.io/qtinstallerframework/"
+"scripting.html#predefined-variables"
 msgstr ""
 
 #: ../../../cpack_gen/ifw.rst:331

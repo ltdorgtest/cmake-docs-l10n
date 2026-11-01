@@ -450,8 +450,8 @@ msgid ""
 "members for ``cmake``, ``ctest``, and ``cpack`` whose values are JSON "
 "strings specifying the absolute path to each tool, represented with forward "
 "slashes.  It also has a ``root`` member for the absolute path to the "
-"directory containing CMake resources like the ``Modules/`` directory (see :"
-"variable:`CMAKE_ROOT`)."
+"directory containing CMake resources like the ``Modules/`` directory "
+"(see :variable:`CMAKE_ROOT`)."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:274
@@ -831,11 +831,11 @@ msgstr ""
 #: ../../../manual/cmake-file-api.7.rst:492
 msgid ""
 "A JSON array of entries corresponding to available build configurations. On "
-"single-configuration generators there is one entry for the value of the :"
-"variable:`CMAKE_BUILD_TYPE` variable.  For multi-configuration generators "
-"there is an entry for each configuration listed in the :variable:"
-"`CMAKE_CONFIGURATION_TYPES` variable. Each entry is a JSON object containing "
-"members:"
+"single-configuration generators there is one entry for the value of "
+"the :variable:`CMAKE_BUILD_TYPE` variable.  For multi-configuration "
+"generators there is an entry for each configuration listed in "
+"the :variable:`CMAKE_CONFIGURATION_TYPES` variable. Each entry is a JSON "
+"object containing members:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:500
@@ -1023,10 +1023,11 @@ msgstr ""
 #: ../../../manual/cmake-file-api.7.rst:604
 msgid ""
 "A JSON array of entries corresponding to the build system targets. Such "
-"targets are created by calls to :command:`add_executable`, :command:"
-"`add_library`, and :command:`add_custom_target`, excluding imported targets "
-"and interface libraries (which do not generate any build rules).  Each entry "
-"is a JSON object containing members:"
+"targets are created by calls "
+"to :command:`add_executable`, :command:`add_library`, "
+"and :command:`add_custom_target`, excluding imported targets and interface "
+"libraries (which do not generate any build rules).  Each entry is a JSON "
+"object containing members:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:611
@@ -1239,8 +1240,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:720
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`install` command invocation that specified this destination is "
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`install` command invocation that specified this destination is "
 "available.  The value is an unsigned integer 0-based index into the "
 "``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
@@ -1337,9 +1338,9 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:757
 msgid ""
-"Optional member that is present when the :variable:`CMAKE_SYSROOT_LINK` or :"
-"variable:`CMAKE_SYSROOT` variable is defined.  The value is a JSON object "
-"with one member:"
+"Optional member that is present when the :variable:`CMAKE_SYSROOT_LINK` "
+"or :variable:`CMAKE_SYSROOT` variable is defined.  The value is a JSON "
+"object with one member:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:762
@@ -1395,8 +1396,8 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:798
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`add_dependencies`, :command:`target_link_libraries`, or other "
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`add_dependencies`, :command:`target_link_libraries`, or other "
 "command invocation that created this dependency is available.  The value is "
 "an unsigned integer 0-based index into the ``backtraceGraph`` member's "
 "``nodes`` array."
@@ -1454,11 +1455,11 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:830
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_sources`, :command:`add_executable`, :command:"
-"`add_library`, :command:`add_custom_target`, or other command invocation "
-"that added this source to the target is available.  The value is an unsigned "
-"integer 0-based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_sources`, :command:`add_executable`, :command:`add_library`, :command:`add_custom_target`, "
+"or other command invocation that added this source to the target is "
+"available.  The value is an unsigned integer 0-based index into the "
+"``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:849
@@ -1467,10 +1468,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:838
 msgid ""
-"Optional member that is present when sources are grouped together by the :"
-"command:`source_group` command or by default.  The value is a JSON array of "
-"entries corresponding to the groups.  Each entry is a JSON object with "
-"members:"
+"Optional member that is present when sources are grouped together by "
+"the :command:`source_group` command or by default.  The value is a JSON "
+"array of entries corresponding to the groups.  Each entry is a JSON object "
+"with members:"
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:844
@@ -1554,10 +1555,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:890
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_include_directories` or other command invocation that added "
-"this include directory is available.  The value is an unsigned integer 0-"
-"based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_include_directories` or other command invocation that "
+"added this include directory is available.  The value is an unsigned integer "
+"0-based index into the ``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:910
@@ -1583,10 +1584,10 @@ msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:906
 msgid ""
-"Optional member that is present when a CMake language backtrace to the :"
-"command:`target_compile_definitions` or other command invocation that added "
-"this preprocessor definition is available.  The value is an unsigned integer "
-"0-based index into the ``backtraceGraph`` member's ``nodes`` array."
+"Optional member that is present when a CMake language backtrace to "
+"the :command:`target_compile_definitions` or other command invocation that "
+"added this preprocessor definition is available.  The value is an unsigned "
+"integer 0-based index into the ``backtraceGraph`` member's ``nodes`` array."
 msgstr ""
 
 #: ../../../manual/cmake-file-api.7.rst:913

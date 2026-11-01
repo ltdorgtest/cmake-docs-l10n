@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../policy/CMP0065.rst:4
 msgid ""
-"Do not add flags to export symbols from executables without the :prop_tgt:"
-"`ENABLE_EXPORTS` target property."
+"Do not add flags to export symbols from executables without "
+"the :prop_tgt:`ENABLE_EXPORTS` target property."
 msgstr ""
 
 #: ../../../policy/CMP0065.rst:7
@@ -39,8 +39,8 @@ msgstr ""
 #: ../../../policy/CMP0065.rst:13
 msgid ""
 "The ``OLD`` behavior of this policy is to always use the additional link "
-"flags when linking executables regardless of the value of the :prop_tgt:"
-"`ENABLE_EXPORTS` target property."
+"flags when linking executables regardless of the value of "
+"the :prop_tgt:`ENABLE_EXPORTS` target property."
 msgstr ""
 
 #: ../../../policy/CMP0065.rst:17
@@ -54,9 +54,9 @@ msgstr ""
 msgid ""
 "This policy was introduced in CMake version 3.4.  Unlike most policies, "
 "CMake version |release| does *not* warn by default when this policy is not "
-"set and simply uses OLD behavior.  See documentation of the :variable:"
-"`CMAKE_POLICY_WARNING_CMP0065 <CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to "
-"control the warning."
+"set and simply uses OLD behavior.  See documentation of "
+"the :variable:`CMAKE_POLICY_WARNING_CMP0065 "
+"<CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to control the warning."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

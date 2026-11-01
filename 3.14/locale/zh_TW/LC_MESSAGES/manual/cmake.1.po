@@ -78,10 +78,10 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:50
 msgid ""
-"For graphical user interfaces that may be used in place of **cmake**, see :"
-"manual:`ccmake <ccmake(1)>` and :manual:`cmake-gui <cmake-gui(1)>`. For "
-"command-line interfaces to the CMake testing and packaging facilities, see :"
-"manual:`ctest <ctest(1)>` and :manual:`cpack <cpack(1)>`."
+"For graphical user interfaces that may be used in place of **cmake**, "
+"see :manual:`ccmake <ccmake(1)>` and :manual:`cmake-gui <cmake-gui(1)>`. For "
+"command-line interfaces to the CMake testing and packaging facilities, "
+"see :manual:`ctest <ctest(1)>` and :manual:`cpack <cpack(1)>`."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:55
@@ -101,10 +101,10 @@ msgid ""
 "example, a buildsystem may be a ``Makefile`` for use with a command-line "
 "``make`` tool or a project file for an Integrated Development Environment "
 "(IDE).  In order to avoid maintaining multiple such buildsystems, a project "
-"may specify its buildsystem abstractly using files written in the :manual:"
-"`CMake language <cmake-language(7)>`.  From these files CMake generates a "
-"preferred buildsystem locally for each user through a backend called a "
-"*generator*."
+"may specify its buildsystem abstractly using files written in "
+"the :manual:`CMake language <cmake-language(7)>`.  From these files CMake "
+"generates a preferred buildsystem locally for each user through a backend "
+"called a *generator*."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:72
@@ -118,8 +118,8 @@ msgstr ""
 #: ../../../manual/cmake.1.rst:75
 msgid ""
 "The top-level directory containing source files provided by the project. The "
-"project specifies its buildsystem using files as described in the :manual:"
-"`cmake-language(7)` manual, starting with a top-level file named "
+"project specifies its buildsystem using files as described in "
+"the :manual:`cmake-language(7)` manual, starting with a top-level file named "
 "``CMakeLists.txt``.  These files specify build targets and their "
 "dependencies as described in the :manual:`cmake-buildsystem(7)` manual."
 msgstr ""
@@ -339,9 +339,9 @@ msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:44
 msgid ""
-"This option may be used to remove one or more variables from the CMakeCache."
-"txt file, globbing expressions using * and ? are supported.  The option may "
-"be repeated for as many cache entries as desired."
+"This option may be used to remove one or more variables from the "
+"CMakeCache.txt file, globbing expressions using * and ? are supported.  The "
+"option may be repeated for as many cache entries as desired."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:49
@@ -374,8 +374,8 @@ msgstr ""
 #: ../../../manual/OPTIONS_BUILD.txt:62
 msgid ""
 "Some CMake generators support a toolset specification to tell the native "
-"build system how to choose a compiler.  See the :variable:"
-"`CMAKE_GENERATOR_TOOLSET` variable for details."
+"build system how to choose a compiler.  See "
+"the :variable:`CMAKE_GENERATOR_TOOLSET` variable for details."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:71
@@ -389,8 +389,8 @@ msgstr ""
 #: ../../../manual/OPTIONS_BUILD.txt:69
 msgid ""
 "Some CMake generators support a platform name to be given to the native "
-"build system to choose a compiler or SDK.  See the :variable:"
-"`CMAKE_GENERATOR_PLATFORM` variable for details."
+"build system to choose a compiler or SDK.  See "
+"the :variable:`CMAKE_GENERATOR_PLATFORM` variable for details."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:78
@@ -517,10 +517,10 @@ msgstr ""
 msgid ""
 "List cache variables will run CMake and list all the variables from the "
 "CMake cache that are not marked as INTERNAL or ADVANCED.  This will "
-"effectively display current CMake settings, which can then be changed with -"
-"D option.  Changing some of the variables may result in more variables being "
-"created.  If A is specified, then it will display also advanced variables.  "
-"If H is specified, it will also display help for each variable."
+"effectively display current CMake settings, which can then be changed with "
+"-D option.  Changing some of the variables may result in more variables "
+"being created.  If A is specified, then it will display also advanced "
+"variables.  If H is specified, it will also display help for each variable."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:184
@@ -548,8 +548,8 @@ msgstr ""
 #: ../../../manual/cmake.1.rst:189
 msgid ""
 "Generate a graphviz input file that will contain all the library and "
-"executable dependencies in the project.  See the documentation for :module:"
-"`CMakeGraphVizOptions` for more details."
+"executable dependencies in the project.  See the documentation "
+"for :module:`CMakeGraphVizOptions` for more details."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:198
@@ -776,8 +776,8 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:296
 msgid ""
-"This option can be omitted if :envvar:`VERBOSE` environment variable or :"
-"variable:`CMAKE_VERBOSE_MAKEFILE` cached variable is set."
+"This option can be omitted if :envvar:`VERBOSE` environment variable "
+"or :variable:`CMAKE_VERBOSE_MAKEFILE` cached variable is set."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:301 ../../../manual/cmake.1.rst:480
@@ -1672,6 +1672,6 @@ msgstr ""
 msgid ""
 "For help and discussion about using cmake, a mailing list is provided at "
 "cmake@cmake.org.  The list is member-post-only but one may sign up on the "
-"CMake web page.  Please first read the full documentation at https://cmake."
-"org before posting questions to the list."
+"CMake web page.  Please first read the full documentation at https://"
+"cmake.org before posting questions to the list."
 msgstr ""

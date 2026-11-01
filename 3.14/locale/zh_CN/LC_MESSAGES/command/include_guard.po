@@ -32,20 +32,20 @@ msgstr ""
 
 #: ../../../command/include_guard.rst:10
 msgid ""
-"Sets up an include guard for the current CMake file (see the :variable:"
-"`CMAKE_CURRENT_LIST_FILE` variable documentation)."
+"Sets up an include guard for the current CMake file (see "
+"the :variable:`CMAKE_CURRENT_LIST_FILE` variable documentation)."
 msgstr ""
 
 #: ../../../command/include_guard.rst:13
 msgid ""
-"CMake will end its processing of the current file at the location of the :"
-"command:`include_guard` command if the current file has already been "
+"CMake will end its processing of the current file at the location of "
+"the :command:`include_guard` command if the current file has already been "
 "processed for the applicable scope (see below). This provides functionality "
 "similar to the include guards commonly used in source headers or to the "
 "``#pragma once`` directive. If the current file has been processed "
-"previously for the applicable scope, the effect is as though :command:"
-"`return` had been called. Do not call this command from inside a function "
-"being defined within the current file."
+"previously for the applicable scope, the effect is as "
+"though :command:`return` had been called. Do not call this command from "
+"inside a function being defined within the current file."
 msgstr ""
 
 #: ../../../command/include_guard.rst:22
@@ -63,8 +63,8 @@ msgid ""
 "The include guard applies within the current directory and below. The file "
 "will only be included once within this directory scope, but may be included "
 "again by other files outside of this directory (i.e. a parent directory or "
-"another directory not pulled in by :command:`add_subdirectory` or :command:"
-"`include` from the current file or its children)."
+"another directory not pulled in by :command:`add_subdirectory` "
+"or :command:`include` from the current file or its children)."
 msgstr ""
 
 #: ../../../command/include_guard.rst:34

@@ -63,8 +63,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:26
 msgid ""
-"By default :prop_tgt:`AUTOMOC_DEPEND_FILTERS` is initialized from :variable:"
-"`CMAKE_AUTOMOC_DEPEND_FILTERS`, which is empty by default."
+"By default :prop_tgt:`AUTOMOC_DEPEND_FILTERS` is initialized "
+"from :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS`, which is empty by default."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:29
@@ -97,8 +97,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:49
 msgid ""
-"In ``CMakeLists.txt`` we add a filter to :variable:"
-"`CMAKE_AUTOMOC_DEPEND_FILTERS` like this::"
+"In ``CMakeLists.txt`` we add a filter "
+"to :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS` like this::"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:52
@@ -112,8 +112,8 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:57
 msgid ""
 "We assume ``info.json`` is a plain (not :prop_sf:`GENERATED`) file that is "
-"listed in the target's source.  Therefore we do not need to add it to :"
-"prop_tgt:`AUTOGEN_TARGET_DEPENDS`."
+"listed in the target's source.  Therefore we do not need to add it "
+"to :prop_tgt:`AUTOGEN_TARGET_DEPENDS`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:62
@@ -162,8 +162,9 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:92
 msgid ""
-"We want the ``moc`` file of ``complex_class.hpp`` to depend on ``meta."
-"json``.  So we add a filter to :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS`::"
+"We want the ``moc`` file of ``complex_class.hpp`` to depend on "
+"``meta.json``.  So we add a filter "
+"to :variable:`CMAKE_AUTOMOC_DEPEND_FILTERS`::"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:96
@@ -183,6 +184,6 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_DEPEND_FILTERS.rst:104
 msgid ""
-"set_property(TARGET my_target APPEND PROPERTY AUTOGEN_TARGET_DEPENDS \"meta."
-"json\")"
+"set_property(TARGET my_target APPEND PROPERTY AUTOGEN_TARGET_DEPENDS "
+"\"meta.json\")"
 msgstr ""

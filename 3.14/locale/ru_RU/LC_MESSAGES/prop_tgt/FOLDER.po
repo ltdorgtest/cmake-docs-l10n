@@ -35,6 +35,6 @@ msgstr ""
 
 #: ../../../prop_tgt/FOLDER.rst:12
 msgid ""
-"This property is initialized by the value of the variable :variable:"
-"`CMAKE_FOLDER` if it is set when a target is created."
+"This property is initialized by the value of the "
+"variable :variable:`CMAKE_FOLDER` if it is set when a target is created."
 msgstr ""
