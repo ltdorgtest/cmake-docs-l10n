@@ -31,11 +31,11 @@ msgstr ""
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:8
 msgid ""
 ":manual:`Generator expressions <cmake-generator-expressions(7)>` are allowed "
-"in the context of many target properties, such as :prop_tgt:"
-"`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :prop_tgt:"
-"`COMPILE_DEFINITIONS` and others. They may also be used when using commands "
-"to populate those properties, such as :command:`target_link_libraries`, :"
-"command:`target_include_directories`, :command:`target_compile_definitions` "
+"in the context of many target properties, such "
+"as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :prop_tgt:`COMPILE_DEFINITIONS` "
+"and others. They may also be used when using commands to populate those "
+"properties, such "
+"as :command:`target_link_libraries`, :command:`target_include_directories`, :command:`target_compile_definitions` "
 "and others."
 msgstr ""
 
@@ -104,10 +104,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:56
 msgid ""
-"**Note**:  This upcoming section will require a change to the :command:"
-"`cmake_minimum_required` usage in the code.  The Generator Expression that "
-"is about to be used was introduced in `3.15`.  Update the call to require "
-"that more recent version:"
+"**Note**:  This upcoming section will require a change to "
+"the :command:`cmake_minimum_required` usage in the code.  The Generator "
+"Expression that is about to be used was introduced in `3.15`.  Update the "
+"call to require that more recent version:"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:61
@@ -124,8 +124,8 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Generator Expressions.rst:72
 msgid ""
-"set(gcc_like_cxx \"$<COMPILE_LANG_AND_ID:CXX,ARMClang,AppleClang,Clang,GNU,"
-"LCC>\")\n"
+"set(gcc_like_cxx "
+"\"$<COMPILE_LANG_AND_ID:CXX,ARMClang,AppleClang,Clang,GNU,LCC>\")\n"
 "set(msvc_cxx \"$<COMPILE_LANG_AND_ID:CXX,MSVC>\")\n"
 "target_compile_options(tutorial_compiler_flags INTERFACE\n"
 "  \"$<${gcc_like_cxx}:$<BUILD_INTERFACE:-Wall;-Wextra;-Wshadow;-Wformat=2;-"

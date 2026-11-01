@@ -39,9 +39,9 @@ msgid ""
 "behavior depends on whether it has been defined to be an ``INHERITED`` "
 "property or not (see :command:`define_property`).  Non-inherited properties "
 "will set ``variable`` to ``NOTFOUND``, whereas inherited properties will "
-"search the relevant parent scope as described for the :command:"
-"`define_property` command and if still unable to find the property, "
-"``variable`` will be set to an empty string."
+"search the relevant parent scope as described for "
+"the :command:`define_property` command and if still unable to find the "
+"property, ``variable`` will be set to an empty string."
 msgstr ""
 
 #: ../../../command/get_source_file_property.rst:21

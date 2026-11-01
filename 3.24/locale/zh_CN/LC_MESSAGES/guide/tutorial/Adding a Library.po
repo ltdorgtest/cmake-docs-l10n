@@ -105,8 +105,8 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:61
 msgid ""
-"This option will be displayed in the :manual:`cmake-gui <cmake-gui(1)>` and :"
-"manual:`ccmake <ccmake(1)>` with a default value of ``ON`` that can be "
+"This option will be displayed in the :manual:`cmake-gui <cmake-gui(1)>` "
+"and :manual:`ccmake <ccmake(1)>` with a default value of ``ON`` that can be "
 "changed by the user. This setting will be stored in the cache so that the "
 "user does not need to set the value each time they run CMake on a build "
 "directory."
@@ -116,11 +116,11 @@ msgstr ""
 msgid ""
 "The next change is to make building and linking the ``MathFunctions`` "
 "library conditional. To do this,  we will create an ``if`` statement which "
-"checks the value of the option.  Inside the ``if`` block, put the :command:"
-"`add_subdirectory` command from above with some additional list commands to "
-"store information needed to link to the library and add the subdirectory as "
-"an include directory in the ``Tutorial`` target. The end of the top-level "
-"``CMakeLists.txt`` file will now look like the following:"
+"checks the value of the option.  Inside the ``if`` block, put "
+"the :command:`add_subdirectory` command from above with some additional list "
+"commands to store information needed to link to the library and add the "
+"subdirectory as an include directory in the ``Tutorial`` target. The end of "
+"the top-level ``CMakeLists.txt`` file will now look like the following:"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:76
@@ -218,10 +218,10 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:125
 msgid ""
-"Now let's update the value of ``USE_MYMATH``. The easiest way is to use the :"
-"manual:`cmake-gui <cmake-gui(1)>` or  :manual:`ccmake <ccmake(1)>` if you're "
-"in the terminal. Or, alternatively, if you want to change the option from "
-"the command-line, try:"
+"Now let's update the value of ``USE_MYMATH``. The easiest way is to use "
+"the :manual:`cmake-gui <cmake-gui(1)>` or  :manual:`ccmake <ccmake(1)>` if "
+"you're in the terminal. Or, alternatively, if you want to change the option "
+"from the command-line, try:"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding a Library.rst:130

@@ -348,8 +348,8 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:255
 msgid ""
-"All generators available on the command line are also available in :manual:"
-"`cmake-gui(1)`."
+"All generators available on the command line are also available "
+"in :manual:`cmake-gui(1)`."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:258
@@ -438,8 +438,8 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:296
 msgid ""
-"Whether to build shared instead of static libraries for :command:"
-"`add_library` commands used without a type"
+"Whether to build shared instead of static libraries "
+"for :command:`add_library` commands used without a type"
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:300
@@ -643,8 +643,8 @@ msgstr ""
 #: ../../../guide/user-interaction/index.rst:458
 msgid ""
 "This will generate a build directory in ``/path/to/source/build/ninja-"
-"release`` with the :generator:`Ninja` generator, and with :variable:"
-"`CMAKE_BUILD_TYPE` set to ``Release``."
+"release`` with the :generator:`Ninja` generator, and "
+"with :variable:`CMAKE_BUILD_TYPE` set to ``Release``."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:463
@@ -657,9 +657,9 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:470
 msgid ""
-"This will list the presets available in ``/path/to/source/CMakePresets."
-"json`` and ``/path/to/source/CMakeUsersPresets.json`` without generating a "
-"build tree."
+"This will list the presets available in ``/path/to/source/"
+"CMakePresets.json`` and ``/path/to/source/CMakeUsersPresets.json`` without "
+"generating a build tree."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:476
@@ -700,10 +700,10 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:505
 msgid ""
-"The ``--build`` flag enables a particular mode of operation for the :manual:"
-"`cmake(1)` tool.  It invokes the  :variable:`CMAKE_MAKE_PROGRAM` command "
-"associated with the :manual:`generator <cmake-generators(7)>`, or the build "
-"tool configured by the user."
+"The ``--build`` flag enables a particular mode of operation for "
+"the :manual:`cmake(1)` tool.  It invokes the  :variable:`CMAKE_MAKE_PROGRAM` "
+"command associated with the :manual:`generator <cmake-generators(7)>`, or "
+"the build tool configured by the user."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:511
@@ -786,10 +786,10 @@ msgstr ""
 #: ../../../guide/user-interaction/index.rst:570
 msgid ""
 "The default target used by ``Makefile`` and ``Ninja`` generators.  Builds "
-"all targets in the buildsystem, except those which are excluded by their :"
-"prop_tgt:`EXCLUDE_FROM_ALL` target property or :prop_dir:`EXCLUDE_FROM_ALL` "
-"directory property.  The name ``ALL_BUILD`` is used for this purpose for the "
-"Xcode and Visual Studio generators."
+"all targets in the buildsystem, except those which are excluded by "
+"their :prop_tgt:`EXCLUDE_FROM_ALL` target property "
+"or :prop_dir:`EXCLUDE_FROM_ALL` directory property.  The name ``ALL_BUILD`` "
+"is used for this purpose for the Xcode and Visual Studio generators."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:577
@@ -895,8 +895,8 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:635
 msgid ""
-"In buildsystems which contain ``foo.c`` and ``foo.cpp``, building the ``foo."
-"i`` target will preprocess both files."
+"In buildsystems which contain ``foo.c`` and ``foo.cpp``, building the "
+"``foo.i`` target will preprocess both files."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:639
@@ -905,9 +905,9 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:641
 msgid ""
-"The program invoked by the ``--build`` mode is determined by the :variable:"
-"`CMAKE_MAKE_PROGRAM` variable.  For most generators, the particular program "
-"does not need to be configured."
+"The program invoked by the ``--build`` mode is determined by "
+"the :variable:`CMAKE_MAKE_PROGRAM` variable.  For most generators, the "
+"particular program does not need to be configured."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:647
@@ -1000,9 +1000,9 @@ msgid ""
 "After generating with the :generator:`NMake Makefiles` generator a user can "
 "run ``jom`` instead of ``nmake``.  The ``--build`` mode would also use "
 "``jom`` if the :variable:`CMAKE_MAKE_PROGRAM` was set to ``jom`` while using "
-"the :generator:`NMake Makefiles` generator, and as a convenience, the :"
-"generator:`NMake Makefiles JOM` generator is provided to find ``jom`` in the "
-"normal way and use it as the :variable:`CMAKE_MAKE_PROGRAM`. For "
+"the :generator:`NMake Makefiles` generator, and as a convenience, "
+"the :generator:`NMake Makefiles JOM` generator is provided to find ``jom`` "
+"in the normal way and use it as the :variable:`CMAKE_MAKE_PROGRAM`. For "
 "completeness, ``nmake`` is an alternative tool which can process the output "
 "of the :generator:`NMake Makefiles JOM` generator, but doing so would be a "
 "pessimisation."
@@ -1032,9 +1032,9 @@ msgstr ""
 #: ../../../guide/user-interaction/index.rst:693
 msgid ""
 "In cross-compiling or packaging scenarios where the sysroot is read-only or "
-"where the sysroot should otherwise remain pristine, the :variable:"
-"`CMAKE_STAGING_PREFIX` variable can be set to a location to actually install "
-"the files."
+"where the sysroot should otherwise remain pristine, "
+"the :variable:`CMAKE_STAGING_PREFIX` variable can be set to a location to "
+"actually install the files."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:699
@@ -1052,9 +1052,9 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:709
 msgid ""
-"result in files being installed to paths such as ``/tmp/package/lib/libfoo."
-"so`` on the host machine. The ``/usr/local`` location on the host machine is "
-"not affected."
+"result in files being installed to paths such as ``/tmp/package/lib/"
+"libfoo.so`` on the host machine. The ``/usr/local`` location on the host "
+"machine is not affected."
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:714
@@ -1103,8 +1103,8 @@ msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:748
 msgid ""
-"Tests can be run in parallel by passing ``-j`` arguments to :manual:"
-"`ctest(1)`:"
+"Tests can be run in parallel by passing ``-j`` arguments "
+"to :manual:`ctest(1)`:"
 msgstr ""
 
 #: ../../../guide/user-interaction/index.rst:751
@@ -1122,7 +1122,8 @@ msgid ""
 "By default :manual:`ctest(1)` does not print the output from the tests. The "
 "command line argument ``-V`` (or ``--verbose``) enables verbose mode to "
 "print the output from all tests. The ``--output-on-failure`` option prints "
-"the test output for failing tests only.  The environment variable :envvar:"
-"`CTEST_OUTPUT_ON_FAILURE` can be set to ``1`` as an alternative to passing "
-"the ``--output-on-failure`` option to :manual:`ctest(1)`."
+"the test output for failing tests only.  The environment "
+"variable :envvar:`CTEST_OUTPUT_ON_FAILURE` can be set to ``1`` as an "
+"alternative to passing the ``--output-on-failure`` option "
+"to :manual:`ctest(1)`."
 msgstr ""
