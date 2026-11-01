@@ -33,9 +33,9 @@ msgstr ""
 
 #: ../../../../Modules/CheckTypeSize.cmake:17
 msgid ""
-"Check if the type exists and determine its size.  On return, "
-"``HAVE_${VARIABLE}`` holds the existence of the type, and ``${VARIABLE}`` "
-"holds one of the following:"
+"Check if the type exists and determine its size.  On return, ``HAVE_$"
+"{VARIABLE}`` holds the existence of the type, and ``${VARIABLE}`` holds one "
+"of the following:"
 msgstr ""
 
 #: ../../../../Modules/CheckTypeSize.cmake:23
@@ -60,13 +60,13 @@ msgstr ""
 
 #: ../../../../Modules/CheckTypeSize.cmake:34
 msgid ""
-"The variable ``${VARIABLE}`` may be ``0`` when :variable:"
-"`CMAKE_OSX_ARCHITECTURES` has multiple architectures for building OS X "
-"universal binaries.  This indicates that the type size varies across "
-"architectures.  In this case ``${VARIABLE}_CODE`` contains C preprocessor "
-"tests mapping from each architecture macro to the corresponding type size. "
-"The list of architecture macros is stored in ``${VARIABLE}_KEYS``, and the "
-"value for each key is stored in ``${VARIABLE}-${KEY}``."
+"The variable ``${VARIABLE}`` may be ``0`` "
+"when :variable:`CMAKE_OSX_ARCHITECTURES` has multiple architectures for "
+"building OS X universal binaries.  This indicates that the type size varies "
+"across architectures.  In this case ``${VARIABLE}_CODE`` contains C "
+"preprocessor tests mapping from each architecture macro to the corresponding "
+"type size. The list of architecture macros is stored in ``${VARIABLE}"
+"_KEYS``, and the value for each key is stored in ``${VARIABLE}-${KEY}``."
 msgstr ""
 
 #: ../../../../Modules/CheckTypeSize.cmake:42

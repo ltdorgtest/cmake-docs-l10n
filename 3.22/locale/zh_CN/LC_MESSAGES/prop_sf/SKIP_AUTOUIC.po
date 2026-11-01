@@ -29,8 +29,8 @@ msgstr ""
 
 #: ../../../prop_sf/SKIP_AUTOUIC.rst:8
 msgid ""
-":prop_sf:`SKIP_AUTOUIC` can be set on C++ header and source files and on ``."
-"ui`` files."
+":prop_sf:`SKIP_AUTOUIC` can be set on C++ header and source files and on "
+"``.ui`` files."
 msgstr ""
 
 #: ../../../prop_sf/SKIP_AUTOUIC.rst:11

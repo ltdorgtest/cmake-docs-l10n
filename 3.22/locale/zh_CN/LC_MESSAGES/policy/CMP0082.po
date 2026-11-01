@@ -40,8 +40,8 @@ msgstr ""
 
 #: ../../../policy/CMP0082.rst:17
 msgid ""
-"The ``OLD`` behavior for this policy is to run the install rules from :"
-"command:`add_subdirectory` after the other install rules.  The ``NEW`` "
+"The ``OLD`` behavior for this policy is to run the install rules "
+"from :command:`add_subdirectory` after the other install rules.  The ``NEW`` "
 "behavior for this policy is to run all install rules in the order they are "
 "declared."
 msgstr ""
@@ -50,9 +50,9 @@ msgstr ""
 msgid ""
 "This policy was introduced in CMake version 3.14.  Unlike most policies, "
 "CMake version |release| does *not* warn by default when this policy is not "
-"set and simply uses ``OLD`` behavior.  See documentation of the :variable:"
-"`CMAKE_POLICY_WARNING_CMP0082 <CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to "
-"control the warning."
+"set and simply uses ``OLD`` behavior.  See documentation of "
+"the :variable:`CMAKE_POLICY_WARNING_CMP0082 "
+"<CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to control the warning."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

@@ -234,9 +234,9 @@ msgid ""
 "correct flags. The easiest way to enable support for a specific C++ standard "
 "in CMake is by using the :variable:`CMAKE_CXX_STANDARD` variable. For this "
 "tutorial, set the :variable:`CMAKE_CXX_STANDARD` variable in the "
-"``CMakeLists.txt`` file to ``11`` and :variable:"
-"`CMAKE_CXX_STANDARD_REQUIRED` to ``True``. Make sure to add the "
-"``CMAKE_CXX_STANDARD`` declarations above the call to ``add_executable``."
+"``CMakeLists.txt`` file to ``11`` "
+"and :variable:`CMAKE_CXX_STANDARD_REQUIRED` to ``True``. Make sure to add "
+"the ``CMAKE_CXX_STANDARD`` declarations above the call to ``add_executable``."
 msgstr ""
 
 #: ../../../guide/tutorial/A Basic Starting Point.rst:149

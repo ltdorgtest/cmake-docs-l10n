@@ -103,9 +103,9 @@ msgstr ""
 
 #: ../../../policy/CMP0058.rst:74
 msgid ""
-"CMake 3.2 introduced the ``BYPRODUCTS`` option to the :command:"
-"`add_custom_command` and :command:`add_custom_target` commands.  This option "
-"allows byproducts to be specified explicitly:"
+"CMake 3.2 introduced the ``BYPRODUCTS`` option to "
+"the :command:`add_custom_command` and :command:`add_custom_target` "
+"commands.  This option allows byproducts to be specified explicitly:"
 msgstr ""
 
 #: ../../../policy/CMP0058.rst:78
@@ -147,10 +147,10 @@ msgstr ""
 msgid ""
 "This policy was introduced in CMake version 3.3. CMake version |release| "
 "warns when it sees unknown dependencies in out-of-source build trees if the "
-"policy is not set and then uses ``OLD`` behavior.  Use the :command:"
-"`cmake_policy` command to set the policy to ``OLD`` or ``NEW`` explicitly.  "
-"The policy setting must be in scope at the end of the top-level ``CMakeLists."
-"txt`` file of the project and has global effect."
+"policy is not set and then uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set the policy to ``OLD`` or ``NEW`` "
+"explicitly.  The policy setting must be in scope at the end of the top-level "
+"``CMakeLists.txt`` file of the project and has global effect."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

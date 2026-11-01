@@ -38,9 +38,9 @@ msgstr ""
 #: ../../../../Modules/CheckOBJCCompilerFlag.cmake:22
 msgid ""
 "This command temporarily sets the ``CMAKE_REQUIRED_DEFINITIONS`` variable "
-"and calls the ``check_objc_source_compiles`` macro from the :module:"
-"`CheckOBJCSourceCompiles` module.  See documentation of that module for a "
-"listing of variables that can otherwise modify the build."
+"and calls the ``check_objc_source_compiles`` macro from "
+"the :module:`CheckOBJCSourceCompiles` module.  See documentation of that "
+"module for a listing of variables that can otherwise modify the build."
 msgstr ""
 
 #: ../../../../Modules/CheckOBJCCompilerFlag.cmake:27
@@ -52,7 +52,7 @@ msgstr ""
 
 #: ../../../../Modules/CheckOBJCCompilerFlag.cmake:32
 msgid ""
-"Since the :command:`try_compile` command forwards flags from variables like :"
-"variable:`CMAKE_OBJC_FLAGS <CMAKE_<LANG>_FLAGS>`, unknown flags in such "
-"variables may cause a false negative for this check."
+"Since the :command:`try_compile` command forwards flags from variables "
+"like :variable:`CMAKE_OBJC_FLAGS <CMAKE_<LANG>_FLAGS>`, unknown flags in "
+"such variables may cause a false negative for this check."
 msgstr ""

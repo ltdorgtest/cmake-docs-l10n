@@ -24,16 +24,16 @@ msgstr ""
 #: ../../../prop_test/ENVIRONMENT_MODIFICATION.rst:6
 msgid ""
 "Specify environment variables that should be modified for running a test. "
-"Note that the operations performed by this property are performed after the :"
-"prop_test:`ENVIRONMENT` property is already applied."
+"Note that the operations performed by this property are performed after "
+"the :prop_test:`ENVIRONMENT` property is already applied."
 msgstr ""
 
 #: ../../../prop_test/ENVIRONMENT_MODIFICATION.rst:10
 msgid ""
-"If set to a list of environment variables and values of the form ``MYVAR=OP:"
-"VALUE``, where ``MYVAR`` is the case-sensitive name of an environment "
-"variable to be modified. Entries are considered in the order specified in "
-"the property's value. The ``OP`` may be one of:"
+"If set to a list of environment variables and values of the form "
+"``MYVAR=OP:VALUE``, where ``MYVAR`` is the case-sensitive name of an "
+"environment variable to be modified. Entries are considered in the order "
+"specified in the property's value. The ``OP`` may be one of:"
 msgstr ""
 
 #: ../../../prop_test/ENVIRONMENT_MODIFICATION.rst:15

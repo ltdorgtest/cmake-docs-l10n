@@ -252,10 +252,10 @@ msgstr ""
 msgid ""
 "A required string representing the machine-friendly name of the preset. This "
 "identifier is used in the :ref:`cmake --preset <CMake Options>` option. "
-"There must not be two configure presets in the union of ``CMakePresets."
-"json`` and ``CMakeUserPresets.json`` in the same directory with the same "
-"name. However, a configure preset may have the same name as a build or test "
-"preset."
+"There must not be two configure presets in the union of "
+"``CMakePresets.json`` and ``CMakeUserPresets.json`` in the same directory "
+"with the same name. However, a configure preset may have the same name as a "
+"build or test preset."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:99
@@ -290,8 +290,8 @@ msgid ""
 "``description``, and ``displayName``), but can override them as desired. If "
 "multiple ``inherits`` presets provide conflicting values for the same field, "
 "the earlier preset in the ``inherits`` list will be preferred. Presets in "
-"``CMakePresets.json`` may not inherit from presets in ``CMakeUserPresets."
-"json``."
+"``CMakePresets.json`` may not inherit from presets in "
+"``CMakeUserPresets.json``."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:119
@@ -434,9 +434,9 @@ msgid ""
 "An optional string representing the path to the toolchain file. This field "
 "supports `macro expansion`_. If a relative path is specified, it is "
 "calculated relative to the build directory, and if not found, relative to "
-"the source directory. This field takes precedence over any :variable:"
-"`CMAKE_TOOLCHAIN_FILE` value. It is allowed in preset files specifying "
-"version ``3`` or above."
+"the source directory. This field takes precedence over "
+"any :variable:`CMAKE_TOOLCHAIN_FILE` value. It is allowed in preset files "
+"specifying version ``3`` or above."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:194
@@ -688,10 +688,10 @@ msgstr ""
 msgid ""
 "A required string representing the machine-friendly name of the preset. This "
 "identifier is used in the :ref:`cmake --build --preset <Build Tool Mode>` "
-"option. There must not be two build presets in the union of ``CMakePresets."
-"json`` and ``CMakeUserPresets.json`` in the same directory with the same "
-"name. However, a build preset may have the same name as a configure or test "
-"preset."
+"option. There must not be two build presets in the union of "
+"``CMakePresets.json`` and ``CMakeUserPresets.json`` in the same directory "
+"with the same name. However, a build preset may have the same name as a "
+"configure or test preset."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:345
@@ -1552,8 +1552,8 @@ msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:958
 msgid ""
-"The last filename component of ``${sourceDir}``. For example, if "
-"``${sourceDir}`` is ``/path/to/source``, this would be ``source``."
+"The last filename component of ``${sourceDir}``. For example, if ``$"
+"{sourceDir}`` is ``/path/to/source``, this would be ``source``."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:961
@@ -1581,9 +1581,9 @@ msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:973
 msgid ""
-"The name of the host operating system. Contains the same value as :variable:"
-"`CMAKE_HOST_SYSTEM_NAME`. This is allowed in preset files specifying version "
-"``3`` or above."
+"The name of the host operating system. Contains the same value "
+"as :variable:`CMAKE_HOST_SYSTEM_NAME`. This is allowed in preset files "
+"specifying version ``3`` or above."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:977
