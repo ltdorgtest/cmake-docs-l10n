@@ -38,11 +38,12 @@ msgstr ""
 #: ../../../manual/cmake-generator-expressions.7.rst:16
 msgid ""
 "Generator expressions are allowed in the context of many target properties, "
-"such as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :"
-"prop_tgt:`COMPILE_DEFINITIONS` and others.  They may also be used when using "
-"commands to populate those properties, such as :command:"
-"`target_link_libraries`, :command:`target_include_directories`, :command:"
-"`target_compile_definitions` and others."
+"such "
+"as :prop_tgt:`LINK_LIBRARIES`, :prop_tgt:`INCLUDE_DIRECTORIES`, :prop_tgt:`COMPILE_DEFINITIONS` "
+"and others.  They may also be used when using commands to populate those "
+"properties, such "
+"as :command:`target_link_libraries`, :command:`target_include_directories`, :command:`target_compile_definitions` "
+"and others."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:23
@@ -164,8 +165,8 @@ msgstr ""
 msgid ""
 "``1`` if config is ``cfg``, else ``0``. This is a case-insensitive "
 "comparison. The mapping in :prop_tgt:`MAP_IMPORTED_CONFIG_<CONFIG>` is also "
-"considered by this expression when it is evaluated on a property on an :"
-"prop_tgt:`IMPORTED` target."
+"considered by this expression when it is evaluated on a property on "
+"an :prop_tgt:`IMPORTED` target."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:70
@@ -324,12 +325,12 @@ msgstr ""
 msgid ""
 "Note that with :ref:`Visual Studio Generators` and :generator:`Xcode` there "
 "is no way to represent target-wide compile definitions or include "
-"directories separately for ``C`` and ``CXX`` languages. Also, with :ref:"
-"`Visual Studio Generators` there is no way to represent target-wide flags "
-"separately for ``C`` and ``CXX`` languages.  Under these generators, "
-"expressions for both C and C++ sources will be evaluated using ``CXX`` if "
-"there are any C++ sources and otherwise using ``C``. A workaround is to "
-"create separate libraries for each source file language instead:"
+"directories separately for ``C`` and ``CXX`` languages. Also, "
+"with :ref:`Visual Studio Generators` there is no way to represent target-"
+"wide flags separately for ``C`` and ``CXX`` languages.  Under these "
+"generators, expressions for both C and C++ sources will be evaluated using "
+"``CXX`` if there are any C++ sources and otherwise using ``C``. A workaround "
+"is to create separate libraries for each source file language instead:"
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:142
@@ -411,8 +412,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:179
 msgid ""
-"The CMake-id of the C compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_ID` variable."
+"The CMake-id of the C compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:182
@@ -421,8 +422,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:182
 msgid ""
-"The CMake-id of the CXX compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_ID` variable."
+"The CMake-id of the CXX compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:185
@@ -431,8 +432,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:185
 msgid ""
-"The version of the C compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_VERSION` variable."
+"The version of the C compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:188
@@ -441,8 +442,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:188
 msgid ""
-"The version of the CXX compiler used. See also the :variable:"
-"`CMAKE_<LANG>_COMPILER_VERSION` variable."
+"The version of the CXX compiler used. See also "
+"the :variable:`CMAKE_<LANG>_COMPILER_VERSION` variable."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:190
@@ -533,8 +534,9 @@ msgstr ""
 #: ../../../manual/cmake-generator-expressions.7.rst:212
 msgid ""
 "See also the :prop_tgt:`PDB_NAME` and :prop_tgt:`PDB_OUTPUT_DIRECTORY` "
-"target properties and their configuration specific variants :prop_tgt:"
-"`PDB_NAME_<CONFIG>` and :prop_tgt:`PDB_OUTPUT_DIRECTORY_<CONFIG>`."
+"target properties and their configuration specific "
+"variants :prop_tgt:`PDB_NAME_<CONFIG>` "
+"and :prop_tgt:`PDB_OUTPUT_DIRECTORY_<CONFIG>`."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:215
@@ -559,8 +561,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:220
 msgid ""
-"Full path to the bundle directory (``my.app``, ``my.framework``, or ``my."
-"bundle``) where ``tgt`` is the name of a target."
+"Full path to the bundle directory (``my.app``, ``my.framework``, or "
+"``my.bundle``) where ``tgt`` is the name of a target."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:226
@@ -571,8 +573,9 @@ msgstr ""
 msgid ""
 "Full path to the bundle content directory where ``tgt`` is the name of a "
 "target. For the macOS SDK it leads to ``my.app/Contents``, ``my.framework``, "
-"or ``my.bundle/Contents``. For all other SDKs (e.g. iOS) it leads to ``my."
-"app``, ``my.framework``, or ``my.bundle`` due to the flat bundle structure."
+"or ``my.bundle/Contents``. For all other SDKs (e.g. iOS) it leads to "
+"``my.app``, ``my.framework``, or ``my.bundle`` due to the flat bundle "
+"structure."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:231
@@ -605,8 +608,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:237
 msgid ""
-"Content of the install prefix when the target is exported via :command:"
-"`install(EXPORT)` and empty otherwise."
+"Content of the install prefix when the target is exported "
+"via :command:`install(EXPORT)` and empty otherwise."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:242
@@ -748,8 +751,8 @@ msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:293
 msgid ""
-"Content of ``...`` when the property is exported using :command:"
-"`install(EXPORT)`, and empty otherwise."
+"Content of ``...`` when the property is exported "
+"using :command:`install(EXPORT)`, and empty otherwise."
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:297
@@ -862,8 +865,8 @@ msgstr ""
 #: ../../../manual/cmake-generator-expressions.7.rst:342
 msgid ""
 "To have the expected result (i.e. ``FOO_EXTRA_THINGS`` if config is "
-"``Debug``), it is required to evaluate the output of ``$<TARGET_PROPERTY:foo,"
-"CUSTOM_KEYS>``:"
+"``Debug``), it is required to evaluate the output of "
+"``$<TARGET_PROPERTY:foo,CUSTOM_KEYS>``:"
 msgstr ""
 
 #: ../../../manual/cmake-generator-expressions.7.rst:346

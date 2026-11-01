@@ -35,8 +35,8 @@ msgstr ""
 msgid ""
 "Provide an option for the user to select as ``ON`` or ``OFF``.  If no "
 "initial value is provided, ``OFF`` is used.  If the option is already set as "
-"a normal variable then the command does nothing (see policy :policy:"
-"`CMP0077`)."
+"a normal variable then the command does nothing (see "
+"policy :policy:`CMP0077`)."
 msgstr ""
 
 #: ../../../command/option.rst:16

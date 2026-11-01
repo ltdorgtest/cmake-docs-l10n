@@ -33,16 +33,16 @@ msgstr ""
 #: ../../../command/add_link_options.rst:10
 msgid ""
 "Adds options to the link step for targets in the current directory and below "
-"that are added after this command is invoked. See documentation of the :"
-"prop_dir:`directory <LINK_OPTIONS>` and :prop_tgt:`target <LINK_OPTIONS>` "
-"``LINK_OPTIONS`` properties."
+"that are added after this command is invoked. See documentation of "
+"the :prop_dir:`directory <LINK_OPTIONS>` and :prop_tgt:`target "
+"<LINK_OPTIONS>` ``LINK_OPTIONS`` properties."
 msgstr ""
 
 #: ../../../command/add_link_options.rst:15
 msgid ""
 "This command can be used to add any options, but alternative commands exist "
-"to add libraries (:command:`target_link_libraries` or :command:"
-"`link_libraries`)."
+"to add libraries (:command:`target_link_libraries` "
+"or :command:`link_libraries`)."
 msgstr ""
 
 #: ../../../command/add_link_options.rst:19
@@ -73,8 +73,8 @@ msgid ""
 "pass to the linker tool. The ``LINKER:`` prefix is replaced by the required "
 "driver option and the rest of the option string defines linker arguments "
 "using ``,`` as separator. These arguments will be formatted according to "
-"the :variable:`CMAKE_<LANG>_LINKER_WRAPPER_FLAG` and :variable:"
-"`CMAKE_<LANG>_LINKER_WRAPPER_FLAG_SEP` variables."
+"the :variable:`CMAKE_<LANG>_LINKER_WRAPPER_FLAG` "
+"and :variable:`CMAKE_<LANG>_LINKER_WRAPPER_FLAG_SEP` variables."
 msgstr ""
 
 #: ../../../command/LINK_OPTIONS_LINKER.txt:9
@@ -98,6 +98,6 @@ msgstr ""
 
 #: ../../../command/LINK_OPTIONS_LINKER.txt:21
 msgid ""
-"Specifying ``SHELL:`` prefix elsewhere than at the beginning of the ``LINKER:"
-"`` prefix is not supported."
+"Specifying ``SHELL:`` prefix elsewhere than at the beginning of the "
+"``LINKER:`` prefix is not supported."
 msgstr ""

@@ -1181,8 +1181,8 @@ msgstr ""
 
 #: sphinx/cmd/build.py:146
 msgid ""
-"path for the cached environment and doctree files (default: OUTPUTDIR/."
-"doctrees)"
+"path for the cached environment and doctree files (default: "
+"OUTPUTDIR/.doctrees)"
 msgstr ""
 
 #: sphinx/cmd/build.py:149
@@ -2336,8 +2336,8 @@ msgstr ""
 
 #: sphinx/ext/apidoc.py:328
 msgid ""
-"follow symbolic links. Powerful when combined with collective.recipe."
-"omelette."
+"follow symbolic links. Powerful when combined with "
+"collective.recipe.omelette."
 msgstr ""
 
 #: sphinx/ext/apidoc.py:331

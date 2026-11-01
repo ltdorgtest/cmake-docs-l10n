@@ -23,9 +23,10 @@ msgstr ""
 
 #: ../../../command/set.rst:4
 msgid ""
-"Set a normal, cache, or environment variable to a given value. See the :ref:"
-"`cmake-language(7) variables <CMake Language Variables>` documentation for "
-"the scopes and interaction of normal variables and cache entries."
+"Set a normal, cache, or environment variable to a given value. See "
+"the :ref:`cmake-language(7) variables <CMake Language Variables>` "
+"documentation for the scopes and interaction of normal variables and cache "
+"entries."
 msgstr ""
 
 #: ../../../command/set.rst:9

@@ -260,8 +260,8 @@ msgstr ""
 msgid ""
 "Saves a matched subexpression, which can be referenced in the ``REGEX "
 "REPLACE`` operation. Additionally it is saved by all regular expression-"
-"related commands, including e.g. :command:`if(MATCHES)`, in the variables :"
-"variable:`CMAKE_MATCH_<n>` for ``<n>`` 0..9."
+"related commands, including e.g. :command:`if(MATCHES)`, in the "
+"variables :variable:`CMAKE_MATCH_<n>` for ``<n>`` 0..9."
 msgstr ""
 
 #: ../../../command/string.rst:154
@@ -348,9 +348,9 @@ msgstr ""
 
 #: ../../../command/string.rst:212
 msgid ""
-"To join list's elements, use preferably the ``JOIN`` operator from :command:"
-"`list` command. This allows for the elements to have special characters like "
-"``;`` in them."
+"To join list's elements, use preferably the ``JOIN`` operator "
+"from :command:`list` command. This allows for the elements to have special "
+"characters like ``;`` in them."
 msgstr ""
 
 #: ../../../command/string.rst:220

@@ -111,8 +111,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:46
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:49
@@ -178,8 +179,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:65
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=True)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:70
@@ -192,8 +193,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:70
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=True)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:75
@@ -206,8 +207,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:75
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=False)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:80
@@ -220,8 +221,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:80
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=False)``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)``."
 msgstr ""
 
 #: ../../../../Modules/FindPython2.cmake:82

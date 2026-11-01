@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../prop_tgt/INTERPROCEDURAL_OPTIMIZATION.rst:9
 msgid ""
-"This property is initialized by the :variable:"
-"`CMAKE_INTERPROCEDURAL_OPTIMIZATION` variable if it is set when a target is "
-"created."
+"This property is initialized by "
+"the :variable:`CMAKE_INTERPROCEDURAL_OPTIMIZATION` variable if it is set "
+"when a target is created."
 msgstr ""

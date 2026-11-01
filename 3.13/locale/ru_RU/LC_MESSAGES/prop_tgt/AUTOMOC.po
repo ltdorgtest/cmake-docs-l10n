@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:6
 msgid ""
 "AUTOMOC is a boolean specifying whether CMake will handle the Qt ``moc`` "
-"preprocessor automatically, i.e.  without having to use the :module:"
-"`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro. Currently Qt4 and Qt5 "
-"are supported."
+"preprocessor automatically, i.e.  without having to use "
+"the :module:`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro. Currently "
+"Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:11
@@ -45,9 +45,10 @@ msgid ""
 "found, a macro from :prop_tgt:`AUTOMOC_MACRO_NAMES` is expected to appear in "
 "the ``<basename>.h(xx)`` header file. ``moc`` is run on the header file to "
 "generate ``moc_<basename>.cpp`` in the ``<AUTOGEN_BUILD_DIR>/include`` "
-"directory which is automatically added to the target's :prop_tgt:"
-"`INCLUDE_DIRECTORIES`. This allows the compiler to find the included "
-"``moc_<basename>.cpp`` file regardless of the location the original source."
+"directory which is automatically added to the "
+"target's :prop_tgt:`INCLUDE_DIRECTORIES`. This allows the compiler to find "
+"the included ``moc_<basename>.cpp`` file regardless of the location the "
+"original source."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:23
@@ -70,11 +71,11 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:32
 msgid ""
 "Header files that are not included by an ``#include \"moc_<basename>.cpp\"`` "
-"statement are nonetheless scanned for a macro out of :prop_tgt:"
-"`AUTOMOC_MACRO_NAMES`. The resulting ``moc_<basename>.cpp`` files are "
-"generated in custom directories and automatically included in a generated "
-"``<AUTOGEN_BUILD_DIR>/mocs_compilation.cpp`` file, which is compiled as part "
-"of the target."
+"statement are nonetheless scanned for a macro out "
+"of :prop_tgt:`AUTOMOC_MACRO_NAMES`. The resulting ``moc_<basename>.cpp`` "
+"files are generated in custom directories and automatically included in a "
+"generated ``<AUTOGEN_BUILD_DIR>/mocs_compilation.cpp`` file, which is "
+"compiled as part of the target."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:40
@@ -86,9 +87,10 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:46
 msgid ""
 "Additionally, header files with the same base name as a source file, (like "
-"``<basename>.h``) or ``_p`` appended to the base name (like ``<basename>_p."
-"h``), are scanned for a macro out of :prop_tgt:`AUTOMOC_MACRO_NAMES`, and if "
-"found, ``moc`` is also executed on those files."
+"``<basename>.h``) or ``_p`` appended to the base name (like "
+"``<basename>_p.h``), are scanned for a macro out "
+"of :prop_tgt:`AUTOMOC_MACRO_NAMES`, and if found, ``moc`` is also executed "
+"on those files."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:52
@@ -111,8 +113,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:61
 msgid ""
-"Additional command line options for ``moc`` can be set via the :prop_tgt:"
-"`AUTOMOC_MOC_OPTIONS` property."
+"Additional command line options for ``moc`` can be set via "
+"the :prop_tgt:`AUTOMOC_MOC_OPTIONS` property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:64
@@ -136,8 +138,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:74
 msgid ""
-"Additional macro names to search for can be added to :prop_tgt:"
-"`AUTOMOC_MACRO_NAMES`."
+"Additional macro names to search for can be added "
+"to :prop_tgt:`AUTOMOC_MACRO_NAMES`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:77

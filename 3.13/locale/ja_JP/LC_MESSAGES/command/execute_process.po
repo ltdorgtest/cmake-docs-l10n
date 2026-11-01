@@ -75,8 +75,8 @@ msgstr ""
 
 #: ../../../command/execute_process.rst:41
 msgid ""
-"If a sequential execution of multiple commands is required, use multiple :"
-"command:`execute_process` calls with a single ``COMMAND`` argument."
+"If a sequential execution of multiple commands is required, use "
+"multiple :command:`execute_process` calls with a single ``COMMAND`` argument."
 msgstr ""
 
 #: ../../../command/execute_process.rst:46
@@ -220,9 +220,10 @@ msgstr ""
 
 #: ../../../command/execute_process.rst:103
 msgid ""
-"The :command:`execute_process` command is a newer more powerful version of :"
-"command:`exec_program`, but the old command has been kept for compatibility. "
-"Both commands run while CMake is processing the project prior to build "
-"system generation.  Use :command:`add_custom_target` and :command:"
-"`add_custom_command` to create custom commands that run at build time."
+"The :command:`execute_process` command is a newer more powerful version "
+"of :command:`exec_program`, but the old command has been kept for "
+"compatibility. Both commands run while CMake is processing the project prior "
+"to build system generation.  Use :command:`add_custom_target` "
+"and :command:`add_custom_command` to create custom commands that run at "
+"build time."
 msgstr ""
