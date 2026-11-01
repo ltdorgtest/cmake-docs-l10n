@@ -36,8 +36,8 @@ msgstr ""
 msgid ""
 "Set properties on a target.  The syntax for the command is to list all the "
 "files you want to change, and then provide the values you want to set next.  "
-"You can use any prop value pair you want and extract it later with the :"
-"command:`get_property` or :command:`get_target_property` command."
+"You can use any prop value pair you want and extract it later with "
+"the :command:`get_property` or :command:`get_target_property` command."
 msgstr ""
 
 #: ../../../command/set_target_properties.rst:18

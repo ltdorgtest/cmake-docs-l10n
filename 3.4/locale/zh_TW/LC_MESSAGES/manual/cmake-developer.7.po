@@ -87,12 +87,12 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:51
 msgid ""
 "When adding the first supported feature to a particular CompilerId, it is "
-"necessary to list support for all features known to cmake (See :variable:"
-"`CMAKE_C_COMPILE_FEATURES` and :variable:`CMAKE_CXX_COMPILE_FEATURES` as "
-"appropriate), where available for the compiler.  Ensure that the "
-"``CMAKE_<LANG>_STANDARD_DEFAULT`` is set to the computed internal variable "
-"``CMAKE_<LANG>_STANDARD_COMPUTED_DEFAULT`` for compiler versions which "
-"should be supported."
+"necessary to list support for all features known to cmake "
+"(See :variable:`CMAKE_C_COMPILE_FEATURES` "
+"and :variable:`CMAKE_CXX_COMPILE_FEATURES` as appropriate), where available "
+"for the compiler.  Ensure that the ``CMAKE_<LANG>_STANDARD_DEFAULT`` is set "
+"to the computed internal variable ``CMAKE_<LANG>_STANDARD_COMPUTED_DEFAULT`` "
+"for compiler versions which should be supported."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:59
@@ -363,8 +363,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:211
 msgid ""
-"A CMake module. See the :manual:`cmake-modules(7)` manual and the :command:"
-"`include` command."
+"A CMake module. See the :manual:`cmake-modules(7)` manual and "
+"the :command:`include` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:218
@@ -373,8 +373,8 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:216
 msgid ""
-"A CMake policy. See the :manual:`cmake-policies(7)` manual and the :command:"
-"`cmake_policy` command."
+"A CMake policy. See the :manual:`cmake-policies(7)` manual and "
+"the :command:`cmake_policy` command."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:223
@@ -659,8 +659,8 @@ msgid ""
 "Use \"``OFF``\" and \"``ON``\" for boolean values which can be modified by "
 "the user, such as :prop_tgt:`POSITION_INDEPENDENT_CODE`. Such properties may "
 "be \"enabled\" and \"disabled\". Use \"``True``\" and \"``False``\" for "
-"inherent values which can't be modified after being set, such as the :"
-"prop_tgt:`IMPORTED` property of a build target."
+"inherent values which can't be modified after being set, such as "
+"the :prop_tgt:`IMPORTED` property of a build target."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:397
@@ -687,9 +687,9 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:411
 msgid ""
 "Mark up linkable references as links, including repeats. An alternative, "
-"which is used by wikipedia (`<http://en.wikipedia.org/wiki/WP:"
-"REPEATLINK>`_), is to link to a reference only once per article. That style "
-"is not used in CMake documentation."
+"which is used by wikipedia (`<http://en.wikipedia.org/wiki/"
+"WP:REPEATLINK>`_), is to link to a reference only once per article. That "
+"style is not used in CMake documentation."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:418
@@ -952,8 +952,8 @@ msgid ""
 "name>``, and also by enabling the ``SPHINX_HTML`` and ``SPHINX_MAN`` options "
 "to build the documentation. Edit the comments until generated documentation "
 "looks satisfactory.  To have a .cmake file in this directory NOT show up in "
-"the modules documentation, simply leave out the ``Help/module/<module-name>."
-"rst`` file and the ``Help/manual/cmake-modules.7.rst`` toctree entry."
+"the modules documentation, simply leave out the ``Help/module/<module-"
+"name>.rst`` file and the ``Help/manual/cmake-modules.7.rst`` toctree entry."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:611
@@ -985,9 +985,9 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:628
 msgid ""
 "The more modern approach is to behave as much like :ref:`config file "
-"packages <Config File Packages>` files as possible, by providing :ref:"
-"`imported target <Imported targets>`.  This has the advantage of "
-"propagating :ref:`Target Usage Requirements` to consumers."
+"packages <Config File Packages>` files as possible, by "
+"providing :ref:`imported target <Imported targets>`.  This has the advantage "
+"of propagating :ref:`Target Usage Requirements` to consumers."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:633
@@ -1013,8 +1013,8 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:645
 msgid ""
 "See the :command:`find_package` documentation for details on what variables "
-"are set for the find module.  Most of these are dealt with by using :module:"
-"`FindPackageHandleStandardArgs`."
+"are set for the find module.  Most of these are dealt with by "
+"using :module:`FindPackageHandleStandardArgs`."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:649
@@ -1463,11 +1463,11 @@ msgstr ""
 #: ../../../manual/cmake-developer.7.rst:926
 msgid ""
 "When providing imported targets, these should be namespaced (hence the "
-"``Foo::`` prefix); CMake will recognize that values passed to :command:"
-"`target_link_libraries` that contain ``::`` in their name are supposed to be "
-"imported targets (rather than just library names), and will produce "
-"appropriate diagnostic messages if that target does not exist (see policy :"
-"policy:`CMP0028`)."
+"``Foo::`` prefix); CMake will recognize that values passed "
+"to :command:`target_link_libraries` that contain ``::`` in their name are "
+"supposed to be imported targets (rather than just library names), and will "
+"produce appropriate diagnostic messages if that target does not exist (see "
+"policy :policy:`CMP0028`)."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:933
@@ -1493,16 +1493,17 @@ msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:950
 msgid ""
-"The type of the :prop_tgt:`IMPORTED` target created in the :command:"
-"`add_library` command can always be specified as ``UNKNOWN`` type.  This "
-"simplifies the code in cases where static or shared variants may be found, "
-"and CMake will determine the type by inspecting the files."
+"The type of the :prop_tgt:`IMPORTED` target created in "
+"the :command:`add_library` command can always be specified as ``UNKNOWN`` "
+"type.  This simplifies the code in cases where static or shared variants may "
+"be found, and CMake will determine the type by inspecting the files."
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:955
 msgid ""
-"If the library is available with multiple configurations, the :prop_tgt:"
-"`IMPORTED_CONFIGURATIONS` target property should also be populated:"
+"If the library is available with multiple configurations, "
+"the :prop_tgt:`IMPORTED_CONFIGURATIONS` target property should also be "
+"populated:"
 msgstr ""
 
 #: ../../../manual/cmake-developer.7.rst:959

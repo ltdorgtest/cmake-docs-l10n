@@ -363,11 +363,11 @@ msgstr ""
 #: ../../../../Modules/ExternalProject.cmake:103
 msgid ""
 "Arguments to CMake command line. These arguments are passed to CMake command "
-"line, and can contain arguments other than cache values, see also :manual:"
-"`CMake Options <cmake(1)>`. Arguments in the form ``-Dvar:string=on`` are "
-"always passed to the command line, and therefore cannot be changed by the "
-"user. Arguments may use :manual:`generator expressions <cmake-generator-"
-"expressions(7)>`."
+"line, and can contain arguments other than cache values, see "
+"also :manual:`CMake Options <cmake(1)>`. Arguments in the form ``-"
+"Dvar:string=on`` are always passed to the command line, and therefore cannot "
+"be changed by the user. Arguments may use :manual:`generator expressions "
+"<cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../../Modules/ExternalProject.cmake:118
@@ -377,11 +377,11 @@ msgstr ""
 #: ../../../../Modules/ExternalProject.cmake:112
 msgid ""
 "Initial cache arguments, of the form ``-Dvar:string=on``. These arguments "
-"are written in a pre-load a script that populates CMake cache, see also :"
-"manual:`cmake -C <cmake(1)>`. This allows to overcome command line length "
-"limits. These arguments are :command:`set` using the ``FORCE`` argument, and "
-"therefore cannot be changed by the user. Arguments may use :manual:"
-"`generator expressions <cmake-generator-expressions(7)>`."
+"are written in a pre-load a script that populates CMake cache, see "
+"also :manual:`cmake -C <cmake(1)>`. This allows to overcome command line "
+"length limits. These arguments are :command:`set` using the ``FORCE`` "
+"argument, and therefore cannot be changed by the user. Arguments may "
+"use :manual:`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../../Modules/ExternalProject.cmake:129
@@ -555,9 +555,9 @@ msgstr ""
 
 #: ../../../../Modules/ExternalProject.cmake:178
 msgid ""
-"Steps can be given direct access to the terminal if possible.  With the :"
-"generator:`Ninja` generator, this places the steps in the ``console`` :"
-"prop_gbl:`pool <JOB_POOLS>`.  Options are:"
+"Steps can be given direct access to the terminal if possible.  With "
+"the :generator:`Ninja` generator, this places the steps in the "
+"``console`` :prop_gbl:`pool <JOB_POOLS>`.  Options are:"
 msgstr ""
 
 #: ../../../../Modules/ExternalProject.cmake:182
@@ -826,8 +826,8 @@ msgstr ""
 
 #: ../../../../Modules/ExternalProject.cmake:295
 msgid ""
-"Arguments to ``<step>_COMMAND`` or ``COMMAND`` options may use :manual:"
-"`generator expressions <cmake-generator-expressions(7)>`."
+"Arguments to ``<step>_COMMAND`` or ``COMMAND`` options may "
+"use :manual:`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../../Modules/ExternalProject.cmake:300

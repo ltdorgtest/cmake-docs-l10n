@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../prop_dir/INCLUDE_DIRECTORIES.rst:6
 msgid ""
-"This property specifies the list of directories given so far to the :command:"
-"`include_directories` command."
+"This property specifies the list of directories given so far to "
+"the :command:`include_directories` command."
 msgstr ""
 
 #: ../../../prop_dir/INCLUDE_DIRECTORIES.rst:9
