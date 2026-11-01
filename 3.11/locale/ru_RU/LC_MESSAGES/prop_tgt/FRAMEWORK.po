@@ -37,8 +37,8 @@ msgstr ""
 
 #: ../../../prop_tgt/FRAMEWORK.rst:11
 msgid ""
-"To customize ``Info.plist`` file in the framework, use :prop_tgt:"
-"`MACOSX_FRAMEWORK_INFO_PLIST` target property."
+"To customize ``Info.plist`` file in the framework, "
+"use :prop_tgt:`MACOSX_FRAMEWORK_INFO_PLIST` target property."
 msgstr ""
 
 #: ../../../prop_tgt/FRAMEWORK.rst:14

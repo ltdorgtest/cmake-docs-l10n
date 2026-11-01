@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:6
 msgid ""
 "Some CMake generators support a toolset specification to tell the native "
-"build system how to choose a compiler.  If the user specifies a toolset (e."
-"g.  via the :manual:`cmake(1)` ``-T`` option) the value will be available in "
-"this variable."
+"build system how to choose a compiler.  If the user specifies a toolset "
+"(e.g.  via the :manual:`cmake(1)` ``-T`` option) the value will be available "
+"in this variable."
 msgstr ""
 
 #: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:11
@@ -99,8 +99,8 @@ msgstr ""
 #: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:42
 msgid ""
 "Specify the CUDA toolkit version to use.  Supported by VS 2010 and above "
-"with the CUDA toolkit VS integration installed. See the :variable:"
-"`CMAKE_VS_PLATFORM_TOOLSET_CUDA` variable."
+"with the CUDA toolkit VS integration installed. See "
+"the :variable:`CMAKE_VS_PLATFORM_TOOLSET_CUDA` variable."
 msgstr ""
 
 #: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:49
@@ -110,6 +110,6 @@ msgstr ""
 #: ../../../variable/CMAKE_GENERATOR_TOOLSET.rst:47
 msgid ""
 "Request use of the native ``x64`` toolchain on ``x64`` hosts. Supported by "
-"VS 2013 and above. See the :variable:"
-"`CMAKE_VS_PLATFORM_TOOLSET_HOST_ARCHITECTURE` variable."
+"VS 2013 and above. See "
+"the :variable:`CMAKE_VS_PLATFORM_TOOLSET_HOST_ARCHITECTURE` variable."
 msgstr ""

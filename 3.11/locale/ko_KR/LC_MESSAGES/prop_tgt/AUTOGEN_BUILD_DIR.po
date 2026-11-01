@@ -23,14 +23,14 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_BUILD_DIR.rst:4
 msgid ""
-"Directory where :prop_tgt:`AUTOMOC`, :prop_tgt:`AUTOUIC` and :prop_tgt:"
-"`AUTORCC` generate files for the target."
+"Directory where :prop_tgt:`AUTOMOC`, :prop_tgt:`AUTOUIC` "
+"and :prop_tgt:`AUTORCC` generate files for the target."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_BUILD_DIR.rst:7
 msgid ""
-"The directory is created on demand and automatically added to the :prop_dir:"
-"`ADDITIONAL_MAKE_CLEAN_FILES`."
+"The directory is created on demand and automatically added to "
+"the :prop_dir:`ADDITIONAL_MAKE_CLEAN_FILES`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_BUILD_DIR.rst:10

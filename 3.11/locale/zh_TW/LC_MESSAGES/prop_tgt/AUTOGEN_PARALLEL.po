@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:4
 msgid ""
-"Number of parallel ``moc`` or ``uic`` processes to start when using :"
-"prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`."
+"Number of parallel ``moc`` or ``uic`` processes to start when "
+"using :prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:7
@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:17
 msgid ""
-"By default :prop_tgt:`AUTOGEN_PARALLEL` is initialized from :variable:"
-"`CMAKE_AUTOGEN_PARALLEL`."
+"By default :prop_tgt:`AUTOGEN_PARALLEL` is initialized "
+"from :variable:`CMAKE_AUTOGEN_PARALLEL`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:20

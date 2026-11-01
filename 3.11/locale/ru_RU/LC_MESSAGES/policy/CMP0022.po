@@ -49,8 +49,8 @@ msgstr ""
 #: ../../../policy/CMP0022.rst:25
 msgid ""
 "Warning-free future-compatible code which works with CMake 2.8.7 onwards can "
-"be written by using the ``LINK_PRIVATE`` and ``LINK_PUBLIC`` keywords of :"
-"command:`target_link_libraries`."
+"be written by using the ``LINK_PRIVATE`` and ``LINK_PUBLIC`` keywords "
+"of :command:`target_link_libraries`."
 msgstr ""
 
 #: ../../../policy/CMP0022.rst:29

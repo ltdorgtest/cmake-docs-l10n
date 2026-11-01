@@ -189,9 +189,9 @@ msgstr ""
 
 #: ../../../command/FIND_XXX.txt:117
 msgid ""
-"On OS X the :variable:`CMAKE_FIND_FRAMEWORK` and :variable:"
-"`CMAKE_FIND_APPBUNDLE` variables determine the order of preference between "
-"Apple-style and unix-style package components."
+"On OS X the :variable:`CMAKE_FIND_FRAMEWORK` "
+"and :variable:`CMAKE_FIND_APPBUNDLE` variables determine the order of "
+"preference between Apple-style and unix-style package components."
 msgstr ""
 
 #: ../../../command/FIND_XXX_ROOT.txt:1
@@ -215,12 +215,12 @@ msgstr ""
 msgid ""
 "These variables are especially useful when cross-compiling to point to the "
 "root directory of the target environment and CMake will search there too.  "
-"By default at first the directories listed in :variable:"
-"`CMAKE_FIND_ROOT_PATH` are searched, then the :variable:`CMAKE_SYSROOT` "
-"directory is searched, and then the non-rooted directories will be "
-"searched.  The default behavior can be adjusted by setting |"
-"CMAKE_FIND_ROOT_PATH_MODE_XXX|.  This behavior can be manually overridden on "
-"a per-call basis using options:"
+"By default at first the directories listed "
+"in :variable:`CMAKE_FIND_ROOT_PATH` are searched, then "
+"the :variable:`CMAKE_SYSROOT` directory is searched, and then the non-rooted "
+"directories will be searched.  The default behavior can be adjusted by "
+"setting |CMAKE_FIND_ROOT_PATH_MODE_XXX|.  This behavior can be manually "
+"overridden on a per-call basis using options:"
 msgstr ""
 
 #: ../../../command/FIND_XXX_ROOT.txt:22
@@ -245,8 +245,8 @@ msgstr ""
 
 #: ../../../command/FIND_XXX_ROOT.txt:28
 msgid ""
-"Search only the re-rooted directories and directories below :variable:"
-"`CMAKE_STAGING_PREFIX`."
+"Search only the re-rooted directories and directories "
+"below :variable:`CMAKE_STAGING_PREFIX`."
 msgstr ""
 
 #: ../../../command/FIND_XXX_ORDER.txt:1
