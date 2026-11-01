@@ -71,9 +71,9 @@ msgstr ""
 
 #: ../../../prop_tgt/LANG_STANDARD_REQUIRED.rst:27
 msgid ""
-"These properties are initialized by the value of the :variable:"
-"`CMAKE_<LANG>_STANDARD_REQUIRED` variable if it is set when a target is "
-"created."
+"These properties are initialized by the value of "
+"the :variable:`CMAKE_<LANG>_STANDARD_REQUIRED` variable if it is set when a "
+"target is created."
 msgstr ""
 
 #: ../../../prop_tgt/LANG_STANDARD_REQUIRED.rst:31

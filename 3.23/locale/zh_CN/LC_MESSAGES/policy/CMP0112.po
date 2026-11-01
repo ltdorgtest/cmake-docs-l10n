@@ -98,9 +98,9 @@ msgstr ""
 msgid ""
 "This policy was introduced in CMake version 3.19.  Unlike many policies, "
 "CMake version |release| does *not* warn by default when this policy is not "
-"set and simply uses ``OLD`` behavior.  See documentation of the :variable:"
-"`CMAKE_POLICY_WARNING_CMP0112 <CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to "
-"control the warning."
+"set and simply uses ``OLD`` behavior.  See documentation of "
+"the :variable:`CMAKE_POLICY_WARNING_CMP0112 "
+"<CMAKE_POLICY_WARNING_CMP<NNNN>>` variable to control the warning."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

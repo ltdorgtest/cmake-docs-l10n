@@ -57,8 +57,8 @@ msgstr ""
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:20
 msgid ""
 "Remember ``INTERFACE`` means things that consumers require but the producer "
-"doesn't. Add the following lines to the end of ``MathFunctions/CMakeLists."
-"txt``:"
+"doesn't. Add the following lines to the end of ``MathFunctions/"
+"CMakeLists.txt``:"
 msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:24
@@ -106,8 +106,8 @@ msgstr ""
 
 #: ../../../guide/tutorial/Adding Usage Requirements for a Library.rst:49
 msgid ""
-"Once this is done, run the :manual:`cmake  <cmake(1)>` executable or the :"
-"manual:`cmake-gui <cmake-gui(1)>` to configure the project and then build it "
-"with your chosen build tool or by using ``cmake --build .`` from the build "
-"directory."
+"Once this is done, run the :manual:`cmake  <cmake(1)>` executable or "
+"the :manual:`cmake-gui <cmake-gui(1)>` to configure the project and then "
+"build it with your chosen build tool or by using ``cmake --build .`` from "
+"the build directory."
 msgstr ""

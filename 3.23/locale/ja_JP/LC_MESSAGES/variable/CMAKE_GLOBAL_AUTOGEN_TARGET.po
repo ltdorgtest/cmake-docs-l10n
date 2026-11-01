@@ -36,8 +36,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_GLOBAL_AUTOGEN_TARGET.rst:14
 msgid ""
-"The name of the global ``autogen`` target can be changed by setting :"
-"variable:`CMAKE_GLOBAL_AUTOGEN_TARGET_NAME`."
+"The name of the global ``autogen`` target can be changed by "
+"setting :variable:`CMAKE_GLOBAL_AUTOGEN_TARGET_NAME`."
 msgstr ""
 
 #: ../../../variable/CMAKE_GLOBAL_AUTOGEN_TARGET.rst:17
@@ -58,6 +58,6 @@ msgstr ""
 msgid ""
 "``<ORIGIN>_autogen`` targets by default inherit their origin target's "
 "dependencies.  This might result in unintended dependency target builds when "
-"only ``<ORIGIN>_autogen`` targets are built.  A solution is to disable :"
-"prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` on the respective origin targets."
+"only ``<ORIGIN>_autogen`` targets are built.  A solution is to "
+"disable :prop_tgt:`AUTOGEN_ORIGIN_DEPENDS` on the respective origin targets."
 msgstr ""

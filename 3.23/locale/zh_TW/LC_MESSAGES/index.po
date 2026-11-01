@@ -47,9 +47,9 @@ msgid ""
 "executable and how to choose a generator, and how to complete the build."
 msgstr ""
 "第一次接觸 CMake 的人可能有不同的初始目標。要學習如何建構從網際網路下載的原始"
-"碼套件，請從 :guide:`使用者互動指南` 開始。這將詳細說明執行 :manual:"
-"`cmake(1)` 或 :manual:`cmake-gui(1)` 可執行檔所需的步驟，以及如何選擇產生器和"
-"完成建構的方法。"
+"碼套件，請從 :guide:`使用者互動指南` 開始。這將詳細說明執"
+"行 :manual:`cmake(1)` 或 :manual:`cmake-gui(1)` 可執行檔所需的步驟，以及如何"
+"選擇產生器和完成建構的方法。"
 
 #: ../../../index.rst:21
 msgid ""
