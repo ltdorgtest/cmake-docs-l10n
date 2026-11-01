@@ -28,8 +28,8 @@ msgstr ""
 #: ../../../policy/CMP0059.rst:6
 msgid ""
 "CMake 3.3 and above no longer make a list of definitions available through "
-"the :prop_dir:`DEFINITIONS` directory property.  The :prop_dir:"
-"`COMPILE_DEFINITIONS` directory property may be used instead."
+"the :prop_dir:`DEFINITIONS` directory property.  "
+"The :prop_dir:`COMPILE_DEFINITIONS` directory property may be used instead."
 msgstr ""
 
 #: ../../../policy/CMP0059.rst:10
@@ -42,8 +42,9 @@ msgstr ""
 #: ../../../policy/CMP0059.rst:14
 msgid ""
 "This policy was introduced in CMake version 3.3. CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

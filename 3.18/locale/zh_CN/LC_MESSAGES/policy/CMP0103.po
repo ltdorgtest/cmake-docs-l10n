@@ -45,15 +45,16 @@ msgstr ""
 
 #: ../../../policy/CMP0103.rst:14
 msgid ""
-"The ``NEW`` behavior of this policy is to raise an error on second call to :"
-"command:`export` command with same ``FILE`` without ``APPEND``."
+"The ``NEW`` behavior of this policy is to raise an error on second call "
+"to :command:`export` command with same ``FILE`` without ``APPEND``."
 msgstr ""
 
 #: ../../../policy/CMP0103.rst:17
 msgid ""
 "This policy was introduced in CMake version 3.18.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

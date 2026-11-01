@@ -41,17 +41,18 @@ msgstr ""
 
 #: ../../../policy/CMP0020.rst:18
 msgid ""
-"The ``OLD`` behavior for this policy is not to link executables to ``qtmain."
-"lib`` automatically when they link to the QtCore ``IMPORTED`` target. The "
-"``NEW`` behavior for this policy is to link executables to ``qtmain.lib`` "
-"automatically when they link to QtCore ``IMPORTED`` target."
+"The ``OLD`` behavior for this policy is not to link executables to "
+"``qtmain.lib`` automatically when they link to the QtCore ``IMPORTED`` "
+"target. The ``NEW`` behavior for this policy is to link executables to "
+"``qtmain.lib`` automatically when they link to QtCore ``IMPORTED`` target."
 msgstr ""
 
 #: ../../../policy/CMP0020.rst:23
 msgid ""
 "This policy was introduced in CMake version 2.8.11.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior.  Use the :"
-"command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior.  Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

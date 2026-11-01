@@ -31,8 +31,8 @@ msgstr ""
 msgid ""
 "Since version 3.17, CMake processes header files that end with a ``.hh`` "
 "extension in :prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`. In earlier CMake "
-"versions, these header files were ignored by :prop_tgt:`AUTOMOC` and :"
-"prop_tgt:`AUTOUIC`."
+"versions, these header files were ignored by :prop_tgt:`AUTOMOC` "
+"and :prop_tgt:`AUTOUIC`."
 msgstr ""
 
 #: ../../../policy/CMP0100.rst:12
@@ -43,22 +43,22 @@ msgstr ""
 
 #: ../../../policy/CMP0100.rst:15
 msgid ""
-"The ``OLD`` behavior for this policy is to ignore ``.hh`` header files in :"
-"prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`."
+"The ``OLD`` behavior for this policy is to ignore ``.hh`` header files "
+"in :prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`."
 msgstr ""
 
 #: ../../../policy/CMP0100.rst:18
 msgid ""
-"The ``NEW`` behavior for this policy is to process ``.hh`` header files in :"
-"prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC` just like other header files."
+"The ``NEW`` behavior for this policy is to process ``.hh`` header files "
+"in :prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC` just like other header files."
 msgstr ""
 
 #: ../../../policy/CMP0100.rst:23
 msgid ""
-"To silence the ``CMP0100`` warning source files can be excluded from :"
-"prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC` processing by setting the source "
-"file properties :prop_sf:`SKIP_AUTOMOC`, :prop_sf:`SKIP_AUTOUIC` or :prop_sf:"
-"`SKIP_AUTOGEN`."
+"To silence the ``CMP0100`` warning source files can be excluded "
+"from :prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC` processing by setting the "
+"source file properties :prop_sf:`SKIP_AUTOMOC`, :prop_sf:`SKIP_AUTOUIC` "
+"or :prop_sf:`SKIP_AUTOGEN`."
 msgstr ""
 
 #: ../../../policy/CMP0100.rst:28
@@ -72,8 +72,9 @@ msgstr ""
 #: ../../../policy/CMP0100.rst:35
 msgid ""
 "This policy was introduced in CMake version 3.17.0.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

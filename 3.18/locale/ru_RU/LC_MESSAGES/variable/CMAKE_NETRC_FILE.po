@@ -23,9 +23,10 @@ msgstr ""
 
 #: ../../../variable/CMAKE_NETRC_FILE.rst:4
 msgid ""
-"This variable is used to initialize the ``NETRC_FILE`` option for :command:"
-"`file(DOWNLOAD)` and :command:`file(UPLOAD)` commands and the module :module:"
-"`ExternalProject`. See those commands for additional information."
+"This variable is used to initialize the ``NETRC_FILE`` option "
+"for :command:`file(DOWNLOAD)` and :command:`file(UPLOAD)` commands and the "
+"module :module:`ExternalProject`. See those commands for additional "
+"information."
 msgstr ""
 
 #: ../../../variable/CMAKE_NETRC_FILE.rst:9

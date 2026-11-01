@@ -85,8 +85,9 @@ msgstr ""
 #: ../../../../Modules/FindPython.cmake:37
 msgid ""
 "This module looks preferably for version 3 of Python. If not found, version "
-"2 is searched. To manage concurrent versions 3 and 2 of Python, use :module:"
-"`FindPython3` and :module:`FindPython2` modules rather than this one."
+"2 is searched. To manage concurrent versions 3 and 2 of Python, "
+"use :module:`FindPython3` and :module:`FindPython2` modules rather than this "
+"one."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:44
@@ -130,8 +131,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:61
 msgid ""
-"Python library for Python module. Target defined if component ``Development."
-"Module`` is found."
+"Python library for Python module. Target defined if component "
+"``Development.Module`` is found."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:64
@@ -158,8 +159,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:72
 msgid ""
-"This module will set the following variables in your project (see :ref:"
-"`Standard Variable Names <CMake Developer Standard Variable Names>`):"
+"This module will set the following variables in your project "
+"(see :ref:`Standard Variable Names <CMake Developer Standard Variable "
+"Names>`):"
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:75
@@ -230,9 +232,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:92
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=True)`` or else ``sysconfig."
-"get_path('stdlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=True)`` "
+"or else ``sysconfig.get_path('stdlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:99
@@ -245,9 +247,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:98
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=True)`` or else ``sysconfig."
-"get_path('platstdlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=True)`` "
+"or else ``sysconfig.get_path('platstdlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:105
@@ -260,9 +262,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:104
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=False,standard_lib=False)`` or else ``sysconfig."
-"get_path('purelib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=False,standard_lib=False)`` "
+"or else ``sysconfig.get_path('purelib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:111
@@ -275,9 +277,9 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:110
 msgid ""
-"Information returned by ``distutils.sysconfig."
-"get_python_lib(plat_specific=True,standard_lib=False)`` or else ``sysconfig."
-"get_path('platlib')``."
+"Information returned by "
+"``distutils.sysconfig.get_python_lib(plat_specific=True,standard_lib=False)`` "
+"or else ``sysconfig.get_path('platlib')``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:120
@@ -293,8 +295,8 @@ msgid ""
 "Information returned by ``distutils.sysconfig.get_config_var('SOABI')`` or "
 "computed from ``distutils.sysconfig.get_config_var('EXT_SUFFIX')`` or "
 "``python-config --extension-suffix``. If package ``distutils.sysconfig`` is "
-"not available, ``sysconfig.get_config_var('SOABI')`` or ``sysconfig."
-"get_config_var('EXT_SUFFIX')`` are used."
+"not available, ``sysconfig.get_config_var('SOABI')`` or "
+"``sysconfig.get_config_var('EXT_SUFFIX')`` are used."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:122
@@ -488,8 +490,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:175
 msgid ""
-"This variable defines which ABIs, as defined in `PEP 3149 <https://www."
-"python.org/dev/peps/pep-3149/>`_, should be searched."
+"This variable defines which ABIs, as defined in `PEP 3149 <https://"
+"www.python.org/dev/peps/pep-3149/>`_, should be searched."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:180
@@ -557,9 +559,9 @@ msgstr ""
 #: ../../../../Modules/FindPython.cmake:214
 msgid ""
 "This hint is useful only on ``POSIX`` systems. So, on ``Windows`` systems, "
-"when ``Python_FIND_ABI`` is defined, ``Python`` distributions from `python."
-"org <https://www.python.org/>`_ will be found only if value for each flag is "
-"``OFF`` or ``ANY``."
+"when ``Python_FIND_ABI`` is defined, ``Python`` distributions from "
+"`python.org <https://www.python.org/>`_ will be found only if value for each "
+"flag is ``OFF`` or ``ANY``."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:229
@@ -628,8 +630,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:251
 msgid ""
-"If ``Python_FIND_FRAMEWORK`` is not defined, :variable:"
-"`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
+"If ``Python_FIND_FRAMEWORK`` is not "
+"defined, :variable:`CMAKE_FIND_FRAMEWORK` variable will be used, if any."
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:277
@@ -837,11 +839,11 @@ msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:372
 msgid ""
-"This module defines the command ``Python_add_library`` (when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``), which has the same semantics as :command:"
-"`add_library` and adds a dependency to target ``Python::Python`` or, when "
-"library type is ``MODULE``, to target ``Python::Module`` and takes care of "
-"Python module naming rules::"
+"This module defines the command ``Python_add_library`` "
+"(when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``), which has the same semantics "
+"as :command:`add_library` and adds a dependency to target ``Python::Python`` "
+"or, when library type is ``MODULE``, to target ``Python::Module`` and takes "
+"care of Python module naming rules::"
 msgstr ""
 
 #: ../../../../Modules/FindPython.cmake:378

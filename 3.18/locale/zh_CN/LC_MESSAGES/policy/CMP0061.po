@@ -36,9 +36,10 @@ msgstr ""
 
 #: ../../../policy/CMP0061.rst:13
 msgid ""
-"Of course users may still add this option manually by setting :variable:"
-"`CTEST_BUILD_COMMAND` or the ``MAKECOMMAND`` cache entry. See the :ref:"
-"`CTest Build Step` ``MakeCommand`` setting documentation for their effects."
+"Of course users may still add this option manually by "
+"setting :variable:`CTEST_BUILD_COMMAND` or the ``MAKECOMMAND`` cache entry. "
+"See the :ref:`CTest Build Step` ``MakeCommand`` setting documentation for "
+"their effects."
 msgstr ""
 
 #: ../../../policy/CMP0061.rst:18

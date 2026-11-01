@@ -23,9 +23,9 @@ msgstr ""
 
 #: ../../../policy/CMP0104.rst:4
 msgid ""
-"Initialize :variable:`CMAKE_CUDA_ARCHITECTURES` when :variable:"
-"`CMAKE_CUDA_COMPILER_ID <CMAKE_<LANG>_COMPILER_ID>` is ``NVIDIA``. Raise an "
-"error if :prop_tgt:`CUDA_ARCHITECTURES` is empty."
+"Initialize :variable:`CMAKE_CUDA_ARCHITECTURES` "
+"when :variable:`CMAKE_CUDA_COMPILER_ID <CMAKE_<LANG>_COMPILER_ID>` is "
+"``NVIDIA``. Raise an error if :prop_tgt:`CUDA_ARCHITECTURES` is empty."
 msgstr ""
 
 #: ../../../policy/CMP0104.rst:8
@@ -44,18 +44,19 @@ msgstr ""
 
 #: ../../../policy/CMP0104.rst:16
 msgid ""
-"The ``OLD`` behavior for this policy is to not initialize :variable:"
-"`CMAKE_CUDA_ARCHITECTURES` when :variable:`CMAKE_CUDA_COMPILER_ID "
-"<CMAKE_<LANG>_COMPILER_ID>` is ``NVIDIA``. Empty :prop_tgt:"
-"`CUDA_ARCHITECTURES` is allowed."
+"The ``OLD`` behavior for this policy is to not "
+"initialize :variable:`CMAKE_CUDA_ARCHITECTURES` "
+"when :variable:`CMAKE_CUDA_COMPILER_ID <CMAKE_<LANG>_COMPILER_ID>` is "
+"``NVIDIA``. Empty :prop_tgt:`CUDA_ARCHITECTURES` is allowed."
 msgstr ""
 
 #: ../../../policy/CMP0104.rst:21
 msgid ""
-"The ``NEW`` behavior of this policy is to initialize :variable:"
-"`CMAKE_CUDA_ARCHITECTURES` when :variable:`CMAKE_CUDA_COMPILER_ID "
-"<CMAKE_<LANG>_COMPILER_ID>` is ``NVIDIA`` and raise an error if :prop_tgt:"
-"`CUDA_ARCHITECTURES` is empty during generation."
+"The ``NEW`` behavior of this policy is to "
+"initialize :variable:`CMAKE_CUDA_ARCHITECTURES` "
+"when :variable:`CMAKE_CUDA_COMPILER_ID <CMAKE_<LANG>_COMPILER_ID>` is "
+"``NVIDIA`` and raise an error if :prop_tgt:`CUDA_ARCHITECTURES` is empty "
+"during generation."
 msgstr ""
 
 #: ../../../policy/CMP0104.rst:26
@@ -68,8 +69,9 @@ msgstr ""
 #: ../../../policy/CMP0104.rst:30
 msgid ""
 "This policy was introduced in CMake version 3.18.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

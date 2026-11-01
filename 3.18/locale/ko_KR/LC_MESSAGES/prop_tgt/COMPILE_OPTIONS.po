@@ -28,8 +28,8 @@ msgstr ""
 #: ../../../prop_tgt/COMPILE_OPTIONS.rst:6
 msgid ""
 "This property holds a :ref:`semicolon-separated list <CMake Language Lists>` "
-"of options specified so far for its target.  Use the :command:"
-"`target_compile_options` command to append more options."
+"of options specified so far for its target.  Use "
+"the :command:`target_compile_options` command to append more options."
 msgstr ""
 
 #: ../../../prop_tgt/COMPILE_OPTIONS.rst:10
