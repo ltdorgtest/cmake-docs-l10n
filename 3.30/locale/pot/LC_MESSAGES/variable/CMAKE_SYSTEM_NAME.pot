@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,8 +23,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_SYSTEM_NAME.rst:4
 msgid ""
-"The name of the operating system for which CMake is to build. See the :"
-"variable:`CMAKE_SYSTEM_VERSION` variable for the OS version."
+"The name of the operating system for which CMake is to build. See "
+"the :variable:`CMAKE_SYSTEM_VERSION` variable for the OS version."
 msgstr ""
 
 #: ../../../variable/CMAKE_SYSTEM_NAME.rst:7
@@ -38,8 +39,9 @@ msgstr ""
 
 #: ../../../variable/CMAKE_SYSTEM_NAME.rst:13
 msgid ""
-"``CMAKE_SYSTEM_NAME`` is by default set to the same value as the :variable:"
-"`CMAKE_HOST_SYSTEM_NAME` variable so that the build targets the host system."
+"``CMAKE_SYSTEM_NAME`` is by default set to the same value as "
+"the :variable:`CMAKE_HOST_SYSTEM_NAME` variable so that the build targets "
+"the host system."
 msgstr ""
 
 #: ../../../variable/CMAKE_SYSTEM_NAME.rst:18

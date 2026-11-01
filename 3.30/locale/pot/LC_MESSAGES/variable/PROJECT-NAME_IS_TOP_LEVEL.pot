@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,8 +44,8 @@ msgstr ""
 
 #: ../../../variable/PROJECT-NAME_IS_TOP_LEVEL.rst:16
 msgid ""
-"the top-level directory of an external project added by :module:"
-"`ExternalProject`"
+"the top-level directory of an external project added "
+"by :module:`ExternalProject`"
 msgstr ""
 
 #: ../../../variable/PROJECT-NAME_IS_TOP_LEVEL.rst:18
@@ -65,8 +66,8 @@ msgstr ""
 
 #: ../../../variable/PROJECT-NAME_IS_TOP_LEVEL.rst:25
 msgid ""
-"a directory added by :command:`add_subdirectory` that also contains a :"
-"command:`project` call"
+"a directory added by :command:`add_subdirectory` that also contains "
+"a :command:`project` call"
 msgstr ""
 
 #: ../../../variable/PROJECT-NAME_IS_TOP_LEVEL.rst:27

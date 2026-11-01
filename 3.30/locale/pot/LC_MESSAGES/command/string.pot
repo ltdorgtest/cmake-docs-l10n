@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -264,9 +265,9 @@ msgstr ""
 
 #: ../../../command/string.rst:161
 msgid ""
-"All regular expression-related commands, including e.g. :command:"
-"`if(MATCHES)`, save subgroup matches in the variables :variable:"
-"`CMAKE_MATCH_<n>` for ``<n>`` 0..9."
+"All regular expression-related commands, including "
+"e.g. :command:`if(MATCHES)`, save subgroup matches in the "
+"variables :variable:`CMAKE_MATCH_<n>` for ``<n>`` 0..9."
 msgstr ""
 
 #: ../../../command/string.rst:166
@@ -337,8 +338,8 @@ msgstr ""
 
 #: ../../../command/string.rst:218
 msgid ""
-"To join a list's elements, prefer to use the ``JOIN`` operator from the :"
-"command:`list` command.  This allows for the elements to have special "
+"To join a list's elements, prefer to use the ``JOIN`` operator from "
+"the :command:`list` command.  This allows for the elements to have special "
 "characters like ``;`` in them."
 msgstr ""
 

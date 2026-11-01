@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,9 +62,9 @@ msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:27
 msgid ""
-"Otherwise the ``primaryTarget`` will be composed from the values of :"
-"variable:`CMAKE_GENERATOR_PLATFORM` and ``GHS_TARGET_PLATFORM``. Defaulting "
-"to the value of ``arm_integrity.tgt``"
+"Otherwise the ``primaryTarget`` will be composed from the values "
+"of :variable:`CMAKE_GENERATOR_PLATFORM` and ``GHS_TARGET_PLATFORM``. "
+"Defaulting to the value of ``arm_integrity.tgt``"
 msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:30
@@ -78,8 +79,8 @@ msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:35
 msgid ""
-"The variable ``GHS_TARGET_PLATFORM`` may be set, perhaps via the :option:"
-"`cmake -D` option."
+"The variable ``GHS_TARGET_PLATFORM`` may be set, perhaps via "
+"the :option:`cmake -D` option."
 msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:0
@@ -125,8 +126,8 @@ msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:57
 msgid ""
-"The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps via the :"
-"option:`cmake -T` option, to specify the location of the toolset. Both "
+"The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps via "
+"the :option:`cmake -T` option, to specify the location of the toolset. Both "
 "absolute and relative paths are valid. Paths are relative to "
 "``GHS_TOOLSET_ROOT``."
 msgstr ""
@@ -255,8 +256,8 @@ msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:124
 msgid ""
-"``cmake -G \"Green Hills MULTI\" -A 86`` for ``sim86`` on ``86_integrity."
-"tgt``."
+"``cmake -G \"Green Hills MULTI\" -A 86`` for ``sim86`` on "
+"``86_integrity.tgt``."
 msgstr ""
 
 #: ../../../generator/Green Hills MULTI.rst:125

@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -41,8 +42,8 @@ msgstr ""
 
 #: ../../../generator/Visual Studio 17 2022.rst:18
 msgid ""
-"VS 2022 supports multiple installations on the same machine.  The :variable:"
-"`CMAKE_GENERATOR_INSTANCE` variable may be used to select one."
+"VS 2022 supports multiple installations on the same machine.  "
+"The :variable:`CMAKE_GENERATOR_INSTANCE` variable may be used to select one."
 msgstr ""
 
 #: ../../../generator/Visual Studio 17 2022.rst:22
@@ -84,9 +85,9 @@ msgstr ""
 
 #: ../../../generator/Visual Studio 17 2022.rst:39
 msgid ""
-"The ``v143`` toolset that comes with VS 17 2022 is selected by default. The :"
-"variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps via the :"
-"option:`cmake -T` option, to specify another toolset."
+"The ``v143`` toolset that comes with VS 17 2022 is selected by default. "
+"The :variable:`CMAKE_GENERATOR_TOOLSET` option may be set, perhaps via "
+"the :option:`cmake -T` option, to specify another toolset."
 msgstr ""
 
 #: ../../../generator/VS_TOOLSET_HOST_ARCH.txt:1

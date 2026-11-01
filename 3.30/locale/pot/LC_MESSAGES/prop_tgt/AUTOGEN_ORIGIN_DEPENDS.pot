@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,16 +23,16 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:6
 msgid ""
-"Switch for forwarding origin target dependencies to the corresponding :ref:"
-"`<ORIGIN>_autogen` target."
+"Switch for forwarding origin target dependencies to the "
+"corresponding :ref:`<ORIGIN>_autogen` target."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:11
 msgid ""
 "If Qt 5.15 or later is used and the generator is either :generator:`Ninja` "
 "or :ref:`Makefile Generators`, origin target dependencies are forwarded to "
-"the :ref:`<ORIGIN>_autogen_timestamp_deps` target instead of :ref:"
-"`<ORIGIN>_autogen`"
+"the :ref:`<ORIGIN>_autogen_timestamp_deps` target instead "
+"of :ref:`<ORIGIN>_autogen`"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:17
@@ -48,8 +49,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:25
 msgid ""
-"By default ``AUTOGEN_ORIGIN_DEPENDS`` is initialized from :variable:"
-"`CMAKE_AUTOGEN_ORIGIN_DEPENDS` which is ``ON`` by default."
+"By default ``AUTOGEN_ORIGIN_DEPENDS`` is initialized "
+"from :variable:`CMAKE_AUTOGEN_ORIGIN_DEPENDS` which is ``ON`` by default."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_ORIGIN_DEPENDS.rst:28
