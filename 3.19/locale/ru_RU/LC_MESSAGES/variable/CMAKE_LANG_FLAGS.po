@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../variable/CMAKE_LANG_FLAGS.rst:6
 msgid ""
-"``<LANG>`` flags used regardless of the value of :variable:"
-"`CMAKE_BUILD_TYPE`."
+"``<LANG>`` flags used regardless of the value "
+"of :variable:`CMAKE_BUILD_TYPE`."
 msgstr ""
 
 #: ../../../variable/CMAKE_LANG_FLAGS.rst:8

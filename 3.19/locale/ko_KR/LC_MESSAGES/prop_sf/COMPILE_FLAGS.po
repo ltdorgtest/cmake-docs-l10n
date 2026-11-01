@@ -28,8 +28,9 @@ msgstr ""
 #: ../../../prop_sf/COMPILE_FLAGS.rst:6
 msgid ""
 "The ``COMPILE_FLAGS`` property, managed as a string, sets additional "
-"compiler flags used to build source files.  Use :prop_sf:"
-"`COMPILE_DEFINITIONS` to pass additional preprocessor definitions."
+"compiler flags used to build source files.  "
+"Use :prop_sf:`COMPILE_DEFINITIONS` to pass additional preprocessor "
+"definitions."
 msgstr ""
 
 #: ../../../prop_sf/COMPILE_FLAGS.rst:10

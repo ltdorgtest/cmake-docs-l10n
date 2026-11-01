@@ -79,8 +79,8 @@ msgstr ""
 
 #: ../../../command/get_property.rst:39
 msgid ""
-"Scope must name one existing target. See also the :command:"
-"`get_target_property` command."
+"Scope must name one existing target. See also "
+"the :command:`get_target_property` command."
 msgstr ""
 
 #: ../../../command/get_property.rst:42

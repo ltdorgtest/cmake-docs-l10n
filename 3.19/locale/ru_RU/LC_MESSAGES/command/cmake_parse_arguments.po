@@ -58,8 +58,8 @@ msgstr ""
 
 #: ../../../command/cmake_parse_arguments.rst:30
 msgid ""
-"The ``<options>`` argument contains all options for the respective macro, i."
-"e.  keywords which can be used when calling the macro without any value "
+"The ``<options>`` argument contains all options for the respective macro, "
+"i.e.  keywords which can be used when calling the macro without any value "
 "following, like e.g.  the ``OPTIONAL`` keyword of the :command:`install` "
 "command."
 msgstr ""
@@ -67,8 +67,8 @@ msgstr ""
 #: ../../../command/cmake_parse_arguments.rst:35
 msgid ""
 "The ``<one_value_keywords>`` argument contains all keywords for this macro "
-"which are followed by one value, like e.g. ``DESTINATION`` keyword of the :"
-"command:`install` command."
+"which are followed by one value, like e.g. ``DESTINATION`` keyword of "
+"the :command:`install` command."
 msgstr ""
 
 #: ../../../command/cmake_parse_arguments.rst:39

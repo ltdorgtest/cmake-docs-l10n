@@ -41,9 +41,10 @@ msgstr ""
 
 #: ../../../command/project.rst:18
 msgid ""
-"Sets the name of the project, and stores it in the variable :variable:"
-"`PROJECT_NAME`. When called from the top-level ``CMakeLists.txt`` also "
-"stores the project name in the variable :variable:`CMAKE_PROJECT_NAME`."
+"Sets the name of the project, and stores it in the "
+"variable :variable:`PROJECT_NAME`. When called from the top-level "
+"``CMakeLists.txt`` also stores the project name in the "
+"variable :variable:`CMAKE_PROJECT_NAME`."
 msgstr ""
 
 #: ../../../command/project.rst:23
@@ -114,9 +115,9 @@ msgstr ""
 
 #: ../../../command/project.rst:58
 msgid ""
-"When the ``project()`` command is called from the top-level ``CMakeLists."
-"txt``, then the version is also stored in the variable :variable:"
-"`CMAKE_PROJECT_VERSION`."
+"When the ``project()`` command is called from the top-level "
+"``CMakeLists.txt``, then the version is also stored in the "
+"variable :variable:`CMAKE_PROJECT_VERSION`."
 msgstr ""
 
 #: ../../../command/project.rst:61
@@ -139,9 +140,9 @@ msgstr ""
 
 #: ../../../command/project.rst:71
 msgid ""
-"When the ``project()`` command is called from the top-level ``CMakeLists."
-"txt``, then the description is also stored in the variable :variable:"
-"`CMAKE_PROJECT_DESCRIPTION`."
+"When the ``project()`` command is called from the top-level "
+"``CMakeLists.txt``, then the description is also stored in the "
+"variable :variable:`CMAKE_PROJECT_DESCRIPTION`."
 msgstr ""
 
 #: ../../../command/project.rst:74
@@ -160,9 +161,9 @@ msgstr ""
 
 #: ../../../command/project.rst:82
 msgid ""
-"When the ``project()`` command is called from the top-level ``CMakeLists."
-"txt``, then the URL also is stored in the variable :variable:"
-"`CMAKE_PROJECT_HOMEPAGE_URL`."
+"When the ``project()`` command is called from the top-level "
+"``CMakeLists.txt``, then the URL also is stored in the "
+"variable :variable:`CMAKE_PROJECT_HOMEPAGE_URL`."
 msgstr ""
 
 #: ../../../command/project.rst:85
@@ -204,20 +205,21 @@ msgstr ""
 
 #: ../../../command/project.rst:105
 msgid ""
-"If the :variable:`CMAKE_PROJECT_INCLUDE_BEFORE` or :variable:"
-"`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE_BEFORE` variables are set, the files "
-"they point to will be included as the first step of the ``project()`` "
-"command. If both are set, then :variable:`CMAKE_PROJECT_INCLUDE_BEFORE` will "
-"be included before :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE_BEFORE`."
+"If the :variable:`CMAKE_PROJECT_INCLUDE_BEFORE` "
+"or :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE_BEFORE` variables are "
+"set, the files they point to will be included as the first step of the "
+"``project()`` command. If both are set, "
+"then :variable:`CMAKE_PROJECT_INCLUDE_BEFORE` will be included "
+"before :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE_BEFORE`."
 msgstr ""
 
 #: ../../../command/project.rst:112
 msgid ""
-"If the :variable:`CMAKE_PROJECT_INCLUDE` or :variable:"
-"`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE` variables are set, the files they "
-"point to will be included as the last step of the ``project()`` command. If "
-"both are set, then :variable:`CMAKE_PROJECT_INCLUDE` will be included "
-"before :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE`."
+"If the :variable:`CMAKE_PROJECT_INCLUDE` "
+"or :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE` variables are set, the "
+"files they point to will be included as the last step of the ``project()`` "
+"command. If both are set, then :variable:`CMAKE_PROJECT_INCLUDE` will be "
+"included before :variable:`CMAKE_PROJECT_<PROJECT-NAME>_INCLUDE`."
 msgstr ""
 
 #: ../../../command/project.rst:119
@@ -227,16 +229,17 @@ msgstr ""
 #: ../../../command/project.rst:121
 msgid ""
 "The top-level ``CMakeLists.txt`` file for a project must contain a literal, "
-"direct call to the ``project()`` command; loading one through the :command:"
-"`include` command is not sufficient.  If no such call exists, CMake will "
-"issue a warning and pretend there is a ``project(Project)`` at the top to "
-"enable the default languages (``C`` and ``CXX``)."
+"direct call to the ``project()`` command; loading one through "
+"the :command:`include` command is not sufficient.  If no such call exists, "
+"CMake will issue a warning and pretend there is a ``project(Project)`` at "
+"the top to enable the default languages (``C`` and ``CXX``)."
 msgstr ""
 
 #: ../../../command/project.rst:129
 msgid ""
-"Call the ``project()`` command near the top of the top-level ``CMakeLists."
-"txt``, but *after* calling :command:`cmake_minimum_required`. It is "
-"important to establish version and policy settings before invoking other "
-"commands whose behavior they may affect. See also policy :policy:`CMP0000`."
+"Call the ``project()`` command near the top of the top-level "
+"``CMakeLists.txt``, but *after* calling :command:`cmake_minimum_required`. "
+"It is important to establish version and policy settings before invoking "
+"other commands whose behavior they may affect. See also "
+"policy :policy:`CMP0000`."
 msgstr ""

@@ -43,6 +43,6 @@ msgstr ""
 
 #: ../../../variable/CMAKE_CROSSCOMPILING_EMULATOR.rst:17
 msgid ""
-"It is also used as the default value for the :prop_tgt:"
-"`CROSSCOMPILING_EMULATOR` target property of executables."
+"It is also used as the default value for "
+"the :prop_tgt:`CROSSCOMPILING_EMULATOR` target property of executables."
 msgstr ""

@@ -83,8 +83,8 @@ msgstr ""
 
 #: ../../../command/execute_process.rst:47
 msgid ""
-"If a sequential execution of multiple commands is required, use multiple :"
-"command:`execute_process` calls with a single ``COMMAND`` argument."
+"If a sequential execution of multiple commands is required, use "
+"multiple :command:`execute_process` calls with a single ``COMMAND`` argument."
 msgstr ""
 
 #: ../../../command/execute_process.rst:50
@@ -125,10 +125,10 @@ msgstr ""
 
 #: ../../../command/execute_process.rst:65
 msgid ""
-"The variable will be set to contain the result of all processes as a :ref:"
-"`semicolon-separated list <CMake Language Lists>`, in order of the given "
-"``COMMAND`` arguments.  Each entry will be an integer return code from the "
-"corresponding child or a string describing an error condition."
+"The variable will be set to contain the result of all processes as "
+"a :ref:`semicolon-separated list <CMake Language Lists>`, in order of the "
+"given ``COMMAND`` arguments.  Each entry will be an integer return code from "
+"the corresponding child or a string describing an error condition."
 msgstr ""
 
 #: ../../../command/execute_process.rst:70
@@ -169,9 +169,9 @@ msgstr ""
 #: ../../../command/execute_process.rst:85
 msgid ""
 "The command being run will be echo'ed to ``<where>`` with ``<where>`` being "
-"set to one of ``STDERR``, ``STDOUT`` or ``NONE``. See the :variable:"
-"`CMAKE_EXECUTE_PROCESS_COMMAND_ECHO` variable for a way to control the "
-"default behavior when this option is not present."
+"set to one of ``STDERR``, ``STDOUT`` or ``NONE``. See "
+"the :variable:`CMAKE_EXECUTE_PROCESS_COMMAND_ECHO` variable for a way to "
+"control the default behavior when this option is not present."
 msgstr ""
 
 #: ../../../command/execute_process.rst:90
@@ -284,9 +284,10 @@ msgstr ""
 
 #: ../../../command/execute_process.rst:138
 msgid ""
-"The :command:`execute_process` command is a newer more powerful version of :"
-"command:`exec_program`, but the old command has been kept for compatibility. "
-"Both commands run while CMake is processing the project prior to build "
-"system generation.  Use :command:`add_custom_target` and :command:"
-"`add_custom_command` to create custom commands that run at build time."
+"The :command:`execute_process` command is a newer more powerful version "
+"of :command:`exec_program`, but the old command has been kept for "
+"compatibility. Both commands run while CMake is processing the project prior "
+"to build system generation.  Use :command:`add_custom_target` "
+"and :command:`add_custom_command` to create custom commands that run at "
+"build time."
 msgstr ""

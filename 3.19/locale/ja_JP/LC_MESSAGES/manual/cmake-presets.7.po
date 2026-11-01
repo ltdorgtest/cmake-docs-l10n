@@ -220,8 +220,8 @@ msgid ""
 "``description``, and ``displayName``), but can override them as desired. If "
 "multiple ``inherits`` presets provide conflicting values for the same field, "
 "the earlier preset in the ``inherits`` list will be preferred. Presets in "
-"``CMakePresets.json`` may not inherit from presets in ``CMakeUserPresets."
-"json``."
+"``CMakePresets.json`` may not inherit from presets in "
+"``CMakeUserPresets.json``."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:102
@@ -587,8 +587,8 @@ msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:313
 msgid ""
-"The last filename component of ``${sourceDir}``. For example, if "
-"``${sourceDir}`` is ``/path/to/source``, this would be ``source``."
+"The last filename component of ``${sourceDir}``. For example, if ``$"
+"{sourceDir}`` is ``/path/to/source``, this would be ``source``."
 msgstr ""
 
 #: ../../../manual/cmake-presets.7.rst:316

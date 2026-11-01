@@ -41,17 +41,17 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:16
 msgid ""
-"The CPack NuGet generator may be used to create NuGet packages using :module:"
-"`CPack`. The CPack NuGet generator is a :module:`CPack` generator thus it "
-"uses the ``CPACK_XXX`` variables used by :module:`CPack`."
+"The CPack NuGet generator may be used to create NuGet packages "
+"using :module:`CPack`. The CPack NuGet generator is a :module:`CPack` "
+"generator thus it uses the ``CPACK_XXX`` variables used by :module:`CPack`."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:20
 msgid ""
 "The CPack NuGet generator has specific features which are controlled by the "
-"specifics ``CPACK_NUGET_XXX`` variables. In the \"one per group\" mode (see :"
-"variable:`CPACK_COMPONENTS_GROUPING`), ``<compName>`` placeholder in the "
-"variables below would contain a group name (uppercased and turned into a "
+"specifics ``CPACK_NUGET_XXX`` variables. In the \"one per group\" mode "
+"(see :variable:`CPACK_COMPONENTS_GROUPING`), ``<compName>`` placeholder in "
+"the variables below would contain a group name (uppercased and turned into a "
 "\"C\" identifier)."
 msgstr ""
 
@@ -146,8 +146,8 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:88
 msgid ""
-"A comma-separated list of the package creators using profile names on nuget."
-"org_. This is often the same list as in authors, and is ignored when "
+"A comma-separated list of the package creators using profile names on "
+"nuget.org_. This is often the same list as in authors, and is ignored when "
 "uploading the package to nuget.org_."
 msgstr ""
 
@@ -170,8 +170,8 @@ msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:107
 msgid ""
-"A URL for the package's license, often shown in UI displays as well as nuget."
-"org_."
+"A URL for the package's license, often shown in UI displays as well as "
+"nuget.org_."
 msgstr ""
 
 #: ../../../cpack_gen/nuget.rst:116

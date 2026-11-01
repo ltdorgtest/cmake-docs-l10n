@@ -27,14 +27,14 @@ msgstr ""
 
 #: ../../../../Modules/FindQt.cmake:10
 msgid ""
-"This module cannot handle Qt5 or any later versions. For those, see :manual:"
-"`cmake-qt(7)`."
+"This module cannot handle Qt5 or any later versions. For those, "
+"see :manual:`cmake-qt(7)`."
 msgstr ""
 
 #: ../../../../Modules/FindQt.cmake:13
 msgid ""
-"This module exists for the :command:`find_package` command only if policy :"
-"policy:`CMP0084` is not set to ``NEW``."
+"This module exists for the :command:`find_package` command only if "
+"policy :policy:`CMP0084` is not set to ``NEW``."
 msgstr ""
 
 #: ../../../../Modules/FindQt.cmake:16

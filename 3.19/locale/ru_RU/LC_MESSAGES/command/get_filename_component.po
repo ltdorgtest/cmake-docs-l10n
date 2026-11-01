@@ -101,6 +101,6 @@ msgstr ""
 #: ../../../command/get_filename_component.rst:59
 msgid ""
 "The ``REALPATH`` and ``PROGRAM`` subcommands had been superseded, "
-"respectively, by :ref:`file(REAL_PATH) <REAL_PATH>` and :command:"
-"`separate_arguments(PROGRAM)` commands."
+"respectively, by :ref:`file(REAL_PATH) <REAL_PATH>` "
+"and :command:`separate_arguments(PROGRAM)` commands."
 msgstr ""

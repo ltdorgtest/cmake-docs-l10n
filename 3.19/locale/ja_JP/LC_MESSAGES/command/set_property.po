@@ -77,8 +77,8 @@ msgstr ""
 
 #: ../../../command/set_property.rst:37
 msgid ""
-"Scope may name zero or more existing targets. See also the :command:"
-"`set_target_properties` command."
+"Scope may name zero or more existing targets. See also "
+"the :command:`set_target_properties` command."
 msgstr ""
 
 #: ../../../command/set_property.rst:40
@@ -102,9 +102,9 @@ msgid ""
 "The source file property will be set in each of the ``<dirs>`` directories' "
 "scopes.  Each path may reference either a source directory, or since CMake "
 "3.19, a binary directory.  CMake must already know about each of these "
-"directories, either by having added them through a call to :command:"
-"`add_subdirectory` or it being the top level source directory. Relative "
-"paths are treated as relative to the current source directory."
+"directories, either by having added them through a call "
+"to :command:`add_subdirectory` or it being the top level source directory. "
+"Relative paths are treated as relative to the current source directory."
 msgstr ""
 
 #: ../../../command/set_property.rst:54
@@ -161,8 +161,8 @@ msgstr ""
 
 #: ../../../command/set_property.rst:78
 msgid ""
-"Scope may name zero or more existing tests. See also the :command:"
-"`set_tests_properties` command."
+"Scope may name zero or more existing tests. See also "
+"the :command:`set_tests_properties` command."
 msgstr ""
 
 #: ../../../command/set_property.rst:81

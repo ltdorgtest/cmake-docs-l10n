@@ -30,9 +30,9 @@ msgstr ""
 #: ../../../variable/CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS.rst:9
 msgid ""
 "If ``make install`` is invoked and directories are implicitly created they "
-"get permissions set by :variable:"
-"`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS` variable or platform specific "
-"default permissions if the variable is not set."
+"get permissions set "
+"by :variable:`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS` variable or "
+"platform specific default permissions if the variable is not set."
 msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS.rst:13
@@ -45,10 +45,10 @@ msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS.rst:18
 msgid ""
-"Expected content of the :variable:"
-"`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS` variable is a list of "
-"permissions that can be used by :command:`install` command `PERMISSIONS` "
-"section."
+"Expected content of "
+"the :variable:`CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS` variable is a "
+"list of permissions that can be used by :command:`install` command "
+"`PERMISSIONS` section."
 msgstr ""
 
 #: ../../../variable/CMAKE_INSTALL_DEFAULT_DIRECTORY_PERMISSIONS.rst:22

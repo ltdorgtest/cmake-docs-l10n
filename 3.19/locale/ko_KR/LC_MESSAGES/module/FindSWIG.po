@@ -28,8 +28,9 @@ msgstr ""
 #: ../../../../Modules/FindSWIG.cmake:10
 msgid ""
 "This module finds an installed SWIG and determines its version. If a "
-"``COMPONENTS`` or ``OPTIONAL_COMPONENTS`` argument is given to the :command:"
-"`find_package` command, it will also determine supported target languages."
+"``COMPONENTS`` or ``OPTIONAL_COMPONENTS`` argument is given to "
+"the :command:`find_package` command, it will also determine supported target "
+"languages."
 msgstr ""
 
 #: ../../../../Modules/FindSWIG.cmake:15
