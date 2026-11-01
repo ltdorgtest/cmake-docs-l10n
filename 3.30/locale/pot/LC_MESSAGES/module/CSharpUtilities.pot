@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -89,9 +90,9 @@ msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:40
 msgid ""
-"List of all source files which are relevant for setting the :prop_sf:"
-"`VS_CSHARP_<tagname>` properties (including ``.cs``, ``.resx`` and ``."
-"Designer.cs`` extensions)."
+"List of all source files which are relevant for setting "
+"the :prop_sf:`VS_CSHARP_<tagname>` properties (including ``.cs``, ``.resx`` "
+"and ``.Designer.cs`` extensions)."
 msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:44
@@ -154,9 +155,9 @@ msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:72
 msgid ""
-"List of all source files which are relevant for setting the :prop_sf:"
-"`VS_CSHARP_<tagname>` properties (including ``.cs``, ``.resx``, ``."
-"settings`` and ``.Designer.cs`` extensions)."
+"List of all source files which are relevant for setting "
+"the :prop_sf:`VS_CSHARP_<tagname>` properties (including ``.cs``, ``.resx``, "
+"``.settings`` and ``.Designer.cs`` extensions)."
 msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:76
@@ -221,9 +222,9 @@ msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:109
 msgid ""
-"List of all source files which are relevant for setting the :prop_sf:"
-"`VS_CSHARP_<tagname>` properties (including ``.cs``, ``.xaml``, and ``.xaml."
-"cs`` extensions)."
+"List of all source files which are relevant for setting "
+"the :prop_sf:`VS_CSHARP_<tagname>` properties (including ``.cs``, ``.xaml``, "
+"and ``.xaml.cs`` extensions)."
 msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:113
@@ -263,8 +264,8 @@ msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:136
 msgid ""
-"filename(s) as given to CSharp target using :command:`add_library` or :"
-"command:`add_executable`"
+"filename(s) as given to CSharp target using :command:`add_library` "
+"or :command:`add_executable`"
 msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:139
@@ -320,8 +321,9 @@ msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:174
 msgid ""
-"Computes a string which can be used as value for the source file property :"
-"prop_sf:`VS_CSHARP_<tagname>` with *target* being ``DependentUpon``::"
+"Computes a string which can be used as value for the source file "
+"property :prop_sf:`VS_CSHARP_<tagname>` with *target* being "
+"``DependentUpon``::"
 msgstr ""
 
 #: ../../../../Modules/CSharpUtilities.cmake:177

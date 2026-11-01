@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 3.30\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-04 18:21+0000\n"
+"POT-Creation-Date: 2026-11-01 14:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -177,14 +178,15 @@ msgstr ""
 #: ../../../command/if.rst:131
 msgid ""
 "True if the given name is an existing logical target name created by a call "
-"to the :command:`add_executable`, :command:`add_library`, or :command:"
-"`add_custom_target` command that has already been invoked (in any directory)."
+"to the :command:`add_executable`, :command:`add_library`, "
+"or :command:`add_custom_target` command that has already been invoked (in "
+"any directory)."
 msgstr ""
 
 #: ../../../command/if.rst:140
 msgid ""
-"True if the given name is an existing test name created by the :command:"
-"`add_test` command."
+"True if the given name is an existing test name created by "
+"the :command:`add_test` command."
 msgstr ""
 
 #: ../../../command/if.rst:145
@@ -303,10 +305,10 @@ msgstr ""
 
 #: ../../../command/if.rst:249
 msgid ""
-"On Windows hosts, any ``path`` that begins with a drive letter and colon (e."
-"g. ``C:``), a forward slash or a backslash will evaluate to true. This means "
-"a path like ``C:no\\base\\dir`` will evaluate to true, even though the non-"
-"drive part of the path is relative."
+"On Windows hosts, any ``path`` that begins with a drive letter and colon "
+"(e.g. ``C:``), a forward slash or a backslash will evaluate to true. This "
+"means a path like ``C:no\\base\\dir`` will evaluate to true, even though the "
+"non-drive part of the path is relative."
 msgstr ""
 
 #: ../../../command/if.rst:253
@@ -397,9 +399,9 @@ msgstr ""
 #: ../../../command/if.rst:358 ../../../command/if.rst:368
 #: ../../../command/if.rst:378
 msgid ""
-"Component-wise integer version number comparison (version format is ``major[."
-"minor[.patch[.tweak]]]``, omitted components are treated as zero). Any non-"
-"integer version component or non-integer trailing part of a version "
+"Component-wise integer version number comparison (version format is "
+"``major[.minor[.patch[.tweak]]]``, omitted components are treated as zero). "
+"Any non-integer version component or non-integer trailing part of a version "
 "component effectively truncates the string at that point."
 msgstr ""
 
