@@ -84,14 +84,14 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:50
 msgid ""
-"In this form, one or more source files must be provided.  If :variable:"
-"`CMAKE_TRY_COMPILE_TARGET_TYPE` is unset or is set to ``EXECUTABLE``, the "
-"sources must include a definition for ``main`` and CMake will create a "
-"``CMakeLists.txt`` file to build the source(s) as an executable. If :"
-"variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` is set to ``STATIC_LIBRARY``, a "
-"static library will be built instead and no definition for ``main`` is "
-"required.  For an executable, the generated ``CMakeLists.txt`` file would "
-"contain something like the following:"
+"In this form, one or more source files must be provided.  "
+"If :variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` is unset or is set to "
+"``EXECUTABLE``, the sources must include a definition for ``main`` and CMake "
+"will create a ``CMakeLists.txt`` file to build the source(s) as an "
+"executable. If :variable:`CMAKE_TRY_COMPILE_TARGET_TYPE` is set to "
+"``STATIC_LIBRARY``, a static library will be built instead and no definition "
+"for ``main`` is required.  For an executable, the generated "
+"``CMakeLists.txt`` file would contain something like the following:"
 msgstr ""
 
 #: ../../../command/try_compile.rst:59
@@ -191,8 +191,8 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:105
 msgid ""
-"Specify the :prop_tgt:`C_STANDARD`, :prop_tgt:`CXX_STANDARD`, or :prop_tgt:"
-"`CUDA_STANDARD` target property of the generated project."
+"Specify the :prop_tgt:`C_STANDARD`, :prop_tgt:`CXX_STANDARD`, "
+"or :prop_tgt:`CUDA_STANDARD` target property of the generated project."
 msgstr ""
 
 #: ../../../command/try_compile.rst:111
@@ -201,9 +201,10 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:109
 msgid ""
-"Specify the :prop_tgt:`C_STANDARD_REQUIRED`, :prop_tgt:"
-"`CXX_STANDARD_REQUIRED`, or :prop_tgt:`CUDA_STANDARD_REQUIRED` target "
-"property of the generated project."
+"Specify "
+"the :prop_tgt:`C_STANDARD_REQUIRED`, :prop_tgt:`CXX_STANDARD_REQUIRED`, "
+"or :prop_tgt:`CUDA_STANDARD_REQUIRED` target property of the generated "
+"project."
 msgstr ""
 
 #: ../../../command/try_compile.rst:115
@@ -212,8 +213,8 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:114
 msgid ""
-"Specify the :prop_tgt:`C_EXTENSIONS`, :prop_tgt:`CXX_EXTENSIONS`, or :"
-"prop_tgt:`CUDA_EXTENSIONS` target property of the generated project."
+"Specify the :prop_tgt:`C_EXTENSIONS`, :prop_tgt:`CXX_EXTENSIONS`, "
+"or :prop_tgt:`CUDA_EXTENSIONS` target property of the generated project."
 msgstr ""
 
 #: ../../../command/try_compile.rst:117
@@ -262,16 +263,16 @@ msgstr ""
 
 #: ../../../command/try_compile.rst:141
 msgid ""
-"If :policy:`CMP0056` is set to ``NEW``, then :variable:"
-"`CMAKE_EXE_LINKER_FLAGS` is passed in as well."
+"If :policy:`CMP0056` is set to ``NEW``, "
+"then :variable:`CMAKE_EXE_LINKER_FLAGS` is passed in as well."
 msgstr ""
 
 #: ../../../command/try_compile.rst:144
 msgid ""
 "If :policy:`CMP0083` is set to ``NEW``, then in order to obtain correct "
-"behavior at link time, the ``check_pie_supported()`` command from the :"
-"module:`CheckPIESupported` module must be called before using the :command:"
-"`try_compile` command."
+"behavior at link time, the ``check_pie_supported()`` command from "
+"the :module:`CheckPIESupported` module must be called before using "
+"the :command:`try_compile` command."
 msgstr ""
 
 #: ../../../command/try_compile.rst:149

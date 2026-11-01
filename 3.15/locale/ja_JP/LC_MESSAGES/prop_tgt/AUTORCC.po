@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTORCC.rst:6
 msgid ""
 ":prop_tgt:`AUTORCC` is a boolean specifying whether CMake will handle the Qt "
-"``rcc`` code generator automatically, i.e. without having to use the :module:"
-"`QT4_ADD_RESOURCES() <FindQt4>` or ``QT5_ADD_RESOURCES()`` macro.  Currently "
-"Qt4 and Qt5 are supported."
+"``rcc`` code generator automatically, i.e. without having to use "
+"the :module:`QT4_ADD_RESOURCES() <FindQt4>` or ``QT5_ADD_RESOURCES()`` "
+"macro.  Currently Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:11
@@ -44,16 +44,16 @@ msgstr ""
 #: ../../../prop_tgt/AUTORCC.rst:16
 msgid ""
 "By default :prop_tgt:`AUTORCC` is processed by a :command:`custom command "
-"<add_custom_command>`. If the ``.qrc`` file is :prop_sf:`GENERATED`, a :"
-"command:`custom target <add_custom_target>` is used instead."
+"<add_custom_command>`. If the ``.qrc`` file is :prop_sf:`GENERATED`, "
+"a :command:`custom target <add_custom_target>` is used instead."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:21
 msgid ""
 "When there are multiple ``.qrc`` files with the same name, CMake will "
 "generate unspecified unique output file names for ``rcc``.  Therefore, if "
-"``Q_INIT_RESOURCE()`` or ``Q_CLEANUP_RESOURCE()`` need to be used, the ``."
-"qrc`` file name must be unique."
+"``Q_INIT_RESOURCE()`` or ``Q_CLEANUP_RESOURCE()`` need to be used, the "
+"``.qrc`` file name must be unique."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:28
@@ -75,15 +75,15 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:38
 msgid ""
-":prop_sf:`SKIP_AUTORCC`: ``.qrc`` files can be excluded from :prop_tgt:"
-"`AUTORCC` processing by setting this source file property."
+":prop_sf:`SKIP_AUTORCC`: ``.qrc`` files can be excluded "
+"from :prop_tgt:`AUTORCC` processing by setting this source file property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:42
 msgid ""
-":prop_sf:`SKIP_AUTOGEN`: Source files can be excluded from :prop_tgt:"
-"`AUTOMOC`, :prop_tgt:`AUTOUIC` and :prop_tgt:`AUTORCC` processing by setting "
-"this source file property."
+":prop_sf:`SKIP_AUTOGEN`: Source files can be excluded "
+"from :prop_tgt:`AUTOMOC`, :prop_tgt:`AUTOUIC` and :prop_tgt:`AUTORCC` "
+"processing by setting this source file property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTORCC.rst:47

@@ -33,9 +33,9 @@ msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:13
 msgid ""
-"The approach follows that taken for the autoconf macro file, ``acx_lapack."
-"m4`` (distributed at http://ac-archive.sourceforge.net/ac-archive/acx_lapack."
-"html)."
+"The approach follows that taken for the autoconf macro file, "
+"``acx_lapack.m4`` (distributed at http://ac-archive.sourceforge.net/ac-"
+"archive/acx_lapack.html)."
 msgstr ""
 
 #: ../../../../Modules/FindLAPACK.cmake:18

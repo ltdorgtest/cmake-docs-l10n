@@ -138,9 +138,9 @@ msgstr ""
 
 #: ../../../cpack_gen/dmg.rst:80
 msgid ""
-"For every language in this list, CPack will try to find files ``<language>."
-"menu.txt`` and ``<language>.license.txt`` in the directory specified by the :"
-"variable:`CPACK_DMG_SLA_DIR` variable."
+"For every language in this list, CPack will try to find files "
+"``<language>.menu.txt`` and ``<language>.license.txt`` in the directory "
+"specified by the :variable:`CPACK_DMG_SLA_DIR` variable."
 msgstr ""
 
 #: ../../../cpack_gen/dmg.rst:86

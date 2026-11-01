@@ -27,8 +27,8 @@ msgstr ""
 
 #: ../../../manual/cmake-server.7.rst:12
 msgid ""
-"This will be removed from a future version of CMake. Clients should use the :"
-"manual:`cmake-file-api(7)` instead."
+"This will be removed from a future version of CMake. Clients should use "
+"the :manual:`cmake-file-api(7)` instead."
 msgstr ""
 
 #: ../../../manual/cmake-server.7.rst:16
@@ -1185,8 +1185,8 @@ msgid ""
 "  [\n"
 "    {\"isCMake\":true,\"isTemporary\":false,\"sources\":[\"/usr/lib/cmake/..."
 "\", ... ]},\n"
-"    {\"isCMake\":false,\"isTemporary\":false,\"sources\":[\"CMakeLists."
-"txt\", ...]},\n"
+"    {\"isCMake\":false,\"isTemporary\":false,\"sources\":"
+"[\"CMakeLists.txt\", ...]},\n"
 "    {\"isCMake\":false,\"isTemporary\":true,\"sources\":[\"/tmp/build/"
 "CMakeFiles/...\", ...]}\n"
 "  ],\n"

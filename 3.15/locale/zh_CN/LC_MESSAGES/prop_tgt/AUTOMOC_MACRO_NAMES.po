@@ -36,9 +36,9 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_MACRO_NAMES.rst:10
 msgid ""
-"When running :prop_tgt:`AUTOMOC`, CMake searches for the strings listed in :"
-"prop_tgt:`AUTOMOC_MACRO_NAMES` in C++ source and header files. If any of the "
-"strings is found"
+"When running :prop_tgt:`AUTOMOC`, CMake searches for the strings listed "
+"in :prop_tgt:`AUTOMOC_MACRO_NAMES` in C++ source and header files. If any of "
+"the strings is found"
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_MACRO_NAMES.rst:14
@@ -55,8 +55,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_MACRO_NAMES.rst:19
 msgid ""
-"By default :prop_tgt:`AUTOMOC_MACRO_NAMES` is initialized from :variable:"
-"`CMAKE_AUTOMOC_MACRO_NAMES`."
+"By default :prop_tgt:`AUTOMOC_MACRO_NAMES` is initialized "
+"from :variable:`CMAKE_AUTOMOC_MACRO_NAMES`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC_MACRO_NAMES.rst:22

@@ -52,27 +52,28 @@ msgstr ""
 
 #: ../../../policy/CMP0079.rst:23
 msgid ""
-"This policy provides compatibility with projects that already use :command:"
-"`target_link_libraries` with the ``INTERFACE`` keyword on a target in "
-"another directory to add :prop_tgt:`INTERFACE_LINK_LIBRARIES` entries to be "
-"looked up in the target's directory.  Such projects should be updated to be "
-"aware of the new scoping rules in that case."
+"This policy provides compatibility with projects that already "
+"use :command:`target_link_libraries` with the ``INTERFACE`` keyword on a "
+"target in another directory to add :prop_tgt:`INTERFACE_LINK_LIBRARIES` "
+"entries to be looked up in the target's directory.  Such projects should be "
+"updated to be aware of the new scoping rules in that case."
 msgstr ""
 
 #: ../../../policy/CMP0079.rst:29
 msgid ""
-"The ``OLD`` behavior of this policy is to disallow :command:"
-"`target_link_libraries` calls naming targets from another directory except "
-"in the previously accidentally allowed case of using the ``INTERFACE`` "
-"keyword only.  The ``NEW`` behavior of this policy is to allow all such "
-"calls but use the new scoping rules."
+"The ``OLD`` behavior of this policy is to "
+"disallow :command:`target_link_libraries` calls naming targets from another "
+"directory except in the previously accidentally allowed case of using the "
+"``INTERFACE`` keyword only.  The ``NEW`` behavior of this policy is to allow "
+"all such calls but use the new scoping rules."
 msgstr ""
 
 #: ../../../policy/CMP0079.rst:35
 msgid ""
 "This policy was introduced in CMake version 3.13.  CMake version |release| "
-"warns when the policy is not set and uses ``OLD`` behavior. Use the :command:"
-"`cmake_policy` command to set it to ``OLD`` or ``NEW`` explicitly."
+"warns when the policy is not set and uses ``OLD`` behavior. Use "
+"the :command:`cmake_policy` command to set it to ``OLD`` or ``NEW`` "
+"explicitly."
 msgstr ""
 
 #: ../../../policy/DEPRECATED.txt:2

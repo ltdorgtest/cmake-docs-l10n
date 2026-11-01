@@ -31,8 +31,8 @@ msgid ""
 "compiler is used to link the target (such as \"C\" or \"CXX\").  A typical "
 "value for an executable is the language of the source file providing the "
 "program entry point (main).  If not set, the language with the highest "
-"linker preference value is the default.  See documentation of :variable:"
-"`CMAKE_<LANG>_LINKER_PREFERENCE` variables."
+"linker preference value is the default.  See documentation "
+"of :variable:`CMAKE_<LANG>_LINKER_PREFERENCE` variables."
 msgstr ""
 
 #: ../../../prop_tgt/LINKER_LANGUAGE.rst:13

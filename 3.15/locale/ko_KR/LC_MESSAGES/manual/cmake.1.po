@@ -81,10 +81,10 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:53
 msgid ""
-"For graphical user interfaces that may be used in place of **cmake**, see :"
-"manual:`ccmake <ccmake(1)>` and :manual:`cmake-gui <cmake-gui(1)>`. For "
-"command-line interfaces to the CMake testing and packaging facilities, see :"
-"manual:`ctest <ctest(1)>` and :manual:`cpack <cpack(1)>`."
+"For graphical user interfaces that may be used in place of **cmake**, "
+"see :manual:`ccmake <ccmake(1)>` and :manual:`cmake-gui <cmake-gui(1)>`. For "
+"command-line interfaces to the CMake testing and packaging facilities, "
+"see :manual:`ctest <ctest(1)>` and :manual:`cpack <cpack(1)>`."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:58
@@ -104,10 +104,10 @@ msgid ""
 "example, a buildsystem may be a ``Makefile`` for use with a command-line "
 "``make`` tool or a project file for an Integrated Development Environment "
 "(IDE).  In order to avoid maintaining multiple such buildsystems, a project "
-"may specify its buildsystem abstractly using files written in the :manual:"
-"`CMake language <cmake-language(7)>`.  From these files CMake generates a "
-"preferred buildsystem locally for each user through a backend called a "
-"*generator*."
+"may specify its buildsystem abstractly using files written in "
+"the :manual:`CMake language <cmake-language(7)>`.  From these files CMake "
+"generates a preferred buildsystem locally for each user through a backend "
+"called a *generator*."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:75
@@ -121,8 +121,8 @@ msgstr ""
 #: ../../../manual/cmake.1.rst:78
 msgid ""
 "The top-level directory containing source files provided by the project. The "
-"project specifies its buildsystem using files as described in the :manual:"
-"`cmake-language(7)` manual, starting with a top-level file named "
+"project specifies its buildsystem using files as described in "
+"the :manual:`cmake-language(7)` manual, starting with a top-level file named "
 "``CMakeLists.txt``.  These files specify build targets and their "
 "dependencies as described in the :manual:`cmake-buildsystem(7)` manual."
 msgstr ""
@@ -290,13 +290,13 @@ msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:12
 msgid ""
-"When CMake is first run in an empty build tree, it creates a ``CMakeCache."
-"txt`` file and populates it with customizable settings for the project.  "
-"This option may be used to specify a file from which to load cache entries "
-"before the first pass through the project's CMake listfiles.  The loaded "
-"entries take priority over the project's default values.  The given file "
-"should be a CMake script containing :command:`set` commands that use the "
-"``CACHE`` option, not a cache-format file."
+"When CMake is first run in an empty build tree, it creates a "
+"``CMakeCache.txt`` file and populates it with customizable settings for the "
+"project.  This option may be used to specify a file from which to load cache "
+"entries before the first pass through the project's CMake listfiles.  The "
+"loaded entries take priority over the project's default values.  The given "
+"file should be a CMake script containing :command:`set` commands that use "
+"the ``CACHE`` option, not a cache-format file."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:39
@@ -309,11 +309,11 @@ msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:24
 msgid ""
-"When CMake is first run in an empty build tree, it creates a ``CMakeCache."
-"txt`` file and populates it with customizable settings for the project.  "
-"This option may be used to specify a setting that takes priority over the "
-"project's default value.  The option may be repeated for as many ``CACHE`` "
-"entries as desired."
+"When CMake is first run in an empty build tree, it creates a "
+"``CMakeCache.txt`` file and populates it with customizable settings for the "
+"project.  This option may be used to specify a setting that takes priority "
+"over the project's default value.  The option may be repeated for as many "
+"``CACHE`` entries as desired."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:30
@@ -384,8 +384,8 @@ msgstr ""
 #: ../../../manual/OPTIONS_BUILD.txt:65
 msgid ""
 "Some CMake generators support a toolset specification to tell the native "
-"build system how to choose a compiler.  See the :variable:"
-"`CMAKE_GENERATOR_TOOLSET` variable for details."
+"build system how to choose a compiler.  See "
+"the :variable:`CMAKE_GENERATOR_TOOLSET` variable for details."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:74
@@ -399,8 +399,8 @@ msgstr ""
 #: ../../../manual/OPTIONS_BUILD.txt:72
 msgid ""
 "Some CMake generators support a platform name to be given to the native "
-"build system to choose a compiler or SDK.  See the :variable:"
-"`CMAKE_GENERATOR_PLATFORM` variable for details."
+"build system to choose a compiler or SDK.  See "
+"the :variable:`CMAKE_GENERATOR_PLATFORM` variable for details."
 msgstr ""
 
 #: ../../../manual/OPTIONS_BUILD.txt:81
@@ -526,12 +526,12 @@ msgstr ""
 #: ../../../manual/cmake.1.rst:175
 msgid ""
 "List ``CACHE`` variables will run CMake and list all the variables from the "
-"CMake ``CACHE`` that are not marked as ``INTERNAL`` or :prop_cache:"
-"`ADVANCED`. This will effectively display current CMake settings, which can "
-"then be changed with ``-D`` option.  Changing some of the variables may "
-"result in more variables being created.  If ``A`` is specified, then it will "
-"display also advanced variables.  If ``H`` is specified, it will also "
-"display help for each variable."
+"CMake ``CACHE`` that are not marked as ``INTERNAL`` "
+"or :prop_cache:`ADVANCED`. This will effectively display current CMake "
+"settings, which can then be changed with ``-D`` option.  Changing some of "
+"the variables may result in more variables being created.  If ``A`` is "
+"specified, then it will display also advanced variables.  If ``H`` is "
+"specified, it will also display help for each variable."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:187
@@ -559,8 +559,8 @@ msgstr ""
 #: ../../../manual/cmake.1.rst:192
 msgid ""
 "Generate a graphviz input file that will contain all the library and "
-"executable dependencies in the project.  See the documentation for :module:"
-"`CMakeGraphVizOptions` for more details."
+"executable dependencies in the project.  See the documentation "
+"for :module:`CMakeGraphVizOptions` for more details."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:201
@@ -598,8 +598,8 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:210
 msgid ""
-"Do not delete the :command:`try_compile` build tree. Only useful on one :"
-"command:`try_compile` at a time."
+"Do not delete the :command:`try_compile` build tree. Only useful on "
+"one :command:`try_compile` at a time."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:213
@@ -621,8 +621,8 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:223
 msgid ""
-"Print extra information during the cmake run like stack traces with :command:"
-"`message(SEND_ERROR)` calls."
+"Print extra information during the cmake run like stack traces "
+"with :command:`message(SEND_ERROR)` calls."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:229
@@ -704,8 +704,8 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:260
 msgid ""
-"Normally, unused and uninitialized variables are searched for only in :"
-"variable:`CMAKE_SOURCE_DIR` and :variable:`CMAKE_BINARY_DIR`. This flag "
+"Normally, unused and uninitialized variables are searched for only "
+"in :variable:`CMAKE_SOURCE_DIR` and :variable:`CMAKE_BINARY_DIR`. This flag "
 "tells CMake to warn about other files as well."
 msgstr ""
 
@@ -808,8 +808,8 @@ msgstr ""
 
 #: ../../../manual/cmake.1.rst:310
 msgid ""
-"This option can be omitted if :envvar:`VERBOSE` environment variable or :"
-"variable:`CMAKE_VERBOSE_MAKEFILE` cached variable is set."
+"This option can be omitted if :envvar:`VERBOSE` environment variable "
+"or :variable:`CMAKE_VERBOSE_MAKEFILE` cached variable is set."
 msgstr ""
 
 #: ../../../manual/cmake.1.rst:315 ../../../manual/cmake.1.rst:588
@@ -1892,6 +1892,6 @@ msgstr ""
 msgid ""
 "For help and discussion about using CMake, a mailing list is provided at "
 "cmake@cmake.org.  The list is member-post-only but one may sign up on the "
-"CMake web page.  Please first read the full documentation at https://cmake."
-"org before posting questions to the list."
+"CMake web page.  Please first read the full documentation at https://"
+"cmake.org before posting questions to the list."
 msgstr ""

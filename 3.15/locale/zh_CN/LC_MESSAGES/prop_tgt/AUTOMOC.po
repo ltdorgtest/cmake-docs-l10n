@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:6
 msgid ""
 ":prop_tgt:`AUTOMOC` is a boolean specifying whether CMake will handle the Qt "
-"``moc`` preprocessor automatically, i.e.  without having to use the :module:"
-"`QT4_WRAP_CPP() <FindQt4>` or ``QT5_WRAP_CPP()`` macro. Currently Qt4 and "
-"Qt5 are supported."
+"``moc`` preprocessor automatically, i.e.  without having to use "
+"the :module:`QT4_WRAP_CPP() <FindQt4>` or ``QT5_WRAP_CPP()`` macro. "
+"Currently Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:11
@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:21
 msgid ""
-"At configuration time, a list of header files that should be scanned by :"
-"prop_tgt:`AUTOMOC` is computed from the target's sources."
+"At configuration time, a list of header files that should be scanned "
+"by :prop_tgt:`AUTOMOC` is computed from the target's sources."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:24
@@ -99,8 +99,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:41 ../../../prop_tgt/AUTOMOC.rst:67
 msgid ""
-"additional file dependencies detected by filters defined in :prop_tgt:"
-"`AUTOMOC_DEPEND_FILTERS`."
+"additional file dependencies detected by filters defined "
+"in :prop_tgt:`AUTOMOC_DEPEND_FILTERS`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:44
@@ -214,14 +214,14 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:116
 msgid ""
-"Where ``<AUTOGEN_BUILD_DIR>`` is the value of the target property :prop_tgt:"
-"`AUTOGEN_BUILD_DIR`."
+"Where ``<AUTOGEN_BUILD_DIR>`` is the value of the target "
+"property :prop_tgt:`AUTOGEN_BUILD_DIR`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:119
 msgid ""
-"The include directory is automatically added to the target's :prop_tgt:"
-"`INCLUDE_DIRECTORIES`."
+"The include directory is automatically added to the "
+"target's :prop_tgt:`INCLUDE_DIRECTORIES`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:123
@@ -242,8 +242,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:130
 msgid ""
-"``<AUTOGEN_BUILD_DIR>/include_<CONFIG>/<SOURCE_DIR_CHECKSUM>`` for :prop_gbl:"
-"`multi configuration <GENERATOR_IS_MULTI_CONFIG>` generators."
+"``<AUTOGEN_BUILD_DIR>/include_<CONFIG>/<SOURCE_DIR_CHECKSUM>`` "
+"for :prop_gbl:`multi configuration <GENERATOR_IS_MULTI_CONFIG>` generators."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:133
@@ -318,13 +318,13 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:169
 msgid ""
 "A ``find_package(Qt[45]...)`` call sets the ``QT/Qt5Core_VERSION_MAJOR/"
-"MINOR`` variables.  If the call is in a different context than the :command:"
-"`add_executable` or :command:`add_library` call, e.g. in a function, then "
-"the version variables might not be available to the :prop_tgt:`AUTOMOC` "
-"enabled target. In that case the version variables can be forwarded from the "
-"`find_package(Qt[45]...)` calling context to the :command:`add_executable` "
-"or :command:`add_library` calling context as directory properties. The "
-"following Qt5 example demonstrates the procedure."
+"MINOR`` variables.  If the call is in a different context than "
+"the :command:`add_executable` or :command:`add_library` call, e.g. in a "
+"function, then the version variables might not be available to "
+"the :prop_tgt:`AUTOMOC` enabled target. In that case the version variables "
+"can be forwarded from the `find_package(Qt[45]...)` calling context to "
+"the :command:`add_executable` or :command:`add_library` calling context as "
+"directory properties. The following Qt5 example demonstrates the procedure."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:179
@@ -384,15 +384,15 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:219
 msgid ""
-":prop_sf:`SKIP_AUTOMOC`: Sources and headers can be excluded from :prop_tgt:"
-"`AUTOMOC` processing by setting this source file property."
+":prop_sf:`SKIP_AUTOMOC`: Sources and headers can be excluded "
+"from :prop_tgt:`AUTOMOC` processing by setting this source file property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:223
 msgid ""
-":prop_sf:`SKIP_AUTOGEN`: Source files can be excluded from :prop_tgt:"
-"`AUTOMOC`, :prop_tgt:`AUTOUIC` and :prop_tgt:`AUTORCC` processing by setting "
-"this source file property."
+":prop_sf:`SKIP_AUTOGEN`: Source files can be excluded "
+"from :prop_tgt:`AUTOMOC`, :prop_tgt:`AUTOUIC` and :prop_tgt:`AUTORCC` "
+"processing by setting this source file property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:228
