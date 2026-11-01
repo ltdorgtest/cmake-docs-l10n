@@ -51,8 +51,8 @@ msgid ""
 "Call the ``cmake_minimum_required()`` command at the beginning of the top-"
 "level ``CMakeLists.txt`` file even before calling the :command:`project` "
 "command.  It is important to establish version and policy settings before "
-"invoking other commands whose behavior they may affect.  See also policy :"
-"policy:`CMP0000`."
+"invoking other commands whose behavior they may affect.  See also "
+"policy :policy:`CMP0000`."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:24
@@ -68,13 +68,13 @@ msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:31
 msgid ""
-"The ``cmake_minimum_required(VERSION)`` command implicitly invokes the :"
-"command:`cmake_policy(VERSION)` command to specify that the current project "
-"code is written for the given version of CMake. All policies introduced in "
-"the specified version or earlier will be set to use NEW behavior.  All "
-"policies introduced after the specified version will be unset.  This "
-"effectively requests behavior preferred as of a given CMake version and "
-"tells newer CMake versions to warn about their new policies."
+"The ``cmake_minimum_required(VERSION)`` command implicitly invokes "
+"the :command:`cmake_policy(VERSION)` command to specify that the current "
+"project code is written for the given version of CMake. All policies "
+"introduced in the specified version or earlier will be set to use NEW "
+"behavior.  All policies introduced after the specified version will be "
+"unset.  This effectively requests behavior preferred as of a given CMake "
+"version and tells newer CMake versions to warn about their new policies."
 msgstr ""
 
 #: ../../../command/cmake_minimum_required.rst:40

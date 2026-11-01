@@ -29,8 +29,8 @@ msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:8
 msgid ""
-"Adds the :command:`configure_package_config_file()` and :command:"
-"`write_basic_package_version_file()` commands."
+"Adds the :command:`configure_package_config_file()` "
+"and :command:`write_basic_package_version_file()` commands."
 msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:12
@@ -54,11 +54,11 @@ msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:26
 msgid ""
-"``configure_package_config_file()`` should be used instead of the plain :"
-"command:`configure_file()` command when creating the ``<Name>Config.cmake`` "
-"or ``<Name>-config.cmake`` file for installing a project or library.  It "
-"helps making the resulting package relocatable by avoiding hardcoded paths "
-"in the installed ``Config.cmake`` file."
+"``configure_package_config_file()`` should be used instead of the "
+"plain :command:`configure_file()` command when creating the "
+"``<Name>Config.cmake`` or ``<Name>-config.cmake`` file for installing a "
+"project or library.  It helps making the resulting package relocatable by "
+"avoiding hardcoded paths in the installed ``Config.cmake`` file."
 msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:32
@@ -84,8 +84,8 @@ msgid ""
 "contains a relative path, which in general cannot be guaranteed.  This has "
 "the effect that the resulting ``FooConfig.cmake`` file would work poorly "
 "under Windows and OSX, where users are used to choose the install location "
-"of a binary package at install time, independent from how :variable:"
-"`CMAKE_INSTALL_PREFIX` was set at build/cmake time."
+"of a binary package at install time, independent from "
+"how :variable:`CMAKE_INSTALL_PREFIX` was set at build/cmake time."
 msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:52
@@ -145,11 +145,11 @@ msgstr ""
 msgid ""
 "If the ``INSTALL_PREFIX`` argument is passed, this is used as base path to "
 "calculate all the relative paths.  The ``<path>`` argument must be an "
-"absolute path.  If this argument is not passed, the :variable:"
-"`CMAKE_INSTALL_PREFIX` variable will be used instead.  The default value is "
-"good when generating a FooConfig.cmake file to use your package from the "
-"install tree.  When generating a FooConfig.cmake file to use your package "
-"from the build tree this option should be used."
+"absolute path.  If this argument is not passed, "
+"the :variable:`CMAKE_INSTALL_PREFIX` variable will be used instead.  The "
+"default value is good when generating a FooConfig.cmake file to use your "
+"package from the install tree.  When generating a FooConfig.cmake file to "
+"use your package from the build tree this option should be used."
 msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:89
@@ -184,8 +184,8 @@ msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:110
 msgid ""
-"For an example see below the documentation for :command:"
-"`write_basic_package_version_file()`."
+"For an example see below the documentation "
+"for :command:`write_basic_package_version_file()`."
 msgstr ""
 
 #: ../../../../Modules/CMakePackageConfigHelpers.cmake:114

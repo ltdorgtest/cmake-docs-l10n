@@ -28,9 +28,9 @@ msgstr ""
 #: ../../../prop_tgt/AUTOMOC.rst:6
 msgid ""
 "AUTOMOC is a boolean specifying whether CMake will handle the Qt ``moc`` "
-"preprocessor automatically, i.e.  without having to use the :module:"
-"`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro.  Currently Qt4 and Qt5 "
-"are supported."
+"preprocessor automatically, i.e.  without having to use "
+"the :module:`QT4_WRAP_CPP() <FindQt4>` or QT5_WRAP_CPP() macro.  Currently "
+"Qt4 and Qt5 are supported."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:11
@@ -73,8 +73,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:39
 msgid ""
-"Additional command line options for moc can be set via the :prop_tgt:"
-"`AUTOMOC_MOC_OPTIONS` property."
+"Additional command line options for moc can be set via "
+"the :prop_tgt:`AUTOMOC_MOC_OPTIONS` property."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOMOC.rst:42

@@ -44,8 +44,8 @@ msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:14
 msgid ""
-"The *uncovered* directory holds any uncovered files found by :variable:"
-"`CTEST_EXTRA_COVERAGE_GLOB`."
+"The *uncovered* directory holds any uncovered files found "
+"by :variable:`CTEST_EXTRA_COVERAGE_GLOB`."
 msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:17
