@@ -134,8 +134,8 @@ msgstr ""
 
 #: ../../../../Modules/FindFLEX.cmake:68
 msgid ""
-"When :policy:`CMP0098` is set to ``NEW``, ``flex`` runs in the :variable:"
-"`CMAKE_CURRENT_BINARY_DIR` directory."
+"When :policy:`CMP0098` is set to ``NEW``, ``flex`` runs in "
+"the :variable:`CMAKE_CURRENT_BINARY_DIR` directory."
 msgstr ""
 
 #: ../../../../Modules/FindFLEX.cmake:72

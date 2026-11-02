@@ -106,8 +106,8 @@ msgstr ""
 
 #: ../../../../Modules/FindGettext.cmake:54
 msgid ""
-"This function creates a custom target \"potfile\" which processes the given ."
-"pot file to .mo files. Options:"
+"This function creates a custom target \"potfile\" which processes the "
+"given .pot file to .mo files. Options:"
 msgstr ""
 
 #: ../../../../Modules/FindGettext.cmake:58
@@ -150,6 +150,6 @@ msgstr ""
 
 #: ../../../../Modules/FindGettext.cmake:82
 msgid ""
-"If you wish to use the Gettext runtime library (libintl), use :module:"
-"`FindIntl`."
+"If you wish to use the Gettext runtime library (libintl), "
+"use :module:`FindIntl`."
 msgstr ""

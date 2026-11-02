@@ -61,9 +61,10 @@ msgid ""
 "The target properties :prop_tgt:`CXX_VISIBILITY_PRESET "
 "<<LANG>_VISIBILITY_PRESET>` and :prop_tgt:`VISIBILITY_INLINES_HIDDEN` can be "
 "used to add the appropriate compile flags for targets.  See the "
-"documentation of those target properties, and the convenience variables :"
-"variable:`CMAKE_CXX_VISIBILITY_PRESET <CMAKE_<LANG>_VISIBILITY_PRESET>` and :"
-"variable:`CMAKE_VISIBILITY_INLINES_HIDDEN`."
+"documentation of those target properties, and the convenience "
+"variables :variable:`CMAKE_CXX_VISIBILITY_PRESET "
+"<CMAKE_<LANG>_VISIBILITY_PRESET>` "
+"and :variable:`CMAKE_VISIBILITY_INLINES_HIDDEN`."
 msgstr ""
 
 #: ../../../../Modules/GenerateExportHeader.cmake:43

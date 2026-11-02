@@ -103,8 +103,9 @@ msgstr ""
 
 #: ../../../../Modules/CheckIPOSupported.cmake:55
 msgid ""
-"The check uses the caller's :variable:`CMAKE_<LANG>_FLAGS` and :variable:"
-"`CMAKE_<LANG>_FLAGS_<CONFIG>` values. See policy :policy:`CMP0138`."
+"The check uses the caller's :variable:`CMAKE_<LANG>_FLAGS` "
+"and :variable:`CMAKE_<LANG>_FLAGS_<CONFIG>` values. See "
+"policy :policy:`CMP0138`."
 msgstr ""
 
 #: ../../../../Modules/CheckIPOSupported.cmake:61
