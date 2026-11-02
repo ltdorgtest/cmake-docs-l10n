@@ -56,8 +56,8 @@ msgstr ""
 #: ../../../release/4.0.rst:25
 msgid ""
 "The :option:`cmake --link-no-warning-as-error` option was added to suppress "
-"the effects of the :prop_tgt:`LINK_WARNING_AS_ERROR` target property and :"
-"variable:`CMAKE_LINK_WARNING_AS_ERROR` variable."
+"the effects of the :prop_tgt:`LINK_WARNING_AS_ERROR` target property "
+"and :variable:`CMAKE_LINK_WARNING_AS_ERROR` variable."
 msgstr ""
 
 #: ../../../release/4.0.rst:29
@@ -130,40 +130,41 @@ msgstr ""
 
 #: ../../../release/4.0.rst:62
 msgid ""
-"The :variable:`CMAKE_<LANG>_LINK_MODE` and :variable:"
-"`CMAKE_<LANG>_DEVICE_LINK_MODE` variables were added to provide information "
-"on how the link step is done."
+"The :variable:`CMAKE_<LANG>_LINK_MODE` "
+"and :variable:`CMAKE_<LANG>_DEVICE_LINK_MODE` variables were added to "
+"provide information on how the link step is done."
 msgstr ""
 
 #: ../../../release/4.0.rst:66
 msgid ""
-"The :variable:`CMAKE_LINK_WARNING_AS_ERROR` variable and corresponding :"
-"prop_tgt:`LINK_WARNING_AS_ERROR` target property were added to link using a "
-"linker-specific flag to treat warnings as errors."
+"The :variable:`CMAKE_LINK_WARNING_AS_ERROR` variable and "
+"corresponding :prop_tgt:`LINK_WARNING_AS_ERROR` target property were added "
+"to link using a linker-specific flag to treat warnings as errors."
 msgstr ""
 
 #: ../../../release/4.0.rst:70
 msgid ""
-"The :variable:`CMAKE_MSVC_RUNTIME_CHECKS` variable and :prop_tgt:"
-"`MSVC_RUNTIME_CHECKS` target property were introduced to select runtime "
-"checks for compilers targeting the MSVC ABI. See policy :policy:`CMP0184`."
+"The :variable:`CMAKE_MSVC_RUNTIME_CHECKS` variable "
+"and :prop_tgt:`MSVC_RUNTIME_CHECKS` target property were introduced to "
+"select runtime checks for compilers targeting the MSVC ABI. See "
+"policy :policy:`CMP0184`."
 msgstr ""
 
 #: ../../../release/4.0.rst:75
 msgid ""
 "The :variable:`CMAKE_POLICY_VERSION_MINIMUM` variable was added to help "
 "packagers and end users try to configure existing projects that have not "
-"been updated to work with supported CMake versions. The :envvar:"
-"`CMAKE_POLICY_VERSION_MINIMUM` environment variable was added to initialize "
-"it."
+"been updated to work with supported CMake versions. "
+"The :envvar:`CMAKE_POLICY_VERSION_MINIMUM` environment variable was added to "
+"initialize it."
 msgstr ""
 
 #: ../../../release/4.0.rst:81
 msgid ""
-"The :variable:`CMAKE_UNITY_BUILD_RELOCATABLE` variable and corresponding :"
-"prop_tgt:`UNITY_BUILD_RELOCATABLE` target property were added to make "
-"sources generated for :variable:`CMAKE_UNITY_BUILD` to ``#include`` the "
-"original source files using relative paths where possible."
+"The :variable:`CMAKE_UNITY_BUILD_RELOCATABLE` variable and "
+"corresponding :prop_tgt:`UNITY_BUILD_RELOCATABLE` target property were added "
+"to make sources generated for :variable:`CMAKE_UNITY_BUILD` to ``#include`` "
+"the original source files using relative paths where possible."
 msgstr ""
 
 #: ../../../release/4.0.rst:86
@@ -203,8 +204,8 @@ msgstr ""
 
 #: ../../../release/4.0.rst:107
 msgid ""
-"The :prop_tgt:`Swift_MODULE_DIRECTORY` target property now supports :manual:"
-"`generator expressions <cmake-generator-expressions(7)>`."
+"The :prop_tgt:`Swift_MODULE_DIRECTORY` target property now "
+"supports :manual:`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../release/4.0.rst:110
@@ -216,9 +217,9 @@ msgstr ""
 
 #: ../../../release/4.0.rst:114
 msgid ""
-"The :prop_dir:`VS_SOLUTION_ITEMS` directory property was added to tell :ref:"
-"`Visual Studio Generators` to attach files directly to the Solution (``."
-"sln``)."
+"The :prop_dir:`VS_SOLUTION_ITEMS` directory property was added to "
+"tell :ref:`Visual Studio Generators` to attach files directly to the "
+"Solution (``.sln``)."
 msgstr ""
 
 #: ../../../release/4.0.rst:119
@@ -227,16 +228,16 @@ msgstr ""
 
 #: ../../../release/4.0.rst:121
 msgid ""
-"The :module:`ExternalData` module gained a :variable:"
-"`ExternalData_HTTPHEADERS` variable to specify HTTP headers."
+"The :module:`ExternalData` module gained "
+"a :variable:`ExternalData_HTTPHEADERS` variable to specify HTTP headers."
 msgstr ""
 
 #: ../../../release/4.0.rst:124
 msgid ""
 "The :module:`ExternalProject` module's :command:`ExternalProject_Add` "
 "command gained an ``INSTALL_JOB_SERVER_AWARE`` option to enable integration "
-"of the GNU Make job server when using an explicit ``INSTALL_COMMAND`` with :"
-"ref:`Makefile Generators`."
+"of the GNU Make job server when using an explicit ``INSTALL_COMMAND`` "
+"with :ref:`Makefile Generators`."
 msgstr ""
 
 #: ../../../release/4.0.rst:129
@@ -323,9 +324,9 @@ msgstr ""
 
 #: ../../../release/4.0.rst:177
 msgid ""
-"The :cpack_gen:`CPack Archive Generator` now honors the :variable:"
-"`CPACK_ARCHIVE_FILE_NAME` variable for all packages. Previously, this "
-"variable worked only for component-based packages."
+"The :cpack_gen:`CPack Archive Generator` now honors "
+"the :variable:`CPACK_ARCHIVE_FILE_NAME` variable for all packages. "
+"Previously, this variable worked only for component-based packages."
 msgstr ""
 
 #: ../../../release/4.0.rst:182
@@ -353,9 +354,10 @@ msgstr ""
 #: ../../../release/4.0.rst:196
 msgid ""
 "The :variable:`CMAKE_<LANG>_USING_LINKER_MODE` variable is no longer used to "
-"determine the type of the contents of the :variable:"
-"`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable. The :variable:"
-"`CMAKE_<LANG>_LINK_MODE` variable, set by CMake, is used instead."
+"determine the type of the contents of "
+"the :variable:`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable. "
+"The :variable:`CMAKE_<LANG>_LINK_MODE` variable, set by CMake, is used "
+"instead."
 msgstr ""
 
 #: ../../../release/4.0.rst:201
@@ -376,8 +378,8 @@ msgstr ""
 #: ../../../release/4.0.rst:210
 msgid ""
 "CTest's undocumented declarative scripting mode has been removed. This mode "
-"used to be triggered by a :option:`ctest -S` script which did not call any :"
-"ref:`CTest Commands` unless :variable:`CTEST_RUN_CURRENT_SCRIPT` was "
+"used to be triggered by a :option:`ctest -S` script which did not call "
+"any :ref:`CTest Commands` unless :variable:`CTEST_RUN_CURRENT_SCRIPT` was "
 "explicitly set to ``OFF``."
 msgstr ""
 
@@ -434,8 +436,8 @@ msgid ""
 "The :option:`cmake --preset` command no longer outputs a summary of the "
 "preset's CMake cache and environment variables by default.  That summary is "
 "now only shown when the message log level is set to ``VERBOSE``, ``DEBUG``, "
-"or ``TRACE`` via the   :option:`cmake --log-level` option or the :variable:"
-"`CMAKE_MESSAGE_LOG_LEVEL` cache variable."
+"or ``TRACE`` via the   :option:`cmake --log-level` option or "
+"the :variable:`CMAKE_MESSAGE_LOG_LEVEL` cache variable."
 msgstr ""
 
 #: ../../../release/4.0.rst:253
