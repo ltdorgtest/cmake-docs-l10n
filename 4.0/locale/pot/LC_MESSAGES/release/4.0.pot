@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake 4.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-13 07:27+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,8 +56,8 @@ msgstr ""
 #: ../../../release/4.0.rst:25
 msgid ""
 "The :option:`cmake --link-no-warning-as-error` option was added to suppress "
-"the effects of the :prop_tgt:`LINK_WARNING_AS_ERROR` target property and :"
-"variable:`CMAKE_LINK_WARNING_AS_ERROR` variable."
+"the effects of the :prop_tgt:`LINK_WARNING_AS_ERROR` target property "
+"and :variable:`CMAKE_LINK_WARNING_AS_ERROR` variable."
 msgstr ""
 
 #: ../../../release/4.0.rst:29
@@ -130,40 +130,41 @@ msgstr ""
 
 #: ../../../release/4.0.rst:62
 msgid ""
-"The :variable:`CMAKE_<LANG>_LINK_MODE` and :variable:"
-"`CMAKE_<LANG>_DEVICE_LINK_MODE` variables were added to provide information "
-"on how the link step is done."
+"The :variable:`CMAKE_<LANG>_LINK_MODE` "
+"and :variable:`CMAKE_<LANG>_DEVICE_LINK_MODE` variables were added to "
+"provide information on how the link step is done."
 msgstr ""
 
 #: ../../../release/4.0.rst:66
 msgid ""
-"The :variable:`CMAKE_LINK_WARNING_AS_ERROR` variable and corresponding :"
-"prop_tgt:`LINK_WARNING_AS_ERROR` target property were added to link using a "
-"linker-specific flag to treat warnings as errors."
+"The :variable:`CMAKE_LINK_WARNING_AS_ERROR` variable and "
+"corresponding :prop_tgt:`LINK_WARNING_AS_ERROR` target property were added "
+"to link using a linker-specific flag to treat warnings as errors."
 msgstr ""
 
 #: ../../../release/4.0.rst:70
 msgid ""
-"The :variable:`CMAKE_MSVC_RUNTIME_CHECKS` variable and :prop_tgt:"
-"`MSVC_RUNTIME_CHECKS` target property were introduced to select runtime "
-"checks for compilers targeting the MSVC ABI. See policy :policy:`CMP0184`."
+"The :variable:`CMAKE_MSVC_RUNTIME_CHECKS` variable "
+"and :prop_tgt:`MSVC_RUNTIME_CHECKS` target property were introduced to "
+"select runtime checks for compilers targeting the MSVC ABI. See "
+"policy :policy:`CMP0184`."
 msgstr ""
 
 #: ../../../release/4.0.rst:75
 msgid ""
 "The :variable:`CMAKE_POLICY_VERSION_MINIMUM` variable was added to help "
 "packagers and end users try to configure existing projects that have not "
-"been updated to work with supported CMake versions. The :envvar:"
-"`CMAKE_POLICY_VERSION_MINIMUM` environment variable was added to initialize "
-"it."
+"been updated to work with supported CMake versions. "
+"The :envvar:`CMAKE_POLICY_VERSION_MINIMUM` environment variable was added to "
+"initialize it."
 msgstr ""
 
 #: ../../../release/4.0.rst:81
 msgid ""
-"The :variable:`CMAKE_UNITY_BUILD_RELOCATABLE` variable and corresponding :"
-"prop_tgt:`UNITY_BUILD_RELOCATABLE` target property were added to make "
-"sources generated for :variable:`CMAKE_UNITY_BUILD` to ``#include`` the "
-"original source files using relative paths where possible."
+"The :variable:`CMAKE_UNITY_BUILD_RELOCATABLE` variable and "
+"corresponding :prop_tgt:`UNITY_BUILD_RELOCATABLE` target property were added "
+"to make sources generated for :variable:`CMAKE_UNITY_BUILD` to ``#include`` "
+"the original source files using relative paths where possible."
 msgstr ""
 
 #: ../../../release/4.0.rst:86
@@ -203,8 +204,8 @@ msgstr ""
 
 #: ../../../release/4.0.rst:107
 msgid ""
-"The :prop_tgt:`Swift_MODULE_DIRECTORY` target property now supports :manual:"
-"`generator expressions <cmake-generator-expressions(7)>`."
+"The :prop_tgt:`Swift_MODULE_DIRECTORY` target property now "
+"supports :manual:`generator expressions <cmake-generator-expressions(7)>`."
 msgstr ""
 
 #: ../../../release/4.0.rst:110
@@ -216,9 +217,9 @@ msgstr ""
 
 #: ../../../release/4.0.rst:114
 msgid ""
-"The :prop_dir:`VS_SOLUTION_ITEMS` directory property was added to tell :ref:"
-"`Visual Studio Generators` to attach files directly to the Solution (``."
-"sln``)."
+"The :prop_dir:`VS_SOLUTION_ITEMS` directory property was added to "
+"tell :ref:`Visual Studio Generators` to attach files directly to the "
+"Solution (``.sln``)."
 msgstr ""
 
 #: ../../../release/4.0.rst:119
@@ -227,16 +228,16 @@ msgstr ""
 
 #: ../../../release/4.0.rst:121
 msgid ""
-"The :module:`ExternalData` module gained a :variable:"
-"`ExternalData_HTTPHEADERS` variable to specify HTTP headers."
+"The :module:`ExternalData` module gained "
+"a :variable:`ExternalData_HTTPHEADERS` variable to specify HTTP headers."
 msgstr ""
 
 #: ../../../release/4.0.rst:124
 msgid ""
 "The :module:`ExternalProject` module's :command:`ExternalProject_Add` "
 "command gained an ``INSTALL_JOB_SERVER_AWARE`` option to enable integration "
-"of the GNU Make job server when using an explicit ``INSTALL_COMMAND`` with :"
-"ref:`Makefile Generators`."
+"of the GNU Make job server when using an explicit ``INSTALL_COMMAND`` "
+"with :ref:`Makefile Generators`."
 msgstr ""
 
 #: ../../../release/4.0.rst:129
@@ -323,9 +324,9 @@ msgstr ""
 
 #: ../../../release/4.0.rst:177
 msgid ""
-"The :cpack_gen:`CPack Archive Generator` now honors the :variable:"
-"`CPACK_ARCHIVE_FILE_NAME` variable for all packages. Previously, this "
-"variable worked only for component-based packages."
+"The :cpack_gen:`CPack Archive Generator` now honors "
+"the :variable:`CPACK_ARCHIVE_FILE_NAME` variable for all packages. "
+"Previously, this variable worked only for component-based packages."
 msgstr ""
 
 #: ../../../release/4.0.rst:182
@@ -353,9 +354,10 @@ msgstr ""
 #: ../../../release/4.0.rst:196
 msgid ""
 "The :variable:`CMAKE_<LANG>_USING_LINKER_MODE` variable is no longer used to "
-"determine the type of the contents of the :variable:"
-"`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable. The :variable:"
-"`CMAKE_<LANG>_LINK_MODE` variable, set by CMake, is used instead."
+"determine the type of the contents of "
+"the :variable:`CMAKE_<LANG>_USING_LINKER_<TYPE>` variable. "
+"The :variable:`CMAKE_<LANG>_LINK_MODE` variable, set by CMake, is used "
+"instead."
 msgstr ""
 
 #: ../../../release/4.0.rst:201
@@ -376,8 +378,8 @@ msgstr ""
 #: ../../../release/4.0.rst:210
 msgid ""
 "CTest's undocumented declarative scripting mode has been removed. This mode "
-"used to be triggered by a :option:`ctest -S` script which did not call any :"
-"ref:`CTest Commands` unless :variable:`CTEST_RUN_CURRENT_SCRIPT` was "
+"used to be triggered by a :option:`ctest -S` script which did not call "
+"any :ref:`CTest Commands` unless :variable:`CTEST_RUN_CURRENT_SCRIPT` was "
 "explicitly set to ``OFF``."
 msgstr ""
 
@@ -407,58 +409,135 @@ msgstr ""
 
 #: ../../../release/4.0.rst:232
 msgid ""
-"Builds targeting macOS no longer choose any SDK or pass an ``-isysroot`` "
-"flag to the compiler by default.  Instead, compilers are expected to choose "
-"a default macOS SDK on their own.  In order to use a compiler that does not "
-"do this, users must now specify :variable:`CMAKE_OSX_SYSROOT` when "
-"configuring their build, e.g., ``-DCMAKE_OSX_SYSROOT=macosx``."
+"In builds targeting macOS, :variable:`CMAKE_OSX_SYSROOT` now defaults to "
+"empty, deferring to the compiler's default macOS SDK selection.  In order to "
+"pass an explicit macOS SDK via the compiler's ``-isysroot`` flag, users may "
+"configure their build tree with ``-DCMAKE_OSX_SYSROOT=macosx``, or ``export "
+"SDKROOT=\"$(xcrun --sdk macosx --show-sdk-path)\"`` in their environment."
 msgstr ""
 
-#: ../../../release/4.0.rst:238
+#: ../../../release/4.0.rst:239
+msgid "Notes:"
+msgstr ""
+
+#: ../../../release/4.0.rst:241
 msgid ""
-"Note that Xcode's compilers, when not invoked with ``-isysroot``, search for "
-"headers in ``/usr/local/include`` before system SDK paths, matching the "
+"macOS compilers in ``/usr/bin``, when not invoked with ``-isysroot``, search "
+"for headers in ``/usr/local/include`` before system SDK paths, matching the "
 "convention on many platforms.  Users on macOS-x86_64 hosts with Homebrew "
-"installed in ``/usr/local`` should pass ``-DCMAKE_OSX_SYSROOT=macosx``, or "
-"``export SDKROOT=macosx``, when not building with Homebrew tools."
+"installed in ``/usr/local`` should pass an explicit SDK, as described above, "
+"when not building with Homebrew tools."
 msgstr ""
 
-#: ../../../release/4.0.rst:244
+#: ../../../release/4.0.rst:247
+msgid ""
+"Some Clang compilers have no default macOS SDK selection.  For these, "
+"if :variable:`CMAKE_OSX_SYSROOT` is empty, CMake will automatically pass ``-"
+"isysroot`` with the macOS SDK printed by ``xcrun --show-sdk-path``."
+msgstr ""
+
+#: ../../../release/4.0.rst:251
+msgid ""
+"On Windows, file paths named in project code, e.g., in ``CMakeLists.txt``, "
+"are no longer automatically converted to their on-disk upper/lower case. "
+"Projects are expected to spell source file paths consistently using their "
+"canonical case, e.g., in calls "
+"to :command:`add_library`, :command:`set_property(SOURCE)`, "
+"or :command:`set_source_files_properties`. This matches the behavior on "
+"platforms with case-sensitive filesystems."
+msgstr ""
+
+#: ../../../release/4.0.rst:258
 msgid ""
 "On AIX, ``SHARED`` library targets now produce a shared library archive by "
 "default.  See policy :policy:`CMP0182`."
 msgstr ""
 
-#: ../../../release/4.0.rst:247
+#: ../../../release/4.0.rst:261
 msgid ""
 "The :option:`cmake --preset` command no longer outputs a summary of the "
 "preset's CMake cache and environment variables by default.  That summary is "
 "now only shown when the message log level is set to ``VERBOSE``, ``DEBUG``, "
-"or ``TRACE`` via the   :option:`cmake --log-level` option or the :variable:"
-"`CMAKE_MESSAGE_LOG_LEVEL` cache variable."
+"or ``TRACE`` via the   :option:`cmake --log-level` option or "
+"the :variable:`CMAKE_MESSAGE_LOG_LEVEL` cache variable."
 msgstr ""
 
-#: ../../../release/4.0.rst:253
+#: ../../../release/4.0.rst:267
 msgid ""
 "Precompiled SunOS ``sparc64`` and ``x86_64`` binaries are now provided on "
 "`cmake.org`_."
 msgstr ""
 
-#: ../../../release/4.0.rst:259
+#: ../../../release/4.0.rst:273
 msgid "Updates"
 msgstr ""
 
-#: ../../../release/4.0.rst:261
+#: ../../../release/4.0.rst:275
 msgid "Changes made since CMake 4.0.0 include the following."
 msgstr ""
 
-#: ../../../release/4.0.rst:264
+#: ../../../release/4.0.rst:278
 msgid "4.0.1"
 msgstr ""
 
-#: ../../../release/4.0.rst:266
+#: ../../../release/4.0.rst:280
 msgid ""
 "This version made no changes to documented features or interfaces. Some "
 "implementation updates were made to support ecosystem changes and/or fix "
 "regressions."
+msgstr ""
+
+#: ../../../release/4.0.rst:285
+msgid "4.0.2"
+msgstr ""
+
+#: ../../../release/4.0.rst:287
+msgid ""
+"When building for macOS with a Clang that has no default macOS SDK, "
+"if :variable:`CMAKE_OSX_SYSROOT` is empty, CMake now automatically passes ``-"
+"isysroot`` with the macOS SDK printed by ``xcrun --show-sdk-path``. This "
+"restores support for using LLVM/Clang on macOS without manually setting "
+"``CMAKE_OSX_SYSROOT``, which was broken by CMake 4.0.0's removal of a "
+"default value."
+msgstr ""
+
+#: ../../../release/4.0.rst:294
+msgid ""
+"The :prop_tgt:`DEBUGGER_WORKING_DIRECTORY` target property is now used by "
+"the :generator:`Xcode` generator as a fallback for "
+"the :prop_tgt:`XCODE_SCHEME_WORKING_DIRECTORY` target property."
+msgstr ""
+
+#: ../../../release/4.0.rst:299
+msgid "4.0.3, 4.0.4"
+msgstr ""
+
+#: ../../../release/4.0.rst:301 ../../../release/4.0.rst:320
+msgid ""
+"These versions made no changes to documented features or interfaces. Some "
+"implementation updates were made to support ecosystem changes and/or fix "
+"regressions."
+msgstr ""
+
+#: ../../../release/4.0.rst:306
+msgid "4.0.5"
+msgstr ""
+
+#: ../../../release/4.0.rst:308
+msgid ""
+"When building for macOS with the :generator:`Xcode` "
+"generator, :variable:`CMAKE_OSX_DEPLOYMENT_TARGET` once again defaults to "
+"the host's macOS version if it is older than the macOS SDK version, as it "
+"did in CMake versions prior to 4.0."
+msgstr ""
+
+#: ../../../release/4.0.rst:313
+msgid ""
+"The :command:`execute_process` command once again terminates child processes "
+"when its ``TIMEOUT`` is reached.  This was accidentally regressed by CMake "
+"3.29."
+msgstr ""
+
+#: ../../../release/4.0.rst:318
+msgid "4.0.6, 4.0.7"
 msgstr ""
