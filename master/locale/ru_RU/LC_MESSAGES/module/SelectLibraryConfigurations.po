@@ -36,8 +36,8 @@ msgid ""
 "``<PackageName>_LIBRARIES`` result variable was used for linking found "
 "packages.  When writing standard find modules, :ref:`Imported Targets` "
 "should be preferred.  In addition to or as an alternative to this module, "
-"imported targets provide finer control over linking through the :prop_tgt:"
-"`IMPORTED_CONFIGURATIONS` property."
+"imported targets provide finer control over linking through "
+"the :prop_tgt:`IMPORTED_CONFIGURATIONS` property."
 msgstr ""
 
 #: ../../../../Modules/SelectLibraryConfigurations.cmake:25
@@ -136,10 +136,11 @@ msgstr ""
 #: ../../../../Modules/SelectLibraryConfigurations.cmake:77
 msgid ""
 "The ``select_library_configurations()`` macro should be called before "
-"handling standard find module arguments with :module:"
-"`find_package_handle_standard_args() <FindPackageHandleStandardArgs>` to "
-"ensure that the ``<PackageName>_FOUND`` result variable is correctly set "
-"based on ``<basename>_LIBRARY`` or other related variables."
+"handling standard find module arguments "
+"with :module:`find_package_handle_standard_args() "
+"<FindPackageHandleStandardArgs>` to ensure that the ``<PackageName>_FOUND`` "
+"result variable is correctly set based on ``<basename>_LIBRARY`` or other "
+"related variables."
 msgstr ""
 
 #: ../../../../Modules/SelectLibraryConfigurations.cmake:85

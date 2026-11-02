@@ -44,8 +44,8 @@ msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:19
 msgid ""
-"The *uncovered* directory holds any uncovered files found by :variable:"
-"`CTEST_EXTRA_COVERAGE_GLOB`."
+"The *uncovered* directory holds any uncovered files found "
+"by :variable:`CTEST_EXTRA_COVERAGE_GLOB`."
 msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:22
@@ -101,8 +101,8 @@ msgstr ""
 msgid ""
 "If ``FROM_EXT`` is specified, the resulting file will be compressed based on "
 "the file extension of the ``<tarfile>`` (i.e. ``.tar.gz`` will use ``GZIP`` "
-"compression). File extensions that will produce compressed output include ``."
-"tar.gz``, ``.tgz``, ``.tar.bzip2``, ``.tbz``, ``.tar.xz``, and ``.txz``."
+"compression). File extensions that will produce compressed output include "
+"``.tar.gz``, ``.tgz``, ``.tar.bzip2``, ``.tbz``, ``.tar.xz``, and ``.txz``."
 msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:62
@@ -186,8 +186,8 @@ msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:101
 msgid ""
-"Generating code coverage data packaged as a ``.tar.gz`` file in a :option:"
-"`ctest -S` script:"
+"Generating code coverage data packaged as a ``.tar.gz`` file in "
+"a :option:`ctest -S` script:"
 msgstr ""
 
 #: ../../../../Modules/CTestCoverageCollectGCOV.cmake:104

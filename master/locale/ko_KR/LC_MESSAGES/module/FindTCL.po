@@ -138,8 +138,8 @@ msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:56
 msgid ""
-"The Tcl Stub Library can now be found using the separate :module:"
-"`FindTclStub` module."
+"The Tcl Stub Library can now be found using the "
+"separate :module:`FindTclStub` module."
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:59
@@ -161,8 +161,8 @@ msgstr ""
 msgid ""
 "Rather than enforcing one specific variant, users are now free to set "
 "``TCL_LIBRARY`` to any desired variant (debug or release) when using this "
-"module, and ``TCL_STUB_LIBRARY`` to any desired variant via the :module:"
-"`FindTclStub` module."
+"module, and ``TCL_STUB_LIBRARY`` to any desired variant via "
+"the :module:`FindTclStub` module."
 msgstr ""
 
 #: ../../../../Modules/FindTCL.cmake:73

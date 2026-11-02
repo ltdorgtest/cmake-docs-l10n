@@ -23,6 +23,6 @@ msgstr ""
 
 #: ../../../release/dev/remove-FindCABLE.rst:4
 msgid ""
-"The :module:`FindCABLE` module has been deprecated via policy :policy:"
-"`CMP0191`."
+"The :module:`FindCABLE` module has been deprecated via "
+"policy :policy:`CMP0191`."
 msgstr ""

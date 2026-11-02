@@ -146,6 +146,6 @@ msgstr ""
 
 #: ../../../../Modules/FindGettext.cmake:83
 msgid ""
-"If you wish to use the Gettext runtime library (libintl), use :module:"
-"`FindIntl`."
+"If you wish to use the Gettext runtime library (libintl), "
+"use :module:`FindIntl`."
 msgstr ""

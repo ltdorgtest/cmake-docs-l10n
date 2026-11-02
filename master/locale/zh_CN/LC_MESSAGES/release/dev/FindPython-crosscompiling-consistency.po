@@ -23,8 +23,8 @@ msgstr ""
 
 #: ../../../release/dev/FindPython-crosscompiling-consistency.rst:4
 msgid ""
-"Modules :module:`FindPython3`, :module:`FindPython2` and :module:"
-"`FindPython` enforce consistency of artifacts in cross-compiling mode. This "
-"prevent mixing host and target artifacts. See policy :policy:`CMP0190` for "
-"more information."
+"Modules :module:`FindPython3`, :module:`FindPython2` "
+"and :module:`FindPython` enforce consistency of artifacts in cross-compiling "
+"mode. This prevent mixing host and target artifacts. See "
+"policy :policy:`CMP0190` for more information."
 msgstr ""

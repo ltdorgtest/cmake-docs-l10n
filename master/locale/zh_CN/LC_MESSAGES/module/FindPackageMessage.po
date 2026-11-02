@@ -43,8 +43,8 @@ msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:22
 msgid ""
-"The name of the package (for example, as used in the ``Find<PackageName>."
-"cmake`` module filename)."
+"The name of the package (for example, as used in the "
+"``Find<PackageName>.cmake`` module filename)."
 msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:25
@@ -108,9 +108,10 @@ msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:62
 msgid ""
-"When writing standard :ref:`Find modules <Find Modules>`, use the :module:"
-"`find_package_handle_standard_args() <FindPackageHandleStandardArgs>` "
-"function, which automatically prints the find result message:"
+"When writing standard :ref:`Find modules <Find Modules>`, use "
+"the :module:`find_package_handle_standard_args() "
+"<FindPackageHandleStandardArgs>` function, which automatically prints the "
+"find result message:"
 msgstr ""
 
 #: ../../../../Modules/FindPackageMessage.cmake:66

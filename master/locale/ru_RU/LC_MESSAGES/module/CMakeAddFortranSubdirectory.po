@@ -61,9 +61,9 @@ msgid ""
 "built as an external project using MinGW tools, and Fortran-related imported "
 "targets are created.  This setup works only if the Fortran code is built as "
 "a shared DLL library, so the :variable:`BUILD_SHARED_LIBS` variable is "
-"enabled in the external project.  Additionally, the :variable:"
-"`CMAKE_GNUtoMS` variable is set to ``ON`` to ensure that Microsoft-"
-"compatible ``.lib`` files are created."
+"enabled in the external project.  Additionally, "
+"the :variable:`CMAKE_GNUtoMS` variable is set to ``ON`` to ensure that "
+"Microsoft-compatible ``.lib`` files are created."
 msgstr ""
 
 #: ../../../../Modules/CMakeAddFortranSubdirectory.cmake:41
@@ -76,8 +76,8 @@ msgstr ""
 
 #: ../../../../Modules/CMakeAddFortranSubdirectory.cmake:44
 msgid ""
-"The name of the Fortran project as defined in the top-level ``CMakeLists."
-"txt`` located in ``<subdir>``."
+"The name of the Fortran project as defined in the top-level "
+"``CMakeLists.txt`` located in ``<subdir>``."
 msgstr ""
 
 #: ../../../../Modules/CMakeAddFortranSubdirectory.cmake:47
@@ -206,8 +206,9 @@ msgstr ""
 
 #: ../../../../Modules/CMakeAddFortranSubdirectory.cmake:114
 msgid ""
-"The :command:`export` command can be used in the subproject to provide :ref:"
-"`Imported Targets` or similar for integration with other projects."
+"The :command:`export` command can be used in the subproject to "
+"provide :ref:`Imported Targets` or similar for integration with other "
+"projects."
 msgstr ""
 
 #: ../../../../Modules/CMakeAddFortranSubdirectory.cmake:116

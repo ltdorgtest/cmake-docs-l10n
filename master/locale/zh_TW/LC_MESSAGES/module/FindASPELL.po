@@ -69,8 +69,8 @@ msgstr ""
 
 #: ../../../../Modules/FindASPELL.cmake:37
 msgid ""
-"This module provides the following :ref:`Imported Targets` when :prop_gbl:"
-"`CMAKE_ROLE` is ``PROJECT``:"
+"This module provides the following :ref:`Imported Targets` "
+"when :prop_gbl:`CMAKE_ROLE` is ``PROJECT``:"
 msgstr ""
 
 #: ../../../../Modules/FindASPELL.cmake:40

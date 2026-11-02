@@ -23,7 +23,7 @@ msgstr ""
 
 #: ../../../release/dev/genex-transitive-link-libraries.rst:4
 msgid ""
-"The :genex:`TARGET_PROPERTY` generator expression now evaluates the :"
-"prop_tgt:`LINK_LIBRARIES` and :prop_tgt:`INTERFACE_LINK_LIBRARIES` target "
-"properties transitively.  See policy :policy:`CMP0189`."
+"The :genex:`TARGET_PROPERTY` generator expression now evaluates "
+"the :prop_tgt:`LINK_LIBRARIES` and :prop_tgt:`INTERFACE_LINK_LIBRARIES` "
+"target properties transitively.  See policy :policy:`CMP0189`."
 msgstr ""

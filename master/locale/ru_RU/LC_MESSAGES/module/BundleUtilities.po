@@ -34,8 +34,8 @@ msgstr ""
 #: ../../../../Modules/BundleUtilities.cmake:15
 msgid ""
 "Do not use these functions at configure time (from ``CMakeLists.txt``). "
-"Instead, invoke them from an :command:`install(CODE)` or :command:"
-"`install(SCRIPT)`."
+"Instead, invoke them from an :command:`install(CODE)` "
+"or :command:`install(SCRIPT)`."
 msgstr ""
 
 #: ../../../../Modules/BundleUtilities.cmake:20
@@ -81,8 +81,8 @@ msgstr ""
 #: ../../../../Modules/BundleUtilities.cmake:46
 msgid ""
 "As an optional parameter (``IGNORE_ITEM``) a list of file names can be "
-"passed, which are then ignored (e.g. ``IGNORE_ITEM \"vcredist_x86.exe;"
-"vcredist_x64.exe\"``)."
+"passed, which are then ignored (e.g. ``IGNORE_ITEM "
+"\"vcredist_x86.exe;vcredist_x64.exe\"``)."
 msgstr ""
 
 #: ../../../../Modules/BundleUtilities.cmake:53
@@ -111,8 +111,8 @@ msgstr ""
 #: ../../../../Modules/BundleUtilities.cmake:243
 msgid ""
 "As an optional parameter (``IGNORE_ITEM``) a list of file names can be "
-"passed, which are then ignored (e.g. ``IGNORE_ITEM \"vcredist_x86.exe;"
-"vcredist_x64.exe\"``)"
+"passed, which are then ignored (e.g. ``IGNORE_ITEM "
+"\"vcredist_x86.exe;vcredist_x64.exe\"``)"
 msgstr ""
 
 #: ../../../../Modules/BundleUtilities.cmake:77

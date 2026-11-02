@@ -23,10 +23,10 @@ msgstr ""
 
 #: ../../../../Modules/UsewxWidgets.cmake:8
 msgid ""
-"This module calls :command:`include_directories` and :command:"
-"`link_directories`, sets compile definitions for the current directory and "
-"appends some compile flags to use wxWidgets library after calling the :"
-"module:`find_package(wxWidgets) <FindwxWidgets>`."
+"This module calls :command:`include_directories` "
+"and :command:`link_directories`, sets compile definitions for the current "
+"directory and appends some compile flags to use wxWidgets library after "
+"calling the :module:`find_package(wxWidgets) <FindwxWidgets>`."
 msgstr ""
 
 #: ../../../../Modules/UsewxWidgets.cmake:14
@@ -52,12 +52,13 @@ msgstr ""
 
 #: ../../../../Modules/UsewxWidgets.cmake:29
 msgid ""
-"As of CMake 3.27, a better approach is to link only the :module:`wxWidgets::"
-"wxWidgets <FindwxWidgets>` ``IMPORTED`` target to specific targets that "
-"require it, rather than including this module. Imported targets provide "
-"better control of the package usage properties, such as include directories "
-"and compile flags, by applying them only to the targets they are linked to, "
-"avoiding unnecessary propagation to all targets in the current directory."
+"As of CMake 3.27, a better approach is to link only "
+"the :module:`wxWidgets::wxWidgets <FindwxWidgets>` ``IMPORTED`` target to "
+"specific targets that require it, rather than including this module. "
+"Imported targets provide better control of the package usage properties, "
+"such as include directories and compile flags, by applying them only to the "
+"targets they are linked to, avoiding unnecessary propagation to all targets "
+"in the current directory."
 msgstr ""
 
 #: ../../../../Modules/UsewxWidgets.cmake:37

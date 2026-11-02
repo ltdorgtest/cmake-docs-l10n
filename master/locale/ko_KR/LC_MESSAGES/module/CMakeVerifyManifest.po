@@ -43,8 +43,8 @@ msgstr ""
 
 #: ../../../../Modules/CMakeVerifyManifest.cmake:23
 msgid ""
-"To run this script, navigate to a directory and run the script with ``cmake -"
-"P``."
+"To run this script, navigate to a directory and run the script with ``cmake "
+"-P``."
 msgstr ""
 
 #: ../../../../Modules/CMakeVerifyManifest.cmake:28

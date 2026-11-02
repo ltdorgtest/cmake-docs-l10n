@@ -148,8 +148,8 @@ msgstr ""
 #: ../../../command/string.rst:120
 msgid ""
 "The ``^`` anchor now matches only at the beginning of the input string "
-"instead of the beginning of each repeated search. See policy :policy:"
-"`CMP0186`."
+"instead of the beginning of each repeated search. See "
+"policy :policy:`CMP0186`."
 msgstr ""
 
 #: ../../../command/string.rst:125
@@ -284,9 +284,9 @@ msgstr ""
 
 #: ../../../command/string.rst:172
 msgid ""
-"All regular expression-related commands, including e.g. :command:"
-"`if(MATCHES)`, save subgroup matches in the variables :variable:"
-"`CMAKE_MATCH_<n>` for ``<n>`` 0..9."
+"All regular expression-related commands, including "
+"e.g. :command:`if(MATCHES)`, save subgroup matches in the "
+"variables :variable:`CMAKE_MATCH_<n>` for ``<n>`` 0..9."
 msgstr ""
 
 #: ../../../command/string.rst:179
@@ -357,8 +357,8 @@ msgstr ""
 
 #: ../../../command/string.rst:233
 msgid ""
-"To join a list's elements, prefer to use the ``JOIN`` operator from the :"
-"command:`list` command.  This allows for the elements to have special "
+"To join a list's elements, prefer to use the ``JOIN`` operator from "
+"the :command:`list` command.  This allows for the elements to have special "
 "characters like ``;`` in them."
 msgstr ""
 

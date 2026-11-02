@@ -54,8 +54,8 @@ msgstr ""
 
 #: ../../../../Modules/FindGSL.cmake:24
 msgid ""
-"The CBLAS support library used by GSL.  It is linked also into the ``GSL::"
-"gsl`` target but provided separately for granularity."
+"The CBLAS support library used by GSL.  It is linked also into the "
+"``GSL::gsl`` target but provided separately for granularity."
 msgstr ""
 
 #: ../../../../Modules/FindGSL.cmake:28
@@ -114,8 +114,8 @@ msgstr ""
 msgid ""
 "If this variable is not set, this module will use pkg-config and default "
 "paths to find GSL.  If this variable is provided, then this module expects "
-"to find libraries at ``${GSL_ROOT_DIR}/lib`` and the GSL headers at "
-"``${GSL_ROOT_DIR}/include/gsl``."
+"to find libraries at ``${GSL_ROOT_DIR}/lib`` and the GSL headers at ``$"
+"{GSL_ROOT_DIR}/include/gsl``."
 msgstr ""
 
 #: ../../../../Modules/FindGSL.cmake:52

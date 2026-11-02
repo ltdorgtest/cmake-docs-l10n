@@ -23,6 +23,6 @@ msgstr ""
 
 #: ../../../release/dev/remove-FindGCCXML.rst:4
 msgid ""
-"The :module:`FindGCCXML` module has been deprecated via policy :policy:"
-"`CMP0188`.  Port projects to CastXML instead."
+"The :module:`FindGCCXML` module has been deprecated via "
+"policy :policy:`CMP0188`.  Port projects to CastXML instead."
 msgstr ""
