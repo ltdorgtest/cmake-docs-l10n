@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "CMP0047"
 msgstr ""
 
-#: ../../../policy/REMOVED_PROLOGUE.txt:2
+#: ../../../policy/include/REMOVED_PROLOGUE.rst:2
 msgid ""
 "The ``OLD`` behavior of this policy was removed in CMake version |"
-"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
-"command:`cmake_minimum_required` or :command:`cmake_policy`."
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call "
+"to :command:`cmake_minimum_required` or :command:`cmake_policy`."
 msgstr ""
 
 #: ../../../policy/CMP0047.rst:7
@@ -39,10 +39,10 @@ msgid ""
 "setting the :variable:`CMAKE_<LANG>_COMPILER_ID` variable to ``QCC`` instead "
 "of ``GNU``.  However, existing projects may assume the compiler id for QNX "
 "qcc is just ``GNU`` as it was in CMake versions prior to 3.0. Therefore this "
-"policy determines for QNX qcc which compiler id to report in the :variable:"
-"`CMAKE_<LANG>_COMPILER_ID` variable after language ``<LANG>`` is enabled by "
-"the :command:`project` or :command:`enable_language` command.  The policy "
-"must be set prior to the invocation of either command."
+"policy determines for QNX qcc which compiler id to report in "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` variable after language ``<LANG>`` "
+"is enabled by the :command:`project` or :command:`enable_language` command.  "
+"The policy must be set prior to the invocation of either command."
 msgstr ""
 
 #: ../../../policy/CMP0047.rst:21
@@ -52,7 +52,7 @@ msgid ""
 "use the ``QCC`` compiler id for those drivers."
 msgstr ""
 
-#: ../../../policy/REMOVED_EPILOGUE.txt:1
+#: ../../../policy/include/REMOVED_EPILOGUE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "

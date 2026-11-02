@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "CMP0044"
 msgstr ""
 
-#: ../../../policy/REMOVED_PROLOGUE.txt:2
+#: ../../../policy/include/REMOVED_PROLOGUE.rst:2
 msgid ""
 "The ``OLD`` behavior of this policy was removed in CMake version |"
-"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
-"command:`cmake_minimum_required` or :command:`cmake_policy`."
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call "
+"to :command:`cmake_minimum_required` or :command:`cmake_policy`."
 msgstr ""
 
 #: ../../../policy/CMP0044.rst:7
@@ -35,10 +35,10 @@ msgstr ""
 #: ../../../policy/CMP0044.rst:9
 msgid ""
 "CMake 2.8.12 introduced the ``<LANG>_COMPILER_ID`` :manual:`generator "
-"expressions <cmake-generator-expressions(7)>` to allow comparison of the :"
-"variable:`CMAKE_<LANG>_COMPILER_ID` with a test value.  The possible valid "
-"values are lowercase, but the comparison with the test value was performed "
-"case-insensitively."
+"expressions <cmake-generator-expressions(7)>` to allow comparison of "
+"the :variable:`CMAKE_<LANG>_COMPILER_ID` with a test value.  The possible "
+"valid values are lowercase, but the comparison with the test value was "
+"performed case-insensitively."
 msgstr ""
 
 #: ../../../policy/CMP0044.rst:15
@@ -49,7 +49,7 @@ msgid ""
 "with the value in the ``<LANG>_COMPILER_ID`` expression."
 msgstr ""
 
-#: ../../../policy/REMOVED_EPILOGUE.txt:1
+#: ../../../policy/include/REMOVED_EPILOGUE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
