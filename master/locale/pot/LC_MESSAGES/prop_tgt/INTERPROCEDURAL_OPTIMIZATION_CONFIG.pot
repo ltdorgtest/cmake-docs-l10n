@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-11-02 18:09+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,14 +27,24 @@ msgstr ""
 
 #: ../../../prop_tgt/INTERPROCEDURAL_OPTIMIZATION_CONFIG.rst:6
 msgid ""
-"This is a per-configuration version of :prop_tgt:"
-"`INTERPROCEDURAL_OPTIMIZATION`. If set, this property overrides the generic "
-"property for the named configuration."
+"This is a per-configuration version "
+"of :prop_tgt:`INTERPROCEDURAL_OPTIMIZATION`. If set, this property overrides "
+"the generic property for the named configuration."
 msgstr ""
 
 #: ../../../prop_tgt/INTERPROCEDURAL_OPTIMIZATION_CONFIG.rst:10
 msgid ""
-"This property is initialized by the :variable:"
-"`CMAKE_INTERPROCEDURAL_OPTIMIZATION_<CONFIG>` variable if it is set when a "
-"target is created."
+"This property is initialized by "
+"the :variable:`CMAKE_INTERPROCEDURAL_OPTIMIZATION_<CONFIG>` variable if it "
+"is set when a target is created."
+msgstr ""
+
+#: ../../../prop_tgt/INTERPROCEDURAL_OPTIMIZATION_CONFIG.rst:15
+msgid "See Also"
+msgstr ""
+
+#: ../../../prop_tgt/INTERPROCEDURAL_OPTIMIZATION_CONFIG.rst:17
+msgid ""
+"The :module:`CheckIPOSupported` module to check whether the compiler "
+"supports interprocedural optimization before enabling this target property."
 msgstr ""
