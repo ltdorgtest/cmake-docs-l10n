@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "CMP0018"
 msgstr ""
 
-#: ../../../policy/REMOVED_PROLOGUE.txt:2
+#: ../../../policy/include/REMOVED_PROLOGUE.rst:2
 msgid ""
 "The ``OLD`` behavior of this policy was removed in CMake version |"
-"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
-"command:`cmake_minimum_required` or :command:`cmake_policy`."
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call "
+"to :command:`cmake_minimum_required` or :command:`cmake_policy`."
 msgstr ""
 
 #: ../../../policy/CMP0018.rst:7
@@ -40,10 +40,11 @@ msgid ""
 "contained platform-specific flags needed to compile objects for shared "
 "libraries.  Typically it included a flag such as ``-fPIC`` for position "
 "independent code but also included other flags needed on certain platforms.  "
-"CMake 2.8.9 and higher prefer instead to use the :prop_tgt:"
-"`POSITION_INDEPENDENT_CODE` target property to determine what targets should "
-"be position independent, and new undocumented platform variables to select "
-"flags while ignoring ``CMAKE_SHARED_LIBRARY_<Lang>_FLAGS`` completely."
+"CMake 2.8.9 and higher prefer instead to use "
+"the :prop_tgt:`POSITION_INDEPENDENT_CODE` target property to determine what "
+"targets should be position independent, and new undocumented platform "
+"variables to select flags while ignoring "
+"``CMAKE_SHARED_LIBRARY_<Lang>_FLAGS`` completely."
 msgstr ""
 
 #: ../../../policy/CMP0018.rst:20
@@ -55,10 +56,10 @@ msgstr ""
 
 #: ../../../policy/CMP0018.rst:24
 msgid ""
-"The ``OLD`` behavior for this policy is to ignore the :prop_tgt:"
-"`POSITION_INDEPENDENT_CODE` property for all targets and use the modified "
-"value of ``CMAKE_SHARED_LIBRARY_<Lang>_FLAGS`` for ``SHARED`` and ``MODULE`` "
-"libraries."
+"The ``OLD`` behavior for this policy is to ignore "
+"the :prop_tgt:`POSITION_INDEPENDENT_CODE` property for all targets and use "
+"the modified value of ``CMAKE_SHARED_LIBRARY_<Lang>_FLAGS`` for ``SHARED`` "
+"and ``MODULE`` libraries."
 msgstr ""
 
 #: ../../../policy/CMP0018.rst:29
@@ -68,7 +69,7 @@ msgid ""
 "honor the :prop_tgt:`POSITION_INDEPENDENT_CODE` target property."
 msgstr ""
 
-#: ../../../policy/REMOVED_EPILOGUE.txt:1
+#: ../../../policy/include/REMOVED_EPILOGUE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "

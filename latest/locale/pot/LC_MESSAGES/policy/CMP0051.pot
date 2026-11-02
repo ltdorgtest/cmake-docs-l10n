@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "CMP0051"
 msgstr ""
 
-#: ../../../policy/REMOVED_PROLOGUE.txt:2
+#: ../../../policy/include/REMOVED_PROLOGUE.rst:2
 msgid ""
 "The ``OLD`` behavior of this policy was removed in CMake version |"
-"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
-"command:`cmake_minimum_required` or :command:`cmake_policy`."
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call "
+"to :command:`cmake_minimum_required` or :command:`cmake_policy`."
 msgstr ""
 
 #: ../../../policy/CMP0051.rst:9
@@ -34,18 +34,18 @@ msgstr ""
 
 #: ../../../policy/CMP0051.rst:11
 msgid ""
-"CMake 3.0 and lower did not include the ``TARGET_OBJECTS`` :manual:"
-"`generator expression <cmake-generator-expressions(7)>` when returning the :"
-"prop_tgt:`SOURCES` target property."
+"CMake 3.0 and lower did not include the "
+"``TARGET_OBJECTS`` :manual:`generator expression <cmake-generator-"
+"expressions(7)>` when returning the :prop_tgt:`SOURCES` target property."
 msgstr ""
 
 #: ../../../policy/CMP0051.rst:15
 msgid ""
 "Configure-time CMake code is not able to handle generator expressions.  If "
 "using the :prop_tgt:`SOURCES` target property at configure time, it may be "
-"necessary to first remove generator expressions using the :command:"
-"`string(GENEX_STRIP)` command.  Generate-time CMake code such as :command:"
-"`file(GENERATE)` can handle the content without stripping."
+"necessary to first remove generator expressions using "
+"the :command:`string(GENEX_STRIP)` command.  Generate-time CMake code such "
+"as :command:`file(GENERATE)` can handle the content without stripping."
 msgstr ""
 
 #: ../../../policy/CMP0051.rst:21
@@ -56,7 +56,7 @@ msgid ""
 "output."
 msgstr ""
 
-#: ../../../policy/REMOVED_EPILOGUE.txt:1
+#: ../../../policy/include/REMOVED_EPILOGUE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "

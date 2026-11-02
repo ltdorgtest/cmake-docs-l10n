@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "CUDAHOSTCXX"
 msgstr ""
 
-#: ../../../envvar/ENV_VAR.txt:1
+#: ../../../envvar/include/ENV_VAR.rst:1
 msgid ""
 "This is a CMake :ref:`Environment Variable <CMake Language Environment "
 "Variables>`. Its initial value is taken from the calling process environment."
@@ -33,8 +33,8 @@ msgid ""
 "language files. Will only be used by CMake on the first configuration to "
 "determine ``CUDA`` host compiler, after which the value for ``CUDAHOSTCXX`` "
 "is stored in the cache as :variable:`CMAKE_CUDA_HOST_COMPILER "
-"<CMAKE_<LANG>_HOST_COMPILER>`. This environment variable is preferred over :"
-"variable:`CMAKE_CUDA_HOST_COMPILER <CMAKE_<LANG>_HOST_COMPILER>`."
+"<CMAKE_<LANG>_HOST_COMPILER>`. This environment variable is preferred "
+"over :variable:`CMAKE_CUDA_HOST_COMPILER <CMAKE_<LANG>_HOST_COMPILER>`."
 msgstr ""
 
 #: ../../../envvar/CUDAHOSTCXX.rst:16

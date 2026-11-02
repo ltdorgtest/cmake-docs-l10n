@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:28+0000\n"
+"POT-Creation-Date: 2026-11-02 17:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,11 +21,11 @@ msgstr ""
 msgid "CMP0048"
 msgstr ""
 
-#: ../../../policy/REMOVED_PROLOGUE.txt:2
+#: ../../../policy/include/REMOVED_PROLOGUE.rst:2
 msgid ""
 "The ``OLD`` behavior of this policy was removed in CMake version |"
-"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call to :"
-"command:`cmake_minimum_required` or :command:`cmake_policy`."
+"REMOVED_IN_CMAKE_VERSION|. This policy must be set to ``NEW`` by a call "
+"to :command:`cmake_minimum_required` or :command:`cmake_policy`."
 msgstr ""
 
 #: ../../../policy/CMP0048.rst:7
@@ -34,15 +34,15 @@ msgstr ""
 
 #: ../../../policy/CMP0048.rst:9
 msgid ""
-"CMake version 3.0 introduced the ``VERSION`` option of the :command:"
-"`project` command to specify a project version as well as the name.  In "
-"order to keep :variable:`PROJECT_VERSION` and related variables consistent "
-"with variable :variable:`PROJECT_NAME` it is necessary to set the "
-"``VERSION`` variables to the empty string when no ``VERSION`` is given to :"
-"command:`project`. However, this can change behavior for existing projects "
-"that set ``VERSION`` variables themselves since :command:`project` may now "
-"clear them. This policy controls the behavior for compatibility with such "
-"projects."
+"CMake version 3.0 introduced the ``VERSION`` option of "
+"the :command:`project` command to specify a project version as well as the "
+"name.  In order to keep :variable:`PROJECT_VERSION` and related variables "
+"consistent with variable :variable:`PROJECT_NAME` it is necessary to set the "
+"``VERSION`` variables to the empty string when no ``VERSION`` is given "
+"to :command:`project`. However, this can change behavior for existing "
+"projects that set ``VERSION`` variables themselves since :command:`project` "
+"may now clear them. This policy controls the behavior for compatibility with "
+"such projects."
 msgstr ""
 
 #: ../../../policy/CMP0048.rst:18
@@ -52,7 +52,7 @@ msgid ""
 "documented by the :command:`project` command."
 msgstr ""
 
-#: ../../../policy/REMOVED_EPILOGUE.txt:1
+#: ../../../policy/include/REMOVED_EPILOGUE.rst:1
 msgid ""
 "This policy was introduced in CMake version |INTRODUCED_IN_CMAKE_VERSION|. "
 "Prior to removal in CMake version |REMOVED_IN_CMAKE_VERSION|, it could be "
