@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-11-09 18:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -100,19 +100,20 @@ msgstr ""
 
 #: ../../../prop_tgt/OBJC_STANDARD.rst:48
 msgid ""
-"If the property is not set, and the project has set the :prop_tgt:"
-"`C_STANDARD`, the value of :prop_tgt:`C_STANDARD` is set for "
+"If the property is not set, and the project has set "
+"the :prop_tgt:`C_STANDARD`, the value of :prop_tgt:`C_STANDARD` is set for "
 "``OBJC_STANDARD``."
 msgstr ""
 
-#: ../../../prop_tgt/OBJC_STANDARD.rst:51
+#: ../../../include/COMPILE_FEATURES_NOTE.rst:2
 msgid ""
 "See the :manual:`cmake-compile-features(7)` manual for information on "
 "compile features and a list of supported compilers."
 msgstr ""
 
-#: ../../../prop_tgt/OBJC_STANDARD.rst:54
+#: ../../../prop_tgt/OBJC_STANDARD.rst:53
 msgid ""
-"This property is initialized by the value of the :variable:"
-"`CMAKE_OBJC_STANDARD` variable if it is set when a target is created."
+"This property is initialized by the value of "
+"the :variable:`CMAKE_OBJC_STANDARD` variable if it is set when a target is "
+"created."
 msgstr ""
