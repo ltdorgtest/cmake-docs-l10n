@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-21 08:36+0000\n"
+"POT-Creation-Date: 2026-11-09 18:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,8 +40,8 @@ msgstr ""
 #: ../../../prop_sf/COMPILE_DEFINITIONS.rst:15
 msgid ""
 "CMake will automatically drop some definitions that are not supported by the "
-"native build tool.  Xcode does not support per-configuration definitions on "
-"source files."
+"native build tool.  :generator:`Xcode` does not support per-configuration "
+"definitions on source files."
 msgstr ""
 
 #: ../../../prop_sf/COMPILE_DEFINITIONS.rst:19
@@ -114,17 +114,40 @@ msgid ""
 "cases.  Use with caution."
 msgstr ""
 
-#: ../../../prop_sf/COMPILE_DEFINITIONS.rst:24
+#: ../../../include/GENEX_NOTE_PER_SOURCE.rst:2
 msgid ""
-"Contents of ``COMPILE_DEFINITIONS`` may use :manual:`cmake-generator-"
-"expressions(7)` with the syntax ``$<...>``.  See the :manual:`cmake-"
-"generator-expressions(7)` manual for available expressions.  However, :"
-"generator:`Xcode` does not support per-config per-source settings, so "
-"expressions that depend on the build configuration are not allowed with that "
-"generator."
+"Contents of |genex_subject| may use :manual:`generator expressions <cmake-"
+"generator-expressions(7)>` with the syntax ``$<...>``.  "
+"However, :generator:`Xcode` does not support per-config per-source settings, "
+"so expressions that depend on the build configuration are not allowed with "
+"that generator."
+msgstr ""
+
+#: ../../../include/GENEX_NOTE_SOURCE_TARGET.rst:2
+msgid ""
+"Generator expressions in |genex_subject| are evaluated separately for each "
+"target that compiles the source file."
+msgstr ""
+
+#: ../../../prop_sf/COMPILE_DEFINITIONS.rst:28
+msgid ""
+"For example, ``foo.cpp`` is compiled with ``FOO=1`` in target ``A`` and with "
+"``FOO=2`` in target ``B``, while ``bar.cpp`` is compiled without ``FOO``:"
 msgstr ""
 
 #: ../../../prop_sf/COMPILE_DEFINITIONS.rst:31
+msgid ""
+"add_library(A OBJECT foo.cpp bar.cpp)\n"
+"add_library(B OBJECT foo.cpp bar.cpp)\n"
+"\n"
+"set_property(TARGET A PROPERTY FOO_VALUE 1)\n"
+"set_property(TARGET B PROPERTY FOO_VALUE 2)\n"
+"\n"
+"set_property(SOURCE foo.cpp PROPERTY COMPILE_DEFINITIONS\n"
+"  \"FOO=$<TARGET_PROPERTY:FOO_VALUE>\")"
+msgstr ""
+
+#: ../../../prop_sf/COMPILE_DEFINITIONS.rst:42
 msgid ""
 "Prefer using generator expressions in :prop_sf:`!COMPILE_DEFINITIONS` over "
 "the deprecated :prop_sf:`COMPILE_DEFINITIONS_<CONFIG>` property."

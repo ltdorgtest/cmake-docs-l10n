@@ -67,9 +67,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2025-04-21 00:04:16 -0400",
-      "hash" : "e66e0b2cfefaf61fa995a0aa117df31e680b1c7e",
-      "title" : "CMake Nightly Date Stamp"
+      "date" : "2026-11-09 09:45:59 -0500",
+      "hash" : "b054b42073ecc55fe06b0335ecfddaf886a82d56",
+      "title" : "Merge topic 'msvc-permissive-by-CXX_EXTENSIONS'"
     }
   },
   "type" : "branch",

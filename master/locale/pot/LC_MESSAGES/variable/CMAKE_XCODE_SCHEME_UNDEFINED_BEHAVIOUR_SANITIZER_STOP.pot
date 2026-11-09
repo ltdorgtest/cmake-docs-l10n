@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-11-09 18:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,12 @@ msgstr ""
 
 #: ../../../variable/CMAKE_XCODE_SCHEME_UNDEFINED_BEHAVIOUR_SANITIZER_STOP.rst:10
 msgid ""
-"This variable initializes the :prop_tgt:"
-"`XCODE_SCHEME_UNDEFINED_BEHAVIOUR_SANITIZER_STOP` property on all targets."
+"This variable initializes "
+"the :prop_tgt:`XCODE_SCHEME_UNDEFINED_BEHAVIOUR_SANITIZER_STOP` property on "
+"all targets."
 msgstr ""
 
-#: ../../../variable/CMAKE_XCODE_SCHEME_UNDEFINED_BEHAVIOUR_SANITIZER_STOP.rst:14
+#: ../../../include/XCODE_SCHEME_NOTE.rst:2
 msgid ""
 "Please refer to the :prop_tgt:`XCODE_GENERATE_SCHEME` target property "
 "documentation to see all Xcode schema related properties."

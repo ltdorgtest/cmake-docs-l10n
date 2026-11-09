@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: CMake master\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-10 08:29+0000\n"
+"POT-Creation-Date: 2026-11-09 18:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,15 +23,15 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:6
 msgid ""
-"Number of parallel ``moc`` or ``uic`` processes to start when using :"
-"prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`."
+"Number of parallel ``moc`` or ``uic`` processes to start when "
+"using :prop_tgt:`AUTOMOC` and :prop_tgt:`AUTOUIC`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:9
 msgid ""
-"The custom :ref:`<ORIGIN>_autogen` target starts a number of threads of "
-"which each one parses a source file and on demand starts a ``moc`` or "
-"``uic`` process. ``AUTOGEN_PARALLEL`` controls how many parallel threads "
+"The custom :ref:`<ORIGIN>_autogen <<ORIGIN>_autogen>` target starts a number "
+"of threads.  Each thread parses a source file and on demand starts a ``moc`` "
+"or ``uic`` process. ``AUTOGEN_PARALLEL`` controls how many parallel threads "
 "(and therefore ``moc`` or ``uic`` processes) are started."
 msgstr ""
 
@@ -51,8 +51,8 @@ msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:19
 msgid ""
-"By default ``AUTOGEN_PARALLEL`` is initialized from :variable:"
-"`CMAKE_AUTOGEN_PARALLEL`."
+"By default ``AUTOGEN_PARALLEL`` is initialized "
+"from :variable:`CMAKE_AUTOGEN_PARALLEL`."
 msgstr ""
 
 #: ../../../prop_tgt/AUTOGEN_PARALLEL.rst:22
